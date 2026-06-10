@@ -99,7 +99,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
    ============================================================ */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: flex-end;
   padding: 18px var(--gutter);
   transition: padding .4s var(--ease), background .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s;
   border-bottom: 1px solid transparent;
@@ -110,8 +110,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid var(--line);
 }
-.nav__brand { font-family: var(--font-mono); font-size: 14px; letter-spacing: .04em; font-weight: 600; display: flex; align-items: center; gap: 9px; }
-.nav__brand .dot { width: 8px; height: 8px; background: var(--ink); border-radius: 50%; display: inline-block; }
 .nav__links { display: flex; align-items: center; gap: 30px; }
 .nav__links a { font-family: var(--font-mono); font-size: 13px; letter-spacing: .04em; color: var(--ink-soft); position: relative; transition: color .3s; }
 .nav__links a::after { content: ""; position: absolute; left: 0; bottom: -5px; width: 0; height: 1px; background: var(--ink); transition: width .4s var(--ease); }
