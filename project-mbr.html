@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satellite Proxy for Low-Income Communities in DKI Jakarta · Arnan Muflihadi</title>
+<meta name="description" content="Mapping low-income communities (MBR) across 261 DKI Jakarta urban villages from public satellite imagery, AlphaEarth embeddings, XGBoost, two-stage validation, and temporal harmonization (2017–2024).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__brand"><span class="dot"></span>ARNAN&nbsp;M.</a>
+  <div class="nav__links">
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="contact.html">Contact</a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" stroke-linecap="round"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="cs-hero wrap">
+  <div class="topo cshero__topo" aria-hidden="true"></div>
+  <a href="portfolio.html" class="back">← Back to projects</a>
+  <span class="label reveal">Case Study 03 · Remote Sensing · Poverty Mapping</span>
+  <h1 class="reveal">A Satellite Proxy for Low-Income Communities in DKI Jakarta</h1>
+  <p class="lede reveal">Mapping the morphological-economic character of all 261 urban villages in DKI Jakarta as a proxy for low-income communities (MBR), built from public satellite imagery alone, without household-survey data, across 2017–2024.</p>
+  <dl class="cs-meta reveal">
+    <div><dt>Study area</dt><dd>DKI Jakarta · 261 urban villages · 2017–2024</dd></div>
+    <div><dt>Methods</dt><dd>Satellite embeddings · XGBoost · Two-stage validation</dd></div>
+    <div><dt>Tools</dt><dd>Google Earth Engine · AlphaEarth · Python · XGBoost</dd></div>
+  </dl>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== OBJECTIVE ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">01 / OBJECTIVE</span>
+      <h2>Objective</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>This study builds a <strong>satellite-based proxy for the concentration of low-income communities</strong> (Masyarakat Berpenghasilan Rendah / MBR) across DKI Jakarta, in a data-scarce setting where neighbourhood-level household survey data (Susenas) isn&#x2019;t publicly available. It is a conceptual extension of Pönkänen, Tenkanen &amp; Mladenović (2024) on transport equity, adapted for a Southeast-Asian megacity.</p>
+      <p>Five operational objectives:</p>
+      <ul>
+        <li>Build a temporally consistent MBR proxy (2017–2024) from <strong>public satellite imagery alone</strong>, without household-survey access.</li>
+        <li>Test whether <strong>AlphaEarth satellite embeddings</strong> (2025) can capture urban morphology in a Southeast-Asian megacity.</li>
+        <li>Run a <em>two-stage validation</em> to earn trust in the proxy.</li>
+        <li>Detect and correct temporal artifacts arising from the model–embedding interaction.</li>
+        <li>Classify each urban village&#x2019;s temporal trajectory to support urban-equity analysis.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== METHODOLOGY ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">02 / METHOD</span>
+      <h2>Methodology</h2>
+    </div>
+    <div class="cs-prose">
+      <div class="flow reveal" aria-label="Project workflow from data to conclusions">
+        <div class="flow__track" aria-hidden="true"></div>
+        <div class="flow__step">
+          <div class="flow__node">01</div>
+          <div class="flow__card"><span class="flow__stage">Input</span><h4>AlphaEarth extraction</h4><p>64-dimension satellite embeddings averaged per village per year in Google Earth Engine: 261 villages × 8 years = 2,088 feature rows.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">02</div>
+          <div class="flow__card"><span class="flow__stage">Model</span><h4>Stage 1 · morphology prediction</h4><p>XGBoost regresses the embeddings on a building-morphology ground truth; 5-fold out-of-fold evaluation yields R² = 0.806, ρ = 0.935.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">03</div>
+          <div class="flow__card"><span class="flow__stage">Calibrate</span><h4>3-tier wealth score</h4><p>Predictions become a 0–100 deprivation percentile, then quintiles Q1–Q5, then an experimental PDRB-equivalent estimate (±40%).</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">04</div>
+          <div class="flow__card"><span class="flow__stage">Validate</span><h4>Stage 2 · against IPKS BPS</h4><p>Scores are matched to the official 2020 deprivation index (260/261 villages) and correlated across its five dimensions.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">05</div>
+          <div class="flow__card"><span class="flow__stage">Diagnose</span><h4>The 2023 artifact</h4><p>A suspicious city-wide spike is traced through four testable hypotheses to non-linear amplification inside XGBoost, not real urban change.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">06</div>
+          <div class="flow__card"><span class="flow__stage">Harmonize</span><h4>Rolling-mean correction</h4><p>A 3-year centered rolling mean removes the transient (slope bias −88%) and trajectories are re-classified per village.</p></div>
+        </div>
+        <div class="flow__step flow__step--end">
+          <div class="flow__node">07</div>
+          <div class="flow__card"><span class="flow__stage">Conclusion</span><h4>Harmonized MBR proxy</h4><p>103 stable-deprived, 22 worsening, and 5 improving villages, with the proxy framed as complementary to survey data.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-prose reveal">
+      <p><strong>Why a proxy, and why two stages.</strong> Village-level household survey data (Susenas) is not publicly available, so income cannot be the training target. The model instead targets something satellites can actually see, <em>building morphology</em> (density, footprint, coverage), with ground truth from Zhang et al.&#x2019;s (2026) harmonized building-stock dataset. Whether morphology then says anything about deprivation is treated as a separate, testable question (Stage 2) rather than an assumption. This two-stage split is the methodological backbone of the study: Stage 1 asks &#x201C;can the satellite see urban form?&#x201D;, Stage 2 asks &#x201C;does urban form track official deprivation?&#x201D;.</p>
+      <p><strong>The features: AlphaEarth embeddings.</strong> AlphaEarth Foundations (Brown et al., 2025) compresses a full year of multi-sensor satellite observation into a learned 64-dimension embedding for every 10 m pixel, a far richer signal than raw spectral bands. Embeddings are averaged over each village polygon in Google Earth Engine (reduceRegions at native 10 m scale, with geometry simplification for speed), independently for each year 2017–2024. The result is a 2,088-row feature table: 261 villages × 8 years × 64 dimensions.</p>
+      <p><strong>Stage 1: the morphology model.</strong> XGBoost (500 trees, depth 5, learning rate 0.05, 0.8 row/column subsampling) regresses the 64 features on the building-morphology score. Performance is judged strictly out-of-fold with 5-fold cross-validation, so every village is scored by a model that never saw it during training: R² = 0.806, Spearman ρ = 0.935, which clears the &#x201C;strong&#x201D; benchmark in the urban remote-sensing literature. The final model is then retrained on all data and applied to each of the eight years.</p>
+      <p><strong>Calibration to a wealth scale.</strong> Raw morphology predictions are made interpretable in three tiers. Tier 1 converts them to a 0–100 rank percentile (100 = most deprived in the DKI distribution). Tier 2 cuts the percentile into quintiles Q1–Q5, 52 villages each. Tier 3, flagged as experimental, disaggregates each administrative city&#x2019;s PDRB using the score as a weight, carrying a ±40% error bar and an explicit warning against any household-level use.</p>
+      <p><strong>Stage 2: convergent validation.</strong> Village scores are matched to the official IPKS BPS 2020 deprivation index by fuzzy string matching on village names (cutoff 0.85; 245 exact + 15 fuzzy = 260 of 261 matched) and correlated with its five dimensions using Spearman&#x2019;s ρ, since the claim concerns ordering rather than linear fit. The strongest correlation lands on social capital (IKMS, ρ = 0.300) rather than direct poverty risk, which is what frames the proxy as <em>complementary</em> to administrative surveys instead of a substitute.</p>
+      <p><strong>Hunting the 2023 artifact.</strong> Initial trajectories showed nearly every village spiking in 2023 and falling back in 2024, a pattern too synchronized to be real. Four hypotheses were tested in order: H1, the 2023 embeddings are themselves outliers (rejected: their z-score sits below the 8-year mean); H2, only specific embedding dimensions shifted (rejected); H3, XGBoost amplifies a small, statistically normal input shift into a large output jump (confirmed); H4, the spatial pattern is systematic rather than local (confirmed by the reciprocal red/blue delta maps below). Diagnosis: a model–feature interaction artifact, not urban change.</p>
+      <p><strong>Harmonization.</strong> Each village&#x2019;s series is smoothed with a 3-year centered rolling mean (edge years use the two available points):</p>
+      <div class="formula">pred_smooth[t] = mean( pred[t-1], pred[t], pred[t+1] )</div>
+      <p>Trajectories are then re-fit and re-classified with unchanged rules: above/below the median for deprived status, slope significance at p &lt; 0.1 for worsening or improving. The smoothing cuts slope bias by 88% (mean slope +0.094 → +0.011) and, by removing the artifact, surfaces signal it had buried: worsening villages rise from 2 to 22, improving from 0 to 5. The same approach echoes the Kalman-style smoothing Zhang et al. use to harmonize building-stock data.</p>
+    </div>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="H3 diagnosis, XGBoost non-linear amplification. The 2023 prediction spikes above the gradual 2017–2022 decline, even though the raw embedding is statistically normal.">
+          <img src="assets/img/mbr/diagnosis.jpg" width="1800" height="635" alt="XGBoost non-linear amplification diagnosis" loading="lazy">
+        </div>
+        <figcaption>Figure 1. Diagnosing the 2023 prediction artifact (H3 confirmed).</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="H4, the reciprocal red (2023−2022) / blue (2024−2023) pattern across almost all of DKI is the classic signature of a transient artifact, not real urban change.">
+          <img src="assets/img/mbr/spatial_delta.jpg" width="1800" height="858" alt="Spatial delta maps showing systematic transient" loading="lazy">
+        </div>
+        <figcaption>Figure 2. Systematic reciprocal change pattern (H4 systematic).</figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="3-year rolling-mean harmonization: the 2023 spike is damped, the slope distribution recenters near zero, and per-village corrections are proportional to the raw value.">
+        <img src="assets/img/mbr/harmonization.jpg" width="1800" height="518" alt="Temporal harmonization results" loading="lazy">
+      </div>
+      <figcaption>Figure 3. 3-year rolling-mean harmonization (88% slope-bias reduction).</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===== DATA ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">03 / DATA</span>
+      <h2>Data Used</h2>
+    </div>
+    <div class="cs-prose full reveal">
+      <table class="dtable">
+        <thead><tr><th>Source</th><th>Detail</th><th>Coverage</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td>Google AlphaEarth Foundations</td><td>64-dim satellite embeddings, 10 m</td><td>261 villages × 8 years</td><td>Model input</td></tr>
+          <tr><td>Zhang et al. (2026)</td><td>Building morphology (density, footprint, coverage)</td><td>261 villages, 2023</td><td>Training target</td></tr>
+          <tr><td>IPKS BPS DKI 2020</td><td>5 dimensions (IRK, IKLK, IKPF, IKMS, IKA)</td><td>267 DKI villages</td><td>Convergent validator</td></tr>
+          <tr><td>Meta Relative Wealth Index</td><td>RWI Indonesia, 2.4 km</td><td>Nationwide</td><td>Reference spatial join</td></tr>
+          <tr><td>PDRB per capita (BPS 2023)</td><td>City-level gross regional product</td><td>5 administrative cities</td><td>Tier-3 calibration</td></tr>
+          <tr><td>Kelurahan shapefile</td><td>Administrative boundaries (UTM-48S)</td><td>261 villages · 644.5 km²</td><td>Geometry</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== ANALYSIS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">04 / ANALYSIS</span>
+      <h2>Analysis</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>AlphaEarth embeddings were extracted per village per year via Google Earth Engine (2,088 rows = 261 × 8), an XGBoost model was trained against building morphology with 5-fold out-of-fold evaluation, predictions were temporally harmonized, and each village was classified into a trajectory (stable-deprived / worsening / improving / non-priority). The proxy was then cross-checked against the official IPKS index.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Stage 1, 5-fold out-of-fold predicted vs observed building-morphology score. R²=0.806, Spearman ρ=0.935.">
+        <img src="assets/img/mbr/perf_scatter.jpg" width="1800" height="1499" alt="Stage 1 model performance scatter" loading="lazy">
+      </div>
+      <figcaption>Figure 4. Stage 1 model performance (AlphaEarth-only, R²=0.806).</figcaption>
+    </figure>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Morphology trajectories 2017–2024 for all 261 villages; the sharp 2023 spike (later harmonized) is visible across categories.">
+          <img src="assets/img/mbr/trajectory.jpg" width="1800" height="711" alt="Morphology trajectory spaghetti plot" loading="lazy">
+        </div>
+        <figcaption>Figure 5. Per-village morphology trajectories, 2017–2024.</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="DKI Jakarta, trajectory categories (left) and mean MBR score (right). Red concentrates in dense central/western kampung kota.">
+          <img src="assets/img/mbr/map_categories.jpg" width="1800" height="870" alt="DKI Jakarta MBR category map" loading="lazy">
+        </div>
+        <figcaption>Figure 6. Spatial distribution of MBR trajectory categories.</figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Economic quintile classification Q1 (poorest) to Q5 (richest). A patchwork pattern, rich and poor villages often adjacent, especially in Central Jakarta.">
+        <img src="assets/img/mbr/map_quintile.jpg" width="1800" height="903" alt="Economic quintile map of DKI Jakarta" loading="lazy">
+      </div>
+      <figcaption>Figure 7. Economic quintile distribution across DKI Jakarta.</figcaption>
+    </figure>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Convergent validity, model vs IPKS BPS 2020. Strongest with IKMS / Social Capital (ρ=0.300), then the composite IPKS (ρ=0.235).">
+          <img src="assets/img/mbr/ipks_scatter.jpg" width="1800" height="582" alt="Model vs IPKS scatter plots" loading="lazy">
+        </div>
+        <figcaption>Figure 8. Stage 2 convergent validation against IPKS BPS 2020.</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Correlation by IPKS dimension, Social Capital (IKMS) leads, suggesting satellite morphology captures organic spatial structure, not income directly.">
+          <img src="assets/img/mbr/ipks_dimensions.jpg" width="1800" height="804" alt="Convergent validity by IPKS dimension" loading="lazy">
+        </div>
+        <figcaption>Figure 9. Convergent validity by IPKS dimension.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== RESULTS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">05 / RESULTS</span>
+      <h2>Results</h2>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="v">0.806</div><div class="k">Stage 1 R² (morphology)</div></div>
+      <div class="stat"><div class="v">103</div><div class="k">Stable-deprived villages</div></div>
+      <div class="stat"><div class="v">22</div><div class="k">Worsening (after harmonization)</div></div>
+      <div class="stat"><div class="v">ρ=0.300</div><div class="k">Strongest IPKS link (Social Capital)</div></div>
+    </div>
+
+    <div class="cs-prose reveal" style="margin-top:36px">
+      <ul>
+        <li><strong>AlphaEarth reads urban morphology strongly.</strong> R²=0.806 and Spearman ρ=0.935, new-generation satellite foundation models work well for a Southeast-Asian megacity.</li>
+        <li><strong>Satellite &amp; survey are complementary, not substitutes.</strong> The strongest link is with Social Capital (IKMS, ρ=0.300), not poverty directly (IRK, ρ=0.106, ns); composite ρ=0.235, weak-but-significant. The proxy captures a spatial-physical dimension of deprivation that survey indices don&#x2019;t.</li>
+        <li><strong>A non-linear amplification artifact was found and corrected.</strong> Harmonization cut slope bias 88% and surfaced 22 worsening + 5 improving villages that the artifact had masked.</li>
+        <li><strong>Spatial concentration matches Jakarta&#x2019;s known kampung kota.</strong> Tambora (11 villages), Jatinegara (7), Duren Sawit / Kemayoran / Taman Sari (6 each).</li>
+        <li><strong>A coastal–inland split emerges.</strong> Worsening clusters on the North Jakarta coast (Koja: Lagoa, Tugu Utara/Selatan), while the few improving villages sit in South Jakarta, a pattern that hints at gentrification and needs field validation.</li>
+      </ul>
+
+      <table class="dtable">
+        <thead><tr><th>Trajectory</th><th class="num">Raw</th><th class="num">Harmonized</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>Stable-deprived</td><td class="num">128</td><td class="num">103</td><td>Above-median morphology, flat slope</td></tr>
+          <tr><td>Worsening</td><td class="num">2</td><td class="num"><strong>22</strong></td><td>Above-median, significant positive slope</td></tr>
+          <tr><td>Improving</td><td class="num">0</td><td class="num"><strong>5</strong></td><td>Above-median, significant negative slope</td></tr>
+          <tr><td>Non-priority</td><td class="num">131</td><td class="num">131</td><td>Below-median morphology</td></tr>
+        </tbody>
+      </table>
+
+      <table class="dtable">
+        <thead><tr><th>IPKS dimension</th><th class="num">Spearman ρ</th><th>Significance</th></tr></thead>
+        <tbody>
+          <tr><td>Social Capital (IKMS)</td><td class="num"><strong>+0.300</strong></td><td>p &lt; 0.001 ***</td></tr>
+          <tr><td>Composite IPKS</td><td class="num"><strong>+0.235</strong></td><td>p &lt; 0.001 ***</td></tr>
+          <tr><td>Poverty Risk (IRK)</td><td class="num">+0.106</td><td>ns</td></tr>
+          <tr><td>Environment &amp; Health (IKLK)</td><td class="num">+0.053</td><td>ns</td></tr>
+          <tr><td>Safety &amp; Order (IKA)</td><td class="num">+0.046</td><td>ns</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Conclusion:</strong> a reproducible, satellite-only pipeline can map the morphological-economic character of all 261 DKI Jakarta urban villages as an MBR proxy across 2017–2024. The proxy is strong at reading morphology and weakly-but-significantly aligned with official deprivation indices, capturing a spatial-physical dimension that <em>complements</em>, rather than replaces, survey data. Its most defensible output is a statistically confident set of persistently deprived and worsening neighbourhoods, concentrated in Jakarta&#x2019;s classic kampung kota and along the northern coast. Direct MBR claims would still need validation against household survey data, and &#x201C;improving&#x201D; morphology should not be read as rising welfare without field checks.</p>
+    </div>
+  </section>
+
+  <!-- ===== REFERENCES ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">06 / REFERENCES</span>
+      <h2>References</h2>
+    </div>
+    <div class="cs-refs full reveal">
+      <p>BPS Provinsi DKI Jakarta. (2022). <em>Indeks Potensi Kerawanan Sosial Provinsi DKI Jakarta 2020</em>. BPS-Statistics DKI Jakarta Province.</p>
+      <p>Brown, C. F., Kazmierski, M. R., et al. (2025). AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data. <em>arXiv:2507.22291</em>.</p>
+      <p>Chi, G., Fang, H., Chatterjee, S., &amp; Blumenstock, J. E. (2022). Microestimates of wealth for all low- and middle-income countries. <em>Proceedings of the National Academy of Sciences</em>, 119(3), e2113658119.</p>
+      <p>Cohen, J. (1988). <em>Statistical Power Analysis for the Behavioral Sciences</em> (2nd ed.). Lawrence Erlbaum Associates.</p>
+      <p>Hernandez, M., et al. (2023). Strengths and limitations of relative wealth indices derived from big data in Indonesia. <em>Frontiers in Big Data</em>, 6, 1054156.</p>
+      <p>Pettersson, M. B., &amp; Daoud, A. (2025). Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping. <em>arXiv:2511.01408</em>.</p>
+      <p>Pönkänen, M., Tenkanen, H., &amp; Mladenović, M. (2024). Spatial accessibility and transport inequity in Finland: Open source models and perspectives from planning practice. <em>Computers, Environment and Urban Systems</em>, 108, 102179.</p>
+      <p>Zhang, W.-B., McKeen, T., Priyatikanto, R., et al. (2026). A temporally harmonised gridded building-stock dataset for the Global South, 2016–2023. <em>VeriXiv</em>, 3:163.</p>
+      <p>Meta Data for Good. (2023). <em>Relative Wealth Index, Indonesia</em>. Humanitarian Data Exchange.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== PAGER ===== -->
+<nav class="cs-pager">
+  <a href="project-pangan.html"><span class="label">Previous project</span><span class="t">← Rice Supply Chain in West Java</span></a>
+  <a href="project-cbd.html"><span class="label">Next project</span><span class="t">Indonesia Business Centers (DBSCAN) →</span></a>
+</nav>
+
+<footer class="foot">
+  <span>© <span data-year>2026</span> Arnan Muflihadi</span>
+  <span>Urban Planner &amp; GIS Analyst</span>
+</footer>
+
+<script src="assets/js/main.js?v=4"></script>
+</body>
+</html>

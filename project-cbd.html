@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapping Indonesia's Business Centers with DBSCAN · Arnan Muflihadi</title>
+<meta name="description" content="Identifying the Central Business District (CBD) of every Indonesian province by density-based clustering (DBSCAN) of 91,940 commercial POIs from OpenStreetMap, with interactive maps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__brand"><span class="dot"></span>ARNAN&nbsp;M.</a>
+  <div class="nav__links">
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="contact.html">Contact</a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" stroke-linecap="round"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="cs-hero wrap">
+  <div class="topo cshero__topo" aria-hidden="true"></div>
+  <a href="portfolio.html" class="back">← Back to projects</a>
+  <span class="label reveal">Case Study 04 · Data Analysis · Spatial Clustering</span>
+  <h1 class="reveal">Mapping Indonesia&#x2019;s Business Centers with DBSCAN</h1>
+  <p class="lede reveal">Identifying the Central Business District (CBD) of every Indonesian province by density-based clustering of 91,940 commercial POIs from OpenStreetMap, with a Jakarta deep-dive and two interactive maps.</p>
+  <dl class="cs-meta reveal">
+    <div><dt>Study area</dt><dd>Indonesia · 38 provinces</dd></div>
+    <div><dt>Methods</dt><dd>DBSCAN (haversine) · POI mining</dd></div>
+    <div><dt>Tools</dt><dd>Python · pyosmium · scikit-learn · Folium</dd></div>
+  </dl>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== OBJECTIVE ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">01 / OBJECTIVE</span>
+      <h2>Objective</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>Identify the main business hub (CBD) of every Indonesian province from open data, and benchmark them by size, density, and spatial structure. A <strong>density-based clustering</strong> approach lets the data show where commercial activity actually concentrates, without predefining city boundaries.</p>
+      <ul>
+        <li>Mine commercial POIs nationwide from OpenStreetMap and assign them to provinces.</li>
+        <li>Cluster each province&#x2019;s POIs with adaptive DBSCAN; take the largest cluster as its CBD.</li>
+        <li>Compare CBDs across 38 provinces by POI count, radius, and density.</li>
+        <li>Map the results interactively at both national and city scale, with a deep-dive on Jakarta.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== METHODOLOGY ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">02 / METHOD</span>
+      <h2>Methodology</h2>
+    </div>
+    <div class="cs-prose">
+      <div class="flow reveal" aria-label="Project workflow from data to conclusions">
+        <div class="flow__track" aria-hidden="true"></div>
+        <div class="flow__step">
+          <div class="flow__node">01</div>
+          <div class="flow__card"><span class="flow__stage">Input</span><h4>OSM country extract</h4><p>The full Indonesia extract from Geofabrik: one 1.72 GB .osm.pbf file covering the whole archipelago.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">02</div>
+          <div class="flow__card"><span class="flow__stage">Mine</span><h4>POI extraction</h4><p>A streaming pyosmium pass keeps commercial tags (office, shop, amenity, commercial building): 91,940 points.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">03</div>
+          <div class="flow__card"><span class="flow__stage">Join</span><h4>Province assignment</h4><p>A spatial join places each point in one of 38 provinces; 91,340 land inside a boundary.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">04</div>
+          <div class="flow__card"><span class="flow__stage">Cluster</span><h4>Adaptive DBSCAN</h4><p>Density-based clustering with haversine distances; eps and min_samples scale with each province&#x2019;s POI count. The largest cluster is the CBD.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">05</div>
+          <div class="flow__card"><span class="flow__stage">Benchmark</span><h4>Compare 38 CBDs</h4><p>Each CBD is measured on POI count, radius, and density, alongside a separate 15,417-POI Jakarta deep-dive (19 clusters).</p></div>
+        </div>
+        <div class="flow__step flow__step--end">
+          <div class="flow__node">06</div>
+          <div class="flow__card"><span class="flow__stage">Conclusion</span><h4>National benchmark</h4><p>37 of 38 provinces yield a CBD; Jakarta is the widest, Aceh the densest, Bali the surprise #2, all explorable on two interactive maps.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-prose reveal">
+      <p><strong>Mining the POIs.</strong> The Indonesia extract from Geofabrik (1.72 GB <code>.osm.pbf</code>) is parsed in a single streaming pass with <em>pyosmium</em>, which reads the binary file node by node without ever loading it into memory. Nodes tagged <code>office</code>, <code>shop</code>, selected <code>amenity</code> values (bank, restaurant, cafe, pharmacy, and similar commercial uses), and commercial <code>building</code> values are kept: <strong>91,940 points</strong>. A spatial join then assigns each point to one of 38 provinces; 91,340 land inside a boundary, with the remainder sitting on coastlines or border slivers.</p>
+      <p><strong>Why DBSCAN.</strong> A central business district is an emergent density pattern, not an administrative polygon, so the method must discover clusters without knowing their number or shape in advance. DBSCAN does exactly that: a point is a <em>core point</em> if at least <code>min_samples</code> neighbours lie within <code>eps</code> of it; chains of core points merge into clusters, and everything else is labeled noise rather than being forced into a cluster. K-means, by contrast, would demand the number of clusters up front, force every point into one, and assume roughly circular shapes. Distances use the <em>haversine</em> metric, computed on the sphere, so eps is a true ground distance instead of a degree-based approximation that stretches with latitude.</p>
+      <p><strong>Adaptive parameters.</strong> POI density varies by two orders of magnitude across provinces. A single fixed eps would shred Jakarta into fragments or fuse an entire sparse province into one blob, so the parameters scale with province size:</p>
+    </div>
+    <div class="cs-prose full reveal">
+      <table class="dtable">
+        <thead><tr><th>Province POI count</th><th class="num">eps</th><th class="num">min_samples</th></tr></thead>
+        <tbody>
+          <tr><td>≥ 10,000</td><td class="num">400 m</td><td class="num">50</td></tr>
+          <tr><td>≥ 3,000</td><td class="num">450 m</td><td class="num">35</td></tr>
+          <tr><td>≥ 1,000</td><td class="num">500 m</td><td class="num">20</td></tr>
+          <tr><td>&lt; 1,000</td><td class="num">600 m</td><td class="num">10</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cs-prose reveal">
+      <p><strong>Defining the CBD.</strong> Within each province, clusters are ranked by POI count and the largest becomes that province&#x2019;s CBD (<code>cbd_rank = 1</code>); the top three are retained for inspection so a near-tie is visible rather than hidden. The share of points labeled noise is reported alongside, because it is informative in itself: a high noise share (Central Java reaches 95%) means commercial activity is dispersed across many towns with no single dominant center.</p>
+      <p><strong>Jakarta deep-dive and benchmarking.</strong> A separate, larger Jakarta run (15,417 POIs, including building footprints) resolves the city&#x2019;s internal structure into 19 clusters rather than treating the capital as one dot. Every provincial CBD is then described by three comparable indicators: POI count for size, the radius of the cluster extent, and density in POIs per km² of cluster area. Results are rendered as interactive Folium maps and exported as JSON for reuse.</p>
+      <p><strong>Known limitation.</strong> OpenStreetMap is crowdsourced, and mapping completeness varies: Java and Bali are covered far more densely than Papua or Maluku, so values for eastern provinces are best read as lower bounds rather than ground truth.</p>
+    </div>
+  </section>
+
+  <!-- ===== DATA ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">03 / DATA</span>
+      <h2>Data Used</h2>
+    </div>
+    <div class="cs-prose full reveal">
+      <table class="dtable">
+        <thead><tr><th>Component</th><th>Detail</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Commercial POIs</td><td>91,940 nationwide (office, shop, amenity, commercial building)</td><td>OpenStreetMap via Geofabrik (PBF, 1.72 GB)</td></tr>
+          <tr><td>Province boundaries</td><td>38 administrative provinces (91,340 POIs matched)</td><td>Administrative boundaries</td></tr>
+          <tr><td>Jakarta deep-dive</td><td>15,417 POIs → 19 clusters</td><td>OpenStreetMap (separate run)</td></tr>
+          <tr><td>Parsing &amp; clustering</td><td>pyosmium · scikit-learn DBSCAN (haversine)</td><td>open-source</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== ANALYSIS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">04 / ANALYSIS</span>
+      <h2>Analysis</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>A Jakarta deep-dive (15,417 POIs → 19 clusters; the largest, 7,511 POIs, centered on <strong>Sudirman–Thamrin–Kuningan</strong>) sits alongside the national run across all 38 provinces. Results are explorable in two interactive maps and compared province by province.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Top 10 Jakarta clusters by POI count; the CBD (Cluster 0, 7,511 POIs) dwarfs the rest (≤272).">
+        <img src="assets/img/cbd/jakarta_barchart.jpg" width="1320" height="770" alt="Top 10 Jakarta clusters by POI count" loading="lazy">
+      </div>
+      <figcaption>Figure 1. Top 10 Jakarta clusters by POI count (deep-dive run).</figcaption>
+    </figure>
+
+    <figure class="figure reveal">
+      <div class="map-embed"><iframe src="maps/jakarta_map.html" title="Interactive CBD map of Jakarta" loading="lazy"></iframe></div>
+      <figcaption>Figure 2. Interactive map of Jakarta&#x2019;s CBD clusters. Zoom and click the markers.</figcaption>
+    </figure>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Top 20 provincial CBDs by POI count, colored by island.">
+        <img src="assets/img/cbd/indonesia_barchart.jpg" width="1320" height="1210" alt="Top 20 provincial CBDs by POI count, by island" loading="lazy">
+      </div>
+      <figcaption>Figure 3. Top 20 provincial CBDs, colored by island.</figcaption>
+    </figure>
+
+    <figure class="figure reveal">
+      <div class="map-embed"><iframe src="maps/indonesia_map.html" title="Interactive CBD map of Indonesia" loading="lazy"></iframe></div>
+      <figcaption>Figure 4. Interactive map of every province&#x2019;s CBD across Indonesia.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===== RESULTS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">05 / RESULTS</span>
+      <h2>Results</h2>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="v">91,940</div><div class="k">Commercial POIs mined</div></div>
+      <div class="stat"><div class="v">37/38</div><div class="k">Provinces with an identified CBD</div></div>
+      <div class="stat"><div class="v">1,310</div><div class="k">Densest CBD, Aceh (POI/km²)</div></div>
+      <div class="stat"><div class="v">3.4 km</div><div class="k">Widest CBD radius, Jakarta</div></div>
+    </div>
+
+    <div class="cs-prose reveal" style="margin-top:36px">
+      <ul>
+        <li><strong>Jakarta has the widest CBD, not the densest.</strong> Its CBD (3,245 POIs, Sudirman–Thamrin–Kuningan) spans a 3.4 km radius but only 91 POI/km², growth spreads horizontally along arterial roads.</li>
+        <li><strong>Bali is the surprise #2.</strong> The Denpasar–Kuta–Seminyak belt (2,322 POIs) beats every Java province except Jakarta, and is denser than Jakarta (140 POI/km²), tourism accelerates commercial urbanization.</li>
+        <li><strong>Java is polarized.</strong> West Java is dispersed (61.6% noise across Bandung–Bogor–Bekasi–Depok); Central Java is extreme (95% noise, no single CBD); Yogyakarta is hyper-concentrated at Malioboro (198 POI/km²).</li>
+        <li><strong>Aceh is the densest CBD nationwide</strong>, 1,310 POI/km² inside a 309 m radius, a compact urban core consistent with post-tsunami rebuilding.</li>
+        <li><strong>Eastern Indonesia hubs:</strong> Makassar (237 POI/km²) and Sorong lead their regions; East Kalimantan (the new capital, IKN) shows just 101 POIs and 68.7% noise, an early commercial footprint.</li>
+        <li><strong>Structured inequality:</strong> three provinces (Jakarta, Bali, West Java) hold 37% of all national CBD POIs; Maluku Utara is the only province with no CBD cluster at all.</li>
+      </ul>
+
+      <table class="dtable">
+        <thead><tr><th class="num">#</th><th>Province (core)</th><th>Island</th><th class="num">CBD POIs</th><th class="num">Density (POI/km²)</th></tr></thead>
+        <tbody>
+          <tr><td class="num">1</td><td>DKI Jakarta</td><td>Java</td><td class="num">3,245</td><td class="num">91.0</td></tr>
+          <tr><td class="num">2</td><td>Bali (Denpasar)</td><td>Bali &amp; Nusa</td><td class="num">2,322</td><td class="num">139.7</td></tr>
+          <tr><td class="num">3</td><td>West Java (Bandung)</td><td>Java</td><td class="num">1,355</td><td class="num">142.7</td></tr>
+          <tr><td class="num">4</td><td>South Sulawesi (Makassar)</td><td>Sulawesi</td><td class="num">845</td><td class="num">237.2</td></tr>
+          <tr><td class="num">5</td><td>West Nusa Tenggara (Mataram)</td><td>Bali &amp; Nusa</td><td class="num">709</td><td class="num">84.4</td></tr>
+          <tr><td class="num">6</td><td>Yogyakarta (Malioboro)</td><td>Java</td><td class="num">581</td><td class="num">198.1</td></tr>
+          <tr><td class="num">7</td><td>Riau (Pekanbaru)</td><td>Sumatra</td><td class="num">577</td><td class="num">57.4</td></tr>
+          <tr><td class="num">8</td><td>North Sumatra (Medan)</td><td>Sumatra</td><td class="num">463</td><td class="num">103.4</td></tr>
+          <tr><td class="num">9</td><td>Aceh (Banda Aceh)</td><td>Sumatra</td><td class="num">392</td><td class="num"><strong>1,309.8</strong></td></tr>
+          <tr><td class="num">10</td><td>East Java</td><td>Java</td><td class="num">391</td><td class="num">100.2</td></tr>
+        </tbody>
+      </table>
+
+      <p style="font-size:14px;color:var(--muted);font-family:var(--font-mono)">Note: OpenStreetMap is crowdsourced, so coverage varies by region, areas with active OSM communities (Java, Bali) are richer than Papua and Maluku, and eastern Indonesia may be underrepresented.</p>
+
+      <p><strong>Conclusion:</strong> density-based clustering on open POI data is enough to surface a consistent, comparable picture of where commercial activity concentrates across Indonesia. The result isn&#x2019;t a simple Jakarta-centric hierarchy: it shows genuine surprises (Bali, Aceh, Yogyakarta), a clear tourism signal, and structural dispersion in Central and West Java where no single dominant CBD forms.</p>
+    </div>
+  </section>
+
+  <!-- ===== REFERENCES ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">06 / REFERENCES</span>
+      <h2>References &amp; Data</h2>
+    </div>
+    <div class="cs-refs full reveal">
+      <p>Ester, M., Kriegel, H.-P., Sander, J., &amp; Xu, X. (1996). A density-based algorithm for discovering clusters in large spatial databases with noise. <em>Proceedings of KDD-96</em>, 226–231.</p>
+      <div class="cs-refs__sub">Tools &amp; data sources</div>
+      <p>OpenStreetMap contributors, via Geofabrik, Indonesia <code>.osm.pbf</code> extract.</p>
+      <p>scikit-learn, <code>DBSCAN</code> (haversine metric); pyosmium, PBF parsing.</p>
+      <div class="cs-refs__sub">Download the analysis data</div>
+      <p><a href="assets/data/cbd/indonesia_cbd.json">indonesia_cbd.json</a>, CBD per province · <a href="assets/data/cbd/indonesia_all_clusters.json">indonesia_all_clusters.json</a>, top-3 clusters per province · <a href="assets/data/cbd/island_summary.json">island_summary.json</a>, per-island summary.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== PAGER ===== -->
+<nav class="cs-pager">
+  <a href="project-mbr.html"><span class="label">Previous project</span><span class="t">← Satellite MBR Proxy in DKI Jakarta</span></a>
+  <a href="portfolio.html"><span class="label">Index</span><span class="t">All projects →</span></a>
+</nav>
+
+<footer class="foot">
+  <span>© <span data-year>2026</span> Arnan Muflihadi</span>
+  <span>Urban Planner &amp; GIS Analyst</span>
+</footer>
+
+<script src="assets/js/main.js?v=4"></script>
+</body>
+</html>

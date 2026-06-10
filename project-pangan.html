@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Critical Roads for the Rice Supply Chain in West Java · Arnan Muflihadi</title>
+<meta name="description" content="Identifying critical road segments for West Java's rice supply chain using multi-stage network flow & a doubly-constrained gravity model over 2.1M OSM edges.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__brand"><span class="dot"></span>ARNAN&nbsp;M.</a>
+  <div class="nav__links">
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="contact.html">Contact</a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" stroke-linecap="round"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="cs-hero wrap">
+  <div class="topo cshero__topo" aria-hidden="true"></div>
+  <a href="portfolio.html" class="back">← Back to projects</a>
+  <span class="label reveal">Case Study 02 · Supply Chain · Food Security</span>
+  <h1 class="reveal">Critical Roads for the Rice Supply Chain in West Java</h1>
+  <p class="lede reveal">Mapping the most critical road segments for West Java&#x2019;s food security through network-flow modeling of rice logistics over a road network of 2.1 million edges, from 254 rice production centers to 40 processing channels and on to 53 market destinations.</p>
+  <dl class="cs-meta reveal">
+    <div><dt>Study area</dt><dd>West Java · 27 regencies/cities · 713 districts</dd></div>
+    <div><dt>Methods</dt><dd>Multi-stage flow · Gravity (Furness)</dd></div>
+    <div><dt>Tools</dt><dd>Python · OSMnx · NetworkX · TomTom API</dd></div>
+  </dl>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== OBJECTIVE ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">01 / OBJECTIVE</span>
+      <h2>Objective</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>West Java is Indonesia&#x2019;s 3rd-largest rice producer (<strong>8.63 million tons of dry unhulled rice / GKG</strong>, ~10% of national output), with over 50% of production concentrated in the North Coast (Pantura) corridor. The province&#x2019;s rice-supply resilience depends on the road network linking production centers → processing facilities → markets.</p>
+      <p>Three objectives:</p>
+      <ul>
+        <li><strong>Identify the most critical road segments</strong> based on a combination of logistics flow, network centrality, disruption impact, hazard exposure, and road condition.</li>
+        <li><strong>Validate the robustness</strong> of the ranking against the choice of flow-assignment methodology and parameters.</li>
+        <li>Produce an explicit <strong>OD matrix and priority-road ranking</strong> as a reusable, reproducible transport-planning reference.</li>
+      </ul>
+    </div>
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Complete analysis flowchart, 16 scripts, 7 methodology refinements, across 5 pipeline layers with robustness checks.">
+        <img src="assets/img/pangan/flowchart.png" width="1690" height="2200" alt="Analysis pipeline flowchart" loading="lazy">
+      </div>
+      <figcaption>Figure 0. Complete analysis flowchart: data sources → preprocessing → node setup → flow models → network analysis → composite priority.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===== METHODOLOGY ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">02 / METHOD</span>
+      <h2>Methodology</h2>
+    </div>
+    <div class="cs-prose">
+      <div class="flow reveal" aria-label="Project workflow from data to conclusions">
+        <div class="flow__track" aria-hidden="true"></div>
+        <div class="flow__step">
+          <div class="flow__node">01</div>
+          <div class="flow__card"><span class="flow__stage">Input</span><h4>Data assembly</h4><p>BPS production figures, ~1 million rice-field polygons, the 2.13-million-edge OSM road network, 40 processing channels, 53 market destinations, and hazard layers.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">02</div>
+          <div class="flow__card"><span class="flow__stage">Prepare</span><h4>Production centers</h4><p>Regency production disaggregated to 713 districts by areal weighting; Location Quotient classifies 224 production centers; totals reconcile with BPS within 0.01%.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">03</div>
+          <div class="flow__card"><span class="flow__stage">Network</span><h4>Supply-chain nodes</h4><p>254 centers, 40 channels, and 53 destinations are snapped onto the road graph as origins, intermediates, and sinks.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">04</div>
+          <div class="flow__card"><span class="flow__stage">Model</span><h4>Flow assignment × 3</h4><p>Shortest-path, singly-constrained gravity, and doubly-constrained gravity (Furness) each route the two-stage tonnage over the network.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">05</div>
+          <div class="flow__card"><span class="flow__stage">Score</span><h4>Composite priority</h4><p>Five z-scored dimensions (flow, criticality, betweenness, condition, hazard) combine into one priority score per road segment.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">06</div>
+          <div class="flow__card"><span class="flow__stage">Test</span><h4>Robustness × 4</h4><p>TomTom speed calibration, α sensitivity, three-model comparison, and 1,000 Monte Carlo weight draws stress-test the ranking.</p></div>
+        </div>
+        <div class="flow__step flow__step--end">
+          <div class="flow__node">07</div>
+          <div class="flow__card"><span class="flow__stage">Conclusion</span><h4>Priority ranking</h4><p>Pantura holds #1 in every variant; 40 stable-core segments are confirmed with ρ ≥ 0.9987 across all tests.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-prose reveal">
+      <p><strong>Why a multi-stage flow.</strong> Rice changes state along the chain: farms ship unhulled grain (gabah) to processing channels, mills convert it to milled rice (beras) at channel-specific yields, and the rice moves on to markets. Modeling this as two linked stages over the West Java OSM network (<strong>2,133,733 edges, 890,273 nodes</strong>) keeps volumes physically consistent: Stage 2 totals equal Stage 1 inflows after each channel&#x2019;s milling yield (0.62 for MRMP, 0.50 for AB2TI, 0.55 for Sub-Divre and warehouses). A single-stage shortcut would route tonnage that never exists. Stage 1 is also scaled by the Bulog absorption parameter α = 0.30, the share of production entering the formal channel system; the rest flows through informal private mills and local markets.</p>
+      <p><strong>Locating production.</strong> BPS reports production by regency, but the network needs finer origins. Production is therefore disaggregated to 713 districts by areal weighting over ~1 million mapped rice-field polygons: each district receives production in proportion to its paddy area, and the totals are checked to reconcile with official BPS figures within 0.01%. The Location Quotient, a district&#x2019;s production share divided by its area share, then classifies 224 districts as primary (LQ ≥ 2) or secondary (1 ≤ LQ &lt; 2) production centers, with KP2B protected-farmland zones as a spatial cross-check.</p>
+      <p><strong>Three flow models, on purpose.</strong> Flow assignment is where methodological choices bite hardest, so three models were run and compared rather than trusting one. <em>Shortest-path</em> sends each origin&#x2019;s entire formal volume to its cheapest channel; it is the transparent baseline, but it ignores capacity (one mill received 352k tons against a 120 ton/day capacity). <em>Singly-constrained gravity</em> spreads each origin&#x2019;s volume across channels in proportion to attractiveness × exp(−β·cost), with β = 1.5 from the agricultural-goods literature; origin totals are conserved, but busy channels can still overload. The <em>doubly-constrained</em> model (Wilson, 1971) conserves both ends: balancing factors for every origin and channel are solved by Furness iteration (up to 50 iterations, tolerance 1e-4) until each origin ships exactly its supply and each channel receives a capacity-proportional demand. That last property is what makes its flows physically credible.</p>
+      <p><strong>Travel costs.</strong> Route costs combine network distance with road-class speeds, adjusted by sub-corridor speed factors. Twenty truck routes from the TomTom Routing API calibrate those factors against observed driving times: four of five Pantura sub-corridors came in within ±10% of the heuristic, and the Cipali toll factor was revised downward where it overestimated speed.</p>
+      <p><strong>From flows to a ranking.</strong> Edge-level flows are aggregated to named road segments (grouping by name + highway class, with osmid for unnamed roads, which prevents artificial mega-segments). Each segment is then scored on five standardized dimensions:</p>
+      <div class="formula">score = 0.30·z(flow) + 0.25·z(criticality) + 0.15·z(betweenness)
+        + 0.15·z(condition) + 0.15·z(hazard)</div>
+      <p>z-scores put the five dimensions on a common scale before weighting. Flow is the modeled tonnage; criticality is the simulated impact of disrupting the segment; betweenness is topological importance, approximated by sampling (k = 500) because the 890k-node graph is too large for exact computation; condition and hazard act as risk modifiers. The weights reflect a structured expert review, and their influence is itself tested below.</p>
+      <p><strong>Refinements and robustness.</strong> Seven refinements harden the model: the AB2TI channel restricted to Indramayu origins, α = 0.30 absorption, continuous rice-mill weighting per regency, channel-specific yields, Pantura speed factors, face-validity framing of the validation, and Monte Carlo weights. Robustness is then tested on four independent axes: empirical speed calibration (TomTom), α swept over {0.20, 0.30, 0.40}, the three flow models compared head-to-head, and 1,000 Dirichlet draws over the composite weights to see whether the ranking survives weight uncertainty.</p>
+    </div>
+  </section>
+
+  <!-- ===== DATA ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">03 / DATA</span>
+      <h2>Data Used</h2>
+    </div>
+    <div class="cs-prose full reveal">
+      <table class="dtable">
+        <thead><tr><th>Data type</th><th>Source</th><th>Coverage</th></tr></thead>
+        <tbody>
+          <tr><td>Rice production</td><td>BPS West Java 2024</td><td>10/27 verified, 17/27 estimated</td></tr>
+          <tr><td>Road network</td><td>OpenStreetMap (OSMnx, Overpass)</td><td>2.13 million edges</td></tr>
+          <tr><td>Rice fields</td><td>BPIW Rice Field Map</td><td>~1 million polygons</td></tr>
+          <tr><td>KP2B &amp; boundaries</td><td>Data JABAR / Geoportal BIG</td><td>27 regencies + 627 districts</td></tr>
+          <tr><td>Existing RMU</td><td>West Java Agriculture Agency</td><td>30,941 units</td></tr>
+          <tr><td>Channels (Bulog)</td><td>TomTom POI + OSM</td><td>5 Sub-Divre + 2 MRMP + 1 AB2TI + 31 warehouses</td></tr>
+          <tr><td>Destinations</td><td>TomTom POI + Data JABAR</td><td>4 central markets + 22 public markets + 27 capitals</td></tr>
+          <tr><td>Hazards</td><td>Data JABAR</td><td>Landslide · earthquake · fault</td></tr>
+          <tr><td>Speed calibration</td><td>TomTom Routing API (truck)</td><td>20 routes · 5 Pantura sub-corridors</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:14px;color:var(--muted);font-family:var(--font-mono)">Transparently disclosed limitations: flood hazard not covered (excluded, weights renormalized), condition modifier defaulted to 1.0, and 17 regencies/cities estimated via areal weighting.</p>
+    </div>
+  </section>
+
+  <!-- ===== ANALYSIS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">04 / ANALYSIS</span>
+      <h2>Analysis</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>OD matrices were built for both stages (254 centers × 40 channels; 40 channels × 53 destinations), visualized as desire lines &amp; heatmaps. Flow was accumulated per OSM edge (line width ∝ log flow), composite scoring integrated 5 dimensions, and robustness was tested across 4 dimensions including a 1,000-sample Dirichlet Monte Carlo.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Spatial distribution of rice production centers (LQ-based) and supply-chain nodes (channels + destinations).">
+        <img src="assets/img/pangan/sentra.jpg" width="1800" height="1516" alt="Rice production centers distribution map" loading="lazy">
+      </div>
+      <figcaption>Figure 1. Spatial distribution of rice centers (Location Quotient) + supply-chain nodes.</figcaption>
+    </figure>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="OD desire lines: Stage 1 (centers→channels) + Stage 2 (channels→destinations). Doubly-constrained gravity.">
+          <img src="assets/img/pangan/desire_lines.jpg" width="1800" height="1510" alt="OD desire lines" loading="lazy">
+        </div>
+        <figcaption>Figure 2. Combined Stage 1 &amp; 2 OD desire lines.</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Top-30 OD pairs by largest flow, hub-and-spoke pattern around Pantura channels.">
+          <img src="assets/img/pangan/top30_od.jpg" width="1800" height="1510" alt="Top 30 OD pairs" loading="lazy">
+        </div>
+        <figcaption>Figure 3. Top-30 OD pairs by flow.</figcaption>
+      </figure>
+    </div>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Stage 1 OD matrix heatmap, distribution of unhulled rice from regencies to 40 channels.">
+          <img src="assets/img/pangan/od_stage1.png" width="1700" height="1486" alt="Stage 1 OD heatmap" loading="lazy">
+        </div>
+        <figcaption>Figure 4. Stage 1 OD matrix heatmap.</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Stage 2 OD matrix heatmap, distribution of milled rice from 40 channels to 53 destinations.">
+          <img src="assets/img/pangan/od_stage2.png" width="1700" height="832" alt="Stage 2 OD heatmap" loading="lazy">
+        </div>
+        <figcaption>Figure 5. Stage 2 OD matrix heatmap.</figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Stage 1 channel-inflow comparison: shortest-path (red) vs singly-gravity (blue) vs doubly-gravity (green). Doubly produces a realistic capacity-proportional distribution.">
+        <img src="assets/img/pangan/channel_inflow.png" width="1700" height="1079" alt="Channel inflow comparison across 3 models" loading="lazy">
+      </div>
+      <figcaption>Figure 6. Channel-inflow comparison across the 3 flow-assignment models.</figcaption>
+    </figure>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Accumulated rice flow over the West Java OSM road network (doubly-constrained gravity). Line width ∝ log(flow).">
+        <img src="assets/img/pangan/network_flow.jpg" width="1800" height="1516" alt="Rice flow over the road network" loading="lazy">
+      </div>
+      <figcaption>Figure 7. Rice flow over the West Java OSM road network (total Stage 1+2 ≈ 3.3 million tons).</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===== RESULTS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">05 / RESULTS</span>
+      <h2>Results</h2>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="v">156.7</div><div class="k">Pantura composite score (#1)</div></div>
+      <div class="stat"><div class="v">55.8%</div><div class="k">Flow absorbed by 4 central markets</div></div>
+      <div class="stat"><div class="v">ρ≥0.999</div><div class="k">Spearman across all robustness tests</div></div>
+      <div class="stat"><div class="v">40</div><div class="k">Stable-core segments (≥95% MC)</div></div>
+    </div>
+
+    <div class="cs-prose reveal" style="margin-top:36px">
+      <ul>
+        <li><strong>Pantura West Java = priority road #1</strong> (composite score 156.72), consistently at the top across <em>all</em> model variants &amp; parameters. The backbone of West Java&#x2019;s rice logistics (Karawang–Subang–Indramayu–Cirebon).</li>
+        <li><strong>Top-10 includes nationally strategic corridors:</strong> Pantura WJ, Puncak Highway (Bogor–Cianjur), Soekarno-Hatta (Bandung), Jakarta–Cikampek Toll, Padalarang–Cileunyi Toll, and the new finding Patrol–Haurgeulis–Bantarwaru Road (the Indramayu inland corridor).</li>
+        <li><strong>Doubly-gravity is the most realistic.</strong> Shortest-path produces unrealistic concentration (MRMP Subang 352k tons despite a 120 tons/day capacity); doubly-gravity is capacity-proportional (6 Sub-Divre @166k tons).</li>
+        <li><strong>Destination concentration.</strong> 4 central markets absorb 55.8% of total milled-rice flow; Pasar Induk Cibitung alone takes 25.0% (292,628 tons), a wholesale-dominated structure typical of Indonesia&#x2019;s rice supply chain.</li>
+      </ul>
+
+      <table class="dtable">
+        <thead><tr><th>Robustness dimension</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>TomTom calibration</td><td>4/5 sub-corridors within ±10% tolerance</td></tr>
+          <tr><td>α sensitivity</td><td>ρ = 1.00; top-10 overlap 100%</td></tr>
+          <tr><td>3 flow models</td><td>ρ ≥ 0.9997</td></tr>
+          <tr><td>Monte Carlo weights</td><td>ρ = 0.9986; <strong>40 stable-core segments</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Top-50 most critical roads for West Java's rice supply chain (composite score).">
+          <img src="assets/img/pangan/prioritas_top50.jpg" width="1800" height="1333" alt="Top-50 priority roads map" loading="lazy">
+        </div>
+        <figcaption>Figure 8. Priority road map (Top-50).</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Top-50 agreement between shortest-path & doubly-gravity. Green = robust in both models.">
+          <img src="assets/img/pangan/agreement.jpg" width="1800" height="1512" alt="Model agreement map" loading="lazy">
+        </div>
+        <figcaption>Figure 9. Top-50 agreement between models.</figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Stable core: 40 segments consistently in the top-50 across ≥95% of Monte Carlo iterations, CONFIRMED PRIORITY.">
+        <img src="assets/img/pangan/stable_core.jpg" width="1800" height="1516" alt="Stable core of 40 segments map" loading="lazy">
+      </div>
+      <figcaption>Figure 10. Stable core: 40 priority segments with ≥95% statistical confidence.</figcaption>
+    </figure>
+
+    <div class="cs-prose reveal">
+      <p><strong>Methodological contribution:</strong> the first application of a doubly-constrained gravity model with Furness balancing for Indonesia&#x2019;s rice supply chain, empirically validated with TomTom, with an explicit OD matrix as a transport-planning reference. The pipeline (~3,500 lines of Python, 14 scripts) is available as a <em>reproducible research artifact</em>.</p>
+      <p><strong>Conclusion:</strong> Pantura West Java is the single most critical artery for the province&#x2019;s rice supply chain, holding the #1 composite priority score (156.72) across every model variant and parameter setting. The ranking is highly robust (Spearman ρ ≥ 0.9987 across all tests), and a stable core of 40 segments stays within the top-50 in ≥95% of Monte Carlo iterations, a statistically confident set of priority roads. Flow concentrates heavily on four central markets (55.8% of milled-rice volume), reflecting a wholesale-dominated supply structure.</p>
+    </div>
+  </section>
+
+  <!-- ===== REFERENCES ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">06 / REFERENCES</span>
+      <h2>References</h2>
+    </div>
+    <div class="cs-refs full reveal">
+      <p>Wilson, A. G. (1971). A family of spatial interaction models, and associated developments. <em>Environment and Planning A</em>, 3(1), 1–32.</p>
+      <div class="cs-refs__sub">Primary data sources</div>
+      <p>BPS Jawa Barat (2024). Rice production statistics (provincial &amp; regency level).</p>
+      <p>BPIW, Ministry of Public Works &amp; Housing, Rice Field Map &amp; administrative boundaries (via Geoportal BIG).</p>
+      <p>OpenStreetMap contributors, West Java road network (via OSMnx / Overpass API).</p>
+      <p>TomTom, Points of Interest &amp; Routing API (truck profile, real-time traffic).</p>
+      <p>Data JABAR (Open Data Jawa Barat), landslide, earthquake &amp; fault hazards; public &amp; central markets.</p>
+      <p>West Java Agriculture Agency (Dinas Pertanian Jabar), existing rice-milling units (RMU).</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== PAGER ===== -->
+<nav class="cs-pager">
+  <a href="project-transit.html"><span class="label">Previous project</span><span class="t">← Transit Accessibility in DKI Jakarta</span></a>
+  <a href="project-mbr.html"><span class="label">Next project</span><span class="t">Satellite MBR Proxy in DKI Jakarta →</span></a>
+</nav>
+
+<footer class="foot">
+  <span>© <span data-year>2026</span> Arnan Muflihadi</span>
+  <span>Urban Planner &amp; GIS Analyst</span>
+</footer>
+
+<script src="assets/js/main.js?v=4"></script>
+</body>
+</html>

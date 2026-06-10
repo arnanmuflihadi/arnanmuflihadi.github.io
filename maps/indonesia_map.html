@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4414dd4545a7d0d5b3fb95f6d52217f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style="position:fixed;bottom:30px;left:30px;z-index:1000;background:white;padding:12px;border-radius:8px;border:1px solid #ccc;font-size:12px;line-height:1.8"><b>CBD by Indonesian Province</b><br><i style="font-size:10px">Size ∝ POI count</i><br><br><span style="background:#e41a1c;display:inline-block;width:12px;height:12px;border-radius:50%;"></span> Jawa<br><span style="background:#377eb8;display:inline-block;width:12px;height:12px;border-radius:50%;"></span> Sumatera<br><span style="background:#4daf4a;display:inline-block;width:12px;height:12px;border-radius:50%;"></span> Kalimantan<br><span style="background:#984ea3;display:inline-block;width:12px;height:12px;border-radius:50%;"></span> Sulawesi<br><span style="background:#ff7f00;display:inline-block;width:12px;height:12px;border-radius:50%;"></span> Bali & Nusa<br><span style="background:#a65628;display:inline-block;width:12px;height:12px;border-radius:50%;"></span> Maluku<br><span style="background:#f781bf;display:inline-block;width:12px;height:12px;border-radius:50%;"></span> Papua<br></div>
+    
+            <div class="folium-map" id="map_4414dd4545a7d0d5b3fb95f6d52217f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4414dd4545a7d0d5b3fb95f6d52217f9 = L.map(
+                "map_4414dd4545a7d0d5b3fb95f6d52217f9",
+                {
+                    center: [-2.5, 118.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_38851d497f5d3959764700f518a1d534 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_38851d497f5d3959764700f518a1d534.addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            var circle_marker_df5b8cc62b7c67ab0c12647b99e7994c = L.circleMarker(
+                [-6.18462, 106.81394],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e41a1c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.99999999728272, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_df5b8cc62b7c67ab0c12647b99e7994c.bindTooltip(
+                `<div>
+                     <b>DKI Jakarta</b> (Jawa)<br>POI: 3,245 | Radius: 3,369 m<br>Density: 91.0 POI/km²<br>Koordinat: -6.18462, 106.81394
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea1f806df4bdd7cb851ae0f16a1bc0ce = L.circleMarker(
+                [-8.70343, 115.16896],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.090896430465992, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_ea1f806df4bdd7cb851ae0f16a1bc0ce.bindTooltip(
+                `<div>
+                     <b>Bali</b> (Bali & Nusa)<br>POI: 2,322 | Radius: 2,300 m<br>Density: 139.7 POI/km²<br>Koordinat: -8.70343, 115.16896
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8365d0c25862794747bdcaebbcbf5551 = L.circleMarker(
+                [-6.904, 107.61401],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e41a1c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.62813041274955, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_8365d0c25862794747bdcaebbcbf5551.bindTooltip(
+                `<div>
+                     <b>Jawa Barat</b> (Jawa)<br>POI: 1,355 | Radius: 1,739 m<br>Density: 142.7 POI/km²<br>Koordinat: -6.904, 107.61401
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d22981eb5b1e14a9912098325a01638e = L.circleMarker(
+                [-5.17887, 119.43577],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#984ea3", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.346186107289448, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_d22981eb5b1e14a9912098325a01638e.bindTooltip(
+                `<div>
+                     <b>Sulawesi Selatan</b> (Sulawesi)<br>POI: 845 | Radius: 1,065 m<br>Density: 237.2 POI/km²<br>Koordinat: -5.17887, 119.43577
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e288b00730edfdb68833bd1a8f8b38b = L.circleMarker(
+                [-8.58745, 116.11286],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.869971142824937, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_9e288b00730edfdb68833bd1a8f8b38b.bindTooltip(
+                `<div>
+                     <b>Nusa Tenggara Barat</b> (Bali & Nusa)<br>POI: 709 | Radius: 1,636 m<br>Density: 84.4 POI/km²<br>Koordinat: -8.58745, 116.11286
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d41c23c29e60ee0b89b72dfafe56f30 = L.circleMarker(
+                [-7.78882, 110.37213],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e41a1c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.32979108453074, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_4d41c23c29e60ee0b89b72dfafe56f30.bindTooltip(
+                `<div>
+                     <b>DI Yogyakarta</b> (Jawa)<br>POI: 581 | Radius: 966 m<br>Density: 198.1 POI/km²<br>Koordinat: -7.78882, 110.37213
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23b4cdd8d91815aedd129f957aa71f5b = L.circleMarker(
+                [0.4657, 101.37907],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.311051159330697, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_23b4cdd8d91815aedd129f957aa71f5b.bindTooltip(
+                `<div>
+                     <b>Riau</b> (Sumatera)<br>POI: 577 | Radius: 1,788 m<br>Density: 57.4 POI/km²<br>Koordinat: 0.4657, 101.37907
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e041962f8fb8bcbf876b4c6bb09755b = L.circleMarker(
+                [3.5883, 98.67511],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.71409412857786, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_5e041962f8fb8bcbf876b4c6bb09755b.bindTooltip(
+                `<div>
+                     <b>Sumatera Utara</b> (Sumatera)<br>POI: 463 | Radius: 1,194 m<br>Density: 103.4 POI/km²<br>Koordinat: 3.5883, 98.67511
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44c97fdfe00856c3a66afca37743caae = L.circleMarker(
+                [3.73897, 96.83428],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.262822283038302, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_44c97fdfe00856c3a66afca37743caae.bindTooltip(
+                `<div>
+                     <b>Aceh</b> (Sumatera)<br>POI: 392 | Radius: 309 m<br>Density: 1309.8 POI/km²<br>Koordinat: 3.73897, 96.83428
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e6052273b44ae1623e6f5d3340d0e71 = L.circleMarker(
+                [-7.97763, 112.60834],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e41a1c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.255899277041477, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_7e6052273b44ae1623e6f5d3340d0e71.bindTooltip(
+                `<div>
+                     <b>Jawa Timur</b> (Jawa)<br>POI: 391 | Radius: 1,115 m<br>Density: 100.2 POI/km²<br>Koordinat: -7.97763, 112.60834
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba4956750305fa63d4e0ea544ff45656 = L.circleMarker(
+                [-3.31943, 114.58858],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4daf4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.12817077418067, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_ba4956750305fa63d4e0ea544ff45656.bindTooltip(
+                `<div>
+                     <b>Kalimantan Selatan</b> (Kalimantan)<br>POI: 373 | Radius: 1,173 m<br>Density: 86.3 POI/km²<br>Koordinat: -3.31943, 114.58858
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fdc5718540f881e13c1742efb9f1020 = L.circleMarker(
+                [-5.41825, 105.26019],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.704452508438829, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_9fdc5718540f881e13c1742efb9f1020.bindTooltip(
+                `<div>
+                     <b>Lampung</b> (Sumatera)<br>POI: 319 | Radius: 882 m<br>Density: 130.7 POI/km²<br>Koordinat: -5.41825, 105.26019
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0fab0f241041501992722825e93784b = L.circleMarker(
+                [1.14391, 104.00926],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.520010655788068, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_f0fab0f241041501992722825e93784b.bindTooltip(
+                `<div>
+                     <b>Kepulauan Riau</b> (Sumatera)<br>POI: 298 | Radius: 905 m<br>Density: 115.9 POI/km²<br>Koordinat: 1.14391, 104.00926
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2542afc704968c6615f214ef53a83c3 = L.circleMarker(
+                [1.48611, 124.84395],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#984ea3", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.232706851123297, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_a2542afc704968c6615f214ef53a83c3.bindTooltip(
+                `<div>
+                     <b>Sulawesi Utara</b> (Sulawesi)<br>POI: 268 | Radius: 1,301 m<br>Density: 50.4 POI/km²<br>Koordinat: 1.48611, 124.84395
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8150e274cbfd0da567c8ab971aaac6f0 = L.circleMarker(
+                [-2.98179, 104.74905],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.055316689974557, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_8150e274cbfd0da567c8ab971aaac6f0.bindTooltip(
+                `<div>
+                     <b>Sumatera Selatan</b> (Sumatera)<br>POI: 251 | Radius: 817 m<br>Density: 119.7 POI/km²<br>Koordinat: -2.98179, 104.74905
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e7c03a3793f147233168451cd0c6a5f = L.circleMarker(
+                [-7.56629, 110.82829],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e41a1c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.877070612233268, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_4e7c03a3793f147233168451cd0c6a5f.bindTooltip(
+                `<div>
+                     <b>Jawa Tengah</b> (Jawa)<br>POI: 235 | Radius: 688 m<br>Density: 158.0 POI/km²<br>Koordinat: -7.56629, 110.82829
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eacb2d00f49dc40a21b5497703edc1f6 = L.circleMarker(
+                [-0.8787, 131.26662],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f781bf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.673926675888811, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_eacb2d00f49dc40a21b5497703edc1f6.bindTooltip(
+                `<div>
+                     <b>Papua Barat Daya</b> (Papua)<br>POI: 218 | Radius: 1,978 m<br>Density: 17.7 POI/km²<br>Koordinat: -0.8787, 131.26662
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07cec5ceaabfc270ef4ee5db0aa23264 = L.circleMarker(
+                [-0.23244, 100.62412],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.533895402387353, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_07cec5ceaabfc270ef4ee5db0aa23264.bindTooltip(
+                `<div>
+                     <b>Sumatera Barat</b> (Sumatera)<br>POI: 207 | Radius: 1,265 m<br>Density: 41.2 POI/km²<br>Koordinat: -0.23244, 100.62412
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffe28b55372fe9751ce135c85491468e = L.circleMarker(
+                [-8.49312, 119.87825],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.141027954621215, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_ffe28b55372fe9751ce135c85491468e.bindTooltip(
+                `<div>
+                     <b>Nusa Tenggara Timur</b> (Bali & Nusa)<br>POI: 179 | Radius: 540 m<br>Density: 195.7 POI/km²<br>Koordinat: -8.49312, 119.87825
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5ed72e96441370987cb4503d3c0491e = L.circleMarker(
+                [-4.09499, 138.94255],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f781bf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.64560952942599, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_b5ed72e96441370987cb4503d3c0491e.bindTooltip(
+                `<div>
+                     <b>Papua Pegunungan</b> (Papua)<br>POI: 149 | Radius: 759 m<br>Density: 82.4 POI/km²<br>Koordinat: -4.09499, 138.94255
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6137cd5004de71a8d5011705b7be66eb = L.circleMarker(
+                [-0.06619, 109.35335],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4daf4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.515748991631241, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_6137cd5004de71a8d5011705b7be66eb.bindTooltip(
+                `<div>
+                     <b>Kalimantan Barat</b> (Kalimantan)<br>POI: 142 | Radius: 1,579 m<br>Density: 18.1 POI/km²<br>Koordinat: -0.06619, 109.35335
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38307df35281c4af44a7e622e365b370 = L.circleMarker(
+                [-6.29968, 106.68665],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e41a1c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.379369483743105, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_38307df35281c4af44a7e622e365b370.bindTooltip(
+                `<div>
+                     <b>Banten</b> (Jawa)<br>POI: 135 | Radius: 588 m<br>Density: 124.2 POI/km²<br>Koordinat: -6.29968, 106.68665
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9a7bcef45429915945f0bd578fe7e97 = L.circleMarker(
+                [-2.92966, 132.30176],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f781bf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.193323412773248, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_b9a7bcef45429915945f0bd578fe7e97.bindTooltip(
+                `<div>
+                     <b>Papua Barat</b> (Papua)<br>POI: 126 | Radius: 725 m<br>Density: 76.2 POI/km²<br>Koordinat: -2.92966, 132.30176
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a6ff9f1b3c93b16a1b1a58fdb0169d4 = L.circleMarker(
+                [-0.90069, 119.87175],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#984ea3", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.084181095826168, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_1a6ff9f1b3c93b16a1b1a58fdb0169d4.bindTooltip(
+                `<div>
+                     <b>Sulawesi Tengah</b> (Sulawesi)<br>POI: 121 | Radius: 1,340 m<br>Density: 21.5 POI/km²<br>Koordinat: -0.90069, 119.87175
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_510739dcb22272511fbae5a3064a8420 = L.circleMarker(
+                [-3.6943, 128.18396],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a65628", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.061816538433806, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_510739dcb22272511fbae5a3064a8420.bindTooltip(
+                `<div>
+                     <b>Maluku</b> (Maluku)<br>POI: 120 | Radius: 648 m<br>Density: 91.0 POI/km²<br>Koordinat: -3.6943, 128.18396
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c562e4cb3f7a804fb839444386392df6 = L.circleMarker(
+                [-3.98627, 122.5129],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#984ea3", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.993596761636432, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_c562e4cb3f7a804fb839444386392df6.bindTooltip(
+                `<div>
+                     <b>Sulawesi Tenggara</b> (Sulawesi)<br>POI: 117 | Radius: 1,455 m<br>Density: 17.6 POI/km²<br>Koordinat: -3.98627, 122.5129
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d43207c198e06714276da5d32f2f2425 = L.circleMarker(
+                [-3.79595, 102.26095],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.993596761636432, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_d43207c198e06714276da5d32f2f2425.bindTooltip(
+                `<div>
+                     <b>Bengkulu</b> (Sumatera)<br>POI: 117 | Radius: 990 m<br>Density: 38.0 POI/km²<br>Koordinat: -3.79595, 102.26095
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da907ddcc4ef06bfbf7a4ef04e3b5098 = L.circleMarker(
+                [-0.49948, 117.14878],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4daf4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.597657206834295, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_da907ddcc4ef06bfbf7a4ef04e3b5098.bindTooltip(
+                `<div>
+                     <b>Kalimantan Timur</b> (Kalimantan)<br>POI: 101 | Radius: 626 m<br>Density: 82.1 POI/km²<br>Koordinat: -0.49948, 117.14878
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_812b089df8f3fadc83b856608f857c36 = L.circleMarker(
+                [-1.59768, 103.61971],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.244891607105174, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_812b089df8f3fadc83b856608f857c36.bindTooltip(
+                `<div>
+                     <b>Jambi</b> (Sumatera)<br>POI: 61 | Radius: 759 m<br>Density: 33.7 POI/km²<br>Koordinat: -1.59768, 103.61971
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_682eacbfbdc1ede2b590af57b2c30420 = L.circleMarker(
+                [-2.54009, 112.95605],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4daf4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.605477725250962, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_682eacbfbdc1ede2b590af57b2c30420.bindTooltip(
+                `<div>
+                     <b>Kalimantan Tengah</b> (Kalimantan)<br>POI: 48 | Radius: 734 m<br>Density: 28.3 POI/km²<br>Koordinat: -2.54009, 112.95605
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_197cc6a650ca99333dbc562a0efc4b2d = L.circleMarker(
+                [-5.53845, 138.13699],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f781bf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.492241408122867, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_197cc6a650ca99333dbc562a0efc4b2d.bindTooltip(
+                `<div>
+                     <b>Papua Selatan</b> (Papua)<br>POI: 46 | Radius: 410 m<br>Density: 87.0 POI/km²<br>Koordinat: -5.53845, 138.13699
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b92c658f751c77e98eeb8f3623825e3 = L.circleMarker(
+                [0.53674, 123.06071],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#984ea3", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.054030956648313, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_7b92c658f751c77e98eeb8f3623825e3.bindTooltip(
+                `<div>
+                     <b>Gorontalo</b> (Sulawesi)<br>POI: 39 | Radius: 465 m<br>Density: 57.4 POI/km²<br>Koordinat: 0.53674, 123.06071
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f06f05b7291ee048f78dfe5a96f0cb5 = L.circleMarker(
+                [-2.56668, 140.51627],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f781bf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.054030956648313, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_9f06f05b7291ee048f78dfe5a96f0cb5.bindTooltip(
+                `<div>
+                     <b>Papua</b> (Papua)<br>POI: 39 | Radius: 426 m<br>Density: 68.3 POI/km²<br>Koordinat: -2.56668, 140.51627
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2b26ba8eed4e11e17e27c9632899fe0 = L.circleMarker(
+                [3.60412, 116.90772],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4daf4a", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.180198726190507, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_f2b26ba8eed4e11e17e27c9632899fe0.bindTooltip(
+                `<div>
+                     <b>Kalimantan Utara</b> (Kalimantan)<br>POI: 28 | Radius: 507 m<br>Density: 34.6 POI/km²<br>Koordinat: 3.60412, 116.90772
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a7eb0c1f12c07357064cb050ad1747e = L.circleMarker(
+                [-2.97177, 106.47487],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#377eb8", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4295413973994, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_6a7eb0c1f12c07357064cb050ad1747e.bindTooltip(
+                `<div>
+                     <b>Kepulauan Bangka Belitung</b> (Sumatera)<br>POI: 21 | Radius: 199 m<br>Density: 168.8 POI/km²<br>Koordinat: -2.97177, 106.47487
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_963fc5e1b1be8a0afa1ad37e5ab95593 = L.circleMarker(
+                [-2.67025, 118.89063],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#984ea3", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.03117894597316, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_963fc5e1b1be8a0afa1ad37e5ab95593.bindTooltip(
+                `<div>
+                     <b>Sulawesi Barat</b> (Sulawesi)<br>POI: 18 | Radius: 356 m<br>Density: 45.2 POI/km²<br>Koordinat: -2.67025, 118.89063
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1204d6d969e336b09f0d142a341e7ae8 = L.circleMarker(
+                [-3.36071, 135.49845],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f781bf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 1}
+            ).addTo(map_4414dd4545a7d0d5b3fb95f6d52217f9);
+        
+    
+            circle_marker_1204d6d969e336b09f0d142a341e7ae8.bindTooltip(
+                `<div>
+                     <b>Papua Tengah</b> (Papua)<br>POI: 12 | Radius: 356 m<br>Density: 30.2 POI/km²<br>Koordinat: -3.36071, 135.49845
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

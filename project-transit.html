@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transit Accessibility in DKI Jakarta · Arnan Muflihadi</title>
+<meta name="description" content="Transit accessibility analysis for DKI Jakarta using an AHP-weighted Cumulative Opportunities Indicator, r5py routing, and Getis-Ord Gi*.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__brand"><span class="dot"></span>ARNAN&nbsp;M.</a>
+  <div class="nav__links">
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="contact.html">Contact</a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" stroke-linecap="round"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="cs-hero wrap">
+  <div class="topo cshero__topo" aria-hidden="true"></div>
+  <a href="portfolio.html" class="back">← Back to projects</a>
+  <span class="label reveal">Case Study 01 · Transport Planning</span>
+  <h1 class="reveal">Transit Accessibility in DKI Jakarta</h1>
+  <p class="lede reveal">How evenly can DKI Jakarta residents reach 27 categories of essential urban facilities using only public transit within 45 minutes, and how large is the contribution of the Mikrotrans feeder network?</p>
+  <dl class="cs-meta reveal">
+    <div><dt>Study area</dt><dd>DKI Jakarta · 261 urban villages · 2,713 RW</dd></div>
+    <div><dt>Methods</dt><dd>COI · AHP Saaty · Getis-Ord Gi*</dd></div>
+    <div><dt>Tools</dt><dd>Python · r5py · GeoPandas · esda</dd></div>
+  </dl>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== OBJECTIVE ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">01 / OBJECTIVE</span>
+      <h2>Objective</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>This study answers a spatial-planning &amp; transport question: <strong>how evenly can DKI Jakarta residents reach 27 categories of essential urban facilities</strong> using only public transit (BRT TransJakarta, MRT, LRT, KRL, Mikrotrans/Jaklingko feeders) within a 45-minute limit, and what is the marginal contribution of the Mikrotrans feeder network?</p>
+      <p>Four operational objectives:</p>
+      <ul>
+        <li>Measure the <strong>Transit Accessibility Index (TAI)</strong> per urban village based on AHP-weighted cumulative opportunities.</li>
+        <li>Compare two network scenarios to quantify the <em>marginal accessibility gain</em> (Δ-score) of feeder integration.</li>
+        <li>Identify statistically significant accessibility <em>hotspots</em> &amp; <em>cold spots</em>.</li>
+        <li>Provide a quantitative <em>evidence base</em> on spatial equity for spatial planning (RDTR/RTRW) and transit-oriented development.</li>
+      </ul>
+      <p>Policy audience: Bappeda DKI Jakarta, the Transportation Agency (Dishub), and PT TransJakarta.</p>
+    </div>
+  </section>
+
+  <!-- ===== METHODOLOGY ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">02 / METHOD</span>
+      <h2>Methodology</h2>
+    </div>
+    <div class="cs-prose">
+      <div class="flow reveal" aria-label="Project workflow from data to conclusions">
+        <div class="flow__track" aria-hidden="true"></div>
+        <div class="flow__step">
+          <div class="flow__node">01</div>
+          <div class="flow__card"><span class="flow__stage">Input</span><h4>Data assembly</h4><p>2,713 RW centroids with RDTR zoning, ≈18,500 destinations in 27 categories, the OSM street network, and GTFS feeds for both network scenarios.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">02</div>
+          <div class="flow__card"><span class="flow__stage">Prepare</span><h4>Origins &amp; destinations</h4><p>All layers harmonized to one coordinate system (EPSG:4326); school levels classified from facility names with regex rules.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">03</div>
+          <div class="flow__card"><span class="flow__stage">Route</span><h4>Travel-time matrix</h4><p>r5py (R5) computes door-to-door transit + walking times for every RW–destination pair, departing Tuesday 07:00 within a 60-minute window.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">04</div>
+          <div class="flow__card"><span class="flow__stage">Score</span><h4>AHP-weighted accessibility</h4><p>Destinations reachable within 45 minutes are weighted by AHP priorities, normalized 0–100, and averaged from RW up to 261 urban villages.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">05</div>
+          <div class="flow__card"><span class="flow__stage">Compare</span><h4>Scenario A vs Scenario B</h4><p>The same scoring runs on both networks; Δ = B − A isolates the marginal contribution of the Mikrotrans feeder.</p></div>
+        </div>
+        <div class="flow__step">
+          <div class="flow__node">06</div>
+          <div class="flow__card"><span class="flow__stage">Test</span><h4>Clusters &amp; sensitivity</h4><p>Getis-Ord Gi* locates statistically significant hot and cold spots; Spearman tests across 30/45/60-minute thresholds check rank stability.</p></div>
+        </div>
+        <div class="flow__step flow__step--end">
+          <div class="flow__node">07</div>
+          <div class="flow__card"><span class="flow__stage">Conclusion</span><h4>Findings &amp; evidence base</h4><p>A 57× center–periphery gap; Mikrotrans lifts scores +24.6% but unevenly; the ranking is robust to the threshold choice (r = 1.00).</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-prose reveal">
+      <p><strong>Conceptual framework.</strong> The study adopts <em>place-based accessibility</em> (Geurs &amp; van Wee, 2004), which decomposes accessibility into four components: land use (where opportunities are located), transportation (how the network connects them), temporal (when service actually runs), and individual (who is traveling). The first three are modeled explicitly; the fourth is held constant as an average adult traveler. Among the four families of accessibility metrics, the cumulative opportunities measure was chosen over gravity-decay and utility-based alternatives because it answers the question policymakers actually ask, &#x201C;how many facilities can a resident reach within 45 minutes?&#x201D;, and because every assumption behind it can be audited.</p>
+      <p><strong>Origins and spatial units.</strong> The origin set is the 2,713 RW centroids, the smallest administrative unit with reliable boundaries in Jakarta. Scoring at RW level and then averaging up to the 261 urban villages reduces the Modifiable Areal Unit Problem (MAUP): each village score is built from many small samples instead of one arbitrary point. Every centroid also carries its RDTR zoning attribute from a spatial overlay, so accessibility can later be read against land-use designations.</p>
+      <p><strong>Destinations and AHP weighting.</strong> A hospital does not matter the same as an ATM, so the 27 destination categories are weighted with the Analytic Hierarchy Process. Categories are compared pairwise on Saaty&#x2019;s 1–9 importance scale; the principal eigenvector of the comparison matrix yields the weights, and the Consistency Ratio checks that the judgments do not contradict each other. The result puts Health at 35.0%, Education 19.6%, Economy 11.2%, with smaller shares for social, public-service, financial, and strategic-transport categories; CR = 0.0578, below the 0.10 threshold, so the matrix is internally consistent. Rail stations were deliberately excluded as destinations: the network cannot also be the prize, or the score becomes circular.</p>
+      <p><strong>Routing model.</strong> Travel times come from r5py, the Python interface to Conveyal&#x2019;s R5, the reference engine for time-dependent multimodal routing on GTFS. The mode is TRANSIT + WALK, departing Tuesday 07:00 (a typical peak) with a 60-minute departure window. The window matters: R5 averages over many departure times, so a village&#x2019;s score does not hinge on luckily catching a single bus, the &#x201C;first-bus bias&#x201D; documented by Owen &amp; Levinson (2015). The matrix covers every RW × destination pair twice, once per network: <strong>Scenario A</strong> (149 backbone BRT routes + MRT + LRT + KRL) and <strong>Scenario B</strong> (the full 243-route Jaklingko network, including 94 Mikrotrans feeder routes, plus rail).</p>
+      <div class="formula">A(rw,k)     = category-k destinations reachable from the RW centroid within ≤ 45 min transit
+RawScore    = Σ [ A(rw,k) × w_AHP(k) ]   for k = 1..27
+Score(rw)   = (RawScore / S_max) × 100
+Δ(village)  = Score_B − Score_A</div>
+      <p><strong>Scoring and comparison.</strong> For each RW and category, the count of reachable destinations is multiplied by the category&#x2019;s AHP weight; the weighted sum is normalized 0–100 against the highest raw score observed anywhere, and RW scores are averaged to villages. Because both scenarios share identical origins, destinations, weights, and parameters, the difference Δ = B − A cleanly isolates what the feeder network adds.</p>
+      <p><strong>Spatial statistics and validation.</strong> Getis-Ord Gi* (k = 6 nearest neighbours, 999 permutations) tests where high or low scores cluster more strongly than chance would allow, separating real spatial structure from noise. The whole pipeline is then rerun at 30- and 60-minute thresholds, and Spearman rank correlations across the three runs test whether the village ranking, the part that drives policy, depends on the 45-minute choice. Each methodological component was cross-checked against the accessibility literature (Journal of Transport Geography; Transportation Research Part A) before being adopted.</p>
+    </div>
+  </section>
+
+  <!-- ===== DATA ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">03 / DATA</span>
+      <h2>Data Used</h2>
+    </div>
+    <div class="cs-prose full reveal">
+      <table class="dtable">
+        <thead><tr><th>Component</th><th>Detail</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Origin</td><td>2,713 RW centroids + RDTR zone overlay</td><td>BPS-DKI, DKI RDTR Regulation 2022</td></tr>
+          <tr><td>Destinations</td><td>27 categories (≈ 18,500 points)</td><td>Kemenkes, Dapodik, Pasar Jaya, Bank DKI, OSM, Kemenhub</td></tr>
+          <tr><td>Road network</td><td><code>dki_only.osm.pbf</code> (69 MB)</td><td>OpenStreetMap (Apr 2024)</td></tr>
+          <tr><td>Transit GTFS</td><td>Scenario A &amp; B (BRT, MRT, LRT, KRL, Mikrotrans)</td><td>TransJakarta, KAI Commuter, MRT-J, LRT-J</td></tr>
+          <tr><td>Routing engine</td><td>r5py 0.1.x (R5 multimodal)</td><td>Conway et al. (2018)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== ANALYSIS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">04 / ANALYSIS</span>
+      <h2>Analysis</h2>
+    </div>
+    <div class="cs-prose reveal">
+      <p>AHP-weighted cumulative-opportunity scoring normalized to 0–100, then aggregated from RW to urban village. The Scenario A vs B comparison isolates the marginal impact of Mikrotrans, Getis-Ord Gi* detects significant clusters, and a Spearman test across 30/45/60-minute thresholds verifies rank stability.</p>
+    </div>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Scenario A, backbone accessibility via BRT/MRT/LRT/KRL without Mikrotrans (45-min threshold, Tuesday 07:00 local time).">
+          <img src="assets/img/transit/skor_a.jpg" width="1800" height="1272" alt="Scenario A accessibility score map" loading="lazy">
+        </div>
+        <figcaption>Figure 1. Scenario A: backbone without Mikrotrans.</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Scenario B, full Jaklingko network (243 routes, including 94 Mikrotrans) + rail.">
+          <img src="assets/img/transit/skor_b.jpg" width="1800" height="1272" alt="Scenario B accessibility score map" loading="lazy">
+        </div>
+        <figcaption>Figure 2. Scenario B: full Jaklingko with Mikrotrans.</figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Δ-score (B − A): the marginal contribution of Mikrotrans per urban village. Darker green = largest gain.">
+        <img src="assets/img/transit/delta.jpg" width="1800" height="1272" alt="Map of Mikrotrans marginal impact" loading="lazy">
+      </div>
+      <figcaption>Figure 3. Marginal impact of the Mikrotrans feeder network on accessibility (Δ = B − A).</figcaption>
+    </figure>
+
+    <div class="fig-grid reveal">
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Qualitative accessibility classification per urban village (Scenario B).">
+          <img src="assets/img/transit/kategori.jpg" width="1559" height="1800" alt="Accessibility category map" loading="lazy">
+        </div>
+        <figcaption>Figure 4. Accessibility categories (Scenario B).</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Getis-Ord Gi* hotspots (KNN k=6, 999 permutations): only 3 villages identified as Hot Spot 95%.">
+          <img src="assets/img/transit/hotspot.jpg" width="1559" height="1800" alt="Getis-Ord hotspot map" loading="lazy">
+        </div>
+        <figcaption>Figure 5. Statistical hotspots (Getis-Ord Gi*, Scenario B).</figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__frame" data-zoom data-cap="Side-by-side comparison of Scenario A vs B.">
+        <img src="assets/img/transit/perbandingan.jpg" width="2000" height="1241" alt="Comparison of Scenario A and B" loading="lazy">
+      </div>
+      <figcaption>Figure 6. Side-by-side comparison of Scenario A vs B.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===== RESULTS ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">05 / RESULTS</span>
+      <h2>Results</h2>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="v">57×</div><div class="k">Center–periphery inequality ratio</div></div>
+      <div class="stat"><div class="v">+24.6%</div><div class="k">Average uplift from Mikrotrans</div></div>
+      <div class="stat"><div class="v">23</div><div class="k">Villages leaving "Very Low"</div></div>
+      <div class="stat"><div class="v">r=1.00</div><div class="k">Spearman sensitivity test</div></div>
+    </div>
+
+    <div class="cs-prose reveal" style="margin-top:36px">
+      <ul>
+        <li><strong>Extreme vertical inequality.</strong> The ratio of the highest score (Setia Budi 74.29) to the lowest (≈1.3) reaches <strong>57×</strong>. Central &amp; South Jakarta are 3–6× higher than North &amp; East Jakarta.</li>
+        <li><strong>Mikrotrans = a significant but concentrated lever.</strong> Average score rises <strong>+4.74 points (+24.6%)</strong>; 7 of the top 10 beneficiaries are in West Jakarta (Sukabumi Selatan +19.69). Mikrotrans works as a <em>capillary network</em> only where BRT/MRT corridors are already mature.</li>
+        <li><strong>Bottleneck = first/last-mile gap</strong> in the northern &amp; eastern peripheries (Cipayung, Cilincing, Penjaringan, Marunda), scores &lt; 10/100, effectively isolated.</li>
+        <li><strong>Exclusive hotspots.</strong> Only 3 statistically significant villages (the golden triangle Sudirman–Setia Budi–Mampang) → high accessibility is <em>enclave-based</em>.</li>
+        <li><strong>Robust results.</strong> Threshold sensitivity yields Spearman r = 1.00, ranks unchanged, only magnitudes.</li>
+      </ul>
+
+      <table class="dtable">
+        <thead><tr><th>Statistic (n=261)</th><th class="num">Score A</th><th class="num">Score B</th><th class="num">Δ</th></tr></thead>
+        <tbody>
+          <tr><td>Mean</td><td class="num">19.27</td><td class="num">24.01</td><td class="num"><strong>+4.74</strong></td></tr>
+          <tr><td>Median</td><td class="num">14.12</td><td class="num">20.96</td><td class="num">+4.04</td></tr>
+          <tr><td>Maximum</td><td class="num">69.82</td><td class="num">74.29</td><td class="num">+19.69</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Conclusion:</strong> even with the most complete transit network, DKI Jakarta&#x2019;s accessibility ceiling stays below optimum (max 74.29/100) and remains starkly uneven, high accessibility is concentrated in a few central enclaves, while the northern and eastern peripheries are effectively isolated within a 45-minute transit budget. The Mikrotrans feeder delivers a measurable but geographically biased accessibility gain, strongest where BRT/MRT corridors are already mature, and this pattern is statistically robust to the choice of travel-time threshold (Spearman r = 1.00).</p>
+    </div>
+  </section>
+
+  <!-- ===== REFERENCES ===== -->
+  <section class="cs-section">
+    <div class="cs-section__head reveal">
+      <span class="idx">06 / REFERENCES</span>
+      <h2>References</h2>
+    </div>
+    <div class="cs-refs full reveal">
+      <p>Anselin, L. (1995). Local Indicators of Spatial Association, LISA. <em>Geographical Analysis</em>, 27(2), 93–115.</p>
+      <p>Bhat, C., Handy, S., Kockelman, K., Mahmassani, H., Chen, Q., &amp; Weston, L. (2000). <em>Urban accessibility index: Literature review</em>. Texas Department of Transportation.</p>
+      <p>Borghetti, F., Cerean, S., Petrenj, B., &amp; Trucco, P. (2024). Accessibility Measures: A Review of Performance Indicators. <em>ISPRS International Journal of Geo-Information</em>, 13(12), 442.</p>
+      <p>Cervero, R. (2013). Linking urban transport and land use in developing countries. <em>Journal of Transport and Land Use</em>, 6(1), 7–24.</p>
+      <p>Conway, M. W., Byrd, A., &amp; van Eggermond, M. (2018). Accounting for uncertainty and variation in accessibility metrics for public transport sketch planning. <em>Journal of Transport and Land Use</em>, 11(1), 541–558.</p>
+      <p>El-Geneidy, A., Levinson, D., Diab, E., Boisjoly, G., Verbich, D., &amp; Loong, C. (2016). The cost of equity: Assessing transit accessibility and social disparity using total travel cost. <em>Transportation Research Part A</em>, 91, 302–316.</p>
+      <p>El-Geneidy, A., &amp; Levinson, D. (2022). Does accessibility require mobility? <em>Transport Reviews</em>, 42(3), 273–292.</p>
+      <p>Getis, A., &amp; Ord, J. K. (1992). The analysis of spatial association by use of distance statistics. <em>Geographical Analysis</em>, 24(3), 189–206.</p>
+      <p>Geurs, K. T., &amp; van Wee, B. (2004). Accessibility evaluation of land-use and transport strategies. <em>Journal of Transport Geography</em>, 12(2), 127–140.</p>
+      <p>Hansen, W. G. (1959). How accessibility shapes land use. <em>Journal of the American Institute of Planners</em>, 25(2), 73–76.</p>
+      <p>Karami, A. (2017). Utilization of the Analytical Hierarchy Process to determine the criteria for transport planning. <em>Transportation Research Part A</em>, 103, 1–10.</p>
+      <p>Kwan, M.-P., &amp; Weber, J. (2008). Scale and accessibility: Implications for the analysis of land use–travel interaction. <em>Journal of Transport Geography</em>, 16(2), 79–87.</p>
+      <p>Lucas, K., van Wee, B., &amp; Maat, K. (2016). A method to evaluate equitable accessibility. <em>Transportation</em>, 43(3), 473–490.</p>
+      <p>Owen, A., &amp; Levinson, D. (2015). Modeling the commute mode share of transit using continuous accessibility. <em>Journal of Transport Geography</em>, 47, 1–9.</p>
+      <p>Páez, A., Scott, D. M., &amp; Morency, C. (2012). Measuring accessibility: positive and normative implementations of various accessibility indicators. <em>Journal of Transport Geography</em>, 25, 141–153.</p>
+      <p>Pereira, R. H. M., Schwanen, T., &amp; Banister, D. (2017). Distributive justice and equity in transportation. <em>Transport Reviews</em>, 37(2), 170–191.</p>
+      <p>Pereira, R. H. M., Saraiva, M., Herszenhut, D., Braga, C. K. V., &amp; Conway, M. W. (2021). r5r: Rapid Realistic Routing on Multimodal Transport Networks with R5 in R. <em>Findings</em>, 21262.</p>
+      <p>Saaty, T. L. (1977). A scaling method for priorities in hierarchical structures. <em>Journal of Mathematical Psychology</em>, 15(3), 234–281.</p>
+      <p>Saaty, T. L. (1980). <em>The Analytic Hierarchy Process</em>. McGraw-Hill, New York.</p>
+      <p>Sharma, G., &amp; Patil, G. R. (2023). Urban spatial structure and equity dimensions of public transport accessibility. <em>Journal of Transport Geography</em>, 113, 103735.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== PAGER ===== -->
+<nav class="cs-pager">
+  <a href="portfolio.html"><span class="label">Index</span><span class="t">← All projects</span></a>
+  <a href="project-pangan.html"><span class="label">Next project</span><span class="t">Rice Supply Chain in West Java →</span></a>
+</nav>
+
+<footer class="foot">
+  <span>© <span data-year>2026</span> Arnan Muflihadi</span>
+  <span>Urban Planner &amp; GIS Analyst</span>
+</footer>
+
+<script src="assets/js/main.js?v=4"></script>
+</body>
+</html>
