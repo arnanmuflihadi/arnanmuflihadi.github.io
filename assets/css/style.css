@@ -337,6 +337,16 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .cs-prose li { position: relative; padding-left: 26px; margin-bottom: 12px; color: var(--ink-soft); }
 .cs-prose li::before { content: ""; position: absolute; left: 0; top: 11px; width: 8px; height: 8px; border: 1px solid var(--ink); transform: rotate(45deg); }
 
+/* detailed entry list (education, publications) */
+.entries { display: flex; flex-direction: column; }
+.entry { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.entry:first-child { padding-top: 0; }
+.entry:last-child { padding-bottom: 0; border-bottom: 0; }
+.entry__meta { display: block; font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.entry h3 { font-size: 19px; letter-spacing: -.01em; margin-bottom: 8px; }
+.entry p { font-size: 15.5px; color: var(--ink-soft); line-height: 1.65; }
+.entry p + p { margin-top: 10px; }
+
 /* references / bibliography */
 .cs-refs { max-width: 84ch; margin-left: auto; }
 .cs-refs.full { max-width: none; margin-left: 0; }
