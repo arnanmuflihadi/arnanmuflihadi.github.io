@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Penjelajah Data Transit · DKI Jakarta</title>
+<meta name="description" content="Peta interaktif data mentah analisis aksesibilitas transit DKI Jakarta — jaringan transit, batas wilayah, dan 27 kategori fasilitas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block" rel="stylesheet">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+/* ============================================================
+   MATERIAL 3 EXPRESSIVE · MONOCHROME
+   ============================================================ */
+:root{
+  --bg:#eceae8; --surface:#f7f6f4; --sc:#eceae7; --sc-high:#e4e1dd; --sc-highest:#dcd8d3;
+  --on:#1b1b1a; --on-var:#5b5a57; --outline:#bdbab5; --outline-soft:rgba(27,27,26,.10);
+  --primary:#1b1b1a; --on-primary:#f7f6f4; --inverse:#2f2e2c; --on-inverse:#f2efeb;
+  --scrim:rgba(0,0,0,.32);
+  --e1:0 1px 2px rgba(0,0,0,.08),0 1px 3px 1px rgba(0,0,0,.05);
+  --e2:0 1px 2px rgba(0,0,0,.10),0 2px 6px 2px rgba(0,0,0,.07);
+  --e3:0 4px 8px 3px rgba(0,0,0,.08),0 1px 3px rgba(0,0,0,.12);
+  --emph:cubic-bezier(.2,0,0,1); --emph-dec:cubic-bezier(.05,.7,.1,1); --spring:cubic-bezier(.34,1.4,.5,1);
+  --r-xs:8px; --r-s:14px; --r-m:20px; --r-l:28px; --r-xl:36px; --r-full:999px;
+}
+[data-theme="dark"]{
+  --bg:#121211; --surface:#1b1b19; --sc:#201f1d; --sc-high:#2a2926; --sc-highest:#343330;
+  --on:#e9e6e2; --on-var:#a9a59f; --outline:#4a4844; --outline-soft:rgba(233,230,226,.10);
+  --primary:#e9e6e2; --on-primary:#1b1b19; --inverse:#e9e6e2; --on-inverse:#2f2e2c;
+  --scrim:rgba(0,0,0,.55);
+  --e1:0 1px 3px rgba(0,0,0,.5); --e2:0 2px 8px rgba(0,0,0,.55); --e3:0 8px 24px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:"Roboto Flex","Roboto",system-ui,sans-serif;
+  background:var(--bg); color:var(--on); overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+  transition:background .5s var(--emph), color .5s var(--emph);
+}
+.ms{font-family:"Material Symbols Rounded";font-weight:500;font-style:normal;line-height:1;
+  letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;
+  direction:ltr;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';
+  -webkit-font-smoothing:antialiased;font-variation-settings:'FILL' 1,'wght' 500,'opsz' 24}
+#map{position:absolute;inset:0}
+.maplibregl-ctrl-attrib{font-size:9px;opacity:.6}
+.maplibregl-ctrl-bottom-right{margin-bottom:2px}
+
+/* ---- top app bar -------------------------------------------------------- */
+.appbar{
+  position:absolute;top:14px;left:14px;right:14px;z-index:6;
+  display:flex;align-items:center;gap:10px;
+  background:color-mix(in srgb,var(--surface) 86%,transparent);
+  backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);
+  border:1px solid var(--outline-soft);border-radius:var(--r-l);
+  padding:8px 10px;box-shadow:var(--e2);
+  transition:background .5s var(--emph);
+}
+.appbar__title{display:flex;flex-direction:column;line-height:1.15;margin-left:4px;min-width:0}
+.appbar__title b{font-size:15px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.appbar__title span{font-size:11px;color:var(--on-var);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.spacer{flex:1}
+.iconbtn{
+  appearance:none;border:0;cursor:pointer;flex:none;
+  width:44px;height:44px;border-radius:var(--r-full);
+  background:transparent;color:var(--on);
+  display:grid;place-items:center;
+  transition:background .25s var(--emph),transform .4s var(--spring),color .25s;
+}
+.iconbtn .ms{font-size:23px}
+.iconbtn:hover{background:var(--sc-high)}
+.iconbtn:active{transform:scale(.9)}
+.iconbtn.on{background:var(--primary);color:var(--on-primary)}
+
+/* ---- search ------------------------------------------------------------- */
+.search{position:relative;display:flex;align-items:center}
+.search input{
+  font-family:inherit;font-size:13.5px;color:var(--on);
+  width:0;padding:0;border:0;background:transparent;outline:none;
+  transition:width .42s var(--emph),padding .42s var(--emph);
+}
+.search.open input{width:min(34vw,230px);padding:0 6px 0 4px}
+.search input::placeholder{color:var(--on-var)}
+.search__results{
+  position:absolute;top:52px;right:0;width:min(78vw,320px);
+  background:var(--surface);border:1px solid var(--outline-soft);border-radius:var(--r-m);
+  box-shadow:var(--e3);overflow:hidden;display:none;max-height:50vh;overflow-y:auto;
+}
+.search__results.show{display:block}
+.search__results button{
+  width:100%;text-align:left;border:0;background:transparent;cursor:pointer;
+  font-family:inherit;color:var(--on);padding:11px 16px;font-size:13px;display:flex;gap:10px;align-items:center;
+}
+.search__results button:hover{background:var(--sc-high)}
+.search__results .ms{font-size:19px;color:var(--on-var)}
+.search__results small{display:block;color:var(--on-var);font-size:11px}
+
+/* ---- layers drawer ------------------------------------------------------ */
+.drawer{
+  position:absolute;top:74px;left:14px;bottom:14px;z-index:5;width:328px;max-width:calc(100vw - 28px);
+  background:color-mix(in srgb,var(--surface) 94%,transparent);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid var(--outline-soft);border-radius:var(--r-l);box-shadow:var(--e2);
+  display:flex;flex-direction:column;overflow:hidden;
+  transform-origin:top left;
+  transition:transform .5s var(--emph),opacity .4s var(--emph);
+}
+.drawer.hidden{transform:translateX(-22px) scale(.96);opacity:0;pointer-events:none}
+.drawer__head{padding:18px 20px 10px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
+.drawer__head h2{font-size:19px;font-weight:800;letter-spacing:-.02em}
+.drawer__head p{font-size:11.5px;color:var(--on-var);margin-top:3px;font-weight:500}
+.drawer__count{font-size:11px;font-weight:700;color:var(--on-primary);background:var(--primary);
+  padding:4px 11px;border-radius:var(--r-full);white-space:nowrap}
+.drawer__body{flex:1;overflow-y:auto;padding:6px 12px 16px}
+.drawer__body::-webkit-scrollbar{width:8px}
+.drawer__body::-webkit-scrollbar-thumb{background:var(--outline);border-radius:99px;border:2px solid transparent;background-clip:padding-box}
+
+/* base layer rows (transit / boundaries) */
+.baselist{display:flex;flex-direction:column;gap:6px;margin:4px 4px 12px}
+.row{
+  display:flex;align-items:center;gap:13px;cursor:pointer;user-select:none;
+  background:var(--sc);border:1px solid transparent;border-radius:var(--r-m);
+  padding:11px 14px;transition:background .25s var(--emph),border-color .25s;
+}
+.row:hover{background:var(--sc-high)}
+.row.on{background:var(--sc-high);border-color:var(--outline-soft)}
+.row__ic{width:38px;height:38px;border-radius:var(--r-s);background:var(--sc-highest);
+  display:grid;place-items:center;flex:none;transition:background .3s var(--emph),color .3s}
+.row__ic .ms{font-size:21px;color:var(--on-var)}
+.row.on .row__ic{background:var(--primary)}
+.row.on .row__ic .ms{color:var(--on-primary)}
+.row__tx{flex:1;min-width:0}
+.row__tx b{font-size:13.5px;font-weight:600;display:block}
+.row__tx span{font-size:11px;color:var(--on-var)}
+/* M3 switch */
+.sw{width:46px;height:28px;border-radius:var(--r-full);background:var(--sc-highest);
+  border:2px solid var(--outline);position:relative;flex:none;transition:background .3s var(--emph),border-color .3s}
+.sw::after{content:"";position:absolute;left:5px;top:50%;transform:translateY(-50%);
+  width:14px;height:14px;border-radius:50%;background:var(--outline);
+  transition:all .35s var(--spring)}
+.row.on .sw{background:var(--primary);border-color:var(--primary)}
+.row.on .sw::after{left:24px;width:18px;height:18px;background:var(--on-primary)}
+
+/* sector groups */
+.sector{margin:0 4px 8px;border-radius:var(--r-m);overflow:hidden;background:var(--sc)}
+.sector__head{display:flex;align-items:center;gap:11px;cursor:pointer;user-select:none;padding:11px 14px;transition:background .25s}
+.sector__head:hover{background:var(--sc-high)}
+.sector__head .ms.lead{font-size:20px;color:var(--on-var)}
+.sector__head .tx{flex:1;min-width:0}
+.sector__head b{font-size:13px;font-weight:700;display:block}
+.sector__head span{font-size:10.5px;color:var(--on-var)}
+.sector__head .chev{font-size:22px;color:var(--on-var);transition:transform .4s var(--emph)}
+.sector.open .sector__head .chev{transform:rotate(180deg)}
+.sector__all{font-size:10px;font-weight:700;color:var(--on);background:var(--sc-highest);
+  border:0;cursor:pointer;font-family:inherit;padding:5px 10px;border-radius:var(--r-full);transition:background .25s}
+.sector__all:hover{background:var(--outline)}
+.sector__list{max-height:0;overflow:hidden;transition:max-height .45s var(--emph)}
+.sector.open .sector__list{max-height:560px}
+.cat{display:flex;align-items:center;gap:11px;cursor:pointer;user-select:none;padding:8px 14px 8px 16px;transition:background .2s}
+.cat:hover{background:var(--sc-high)}
+.cat__ic{width:30px;height:30px;border-radius:var(--r-xs);background:var(--sc-highest);display:grid;place-items:center;flex:none;transition:background .3s,color .3s}
+.cat__ic .ms{font-size:17px;color:var(--on-var)}
+.cat.on .cat__ic{background:var(--primary)}
+.cat.on .cat__ic .ms{color:var(--on-primary)}
+.cat__tx{flex:1;min-width:0;font-size:12.5px;font-weight:500}
+.cat__n{font-size:10.5px;color:var(--on-var);font-variant-numeric:tabular-nums}
+.cat .dot{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--outline);flex:none;transition:all .3s var(--spring)}
+.cat.on .dot{background:var(--primary);border-color:var(--primary)}
+
+/* ---- legend ------------------------------------------------------------- */
+.legend{
+  position:absolute;left:14px;bottom:14px;z-index:4;
+  background:color-mix(in srgb,var(--surface) 90%,transparent);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--outline-soft);border-radius:var(--r-m);box-shadow:var(--e1);
+  padding:12px 15px;font-size:11px;color:var(--on-var);max-width:240px;left:356px;
+  transition:opacity .4s var(--emph),transform .4s var(--emph),left .5s var(--emph);
+}
+.legend.dim{opacity:0;transform:translateY(10px);pointer-events:none}
+.legend.docked{left:14px}
+.legend b{display:block;color:var(--on);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+.legend__row{display:flex;align-items:center;gap:9px;margin-top:6px}
+.legend__line{width:26px;height:0;flex:none}
+.drawer.hidden ~ .legend{left:14px}
+
+/* ---- fabs --------------------------------------------------------------- */
+.fabs{position:absolute;right:16px;bottom:18px;z-index:5;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.fab{
+  appearance:none;border:0;cursor:pointer;font-family:inherit;
+  height:52px;border-radius:var(--r-m);padding:0 18px;
+  background:var(--inverse);color:var(--on-inverse);
+  display:flex;align-items:center;gap:9px;font-size:13px;font-weight:700;
+  box-shadow:var(--e3);transition:transform .4s var(--spring),background .3s;
+}
+.fab.small{width:52px;padding:0;justify-content:center}
+.fab .ms{font-size:22px}
+.fab:hover{transform:translateY(-2px)}
+.fab:active{transform:scale(.94)}
+
+/* ---- detail card -------------------------------------------------------- */
+.detail{
+  position:absolute;right:16px;bottom:84px;z-index:7;width:300px;max-width:calc(100vw - 32px);
+  background:var(--surface);border:1px solid var(--outline-soft);border-radius:var(--r-l);
+  box-shadow:var(--e3);padding:18px 20px 20px;
+  transform:translateY(16px) scale(.96);opacity:0;pointer-events:none;
+  transition:transform .45s var(--spring),opacity .35s var(--emph);
+}
+.detail.show{transform:none;opacity:1;pointer-events:auto}
+.detail__top{display:flex;align-items:flex-start;gap:13px}
+.detail__ic{width:46px;height:46px;border-radius:var(--r-s);background:var(--primary);color:var(--on-primary);display:grid;place-items:center;flex:none}
+.detail__ic .ms{font-size:25px}
+.detail__cat{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--on-var)}
+.detail h3{font-size:16.5px;font-weight:700;letter-spacing:-.01em;margin-top:2px;line-height:1.25}
+.detail__meta{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.detail__meta div{display:flex;gap:10px;font-size:12.5px}
+.detail__meta dt{color:var(--on-var);width:74px;flex:none}
+.detail__meta dd{color:var(--on);font-weight:500}
+.detail__close{position:absolute;top:12px;right:12px}
+
+/* ---- about dialog ------------------------------------------------------- */
+.scrim{position:absolute;inset:0;z-index:9;background:var(--scrim);opacity:0;pointer-events:none;transition:opacity .35s var(--emph)}
+.scrim.show{opacity:1;pointer-events:auto}
+.dialog{
+  position:absolute;z-index:10;left:50%;top:50%;transform:translate(-50%,-46%) scale(.95);opacity:0;pointer-events:none;
+  width:min(680px,92vw);max-height:86vh;overflow:hidden;display:flex;flex-direction:column;
+  background:var(--surface);border-radius:var(--r-xl);box-shadow:var(--e3);
+  transition:transform .5s var(--spring),opacity .4s var(--emph);
+}
+.dialog.show{transform:translate(-50%,-50%);opacity:1;pointer-events:auto}
+.dialog__head{padding:24px 28px 12px;display:flex;align-items:flex-start;gap:14px}
+.dialog__head .ms.big{font-size:28px;color:var(--on)}
+.dialog__head h2{font-size:21px;font-weight:800;letter-spacing:-.02em}
+.dialog__head p{font-size:12.5px;color:var(--on-var);margin-top:4px;line-height:1.5}
+.dialog__body{overflow-y:auto;padding:6px 28px 26px}
+.dgroup{margin-top:18px}
+.dgroup>b{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--on-var);display:block;margin-bottom:9px}
+.ditem{display:flex;align-items:center;gap:12px;padding:9px 0;border-top:1px solid var(--outline-soft)}
+.ditem .ms{font-size:19px;color:var(--on-var);flex:none}
+.ditem .nm{flex:1;min-width:0}
+.ditem .nm b{font-size:13px;font-weight:600;display:block}
+.ditem .nm span{font-size:11px;color:var(--on-var)}
+.ditem .ct{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--on);white-space:nowrap}
+.ditem .ct.muted{color:var(--on-var);font-weight:500;font-size:10.5px}
+.badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:var(--r-full);letter-spacing:.04em}
+.badge.live{background:var(--primary);color:var(--on-primary)}
+.badge.off{background:var(--sc-highest);color:var(--on-var)}
+
+/* ---- toast / loader ----------------------------------------------------- */
+.loader{position:absolute;inset:0;z-index:20;display:grid;place-items:center;background:var(--bg);transition:opacity .6s var(--emph)}
+.loader.gone{opacity:0;pointer-events:none}
+.loader__inner{display:flex;flex-direction:column;align-items:center;gap:18px}
+.loader .ring{width:46px;height:46px;border-radius:50%;border:4px solid var(--outline-soft);border-top-color:var(--primary);animation:spin 1s linear infinite}
+.loader p{font-size:12.5px;color:var(--on-var);font-weight:600;letter-spacing:.02em}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* MapLibre popup -> Material */
+.maplibregl-popup-content{
+  background:var(--surface);color:var(--on);border-radius:var(--r-m);
+  box-shadow:var(--e3);padding:12px 15px;font-family:inherit;border:1px solid var(--outline-soft);
+}
+.maplibregl-popup-tip{display:none}
+.pop b{font-size:13px;font-weight:700}
+.pop span{font-size:11.5px;color:var(--on-var);display:block;margin-top:2px}
+
+@media (max-width:640px){
+  .appbar__title span{display:none}
+  .drawer{top:70px;width:calc(100vw - 28px)}
+  .legend{display:none}
+  .detail{left:16px;right:16px;width:auto}
+  .search.open input{width:42vw}
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader"><div class="loader__inner">
+  <div class="ring"></div><p>Memuat data mentah…</p>
+</div></div>
+
+<!-- APP BAR -->
+<header class="appbar">
+  <button class="iconbtn" id="btnMenu" aria-label="Layer"><span class="ms">layers</span></button>
+  <div class="appbar__title">
+    <b>Penjelajah Data Transit</b>
+    <span>DKI Jakarta · data mentah analisis aksesibilitas</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="search" id="search">
+    <input type="text" id="searchInput" placeholder="Cari kelurahan / fasilitas…" autocomplete="off">
+    <button class="iconbtn" id="btnSearch" aria-label="Cari"><span class="ms">search</span></button>
+    <div class="search__results" id="searchResults"></div>
+  </div>
+  <button class="iconbtn" id="btnTheme" aria-label="Tema"><span class="ms">dark_mode</span></button>
+  <button class="iconbtn" id="btnAbout" aria-label="Tentang data"><span class="ms">database</span></button>
+</header>
+
+<!-- DRAWER -->
+<aside class="drawer" id="drawer">
+  <div class="drawer__head">
+    <div>
+      <h2>Layer Peta</h2>
+      <p>Nyalakan layer data mentah</p>
+    </div>
+    <div class="drawer__count" id="count">0</div>
+  </div>
+  <div class="drawer__body">
+    <div class="baselist" id="baselist"></div>
+    <div id="sectors"></div>
+  </div>
+</aside>
+
+<!-- LEGEND -->
+<div class="legend" id="legend">
+  <b>Jaringan Transit</b>
+  <div class="legend__row"><span class="legend__line" style="border-top:3px solid var(--on)"></span> MRT</div>
+  <div class="legend__row"><span class="legend__line" style="border-top:2.5px dashed var(--on)"></span> KRL Commuter</div>
+  <div class="legend__row"><span class="legend__line" style="border-top:2px dotted var(--on)"></span> LRT</div>
+  <div class="legend__row"><span class="legend__line" style="border-top:1.5px solid var(--on-var)"></span> BRT / Mikrotrans</div>
+</div>
+
+<!-- DETAIL CARD -->
+<div class="detail" id="detail">
+  <button class="iconbtn detail__close" id="detailClose" aria-label="Tutup"><span class="ms">close</span></button>
+  <div class="detail__top">
+    <div class="detail__ic"><span class="ms" id="detailIcon">place</span></div>
+    <div><div class="detail__cat" id="detailCat">—</div><h3 id="detailName">—</h3></div>
+  </div>
+  <dl class="detail__meta" id="detailMeta"></dl>
+</div>
+
+<!-- FABS -->
+<div class="fabs">
+  <button class="fab small" id="btnReset" aria-label="Atur ulang tampilan"><span class="ms">filter_center_focus</span></button>
+  <button class="fab" id="btnFull"><span class="ms">open_in_full</span><span id="fullLbl">Layar penuh</span></button>
+</div>
+
+<!-- ABOUT DIALOG -->
+<div class="scrim" id="scrim"></div>
+<div class="dialog" id="dialog" role="dialog" aria-modal="true">
+  <div class="dialog__head">
+    <span class="ms big">database</span>
+    <div style="flex:1">
+      <h2>Data mentah yang digunakan</h2>
+      <p>Setiap berkas sumber dalam analisis aksesibilitas transit DKI Jakarta — boleh dijelajahi langsung di peta. Tidak ada skor yang ditampilkan; ini murni data masukan.</p>
+    </div>
+    <button class="iconbtn" id="dialogClose" aria-label="Tutup"><span class="ms">close</span></button>
+  </div>
+  <div class="dialog__body" id="dialogBody"></div>
+</div>
+
+<script>
+"use strict";
+const DATA = "data/transit/";
+
+/* ---- category → Material Symbol + label -------------------------------- */
+const ICON = {
+  rs:"local_hospital", pusk:"medical_services", apotek:"medication", klinik:"vaccines",
+  sd:"school", smp:"menu_book", sma_smk:"cast_for_education", tk_paud:"child_care", universitas:"workspace_premium",
+  cbd:"domain", pasar:"storefront", mall:"local_mall", umkm:"store", restaurant:"restaurant",
+  stasiun_ka_jj:"train", terminal:"directions_bus",
+  ibadah:"mosque", rptra:"park", olahraga:"sports_soccer", museum:"museum",
+  kantor:"account_balance", polisi:"local_police", kantor_pos:"local_post_office",
+  bank_dki:"account_balance_wallet", atm_bank_dki:"local_atm",
+  bandara:"flight", pelabuhan:"directions_boat"
+};
+const SECTORS = [
+  ["Kesehatan","health_and_safety",[["rs","Rumah Sakit"],["pusk","Puskesmas"],["apotek","Apotek"],["klinik","Klinik"]]],
+  ["Pendidikan","school",[["sd","SD"],["smp","SMP"],["sma_smk","SMA / SMK"],["tk_paud","TK / PAUD"],["universitas","Universitas"]]],
+  ["Ekonomi","payments",[["cbd","Perkantoran / CBD"],["pasar","Pasar"],["mall","Mall"],["umkm","UMKM"],["restaurant","Restoran"]]],
+  ["Transit Antarkota","commute",[["stasiun_ka_jj","Stasiun KA Jarak Jauh"],["terminal","Terminal Bus"]]],
+  ["Sosial & Budaya","diversity_3",[["ibadah","Rumah Ibadah"],["rptra","RPTRA"],["olahraga","Arena Olahraga"],["museum","Museum"]]],
+  ["Pelayanan Publik","corporate_fare",[["kantor","Kantor Pemerintahan"],["polisi","Polisi"],["kantor_pos","Kantor Pos"]]],
+  ["Keuangan","savings",[["bank_dki","Bank DKI"],["atm_bank_dki","ATM Bank DKI"]]],
+  ["Transportasi","commute",[["bandara","Bandara"],["pelabuhan","Pelabuhan"]]]
+];
+const CAT_LABEL = {}; SECTORS.forEach(s=>s[2].forEach(c=>CAT_LABEL[c[0]]=c[1]));
+const CAT_SECTOR = {}; SECTORS.forEach(s=>s[2].forEach(c=>CAT_SECTOR[c[0]]=s[0]));
+
+/* ---- theme -------------------------------------------------------------- */
+const params = new URLSearchParams(location.search);
+function initialTheme(){
+  if(params.get("theme")) return params.get("theme");
+  try{ const t=localStorage.getItem("theme"); if(t) return t; }catch(e){}
+  return matchMedia("(prefers-color-scheme: dark)").matches ? "dark":"light";
+}
+let theme = initialTheme();
+document.documentElement.setAttribute("data-theme",theme);
+function cssvar(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+function colors(){
+  return {
+    on:cssvar("--on"), onVar:cssvar("--on-var"), surface:cssvar("--surface"),
+    sc:cssvar("--sc-highest"), outline:cssvar("--outline"), primary:cssvar("--primary"),
+    onPrimary:cssvar("--on-primary")
+  };
+}
+
+/* ---- map ---------------------------------------------------------------- */
+const STYLE = {
+  light:"https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+  dark:"https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+};
+const HOME = {center:[106.8275,-6.205], zoom:10.4, pitch:0};
+const map = new maplibregl.Map({
+  container:"map", style:STYLE[theme],
+  center:HOME.center, zoom:HOME.zoom, attributionControl:false,
+  maxBounds:[[106.2,-6.7],[107.4,-5.7]]
+});
+map.addControl(new maplibregl.AttributionControl({compact:true}),"bottom-right");
+map.addControl(new maplibregl.NavigationControl({showCompass:false}),"bottom-right");
+
+let DATASETS = {};          // loaded geojson
+let activeCats = new Set();
+let baseState = {lines:true, stops:true, kelurahan:true, rw:false};
+
+/* ---- load data ---------------------------------------------------------- */
+async function loadAll(){
+  const names = ["kelurahan","rw_centroids","transit_lines","transit_stops","facilities"];
+  const res = await Promise.all(names.map(n=>fetch(DATA+n+".geojson").then(r=>r.json())));
+  names.forEach((n,i)=>DATASETS[n]=res[i]);
+  DATASETS.sources = await fetch(DATA+"data_sources.json").then(r=>r.json());
+  // count facilities per category
+  CAT_COUNT = {};
+  DATASETS.facilities.features.forEach(f=>{const c=f.properties.cat;CAT_COUNT[c]=(CAT_COUNT[c]||0)+1;});
+}
+let CAT_COUNT = {};
+
+/* ---- composite marker images (disc + glyph), per theme ------------------ */
+async function makeIcons(){
+  await document.fonts.load('500 36px "Material Symbols Rounded"');
+  await document.fonts.ready;
+  const c = colors(); const DPR = 2; const S = 44;
+  for(const cat in ICON){
+    const cv = document.createElement("canvas"); cv.width=cv.height=S*DPR;
+    const x = cv.getContext("2d"); x.scale(DPR,DPR);
+    const r = S/2;
+    x.beginPath(); x.arc(r,r,r-2,0,7); x.fillStyle=c.surface; x.fill();
+    x.lineWidth=1.5; x.strokeStyle=c.outline; x.stroke();
+    x.fillStyle=c.on; x.textAlign="center"; x.textBaseline="middle";
+    x.font='500 24px "Material Symbols Rounded"';
+    x.fillText(ICON[cat], r, r+1);
+    const id = "ic_"+cat;
+    if(map.hasImage(id)) map.removeImage(id);
+    map.addImage(id, x.getImageData(0,0,S*DPR,S*DPR), {pixelRatio:DPR});
+  }
+}
+
+/* ---- build all map layers (called on every style.load) ------------------ */
+function filteredFacilities(){
+  return {type:"FeatureCollection",
+    features: DATASETS.facilities.features.filter(f=>activeCats.has(f.properties.cat))};
+}
+async function buildLayers(){
+  const c = colors();
+  await makeIcons();
+
+  // sources
+  map.addSource("kel",{type:"geojson",data:DATASETS.kelurahan,generateId:true});
+  map.addSource("rw",{type:"geojson",data:DATASETS.rw_centroids});
+  map.addSource("lines",{type:"geojson",data:DATASETS.transit_lines});
+  map.addSource("stops",{type:"geojson",data:DATASETS.transit_stops});
+  map.addSource("fac",{type:"geojson",data:filteredFacilities(),cluster:true,clusterRadius:48,clusterMaxZoom:13});
+
+  // kelurahan
+  map.addLayer({id:"kel-fill",type:"fill",source:"kel",
+    paint:{"fill-color":c.on,"fill-opacity":["case",["boolean",["feature-state","hover"],false],0.10,0]}});
+  map.addLayer({id:"kel-line",type:"line",source:"kel",
+    paint:{"line-color":c.onVar,"line-width":["interpolate",["linear"],["zoom"],9,0.4,13,0.9],"line-opacity":0.55}});
+
+  // transit lines (per mode for distinct dash/width — monochrome)
+  map.addLayer({id:"ln-brt",type:"line",source:"lines",filter:["==",["get","mode"],"BRT"],
+    layout:{"line-cap":"round","line-join":"round"},
+    paint:{"line-color":c.onVar,"line-width":["interpolate",["linear"],["zoom"],10,1,14,2],"line-opacity":0.5}});
+  map.addLayer({id:"ln-lrt",type:"line",source:"lines",filter:["==",["get","mode"],"LRT"],
+    layout:{"line-cap":"round"},
+    paint:{"line-color":c.on,"line-width":2,"line-dasharray":[1,1.6],"line-opacity":0.85}});
+  map.addLayer({id:"ln-krl",type:"line",source:"lines",filter:["==",["get","mode"],"KRL"],
+    layout:{"line-cap":"butt"},
+    paint:{"line-color":c.on,"line-width":2.4,"line-dasharray":[2,1.4],"line-opacity":0.9}});
+  map.addLayer({id:"ln-mrt",type:"line",source:"lines",filter:["==",["get","mode"],"MRT"],
+    layout:{"line-cap":"round"},
+    paint:{"line-color":c.on,"line-width":3.4,"line-opacity":0.95}});
+
+  // stops
+  map.addLayer({id:"stops",type:"circle",source:"stops",
+    paint:{
+      "circle-radius":["match",["get","mode"],"MRT",4.4,"KRL",4,"LRT",3.6,2.3],
+      "circle-color":["match",["get","mode"],"BRT",c.surface,c.on],
+      "circle-stroke-color":["match",["get","mode"],"BRT",c.onVar,c.surface],
+      "circle-stroke-width":["match",["get","mode"],"BRT",1,1.4]
+    }});
+
+  // rw centroids
+  map.addLayer({id:"rw",type:"circle",source:"rw",
+    paint:{"circle-radius":["interpolate",["linear"],["zoom"],10,1.4,14,3.4],
+      "circle-color":c.onVar,"circle-opacity":0.5,"circle-stroke-color":c.surface,"circle-stroke-width":0.5}});
+
+  // facility clusters
+  map.addLayer({id:"clusters",type:"circle",source:"fac",filter:["has","point_count"],
+    paint:{
+      "circle-color":c.sc,
+      "circle-stroke-color":c.on,"circle-stroke-width":1.5,
+      "circle-radius":["step",["get","point_count"],15,25,19,100,24,500,30]
+    }});
+  map.addLayer({id:"cluster-count",type:"symbol",source:"fac",filter:["has","point_count"],
+    layout:{"text-field":["get","point_count_abbreviated"],
+      "text-font":["Open Sans Bold","Arial Unicode MS Bold"],"text-size":12},
+    paint:{"text-color":c.on}});
+  map.addLayer({id:"fac-pts",type:"symbol",source:"fac",filter:["!",["has","point_count"]],
+    layout:{"icon-image":["concat","ic_",["get","cat"]],"icon-size":0.5,
+      "icon-allow-overlap":false,"icon-padding":1}});
+
+  applyBase();
+  refreshFac();
+  bindMapEvents();
+}
+
+function applyBase(){
+  const v=(b)=>b?"visible":"none";
+  ["kel-fill","kel-line"].forEach(l=>map.setLayoutProperty(l,"visibility",v(baseState.kelurahan)));
+  ["ln-brt","ln-lrt","ln-krl","ln-mrt"].forEach(l=>map.setLayoutProperty(l,"visibility",v(baseState.lines)));
+  map.setLayoutProperty("stops","visibility",v(baseState.stops));
+  map.setLayoutProperty("rw","visibility",v(baseState.rw));
+}
+function refreshFac(){
+  if(map.getSource("fac")) map.getSource("fac").setData(filteredFacilities());
+  const n=[...activeCats].reduce((a,c)=>a+(CAT_COUNT[c]||0),0);
+  document.getElementById("count").textContent = n.toLocaleString("id-ID");
+  document.querySelectorAll("[data-cat]").forEach(el=>{
+    el.classList.toggle("on",activeCats.has(el.dataset.cat));
+  });
+}
+
+/* ---- map interactions --------------------------------------------------- */
+let hoveredKel=null;
+function bindMapEvents(){
+  map.on("click","clusters",e=>{
+    const id=e.features[0].properties.cluster_id;
+    map.getSource("fac").getClusterExpansionZoom(id).then(z=>{
+      map.easeTo({center:e.features[0].geometry.coordinates,zoom:z,duration:600});
+    });
+  });
+  map.on("click","fac-pts",e=>showDetail(e.features[0]));
+  ["clusters","fac-pts","stops","rw"].forEach(l=>{
+    map.on("mouseenter",l,()=>map.getCanvas().style.cursor="pointer");
+    map.on("mouseleave",l,()=>map.getCanvas().style.cursor="");
+  });
+  map.on("click","stops",e=>{
+    const p=e.features[0].properties;
+    new maplibregl.Popup({closeButton:false,offset:10})
+      .setLngLat(e.lngLat).setHTML(`<div class="pop"><b>${esc(p.name||"Halte")}</b><span>Halte ${esc(p.mode)}</span></div>`).addTo(map);
+  });
+  map.on("click","rw",e=>{
+    const p=e.features[0].properties;
+    new maplibregl.Popup({closeButton:false,offset:10}).setLngLat(e.lngLat)
+      .setHTML(`<div class="pop"><b>RW ${esc(p.rw)} · ${esc(p.kel)}</b><span>${esc(p.zona||"")}</span><span>Zona RDTR: ${esc(p.zona_kat||"-")}</span></div>`).addTo(map);
+  });
+  // kelurahan hover + click
+  map.on("mousemove","kel-fill",e=>{
+    if(e.features.length){
+      if(hoveredKel!==null) map.setFeatureState({source:"kel",id:hoveredKel},{hover:false});
+      hoveredKel=e.features[0].id;
+      map.setFeatureState({source:"kel",id:hoveredKel},{hover:true});
+    }
+  });
+  map.on("mouseleave","kel-fill",()=>{
+    if(hoveredKel!==null) map.setFeatureState({source:"kel",id:hoveredKel},{hover:false});
+    hoveredKel=null;
+  });
+  map.on("click","kel-fill",e=>{
+    const p=e.features[0].properties;
+    new maplibregl.Popup({closeButton:false,offset:6}).setLngLat(e.lngLat)
+      .setHTML(`<div class="pop"><b>${esc(cap(p.kel))}</b><span>Kec. ${esc(cap(p.kec))} · ${esc(cap(p.kota))}</span></div>`).addTo(map);
+  });
+}
+function esc(s){return (s==null?"":String(s)).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));}
+function cap(s){return s?String(s).toLowerCase().replace(/\b\w/g,m=>m.toUpperCase()):"";}
+
+function showDetail(f){
+  const p=f.properties;
+  document.getElementById("detailIcon").textContent=ICON[p.cat]||"place";
+  document.getElementById("detailCat").textContent=(CAT_SECTOR[p.cat]||"")+" · "+(CAT_LABEL[p.cat]||p.cat);
+  document.getElementById("detailName").textContent=p.name?cap(p.name):(CAT_LABEL[p.cat]||p.cat);
+  const meta=document.getElementById("detailMeta"); meta.innerHTML="";
+  const rows=[["Kategori",CAT_LABEL[p.cat]||p.cat],["Kelurahan",p.kel?cap(p.kel):"—"],["Kecamatan",p.kec?cap(p.kec):"—"]];
+  rows.forEach(([k,v])=>{const d=document.createElement("div");d.innerHTML=`<dt>${k}</dt><dd>${esc(v)}</dd>`;meta.appendChild(d);});
+  document.getElementById("detail").classList.add("show");
+  map.easeTo({center:f.geometry.coordinates,duration:600,offset:[-60,-40]});
+}
+document.getElementById("detailClose").onclick=()=>document.getElementById("detail").classList.remove("show");
+
+/* ---- drawer UI build ---------------------------------------------------- */
+function buildDrawer(){
+  const base=[
+    ["lines","Jaringan transit","509 rute · MRT/LRT/KRL/BRT","route"],
+    ["stops","Halte & stasiun","6.851 titik","pin_drop"],
+    ["kelurahan","Batas kelurahan","261 wilayah","map"],
+    ["rw","Centroid RW (origin)","2.713 titik · zona RDTR","scatter_plot"]
+  ];
+  const bl=document.getElementById("baselist");
+  base.forEach(([k,t,s,ic])=>{
+    const row=document.createElement("div");
+    row.className="row"+(baseState[k]?" on":"");
+    row.innerHTML=`<div class="row__ic"><span class="ms">${ic}</span></div>
+      <div class="row__tx"><b>${t}</b><span>${s}</span></div><div class="sw"></div>`;
+    row.onclick=()=>{baseState[k]=!baseState[k];row.classList.toggle("on",baseState[k]);applyBase();};
+    bl.appendChild(row);
+  });
+  const wrap=document.getElementById("sectors");
+  SECTORS.forEach((sec,i)=>{
+    const [name,ic,cats]=sec;
+    const total=cats.reduce((a,c)=>a+(CAT_COUNT[c[0]]||0),0);
+    const el=document.createElement("div"); el.className="sector"+(i===0?" open":"");
+    el.innerHTML=`<div class="sector__head">
+        <span class="ms lead">${ic}</span>
+        <div class="tx"><b>${name}</b><span>${cats.length} kategori · ${total.toLocaleString("id-ID")} titik</span></div>
+        <button class="sector__all">Semua</button>
+        <span class="ms chev">expand_more</span>
+      </div><div class="sector__list"></div>`;
+    const list=el.querySelector(".sector__list");
+    cats.forEach(([cat,label])=>{
+      const c=document.createElement("div"); c.className="cat"; c.dataset.cat=cat;
+      c.innerHTML=`<div class="cat__ic"><span class="ms">${ICON[cat]}</span></div>
+        <div class="cat__tx">${label}</div><div class="cat__n">${(CAT_COUNT[cat]||0).toLocaleString("id-ID")}</div><div class="dot"></div>`;
+      c.onclick=()=>{ activeCats.has(cat)?activeCats.delete(cat):activeCats.add(cat); refreshFac(); };
+      list.appendChild(c);
+    });
+    el.querySelector(".sector__head").onclick=(e)=>{ if(e.target.closest(".sector__all"))return; el.classList.toggle("open"); };
+    el.querySelector(".sector__all").onclick=()=>{
+      const allOn=cats.every(c=>activeCats.has(c[0]));
+      cats.forEach(c=>allOn?activeCats.delete(c[0]):activeCats.add(c[0]));
+      el.classList.add("open"); refreshFac();
+    };
+    wrap.appendChild(el);
+  });
+}
+
+/* ---- about dialog ------------------------------------------------------- */
+function buildDialog(){
+  const ds=DATASETS.sources; const body=document.getElementById("dialogBody");
+  const geomIcon={Polygon:"polyline",Point:"scatter_plot",LineString:"route",Network:"share","—":"description"};
+  function item(o){
+    const live = o.rendered;
+    return `<div class="ditem"><span class="ms">${geomIcon[o.geom]||"description"}</span>
+      <div class="nm"><b>${esc(o.name||o.label)}</b><span>${esc(o.file)}${o.note?" · "+esc(o.note):""}</span></div>
+      ${o.features!=null?`<span class="ct">${o.features.toLocaleString("id-ID")}</span>`:`<span class="ct muted">arsip</span>`}
+      <span class="badge ${live?"live":"off"}">${live?"di peta":"sumber"}</span></div>`;
+  }
+  let html="";
+  html+=`<div class="dgroup"><b>Batas & unit analisis</b>${ds.boundaries.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Jaringan transit (GTFS & OSM)</b>${ds.transit.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Tata ruang</b>${ds.planning.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Fasilitas tujuan · 27 kategori (bobot AHP)</b>${ds.facilities.map(item).join("")}</div>`;
+  const m=ds.method;
+  html+=`<div class="dgroup"><b>Metodologi</b>
+    <div class="ditem"><span class="ms">tune</span><div class="nm"><b>Pembobotan</b><span>${esc(m.weights)}</span></div></div>
+    <div class="ditem"><span class="ms">alt_route</span><div class="nm"><b>Routing</b><span>${esc(m.routing)}</span></div></div>
+    <div class="ditem"><span class="ms">straighten</span><div class="nm"><b>Unit</b><span>${esc(m.units)}</span></div></div></div>`;
+  body.innerHTML=html;
+}
+function openDialog(){ if(!document.getElementById("dialogBody").innerHTML) buildDialog();
+  document.getElementById("scrim").classList.add("show"); document.getElementById("dialog").classList.add("show"); }
+function closeDialog(){ document.getElementById("scrim").classList.remove("show"); document.getElementById("dialog").classList.remove("show"); }
+
+/* ---- search ------------------------------------------------------------- */
+let SEARCH_INDEX=[];
+function buildSearchIndex(){
+  SEARCH_INDEX=[];
+  DATASETS.kelurahan.features.forEach(f=>{
+    const c=f.geometry; // polygon -> use a rough centroid via bbox center
+    SEARCH_INDEX.push({type:"kel",name:cap(f.properties.kel),sub:"Kelurahan · Kec. "+cap(f.properties.kec),
+      icon:"map",geom:f});
+  });
+  DATASETS.facilities.features.forEach(f=>{
+    if(!f.properties.name) return;
+    SEARCH_INDEX.push({type:"fac",name:cap(f.properties.name),
+      sub:(CAT_LABEL[f.properties.cat]||f.properties.cat)+(f.properties.kel?" · "+cap(f.properties.kel):""),
+      icon:ICON[f.properties.cat]||"place",geom:f,cat:f.properties.cat});
+  });
+}
+function polyCenter(f){
+  let minx=180,miny=90,maxx=-180,maxy=-90;
+  const walk=co=>{ if(typeof co[0]==="number"){minx=Math.min(minx,co[0]);maxx=Math.max(maxx,co[0]);miny=Math.min(miny,co[1]);maxy=Math.max(maxy,co[1]);} else co.forEach(walk); };
+  walk(f.geometry.coordinates); return [(minx+maxx)/2,(miny+maxy)/2];
+}
+function runSearch(q){
+  const box=document.getElementById("searchResults"); q=q.trim().toLowerCase();
+  if(q.length<2){box.classList.remove("show");return;}
+  const hits=SEARCH_INDEX.filter(o=>o.name.toLowerCase().includes(q)).slice(0,12);
+  if(!hits.length){box.classList.remove("show");return;}
+  box.innerHTML=hits.map((h,i)=>`<button data-i="${i}"><span class="ms">${h.icon}</span><span>${esc(h.name)}<small>${esc(h.sub)}</small></span></button>`).join("");
+  box.classList.add("show");
+  box.querySelectorAll("button").forEach(b=>b.onclick=()=>{
+    const h=hits[+b.dataset.i];
+    if(h.type==="kel"){ map.easeTo({center:polyCenter(h.geom),zoom:13,duration:800}); }
+    else{
+      if(!activeCats.has(h.cat)){ activeCats.add(h.cat); refreshFac(); }
+      map.easeTo({center:h.geom.geometry.coordinates,zoom:15.5,duration:800});
+      setTimeout(()=>showDetail(h.geom),650);
+    }
+    box.classList.remove("show"); document.getElementById("searchInput").value="";
+    document.getElementById("search").classList.remove("open");
+  });
+}
+
+/* ---- theme toggle (rebuilds map style) --------------------------------- */
+function applyThemeUI(){
+  document.getElementById("btnTheme").querySelector(".ms").textContent = theme==="dark"?"light_mode":"dark_mode";
+}
+function setTheme(t,persist){
+  theme=t; document.documentElement.setAttribute("data-theme",t); applyThemeUI();
+  if(persist){ try{localStorage.setItem("theme",t);}catch(e){} }
+  map.setStyle(STYLE[t]); // clears custom sources/layers; tryBuild polls until the new style is ready
+  tryBuild();
+}
+window.addEventListener("storage",e=>{ if(e.key==="theme"&&e.newValue&&e.newValue!==theme) setTheme(e.newValue,false); });
+
+/* ---- wire up ------------------------------------------------------------ */
+document.getElementById("btnMenu").onclick=()=>{
+  const d=document.getElementById("drawer"); d.classList.toggle("hidden");
+  document.getElementById("btnMenu").classList.toggle("on",!d.classList.contains("hidden"));
+  document.getElementById("legend").classList.toggle("docked",d.classList.contains("hidden"));
+};
+document.getElementById("btnMenu").classList.add("on");
+document.getElementById("btnTheme").onclick=()=>setTheme(theme==="dark"?"light":"dark",true);
+document.getElementById("btnAbout").onclick=openDialog;
+document.getElementById("dialogClose").onclick=closeDialog;
+document.getElementById("scrim").onclick=closeDialog;
+document.getElementById("btnReset").onclick=()=>map.easeTo({center:HOME.center,zoom:HOME.zoom,duration:800});
+document.getElementById("btnFull").onclick=()=>{
+  if(document.fullscreenElement){document.exitFullscreen();}
+  else if(window.self!==window.top){ window.open(location.href.split("?")[0]+"?theme="+theme,"_blank"); }
+  else{ document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen(); }
+};
+const sb=document.getElementById("search"), si=document.getElementById("searchInput");
+document.getElementById("btnSearch").onclick=()=>{ sb.classList.toggle("open"); if(sb.classList.contains("open")) si.focus(); else document.getElementById("searchResults").classList.remove("show"); };
+si.addEventListener("input",e=>runSearch(e.target.value));
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"){closeDialog();document.getElementById("detail").classList.remove("show");document.getElementById("searchResults").classList.remove("show");} });
+
+// if embedded in iframe, label the fullscreen button as "open page"
+if(window.self!==window.top){ document.getElementById("fullLbl").textContent="Buka penuh"; }
+
+/* ---- boot --------------------------------------------------------------- */
+let dataReady=false, building=false, buildTimer=null;
+async function tryBuild(){
+  if(!dataReady || building || map.getSource("fac")) return;
+  if(!map.isStyleLoaded()){ clearTimeout(buildTimer); buildTimer=setTimeout(tryBuild,80); return; }
+  building=true;
+  try{ await buildLayers(); document.getElementById("loader").classList.add("gone"); }
+  catch(err){ console.error(err); }
+  finally{ building=false; }
+}
+applyThemeUI();
+(async function(){
+  await loadAll();
+  buildDrawer();
+  buildSearchIndex();
+  dataReady=true;
+  tryBuild();
+})().catch(err=>{
+  console.error(err);
+  document.querySelector(".loader p").textContent="Gagal memuat data.";
+});
+</script>
+</body>
+</html>

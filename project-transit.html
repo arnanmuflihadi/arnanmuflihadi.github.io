@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=11">
+<link rel="stylesheet" href="assets/css/style.css?v=12">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -191,6 +191,20 @@ Score(rw)   = (RawScore / S_max) × 100
         <img src="assets/img/transit/perbandingan.jpg" width="2000" height="1241" alt="Comparison of Scenario A and B" loading="lazy">
       </div>
       <figcaption>Figure 6. Side-by-side comparison of Scenario A vs B.</figcaption>
+    </figure>
+
+    <div class="cs-prose reveal" style="margin-top: clamp(40px, 6vw, 72px)">
+      <p>Beyond the static maps, every <strong>raw input layer</strong> behind the study is open to explore — the full Jaklingko transit network (TransJakarta, Mikrotrans, MRT, LRT, KRL), administrative boundaries, RW origin points, and all <strong>27 facility categories</strong> (~18,000 points) weighted in the AHP. The dashboard shows the source data only; no scores.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="dash-embed">
+        <iframe src="maps/transit_dashboard.html" title="Interactive raw-data explorer for the DKI Jakarta transit accessibility study" loading="lazy"></iframe>
+      </div>
+      <figcaption class="figcap--row">
+        <span>Interactive explorer — toggle the transit, boundary, and facility layers used as analysis inputs.</span>
+        <a class="dash-full" href="maps/transit_dashboard.html" target="_blank" rel="noopener">Open fullscreen <span class="arrow">↗</span></a>
+      </figcaption>
     </figure>
   </section>
 
