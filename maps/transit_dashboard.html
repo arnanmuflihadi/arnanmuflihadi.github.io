@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="light">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Penjelajah Data Transit · DKI Jakarta</title>
-<meta name="description" content="Peta interaktif data mentah analisis aksesibilitas transit DKI Jakarta — jaringan transit, batas wilayah, dan 27 kategori fasilitas.">
+<title>Transit Data Explorer · DKI Jakarta</title>
+<meta name="description" content="Interactive map of the raw input data behind the DKI Jakarta transit-accessibility study — transit network, administrative boundaries, and 27 facility categories.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block" rel="stylesheet">
@@ -278,32 +278,32 @@ body{
 
 <!-- LOADER -->
 <div class="loader" id="loader"><div class="loader__inner">
-  <div class="ring"></div><p>Memuat data mentah…</p>
+  <div class="ring"></div><p>Loading raw data…</p>
 </div></div>
 
 <!-- APP BAR -->
 <header class="appbar">
-  <button class="iconbtn" id="btnMenu" aria-label="Layer"><span class="ms">layers</span></button>
+  <button class="iconbtn" id="btnMenu" aria-label="Layers"><span class="ms">layers</span></button>
   <div class="appbar__title">
-    <b>Penjelajah Data Transit</b>
-    <span>DKI Jakarta · data mentah analisis aksesibilitas</span>
+    <b>Transit Data Explorer</b>
+    <span>DKI Jakarta · raw accessibility-analysis data</span>
   </div>
   <div class="spacer"></div>
   <div class="search" id="search">
-    <input type="text" id="searchInput" placeholder="Cari kelurahan / fasilitas…" autocomplete="off">
-    <button class="iconbtn" id="btnSearch" aria-label="Cari"><span class="ms">search</span></button>
+    <input type="text" id="searchInput" placeholder="Search village / facility…" autocomplete="off">
+    <button class="iconbtn" id="btnSearch" aria-label="Search"><span class="ms">search</span></button>
     <div class="search__results" id="searchResults"></div>
   </div>
-  <button class="iconbtn" id="btnTheme" aria-label="Tema"><span class="ms">dark_mode</span></button>
-  <button class="iconbtn" id="btnAbout" aria-label="Tentang data"><span class="ms">database</span></button>
+  <button class="iconbtn" id="btnTheme" aria-label="Theme"><span class="ms">dark_mode</span></button>
+  <button class="iconbtn" id="btnAbout" aria-label="About the data"><span class="ms">database</span></button>
 </header>
 
 <!-- DRAWER -->
 <aside class="drawer" id="drawer">
   <div class="drawer__head">
     <div>
-      <h2>Layer Peta</h2>
-      <p>Nyalakan layer data mentah</p>
+      <h2>Map Layers</h2>
+      <p>Toggle the raw-data layers</p>
     </div>
     <div class="drawer__count" id="count">0</div>
   </div>
@@ -315,7 +315,7 @@ body{
 
 <!-- LEGEND -->
 <div class="legend" id="legend">
-  <b>Jaringan Transit</b>
+  <b>Transit Network</b>
   <div class="legend__row"><span class="legend__line" style="border-top:3px solid var(--on)"></span> MRT</div>
   <div class="legend__row"><span class="legend__line" style="border-top:2.5px dashed var(--on)"></span> KRL Commuter</div>
   <div class="legend__row"><span class="legend__line" style="border-top:2px dotted var(--on)"></span> LRT</div>
@@ -324,7 +324,7 @@ body{
 
 <!-- DETAIL CARD -->
 <div class="detail" id="detail">
-  <button class="iconbtn detail__close" id="detailClose" aria-label="Tutup"><span class="ms">close</span></button>
+  <button class="iconbtn detail__close" id="detailClose" aria-label="Close"><span class="ms">close</span></button>
   <div class="detail__top">
     <div class="detail__ic"><span class="ms" id="detailIcon">place</span></div>
     <div><div class="detail__cat" id="detailCat">—</div><h3 id="detailName">—</h3></div>
@@ -334,8 +334,8 @@ body{
 
 <!-- FABS -->
 <div class="fabs">
-  <button class="fab small" id="btnReset" aria-label="Atur ulang tampilan"><span class="ms">filter_center_focus</span></button>
-  <button class="fab" id="btnFull"><span class="ms">open_in_full</span><span id="fullLbl">Layar penuh</span></button>
+  <button class="fab small" id="btnReset" aria-label="Reset view"><span class="ms">filter_center_focus</span></button>
+  <button class="fab" id="btnFull"><span class="ms">open_in_full</span><span id="fullLbl">Fullscreen</span></button>
 </div>
 
 <!-- ABOUT DIALOG -->
@@ -344,10 +344,10 @@ body{
   <div class="dialog__head">
     <span class="ms big">database</span>
     <div style="flex:1">
-      <h2>Data mentah yang digunakan</h2>
-      <p>Setiap berkas sumber dalam analisis aksesibilitas transit DKI Jakarta — boleh dijelajahi langsung di peta. Tidak ada skor yang ditampilkan; ini murni data masukan.</p>
+      <h2>Raw data used</h2>
+      <p>Every source file in the DKI Jakarta transit-accessibility study — explorable directly on the map. No scores are shown; this is purely the input data.</p>
     </div>
-    <button class="iconbtn" id="dialogClose" aria-label="Tutup"><span class="ms">close</span></button>
+    <button class="iconbtn" id="dialogClose" aria-label="Close"><span class="ms">close</span></button>
   </div>
   <div class="dialog__body" id="dialogBody"></div>
 </div>
@@ -368,14 +368,14 @@ const ICON = {
   bandara:"flight", pelabuhan:"directions_boat"
 };
 const SECTORS = [
-  ["Kesehatan","health_and_safety",[["rs","Rumah Sakit"],["pusk","Puskesmas"],["apotek","Apotek"],["klinik","Klinik"]]],
-  ["Pendidikan","school",[["sd","SD"],["smp","SMP"],["sma_smk","SMA / SMK"],["tk_paud","TK / PAUD"],["universitas","Universitas"]]],
-  ["Ekonomi","payments",[["cbd","Perkantoran / CBD"],["pasar","Pasar"],["mall","Mall"],["umkm","UMKM"],["restaurant","Restoran"]]],
-  ["Transit Antarkota","commute",[["stasiun_ka_jj","Stasiun KA Jarak Jauh"],["terminal","Terminal Bus"]]],
-  ["Sosial & Budaya","diversity_3",[["ibadah","Rumah Ibadah"],["rptra","RPTRA"],["olahraga","Arena Olahraga"],["museum","Museum"]]],
-  ["Pelayanan Publik","corporate_fare",[["kantor","Kantor Pemerintahan"],["polisi","Polisi"],["kantor_pos","Kantor Pos"]]],
-  ["Keuangan","savings",[["bank_dki","Bank DKI"],["atm_bank_dki","ATM Bank DKI"]]],
-  ["Transportasi","commute",[["bandara","Bandara"],["pelabuhan","Pelabuhan"]]]
+  ["Health","health_and_safety",[["rs","Hospital"],["pusk","Community Health Center"],["apotek","Pharmacy"],["klinik","Clinic"]]],
+  ["Education","school",[["sd","Primary School"],["smp","Junior High School"],["sma_smk","Senior / Vocational High"],["tk_paud","Kindergarten / PAUD"],["universitas","University"]]],
+  ["Economy","payments",[["cbd","Offices / CBD"],["pasar","Market"],["mall","Mall"],["umkm","MSME"],["restaurant","Restaurant"]]],
+  ["Intercity Transit","commute",[["stasiun_ka_jj","Intercity Rail Station"],["terminal","Bus Terminal"]]],
+  ["Social & Culture","diversity_3",[["ibadah","Place of Worship"],["rptra","Child-Friendly Park (RPTRA)"],["olahraga","Sports Venue"],["museum","Museum"]]],
+  ["Public Services","corporate_fare",[["kantor","Government Office"],["polisi","Police"],["kantor_pos","Post Office"]]],
+  ["Finance","savings",[["bank_dki","Bank DKI"],["atm_bank_dki","ATM (Bank DKI)"]]],
+  ["Transport","commute",[["bandara","Airport"],["pelabuhan","Seaport"]]]
 ];
 const CAT_LABEL = {}; SECTORS.forEach(s=>s[2].forEach(c=>CAT_LABEL[c[0]]=c[1]));
 const CAT_SECTOR = {}; SECTORS.forEach(s=>s[2].forEach(c=>CAT_SECTOR[c[0]]=s[0]));
@@ -528,7 +528,7 @@ function applyBase(){
 function refreshFac(){
   if(map.getSource("fac")) map.getSource("fac").setData(filteredFacilities());
   const n=[...activeCats].reduce((a,c)=>a+(CAT_COUNT[c]||0),0);
-  document.getElementById("count").textContent = n.toLocaleString("id-ID");
+  document.getElementById("count").textContent = n.toLocaleString("en-US");
   document.querySelectorAll("[data-cat]").forEach(el=>{
     el.classList.toggle("on",activeCats.has(el.dataset.cat));
   });
@@ -551,12 +551,12 @@ function bindMapEvents(){
   map.on("click","stops",e=>{
     const p=e.features[0].properties;
     new maplibregl.Popup({closeButton:false,offset:10})
-      .setLngLat(e.lngLat).setHTML(`<div class="pop"><b>${esc(p.name||"Halte")}</b><span>Halte ${esc(p.mode)}</span></div>`).addTo(map);
+      .setLngLat(e.lngLat).setHTML(`<div class="pop"><b>${esc(p.name||"Stop")}</b><span>${esc(p.mode)} stop</span></div>`).addTo(map);
   });
   map.on("click","rw",e=>{
     const p=e.features[0].properties;
     new maplibregl.Popup({closeButton:false,offset:10}).setLngLat(e.lngLat)
-      .setHTML(`<div class="pop"><b>RW ${esc(p.rw)} · ${esc(p.kel)}</b><span>${esc(p.zona||"")}</span><span>Zona RDTR: ${esc(p.zona_kat||"-")}</span></div>`).addTo(map);
+      .setHTML(`<div class="pop"><b>RW ${esc(p.rw)} · ${esc(cap(p.kel))}</b><span>${esc(p.zona||"")}</span><span>RDTR zone: ${esc(p.zona_kat||"-")}</span></div>`).addTo(map);
   });
   // kelurahan hover + click
   map.on("mousemove","kel-fill",e=>{
@@ -573,7 +573,7 @@ function bindMapEvents(){
   map.on("click","kel-fill",e=>{
     const p=e.features[0].properties;
     new maplibregl.Popup({closeButton:false,offset:6}).setLngLat(e.lngLat)
-      .setHTML(`<div class="pop"><b>${esc(cap(p.kel))}</b><span>Kec. ${esc(cap(p.kec))} · ${esc(cap(p.kota))}</span></div>`).addTo(map);
+      .setHTML(`<div class="pop"><b>${esc(cap(p.kel))}</b><span>District ${esc(cap(p.kec))} · ${esc(cap(p.kota))}</span></div>`).addTo(map);
   });
 }
 function esc(s){return (s==null?"":String(s)).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));}
@@ -585,7 +585,7 @@ function showDetail(f){
   document.getElementById("detailCat").textContent=(CAT_SECTOR[p.cat]||"")+" · "+(CAT_LABEL[p.cat]||p.cat);
   document.getElementById("detailName").textContent=p.name?cap(p.name):(CAT_LABEL[p.cat]||p.cat);
   const meta=document.getElementById("detailMeta"); meta.innerHTML="";
-  const rows=[["Kategori",CAT_LABEL[p.cat]||p.cat],["Kelurahan",p.kel?cap(p.kel):"—"],["Kecamatan",p.kec?cap(p.kec):"—"]];
+  const rows=[["Category",CAT_LABEL[p.cat]||p.cat],["Village",p.kel?cap(p.kel):"—"],["District",p.kec?cap(p.kec):"—"]];
   rows.forEach(([k,v])=>{const d=document.createElement("div");d.innerHTML=`<dt>${k}</dt><dd>${esc(v)}</dd>`;meta.appendChild(d);});
   document.getElementById("detail").classList.add("show");
   map.easeTo({center:f.geometry.coordinates,duration:600,offset:[-60,-40]});
@@ -595,10 +595,10 @@ document.getElementById("detailClose").onclick=()=>document.getElementById("deta
 /* ---- drawer UI build ---------------------------------------------------- */
 function buildDrawer(){
   const base=[
-    ["lines","Jaringan transit","509 rute · MRT/LRT/KRL/BRT","route"],
-    ["stops","Halte & stasiun","6.851 titik","pin_drop"],
-    ["kelurahan","Batas kelurahan","261 wilayah","map"],
-    ["rw","Centroid RW (origin)","2.713 titik · zona RDTR","scatter_plot"]
+    ["lines","Transit network","509 routes · MRT/LRT/KRL/BRT","route"],
+    ["stops","Stops & stations","6,851 points","pin_drop"],
+    ["kelurahan","Village boundaries","261 areas","map"],
+    ["rw","RW centroids (origins)","2,713 points · RDTR zoning","scatter_plot"]
   ];
   const bl=document.getElementById("baselist");
   base.forEach(([k,t,s,ic])=>{
@@ -616,15 +616,15 @@ function buildDrawer(){
     const el=document.createElement("div"); el.className="sector"+(i===0?" open":"");
     el.innerHTML=`<div class="sector__head">
         <span class="ms lead">${ic}</span>
-        <div class="tx"><b>${name}</b><span>${cats.length} kategori · ${total.toLocaleString("id-ID")} titik</span></div>
-        <button class="sector__all">Semua</button>
+        <div class="tx"><b>${name}</b><span>${cats.length} categories · ${total.toLocaleString("en-US")} points</span></div>
+        <button class="sector__all">All</button>
         <span class="ms chev">expand_more</span>
       </div><div class="sector__list"></div>`;
     const list=el.querySelector(".sector__list");
     cats.forEach(([cat,label])=>{
       const c=document.createElement("div"); c.className="cat"; c.dataset.cat=cat;
       c.innerHTML=`<div class="cat__ic"><span class="ms">${ICON[cat]}</span></div>
-        <div class="cat__tx">${label}</div><div class="cat__n">${(CAT_COUNT[cat]||0).toLocaleString("id-ID")}</div><div class="dot"></div>`;
+        <div class="cat__tx">${label}</div><div class="cat__n">${(CAT_COUNT[cat]||0).toLocaleString("en-US")}</div><div class="dot"></div>`;
       c.onclick=()=>{ activeCats.has(cat)?activeCats.delete(cat):activeCats.add(cat); refreshFac(); };
       list.appendChild(c);
     });
@@ -646,19 +646,19 @@ function buildDialog(){
     const live = o.rendered;
     return `<div class="ditem"><span class="ms">${geomIcon[o.geom]||"description"}</span>
       <div class="nm"><b>${esc(o.name||o.label)}</b><span>${esc(o.file)}${o.note?" · "+esc(o.note):""}</span></div>
-      ${o.features!=null?`<span class="ct">${o.features.toLocaleString("id-ID")}</span>`:`<span class="ct muted">arsip</span>`}
-      <span class="badge ${live?"live":"off"}">${live?"di peta":"sumber"}</span></div>`;
+      ${o.features!=null?`<span class="ct">${o.features.toLocaleString("en-US")}</span>`:`<span class="ct muted">archive</span>`}
+      <span class="badge ${live?"live":"off"}">${live?"on map":"source"}</span></div>`;
   }
   let html="";
-  html+=`<div class="dgroup"><b>Batas & unit analisis</b>${ds.boundaries.map(item).join("")}</div>`;
-  html+=`<div class="dgroup"><b>Jaringan transit (GTFS & OSM)</b>${ds.transit.map(item).join("")}</div>`;
-  html+=`<div class="dgroup"><b>Tata ruang</b>${ds.planning.map(item).join("")}</div>`;
-  html+=`<div class="dgroup"><b>Fasilitas tujuan · 27 kategori (bobot AHP)</b>${ds.facilities.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Boundaries & analysis units</b>${ds.boundaries.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Transit network (GTFS & OSM)</b>${ds.transit.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Spatial planning</b>${ds.planning.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Destination facilities · 27 categories (AHP-weighted)</b>${ds.facilities.map(item).join("")}</div>`;
   const m=ds.method;
-  html+=`<div class="dgroup"><b>Metodologi</b>
-    <div class="ditem"><span class="ms">tune</span><div class="nm"><b>Pembobotan</b><span>${esc(m.weights)}</span></div></div>
+  html+=`<div class="dgroup"><b>Methodology</b>
+    <div class="ditem"><span class="ms">tune</span><div class="nm"><b>Weighting</b><span>${esc(m.weights)}</span></div></div>
     <div class="ditem"><span class="ms">alt_route</span><div class="nm"><b>Routing</b><span>${esc(m.routing)}</span></div></div>
-    <div class="ditem"><span class="ms">straighten</span><div class="nm"><b>Unit</b><span>${esc(m.units)}</span></div></div></div>`;
+    <div class="ditem"><span class="ms">straighten</span><div class="nm"><b>Units</b><span>${esc(m.units)}</span></div></div></div>`;
   body.innerHTML=html;
 }
 function openDialog(){ if(!document.getElementById("dialogBody").innerHTML) buildDialog();
@@ -671,7 +671,7 @@ function buildSearchIndex(){
   SEARCH_INDEX=[];
   DATASETS.kelurahan.features.forEach(f=>{
     const c=f.geometry; // polygon -> use a rough centroid via bbox center
-    SEARCH_INDEX.push({type:"kel",name:cap(f.properties.kel),sub:"Kelurahan · Kec. "+cap(f.properties.kec),
+    SEARCH_INDEX.push({type:"kel",name:cap(f.properties.kel),sub:"Village · District "+cap(f.properties.kec),
       icon:"map",geom:f});
   });
   DATASETS.facilities.features.forEach(f=>{
@@ -741,7 +741,7 @@ si.addEventListener("input",e=>runSearch(e.target.value));
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"){closeDialog();document.getElementById("detail").classList.remove("show");document.getElementById("searchResults").classList.remove("show");} });
 
 // if embedded in iframe, label the fullscreen button as "open page"
-if(window.self!==window.top){ document.getElementById("fullLbl").textContent="Buka penuh"; }
+if(window.self!==window.top){ document.getElementById("fullLbl").textContent="Open full"; }
 
 /* ---- boot --------------------------------------------------------------- */
 let dataReady=false, building=false, buildTimer=null;
@@ -762,7 +762,7 @@ applyThemeUI();
   tryBuild();
 })().catch(err=>{
   console.error(err);
-  document.querySelector(".loader p").textContent="Gagal memuat data.";
+  document.querySelector(".loader p").textContent="Failed to load data.";
 });
 </script>
 </body>

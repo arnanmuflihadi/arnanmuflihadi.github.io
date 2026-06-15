@@ -58,7 +58,7 @@
   var lb = document.createElement("div");
   lb.className = "lb";
   lb.innerHTML =
-    '<button class="lb__close" aria-label="Tutup">&times;</button>' +
+    '<button class="lb__close" aria-label="Close"><span class="ms">close</span></button>' +
     '<img alt="">' +
     '<div class="lb__cap"></div>';
   document.body.appendChild(lb);
