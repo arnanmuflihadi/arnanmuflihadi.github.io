@@ -257,7 +257,17 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 /* ============================================================
    ABOUT / CV
    ============================================================ */
-.about { background: var(--surface); border-block: 1px solid var(--line); }
+/* page hero (standalone pages — topo + accent kicker) */
+.page-hero { position: relative; overflow: hidden; padding-top: clamp(120px, 16vh, 184px); padding-bottom: clamp(20px, 3.5vw, 40px); }
+.page-hero .hero__grid, .page-hero .topo { z-index: 0; }
+.page-hero > .wrap { position: relative; z-index: 1; }
+.page-hero .label { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+.page-hero .label .ms { font-size: 16px; color: var(--accent-ink); }
+.page-hero .section-title { font-size: clamp(40px, 7vw, 78px); }
+
+/* About section sits transparent so the global topographic background shows through */
+.about { background: transparent; padding-top: clamp(8px, 1.5vw, 22px); }
+.cs-section__head h2 .ms { font-size: .68em; color: var(--accent-ink); margin-right: .38em; vertical-align: -0.05em; }
 .about__grid { display: grid; grid-template-columns: 0.9fr 1.3fr; gap: clamp(36px, 6vw, 88px); align-items: start; }
 .about__photo {
   aspect-ratio: 4/5; border-radius: var(--r-l); border: 1px solid var(--line);
