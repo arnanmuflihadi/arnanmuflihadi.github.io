@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=14">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -68,32 +68,34 @@
       <span class="idx">02 / METHOD</span>
       <h2>Methodology</h2>
     </div>
-    <div class="cs-prose">
-      <div class="flow reveal" aria-label="Project workflow from data to conclusions">
-        <div class="flow__track" aria-hidden="true"></div>
-        <div class="flow__step">
-          <div class="flow__node">01</div>
-          <div class="flow__card"><span class="flow__stage">Input</span><h4>OSM country extract</h4><p>The full Indonesia extract from Geofabrik: one 1.72 GB .osm.pbf file covering the whole archipelago.</p></div>
+    <div class="dflow reveal" aria-label="Methodology pipeline, four phases">
+      <div class="dflow__phase">
+        <div class="dflow__head"><span class="dflow__num">1</span><span class="ms">database</span><span class="dflow__title">Data</span></div>
+        <div class="dflow__nodes">
+          <div class="dflow__node dflow__node--data"><span class="st">Inputs</span><span class="tx">Indonesia OSM extract — 1.72 GB .osm.pbf</span></div>
+          <div class="dflow__node"><span class="st">Mine</span><span class="tx">pyosmium streaming pass → 91,940 commercial POIs</span></div>
         </div>
-        <div class="flow__step">
-          <div class="flow__node">02</div>
-          <div class="flow__card"><span class="flow__stage">Mine</span><h4>POI extraction</h4><p>A streaming pyosmium pass keeps commercial tags (office, shop, amenity, commercial building): 91,940 points.</p></div>
+      </div>
+      <div class="dflow__link"><span class="ms">arrow_forward</span></div>
+      <div class="dflow__phase">
+        <div class="dflow__head"><span class="dflow__num">2</span><span class="ms">join_inner</span><span class="dflow__title">Join</span></div>
+        <div class="dflow__nodes">
+          <div class="dflow__node"><span class="st">Province assignment</span><span class="tx">Spatial join → 91,340 points across 38 provinces</span></div>
         </div>
-        <div class="flow__step">
-          <div class="flow__node">03</div>
-          <div class="flow__card"><span class="flow__stage">Join</span><h4>Province assignment</h4><p>A spatial join places each point in one of 38 provinces; 91,340 land inside a boundary.</p></div>
+      </div>
+      <div class="dflow__link"><span class="ms">arrow_forward</span></div>
+      <div class="dflow__phase">
+        <div class="dflow__head"><span class="dflow__num">3</span><span class="ms">scatter_plot</span><span class="dflow__title">Cluster</span></div>
+        <div class="dflow__nodes">
+          <div class="dflow__node"><span class="st">Adaptive DBSCAN</span><span class="tx">Haversine distances; eps &amp; min_samples scale per province</span></div>
         </div>
-        <div class="flow__step">
-          <div class="flow__node">04</div>
-          <div class="flow__card"><span class="flow__stage">Cluster</span><h4>Adaptive DBSCAN</h4><p>Density-based clustering with haversine distances; eps and min_samples scale with each province&#x2019;s POI count. The largest cluster is the CBD.</p></div>
-        </div>
-        <div class="flow__step">
-          <div class="flow__node">05</div>
-          <div class="flow__card"><span class="flow__stage">Benchmark</span><h4>Compare 38 CBDs</h4><p>Each CBD is measured on POI count, radius, and density, alongside a separate 15,417-POI Jakarta deep-dive (19 clusters).</p></div>
-        </div>
-        <div class="flow__step flow__step--end">
-          <div class="flow__node">06</div>
-          <div class="flow__card"><span class="flow__stage">Conclusion</span><h4>National benchmark</h4><p>37 of 38 provinces yield a CBD; Jakarta is the widest, Aceh the densest, Bali the surprise #2, all explorable on two interactive maps.</p></div>
+      </div>
+      <div class="dflow__link"><span class="ms">arrow_forward</span></div>
+      <div class="dflow__phase">
+        <div class="dflow__head"><span class="dflow__num">4</span><span class="ms">insights</span><span class="dflow__title">Benchmark</span></div>
+        <div class="dflow__nodes">
+          <div class="dflow__node"><span class="st">Compare 38 CBDs</span><span class="tx">POI count · radius · density + Jakarta 19-cluster deep-dive</span></div>
+          <div class="dflow__node"><span class="st">Result</span><span class="tx">37 of 38 provinces yield a CBD</span></div>
         </div>
       </div>
     </div>
