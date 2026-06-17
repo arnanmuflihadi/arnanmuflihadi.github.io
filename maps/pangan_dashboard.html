@@ -290,6 +290,35 @@ body{
 .pop b{font-size:13px;font-weight:700}
 .pop span{font-size:11.5px;color:var(--on-var);display:block;margin-top:2px}
 
+/* legend rankings button */
+.legend__table-btn{
+  display:flex;align-items:center;gap:6px;margin-top:10px;width:100%;
+  appearance:none;border:1px solid var(--outline-soft);border-radius:var(--r-full);
+  background:var(--sc);color:var(--on);font-family:inherit;font-size:11px;font-weight:700;
+  padding:7px 12px;cursor:pointer;transition:background .2s var(--emph);letter-spacing:.02em;
+}
+.legend__table-btn:hover{background:var(--sc-high)}
+.legend__table-btn .ms{font-size:14px;color:var(--on-var)}
+
+/* district statistics table */
+.stats-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.stats-tbl thead th{
+  text-align:left;padding:8px 10px;
+  font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--on-var);border-bottom:2px solid var(--outline);position:sticky;top:0;
+  background:var(--surface);
+}
+.stats-tbl td{padding:8px 10px;border-bottom:1px solid var(--outline-soft);vertical-align:middle}
+.stats-tbl tbody tr:hover td{background:var(--sc)}
+.stats-tbl .rk{font-size:10px;font-weight:700;color:var(--on-var);width:24px;text-align:center}
+.stats-tbl .nm b{font-size:12.5px;font-weight:600;display:block}
+.stats-tbl .nm small{font-size:10px;color:var(--on-var)}
+.stats-tbl .vl{font-weight:700;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;padding-right:6px}
+.bar-wrap{width:80px;height:7px;background:var(--sc-highest);border-radius:4px;overflow:hidden;flex:none}
+.bar-fill{height:100%;border-radius:4px;transition:width .4s var(--emph)}
+.stats-summary{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.stats-summary .legend__stat{min-width:72px}
+
 @media (max-width:640px){
   .appbar__title span{display:none}
   .drawer{top:70px;width:calc(100vw - 28px)}
@@ -355,6 +384,14 @@ body{
     <div class="legend__stat"><b id="statMed">—</b><span>Median</span></div>
     <div class="legend__stat"><b id="statMax">—</b><span>Max</span></div>
   </div>
+  <div class="legend__stats" style="margin-top:6px">
+    <div class="legend__stat"><b id="statQ1">—</b><span>Q1</span></div>
+    <div class="legend__stat"><b id="statMean">—</b><span>Mean</span></div>
+    <div class="legend__stat"><b id="statQ3">—</b><span>Q3</span></div>
+  </div>
+  <button class="legend__table-btn" id="btnStats" title="District rankings table">
+    <span class="ms">table_chart</span> Rankings
+  </button>
 </div>
 
 <!-- DETAIL CARD -->
@@ -385,6 +422,20 @@ body{
     <button class="iconbtn" id="dialogClose" aria-label="Close"><span class="ms">close</span></button>
   </div>
   <div class="dialog__body" id="dialogBody"></div>
+</div>
+
+<!-- STATS TABLE DIALOG -->
+<div class="scrim" id="statsScrim"></div>
+<div class="dialog" id="statsDialog" role="dialog" aria-modal="true">
+  <div class="dialog__head">
+    <span class="ms big">table_chart</span>
+    <div style="flex:1">
+      <h2 id="statsDialogTitle">District Rankings</h2>
+      <p id="statsDialogSub">27 kabupaten/kota sorted by active indicator</p>
+    </div>
+    <button class="iconbtn" id="statsClose" aria-label="Close"><span class="ms">close</span></button>
+  </div>
+  <div class="dialog__body" id="statsBody"></div>
 </div>
 
 <script>
@@ -445,15 +496,29 @@ function colors(){
     onPrimary:cssvar("--on-primary"), accent:cssvar("--accent")
   };
 }
-/* terracotta sequential ramp (light bg vs dark bg) + diverging ramp for land balance */
+/* per-indicator ColorBrewer-inspired ramps — each key matches an INDICATORS[0] value */
 function ramps(){
   const dark = document.documentElement.getAttribute("data-theme")==="dark";
   return {
-    seq: dark ? ["#33271f","#6b4029","#a85e3c","#d68a63","#f2c7ab"]
-              : ["#f1e7df","#e0bda6","#cb8a66","#a85436","#7a3320"],
-    div: dark ? ["#e07a52","#b98a72","#6f6a60","#7e9384","#9fd0b6"]
-              : ["#9a4a2c","#cf9277","#e9e4dd","#9aa79b","#46695a"], // deficit -> surplus
-    muted: dark ? "#2a2926" : "#dad6d0"
+    prod:     dark ? ["#1a2e10","#2d5020","#4a7c35","#72b050","#98e070"]  // YlGn
+                   : ["#ffffcc","#c2e699","#78c679","#31a354","#006837"],
+    gap:      dark ? ["#c82015","#e86040","#3a3830","#3a8040","#20a050"]  // RdYlGn diverging
+                   : ["#d73027","#f46d43","#ffffbf","#74c476","#1a9641"],
+    irig:     dark ? ["#0a1828","#122848","#1a4888","#2870c8","#60a8e8"]  // Blues
+                   : ["#eff3ff","#bdd7e7","#6baed6","#2171b5","#084594"],
+    sawah:    dark ? ["#101e08","#203818","#347030","#50a040","#80c860"]  // YlGn
+                   : ["#f7fcf5","#e5f5e0","#c7e9c0","#74c476","#238b45"],
+    rmu:      dark ? ["#2a1800","#4a3000","#804800","#c07000","#f0b040"]  // YlOrRd
+                   : ["#ffffb2","#fecc5c","#fd8d3c","#f03b20","#bd0026"],
+    stunting: dark ? ["#1a0800","#400f00","#701800","#a83010","#e05030"]  // OrRd (bad=high)
+                   : ["#fff7ec","#fee8c8","#fdbb84","#e34a33","#b30000"],
+    dens:     dark ? ["#08142a","#102040","#183c78","#2060b8","#4898e0"]  // Blues
+                   : ["#f7fbff","#deebf7","#9ecae1","#4292c6","#084594"],
+    pov:      dark ? ["#2a1800","#4a3000","#804800","#c04010","#e02010"]  // YlOrRd (bad=high)
+                   : ["#ffffb2","#fecc5c","#fd8d3c","#f03b20","#bd0026"],
+    ipm:      dark ? ["#280400","#680e05","#a82810","#e05020","#f09040","#90d850"]  // RdYlGn
+                   : ["#d73027","#f46d43","#fee090","#d9ef8b","#66bd63","#1a9641"],
+    muted:    dark ? "#2a2926" : "#dad6d0",
   };
 }
 
@@ -534,16 +599,17 @@ function choroExpr(){
   const diverging = def[4];
   const vals = values(indicator).sort((a,b)=>a-b);
   const rp = ramps();
+  const seq = rp[indicator] || rp.prod;
   if(!vals.length) return rp.muted;
   let stops;
   if(diverging){
     const m = Math.max(Math.abs(vals[0]), Math.abs(vals[vals.length-1])) || 1;
     const pts = [-m,-m/2,0,m/2,m];
-    stops = pts.map((p,i)=>[p, rp.div[i]]);
+    stops = pts.map((p,i)=>[p, seq[i]]);
   }else{
     const lo=vals[0], hi=vals[vals.length-1];
     const span = (hi-lo)||1;
-    stops = rp.seq.map((col,i)=>[lo + span*i/(rp.seq.length-1), col]);
+    stops = seq.map((col,i)=>[lo + span*i/(seq.length-1), col]);
   }
   const interp = ["interpolate",["linear"],["to-number",["get",indicator]]];
   stops.forEach(s=>{interp.push(s[0],s[1]);});
@@ -569,24 +635,25 @@ async function buildLayers(){
   map.addLayer({id:"kab-line",type:"line",source:"kab",
     paint:{"line-color":c.surface,"line-width":["interpolate",["linear"],["zoom"],7,0.6,11,1.4],"line-opacity":0.9}});
 
-  // KP2B farmland
+  // KP2B farmland — protected agricultural zone (conventional dark green)
   map.addLayer({id:"kp2b-fill",type:"fill",source:"kp2b",layout:{visibility:"none"},
-    paint:{"fill-color":c.on,"fill-opacity":0.18}});
+    paint:{"fill-color":"#006d2c","fill-opacity":0.25}});
   map.addLayer({id:"kp2b-line",type:"line",source:"kp2b",layout:{visibility:"none"},
-    paint:{"line-color":c.on,"line-width":0.5,"line-opacity":0.4}});
+    paint:{"line-color":"#006d2c","line-width":0.5,"line-opacity":0.55}});
 
-  // rice fields
+  // rice fields — paddy green
   map.addLayer({id:"sawah-fill",type:"fill",source:"sawah",layout:{visibility:"none"},
-    paint:{"fill-color":c.accent,"fill-opacity":0.35}});
+    paint:{"fill-color":"#74c476","fill-opacity":0.40}});
 
-  // hazards (per jenis, pattern by kelas via opacity)
+  // hazards — per-type colors: flood=blue, landslide=orange, quake=purple
   map.addLayer({id:"haz-fill",type:"fill",source:"haz",layout:{visibility:"none"},
     filter:["in",["get","jenis"],["literal",[]]],
-    paint:{"fill-color":c.on,
-      "fill-opacity":["match",["get","kelas"],"high",0.30,"medium",0.16,0.16]}});
+    paint:{"fill-color":["match",["get","jenis"],"flood","#2166ac","landslide","#d95f02","quake","#7b3294",c.on],
+      "fill-opacity":["match",["get","kelas"],"high",0.35,"medium",0.22,0.15]}});
   map.addLayer({id:"haz-line",type:"line",source:"haz",layout:{visibility:"none"},
     filter:["in",["get","jenis"],["literal",[]]],
-    paint:{"line-color":c.on,"line-width":0.6,"line-opacity":0.45}});
+    paint:{"line-color":["match",["get","jenis"],"flood","#2166ac","landslide","#d95f02","quake","#7b3294",c.on],
+      "line-width":0.6,"line-opacity":0.55}});
 
   // roads — two layers to avoid nested zoom expressions & unsupported dasharray data expr
   map.addLayer({id:"roads-tol",type:"line",source:"roads",filter:["==",["get","kelas"],"tol"],
@@ -606,26 +673,31 @@ async function buildLayers(){
   map.addSource("priority",{type:"geojson",data:DATASETS.priority});
   map.addSource("sentra",{type:"geojson",data:DATASETS.sentra,generateId:true});
 
-  // sentra padi polygons — below roads so they act as a heat-pattern underlay
+  // sentra padi polygons — primer = dark green, sekunder = lighter green
   map.addLayer({id:"sentra-fill",type:"fill",source:"sentra",layout:{visibility:"none"},
-    paint:{"fill-color":["match",["get","tier"],"primer",c.accent,"#c98060"],
-      "fill-opacity":["case",["boolean",["feature-state","hover"],false],0.65,0.40]}});
+    paint:{"fill-color":["match",["get","tier"],"primer","#2d6a2d","#74c476"],
+      "fill-opacity":["case",["boolean",["feature-state","hover"],false],0.70,0.45]}});
   map.addLayer({id:"sentra-line",type:"line",source:"sentra",layout:{visibility:"none"},
-    paint:{"line-color":c.accent,"line-width":0.6,"line-opacity":0.7}});
+    paint:{"line-color":"#1a5c1a","line-width":0.6,"line-opacity":0.7}});
 
-  // flow network — graduated line width ∝ rice_flow tons
+  // flow network — YlOrBr heat scale (yellow=low flow, red=high flow)
   map.addLayer({id:"flows-line",type:"line",source:"flows",layout:{visibility:"none","line-cap":"round","line-join":"round"},
-    paint:{"line-color":c.accent,"line-opacity":0.72,
+    paint:{
+      "line-color":["interpolate",["linear"],["to-number",["get","flow"]],
+        57000,"#fee391", 120000,"#fec44f", 200000,"#fe9929", 300000,"#d95f0e", 373000,"#993404"],
+      "line-opacity":0.80,
       "line-width":["interpolate",["linear"],["to-number",["get","flow"]],
         57000,0.8, 120000,2.2, 200000,4.0, 373000,7]}});
 
-  // priority roads — white halo + coloured line (rank 1 = brightest)
+  // priority roads — surface halo + rank-graded colour (rank 1=red/critical, rank 50=yellow)
   map.addLayer({id:"priority-bg",type:"line",source:"priority",layout:{visibility:"none","line-cap":"round","line-join":"round"},
     paint:{"line-color":c.surface,
       "line-width":["interpolate",["linear"],["to-number",["get","rank"]],1,10,50,5],
       "line-opacity":0.9}});
   map.addLayer({id:"priority-line",type:"line",source:"priority",layout:{visibility:"none","line-cap":"round","line-join":"round"},
-    paint:{"line-color":c.accent,
+    paint:{
+      "line-color":["interpolate",["linear"],["to-number",["get","rank"]],
+        1,"#d7191c", 10,"#e8652a", 25,"#f4a030", 40,"#fece66", 50,"#ffffb2"],
       "line-width":["interpolate",["linear"],["to-number",["get","rank"]],1,6,50,2.5],
       "line-opacity":["interpolate",["linear"],["to-number",["get","rank"]],1,1.0,50,0.65]}});
 
@@ -656,16 +728,17 @@ async function buildLayers(){
 
   // Rice mill capacity bubbles (per-kabkota, sized by est. ton/day)
   map.addSource("rmu",{type:"geojson",data:DATASETS.rmu});
+  // RMU bubbles: blue-purple tier scale (distinct from green sentra and amber/red flow lines)
   map.addLayer({id:"rmu-circle",type:"circle",source:"rmu",
     layout:{visibility:"none"},
-    paint:{"circle-opacity":0.82,"circle-stroke-width":1.5,"circle-stroke-color":c.surface,
-      "circle-color":["match",["get","tier"],"HIGH",c.accent,"MEDIUM","#c98060","#9a8272"],
+    paint:{"circle-opacity":0.85,"circle-stroke-width":1.5,"circle-stroke-color":c.surface,
+      "circle-color":["match",["get","tier"],"HIGH","#0c2c84","MEDIUM","#2171b5","#7fcdbb"],
       "circle-radius":["interpolate",["linear"],["to-number",["get","cap_tday"]],
         0,5, 1000,9, 2000,13, 4000,18, 6000,24]}});
   map.addLayer({id:"rmu-label",type:"symbol",source:"rmu",
     layout:{visibility:"none","text-field":["to-string",["get","rmu_total"]],
       "text-font":["Noto Sans Regular"],"text-size":9,"text-anchor":"center"},
-    paint:{"text-color":"#fff","text-halo-color":c.accent,"text-halo-width":0.5}});
+    paint:{"text-color":"#fff","text-halo-color":"rgba(0,0,0,0.6)","text-halo-width":1.2}});
 
   // nodes on top of everything
   map.addLayer({id:"nodes-pts",type:"symbol",source:"nodes",
@@ -717,20 +790,23 @@ function setChoropleth(ind){
   const dec=IND_DEC[ind];
   const vals=values(ind).sort((a,b)=>a-b);
   const rp=ramps();
+  const seq=rp[ind]||rp.prod;
   const def=INDICATORS.find(d=>d[0]===ind);
-  const bar=def[4]
-    ? `linear-gradient(90deg,${rp.div.join(",")})`
-    : `linear-gradient(90deg,${rp.seq.join(",")})`;
+  const bar=`linear-gradient(90deg,${seq.join(",")})`;
   document.getElementById("legTitle").textContent=IND_LABEL[ind];
   document.getElementById("legUnit").textContent=IND_UNIT[ind]?("in "+IND_UNIT[ind]):"index";
   document.getElementById("legBar").style.background=bar;
   if(vals.length){
     const lo=vals[0],hi=vals[vals.length-1];
+    const mean=vals.reduce((s,v)=>s+v,0)/vals.length;
     document.getElementById("legMin").textContent=fmt(def[4]?-Math.max(Math.abs(lo),Math.abs(hi)):lo,dec);
     document.getElementById("legMax").textContent=fmt(def[4]?Math.max(Math.abs(lo),Math.abs(hi)):hi,dec);
     document.getElementById("statMin").textContent=fmt(lo,dec);
     document.getElementById("statMed").textContent=fmt(quantile(vals,0.5),dec);
     document.getElementById("statMax").textContent=fmt(hi,dec);
+    document.getElementById("statQ1").textContent=fmt(quantile(vals,0.25),dec);
+    document.getElementById("statMean").textContent=fmt(mean,dec);
+    document.getElementById("statQ3").textContent=fmt(quantile(vals,0.75),dec);
   }
 }
 
@@ -787,6 +863,16 @@ function showDistrict(f){
   document.getElementById("detailCat").textContent=esc(p.kelas||"District");
   document.getElementById("detailName").textContent=esc(p.name);
   const meta=document.getElementById("detailMeta"); meta.innerHTML="";
+  // rank among 27 for active indicator (1 = highest value)
+  const indVals=DATASETS.kabkota.features
+    .map(fe=>({name:fe.properties.name,val:Number(fe.properties[indicator])}))
+    .filter(d=>!isNaN(d.val)).sort((a,b)=>b.val-a.val);
+  const rank=indVals.findIndex(d=>d.name===p.name)+1;
+  if(rank>0){
+    const rd=document.createElement("div");
+    rd.innerHTML=`<dt>${IND_LABEL[indicator]} rank</dt><dd>#${rank} of ${indVals.length}</dd>`;
+    meta.appendChild(rd);
+  }
   DETAIL_FIELDS.forEach(([k,lbl,unit,dec])=>{
     let v=p[k];
     if(v===null||v===undefined||v==="") return;
@@ -870,6 +956,65 @@ function showRMU(f){
   document.getElementById("detail").classList.add("show");
 }
 document.getElementById("detailClose").onclick=()=>document.getElementById("detail").classList.remove("show");
+
+/* ---- district rankings table ------------------------------------------- */
+function buildStatsTable(){
+  const ind=indicator, dec=IND_DEC[ind];
+  const features=DATASETS.kabkota.features;
+  const rows=features
+    .map(f=>({name:f.properties.name,kelas:f.properties.kelas||"",val:Number(f.properties[ind])}))
+    .filter(d=>!isNaN(d.val));
+  const sorted=[...rows].sort((a,b)=>b.val-a.val);
+  const nums=sorted.map(d=>d.val);
+  const lo=nums[nums.length-1], hi=nums[0];
+  const span=(hi-lo)||1;
+  const mean=nums.reduce((s,v)=>s+v,0)/nums.length;
+  const sd=Math.sqrt(nums.reduce((s,v)=>s+(v-mean)**2,0)/nums.length);
+  const asc=[...nums].sort((a,b)=>a-b);
+  const rp=ramps(); const seq=rp[ind]||rp.prod;
+
+  document.getElementById("statsDialogTitle").textContent=IND_LABEL[ind]+" · District Rankings";
+  document.getElementById("statsDialogSub").textContent=
+    `${sorted.length} districts · unit: ${IND_UNIT[ind]||"index"} · sorted high → low`;
+
+  const summary=`<div class="stats-summary">
+    <div class="legend__stat"><b>${fmt(lo,dec)}</b><span>Min</span></div>
+    <div class="legend__stat"><b>${fmt(quantile(asc,.25),dec)}</b><span>Q1</span></div>
+    <div class="legend__stat"><b>${fmt(quantile(asc,.50),dec)}</b><span>Median</span></div>
+    <div class="legend__stat"><b>${fmt(mean,dec)}</b><span>Mean</span></div>
+    <div class="legend__stat"><b>${fmt(quantile(asc,.75),dec)}</b><span>Q3</span></div>
+    <div class="legend__stat"><b>${fmt(hi,dec)}</b><span>Max</span></div>
+    <div class="legend__stat"><b>${fmt(sd,dec)}</b><span>Std Dev</span></div>
+  </div>`;
+
+  const tableRows=sorted.map((d,i)=>{
+    const pct=Math.max(0,Math.min(1,(d.val-lo)/span));
+    const ci=Math.round(pct*(seq.length-1));
+    const barCol=seq[ci];
+    return `<tr>
+      <td class="rk">${i+1}</td>
+      <td class="nm"><b>${esc(d.name)}</b><small>${esc(d.kelas)}</small></td>
+      <td class="vl">${fmt(d.val,dec)}</td>
+      <td><div class="bar-wrap"><div class="bar-fill" style="width:${(pct*100).toFixed(1)}%;background:${barCol}"></div></div></td>
+    </tr>`;
+  }).join("");
+
+  document.getElementById("statsBody").innerHTML=
+    summary+
+    `<table class="stats-tbl"><thead><tr>
+      <th>#</th><th>District</th>
+      <th style="text-align:right">${IND_UNIT[ind]||"value"}</th><th></th>
+    </tr></thead><tbody>${tableRows}</tbody></table>`;
+}
+function openStatsDialog(){
+  buildStatsTable();
+  document.getElementById("statsScrim").classList.add("show");
+  document.getElementById("statsDialog").classList.add("show");
+}
+function closeStatsDialog(){
+  document.getElementById("statsScrim").classList.remove("show");
+  document.getElementById("statsDialog").classList.remove("show");
+}
 
 /* ---- drawer build ------------------------------------------------------- */
 function buildDrawer(){
@@ -1046,6 +1191,9 @@ document.getElementById("btnTheme").onclick=()=>setTheme(theme==="dark"?"light":
 document.getElementById("btnAbout").onclick=openDialog;
 document.getElementById("dialogClose").onclick=closeDialog;
 document.getElementById("scrim").onclick=closeDialog;
+document.getElementById("btnStats").onclick=openStatsDialog;
+document.getElementById("statsClose").onclick=closeStatsDialog;
+document.getElementById("statsScrim").onclick=closeStatsDialog;
 document.getElementById("btnReset").onclick=()=>map.easeTo({center:HOME.center,zoom:HOME.zoom,duration:800});
 document.getElementById("btnFull").onclick=()=>{
   if(document.fullscreenElement){document.exitFullscreen();}
@@ -1055,7 +1203,7 @@ document.getElementById("btnFull").onclick=()=>{
 const sb=document.getElementById("search"), si=document.getElementById("searchInput");
 document.getElementById("btnSearch").onclick=()=>{ sb.classList.toggle("open"); if(sb.classList.contains("open")) si.focus(); else document.getElementById("searchResults").classList.remove("show"); };
 si.addEventListener("input",e=>runSearch(e.target.value));
-document.addEventListener("keydown",e=>{ if(e.key==="Escape"){closeDialog();document.getElementById("detail").classList.remove("show");document.getElementById("searchResults").classList.remove("show");} });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"){closeDialog();closeStatsDialog();document.getElementById("detail").classList.remove("show");document.getElementById("searchResults").classList.remove("show");} });
 if(window.self!==window.top){ document.getElementById("fullLbl").textContent="Open full"; }
 
 /* ---- boot --------------------------------------------------------------- */
