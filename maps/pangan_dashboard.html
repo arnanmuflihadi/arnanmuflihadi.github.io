@@ -390,7 +390,7 @@ body{
 <script>
 "use strict";
 const DATA = "data/pangan/";
-const DV = "?v=2";  // bump when the GeoJSON data changes
+const DV = "?v=3";  // bump when the GeoJSON data changes
 
 /* ---- indicator definitions --------------------------------------------- */
 // key, label, unit, decimals, diverging(around 0), goodHigh(for narrative only)
@@ -476,14 +476,14 @@ window.addEventListener("resize", () => map.resize());
 
 let DATASETS = {};
 let indicator = "prod";                 // active choropleth field
-let baseState = {choropleth:true, sawah:false, kp2b:false, roads:false, flows:false, priority:false, sentra:false};
+let baseState = {choropleth:true, sawah:false, kp2b:false, roads:false, flows:false, priority:false, sentra:false, od:false, rmu:false};
 let hazardCats = new Set();             // flood / landslide / quake
 let nodeCats = new Set(["center","bulog","mrmp","pasar"]);
 
 /* ---- load data ---------------------------------------------------------- */
 async function loadAll(){
   const names = ["pangan_kabkota","pangan_kp2b","pangan_sawah","pangan_roads","pangan_hazard","pangan_nodes",
-                 "pangan_flows","pangan_priority","pangan_sentra"];
+                 "pangan_flows","pangan_priority","pangan_sentra","pangan_od","pangan_rmu"];
   const res = await Promise.all(names.map(n=>fetch(DATA+n+".geojson"+DV).then(r=>r.json())));
   names.forEach((n,i)=>DATASETS[n.replace("pangan_","")]=res[i]);
   DATASETS.sources = await fetch(DATA+"pangan_data_sources.json"+DV).then(r=>r.json());
@@ -629,6 +629,32 @@ async function buildLayers(){
       "line-width":["interpolate",["linear"],["to-number",["get","rank"]],1,6,50,2.5],
       "line-opacity":["interpolate",["linear"],["to-number",["get","rank"]],1,1.0,50,0.65]}});
 
+  // OD desire lines — stage 1 (sentra → gudang) + stage 2 (gudang → pasar)
+  map.addSource("od",{type:"geojson",data:DATASETS.od});
+  map.addLayer({id:"od-s1",type:"line",source:"od",
+    filter:["==",["get","stage"],1],
+    layout:{visibility:"none","line-cap":"round"},
+    paint:{"line-color":c.accent,"line-opacity":0.28,
+      "line-width":["interpolate",["linear"],["to-number",["get","flow_norm"]],0,0.6,1,3.5]}});
+  map.addLayer({id:"od-s2",type:"line",source:"od",
+    filter:["==",["get","stage"],2],
+    layout:{visibility:"none","line-cap":"butt","line-join":"round"},
+    paint:{"line-color":"#e8956a","line-opacity":0.72,
+      "line-width":["interpolate",["linear"],["to-number",["get","flow_norm"]],0,1.5,1,5]}});
+
+  // Rice mill capacity bubbles (per-kabkota, sized by est. ton/day)
+  map.addSource("rmu",{type:"geojson",data:DATASETS.rmu});
+  map.addLayer({id:"rmu-circle",type:"circle",source:"rmu",
+    layout:{visibility:"none"},
+    paint:{"circle-opacity":0.82,"circle-stroke-width":1.5,"circle-stroke-color":c.surface,
+      "circle-color":["match",["get","tier"],"HIGH",c.accent,"MEDIUM","#c98060","#9a8272"],
+      "circle-radius":["interpolate",["linear"],["to-number",["get","cap_tday"]],
+        0,5, 1000,9, 2000,13, 4000,18, 6000,24]}});
+  map.addLayer({id:"rmu-label",type:"symbol",source:"rmu",
+    layout:{visibility:"none","text-field":["to-string",["get","rmu_total"]],
+      "text-font":["Noto Sans Regular"],"text-size":9,"text-anchor":"center"},
+    paint:{"text-color":"#fff","text-halo-color":c.accent,"text-halo-width":0.5}});
+
   // nodes on top of everything
   map.addLayer({id:"nodes-pts",type:"symbol",source:"nodes",
     layout:{"icon-image":["concat","nd_",["get","cat"]],"icon-size":0.52,
@@ -648,6 +674,8 @@ function applyAll(){
   vis("flows-line",baseState.flows);
   vis("priority-bg",baseState.priority); vis("priority-line",baseState.priority);
   vis("sentra-fill",baseState.sentra); vis("sentra-line",baseState.sentra);
+  vis("od-s1",baseState.od); vis("od-s2",baseState.od);
+  vis("rmu-circle",baseState.rmu); vis("rmu-label",baseState.rmu);
   applyHazard(); applyNodes();
 }
 function applyHazard(){
@@ -712,6 +740,13 @@ function bindMapEvents(){
   map.on("click","nodes-pts",e=>showNode(e.features[0]));
   map.on("click","priority-line",e=>showPriorityRoad(e.features[0]));
   map.on("click","sentra-fill",e=>showSentra(e.features[0]));
+  map.on("click","od-s1",e=>showODLine(e.features[0]));
+  map.on("click","od-s2",e=>showODLine(e.features[0]));
+  map.on("click","rmu-circle",e=>showRMU(e.features[0]));
+  ["od-s1","od-s2","rmu-circle"].forEach(l=>{
+    map.on("mouseenter",l,()=>map.getCanvas().style.cursor="pointer");
+    map.on("mouseleave",l,()=>map.getCanvas().style.cursor="");
+  });
 
   // hover cursor
   let hoveredSentra=null;
@@ -793,6 +828,35 @@ function showSentra(f){
   ].forEach(([k,v])=>{const d=document.createElement("div");d.innerHTML=`<dt>${k}</dt><dd>${v}</dd>`;meta.appendChild(d);});
   document.getElementById("detail").classList.add("show");
 }
+function showODLine(f){
+  const p=f.properties;
+  const isS1=p.stage===1||p.stage==="1";
+  document.getElementById("detailIcon").textContent="linear_scale";
+  document.getElementById("detailCat").textContent=(isS1?"Stage 1 · Origin → Channel":"Stage 2 · Channel → Market");
+  document.getElementById("detailName").textContent=esc(p.origin||"—")+" → "+esc(p.dest||"—");
+  const meta=document.getElementById("detailMeta"); meta.innerHTML="";
+  [["Flow",fmt(p.flow,0)+" tons/yr"],
+   ["Relative weight",fmt(p.flow_norm*100,1)+"%"],
+   ...(isS1?[["Sentra tier",esc(p.tier||"—")]]:
+            [["Channel",esc(p.origin||"—")],["Destination",esc(p.dest||"—")]]),
+  ].forEach(([k,v])=>{const d=document.createElement("div");d.innerHTML=`<dt>${k}</dt><dd>${v}</dd>`;meta.appendChild(d);});
+  document.getElementById("detail").classList.add("show");
+}
+function showRMU(f){
+  const p=f.properties;
+  document.getElementById("detailIcon").textContent="factory";
+  document.getElementById("detailCat").textContent="Rice Mill Capacity · "+esc(p.tier||"")+" tier";
+  document.getElementById("detailName").textContent=esc(p.kabkot||"—");
+  const meta=document.getElementById("detailMeta"); meta.innerHTML="";
+  [["Total mills",fmt(p.rmu_total,0)+" units"],
+   ["Large mills",fmt(p.rmu_besar,0)],
+   ["Medium mills",fmt(p.rmu_sedang,0)],
+   ["Small mills",fmt(p.rmu_kecil,0)],
+   ["Est. capacity",fmt(p.cap_tday,0)+" tons/day"],
+   ["Sub-Divre weight",fmt(p.sd_weight,2)],
+  ].forEach(([k,v])=>{const d=document.createElement("div");d.innerHTML=`<dt>${k}</dt><dd>${v}</dd>`;meta.appendChild(d);});
+  document.getElementById("detail").classList.add("show");
+}
 document.getElementById("detailClose").onclick=()=>document.getElementById("detail").classList.remove("show");
 
 /* ---- drawer build ------------------------------------------------------- */
@@ -828,6 +892,8 @@ function buildDrawer(){
     ["flows","Rice flow corridors","tons routed on OSM network","route"],
     ["priority","Top-50 priority roads","composite score: flow+criticality+hazard","stars"],
     ["sentra","Sentra padi","254 rice-production centres (LQ)","agriculture"],
+    ["od","OD desire lines","origin→channel→market (straight-line)","linear_scale"],
+    ["rmu","Rice mill capacity","est. processing ton/day per kab/kota","factory"],
   ];
   const al=document.getElementById("analysislist");
   analysis.forEach(([k,t,s,ic])=>{
