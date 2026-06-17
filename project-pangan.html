@@ -60,11 +60,157 @@
         <li>Produce an explicit <strong>OD matrix and priority-road ranking</strong> as a reusable, reproducible transport-planning reference.</li>
       </ul>
     </div>
-    <figure class="figure reveal">
-      <div class="figure__frame" data-zoom data-cap="Complete analysis flowchart, 16 scripts, 7 methodology refinements, across 5 pipeline layers with robustness checks.">
-        <img src="assets/img/pangan/flowchart.png" width="1690" height="2200" alt="Analysis pipeline flowchart" loading="lazy">
+    <figure class="figure reveal" style="max-width:none">
+    <style>
+    /* ── Pipeline diagram ────────────────────────────────────── */
+    .pl { display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:720px; margin:0 auto; }
+    .pl-stage { border:1px solid var(--line); border-radius:16px; padding:18px 22px 16px; background:var(--surface-2); position:relative; }
+    .pl-stage--src { background:var(--accent-soft); border-color:var(--outline); }
+    .pl-stage--out { background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
+    .pl-stage--out .pl-h b, .pl-stage--out .pl-h .ms { color:var(--on-accent); }
+    .pl-h { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+    .pl-h .ms { font-size:20px; color:var(--accent-ink); }
+    .pl-stage--src .pl-h .ms { color:var(--accent-ink); }
+    .pl-num { font-family:var(--font-mono); font-size:10px; font-weight:700; width:22px; height:22px; flex:none;
+      display:grid; place-items:center; border-radius:50%; background:var(--accent); color:var(--on-accent); }
+    .pl-stage--src .pl-num { background:var(--accent-ink); }
+    .pl-stage--out .pl-num { background:rgba(255,255,255,.25); color:var(--on-accent); }
+    .pl-h b { font-size:13.5px; font-weight:700; letter-spacing:-.01em; }
+    .pl-chips { display:flex; flex-wrap:wrap; gap:6px; }
+    .pl-chip { font-family:var(--font-mono); font-size:10.5px; padding:4px 11px;
+      border-radius:var(--r-full); background:var(--surface); border:1px solid var(--line-soft);
+      color:var(--ink-soft); white-space:nowrap; }
+    .pl-chip--hi { background:var(--accent-soft); border-color:var(--outline); color:var(--accent-ink); font-weight:600; }
+    .pl-stage--src .pl-chip { background:rgba(255,255,255,.55); border-color:rgba(0,0,0,.10); color:var(--ink); }
+    .pl-rows { display:flex; flex-direction:column; gap:7px; }
+    .pl-row { display:flex; align-items:baseline; gap:8px; font-size:12.5px; color:var(--ink-soft); line-height:1.4; }
+    .pl-row .dot { width:5px; height:5px; border-radius:50%; background:var(--accent); flex:none; margin-top:5px; }
+    .pl-conn { display:flex; flex-direction:column; align-items:center; gap:0; padding:0; }
+    .pl-conn-line { width:1px; height:22px; background:var(--line); }
+    .pl-conn .ms { font-size:18px; color:var(--muted); }
+    /* Models fork */
+    .pl-fork { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:12px; }
+    .pl-model { border:1px solid var(--line-soft); border-radius:12px; padding:12px 14px; background:var(--surface); }
+    .pl-model--star { border-color:var(--accent); background:var(--accent-soft); }
+    .pl-model .kk { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:.08em;
+      color:var(--accent-ink); margin-bottom:5px; display:flex; align-items:center; gap:5px; }
+    .pl-model--star .kk { font-weight:700; }
+    .pl-model b { font-size:12px; font-weight:700; display:block; margin-bottom:4px; }
+    .pl-model p { font-size:11px; color:var(--ink-soft); line-height:1.4; }
+    /* Score dims */
+    .pl-dims { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+    .pl-dim { font-size:11px; border-radius:8px; padding:4px 9px; border:1px solid var(--line-soft);
+      background:var(--surface); color:var(--ink-soft); }
+    .pl-dim b { font-family:var(--font-mono); color:var(--accent-ink); font-size:10px; }
+    /* Robustness row */
+    .pl-robust { display:flex; gap:7px; flex-wrap:wrap; margin-top:10px; padding-top:10px; border-top:1px solid var(--line-soft); }
+    .pl-robust-lbl { font-family:var(--font-mono); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase;
+      color:var(--muted); align-self:center; white-space:nowrap; }
+    .pl-badge { font-family:var(--font-mono); font-size:10px; padding:3px 9px; border-radius:var(--r-full);
+      background:var(--sc-high); border:1px solid var(--outline); color:var(--ink-soft); white-space:nowrap; }
+    /* Output chips */
+    .pl-outs { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .pl-out { display:flex; align-items:center; gap:6px; font-size:13px; font-weight:600; }
+    .pl-out .ms { font-size:18px; }
+    </style>
+    <div class="pl">
+
+      <!-- 1 · DATA SOURCES -->
+      <div class="pl-stage pl-stage--src">
+        <div class="pl-h"><span class="pl-num">1</span><span class="ms">database</span><b>Data Sources</b></div>
+        <div class="pl-chips">
+          <span class="pl-chip">BPS rice production · 27 kab/kota</span>
+          <span class="pl-chip">OSM road network · 2.13M edges</span>
+          <span class="pl-chip">~1M rice-field polygons (BPIW)</span>
+          <span class="pl-chip">40 supply-chain channels</span>
+          <span class="pl-chip">Hazard maps · landslide · quake · fault</span>
+          <span class="pl-chip">TomTom Routing API · truck speeds</span>
+        </div>
       </div>
-      <figcaption>Figure 0. Complete analysis flowchart: data sources → preprocessing → node setup → flow models → network analysis → composite priority.</figcaption>
+
+      <div class="pl-conn"><div class="pl-conn-line"></div><span class="ms">arrow_downward</span><div class="pl-conn-line"></div></div>
+
+      <!-- 2 · PREPROCESSING -->
+      <div class="pl-stage">
+        <div class="pl-h"><span class="pl-num">2</span><span class="ms">join_inner</span><b>Preprocessing</b></div>
+        <div class="pl-rows">
+          <div class="pl-row"><span class="dot"></span>Disaggregate BPS production → 713 kecamatan by paddy-area weight</div>
+          <div class="pl-row"><span class="dot"></span>Location Quotient → classify <strong>254 sentra padi</strong> (primer / sekunder)</div>
+          <div class="pl-row"><span class="dot"></span>Weighted farmland centroids as origin points · KP2B cross-check</div>
+        </div>
+      </div>
+
+      <div class="pl-conn"><div class="pl-conn-line"></div><span class="ms">arrow_downward</span><div class="pl-conn-line"></div></div>
+
+      <!-- 3 · NETWORK SETUP -->
+      <div class="pl-stage">
+        <div class="pl-h"><span class="pl-num">3</span><span class="ms">hub</span><b>Network Setup</b></div>
+        <div class="pl-rows">
+          <div class="pl-row"><span class="dot"></span><strong>Origins</strong> 254 production centres  ·  <strong>Channels</strong> 40 Bulog / MRMP / AB2TI nodes  ·  <strong>Sinks</strong> 53 markets + capitals</div>
+          <div class="pl-row"><span class="dot"></span>Snap all nodes to OSM graph via osmnx nearest-node</div>
+          <div class="pl-row"><span class="dot"></span>Edge cost = travel-time + distance + surface penalty · corridor speed factors (Pantura 0.55, Cipali 0.70)</div>
+        </div>
+      </div>
+
+      <div class="pl-conn"><div class="pl-conn-line"></div><span class="ms">arrow_downward</span><div class="pl-conn-line"></div></div>
+
+      <!-- 4 · FLOW ASSIGNMENT -->
+      <div class="pl-stage">
+        <div class="pl-h"><span class="pl-num">4</span><span class="ms">account_tree</span><b>Flow Assignment × 3 Models</b></div>
+        <div class="pl-fork">
+          <div class="pl-model">
+            <div class="kk"><span class="ms" style="font-size:13px">route</span>Model 1</div>
+            <b>Shortest Path</b>
+            <p>Each origin → cheapest channel. Transparent baseline; ignores capacity.</p>
+          </div>
+          <div class="pl-model">
+            <div class="kk"><span class="ms" style="font-size:13px">scatter_plot</span>Model 2</div>
+            <b>Singly-constrained Gravity</b>
+            <p>Volume spread by attractiveness × e<sup>−β·cost</sup>, β = 1.5. Origin totals conserved.</p>
+          </div>
+          <div class="pl-model pl-model--star">
+            <div class="kk"><span class="ms" style="font-size:13px">stars</span>Model 3 · Primary</div>
+            <b>Doubly-constrained + Furness</b>
+            <p>Both origins and channels balanced. Furness iteration, tol 1e-4. Physically credible flows.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pl-conn"><div class="pl-conn-line"></div><span class="ms">arrow_downward</span><div class="pl-conn-line"></div></div>
+
+      <!-- 5 · SCORING -->
+      <div class="pl-stage">
+        <div class="pl-h"><span class="pl-num">5</span><span class="ms">assessment</span><b>Composite Priority Scoring</b></div>
+        <div class="pl-dims">
+          <div class="pl-dim"><b>0.30</b> Flow</div>
+          <div class="pl-dim"><b>0.25</b> Criticality</div>
+          <div class="pl-dim"><b>0.15</b> Betweenness</div>
+          <div class="pl-dim"><b>0.15</b> Condition</div>
+          <div class="pl-dim"><b>0.15</b> Hazard</div>
+        </div>
+        <div class="pl-robust">
+          <span class="pl-robust-lbl">Robustness ×4</span>
+          <span class="pl-badge">TomTom speed calibration</span>
+          <span class="pl-badge">α ∈ {0.20, 0.30, 0.40}</span>
+          <span class="pl-badge">3-model ranking comparison</span>
+          <span class="pl-badge">Monte Carlo ×1 000 (Dirichlet)</span>
+        </div>
+      </div>
+
+      <div class="pl-conn"><div class="pl-conn-line"></div><span class="ms">arrow_downward</span><div class="pl-conn-line"></div></div>
+
+      <!-- OUTPUT -->
+      <div class="pl-stage pl-stage--out">
+        <div class="pl-h"><span class="pl-num" style="background:rgba(255,255,255,.25)">↓</span><span class="ms" style="color:var(--on-accent)">emoji_events</span><b>Output</b></div>
+        <div class="pl-outs">
+          <div class="pl-out"><span class="ms">route</span>Top-50 priority road segments with composite score</div>
+          <div class="pl-out"><span class="ms">check_circle</span>40-segment stable core robust across all 4 validation axes</div>
+          <div class="pl-out"><span class="ms">table_chart</span>OD matrix — 254 × 40 (Stage 1) · 40 × 53 (Stage 2)</div>
+        </div>
+      </div>
+
+    </div>
+    <figcaption>Figure 0. Analysis pipeline: 5 stages, 3 flow models, 4 robustness checks, ~3,500 lines of Python across 16 scripts.</figcaption>
     </figure>
   </section>
 
@@ -204,6 +350,16 @@
         <img src="assets/img/pangan/network_flow.jpg" width="1800" height="1516" alt="Rice flow over the road network" loading="lazy">
       </div>
       <figcaption>Figure 7. Rice flow over the West Java OSM road network (total Stage 1+2 ≈ 3.3 million tons).</figcaption>
+    </figure>
+
+    <figure class="figure reveal">
+      <div class="dash-embed">
+        <iframe src="maps/pangan_dashboard.html?v=1" title="Interactive food-security explorer for West Java — district indicators, supply-chain nodes, agricultural land, roads and hazards" loading="lazy"></iframe>
+      </div>
+      <figcaption class="figcap--row">
+        <span>Interactive explorer — switch district indicators and toggle the agricultural-land, supply-chain, road and hazard layers behind the analysis.</span>
+        <a class="dash-full" href="maps/pangan_dashboard.html?v=1" target="_blank" rel="noopener">Open fullscreen <span class="arrow">↗</span></a>
+      </figcaption>
     </figure>
   </section>
 
