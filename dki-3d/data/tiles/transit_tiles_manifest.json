@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "generated_at": "2026-07-01T12:42:26.396303+00:00",
+  "strategy": "static_mvt_directory",
+  "source_dataset": "public/data/gtfs/sample_network.json",
+  "sources": {
+    "operational_routes": {
+      "id": "operational_routes",
+      "kind": "operational_routes",
+      "format": "mvt",
+      "url_template": "/data/tiles/operational_routes/{z}/{x}/{y}.pbf",
+      "source_layer": "operational_routes",
+      "minzoom": 7,
+      "maxzoom": 13,
+      "bounds": [
+        106.251878,
+        -6.60463,
+        107.17215,
+        -6.03906
+      ],
+      "feature_count": 724,
+      "byte_size": 4493021
+    },
+    "operational_stops": {
+      "id": "operational_stops",
+      "kind": "operational_stops",
+      "format": "mvt",
+      "url_template": "/data/tiles/operational_stops/{z}/{x}/{y}.pbf",
+      "source_layer": "operational_stops",
+      "minzoom": 7,
+      "maxzoom": 13,
+      "bounds": [
+        106.2515252,
+        -6.601931,
+        107.170464,
+        -6.039902
+      ],
+      "feature_count": 8259,
+      "byte_size": 5374561
+    }
+  },
+  "note": "Static MVT directories are used for map-rendered operational routes/stops. The JSON GTFS-like dataset remains the source for search, details, schedules, and vehicle simulation."
+}

@@ -1,0 +1,19 @@
+{
+  "dataset_id": "transjakarta_official_candidate",
+  "name": "TransJakarta Official GTFS Candidate (Local Only)",
+  "mode": "transjakarta",
+  "status": "operational",
+  "source_name": "PT Transportasi Jakarta GTFS candidate",
+  "source_url": "https://gtfs.transjakarta.co.id/files/file_gtfs.zip",
+  "accessed_at": "2026-06-19T19:02:09.135601+00:00",
+  "license": "unknown",
+  "data_type": "gtfs_like",
+  "geometry_confidence": "exact",
+  "processing_method": "derived",
+  "limitations": [
+    "Local-only app data; not cleared for redistribution or deployment.",
+    "License and reuse terms are unknown.",
+    "No feed_info.txt license metadata is present in the cached feed.",
+    "Other operators still use manual fallback sample data."
+  ]
+}

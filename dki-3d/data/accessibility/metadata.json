@@ -1,0 +1,30 @@
+{
+  "title": "Accessibility Simulation Data",
+  "scenario": "existing_network",
+  "generated_outputs": {
+    "origins.geojson": 2733,
+    "destinations.geojson": 11663,
+    "od_paths.geojson": 2450,
+    "od_path_segments.geojson": 12250,
+    "corridor_flow_aggregation.geojson": 4307,
+    "station_flow_aggregation.geojson": 1217,
+    "accessibility_by_origin.geojson": 2733,
+    "destination_weight_surface.geojson": 11663,
+    "agents": 900
+  },
+  "validation_status": "passed",
+  "flow_formula": "population * destination_ahp_weight * exp(-0.05 * modeled_travel_time_minutes)",
+  "agent_sampling": "Visual agents are proportionally sampled from OD flow weights; they are not one agent per person.",
+  "path_geometry_policy": "Walking access/egress uses the local OSM walk network where routing succeeds. Mikrotrans/backbone ride phases are represented by stop-to-stop vehicle footprints until exact r5py or GTFS-shape onboard path geometries are available.",
+  "planned_transit_policy": "Existing-network simulation excludes planned transit layers.",
+  "input_mapping": {
+    "origins": "Project AHP pipeline/outputs/accessibility_rw.gpkg",
+    "destinations": "Project AHP pipeline/dest_clean/*.gpkg plus weights in pipeline/config.yaml",
+    "accessibility_scores": "Project AHP acc_mk_60 and delta fields by RW origin",
+    "operational_stops": "DKI 3D public/data/gtfs/sample_network_core.json operational stops",
+    "r5py_paths": "missing in current output set; replace fallback by exporting selected OD path geometries"
+  },
+  "limitations": [
+    "Mikrotrans/backbone ride phases are represented by stop-to-stop vehicle footprints; exact onboard path geometries are still unavailable."
+  ]
+}

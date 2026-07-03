@@ -1,0 +1,21 @@
+{
+  "dataset_id": "mrt_jakarta_timetable_candidate",
+  "name": "MRT Jakarta Station Timetable Candidate (Local Only)",
+  "mode": "mrt",
+  "status": "operational",
+  "source_name": "MRT Jakarta official website station timetable API",
+  "source_url": "https://jakartamrt.co.id/id/jadwal-keberangkatan-mrt",
+  "accessed_at": "2026-06-19T19:23:11.271221+00:00",
+  "license": "unknown",
+  "data_type": "gtfs_like",
+  "geometry_confidence": "exact",
+  "processing_method": "derived",
+  "limitations": [
+    "Local-only app data; not cleared for redistribution or deployment.",
+    "License and reuse terms are unknown.",
+    "Source is station-level timetable strings, not a GTFS feed.",
+    "Trip identities are locally derived by greedy time-sequence matching within each direction.",
+    "Short-start and short-ending services are inferred from unassigned station departures.",
+    "Calendar validity dates are not provided by the source."
+  ]
+}

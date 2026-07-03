@@ -1,0 +1,958 @@
+{
+  "generated_at": "2026-07-01T12:05:29.747182+00:00",
+  "source": "PT MRT Jakarta official station pages",
+  "source_url": "https://www.jakartamrt.co.id/id/stasiun",
+  "license": "official facilities/descriptions — local use only, attribution preserved",
+  "note": "Keyed by operational stop_id. Facilities from the official content API; photos pending.",
+  "details": {
+    "mrt_lebak_bulus": {
+      "stop_id": "mrt_lebak_bulus",
+      "station_name": "Stasiun MRT Lebak Bulus Bank Syariah Indonesia",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_LEBAK_BULUS_e51b46b633.jpg",
+          "caption": "cover lebak bulus",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0505_a95283def5.JPG",
+          "caption": "gallery stasiun lebak bulus 7",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_54298819012_cfdffc8dea_o_46d2fb0d30.jpg",
+          "caption": "gallery stasiun lebak bulus 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_54237176281_57153cc250_6k_c19f5850e0.jpg",
+          "caption": "gallery stasiun lebak bulus 1",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_LEBAK_BULUS_bb8f5d0942.jpg",
+          "caption": "gallery stasiun lebak bulus 5",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "Metromini, Transjakarta"
+        }
+      ],
+      "summary": "Stasiun layang pertama di ujung selatan Jakarta ini memiliki desain yang dekat dengan elemen alam dengan nuansa warna didominasi hijau dan gradasinya.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-lebak-bulus",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_fatmawati_indomaret": {
+      "stop_id": "mrt_fatmawati_indomaret",
+      "station_name": "Stasiun MRT Fatmawati Indomaret",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_FATMAWATI_1_8f34c6fbc2.jpg",
+          "caption": "fatmawati",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_2b8feea2dabb6582d981f2a1af957568_381471524e.jpg",
+          "caption": "gallery stasiun fatmawati 1",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_a975e8f1e85246bc0a10e6686e7cf420_3153ad061b.jpeg",
+          "caption": "gallery stasiun fatmawati 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_692e62ab8ffc140916aa324259dc44a3_ca56256ec8.jpeg",
+          "caption": "gallery stasiun fatmawati 3",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_Benecol_Checkpoint_Libas_Lemak_di_Jalur_Takjil_63a511ee8f_fa0eb0ae46.jpeg",
+          "caption": "gallery stasiun fatmawati 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "Kopaja, Bianglala"
+        }
+      ],
+      "summary": "Stasiun layang kedua di area komersial yang sibuk di Jakarta Selatan.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-fatmawati-indomaret",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_cipete_raya": {
+      "stop_id": "mrt_cipete_raya",
+      "station_name": "Stasiun MRT Cipete Raya TUKU",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0468_1229571d76.JPG",
+          "caption": "tuku",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_CIPETE_RAYA_c3787a0c07.jpg",
+          "caption": "cover stasiun cipete raya",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_f8b33e145ad05be1fe5ef5704c242819_1f04a9a7bc.jpg",
+          "caption": "gallery stasiun cepete raya 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_9ab91b713378c06e7ebb2f36329c94de_27d76db738.jpg",
+          "caption": "gallery stasiun cepete raya 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_54047692422_1323b86faf_o_e5df58a701.jpg",
+          "caption": "gallery stasiun cepete raya 6",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        }
+      ],
+      "summary": "Stasiun ketiga dari MRT Jakarta Fase 1 ini didominasi warna tanah, yakni coklat dan gradasinya.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-cipete-raya",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_haji_nawi": {
+      "stop_id": "mrt_haji_nawi",
+      "station_name": "Stasiun MRT Haji Nawi",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_HAJI_NAWI_17e5ca1cce.JPG",
+          "caption": "cover stasiun haji nawi",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_d10bd0fa7b7da83a3400a7556cf697fd_44df72da41.jpg",
+          "caption": "gallery stasiun haji nawi 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_9c0b5f04118b89fc65462761d9b932aa_59e3e118e2.jpg",
+          "caption": "gallery stasiun haji nawi 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_fe898149a2eb36b424e26212ffeebe65_66de6b6b11.jpg",
+          "caption": "gallery stasiun haji nawi 6",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        }
+      ],
+      "summary": "Menurut sejarah, dahulu kala wilayah Haji Nawi dimiliki dan dikelola oleh saudagar bernama Haji Nawi yang berdarah Betawi.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-haji-nawi",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_blok_a": {
+      "stop_id": "mrt_blok_a",
+      "station_name": "Stasiun MRT Blok A",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_BLOK_A_73ac5c2aac.jpg",
+          "caption": "cover stasiun blok a",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_ecbe8ab4e5ec3497df69dbe38351a5e8_10b4f34fdc.jpg",
+          "caption": "gallery stasiun blok a 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_370063c715ef75d26e0a05d1f3f02cf6_e0df6b6558.jpg",
+          "caption": "gallery stasiun blok a 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_246fe856875256f54fdb47d9235f2a64_c7ffcaf3db.jpg",
+          "caption": "gallery stasiun blok a 6",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "PPD, Kopaja"
+        }
+      ],
+      "summary": "Sejak dahulu kala wilayah Blok A dikenal sebagai area komersial dan bisnis.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-blok-a",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_blok_m_bca": {
+      "stop_id": "mrt_blok_m_bca",
+      "station_name": "Stasiun MRT Blok M BCA",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0474_942adef664.JPG",
+          "caption": "cover stasun blok m bca",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_32bf69c8368fb85142c4e4993cfc3cb8_ffaa5e7715.jpeg",
+          "caption": "gallery stasiun blok m 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_852c26865511c1a340c113488f532aed_91711d49ff.jpg",
+          "caption": "gallery stasiun blok m 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_04fcc4a91efc466fae324b56ddb6d3bf_80199cd725.jpg",
+          "caption": "gallery stasiun blok m 6",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_84147d925b67ab5eb460e8077de9fb6d_4ff2244e4a.jpg",
+          "caption": "gallery stasiun blok m 8",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "PPD, Kopaja, Metromini, Steady Safe, Transjakarta, Mayasari Bakti"
+        }
+      ],
+      "summary": "Terletak di antara dua taman (Taman Ayodya dan Martha Tiyahahu) dan Plaza Blok M, Stasiun Blok M didesain dengan unsur-unsur taman kota.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-blok-m-bca",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_asean": {
+      "stop_id": "mrt_asean",
+      "station_name": "ASEAN Headquarter",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_ASEAN_d9a0c3dd90.jpg",
+          "caption": "cover stasiun asean",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_2b8feea2dabb6582d981f2a1af957568_381471524e.jpg",
+          "caption": "gallery stasiun asean 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_265cbf858fee3cb8b5d82b35b91ffe4b_f00697a48e.jpeg",
+          "caption": "gallery stasiun asean 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/medium_4804ec09c2205ae494eff46ae9a32670_65e0a1c7f2.jpg",
+          "caption": "gallery stasiun asean 6",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_2ba158a838ab3aa833a060dd6e02e826_a02203fbd9.jpg",
+          "caption": "gallery stasiun asean 8",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "Metromini, Transjakarta"
+        }
+      ],
+      "summary": "Stasiun layang pertama di ujung selatan Jakarta ini memiliki desain yang dekat dengan elemen alam dengan nuansa warna didominasi hijau dan gradasinya.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-asean",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_senayan_mastercard": {
+      "stop_id": "mrt_senayan_mastercard",
+      "station_name": "Stasiun MRT Senayan Mastercard",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0490_1_53d0814fb2.jpg",
+          "caption": "cover stasiun senayan mastercard",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_f66fdb945aacb7cf924e5758de32f6c5_828463f27f.jpg",
+          "caption": "gallery stasiun senayan 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/small_2b0e5bcf6645ddac390ecadf13182590_50097f504b.jpg",
+          "caption": "gallery stasiun senayan 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/small_3fae3c00fbaec2c2737d50db57c565d0_a70da21fb2.jpg",
+          "caption": "gallery stasiun senayan 6",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "PPD, Kopaja, Bianglala, Metromini, Transjakarta, Mayasari Bakti"
+        }
+      ],
+      "summary": "Stasiun bawah tanah pertama yang terletak di ujung jalan Sudirman ini memiliki nuansa warna didominasi coklat dan abu-abu.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-senayan-mastercard",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_istora_mandiri": {
+      "stop_id": "mrt_istora_mandiri",
+      "station_name": "Stasiun MRT Istora Mandiri",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0485_1_a1c1635dfb.jpg",
+          "caption": "cover stasiun istora mandiri",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_8d2aa5cf4160031fb3d7f65748fbbc96_ff793eddab.jpg",
+          "caption": "gallery stasiun istora mandiri 1",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_54298819012_cfdffc8dea_o_583ba56717.jpg",
+          "caption": "gallery stasiun istora mandiri 3",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_5e2dd379d8a2ae8b08bb4e3e39450a19_5b87162336.jpg",
+          "caption": "gallery stasiun istora mandiri 5",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "PPD, Kopaja, Bianglala, Metromini, Transjakarta, Mayasari Bakti"
+        }
+      ],
+      "summary": "Stasiun bawah tanah kedua ini terletak di depan area pusat olahraga stadion Gelora Bung Karno.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-istora-mandiri",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_bendungan_hilir": {
+      "stop_id": "mrt_bendungan_hilir",
+      "station_name": "Stasiun MRT Bendungan Hilir",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0451_2_0d76a4128a.JPG",
+          "caption": "cover stasiun bendungan hilir",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_54237176281_57153cc250_6k_c19f5850e0.jpg",
+          "caption": "gallery stasiun bendungan hilir 1",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_692e62ab8ffc140916aa324259dc44a3_ca56256ec8.jpeg",
+          "caption": "gallery stasiun bendungan hilir 3",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_9ab91b713378c06e7ebb2f36329c94de_27d76db738.jpg",
+          "caption": "gallery stasiun bendungan hilir 5",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "PPD, Kopaja, Bianglala, Metromini, Transjakarta, Mayasari Bakti"
+        }
+      ],
+      "summary": "Stasiun bawah tanah ketiga yang terletak di kawasan bisnis Sudirman ini dikemas dengan konsep sungai dan aliran air, bernuansa alam dengan dominasi warna coklat dan gradasinya.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-bendungan-hilir",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_setiabudi_astra": {
+      "stop_id": "mrt_setiabudi_astra",
+      "station_name": "Stasiun MRT Setiabudi Astra",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0480_569901fb9e.JPG",
+          "caption": "cover stasiun setiabudi",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_1041d8e700fddeabe794ee43f3af3fa0_a0753e6471.jpg",
+          "caption": "gallery stasiun setiabudi 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_cf856bd419a085e39fb0d76b045188d7_306dc636c8.jpg",
+          "caption": "gallery stasiun setiabudi 4",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "PPD, Kopaja, Bianglala, Metromini, Transjakarta, Mayasari Bakti"
+        }
+      ],
+      "summary": "Stasiun bawah tanah keempat yang terletak di kawasan bisnis Sudirman ini dikemas dengan konsep elegan dan bernuansa ketenangan serta dominasi warna putih, keemasan, dan coklat.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-setiabudi-astra",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_dukuh_atas_bni": {
+      "stop_id": "mrt_dukuh_atas_bni",
+      "station_name": "Stasiun MRT Dukuh Atas BNI",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_DUKUH_ATAS_5_529d3530ab.jpg",
+          "caption": "cover stasiun dukuh atas",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_fed9cdf473b186dc5d183f546e516f07_0d894da814.jpg",
+          "caption": "gallery stasiun dukuh atas 1",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_ffaeabd7d0310ee33950f2e7c697317d_f56ec9137f.jpg",
+          "caption": "gallery stasiun dukuh atas 3",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "PPD, Kopaja, Bianglala, Metromini, Transjakarta, Mayasari Bakti"
+        }
+      ],
+      "summary": "Stasiun bawah tanah kelima yang terletak di kawasan bisnis Sudirman ini dikemas dengan nuansa alam hutan, terutama pohon-pohon besar.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/stasiun-dukuh-atas-bni",
+      "updated_at": "2026-07-01"
+    },
+    "mrt_bundaran_hi_bank_jakarta": {
+      "stop_id": "mrt_bundaran_hi_bank_jakarta",
+      "station_name": "Bundaran HI Bank Jakarta",
+      "photos": [
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/medium_13_bundaranhi_ba7fa88890.jpg",
+          "caption": "cover stasiun bundaran hi",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_IMG_0481_2eba948cb7.JPG",
+          "caption": "gallery stasiun bundaran hi 2",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        },
+        {
+          "url": "https://beweb-dev.jakartamrt.co.id/middleware/media/uploads/large_54048797768_5654a88e26_o_08ec4a8090.jpg",
+          "caption": "gallery stasiun bundaran hi 6",
+          "credit": "PT MRT Jakarta",
+          "license": "official content — local use only"
+        }
+      ],
+      "facilities": [
+        {
+          "key": "toilet",
+          "label": "Toilet (5)",
+          "available": true
+        },
+        {
+          "key": "lift",
+          "label": "Lift (1)",
+          "available": true
+        },
+        {
+          "key": "escalator",
+          "label": "Eskalator (8)",
+          "available": true
+        },
+        {
+          "key": "nursing",
+          "label": "Ruang laktasi (1)",
+          "available": true
+        },
+        {
+          "key": "stairs",
+          "label": "Tangga (7)",
+          "available": true
+        },
+        {
+          "key": "wheelchair",
+          "label": "Akses difabel",
+          "available": true,
+          "note": "Akses via lift"
+        },
+        {
+          "key": "integration",
+          "label": "Integrasi angkutan",
+          "available": true,
+          "note": "Metromini, Transjakarta"
+        }
+      ],
+      "summary": "Stasiun layang pertama di ujung selatan Jakarta ini memiliki desain yang dekat dengan elemen alam dengan nuansa warna didominasi hijau dan gradasinya.",
+      "source": "PT MRT Jakarta official station page",
+      "source_url": "https://www.jakartamrt.co.id/id/stasiun/bundaran-hi-bank-jakarta",
+      "updated_at": "2026-07-01"
+    }
+  }
+}

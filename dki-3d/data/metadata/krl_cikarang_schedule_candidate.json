@@ -1,0 +1,21 @@
+{
+  "dataset_id": "krl_cikarang_schedule_candidate",
+  "name": "KRL Cikarang Line Schedule Candidate (Local Only)",
+  "mode": "krl",
+  "status": "operational",
+  "source_name": "KAI Commuter official website schedule API",
+  "source_url": "https://kci.id/perjalanan-krl/jadwal-kereta",
+  "accessed_at": "2026-06-29T12:15:09.392050+00:00",
+  "license": "schedule waived for local use; OSM geometry ODbL",
+  "data_type": "gtfs_like",
+  "geometry_confidence": "exact",
+  "schedule_confidence": "interpolated",
+  "processing_method": "derived",
+  "limitations": [
+    "Schedule reuse waived by the owner for local use only.",
+    "Station coordinates and track geometry from OpenStreetMap (ODbL).",
+    "Source is website API schedule JSON, not a GTFS feed.",
+    "Modeled as the main Cikarang-Angke service; loop variants (via Manggarai/Pasar Senen) are simplified.",
+    "Intermediate stop times scaled from a representative official train schedule."
+  ]
+}

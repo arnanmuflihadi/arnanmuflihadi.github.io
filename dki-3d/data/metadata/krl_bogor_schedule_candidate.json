@@ -1,0 +1,23 @@
+{
+  "dataset_id": "krl_bogor_schedule_candidate",
+  "name": "KRL Bogor Line Schedule Candidate (Local Only)",
+  "mode": "krl",
+  "status": "operational",
+  "source_name": "KAI Commuter official website schedule API",
+  "source_url": "https://kci.id/perjalanan-krl/jadwal-kereta",
+  "accessed_at": "2026-06-29T12:15:09.392050+00:00",
+  "license": "schedule unknown; OSM geometry ODbL",
+  "data_type": "gtfs_like",
+  "geometry_confidence": "exact",
+  "processing_method": "derived",
+  "limitations": [
+    "Local-only app data; not cleared for redistribution or deployment.",
+    "Schedule license and reuse terms are unknown.",
+    "OpenStreetMap geometry is ODbL-licensed and attribution/share-alike obligations are not configured for deployment.",
+    "Source is website API schedule JSON, not a GTFS feed.",
+    "Only full Bogor to Jakarta Kota and Jakarta Kota to Bogor terminal services are included.",
+    "Terminal departure and arrival times use sourced KCI API rows.",
+    "Intermediate stop times are derived by scaling representative official train-schedule offsets to each sourced terminal runtime.",
+    "Trips and calendars are locally derived and are not official GTFS service records."
+  ]
+}

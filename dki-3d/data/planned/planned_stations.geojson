@@ -1,0 +1,1017 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.822942,
+          -6.191469
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_ns_phase2a_bundaran_hi",
+        "name": "Bundaran HI",
+        "corridor_id": "mrt_ns_phase2a",
+        "mode": "future_mrt",
+        "status": "under_construction",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.816628,
+          -6.136135
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_ns_phase2a_kota",
+        "name": "Kota",
+        "corridor_id": "mrt_ns_phase2a",
+        "mode": "future_mrt",
+        "status": "under_construction",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.817036,
+          -6.136059
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_ns_phase2b_kota",
+        "name": "Kota",
+        "corridor_id": "mrt_ns_phase2b",
+        "mode": "future_mrt",
+        "status": "under_construction",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.820448,
+          -6.117039
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_ns_phase2b_ancol_barat",
+        "name": "Ancol Barat",
+        "corridor_id": "mrt_ns_phase2b",
+        "mode": "future_mrt",
+        "status": "under_construction",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.685325,
+          -6.160341
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_east_west_dki_kalideres",
+        "name": "Kalideres",
+        "corridor_id": "mrt_east_west_dki",
+        "mode": "future_mrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.97276,
+          -6.193849
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_east_west_dki_ujungmenteng",
+        "name": "Ujungmenteng",
+        "corridor_id": "mrt_east_west_dki",
+        "mode": "future_mrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.883934,
+          -6.306984
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_fatmawati_rambutan_fatmawati",
+        "name": "Fatmawati",
+        "corridor_id": "mrt_fatmawati_rambutan",
+        "mode": "future_mrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.795006,
+          -6.291599
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_fatmawati_rambutan_kp_rambutan",
+        "name": "Kp.Rambutan",
+        "corridor_id": "mrt_fatmawati_rambutan",
+        "mode": "future_mrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.778382,
+          -6.289345
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_lebakbulus_pik_lb_bulus",
+        "name": "Lb. Bulus",
+        "corridor_id": "mrt_lebakbulus_pik",
+        "mode": "future_mrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.731527,
+          -6.121361
+        ]
+      },
+      "properties": {
+        "id": "planned_mrt_lebakbulus_pik_pik",
+        "name": "PIK",
+        "corridor_id": "mrt_lebakbulus_pik",
+        "mode": "future_mrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.908786,
+          -6.154449
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_02_klp_gading_jis_loopline_klp_gading",
+        "name": "Klp. Gading",
+        "corridor_id": "lrt_lrt_02_klp_gading_jis_loopline",
+        "mode": "future_lrt",
+        "status": "under_construction",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.853805,
+          -6.124684
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_02_klp_gading_jis_loopline_jis",
+        "name": "JIS",
+        "corridor_id": "lrt_lrt_02_klp_gading_jis_loopline",
+        "mode": "future_lrt",
+        "status": "under_construction",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.891115,
+          -6.193128
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_03_velodrome_cawang_velodrome",
+        "name": "Velodrome",
+        "corridor_id": "lrt_lrt_03_velodrome_cawang",
+        "mode": "future_lrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.877993,
+          -6.240075
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_03_velodrome_cawang_cawang",
+        "name": "Cawang",
+        "corridor_id": "lrt_lrt_03_velodrome_cawang",
+        "mode": "future_lrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.721387,
+          -6.220695
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_04_pulo_gebang_joglo_pulo_gebang",
+        "name": "Pulo Gebang",
+        "corridor_id": "lrt_lrt_04_pulo_gebang_joglo",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.832813,
+          -6.225795
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_04_pulo_gebang_joglo_joglo",
+        "name": "Joglo",
+        "corridor_id": "lrt_lrt_04_pulo_gebang_joglo",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.853805,
+          -6.124684
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_07_jis_kedoya_jis",
+        "name": "JIS",
+        "corridor_id": "lrt_lrt_07_jis_kedoya",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.765634,
+          -6.159622
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_07_jis_kedoya_kedoya",
+        "name": "Kedoya",
+        "corridor_id": "lrt_lrt_07_jis_kedoya",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.775984,
+          -6.141594
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_08_pik_kamal_muara_pik",
+        "name": "PIK",
+        "corridor_id": "lrt_lrt_08_pik_kamal_muara",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.731527,
+          -6.121361
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_08_pik_kamal_muara_kamal_muara",
+        "name": "Kamal Muara",
+        "corridor_id": "lrt_lrt_08_pik_kamal_muara",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.832813,
+          -6.225795
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_04_pulo_gebang_joglo_2_pulo_gebang",
+        "name": "Pulo Gebang",
+        "corridor_id": "lrt_lrt_04_pulo_gebang_joglo_2",
+        "mode": "future_lrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.950616,
+          -6.216935
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_04_pulo_gebang_joglo_2_joglo",
+        "name": "Joglo",
+        "corridor_id": "lrt_lrt_04_pulo_gebang_joglo_2",
+        "mode": "future_lrt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.951378,
+          -6.216445
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_05_pulo_gebang_marunda_jis_pulo_gebang",
+        "name": "Pulo Gebang",
+        "corridor_id": "lrt_lrt_05_pulo_gebang_marunda_jis",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.853805,
+          -6.124684
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_05_pulo_gebang_marunda_jis_jis",
+        "name": "JIS",
+        "corridor_id": "lrt_lrt_05_pulo_gebang_marunda_jis",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.765634,
+          -6.159622
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_06_pesing_karet_pesing",
+        "name": "Pesing",
+        "corridor_id": "lrt_lrt_06_pesing_karet",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.816504,
+          -6.200906
+        ]
+      },
+      "properties": {
+        "id": "planned_lrt_lrt_06_pesing_karet_karet",
+        "name": "Karet",
+        "corridor_id": "lrt_lrt_06_pesing_karet",
+        "mode": "future_lrt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.854756,
+          -6.216663
+        ]
+      },
+      "properties": {
+        "id": "planned_krl_inner_loopline_krl_inner_loopline_krl_endpoint_1",
+        "name": "Inner Loopline KRL endpoint 1",
+        "corridor_id": "krl_inner_loopline_krl",
+        "mode": "future_krl",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.854756,
+          -6.216663
+        ]
+      },
+      "properties": {
+        "id": "planned_krl_inner_loopline_krl_inner_loopline_krl_endpoint_2",
+        "name": "Inner Loopline KRL endpoint 2",
+        "corridor_id": "krl_inner_loopline_krl",
+        "mode": "future_krl",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.735954,
+          -6.185234
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_i_puri_pik_pluit_puri",
+        "name": "Puri",
+        "corridor_id": "brt_ajuan_koridor_i_puri_pik_pluit",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.78483,
+          -6.114509
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_i_puri_pik_pluit_pluit",
+        "name": "Pluit",
+        "corridor_id": "brt_ajuan_koridor_i_puri_pik_pluit",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.880592,
+          -6.109824
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_ii_kota_ancol_tj_priok_kota",
+        "name": "Kota",
+        "corridor_id": "brt_ajuan_koridor_ii_kota_ancol_tj_priok",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.810695,
+          -6.132867
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_ii_kota_ancol_tj_priok_tj_priok",
+        "name": "Tj. Priok",
+        "corridor_id": "brt_ajuan_koridor_ii_kota_ancol_tj_priok",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.857357,
+          -6.124013
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_iii_jis_pulo_gebang_jis",
+        "name": "JIS",
+        "corridor_id": "brt_ajuan_koridor_iii_jis_pulo_gebang",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.951135,
+          -6.211349
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_iii_jis_pulo_gebang_pulo_gebang",
+        "name": "Pulo Gebang",
+        "corridor_id": "brt_ajuan_koridor_iii_jis_pulo_gebang",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.865435,
+          -6.224698
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni_endpoint_1",
+        "name": "Ajuan Koridor IV (Kp. Melayu-Tanah Abang-Harmoni) endpoint 1",
+        "corridor_id": "brt_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.820059,
+          -6.164522
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni_endpoint_2",
+        "name": "Ajuan Koridor IV (Kp. Melayu-Tanah Abang-Harmoni) endpoint 2",
+        "corridor_id": "brt_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.845665,
+          -6.208494
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_v_manggarai_ui_manggarai",
+        "name": "Manggarai",
+        "corridor_id": "brt_ajuan_koridor_v_manggarai_ui",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.829089,
+          -6.354847
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_v_manggarai_ui_ui",
+        "name": "UI",
+        "corridor_id": "brt_ajuan_koridor_v_manggarai_ui",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.845081,
+          -6.175445
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koriodr_vi_jis_senen_jis",
+        "name": "JIS",
+        "corridor_id": "brt_ajuan_koriodr_vi_jis_senen",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.857357,
+          -6.124013
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koriodr_vi_jis_senen_senen",
+        "name": "Senen",
+        "corridor_id": "brt_ajuan_koriodr_vi_jis_senen",
+        "mode": "future_brt",
+        "status": "planned",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.880462,
+          -6.306739
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_vii_kp_rambutan_pulo_gebang_kp_rambutan",
+        "name": "Kp.Rambutan",
+        "corridor_id": "brt_ajuan_koridor_vii_kp_rambutan_pulo_gebang",
+        "mode": "future_brt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.951135,
+          -6.211349
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_vii_kp_rambutan_pulo_gebang_pulo_gebang",
+        "name": "Pulo Gebang",
+        "corridor_id": "brt_ajuan_koridor_vii_kp_rambutan_pulo_gebang",
+        "mode": "future_brt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.951135,
+          -6.211349
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_viii_pulo_gebang_kalibaru_pulo_gebang",
+        "name": "Pulo Gebang",
+        "corridor_id": "brt_ajuan_koridor_viii_pulo_gebang_kalibaru",
+        "mode": "future_brt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.91411,
+          -6.108459
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_viii_pulo_gebang_kalibaru_kalibaru",
+        "name": "Kalibaru",
+        "corridor_id": "brt_ajuan_koridor_viii_pulo_gebang_kalibaru",
+        "mode": "future_brt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.91411,
+          -6.108459
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_ix_kalibaru_tj_priok_kalibaru",
+        "name": "Kalibaru",
+        "corridor_id": "brt_ajuan_koridor_ix_kalibaru_tj_priok",
+        "mode": "future_brt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.880309,
+          -6.109962
+        ]
+      },
+      "properties": {
+        "id": "planned_brt_ajuan_koridor_ix_kalibaru_tj_priok_tj_priok",
+        "name": "Tj. Priok",
+        "corridor_id": "brt_ajuan_koridor_ix_kalibaru_tj_priok",
+        "mode": "future_brt",
+        "status": "proposed",
+        "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+        "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer",
+        "source_date": "",
+        "confidence": "exact",
+        "notes": "Terminal point taken from the official master-plan corridor endpoint."
+      }
+    }
+  ]
+}

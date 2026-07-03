@@ -1,0 +1,18 @@
+{
+  "dataset_id": "brt_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni",
+  "name": "Ajuan Koridor IV (Kp. Melayu-Tanah Abang-Harmoni)",
+  "mode": "future_brt",
+  "status": "planned",
+  "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+  "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+  "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+  "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+  "data_type": "planned_corridor",
+  "geometry_confidence": "exact",
+  "processing_method": "official",
+  "limitations": [
+    "Master-plan indicative timeline: Sampai 2039.",
+    "Official planned alignment; subject to change before construction.",
+    "Planned corridor has no schedule and is not animated."
+  ]
+}

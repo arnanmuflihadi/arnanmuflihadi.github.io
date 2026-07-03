@@ -1,0 +1,416 @@
+[
+  {
+    "dataset_id": "mrt_ns_phase2a",
+    "name": "MRT North-South — Phase 2A",
+    "mode": "future_mrt",
+    "status": "under_construction",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/0",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: 2020 - 2029.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "mrt_ns_phase2b",
+    "name": "MRT North-South — Phase 2B (Ancol)",
+    "mode": "future_mrt",
+    "status": "under_construction",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/0",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: 2020 - 2029.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "mrt_east_west_dki",
+    "name": "MRT East-West Line (DKI segment)",
+    "mode": "future_mrt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/0",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: 2030 - 2034.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "mrt_fatmawati_rambutan",
+    "name": "MRT Fatmawati – Kp. Rambutan",
+    "mode": "future_mrt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/0",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: 2030 - 2034.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "mrt_lebakbulus_pik",
+    "name": "MRT Lebak Bulus – PIK",
+    "mode": "future_mrt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/0",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: > 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_02_klp_gading_jis_loopline",
+    "name": "LRT 02 (Klp. Gading - JIS) / Loopline",
+    "mode": "future_lrt",
+    "status": "under_construction",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: 2020 - 2029.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_03_velodrome_cawang",
+    "name": "LRT 03 (Velodrome - Cawang)",
+    "mode": "future_lrt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: 2030 - 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_04_pulo_gebang_joglo",
+    "name": "LRT 04 (Pulo Gebang - Joglo)",
+    "mode": "future_lrt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: > 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_07_jis_kedoya",
+    "name": "LRT 07 (JIS - Kedoya)",
+    "mode": "future_lrt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: > 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_08_pik_kamal_muara",
+    "name": "LRT 08 (PIK - Kamal Muara)",
+    "mode": "future_lrt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: > 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_04_pulo_gebang_joglo_2",
+    "name": "LRT 04 (Pulo Gebang - Joglo)",
+    "mode": "future_lrt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: 2030 - 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_05_pulo_gebang_marunda_jis",
+    "name": "LRT 05 (Pulo Gebang - Marunda - JIS)",
+    "mode": "future_lrt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: > 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "lrt_lrt_06_pesing_karet",
+    "name": "LRT 06 (Pesing - Karet)",
+    "mode": "future_lrt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/1",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: > 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "krl_inner_loopline_krl",
+    "name": "Inner Loopline KRL",
+    "mode": "future_krl",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/2",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Rencana Pengembangan.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_i_puri_pik_pluit",
+    "name": "Ajuan Koridor I (Puri - PIK - Pluit)",
+    "mode": "future_brt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Sampai 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_ii_kota_ancol_tj_priok",
+    "name": "Ajuan Koridor II (Kota - Ancol - Tj. Priok)",
+    "mode": "future_brt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Sampai 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_iii_jis_pulo_gebang",
+    "name": "Ajuan Koridor III (JIS - Pulo Gebang)",
+    "mode": "future_brt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Sampai 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_iv_kp_melayu_tanah_abang_harmoni",
+    "name": "Ajuan Koridor IV (Kp. Melayu-Tanah Abang-Harmoni)",
+    "mode": "future_brt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Sampai 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_v_manggarai_ui",
+    "name": "Ajuan Koridor V (Manggarai - UI)",
+    "mode": "future_brt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Sampai 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koriodr_vi_jis_senen",
+    "name": "Ajuan Koriodr VI (JIS - Senen)",
+    "mode": "future_brt",
+    "status": "planned",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Sampai 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_vii_kp_rambutan_pulo_gebang",
+    "name": "Ajuan Koridor VII (Kp.Rambutan - Pulo Gebang)",
+    "mode": "future_brt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Setelah 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_viii_pulo_gebang_kalibaru",
+    "name": "Ajuan Koridor VIII (Pulo Gebang - Kalibaru)",
+    "mode": "future_brt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Setelah 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  },
+  {
+    "dataset_id": "brt_ajuan_koridor_ix_kalibaru_tj_priok",
+    "name": "Ajuan Koridor IX (Kalibaru - Tj. Priok)",
+    "mode": "future_brt",
+    "status": "proposed",
+    "source_name": "Jakarta Satu (DKI Jakarta) — DCKTRP Rencana Induk Transportasi Jakarta",
+    "source_url": "https://jakartasatu.jakarta.go.id/server/rest/services/DCKTRP/Rencana_Induk_Transportasi_Jakarta/FeatureServer/3",
+    "accessed_at": "2026-07-01T11:56:29.649817+00:00",
+    "license": "Official DKI Jakarta open geodata — local use only, attribution preserved",
+    "data_type": "planned_corridor",
+    "geometry_confidence": "exact",
+    "processing_method": "official",
+    "limitations": [
+      "Master-plan indicative timeline: Setelah 2039.",
+      "Official planned alignment; subject to change before construction.",
+      "Planned corridor has no schedule and is not animated."
+    ]
+  }
+]

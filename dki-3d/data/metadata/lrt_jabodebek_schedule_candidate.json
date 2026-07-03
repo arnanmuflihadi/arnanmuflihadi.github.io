@@ -1,0 +1,23 @@
+{
+  "dataset_id": "lrt_jabodebek_schedule_candidate",
+  "name": "LRT Jabodebek Schedule Candidate (Local Only)",
+  "mode": "lrt_jabodebek",
+  "status": "operational",
+  "source_name": "LRT Jabodebek official website departure schedule",
+  "source_url": "https://lrtjabodebek.kai.id/jadwal-keberangkatan",
+  "accessed_at": "2026-06-20T07:42:01.434972+00:00",
+  "license": "schedule unknown; OSM geometry ODbL",
+  "data_type": "gtfs_like",
+  "geometry_confidence": "exact",
+  "processing_method": "derived",
+  "limitations": [
+    "Local-only app data; not cleared for redistribution or deployment.",
+    "Schedule license and reuse terms are unknown.",
+    "OpenStreetMap geometry is ODbL-licensed and attribution/share-alike obligations are not configured for deployment.",
+    "Source is station-level weekday/holiday departure tables, not a GTFS feed.",
+    "Official trip IDs and destination labels are not exposed by the source page.",
+    "Outbound Dukuh Atas departures are split evenly between the Bekasi and Cibubur branches for visualization.",
+    "Intermediate stop times are interpolated from official approximate route runtimes.",
+    "Trips and calendars are locally derived and are not official GTFS service records."
+  ]
+}

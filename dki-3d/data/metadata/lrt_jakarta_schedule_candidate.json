@@ -1,0 +1,21 @@
+{
+  "dataset_id": "lrt_jakarta_schedule_candidate",
+  "name": "LRT Jakarta Schedule Candidate (Local Only)",
+  "mode": "lrt_jakarta",
+  "status": "operational",
+  "source_name": "LRT Jakarta public website schedule form",
+  "source_url": "https://demo.lrtjakarta.co.id/index.php?action=rute.jadwal",
+  "accessed_at": "2026-06-20T03:17:07.692726+00:00",
+  "license": "schedule unknown; OSM geometry ODbL",
+  "data_type": "gtfs_like",
+  "geometry_confidence": "exact",
+  "processing_method": "derived",
+  "limitations": [
+    "Local-only app data; not cleared for redistribution or deployment.",
+    "Schedule license and reuse terms are unknown.",
+    "OpenStreetMap geometry is ODbL-licensed and attribution/share-alike obligations are not configured for deployment.",
+    "Source is terminal departure lists from a public schedule form, not a GTFS feed.",
+    "Intermediate station stop times are uniformly interpolated at three minutes per segment for visualization.",
+    "Trips and calendars are locally derived and are not official GTFS service records."
+  ]
+}

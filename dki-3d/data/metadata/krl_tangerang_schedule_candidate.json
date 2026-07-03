@@ -1,0 +1,22 @@
+{
+  "dataset_id": "krl_tangerang_schedule_candidate",
+  "name": "KRL Tangerang Line Schedule Candidate (Local Only)",
+  "mode": "krl",
+  "status": "operational",
+  "source_name": "KAI Commuter official website schedule API",
+  "source_url": "https://kci.id/perjalanan-krl/jadwal-kereta",
+  "accessed_at": "2026-06-29T12:15:09.392050+00:00",
+  "license": "schedule waived for local use; OSM geometry ODbL",
+  "data_type": "gtfs_like",
+  "geometry_confidence": "exact",
+  "schedule_confidence": "interpolated",
+  "processing_method": "derived",
+  "limitations": [
+    "Schedule reuse terms waived by the project owner for local use only.",
+    "Station coordinates are from OpenStreetMap and require ODbL attribution before redistribution.",
+    "Source is website API schedule JSON, not a GTFS feed.",
+    "Only full Tangerang to Duri and Duri to Tangerang terminal services are included.",
+    "Intermediate stop times are scaled from a representative official train schedule.",
+    "Calendar validity dates are not provided by the source."
+  ]
+}
