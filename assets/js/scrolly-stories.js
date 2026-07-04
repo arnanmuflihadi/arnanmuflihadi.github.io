@@ -191,6 +191,191 @@
     return feature && feature.properties && feature.properties[key] != null ? feature.properties[key] : fallback;
   }
 
+  function renderCompactBars(svg, rows, options) {
+    if (!svg || !rows || !rows.length) return;
+    options = options || {};
+    var width = 520;
+    var height = 310;
+    var left = 148;
+    var top = 78;
+    var rowH = Math.min(32, Math.floor((height - top - 24) / rows.length));
+    var max = rows.reduce(function (m, row) { return Math.max(m, Math.abs(Number(row.value)) || 0); }, 1);
+    var min = rows.reduce(function (m, row) { return Math.min(m, Number(row.value) || 0); }, 0);
+    var hasNegative = min < 0;
+    var zeroX = hasNegative ? left + 150 : left;
+    var maxW = hasNegative ? 300 : 330;
+    svg.textContent = "";
+    svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+
+    svg.appendChild(svgEl("text", {
+      "class": "story-chart-title story-chart-title--small",
+      x: 24,
+      y: 34
+    })).textContent = options.title || "";
+    svg.appendChild(svgEl("text", {
+      "class": "story-chart-subtitle",
+      x: 24,
+      y: 56
+    })).textContent = options.subtitle || "";
+
+    if (hasNegative) {
+      svg.appendChild(svgEl("line", {
+        "class": "story-chart-axis",
+        x1: zeroX,
+        y1: top - 8,
+        x2: zeroX,
+        y2: height - 20
+      }));
+    }
+
+    rows.forEach(function (row, i) {
+      var y = top + i * rowH;
+      var val = Number(row.value) || 0;
+      var w = Math.max(3, Math.abs(val) / max * maxW);
+      var x = hasNegative && val < 0 ? zeroX - w : zeroX;
+      var color = row.color || options.color || "var(--accent)";
+
+      var label = svgEl("text", {
+        "class": "story-chart-label",
+        x: 24,
+        y: y + 16
+      });
+      label.textContent = truncate(row.label, 18);
+      svg.appendChild(label);
+
+      var bar = svgEl("rect", {
+        "class": "story-chart-bar",
+        x: x.toFixed(1),
+        y: y,
+        width: w.toFixed(1),
+        height: Math.max(16, rowH - 10),
+        fill: color
+      });
+      bar.appendChild(svgEl("title", {})).textContent = row.label + ": " + formatNumber(val, options.digits || 0) + (options.suffix || "");
+      svg.appendChild(bar);
+
+      var value = svgEl("text", {
+        "class": "story-chart-value",
+        x: 500,
+        y: y + 16
+      });
+      value.textContent = formatNumber(val, options.digits || 0) + (options.suffix || "");
+      svg.appendChild(value);
+    });
+  }
+
+  function renderLineChart(svg, rows, options) {
+    if (!svg || !rows || !rows.length) return;
+    options = options || {};
+    var width = 760;
+    var height = 480;
+    var left = 60, right = 32, top = 86, bottom = 54;
+    var values = [];
+    rows.forEach(function (row) {
+      ["mean", "q1", "q3"].forEach(function (key) {
+        if (isFinite(Number(row[key]))) values.push(Number(row[key]));
+      });
+    });
+    var min = Math.min.apply(Math, values);
+    var max = Math.max.apply(Math, values);
+    var pad = (max - min || 1) * 0.14;
+    min -= pad;
+    max += pad;
+    function x(i) { return left + i / Math.max(1, rows.length - 1) * (width - left - right); }
+    function y(v) { return height - bottom - ((v - min) / (max - min || 1)) * (height - top - bottom); }
+    function pathFor(key) {
+      return rows.map(function (row, i) {
+        return (i ? "L" : "M") + x(i).toFixed(1) + " " + y(Number(row[key])).toFixed(1);
+      }).join(" ");
+    }
+
+    svg.textContent = "";
+    svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+    svg.appendChild(svgEl("text", { "class": "story-chart-title", x: 42, y: 48 })).textContent = options.title || "";
+    svg.appendChild(svgEl("text", { "class": "story-chart-subtitle", x: 42, y: 73 })).textContent = options.subtitle || "";
+
+    [0, .25, .5, .75, 1].forEach(function (t) {
+      var yy = top + t * (height - top - bottom);
+      svg.appendChild(svgEl("line", { "class": "story-chart-axis", x1: left, y1: yy.toFixed(1), x2: width - right, y2: yy.toFixed(1) }));
+    });
+
+    var area = pathFor("q3") + " " + rows.slice().reverse().map(function (row, i) {
+      var idx = rows.length - 1 - i;
+      return "L" + x(idx).toFixed(1) + " " + y(Number(row.q1)).toFixed(1);
+    }).join(" ") + " Z";
+    svg.appendChild(svgEl("path", { d: area, fill: "var(--accent-soft)", opacity: .68 }));
+    svg.appendChild(svgEl("path", { d: pathFor("q1"), fill: "none", stroke: "var(--outline)", "stroke-width": 1.2 }));
+    svg.appendChild(svgEl("path", { d: pathFor("q3"), fill: "none", stroke: "var(--outline)", "stroke-width": 1.2 }));
+    svg.appendChild(svgEl("path", { d: pathFor("mean"), fill: "none", stroke: "var(--accent)", "stroke-width": 4, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+
+    rows.forEach(function (row, i) {
+      var label = svgEl("text", { "class": "story-chart-label", x: x(i), y: height - 24, "text-anchor": "middle" });
+      label.textContent = row.year;
+      svg.appendChild(label);
+      svg.appendChild(svgEl("circle", { cx: x(i).toFixed(1), cy: y(Number(row.mean)).toFixed(1), r: 4, fill: "var(--accent)" }));
+    });
+  }
+
+  function nodeCategoryLabel(cat) {
+    return {
+      gudang: "Warehouses",
+      center: "Centers",
+      pasar_rakyat: "Public markets",
+      pasar: "Central markets",
+      bulog: "Bulog",
+      mrmp: "MRMP"
+    }[cat] || cat;
+  }
+
+  function renderPanganChart(root, data, type) {
+    var svg = $("[data-pangan-chart]", root);
+    if (!svg || !data.kabkota) return;
+    var rows = [];
+    var opts = {};
+    if (type === "production") {
+      rows = (data.sentra.features || []).slice().sort(function (a, b) {
+        return Number(featureProp(b, "prod_ton", 0)) - Number(featureProp(a, "prod_ton", 0));
+      }).slice(0, 6).map(function (feature) {
+        return { label: featureProp(feature, "kecamatan", ""), value: Number(featureProp(feature, "prod_ton", 0)), color: "#6f7f52" };
+      });
+      opts = { title: "Largest Rice Centers", subtitle: "Top kecamatan by modeled production", suffix: " t", digits: 0 };
+    } else if (type === "nodes") {
+      var counts = {};
+      (data.nodes.features || []).forEach(function (feature) {
+        var cat = featureProp(feature, "cat", "node");
+        counts[cat] = (counts[cat] || 0) + 1;
+      });
+      rows = Object.keys(counts).map(function (cat) {
+        return { label: nodeCategoryLabel(cat), value: counts[cat], color: cat === "center" ? "#1f6d78" : cat === "gudang" ? "#7b5f46" : "#b35a3a" };
+      }).sort(function (a, b) { return b.value - a.value; });
+      opts = { title: "Supply-Chain Nodes", subtitle: "Channels and destinations in the model" };
+    } else if (type === "od") {
+      rows = (data.od.features || []).slice().sort(function (a, b) {
+        return Number(featureProp(b, "flow", 0)) - Number(featureProp(a, "flow", 0));
+      }).slice(0, 6).map(function (feature) {
+        return { label: featureProp(feature, "origin", "") + " → " + featureProp(feature, "dest", ""), value: Number(featureProp(feature, "flow", 0)), color: "#466b8a" };
+      });
+      opts = { title: "Largest OD Links", subtitle: "Top modeled desire-line flows", suffix: " t", digits: 0 };
+    } else if (type === "flows") {
+      var roads = {};
+      (data.flows.features || []).forEach(function (feature) {
+        var name = featureProp(feature, "road", "Unnamed road");
+        roads[name] = (roads[name] || 0) + (Number(featureProp(feature, "flow", 0)) || 0);
+      });
+      rows = Object.keys(roads).map(function (name) { return { label: name, value: roads[name], color: "#6a665d" }; })
+        .sort(function (a, b) { return b.value - a.value; }).slice(0, 6);
+      opts = { title: "Highest-Load Roads", subtitle: "Flow summed by road name", suffix: " t", digits: 0 };
+    } else {
+      rows = (data.priority.features || []).slice().sort(function (a, b) {
+        return Number(featureProp(a, "rank", 999)) - Number(featureProp(b, "rank", 999));
+      }).slice(0, 6).map(function (feature) {
+        return { label: "#" + featureProp(feature, "rank", "?") + " " + featureProp(feature, "road", ""), value: Number(featureProp(feature, "score", 0)), color: "var(--accent)" };
+      });
+      opts = { title: "Priority Score", subtitle: "Top ranked intervention candidates", digits: 1 };
+    }
+    renderCompactBars(svg, rows, opts);
+  }
+
   function drawPangan(root, data) {
     var project = makeProjection([data.kabkota, data.sentra, data.nodes, data.priority]);
     var svg = $(".story-map-svg", root);
@@ -343,6 +528,7 @@
       setText(root, "[data-story-kpi]", step.getAttribute("data-kpi"));
       setText(root, "[data-story-label]", step.getAttribute("data-label"));
       setText(root, "[data-story-note]", step.getAttribute("data-note"));
+      renderPanganChart(root, data, step.getAttribute("data-chart"));
     });
 
     Promise.all(Object.keys(paths).map(function (key) {
@@ -356,6 +542,7 @@
         setText(root, "[data-story-kpi]", active.getAttribute("data-kpi"));
         setText(root, "[data-story-label]", active.getAttribute("data-label"));
         setText(root, "[data-story-note]", active.getAttribute("data-note"));
+        renderPanganChart(root, data, active.getAttribute("data-chart"));
       }
     }).catch(function (err) {
       var status = $("[data-story-status]", root);
@@ -388,6 +575,95 @@
     });
 
     root.classList.add("is-loaded");
+  }
+
+  function renderMbrModel(svg, data) {
+    var model = data.modelSummary && data.modelSummary[0];
+    if (!model) return;
+    renderCompactBars(svg, [
+      { label: "R² out-of-fold", value: model.r2, color: "var(--accent)" },
+      { label: "Spearman ρ", value: model.spearman, color: "#466b8a" },
+      { label: "MAE", value: model.mae, color: "#6f7f52" }
+    ], {
+      title: "Stage 1 Model Fit",
+      subtitle: model.features + " AlphaEarth features · " + model.model,
+      digits: 3
+    });
+  }
+
+  function renderMbrQuintiles(svg, data) {
+    var rows = (data.wealthQuintiles || []).map(function (row) {
+      return {
+        label: row.quintile.replace("_", " "),
+        value: row.avg_deprivation,
+        color: row.quintile.indexOf("Q1") === 0 ? "var(--accent)" : row.quintile.indexOf("Q2") === 0 ? "#c48662" : row.quintile.indexOf("Q3") === 0 ? "#d3b36d" : row.quintile.indexOf("Q4") === 0 ? "#7f9f93" : "#466b8a"
+      };
+    });
+    renderCompactBars(svg, rows, {
+      title: "Economic Quintile Gradient",
+      subtitle: "Average deprivation score by calibrated wealth quintile",
+      digits: 1
+    });
+  }
+
+  function renderMbrIpks(svg, data) {
+    var rows = (data.ipksCorrelations || []).filter(function (row) {
+      return row.rho !== null && row.rho !== undefined;
+    }).map(function (row) {
+      return {
+        label: row.code + " · " + row.dimension,
+        value: row.rho,
+        color: row.significant ? "var(--accent)" : "#8a8177"
+      };
+    });
+    renderCompactBars(svg, rows, {
+      title: "IPKS Validation",
+      subtitle: "Spearman correlation with official deprivation dimensions",
+      digits: 3
+    });
+  }
+
+  function renderMbrChart(root, data, chart) {
+    var svg = $("[data-mbr-chart]", root);
+    if (!svg || !data) return;
+    if (chart === "trajectory") {
+      renderLineChart(svg, data.smoothedTrajectory || [], {
+        title: "Smoothed Trajectory Envelope",
+        subtitle: "Mean and interquartile range, 2017-2024"
+      });
+    } else if (chart === "quintile") {
+      renderMbrQuintiles(svg, data);
+    } else if (chart === "ipks") {
+      renderMbrIpks(svg, data);
+    } else {
+      renderMbrModel(svg, data);
+    }
+  }
+
+  function initMbr(root) {
+    var storyData = null;
+    var story = bindStory(root, function (step) {
+      var pane = step.getAttribute("data-pane") || "chart";
+      var chart = step.getAttribute("data-chart") || "model";
+      setPane(root, pane, "data-mbr-pane");
+      setText(root, "[data-story-kpi]", step.getAttribute("data-kpi"));
+      setText(root, "[data-story-label]", step.getAttribute("data-label"));
+      setText(root, "[data-story-note]", step.getAttribute("data-note"));
+      if (storyData && pane === "chart") renderMbrChart(root, storyData, chart);
+    });
+
+    fetchJson("assets/data/mbr/mbr_story.json").then(function (json) {
+      storyData = json;
+      root.classList.add("is-loaded");
+      var active = story.getActiveStep();
+      if (active && (active.getAttribute("data-pane") || "chart") === "chart") {
+        renderMbrChart(root, storyData, active.getAttribute("data-chart") || "model");
+      }
+    }).catch(function (err) {
+      var status = $("[data-story-status]", root);
+      if (status) status.textContent = "The MBR story data could not load. Exported figures remain available in the story.";
+      console.error(err);
+    });
   }
 
   function truncate(text, max) {
@@ -498,6 +774,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     $$("[data-pangan-scrolly]").forEach(initPangan);
+    $$("[data-mbr-scrolly]").forEach(initMbr);
     $$("[data-image-scrolly]").forEach(initImageStory);
     $$("[data-cbd-scrolly]").forEach(initCbd);
   });

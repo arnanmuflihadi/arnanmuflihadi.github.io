@@ -21,7 +21,8 @@ website/
     ├── js/main.js          # same: main.js?v=N
     ├── js/scrolly-stories.js # Pangan/MBR/CBD scrollytelling controller
     ├── cv.pdf              # downloadable CV (regenerate via matplotlib script if updated)
-    ├── data/cbd/           # downloadable analysis JSON
+    ├── data/cbd/           # downloadable CBD analysis JSON
+    ├── data/mbr/           # compact MBR story data derived from local pipeline CSV outputs
     └── img/                # topo.svg background, profile.jpg, per-project map images
 ```
 
@@ -61,10 +62,10 @@ python3 -m http.server 8000
 - `project-transit.html` uses its own already-edited `assets/js/scrolly-transit-static.js`; it is intentionally separate from this continuation.
 - `project-pangan.html` uses `assets/js/scrolly-stories.js` to draw the story from committed GeoJSON in `maps/data/pangan/`.
 - `project-cbd.html` uses `assets/js/scrolly-stories.js` to render ranking/density views from `assets/data/cbd/indonesia_cbd.json` and embeds the live Folium maps.
-- `project-mbr.html` uses the same story controller in image mode because raw village-level model data is not present in this repo; exported figures in `assets/img/mbr/` are the source fallback.
+- `project-mbr.html` uses `assets/js/scrolly-stories.js` with compact chart data in `assets/data/mbr/mbr_story.json`; exported figures remain only where the available raw category fields do not reproduce the published final category counts.
 
 Checklist for new case-study stories:
 1. Prefer committed raw/processed data over static chart images when the data is available.
-2. Keep image-based scrollytelling only as an explicit fallback when source data is missing from the repository.
-3. Preserve the original static figures or maps as supporting evidence unless the page has a complete data-driven replacement.
+2. Keep image-based scrollytelling only as an explicit fallback when source data is missing or the available raw field conflicts with the published final result.
+3. Remove static figures or maps that duplicate a data-driven scrollytelling state; keep only distinct supporting evidence.
 4. Bump `style.css?v=N` and the story script version on edited pages so GitHub Pages does not serve stale assets.

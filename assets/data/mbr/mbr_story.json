@@ -1,0 +1,272 @@
+{
+  "source": {
+    "model_summary": "/Users/arnanmuflihadi/Downloads/jakarta_wealth_pipeline/jakarta_mbr_ensemble/outputs/model_summary.csv",
+    "ipks_validation": "/Users/arnanmuflihadi/Downloads/jakarta_wealth_pipeline/ipks_validation/wealth_with_ipks_validation.csv",
+    "correlations": "/Users/arnanmuflihadi/Downloads/jakarta_wealth_pipeline/ipks_validation/multidim_correlation.csv",
+    "smoothed_predictions": "/Users/arnanmuflihadi/Downloads/jakarta_wealth_pipeline/investigation_2023/smoothed_predictions_per_year.csv"
+  },
+  "modelSummary": [
+    {
+      "model": "M1: AlphaEarth-only",
+      "features": 64,
+      "r2": 0.806,
+      "spearman": 0.935,
+      "mae": 0.789
+    }
+  ],
+  "ipksCorrelations": [
+    {
+      "dimension": "Indeks Rawan Kemiskinan",
+      "code": "IRK",
+      "rho": 0.106,
+      "p_value": 0.0868,
+      "significant": false,
+      "n": 260
+    },
+    {
+      "dimension": "Kerawanan Lingkungan & Kesehatan",
+      "code": "IKLK",
+      "rho": 0.053,
+      "p_value": 0.3967,
+      "significant": false,
+      "n": 260
+    },
+    {
+      "dimension": "Kerawanan Prasarana Fisik",
+      "code": "IKPF",
+      "rho": null,
+      "p_value": null,
+      "significant": false,
+      "n": 234
+    },
+    {
+      "dimension": "Kerawanan Modal Sosial",
+      "code": "IKMS",
+      "rho": 0.3,
+      "p_value": 0.0,
+      "significant": true,
+      "n": 260
+    },
+    {
+      "dimension": "Kerawanan Keamanan & Ketertiban",
+      "code": "IKA",
+      "rho": 0.046,
+      "p_value": 0.4594,
+      "significant": false,
+      "n": 260
+    },
+    {
+      "dimension": "Komposit IPKS 2020 (rata-rata 5 dimensi)",
+      "code": "IPKS_2020",
+      "rho": 0.235,
+      "p_value": 0.0001,
+      "significant": true,
+      "n": 260
+    }
+  ],
+  "wealthQuintiles": [
+    {
+      "quintile": "Q1_termiskin",
+      "count": 52,
+      "avg_deprivation": 90.2,
+      "avg_ipks": 22.8,
+      "avg_mbr": 3.1
+    },
+    {
+      "quintile": "Q2_miskin",
+      "count": 52,
+      "avg_deprivation": 70.2,
+      "avg_ipks": 18.9,
+      "avg_mbr": 1.68
+    },
+    {
+      "quintile": "Q3_menengah",
+      "count": 52,
+      "avg_deprivation": 50.2,
+      "avg_ipks": 17.4,
+      "avg_mbr": 0.71
+    },
+    {
+      "quintile": "Q4_kaya",
+      "count": 52,
+      "avg_deprivation": 30.2,
+      "avg_ipks": 18.9,
+      "avg_mbr": -0.66
+    },
+    {
+      "quintile": "Q5_terkaya",
+      "count": 52,
+      "avg_deprivation": 10.2,
+      "avg_ipks": 18.1,
+      "avg_mbr": -4.84
+    }
+  ],
+  "topVillages": [
+    {
+      "name": "KAMPUNG RAWA",
+      "city": "JAKARTA PUSAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 100.0,
+      "mbr_score": 4.59,
+      "ipks": 37.8
+    },
+    {
+      "name": "KAYU MANIS",
+      "city": "JAKARTA TIMUR",
+      "quintile": "Q1_termiskin",
+      "deprivation": 99.6,
+      "mbr_score": 4.33,
+      "ipks": 23.4
+    },
+    {
+      "name": "HARAPAN MULIA",
+      "city": "JAKARTA PUSAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 99.2,
+      "mbr_score": 4.08,
+      "ipks": 29.0
+    },
+    {
+      "name": "UTAN PANJANG",
+      "city": "JAKARTA PUSAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 98.8,
+      "mbr_score": 4.03,
+      "ipks": 28.0
+    },
+    {
+      "name": "DURI UTARA",
+      "city": "JAKARTA BARAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 98.5,
+      "mbr_score": 3.92,
+      "ipks": 23.5
+    },
+    {
+      "name": "SERDANG",
+      "city": "JAKARTA PUSAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 98.1,
+      "mbr_score": 3.92,
+      "ipks": 25.4
+    },
+    {
+      "name": "LAGOA",
+      "city": "JAKARTA UTARA",
+      "quintile": "Q1_termiskin",
+      "deprivation": 97.7,
+      "mbr_score": 3.84,
+      "ipks": 22.4
+    },
+    {
+      "name": "WARAKAS",
+      "city": "JAKARTA UTARA",
+      "quintile": "Q1_termiskin",
+      "deprivation": 97.3,
+      "mbr_score": 3.81,
+      "ipks": 20.9
+    },
+    {
+      "name": "GALUR",
+      "city": "JAKARTA PUSAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 96.9,
+      "mbr_score": 3.8,
+      "ipks": 37.4
+    },
+    {
+      "name": "MANGGARAI SELATAN",
+      "city": "JAKARTA SELATAN",
+      "quintile": "Q1_termiskin",
+      "deprivation": 96.5,
+      "mbr_score": 3.77,
+      "ipks": 20.5
+    },
+    {
+      "name": "KERENDANG",
+      "city": "JAKARTA BARAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 96.2,
+      "mbr_score": 3.7,
+      "ipks": 23.0
+    },
+    {
+      "name": "KALI ANYAR",
+      "city": "JAKARTA BARAT",
+      "quintile": "Q1_termiskin",
+      "deprivation": 95.8,
+      "mbr_score": 3.69,
+      "ipks": 20.9
+    }
+  ],
+  "smoothedTrajectory": [
+    {
+      "year": 2017,
+      "mean": -3.207,
+      "q1": -4.034,
+      "q3": -2.176,
+      "min": -6.875,
+      "max": -1.01
+    },
+    {
+      "year": 2018,
+      "mean": -3.042,
+      "q1": -3.913,
+      "q3": -2.055,
+      "min": -6.793,
+      "max": -0.342
+    },
+    {
+      "year": 2019,
+      "mean": -3.037,
+      "q1": -3.811,
+      "q3": -2.062,
+      "min": -6.744,
+      "max": -0.315
+    },
+    {
+      "year": 2020,
+      "mean": -3.232,
+      "q1": -3.988,
+      "q3": -2.365,
+      "min": -6.757,
+      "max": -0.476
+    },
+    {
+      "year": 2021,
+      "mean": -3.642,
+      "q1": -4.355,
+      "q3": -2.783,
+      "min": -6.689,
+      "max": -1.264
+    },
+    {
+      "year": 2022,
+      "mean": -3.251,
+      "q1": -4.134,
+      "q3": -2.267,
+      "min": -6.865,
+      "max": -0.174
+    },
+    {
+      "year": 2023,
+      "mean": -3.19,
+      "q1": -4.154,
+      "q3": -2.289,
+      "min": -7.017,
+      "max": 0.113
+    },
+    {
+      "year": 2024,
+      "mean": -2.813,
+      "q1": -3.727,
+      "q3": -1.8,
+      "min": -7.279,
+      "max": 0.791
+    }
+  ],
+  "notes": [
+    "Category counts in the available raw output do not reproduce the portfolio text, so final category counts remain text/figure-sourced.",
+    "This file is a compact derivative for GitHub Pages scrollytelling charts."
+  ]
+}

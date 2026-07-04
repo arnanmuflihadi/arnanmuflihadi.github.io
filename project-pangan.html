@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=21">
+<link rel="stylesheet" href="assets/css/style.css?v=22">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -320,6 +320,9 @@
               <g class="story-map-layer" data-layer="nodes"></g>
               <g class="story-map-layer" data-layer="labels"></g>
             </svg>
+            <div class="story-insight-panel" aria-hidden="true">
+              <svg class="story-insight-svg" data-pangan-chart></svg>
+            </div>
             <div class="story-map-card">
               <div>
                 <div class="story-map-card__kpi" data-story-kpi>254</div>
@@ -332,31 +335,31 @@
           <p class="story-source-note">Source: committed GeoJSON outputs in <code>maps/data/pangan/</code>; road-flow layer is sampled to the highest-flow segments for browser performance.</p>
         </div>
         <div class="story-steps">
-          <article class="story-step" data-layers="kabkota,sentra" data-kpi="254" data-label="production centers" data-note="The production surface starts with 254 kecamatan centers, scaled by modeled rice output and backed by district food-balance indicators.">
+          <article class="story-step" data-layers="kabkota,sentra" data-chart="production" data-kpi="254" data-label="production centers" data-note="The production surface starts with 254 kecamatan centers, scaled by modeled rice output and backed by district food-balance indicators.">
             <span class="story-step__num">01 / Production base</span>
             <h4>Rice supply begins as a scattered agricultural surface.</h4>
             <p>The first layer shows where production clusters appear before the logistics model connects them to formal channels and urban demand.</p>
             <div class="story-step__meta"><span>pangan_sentra.geojson</span><span>pangan_kabkota.geojson</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,nodes" data-kpi="93" data-label="channels and destinations" data-note="Bulog, MRMP, warehouses, capitals, and markets form the modeled channel and demand nodes.">
+          <article class="story-step" data-layers="kabkota,nodes" data-chart="nodes" data-kpi="93" data-label="channels and destinations" data-note="Bulog, MRMP, warehouses, capitals, and markets form the modeled channel and demand nodes.">
             <span class="story-step__num">02 / Supply-chain nodes</span>
             <h4>Channels decide where rice can realistically move.</h4>
             <p>The node layer separates production geography from the distribution network: warehouses, Bulog facilities, public markets, and city centers.</p>
             <div class="story-step__meta"><span>31 warehouses</span><span>27 centers</span><span>40 channels</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,od,nodes" data-kpi="274" data-label="OD desire lines" data-note="Two gravity-model stages link centers to channels, then channels to destination markets.">
+          <article class="story-step" data-layers="kabkota,od,nodes" data-chart="od" data-kpi="274" data-label="OD desire lines" data-note="Two gravity-model stages link centers to channels, then channels to destination markets.">
             <span class="story-step__num">03 / Gravity OD</span>
             <h4>The model turns supply and demand into two-stage desire lines.</h4>
             <p>OD links reveal the hub-and-spoke structure before trips are constrained by the physical road network.</p>
             <div class="story-step__meta"><span>Stage 1</span><span>Stage 2</span><span>doubly constrained</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,flows,nodes" data-kpi="900" data-label="top flow segments" data-note="The browser layer samples the 900 highest-flow road geometries from the 6,029-segment modeled flow output.">
+          <article class="story-step" data-layers="kabkota,flows,nodes" data-chart="flows" data-kpi="900" data-label="top flow segments" data-note="The browser layer samples the 900 highest-flow road geometries from the 6,029-segment modeled flow output.">
             <span class="story-step__num">04 / Network load</span>
             <h4>Road assignment exposes the corridors carrying the largest modeled load.</h4>
             <p>Flow is accumulated along OSM road segments, so the picture moves from abstract OD desire to concrete corridor pressure.</p>
             <div class="story-step__meta"><span>6,029 modeled segments</span><span>top-flow sample</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,flows,priority,nodes,labels" data-kpi="50" data-label="priority road segments" data-note="The shortlist combines flow exposure, road class, bridge presence, hazard context, and robustness agreement.">
+          <article class="story-step" data-layers="kabkota,flows,priority,nodes,labels" data-chart="priority" data-kpi="50" data-label="priority road segments" data-note="The shortlist combines flow exposure, road class, bridge presence, hazard context, and robustness agreement.">
             <span class="story-step__num">05 / Priority shortlist</span>
             <h4>The final layer isolates roads where disruption matters most.</h4>
             <p>Priority segments are not simply the busiest links; they are the links where flow, strategic context, and sensitivity tests point to the same intervention value.</p>
@@ -366,40 +369,18 @@
       </div>
     </section>
 
-    <figure class="figure reveal">
-      <div class="figure__frame" data-zoom data-cap="Spatial distribution of rice production centers (LQ-based) and supply-chain nodes (channels + destinations).">
-        <img src="assets/img/pangan/sentra.jpg" width="1800" height="1516" alt="Rice production centers distribution map" loading="lazy">
-      </div>
-      <figcaption>Figure 1. Spatial distribution of rice centers (Location Quotient) + supply-chain nodes.</figcaption>
-    </figure>
-
-    <div class="fig-grid reveal">
-      <figure class="figure">
-        <div class="figure__frame" data-zoom data-cap="OD desire lines: Stage 1 (centers→channels) + Stage 2 (channels→destinations). Doubly-constrained gravity.">
-          <img src="assets/img/pangan/desire_lines.jpg" width="1800" height="1510" alt="OD desire lines" loading="lazy">
-        </div>
-        <figcaption>Figure 2. Combined Stage 1 &amp; 2 OD desire lines.</figcaption>
-      </figure>
-      <figure class="figure">
-        <div class="figure__frame" data-zoom data-cap="Top-30 OD pairs by largest flow, hub-and-spoke pattern around Pantura channels.">
-          <img src="assets/img/pangan/top30_od.jpg" width="1800" height="1510" alt="Top 30 OD pairs" loading="lazy">
-        </div>
-        <figcaption>Figure 3. Top-30 OD pairs by flow.</figcaption>
-      </figure>
-    </div>
-
     <div class="fig-grid reveal">
       <figure class="figure">
         <div class="figure__frame" data-zoom data-cap="Stage 1 OD matrix heatmap, distribution of unhulled rice from regencies to 40 channels.">
           <img src="assets/img/pangan/od_stage1.png" width="1700" height="1486" alt="Stage 1 OD heatmap" loading="lazy">
         </div>
-        <figcaption>Figure 4. Stage 1 OD matrix heatmap.</figcaption>
+        <figcaption>Figure 1. Stage 1 OD matrix heatmap.</figcaption>
       </figure>
       <figure class="figure">
         <div class="figure__frame" data-zoom data-cap="Stage 2 OD matrix heatmap, distribution of milled rice from 40 channels to 53 destinations.">
           <img src="assets/img/pangan/od_stage2.png" width="1700" height="832" alt="Stage 2 OD heatmap" loading="lazy">
         </div>
-        <figcaption>Figure 5. Stage 2 OD matrix heatmap.</figcaption>
+        <figcaption>Figure 2. Stage 2 OD matrix heatmap.</figcaption>
       </figure>
     </div>
 
@@ -407,14 +388,7 @@
       <div class="figure__frame" data-zoom data-cap="Stage 1 channel-inflow comparison: shortest-path (red) vs singly-gravity (blue) vs doubly-gravity (green). Doubly produces a realistic capacity-proportional distribution.">
         <img src="assets/img/pangan/channel_inflow.png" width="1700" height="1079" alt="Channel inflow comparison across 3 models" loading="lazy">
       </div>
-      <figcaption>Figure 6. Channel-inflow comparison across the 3 flow-assignment models.</figcaption>
-    </figure>
-
-    <figure class="figure reveal">
-      <div class="figure__frame" data-zoom data-cap="Accumulated rice flow over the West Java OSM road network (doubly-constrained gravity). Line width ∝ log(flow).">
-        <img src="assets/img/pangan/network_flow.jpg" width="1800" height="1516" alt="Rice flow over the road network" loading="lazy">
-      </div>
-      <figcaption>Figure 7. Rice flow over the West Java OSM road network (total Stage 1+2 ≈ 3.3 million tons).</figcaption>
+      <figcaption>Figure 3. Channel-inflow comparison across the 3 flow-assignment models.</figcaption>
     </figure>
 
     <figure class="figure reveal">
@@ -463,25 +437,18 @@
 
     <div class="fig-grid reveal">
       <figure class="figure">
-        <div class="figure__frame" data-zoom data-cap="Top-50 most critical roads for West Java's rice supply chain (composite score).">
-          <img src="assets/img/pangan/prioritas_top50.jpg" width="1800" height="1333" alt="Top-50 priority roads map" loading="lazy">
-        </div>
-        <figcaption>Figure 8. Priority road map (Top-50).</figcaption>
-      </figure>
-      <figure class="figure">
         <div class="figure__frame" data-zoom data-cap="Top-50 agreement between shortest-path & doubly-gravity. Green = robust in both models.">
           <img src="assets/img/pangan/agreement.jpg" width="1800" height="1512" alt="Model agreement map" loading="lazy">
         </div>
-        <figcaption>Figure 9. Top-50 agreement between models.</figcaption>
+        <figcaption>Figure 4. Top-50 agreement between models.</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__frame" data-zoom data-cap="Stable core: 40 segments consistently in the top-50 across ≥95% of Monte Carlo iterations, CONFIRMED PRIORITY.">
+          <img src="assets/img/pangan/stable_core.jpg" width="1800" height="1516" alt="Stable core of 40 segments map" loading="lazy">
+        </div>
+        <figcaption>Figure 5. Stable core: 40 priority segments with ≥95% statistical confidence.</figcaption>
       </figure>
     </div>
-
-    <figure class="figure reveal">
-      <div class="figure__frame" data-zoom data-cap="Stable core: 40 segments consistently in the top-50 across ≥95% of Monte Carlo iterations, CONFIRMED PRIORITY.">
-        <img src="assets/img/pangan/stable_core.jpg" width="1800" height="1516" alt="Stable core of 40 segments map" loading="lazy">
-      </div>
-      <figcaption>Figure 10. Stable core: 40 priority segments with ≥95% statistical confidence.</figcaption>
-    </figure>
 
     <div class="cs-prose reveal">
       <p><strong>Methodological contribution:</strong> the first application of a doubly-constrained gravity model with Furness balancing for Indonesia&#x2019;s rice supply chain, empirically validated with TomTom, with an explicit OD matrix as a transport-planning reference. The pipeline (~3,500 lines of Python, 14 scripts) is available as a <em>reproducible research artifact</em>.</p>
@@ -521,6 +488,6 @@
 </footer>
 
 <script src="assets/js/main.js?v=7"></script>
-<script src="assets/js/scrolly-stories.js?v=1"></script>
+<script src="assets/js/scrolly-stories.js?v=2"></script>
 </body>
 </html>
