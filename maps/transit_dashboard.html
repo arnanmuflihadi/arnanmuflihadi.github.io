@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Transit Data Explorer · DKI Jakarta</title>
-<meta name="description" content="Interactive map of the raw input data behind the DKI Jakarta transit-accessibility study — transit network, administrative boundaries, and 27 facility categories.">
+<title>Transit Accessibility Data Explorer · DKI Jakarta</title>
+<meta name="description" content="Interactive map of the raw input and output data behind the DKI Jakarta transit-accessibility study — transit network, administrative boundaries, 27 facility categories, accessibility scores, and Mikrotrans delta.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block" rel="stylesheet">
@@ -286,7 +286,7 @@ body{
   <button class="iconbtn" id="btnMenu" aria-label="Layers"><span class="ms">layers</span></button>
   <div class="appbar__title">
     <b>Transit Data Explorer</b>
-    <span>DKI Jakarta · raw accessibility-analysis data</span>
+    <span>DKI Jakarta · raw input and accessibility-output data</span>
   </div>
   <div class="spacer"></div>
   <div class="search" id="search">
@@ -303,7 +303,7 @@ body{
   <div class="drawer__head">
     <div>
       <h2>Map Layers</h2>
-      <p>Toggle the raw-data layers</p>
+      <p>Toggle raw inputs and score outputs</p>
     </div>
     <div class="drawer__count" id="count">0</div>
   </div>
@@ -345,7 +345,7 @@ body{
     <span class="ms big">database</span>
     <div style="flex:1">
       <h2>Raw data used</h2>
-      <p>Every source file in the DKI Jakarta transit-accessibility study — explorable directly on the map. No scores are shown; this is purely the input data.</p>
+      <p>Every source file in the DKI Jakarta transit-accessibility study — explorable directly on the map, including the latest 60-minute kelurahan score and Getis-Ord Gi* output used by the portfolio maps.</p>
     </div>
     <button class="iconbtn" id="dialogClose" aria-label="Close"><span class="ms">close</span></button>
   </div>
@@ -412,22 +412,50 @@ const map = new maplibregl.Map({
 map.addControl(new maplibregl.AttributionControl({compact:true}),"bottom-right");
 map.addControl(new maplibregl.NavigationControl({showCompass:false}),"bottom-right");
 
-let DATASETS = {};          // loaded geojson
+let DATASETS = {};          // loaded geojson/json
 let activeCats = new Set();
-let baseState = {lines:true, stops:true, kelurahan:true, rw:false, heat:false};
+let baseState = {lines:true, stops:true, kelurahan:true, scoreb:false, delta:false, hotspot:false, rw:false, heat:false};
 
 /* ---- load data ---------------------------------------------------------- */
 async function loadAll(){
-  const DV = "?v=4";  // bump when the GeoJSON data changes, to bust the cache
+  const DV = "?v=7";  // bump when the GeoJSON data changes, to bust the cache
   const names = ["kelurahan","rw_centroids","transit_lines","transit_stops","facilities"];
   const res = await Promise.all(names.map(n=>fetch(DATA+n+".geojson"+DV).then(r=>r.json())));
   names.forEach((n,i)=>DATASETS[n]=res[i]);
   DATASETS.sources = await fetch(DATA+"data_sources.json"+DV).then(r=>r.json());
+  DATASETS.accessibility = await fetch(DATA+"kelurahan_accessibility_60m.json"+DV).then(r=>r.json());
+  joinAccessibilityOutput();
   // count facilities per category
   CAT_COUNT = {};
   DATASETS.facilities.features.forEach(f=>{const c=f.properties.cat;CAT_COUNT[c]=(CAT_COUNT[c]||0)+1;});
 }
 let CAT_COUNT = {};
+
+function joinAccessibilityOutput(){
+  const key = parts => parts.map(v=>String(v||"").trim().toUpperCase()).join("|");
+  const nameKey = value => String(value||"").trim().toUpperCase().replace(/[^A-Z0-9]/g,"");
+  const records = new Map();
+  DATASETS.accessibility.records.forEach(r=>{
+    records.set(key([r.kelurahan,r.kecamatan,r.kotamadya]), r);
+    [r.kelurahan,r.kelurahan_source,...(r.aliases||[])].forEach(name=>{
+      if(name) records.set(nameKey(name), r);
+    });
+  });
+  DATASETS.kelurahan.features.forEach(f=>{
+    const p=f.properties;
+    const r=records.get(key([p.kel,p.kec,p.kota])) || records.get(nameKey(p.kel));
+    if(!r) return;
+    p.score_a = r.skor_A;
+    p.score_b = r.skor_B;
+    p.delta = r.delta;
+    p.cat_a = r.kat_A;
+    p.cat_b = r.kat_B;
+    p.core_b = r.core_skor_B || r.hs_skor_B;
+    p.hs_b = r.hs_skor_B;
+    p.gi_z = r.gi_z;
+    p.gi_p = r.gi_p_sim;
+  });
+}
 
 /* ---- composite marker images (disc + glyph), per theme ------------------ */
 async function makeIcons(){
@@ -465,6 +493,33 @@ async function buildLayers(){
   map.addSource("stops",{type:"geojson",data:DATASETS.transit_stops});
   map.addSource("fac",{type:"geojson",data:filteredFacilities(),cluster:true,clusterRadius:48,clusterMaxZoom:13});
   map.addSource("facheat",{type:"geojson",data:filteredFacilities()});
+
+  // accessibility outputs joined from kelurahan_accessibility_60m.json
+  map.addLayer({id:"score-b-fill",type:"fill",source:"kel",
+    layout:{visibility:"none"},
+    paint:{
+      "fill-color":["interpolate",["linear"],["coalesce",["get","score_b"],0],
+        0,"#f7fbff",10,"#deebf7",20,"#9ecae1",40,"#4292c6",60,"#08519c",75,"#08306b"],
+      "fill-opacity":0.72
+    }});
+  map.addLayer({id:"delta-fill",type:"fill",source:"kel",
+    layout:{visibility:"none"},
+    paint:{
+      "fill-color":["interpolate",["linear"],["coalesce",["get","delta"],0],
+        0,"#f7fcf5",2,"#e5f5e0",5,"#a1d99b",10,"#41ab5d",15,"#238b45",20,"#005a32"],
+      "fill-opacity":0.76
+    }});
+  map.addLayer({id:"hotspot-fill",type:"fill",source:"kel",
+    layout:{visibility:"none"},
+    paint:{
+      "fill-color":["match",["get","hs_b"],
+        "Hot Spot 99%","#a50026",
+        "Hot Spot 95%","#f46d43",
+        "Cold Spot 95%","#74add1",
+        "Cold Spot 99%","#313695",
+        "#f0f0f0"],
+      "fill-opacity":["case",["==",["get","hs_b"],"Tidak Signifikan"],0.42,0.78]
+    }});
 
   // kelurahan
   map.addLayer({id:"kel-fill",type:"fill",source:"kel",
@@ -539,10 +594,14 @@ async function buildLayers(){
 
 function applyBase(){
   const set=(l,b)=>{ if(map.getLayer(l)) map.setLayoutProperty(l,"visibility", b?"visible":"none"); };
+  set("score-b-fill",baseState.scoreb);
+  set("delta-fill",baseState.delta);
+  set("hotspot-fill",baseState.hotspot);
   ["kel-fill","kel-line"].forEach(l=>set(l,baseState.kelurahan));
   ["ln-brt","ln-lrt","ln-krl","ln-mrt"].forEach(l=>set(l,baseState.lines));
   set("stops",baseState.stops);
   set("rw",baseState.rw);
+  updateLegend();
 }
 function applyHeat(){
   if(!map.getLayer("fac-heat")) return;
@@ -600,12 +659,47 @@ function bindMapEvents(){
   });
   map.on("click","kel-fill",e=>{
     const p=e.features[0].properties;
+    const score = p.score_b!=null
+      ? `<span>Scenario B: ${fmt(p.score_b)}/100 · Δ ${fmt(p.delta)} · ${esc(p.cat_b||"-")}</span><span>Gi*: ${esc(p.hs_b||"-")}</span>`
+      : "";
     new maplibregl.Popup({closeButton:false,offset:6}).setLngLat(e.lngLat)
-      .setHTML(`<div class="pop"><b>${esc(cap(p.kel))}</b><span>District ${esc(cap(p.kec))} · ${esc(cap(p.kota))}</span></div>`).addTo(map);
+      .setHTML(`<div class="pop"><b>${esc(cap(p.kel))}</b><span>District ${esc(cap(p.kec))} · ${esc(cap(p.kota))}</span>${score}</div>`).addTo(map);
   });
 }
+function fmt(v){return Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
 function esc(s){return (s==null?"":String(s)).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));}
 function cap(s){return s?String(s).toLowerCase().replace(/\b\w/g,m=>m.toUpperCase()):"";}
+
+function updateLegend(){
+  const legend=document.getElementById("legend");
+  if(baseState.delta){
+    legend.innerHTML=`<b>Mikrotrans Delta</b>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#f7fcf5;border:1px solid var(--outline)"></span> 0-2</div>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#a1d99b"></span> 5-10</div>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#238b45"></span> 15+</div>`;
+    return;
+  }
+  if(baseState.hotspot){
+    legend.innerHTML=`<b>Getis-Ord Gi*</b>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#a50026"></span> Hot Spot 99%</div>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#f46d43"></span> Hot Spot 95%</div>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#74add1"></span> Cold Spot 95%</div>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#313695"></span> Cold Spot 99%</div>`;
+    return;
+  }
+  if(baseState.scoreb){
+    legend.innerHTML=`<b>Scenario B Score</b>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#deebf7"></span> 0-20</div>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#4292c6"></span> 40-60</div>
+      <div class="legend__row"><span class="legend__line" style="height:10px;background:#08306b"></span> 60+</div>`;
+    return;
+  }
+  legend.innerHTML=`<b>Transit Network</b>
+    <div class="legend__row"><span class="legend__line" style="border-top:3px solid var(--on)"></span> MRT</div>
+    <div class="legend__row"><span class="legend__line" style="border-top:2.5px dashed var(--on)"></span> KRL Commuter</div>
+    <div class="legend__row"><span class="legend__line" style="border-top:2px dotted var(--on)"></span> LRT</div>
+    <div class="legend__row"><span class="legend__line" style="border-top:1.5px solid var(--on-var)"></span> BRT / Mikrotrans</div>`;
+}
 
 function showDetail(f){
   const p=f.properties;
@@ -626,6 +720,9 @@ function buildDrawer(){
     ["lines","Transit network","509 routes · MRT/LRT/KRL/BRT","route"],
     ["stops","Stops & stations","6,851 points","pin_drop"],
     ["kelurahan","Village boundaries","261 areas","map"],
+    ["scoreb","Accessibility score","Scenario B · 60-min output","analytics"],
+    ["delta","Mikrotrans delta","B − A · 60-min output","trending_up"],
+    ["hotspot","Getis-Ord Gi*","Hot/cold spots · 60-min output","hub"],
     ["rw","RW centroids (origins)","2,713 points · RDTR zoning","scatter_plot"],
     ["heat","Density heatmap","kernel density of active facilities","blur_on"]
   ];
@@ -635,7 +732,15 @@ function buildDrawer(){
     row.className="row"+(baseState[k]?" on":"");
     row.innerHTML=`<div class="row__ic"><span class="ms">${ic}</span></div>
       <div class="row__tx"><b>${t}</b><span>${s}</span></div><div class="sw"></div>`;
-    row.onclick=()=>{baseState[k]=!baseState[k];row.classList.toggle("on",baseState[k]);applyBase();applyHeat();};
+    row.dataset.base=k;
+    row.onclick=()=>{
+      baseState[k]=!baseState[k];
+      if(["scoreb","delta","hotspot"].includes(k) && baseState[k]){
+        ["scoreb","delta","hotspot"].forEach(other=>{ if(other!==k) baseState[other]=false; });
+      }
+      document.querySelectorAll("[data-base]").forEach(el=>el.classList.toggle("on",baseState[el.dataset.base]));
+      applyBase();applyHeat();
+    };
     bl.appendChild(row);
   });
   const wrap=document.getElementById("sectors");
@@ -680,6 +785,8 @@ function buildDialog(){
   }
   let html="";
   html+=`<div class="dgroup"><b>Boundaries & analysis units</b>${ds.boundaries.map(item).join("")}</div>`;
+  html+=`<div class="dgroup"><b>Accessibility outputs</b>
+    <div class="ditem"><span class="ms">analytics</span><div class="nm"><b>Kelurahan accessibility score output</b><span>kelurahan_accessibility_60m.json · 261 records · Scenario A, Scenario B, Δ-score, and Getis-Ord Gi*</span></div><span class="ct">261</span><span class="badge live">on map</span></div></div>`;
   html+=`<div class="dgroup"><b>Transit network (GTFS & OSM)</b>${ds.transit.map(item).join("")}</div>`;
   html+=`<div class="dgroup"><b>Spatial planning</b>${ds.planning.map(item).join("")}</div>`;
   html+=`<div class="dgroup"><b>Destination facilities · 27 categories (AHP-weighted)</b>${ds.facilities.map(item).join("")}</div>`;
