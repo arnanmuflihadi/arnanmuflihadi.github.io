@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/style.css?v=21">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -301,6 +301,71 @@
       <p>OD matrices were built for both stages (254 centers × 40 channels; 40 channels × 53 destinations), visualized as desire lines &amp; heatmaps. Flow was accumulated per OSM edge (line width ∝ log flow), composite scoring integrated 5 dimensions, and robustness was tested across 4 dimensions including a 1,000-sample Dirichlet Monte Carlo.</p>
     </div>
 
+    <section class="project-story reveal" data-pangan-scrolly aria-label="Interactive rice supply-chain story">
+      <div class="project-story__head">
+        <span class="project-story__eyebrow">Data story</span>
+        <h3>From rice fields to critical corridors</h3>
+        <p>This interactive layer rebuilds the case-study map from the committed GeoJSON outputs: district balances, production centers, supply-chain nodes, modeled OD desire lines, network flow, and the final priority-road shortlist.</p>
+      </div>
+      <div class="story-scrolly">
+        <div class="story-visual">
+          <div class="story-stage story-stage--map">
+            <div class="story-status" data-story-status>Loading West Java GeoJSON layers...</div>
+            <svg class="story-map-svg" viewBox="0 0 1000 720" role="img" aria-label="West Java rice supply-chain network map">
+              <g class="story-map-layer" data-layer="kabkota"></g>
+              <g class="story-map-layer" data-layer="sentra"></g>
+              <g class="story-map-layer" data-layer="od"></g>
+              <g class="story-map-layer" data-layer="flows"></g>
+              <g class="story-map-layer" data-layer="priority"></g>
+              <g class="story-map-layer" data-layer="nodes"></g>
+              <g class="story-map-layer" data-layer="labels"></g>
+            </svg>
+            <div class="story-map-card">
+              <div>
+                <div class="story-map-card__kpi" data-story-kpi>254</div>
+                <span class="story-map-card__label" data-story-label>production centers</span>
+              </div>
+              <p class="story-map-card__note" data-story-note>Location-quotient centers are layered over district surplus and deficit conditions before flow is assigned.</p>
+            </div>
+          </div>
+          <div class="story-progress" data-story-progress aria-hidden="true"></div>
+          <p class="story-source-note">Source: committed GeoJSON outputs in <code>maps/data/pangan/</code>; road-flow layer is sampled to the highest-flow segments for browser performance.</p>
+        </div>
+        <div class="story-steps">
+          <article class="story-step" data-layers="kabkota,sentra" data-kpi="254" data-label="production centers" data-note="The production surface starts with 254 kecamatan centers, scaled by modeled rice output and backed by district food-balance indicators.">
+            <span class="story-step__num">01 / Production base</span>
+            <h4>Rice supply begins as a scattered agricultural surface.</h4>
+            <p>The first layer shows where production clusters appear before the logistics model connects them to formal channels and urban demand.</p>
+            <div class="story-step__meta"><span>pangan_sentra.geojson</span><span>pangan_kabkota.geojson</span></div>
+          </article>
+          <article class="story-step" data-layers="kabkota,nodes" data-kpi="93" data-label="channels and destinations" data-note="Bulog, MRMP, warehouses, capitals, and markets form the modeled channel and demand nodes.">
+            <span class="story-step__num">02 / Supply-chain nodes</span>
+            <h4>Channels decide where rice can realistically move.</h4>
+            <p>The node layer separates production geography from the distribution network: warehouses, Bulog facilities, public markets, and city centers.</p>
+            <div class="story-step__meta"><span>31 warehouses</span><span>27 centers</span><span>40 channels</span></div>
+          </article>
+          <article class="story-step" data-layers="kabkota,od,nodes" data-kpi="274" data-label="OD desire lines" data-note="Two gravity-model stages link centers to channels, then channels to destination markets.">
+            <span class="story-step__num">03 / Gravity OD</span>
+            <h4>The model turns supply and demand into two-stage desire lines.</h4>
+            <p>OD links reveal the hub-and-spoke structure before trips are constrained by the physical road network.</p>
+            <div class="story-step__meta"><span>Stage 1</span><span>Stage 2</span><span>doubly constrained</span></div>
+          </article>
+          <article class="story-step" data-layers="kabkota,flows,nodes" data-kpi="900" data-label="top flow segments" data-note="The browser layer samples the 900 highest-flow road geometries from the 6,029-segment modeled flow output.">
+            <span class="story-step__num">04 / Network load</span>
+            <h4>Road assignment exposes the corridors carrying the largest modeled load.</h4>
+            <p>Flow is accumulated along OSM road segments, so the picture moves from abstract OD desire to concrete corridor pressure.</p>
+            <div class="story-step__meta"><span>6,029 modeled segments</span><span>top-flow sample</span></div>
+          </article>
+          <article class="story-step" data-layers="kabkota,flows,priority,nodes,labels" data-kpi="50" data-label="priority road segments" data-note="The shortlist combines flow exposure, road class, bridge presence, hazard context, and robustness agreement.">
+            <span class="story-step__num">05 / Priority shortlist</span>
+            <h4>The final layer isolates roads where disruption matters most.</h4>
+            <p>Priority segments are not simply the busiest links; they are the links where flow, strategic context, and sensitivity tests point to the same intervention value.</p>
+            <div class="story-step__meta"><span>composite score</span><span>Monte Carlo stable core</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <figure class="figure reveal">
       <div class="figure__frame" data-zoom data-cap="Spatial distribution of rice production centers (LQ-based) and supply-chain nodes (channels + destinations).">
         <img src="assets/img/pangan/sentra.jpg" width="1800" height="1516" alt="Rice production centers distribution map" loading="lazy">
@@ -456,5 +521,6 @@
 </footer>
 
 <script src="assets/js/main.js?v=7"></script>
+<script src="assets/js/scrolly-stories.js?v=1"></script>
 </body>
 </html>

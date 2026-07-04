@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/style.css?v=21">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -169,6 +169,69 @@
       <p>AlphaEarth embeddings were extracted per village per year via Google Earth Engine (2,088 rows = 261 × 8), an XGBoost model was trained against building morphology with 5-fold out-of-fold evaluation, predictions were temporally harmonized, and each village was classified into a trajectory (stable-deprived / worsening / improving / non-priority). The proxy was then cross-checked against the official IPKS index.</p>
     </div>
 
+    <section class="project-story reveal" data-image-scrolly aria-label="Interactive MBR model story">
+      <div class="project-story__head">
+        <span class="project-story__eyebrow">Image-based story</span>
+        <h3>Model, correction, spatial signal, validation</h3>
+        <p>The raw village-year modeling table is not committed in this portfolio repo, so this story uses the exported analytical figures as the fallback source while keeping the same evidence sequence: performance, artifact diagnosis, harmonization, geography, and IPKS validation.</p>
+      </div>
+      <div class="story-scrolly">
+        <div class="story-visual">
+          <div class="story-stage story-stage--media">
+            <img class="story-image" data-story-image src="assets/img/mbr/perf_scatter.jpg" alt="Stage 1 model performance scatter">
+            <div class="story-caption" data-story-caption>Stage 1 model performance from AlphaEarth-only predictors.</div>
+            <div class="story-map-card">
+              <div>
+                <div class="story-map-card__kpi" data-story-kpi>0.806</div>
+                <span class="story-map-card__label" data-story-label>Stage 1 R²</span>
+              </div>
+              <p class="story-map-card__note" data-story-note>Five-fold out-of-fold validation shows the satellite embeddings capture building morphology strongly.</p>
+            </div>
+          </div>
+          <div class="story-progress" data-story-progress aria-hidden="true"></div>
+          <p class="story-source-note">Source: exported figures in <code>assets/img/mbr/</code>. Raw village-level model data is not present in this GitHub Pages repository.</p>
+        </div>
+        <div class="story-steps">
+          <article class="story-step" data-image="assets/img/mbr/perf_scatter.jpg" data-alt="Stage 1 model performance scatter" data-caption="Stage 1 out-of-fold predictions vs observed building-morphology score." data-kpi="0.806" data-label="Stage 1 R²" data-note="Five-fold out-of-fold validation shows the satellite embeddings capture building morphology strongly.">
+            <span class="story-step__num">01 / Model fit</span>
+            <h4>AlphaEarth embeddings recover morphology with a strong out-of-fold fit.</h4>
+            <p>The first check establishes that public satellite foundation-model embeddings can approximate the morphology target before any spatial interpretation is made.</p>
+            <div class="story-step__meta"><span>5-fold OOF</span><span>Spearman ρ=0.935</span></div>
+          </article>
+          <article class="story-step" data-image="assets/img/mbr/diagnosis.jpg" data-alt="Temporal artifact diagnosis chart" data-caption="Diagnostic view of the non-linear amplification artifact before harmonization." data-kpi="2023" data-label="artifact year" data-note="The diagnostic figure exposes the amplification that would otherwise overstate or mask local trajectory changes.">
+            <span class="story-step__num">02 / Artifact diagnosis</span>
+            <h4>The pipeline catches a temporal amplification artifact before mapping results.</h4>
+            <p>The diagnostic stage keeps the case study from treating model drift as urban change, which is essential for a trajectory-based poverty proxy.</p>
+            <div class="story-step__meta"><span>temporal QA</span><span>model artifact</span></div>
+          </article>
+          <article class="story-step" data-image="assets/img/mbr/harmonization.jpg" data-alt="Temporal harmonization result chart" data-caption="Harmonization result after correcting the trajectory bias." data-kpi="88%" data-label="slope bias cut" data-note="Harmonization reduces slope bias and makes worsening/improving villages visible in the final classification.">
+            <span class="story-step__num">03 / Harmonization</span>
+            <h4>The correction turns the model output into a usable time series.</h4>
+            <p>After harmonization, the analysis can separate stable deprivation from worsening and improving trajectories instead of letting a single year dominate.</p>
+            <div class="story-step__meta"><span>22 worsening</span><span>5 improving</span></div>
+          </article>
+          <article class="story-step" data-image="assets/img/mbr/map_categories.jpg" data-alt="DKI Jakarta MBR category map" data-caption="Trajectory categories and mean MBR score across DKI Jakarta villages." data-kpi="103" data-label="stable-deprived villages" data-note="Priority categories concentrate in dense central and western kampung-kota areas.">
+            <span class="story-step__num">04 / Spatial categories</span>
+            <h4>The corrected trajectories become a village-level priority surface.</h4>
+            <p>The map translates the time series into planning categories that can be scanned spatially across all 261 urban villages.</p>
+            <div class="story-step__meta"><span>261 villages</span><span>DKI Jakarta</span></div>
+          </article>
+          <article class="story-step" data-image="assets/img/mbr/map_quintile.jpg" data-alt="Economic quintile map of DKI Jakarta" data-caption="Economic quintile classification from Q1 poorest to Q5 richest." data-kpi="Q1-Q5" data-label="economic quintiles" data-note="The map shows poor and rich villages often adjacent, especially in the central city.">
+            <span class="story-step__num">05 / Spatial inequality</span>
+            <h4>The quintile map shows why neighborhood-scale geography matters.</h4>
+            <p>City-level summaries hide a patchwork pattern where high- and low-income villages can sit side by side.</p>
+            <div class="story-step__meta"><span>quintile surface</span><span>neighborhood scale</span></div>
+          </article>
+          <article class="story-step" data-image="assets/img/mbr/ipks_scatter.jpg" data-alt="Model versus IPKS scatter plots" data-caption="Convergent validation against official IPKS dimensions." data-kpi="ρ=0.300" data-label="strongest IPKS link" data-note="The satellite proxy aligns most strongly with Social Capital, suggesting it captures spatial-physical deprivation rather than replacing income data.">
+            <span class="story-step__num">06 / Convergent validation</span>
+            <h4>IPKS confirms the proxy is complementary, not a survey substitute.</h4>
+            <p>The validation step keeps the interpretation grounded: morphology helps reveal a spatial dimension of deprivation but does not replace official poverty measurement.</p>
+            <div class="story-step__meta"><span>IPKS 2020</span><span>Social Capital</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <figure class="figure reveal">
       <div class="figure__frame" data-zoom data-cap="Stage 1, 5-fold out-of-fold predicted vs observed building-morphology score. R²=0.806, Spearman ρ=0.935.">
         <img src="assets/img/mbr/perf_scatter.jpg" width="1800" height="1499" alt="Stage 1 model performance scatter" loading="lazy">
@@ -295,5 +358,6 @@
 </footer>
 
 <script src="assets/js/main.js?v=7"></script>
+<script src="assets/js/scrolly-stories.js?v=1"></script>
 </body>
 </html>

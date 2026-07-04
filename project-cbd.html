@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/style.css?v=21">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -152,6 +152,74 @@
       <p>A Jakarta deep-dive (15,417 POIs → 19 clusters; the largest, 7,511 POIs, centered on <strong>Sudirman–Thamrin–Kuningan</strong>) sits alongside the national run across all 38 provinces. Results are explorable in two interactive maps and compared province by province.</p>
     </div>
 
+    <section class="project-story reveal" data-cbd-scrolly aria-label="Interactive CBD clustering story">
+      <div class="project-story__head">
+        <span class="project-story__eyebrow">Data story</span>
+        <h3>From Jakarta deep-dive to national CBD rankings</h3>
+        <p>The national story is generated from the committed DBSCAN output in <code>assets/data/cbd/indonesia_cbd.json</code>, with the existing Folium maps embedded as live context for Jakarta and Indonesia.</p>
+      </div>
+      <div class="story-scrolly">
+        <div class="story-visual">
+          <div class="story-stage story-stage--media">
+            <div class="story-status" data-story-status>Loading CBD ranking data...</div>
+            <div class="story-pane is-active" data-cbd-pane="jakarta">
+              <img src="assets/img/cbd/jakarta_barchart.jpg" alt="Top 10 Jakarta clusters by POI count">
+            </div>
+            <div class="story-pane" data-cbd-pane="jakarta-map">
+              <iframe src="maps/jakarta_map.html" title="Interactive CBD map of Jakarta" loading="lazy"></iframe>
+            </div>
+            <div class="story-pane" data-cbd-pane="bars">
+              <svg class="story-chart-svg" data-cbd-bars role="img" aria-label="CBD ranking chart"></svg>
+            </div>
+            <div class="story-pane" data-cbd-pane="indonesia-map">
+              <iframe src="maps/indonesia_map.html" title="Interactive CBD map of Indonesia" loading="lazy"></iframe>
+            </div>
+            <div class="story-map-card">
+              <div>
+                <div class="story-map-card__kpi" data-story-kpi>7,511</div>
+                <span class="story-map-card__label" data-story-label>Jakarta core POIs</span>
+              </div>
+              <p class="story-map-card__note" data-story-note>Sudirman-Thamrin-Kuningan dominates the Jakarta deep-dive before the analysis scales to all provinces.</p>
+            </div>
+          </div>
+          <div class="story-progress" data-story-progress aria-hidden="true"></div>
+          <p class="story-source-note">Source: <code>assets/data/cbd/indonesia_cbd.json</code> plus self-contained Folium maps in <code>maps/</code>.</p>
+        </div>
+        <div class="story-steps">
+          <article class="story-step" data-pane="jakarta" data-kpi="7,511" data-label="Jakarta core POIs" data-note="Sudirman-Thamrin-Kuningan dominates the Jakarta deep-dive before the analysis scales to all provinces.">
+            <span class="story-step__num">01 / Jakarta deep-dive</span>
+            <h4>The Jakarta run has one CBD that dwarfs every other local cluster.</h4>
+            <p>Cluster 0 is large enough to set the reference case for what a dense Indonesian CBD looks like before applying the national pipeline.</p>
+            <div class="story-step__meta"><span>15,417 POIs</span><span>19 clusters</span></div>
+          </article>
+          <article class="story-step" data-pane="jakarta-map" data-kpi="19" data-label="Jakarta clusters" data-note="The live map keeps the Jakarta bar chart grounded in actual cluster locations and marker-level POI context.">
+            <span class="story-step__num">02 / Jakarta map</span>
+            <h4>The interactive map checks whether the cluster pattern is spatially coherent.</h4>
+            <p>Map interaction matters here because POI counts alone cannot show whether clusters follow known corridors or scatter into noise.</p>
+            <div class="story-step__meta"><span>Folium map</span><span>cluster markers</span></div>
+          </article>
+          <article class="story-step" data-pane="bars" data-metric="n_poi" data-kpi="3,245" data-label="largest provincial CBD" data-note="The generated ranking shows Jakarta leads the national run by CBD POI count, followed by Bali and West Java.">
+            <span class="story-step__num">03 / National POI ranking</span>
+            <h4>The national ranking is generated directly from the processed CBD JSON.</h4>
+            <p>Using the data file makes the comparison reproducible and avoids locking the page to a static chart export.</p>
+            <div class="story-step__meta"><span>37 provinces</span><span>OSM commercial POIs</span></div>
+          </article>
+          <article class="story-step" data-pane="bars" data-metric="density_km2" data-kpi="1,310" data-label="densest CBD POI/km²" data-note="Sorting the same data by density surfaces compact centers such as Aceh, not only the largest POI totals.">
+            <span class="story-step__num">04 / Density contrast</span>
+            <h4>Density tells a different story from raw CBD size.</h4>
+            <p>Jakarta is broad, but compact provincial cores can score far higher when the metric shifts to POIs per square kilometer.</p>
+            <div class="story-step__meta"><span>density_km2</span><span>radius_m</span></div>
+          </article>
+          <article class="story-step" data-pane="indonesia-map" data-kpi="37/38" data-label="provinces with CBDs" data-note="The national map shows where DBSCAN identified a provincial CBD and where OSM coverage or diffuse urban form limits clustering.">
+            <span class="story-step__num">05 / National map</span>
+            <h4>The final map returns the ranking to geography.</h4>
+            <p>The map helps distinguish island-scale concentration, regional hubs, and provinces where commercial POIs are too sparse or dispersed for a single CBD cluster.</p>
+            <div class="story-step__meta"><span>Indonesia map</span><span>DBSCAN output</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <figure class="figure reveal">
       <div class="figure__frame" data-zoom data-cap="Top 10 Jakarta clusters by POI count; the CBD (Cluster 0, 7,511 POIs) dwarfs the rest (≤272).">
         <img src="assets/img/cbd/jakarta_barchart.jpg" width="1320" height="770" alt="Top 10 Jakarta clusters by POI count" loading="lazy">
@@ -253,5 +321,6 @@
 </footer>
 
 <script src="assets/js/main.js?v=7"></script>
+<script src="assets/js/scrolly-stories.js?v=1"></script>
 </body>
 </html>
