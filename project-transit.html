@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/style.css?v=16">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -37,7 +37,7 @@
   <h1 class="reveal">Transit Accessibility in DKI Jakarta</h1>
   <p class="lede reveal">How evenly can DKI Jakarta residents reach 27 categories of essential urban facilities using only public transit within 45 minutes, and how large is the contribution of the Mikrotrans feeder network?</p>
   <dl class="cs-meta reveal">
-    <div><dt>Study area</dt><dd>DKI Jakarta · 261 urban villages · 2,713 RW</dd></div>
+    <div><dt>Study area</dt><dd>DKI Jakarta · 261 urban villages · 2,733 RW</dd></div>
     <div><dt>Methods</dt><dd>COI · AHP Saaty · Getis-Ord Gi*</dd></div>
     <div><dt>Tools</dt><dd>Python · r5py · GeoPandas · esda</dd></div>
   </dl>
@@ -74,7 +74,7 @@
       <div class="dflow__phase">
         <div class="dflow__head"><span class="dflow__num">1</span><span class="ms">database</span><span class="dflow__title">Data</span></div>
         <div class="dflow__nodes">
-          <div class="dflow__node dflow__node--data"><span class="st">Inputs</span><span class="tx">GTFS scenarios A &amp; B · OSM network · 27 facility categories · 2,713 RW centroids</span></div>
+          <div class="dflow__node dflow__node--data"><span class="st">Inputs</span><span class="tx">GTFS scenarios A &amp; B · OSM network · 27 facility categories · 2,733 RW centroids</span></div>
           <div class="dflow__node"><span class="st">Prepare</span><span class="tx">Harmonize origins &amp; destinations to EPSG:4326</span></div>
         </div>
       </div>
@@ -98,22 +98,22 @@
         <div class="dflow__head"><span class="dflow__num">4</span><span class="ms">insights</span><span class="dflow__title">Validation &amp; findings</span></div>
         <div class="dflow__nodes">
           <div class="dflow__node"><span class="st">Test</span><span class="tx">Getis-Ord Gi* clusters + Spearman threshold sensitivity</span></div>
-          <div class="dflow__node"><span class="st">Findings</span><span class="tx">57× centre–periphery gap · +24.6% from Mikrotrans</span></div>
+          <div class="dflow__node"><span class="st">Findings</span><span class="tx">34× centre–periphery gap · +26.6% from Mikrotrans</span></div>
         </div>
       </div>
     </div>
 
     <div class="cs-prose reveal">
       <p><strong>Conceptual framework.</strong> The study adopts <em>place-based accessibility</em> (Geurs &amp; van Wee, 2004), which decomposes accessibility into four components: land use (where opportunities are located), transportation (how the network connects them), temporal (when service actually runs), and individual (who is traveling). The first three are modeled explicitly; the fourth is held constant as an average adult traveler. Among the four families of accessibility metrics, the cumulative opportunities measure was chosen over gravity-decay and utility-based alternatives because it answers the question policymakers actually ask, &#x201C;how many facilities can a resident reach within 45 minutes?&#x201D;, and because every assumption behind it can be audited.</p>
-      <p><strong>Origins and spatial units.</strong> The origin set is the 2,713 RW centroids, the smallest administrative unit with reliable boundaries in Jakarta. Scoring at RW level and then averaging up to the 261 urban villages reduces the Modifiable Areal Unit Problem (MAUP): each village score is built from many small samples instead of one arbitrary point. Every centroid also carries its RDTR zoning attribute from a spatial overlay, so accessibility can later be read against land-use designations.</p>
-      <p><strong>Destinations and AHP weighting.</strong> A hospital does not matter the same as an ATM, so the 27 destination categories are weighted with the Analytic Hierarchy Process. Categories are compared pairwise on Saaty&#x2019;s 1–9 importance scale; the principal eigenvector of the comparison matrix yields the weights, and the Consistency Ratio checks that the judgments do not contradict each other. The result puts Health at 35.0%, Education 19.6%, Economy 11.2%, with smaller shares for social, public-service, financial, and strategic-transport categories; CR = 0.0578, below the 0.10 threshold, so the matrix is internally consistent. Rail stations were deliberately excluded as destinations: the network cannot also be the prize, or the score becomes circular.</p>
+      <p><strong>Origins and spatial units.</strong> The origin set is the 2,733 RW centroids, the smallest administrative unit with reliable boundaries in Jakarta. Scoring at RW level and then averaging up to the 261 urban villages reduces the Modifiable Areal Unit Problem (MAUP): each village score is built from many small samples instead of one arbitrary point. Every centroid also carries its RDTR zoning attribute from a spatial overlay, so accessibility can later be read against land-use designations.</p>
+      <p><strong>Destinations and AHP weighting.</strong> A hospital does not matter the same as an ATM, so the 27 destination categories are weighted with the Analytic Hierarchy Process. Seven criteria (Employment, Education, Healthcare, Transit-hub access, Food, Public services, Social-inclusion) were compared pairwise on Saaty&#x2019;s 1–9 scale from a literature-derived evidence-scoring matrix, cross-checked two ways (geometric-mean approximation vs. the exact principal eigenvector, agreeing to within 0.1 point) — Consistency Ratio CR = 0.008, far below the 0.10 acceptability threshold. Transit-hub access was then folded out of the operational index (rail stations cannot also be the destination the score is measuring, or it becomes circular) and the remainder renormalized, giving the weights actually used: <strong>Employment 31.0%, Healthcare 25.8%, Education 21.5%</strong> (Primary 10.1% + Secondary 11.4%), <strong>Food 11.6%, Public Services 5.9%, Parks/Social-inclusion 4.2%</strong>.</p>
       <p><strong>Routing model.</strong> Travel times come from r5py, the Python interface to Conveyal&#x2019;s R5, the reference engine for time-dependent multimodal routing on GTFS. The mode is TRANSIT + WALK, departing Tuesday 07:00 (a typical peak) with a 60-minute departure window. The window matters: R5 averages over many departure times, so a village&#x2019;s score does not hinge on luckily catching a single bus, the &#x201C;first-bus bias&#x201D; documented by Owen &amp; Levinson (2015). The matrix covers every RW × destination pair twice, once per network: <strong>Scenario A</strong> (149 backbone BRT routes + MRT + LRT + KRL) and <strong>Scenario B</strong> (the full 243-route Jaklingko network, including 94 Mikrotrans feeder routes, plus rail).</p>
       <div class="formula">A(rw,k)     = category-k destinations reachable from the RW centroid within ≤ 45 min transit
 RawScore    = Σ [ A(rw,k) × w_AHP(k) ]   for k = 1..27
 Score(rw)   = (RawScore / S_max) × 100
 Δ(village)  = Score_B − Score_A</div>
       <p><strong>Scoring and comparison.</strong> For each RW and category, the count of reachable destinations is multiplied by the category&#x2019;s AHP weight; the weighted sum is normalized 0–100 against the highest raw score observed anywhere, and RW scores are averaged to villages. Because both scenarios share identical origins, destinations, weights, and parameters, the difference Δ = B − A cleanly isolates what the feeder network adds.</p>
-      <p><strong>Spatial statistics and validation.</strong> Getis-Ord Gi* (k = 6 nearest neighbours, 999 permutations) tests where high or low scores cluster more strongly than chance would allow, separating real spatial structure from noise. The whole pipeline is then rerun at 30- and 60-minute thresholds, and Spearman rank correlations across the three runs test whether the village ranking, the part that drives policy, depends on the 45-minute choice. Each methodological component was cross-checked against the accessibility literature (Journal of Transport Geography; Transportation Research Part A) before being adopted.</p>
+      <p><strong>Spatial statistics and validation.</strong> Getis-Ord Gi* (k = 6 nearest neighbours, 999 permutations) tests where high or low scores cluster more strongly than chance would allow, separating real spatial structure from noise. The whole pipeline is then rerun at 30- and 60-minute thresholds, and Spearman rank correlations across the three runs test whether the village ranking, the part that drives policy, depends on the 45-minute choice. A separate AHP weight-vector sensitivity check reruns the composite index under 6 weighting scenarios (equal weights, the literature-derived central weights, and four domain-tilted variants) to test whether the Mikrotrans finding depends on the specific weights chosen. Each methodological component was cross-checked against the accessibility literature (Journal of Transport Geography; Transportation Research Part A) before being adopted.</p>
     </div>
   </section>
 
@@ -127,7 +127,7 @@ Score(rw)   = (RawScore / S_max) × 100
       <table class="dtable">
         <thead><tr><th>Component</th><th>Detail</th><th>Source</th></tr></thead>
         <tbody>
-          <tr><td>Origin</td><td>2,713 RW centroids + RDTR zone overlay</td><td>BPS-DKI, DKI RDTR Regulation 2022</td></tr>
+          <tr><td>Origin</td><td>2,733 RW centroids + RDTR zone overlay</td><td>BPS-DKI, DKI RDTR Regulation 2022</td></tr>
           <tr><td>Destinations</td><td>27 categories (≈ 18,500 points)</td><td>Kemenkes, Dapodik, Pasar Jaya, Bank DKI, OSM, Kemenhub</td></tr>
           <tr><td>Road network</td><td><code>dki_only.osm.pbf</code> (69 MB)</td><td>OpenStreetMap (Apr 2024)</td></tr>
           <tr><td>Transit GTFS</td><td>Scenario A &amp; B (BRT, MRT, LRT, KRL, Mikrotrans)</td><td>TransJakarta, KAI Commuter, MRT-J, LRT-J</td></tr>
@@ -144,19 +144,19 @@ Score(rw)   = (RawScore / S_max) × 100
       <h2>Analysis</h2>
     </div>
     <div class="cs-prose reveal">
-      <p>AHP-weighted cumulative-opportunity scoring normalized to 0–100, then aggregated from RW to urban village. The Scenario A vs B comparison isolates the marginal impact of Mikrotrans, Getis-Ord Gi* detects significant clusters, and a Spearman test across 30/45/60-minute thresholds verifies rank stability.</p>
+      <p>AHP-weighted cumulative-opportunity scoring normalized to 0–100, then aggregated from RW to urban village. The Scenario A vs B comparison isolates the marginal impact of Mikrotrans, Getis-Ord Gi* detects significant clusters, a Spearman test across 30/45/60-minute thresholds verifies rank stability, and a 6-scenario AHP weight sensitivity check verifies the finding doesn't depend on the specific category weights.</p>
     </div>
 
     <div class="fig-grid reveal">
       <figure class="figure">
         <div class="figure__frame" data-zoom data-cap="Scenario A, backbone accessibility via BRT/MRT/LRT/KRL without Mikrotrans (45-min threshold, Tuesday 07:00 local time).">
-          <img src="assets/img/transit/skor_a.jpg" width="1800" height="1272" alt="Scenario A accessibility score map" loading="lazy">
+          <img src="assets/img/transit/skor_a.jpg" width="1312" height="1120" alt="Scenario A accessibility score map" loading="lazy">
         </div>
         <figcaption>Figure 1. Scenario A: backbone without Mikrotrans.</figcaption>
       </figure>
       <figure class="figure">
         <div class="figure__frame" data-zoom data-cap="Scenario B, full Jaklingko network (243 routes, including 94 Mikrotrans) + rail.">
-          <img src="assets/img/transit/skor_b.jpg" width="1800" height="1272" alt="Scenario B accessibility score map" loading="lazy">
+          <img src="assets/img/transit/skor_b.jpg" width="1330" height="1120" alt="Scenario B accessibility score map" loading="lazy">
         </div>
         <figcaption>Figure 2. Scenario B: full Jaklingko with Mikrotrans.</figcaption>
       </figure>
@@ -164,7 +164,7 @@ Score(rw)   = (RawScore / S_max) × 100
 
     <figure class="figure reveal">
       <div class="figure__frame" data-zoom data-cap="Δ-score (B − A): the marginal contribution of Mikrotrans per urban village. Darker green = largest gain.">
-        <img src="assets/img/transit/delta.jpg" width="1800" height="1272" alt="Map of Mikrotrans marginal impact" loading="lazy">
+        <img src="assets/img/transit/delta.jpg" width="1383" height="1237" alt="Map of Mikrotrans marginal impact" loading="lazy">
       </div>
       <figcaption>Figure 3. Marginal impact of the Mikrotrans feeder network on accessibility (Δ = B − A).</figcaption>
     </figure>
@@ -172,13 +172,13 @@ Score(rw)   = (RawScore / S_max) × 100
     <div class="fig-grid reveal">
       <figure class="figure">
         <div class="figure__frame" data-zoom data-cap="Qualitative accessibility classification per urban village (Scenario B).">
-          <img src="assets/img/transit/kategori.jpg" width="1559" height="1800" alt="Accessibility category map" loading="lazy">
+          <img src="assets/img/transit/kategori.jpg" width="1335" height="1689" alt="Accessibility category map" loading="lazy">
         </div>
         <figcaption>Figure 4. Accessibility categories (Scenario B).</figcaption>
       </figure>
       <figure class="figure">
-        <div class="figure__frame" data-zoom data-cap="Getis-Ord Gi* hotspots (KNN k=6, 999 permutations): only 3 villages identified as Hot Spot 95%.">
-          <img src="assets/img/transit/hotspot.jpg" width="1559" height="1800" alt="Getis-Ord hotspot map" loading="lazy">
+        <div class="figure__frame" data-zoom data-cap="Getis-Ord Gi* hotspots (KNN k=6, 999 permutations): 75 kelurahan form one contiguous Hot Spot cluster across central &amp; south Jakarta, 77 form a Cold Spot ring across the periphery.">
+          <img src="assets/img/transit/hotspot.jpg" width="1335" height="1689" alt="Getis-Ord hotspot map" loading="lazy">
         </div>
         <figcaption>Figure 5. Statistical hotspots (Getis-Ord Gi*, Scenario B).</figcaption>
       </figure>
@@ -186,7 +186,7 @@ Score(rw)   = (RawScore / S_max) × 100
 
     <figure class="figure reveal">
       <div class="figure__frame" data-zoom data-cap="Side-by-side comparison of Scenario A vs B.">
-        <img src="assets/img/transit/perbandingan.jpg" width="2000" height="1241" alt="Comparison of Scenario A and B" loading="lazy">
+        <img src="assets/img/transit/perbandingan.jpg" width="2639" height="1697" alt="Comparison of Scenario A and B" loading="lazy">
       </div>
       <figcaption>Figure 6. Side-by-side comparison of Scenario A vs B.</figcaption>
     </figure>
@@ -228,31 +228,54 @@ Score(rw)   = (RawScore / S_max) × 100
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><div class="v">57×</div><div class="k">Center–periphery inequality ratio</div></div>
-      <div class="stat"><div class="v">+24.6%</div><div class="k">Average uplift from Mikrotrans</div></div>
-      <div class="stat"><div class="v">23</div><div class="k">Villages leaving "Very Low"</div></div>
-      <div class="stat"><div class="v">r=1.00</div><div class="k">Spearman sensitivity test</div></div>
+      <div class="stat"><div class="v">34×</div><div class="k">Center–periphery inequality ratio</div></div>
+      <div class="stat"><div class="v">+26.6%</div><div class="k">Average uplift from Mikrotrans</div></div>
+      <div class="stat"><div class="v">32</div><div class="k">Villages leaving "Very Low"</div></div>
+      <div class="stat"><div class="v">ρ=0.92–0.98</div><div class="k">Spearman sensitivity test</div></div>
+    </div>
+
+    <div class="scrolly" data-scrolly>
+      <div class="scrolly__sticky">
+        <div class="scrolly__visual" data-scrolly-visual="0">
+          <div class="scrolly__num">34×</div>
+          <div class="scrolly__label">Center–periphery inequality ratio</div>
+        </div>
+      </div>
+      <div class="scrolly__steps">
+        <div class="scrolly__step is-active" data-num="34×" data-label="Center–periphery inequality ratio">
+          <span class="scrolly__step-idx">01</span>
+          <p><strong>Extreme vertical inequality.</strong> The ratio of the highest score (Petamburan 84.23) to the lowest (Pondok Ranggon 2.47) reaches <strong>34×</strong>. Central &amp; South Jakarta are 3–6× higher than North &amp; East Jakarta.</p>
+        </div>
+        <div class="scrolly__step" data-num="+26.6%" data-label="Average uplift from Mikrotrans">
+          <span class="scrolly__step-idx">02</span>
+          <p><strong>Mikrotrans = a significant but concentrated lever.</strong> Average score rises <strong>+7.89 points (+26.6%)</strong>; 7 of the top 10 beneficiaries are in West Jakarta (Sukabumi Utara +32.83). Mikrotrans works as a <em>capillary network</em> only where BRT/MRT corridors are already mature.</p>
+        </div>
+        <div class="scrolly__step" data-num="&lt;10/100" data-label="Score in the isolated periphery">
+          <span class="scrolly__step-idx">03</span>
+          <p><strong>Bottleneck = first/last-mile gap</strong> in the northern &amp; eastern peripheries (Cipayung, Cilincing, Penjaringan, Marunda), scores &lt; 10/100, effectively isolated.</p>
+        </div>
+        <div class="scrolly__step" data-num="75 : 77" data-label="Hot Spot : Cold Spot kelurahan">
+          <span class="scrolly__step-idx">04</span>
+          <p><strong>A confirmed core-periphery divide, not a handful of enclaves.</strong> Getis-Ord Gi* identifies 75 kelurahan forming one contiguous Hot Spot cluster across central &amp; south Jakarta (95%+ confidence) and 77 forming a Cold Spot ring across the periphery → high accessibility is a citywide structural pattern.</p>
+        </div>
+        <div class="scrolly__step" data-num="ρ=0.92–0.98" data-label="Rank stability, threshold &amp; 6 AHP weightings">
+          <span class="scrolly__step-idx">05</span>
+          <p><strong>Robust results.</strong> Threshold sensitivity yields Spearman ρ = 0.92–0.98 across the 30/45/60-minute cutoffs, ranks stay largely stable, only magnitudes shift. A separate check across 6 AHP weighting scenarios (equal weights, the literature-derived central weights, and 4 domain-tilted variants) confirms the Mikrotrans gain stays positive for &gt;99.8% of RW under every tested weighting.</p>
+        </div>
+      </div>
     </div>
 
     <div class="cs-prose reveal" style="margin-top:36px">
-      <ul>
-        <li><strong>Extreme vertical inequality.</strong> The ratio of the highest score (Setia Budi 74.29) to the lowest (≈1.3) reaches <strong>57×</strong>. Central &amp; South Jakarta are 3–6× higher than North &amp; East Jakarta.</li>
-        <li><strong>Mikrotrans = a significant but concentrated lever.</strong> Average score rises <strong>+4.74 points (+24.6%)</strong>; 7 of the top 10 beneficiaries are in West Jakarta (Sukabumi Selatan +19.69). Mikrotrans works as a <em>capillary network</em> only where BRT/MRT corridors are already mature.</li>
-        <li><strong>Bottleneck = first/last-mile gap</strong> in the northern &amp; eastern peripheries (Cipayung, Cilincing, Penjaringan, Marunda), scores &lt; 10/100, effectively isolated.</li>
-        <li><strong>Exclusive hotspots.</strong> Only 3 statistically significant villages (the golden triangle Sudirman–Setia Budi–Mampang) → high accessibility is <em>enclave-based</em>.</li>
-        <li><strong>Robust results.</strong> Threshold sensitivity yields Spearman r = 1.00, ranks unchanged, only magnitudes.</li>
-      </ul>
-
       <table class="dtable">
         <thead><tr><th>Statistic (n=261)</th><th class="num">Score A</th><th class="num">Score B</th><th class="num">Δ</th></tr></thead>
         <tbody>
-          <tr><td>Mean</td><td class="num">19.27</td><td class="num">24.01</td><td class="num"><strong>+4.74</strong></td></tr>
-          <tr><td>Median</td><td class="num">14.12</td><td class="num">20.96</td><td class="num">+4.04</td></tr>
-          <tr><td>Maximum</td><td class="num">69.82</td><td class="num">74.29</td><td class="num">+19.69</td></tr>
+          <tr><td>Mean</td><td class="num">29.67</td><td class="num">37.55</td><td class="num"><strong>+7.89</strong></td></tr>
+          <tr><td>Median</td><td class="num">27.77</td><td class="num">37.45</td><td class="num">+7.28</td></tr>
+          <tr><td>Maximum</td><td class="num">73.62</td><td class="num">84.23</td><td class="num">+32.83</td></tr>
         </tbody>
       </table>
 
-      <p><strong>Conclusion:</strong> even with the most complete transit network, DKI Jakarta&#x2019;s accessibility ceiling stays below optimum (max 74.29/100) and remains starkly uneven, high accessibility is concentrated in a few central enclaves, while the northern and eastern peripheries are effectively isolated within a 45-minute transit budget. The Mikrotrans feeder delivers a measurable but geographically biased accessibility gain, strongest where BRT/MRT corridors are already mature, and this pattern is statistically robust to the choice of travel-time threshold (Spearman r = 1.00).</p>
+      <p><strong>Conclusion:</strong> even with the most complete transit network, DKI Jakarta&#x2019;s accessibility ceiling stays below optimum (max 84.23/100) and remains starkly uneven, high accessibility is concentrated in a broad but bounded central cluster, while the northern and eastern peripheries are effectively isolated within a 45-minute transit budget. The Mikrotrans feeder delivers a measurable but geographically biased accessibility gain, strongest where BRT/MRT corridors are already mature, and this pattern is statistically robust both to the choice of travel-time threshold (Spearman ρ = 0.92–0.98) and to the choice of AHP category weighting (positive for 6/6 tested weight vectors).</p>
     </div>
   </section>
 
@@ -299,6 +322,6 @@ Score(rw)   = (RawScore / S_max) × 100
   <span>Urban Planner &amp; GIS Analyst</span>
 </footer>
 
-<script src="assets/js/main.js?v=5"></script>
+<script src="assets/js/main.js?v=7"></script>
 </body>
 </html>

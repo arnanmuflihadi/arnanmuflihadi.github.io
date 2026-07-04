@@ -139,4 +139,46 @@
     if (mqDesk.addEventListener) mqDesk.addEventListener("change", apply);
     apply();
   }
+
+  /* ---------- Scrollytelling (pinned stat panel + stepped findings) ---------- */
+  document.querySelectorAll("[data-scrolly]").forEach(function (root) {
+    var visual = root.querySelector("[data-scrolly-visual]");
+    var numEl = visual.querySelector(".scrolly__num");
+    var labelEl = visual.querySelector(".scrolly__label");
+    var steps = Array.prototype.slice.call(root.querySelectorAll(".scrolly__step"));
+    if (!visual || !numEl || !labelEl || !steps.length) return;
+
+    var progress = document.createElement("div");
+    progress.className = "scrolly__progress";
+    steps.forEach(function () { progress.appendChild(document.createElement("span")); });
+    visual.appendChild(progress);
+    var dots = Array.prototype.slice.call(progress.children);
+    if (dots[0]) dots[0].classList.add("is-active");
+
+    var current = 0;
+    function activate(index) {
+      if (index === current || index < 0) return;
+      current = index;
+      steps.forEach(function (s, i) { s.classList.toggle("is-active", i === index); });
+      dots.forEach(function (d, i) { d.classList.toggle("is-active", i === index); });
+      visual.classList.add("is-swapping");
+      window.setTimeout(function () {
+        numEl.textContent = steps[index].getAttribute("data-num");
+        labelEl.textContent = steps[index].getAttribute("data-label");
+        visual.classList.remove("is-swapping");
+      }, 160);
+    }
+
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) activate(steps.indexOf(en.target));
+          });
+        },
+        { threshold: 0, rootMargin: "-35% 0px -35% 0px" }
+      );
+      steps.forEach(function (s) { io.observe(s); });
+    }
+  });
 })();
