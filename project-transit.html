@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=31">
+<link rel="stylesheet" href="assets/css/style.css?v=32">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -55,7 +55,7 @@
       <p>This study answers a spatial-planning &amp; transport question: <strong>how evenly can DKI Jakarta residents reach 27 categories of essential urban facilities</strong> using only public transit (BRT TransJakarta, MRT, LRT, KRL, Mikrotrans/Jaklingko feeders) within a 60-minute limit, and what is the marginal contribution of the Mikrotrans feeder network?</p>
       <p>Four operational objectives:</p>
       <ul>
-        <li>Measure the <strong>Transit Accessibility Index (TAI)</strong> per urban village based on AHP-weighted cumulative opportunities.</li>
+        <li>Measure the <strong><span data-term="TAI" data-term-definition="A normalized 0-100 village score combining reachable destinations and AHP category weights.">Transit Accessibility Index (TAI)</span></strong> per urban village based on AHP-weighted cumulative opportunities.</li>
         <li>Compare two network scenarios to quantify the <em>marginal accessibility gain</em> (Δ-score) of feeder integration.</li>
         <li>Identify statistically significant accessibility <em>hot spots</em> and <em>cold spots</em>.</li>
         <li>Provide a quantitative <em>evidence base</em> on spatial equity for spatial planning (RDTR/RTRW) and transit-oriented development.</li>
@@ -103,17 +103,22 @@
       </div>
     </div>
 
-    <div class="cs-prose reveal">
-      <p><strong>Conceptual framework.</strong> The study adopts <em>place-based accessibility</em> (Geurs &amp; van Wee, 2004), which decomposes accessibility into four components: land use (where opportunities are located), transportation (how the network connects them), temporal (when service actually runs), and individual (who is traveling). The first three are modeled explicitly; the fourth is held constant as an average adult traveler. Among the four families of accessibility metrics, the cumulative opportunities measure was chosen over gravity-decay and utility-based alternatives because it answers the question policymakers actually ask, &#x201C;how many facilities can a resident reach within 60 minutes?&#x201D;, and because every assumption behind it can be audited.</p>
+    <aside class="method-callout reveal">
+      <span class="ms" aria-hidden="true">tips_and_updates</span>
+      <p><b>Read the method as decisions, not a wall of text.</b> Each panel keeps the short reasoning visible first; expand only the parts where you want the full modeling detail. Highlighted terms open concise definitions.</p>
+    </aside>
+
+    <div class="cs-prose reveal" data-method-collapsible>
+      <p><strong>Conceptual framework.</strong> The study adopts <em><span data-term="Place-based accessibility" data-term-definition="An accessibility view focused on the opportunities reachable from a place, combining land use, transport, time, and traveler assumptions.">place-based accessibility</span></em> (Geurs &amp; van Wee, 2004), which decomposes accessibility into four components: land use (where opportunities are located), transportation (how the network connects them), temporal (when service actually runs), and individual (who is traveling). The first three are modeled explicitly; the fourth is held constant as an average adult traveler. Among the four families of accessibility metrics, the <span data-term="Cumulative opportunities" data-term-definition="A transparent accessibility metric that counts destinations reachable within a fixed travel-time threshold.">cumulative opportunities</span> measure was chosen over gravity-decay and utility-based alternatives because it answers the question policymakers actually ask, &#x201C;how many facilities can a resident reach within 60 minutes?&#x201D;, and because every assumption behind it can be audited.</p>
       <p><strong>Origins and spatial units.</strong> The origin set is the 2,733 RW centroids, the smallest administrative unit with reliable boundaries in Jakarta. Scoring at RW level and then averaging up to the 261 urban villages reduces the Modifiable Areal Unit Problem (MAUP): each village score is built from many small samples instead of one arbitrary point. Every centroid also carries its RDTR zoning attribute from a spatial overlay, so accessibility can later be read against land-use designations.</p>
-      <p><strong>Destinations and AHP weighting.</strong> A hospital does not matter the same as an ATM, so the 27 destination categories are weighted with the Analytic Hierarchy Process. Seven criteria (Employment, Education, Healthcare, Transit-hub access, Food, Public services, Social-inclusion) were compared pairwise on Saaty&#x2019;s 1–9 scale from a literature-derived evidence-scoring matrix, cross-checked two ways (geometric-mean approximation vs. the exact principal eigenvector, agreeing to within 0.1 point) — Consistency Ratio CR = 0.008, far below the 0.10 acceptability threshold. Transit-hub access was then folded out of the operational index (rail stations cannot also be the destination the score is measuring, or it becomes circular) and the remainder renormalized, giving the weights actually used: <strong>Employment 31.0%, Healthcare 25.8%, Education 21.5%</strong> (Primary 10.1% + Secondary 11.4%), <strong>Food 11.6%, Public Services 5.9%, Parks/Social-inclusion 4.2%</strong>.</p>
+      <p><strong>Destinations and AHP weighting.</strong> A hospital does not matter the same as an ATM, so the 27 destination categories are weighted with the <span data-term="Analytic Hierarchy Process" data-term-definition="A pairwise-comparison method that converts expert or evidence-based priorities into normalized weights and checks consistency.">Analytic Hierarchy Process</span>. Seven criteria (Employment, Education, Healthcare, Transit-hub access, Food, Public services, Social-inclusion) were compared pairwise on Saaty&#x2019;s 1–9 scale from a literature-derived evidence-scoring matrix, cross-checked two ways (geometric-mean approximation vs. the exact principal eigenvector, agreeing to within 0.1 point) — Consistency Ratio CR = 0.008, far below the 0.10 acceptability threshold. Transit-hub access was then folded out of the operational index (rail stations cannot also be the destination the score is measuring, or it becomes circular) and the remainder renormalized, giving the weights actually used: <strong>Employment 31.0%, Healthcare 25.8%, Education 21.5%</strong> (Primary 10.1% + Secondary 11.4%), <strong>Food 11.6%, Public Services 5.9%, Parks/Social-inclusion 4.2%</strong>.</p>
       <p><strong>Routing model.</strong> Travel times come from r5py, the Python interface to Conveyal&#x2019;s R5, the reference engine for time-dependent multimodal routing on GTFS. The mode is TRANSIT + WALK, departing Wednesday 07:30 (a typical AM peak) with a 60-minute departure window. The window matters: R5 averages over many departure times, so a village&#x2019;s score does not hinge on luckily catching a single bus, the &#x201C;first-bus bias&#x201D; documented by Owen &amp; Levinson (2015). The matrix covers every RW × destination pair twice, once per network: <strong>Scenario A</strong> (163 backbone routes: rail + TransJakarta, no Mikrotrans) and <strong>Scenario B</strong> (262 backbone + Mikrotrans routes, including 99 Mikrotrans JAK feeder routes).</p>
       <div class="formula">A(rw,k)     = category-k destinations reachable from the RW centroid within ≤ 60 min transit
 RawScore    = Σ [ A(rw,k) × w_AHP(k) ]   for k = 1..27
 Score(rw)   = (RawScore / S_max) × 100
 Δ(village)  = Score_B − Score_A</div>
       <p><strong>Scoring and comparison.</strong> For each RW and category, the count of reachable destinations is multiplied by the category&#x2019;s AHP weight; the weighted sum is normalized 0–100 against the highest raw score observed anywhere, and RW scores are averaged to villages. Because both scenarios share identical origins, destinations, weights, and parameters, the difference Δ = B − A cleanly isolates what the feeder network adds.</p>
-      <p><strong>Spatial statistics and validation.</strong> Getis-Ord Gi* (KNN k = 6, 999 permutations) tests whether high and low Scenario B scores cluster more strongly than chance would allow. The Project AHP pipeline also reruns the composite index across 15-, 30-, 45-, 60-, and 75-minute cutoffs and tests multiple AHP weight vectors. The latest run reports that the Mikrotrans gain remains positive for every tested weight vector and cutoff, so the core Scenario B finding does not depend on a single time threshold or category-weight assumption.</p>
+      <p><strong>Spatial statistics and validation.</strong> <span data-term="Getis-Ord Gi*" data-term-definition="A local spatial statistic that tests whether high or low values cluster more strongly than expected by chance.">Getis-Ord Gi*</span> (KNN k = 6, 999 permutations) tests whether high and low Scenario B scores cluster more strongly than chance would allow. The Project AHP pipeline also reruns the composite index across 15-, 30-, 45-, 60-, and 75-minute cutoffs and tests multiple AHP weight vectors. The latest run reports that the Mikrotrans gain remains positive for every tested weight vector and cutoff, so the core Scenario B finding does not depend on a single time threshold or category-weight assumption.</p>
     </div>
   </section>
 
@@ -410,6 +415,8 @@ Score(rw)   = (RawScore / S_max) × 100
 </footer>
 
 <script src="assets/js/main.js?v=7"></script>
+<script src="assets/js/collapsible.js?v=1"></script>
+<script src="assets/js/microinteraction.js?v=1"></script>
 <script src="assets/js/scrolly-transit-static.js?v=7"></script>
 <script src="assets/js/literature-map.js?v=4"></script>
 </body>

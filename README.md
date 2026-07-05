@@ -19,6 +19,8 @@ website/
 └── assets/
     ├── css/style.css       # cache-busted as style.css?v=N — bump N on every CSS change
     ├── js/main.js          # same: main.js?v=N
+    ├── js/collapsible.js   # progressive enhancement for collapsed methodology panels
+    ├── js/microinteraction.js # case-study progress rail, term tooltips, and card pointer feedback
     ├── js/scrolly-stories.js # Pangan/MBR/CBD scrollytelling controller
     ├── js/literature-map.js # animated Litmaps-inspired literature network controller
     ├── cv.pdf              # downloadable CV (regenerate via matplotlib script if updated)
@@ -65,7 +67,7 @@ python3 -m http.server 8000
 - `project-pangan.html` uses `assets/js/scrolly-stories.js` to draw the story from committed GeoJSON in `maps/data/pangan/`.
 - `project-cbd.html` uses `assets/js/scrolly-stories.js` to render ranking/density views from `assets/data/cbd/indonesia_cbd.json` and embeds the live Folium maps.
 - `project-mbr.html` uses `assets/js/scrolly-stories.js` with compact chart data in `assets/data/mbr/mbr_story.json`; exported figures remain only where the available raw category fields do not reproduce the published final category counts.
-- Current case-study cache markers are `style.css?v=31`, `scrolly-stories.js?v=4`, `scrolly-transit-static.js?v=7`, and `literature-map.js?v=4`.
+- Current case-study cache markers are `style.css?v=32`, `collapsible.js?v=1`, `microinteraction.js?v=1`, `scrolly-stories.js?v=4`, `scrolly-transit-static.js?v=7`, and `literature-map.js?v=4`.
 
 Checklist for new case-study stories:
 1. Prefer committed raw/processed data over static chart images when the data is available.
@@ -80,6 +82,12 @@ Checklist for new case-study stories:
 - Node categories are `Core Method`, `Dataset / Data Source`, `Software / Tool`, `Validation / Benchmark`, `Policy / Planning Context`, and `Background / Interpretation`. Node size comes from `importance` on a 1-5 scale.
 - The component uses `IntersectionObserver` for a mini-scroll reveal: center node, methods, data, tools, validation/context, connections, then free exploration. It respects `prefers-reduced-motion` by showing the full graph immediately.
 - To add a new case-study map, add a `projects.<slug>` object in `literature-maps.json`, place `<div id="literature-map-<slug>" class="literature-map" data-literature-map="<slug>">` before the References section, and include `assets/js/literature-map.js?v=4` near the end of the page.
+
+## Micro-interactions and collapsibles
+- `assets/js/microinteraction.js` adds the case-study reading progress bar, desktop section-dot navigation, inline term tooltips, and pointer-aware card feedback. Add a definition by wrapping a term with `data-term-definition="Short explanation"` and, optionally, `data-term="Label"`.
+- `assets/js/collapsible.js` enhances any prose container marked `data-method-collapsible`. Direct child paragraphs that begin with `<strong>Title.</strong>` become collapsed method panels; any following formula/table/list content stays inside that panel until the next titled paragraph.
+- Keep the original prose in the HTML. The collapsible behavior is progressive enhancement: without JavaScript, the full method remains visible.
+- Motion must stay purposeful and light. When changing animations, update the `prefers-reduced-motion` rules in `style.css` and verify at one mobile width plus one desktop width.
 
 ## Adding or modifying story steps
 - For Pangan, MBR, and CBD, edit the `.story-step` elements in the relevant page. The shared `assets/js/scrolly-stories.js` reads each step's `data-*` attributes to swap panes, charts, KPIs, labels, notes, and progress buttons.
