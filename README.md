@@ -20,7 +20,9 @@ website/
     ├── css/style.css       # cache-busted as style.css?v=N — bump N on every CSS change
     ├── js/main.js          # same: main.js?v=N
     ├── js/scrolly-stories.js # Pangan/MBR/CBD scrollytelling controller
+    ├── js/literature-map.js # animated Litmaps-inspired literature network controller
     ├── cv.pdf              # downloadable CV (regenerate via matplotlib script if updated)
+    ├── data/literature-maps.json # curated nodes, edges, categories, and roles for each literature map
     ├── data/cbd/           # downloadable CBD analysis JSON
     ├── data/mbr/           # compact MBR story data derived from local pipeline CSV outputs
     └── img/                # topo.svg background, profile.jpg, per-project map images
@@ -63,10 +65,23 @@ python3 -m http.server 8000
 - `project-pangan.html` uses `assets/js/scrolly-stories.js` to draw the story from committed GeoJSON in `maps/data/pangan/`.
 - `project-cbd.html` uses `assets/js/scrolly-stories.js` to render ranking/density views from `assets/data/cbd/indonesia_cbd.json` and embeds the live Folium maps.
 - `project-mbr.html` uses `assets/js/scrolly-stories.js` with compact chart data in `assets/data/mbr/mbr_story.json`; exported figures remain only where the available raw category fields do not reproduce the published final category counts.
-- Current case-study cache markers are `style.css?v=25`, `scrolly-stories.js?v=4`, and `scrolly-transit-static.js?v=6`.
+- Current case-study cache markers are `style.css?v=31`, `scrolly-stories.js?v=4`, `scrolly-transit-static.js?v=7`, and `literature-map.js?v=4`.
 
 Checklist for new case-study stories:
 1. Prefer committed raw/processed data over static chart images when the data is available.
 2. Keep image-based scrollytelling only as an explicit fallback when source data is missing or the available raw field conflicts with the published final result.
 3. Remove static figures or maps that duplicate a data-driven scrollytelling state; keep only distinct supporting evidence.
 4. Bump `style.css?v=N` and the story script version on edited pages so GitHub Pages does not serve stale assets.
+
+## Literature map system
+- Each case-study page has a separate `Evidence & Literature Map` section immediately before the plain References section. The full reference list stays in the HTML for credibility, accessibility, SEO, and no-JavaScript fallback.
+- `assets/js/literature-map.js` fetches `assets/data/literature-maps.json`, selects the matching project key, and renders a curated SVG citation network. It does not geocode references, does not use Leaflet, and does not replace the bibliography.
+- Each project has a `center` research-question node, representative `nodes`, and explicit `edges` with relationship labels such as `uses data from`, `applies method from`, `implemented with`, `validated against`, `supports policy context`, `interprets results through`, and `extends / adapts`.
+- Node categories are `Core Method`, `Dataset / Data Source`, `Software / Tool`, `Validation / Benchmark`, `Policy / Planning Context`, and `Background / Interpretation`. Node size comes from `importance` on a 1-5 scale.
+- The component uses `IntersectionObserver` for a mini-scroll reveal: center node, methods, data, tools, validation/context, connections, then free exploration. It respects `prefers-reduced-motion` by showing the full graph immediately.
+- To add a new case-study map, add a `projects.<slug>` object in `literature-maps.json`, place `<div id="literature-map-<slug>" class="literature-map" data-literature-map="<slug>">` before the References section, and include `assets/js/literature-map.js?v=4` near the end of the page.
+
+## Adding or modifying story steps
+- For Pangan, MBR, and CBD, edit the `.story-step` elements in the relevant page. The shared `assets/js/scrolly-stories.js` reads each step's `data-*` attributes to swap panes, charts, KPIs, labels, notes, and progress buttons.
+- For Transit, edit `.scrolly-static-step` elements in `project-transit.html`. `assets/js/scrolly-transit-static.js` reads `data-layer-target`, `data-state`, `data-note`, `data-legend`, and pan/scale attributes to update the SVG map layers and chapter navigation.
+- Prefer adding a new committed data layer first; use image crossfade or zoom only when the raw data is unavailable or cannot reproduce the published result.

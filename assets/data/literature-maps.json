@@ -1,0 +1,1238 @@
+{
+  "version": 1,
+  "categories": {
+    "Core Method": {
+      "label": "Core Method",
+      "color": "#496f8d",
+      "shape": "circle",
+      "description": "Theories, indicators, and analytical methods that structure the case-study model."
+    },
+    "Dataset / Data Source": {
+      "label": "Dataset / Data Source",
+      "color": "#6f7f52",
+      "shape": "square",
+      "description": "Primary datasets, administrative sources, and processed data artifacts used by the analysis."
+    },
+    "Software / Tool": {
+      "label": "Software / Tool",
+      "color": "#62558f",
+      "shape": "diamond",
+      "description": "Libraries, routing engines, and reproducible code tools used to implement the workflow."
+    },
+    "Validation / Benchmark": {
+      "label": "Validation / Benchmark",
+      "color": "#a35232",
+      "shape": "hex",
+      "description": "Benchmarks, sensitivity checks, robustness tests, and limitations used to evaluate results."
+    },
+    "Policy / Planning Context": {
+      "label": "Policy / Planning Context",
+      "color": "#7b5f46",
+      "shape": "pill",
+      "description": "Planning, equity, logistics, or policy sources that frame the implication of the findings."
+    },
+    "Background / Interpretation": {
+      "label": "Background / Interpretation",
+      "color": "#68645d",
+      "shape": "circle",
+      "description": "Contextual sources and cautious interpretation notes that shape how the result should be read."
+    }
+  },
+  "relationshipTypes": [
+    "uses data from",
+    "applies method from",
+    "implemented with",
+    "validated against",
+    "supports policy context",
+    "interprets results through",
+    "extends / adapts"
+  ],
+  "projects": {
+    "transit": {
+      "title": "Transit Accessibility in DKI Jakarta",
+      "summary": "This visual map summarizes how key references, datasets, tools, and methods support the analysis. The full reference list is preserved below.",
+      "center": {
+        "id": "transit-center",
+        "label": "Transit accessibility and spatial equity in DKI Jakarta",
+        "title": "How evenly can residents reach essential facilities by transit within 60 minutes, and what does Mikrotrans add?",
+        "type": "Research Question"
+      },
+      "steps": [
+        {
+          "phase": 1,
+          "title": "Research question",
+          "body": "Start from the case-study question at the center of the graph.",
+          "categories": []
+        },
+        {
+          "phase": 2,
+          "title": "Core methods",
+          "body": "Reveal the methods and theory that define the analytical structure.",
+          "categories": [
+            "Core Method"
+          ]
+        },
+        {
+          "phase": 3,
+          "title": "Data foundations",
+          "body": "Add the datasets and source material used to operationalize the model.",
+          "categories": [
+            "Dataset / Data Source"
+          ]
+        },
+        {
+          "phase": 4,
+          "title": "Implementation tools",
+          "body": "Show the software and technical workflow used to build the analysis.",
+          "categories": [
+            "Software / Tool"
+          ]
+        },
+        {
+          "phase": 5,
+          "title": "Validation and context",
+          "body": "Bring in validation, policy context, and interpretation references.",
+          "categories": [
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 6,
+          "title": "Connections",
+          "body": "Draw the relationship labels that connect each source to the analysis.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 7,
+          "title": "Explore",
+          "body": "Select or focus a node to inspect its role and connected evidence.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "id": "transit-gtfs",
+          "label": "Jaklingko GTFS scenarios A and B",
+          "title": "Jaklingko GTFS scenarios A and B",
+          "year": null,
+          "category": "Dataset / Data Source",
+          "type": "dataset",
+          "role": "Defines the backbone-only and backbone-plus-Mikrotrans transit networks used in the accessibility comparison.",
+          "importance": 5,
+          "pipelineStage": [
+            "Data",
+            "Model"
+          ]
+        },
+        {
+          "id": "transit-boundaries",
+          "label": "RW centroids, kelurahan boundaries and RDTR overlay",
+          "title": "RW centroids, kelurahan boundaries and RDTR overlay",
+          "year": 2022,
+          "category": "Dataset / Data Source",
+          "type": "dataset",
+          "role": "Provides the origin geography, aggregation units, and planning-zoning context for interpreting accessibility.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data"
+          ]
+        },
+        {
+          "id": "transit-facilities",
+          "label": "27 essential-facility destination categories",
+          "title": "27 essential-facility destination categories",
+          "year": null,
+          "category": "Dataset / Data Source",
+          "type": "dataset",
+          "role": "Supplies the reachable opportunities counted in the AHP-weighted cumulative opportunities indicator.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data"
+          ]
+        },
+        {
+          "id": "geurs-2004",
+          "label": "Accessibility evaluation of land-use and transport strategies",
+          "title": "Accessibility evaluation of land-use and transport strategies",
+          "year": 2004,
+          "category": "Core Method",
+          "type": "citation",
+          "role": "Provides the place-based accessibility framework used to connect land use, transport, and temporal service conditions.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method"
+          ]
+        },
+        {
+          "id": "hansen-1959",
+          "label": "How accessibility shapes land use",
+          "title": "How accessibility shapes land use",
+          "year": 1959,
+          "category": "Core Method",
+          "type": "citation",
+          "role": "Foundational accessibility concept supporting the cumulative-opportunities framing.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method"
+          ]
+        },
+        {
+          "id": "paez-2012",
+          "label": "Measuring accessibility: positive and normative implementations",
+          "title": "Measuring accessibility: positive and normative implementations",
+          "year": 2012,
+          "category": "Core Method",
+          "type": "citation",
+          "role": "Helps position cumulative opportunities among alternative accessibility indicator families.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method"
+          ]
+        },
+        {
+          "id": "saaty-1977-1980",
+          "label": "Analytic Hierarchy Process",
+          "title": "Analytic Hierarchy Process references",
+          "year": "1977 / 1980",
+          "category": "Core Method",
+          "type": "citation",
+          "role": "Supports the pairwise weighting structure used to prioritize essential facility categories.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method",
+            "Model"
+          ]
+        },
+        {
+          "id": "r5-routing",
+          "label": "R5 / r5r multimodal routing",
+          "title": "R5 / r5r multimodal routing reference",
+          "year": 2021,
+          "category": "Software / Tool",
+          "type": "citation",
+          "role": "Supports the R5-based transit travel-time matrix logic behind the r5py routing workflow.",
+          "importance": 5,
+          "pipelineStage": [
+            "Model"
+          ]
+        },
+        {
+          "id": "getis-ord-1992",
+          "label": "Getis-Ord Gi* spatial association statistic",
+          "title": "Getis-Ord Gi* spatial association statistic",
+          "year": 1992,
+          "category": "Validation / Benchmark",
+          "type": "citation",
+          "role": "Provides the spatial cluster test used to identify accessibility hot spots and cold spots.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation",
+            "Findings"
+          ]
+        },
+        {
+          "id": "conway-2018",
+          "label": "Uncertainty and variation in public transport accessibility metrics",
+          "title": "Uncertainty and variation in public transport accessibility metrics",
+          "year": 2018,
+          "category": "Validation / Benchmark",
+          "type": "citation",
+          "role": "Supports the treatment of departure-window variation and uncertainty in transit accessibility metrics.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation"
+          ]
+        },
+        {
+          "id": "owen-2015",
+          "label": "Continuous accessibility and transit commute mode share",
+          "title": "Continuous accessibility and transit commute mode share",
+          "year": 2015,
+          "category": "Validation / Benchmark",
+          "type": "citation",
+          "role": "Supports the reading of transit accessibility over a departure window instead of a single lucky departure.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation"
+          ]
+        },
+        {
+          "id": "equity-context",
+          "label": "Transit accessibility, equity and spatial structure",
+          "title": "Transit accessibility, equity and spatial structure references",
+          "year": "2013-2023",
+          "category": "Policy / Planning Context",
+          "type": "citation group",
+          "role": "Cervero, El-Geneidy, Lucas, Pereira, and Sharma frame the results as spatial equity and planning evidence.",
+          "importance": 3,
+          "pipelineStage": [
+            "Policy"
+          ]
+        },
+        {
+          "id": "transit-findings",
+          "label": "Center-periphery gap and Mikrotrans uplift",
+          "title": "Center-periphery gap and Mikrotrans uplift",
+          "year": 2026,
+          "category": "Background / Interpretation",
+          "type": "finding",
+          "role": "Links the evidence base to the reported 34x inequality ratio, +26.6% mean uplift, and remaining peripheral gaps.",
+          "importance": 2,
+          "pipelineStage": [
+            "Findings"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "transit-center",
+          "target": "transit-gtfs",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "transit-center",
+          "target": "transit-boundaries",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "transit-center",
+          "target": "transit-facilities",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "transit-center",
+          "target": "geurs-2004",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "transit-center",
+          "target": "hansen-1959",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "transit-center",
+          "target": "paez-2012",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "transit-center",
+          "target": "saaty-1977-1980",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "saaty-1977-1980",
+          "target": "transit-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "transit-center",
+          "target": "r5-routing",
+          "relationship": "implemented with"
+        },
+        {
+          "source": "transit-center",
+          "target": "getis-ord-1992",
+          "relationship": "validated against"
+        },
+        {
+          "source": "getis-ord-1992",
+          "target": "transit-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "transit-center",
+          "target": "conway-2018",
+          "relationship": "validated against"
+        },
+        {
+          "source": "transit-center",
+          "target": "owen-2015",
+          "relationship": "validated against"
+        },
+        {
+          "source": "transit-center",
+          "target": "equity-context",
+          "relationship": "supports policy context"
+        },
+        {
+          "source": "transit-center",
+          "target": "transit-findings",
+          "relationship": "interprets results through"
+        }
+      ]
+    },
+    "pangan": {
+      "title": "Critical Roads for the Rice Supply Chain in West Java",
+      "summary": "This visual map connects the supply-chain data, spatial-interaction model, software workflow, validation checks, and planning interpretation. The full reference list is preserved below.",
+      "center": {
+        "id": "pangan-center",
+        "label": "Critical road segments for West Java rice supply chain",
+        "title": "Which road segments are most critical for rice movement from production centers through channels to markets?",
+        "type": "Research Question"
+      },
+      "steps": [
+        {
+          "phase": 1,
+          "title": "Research question",
+          "body": "Start from the case-study question at the center of the graph.",
+          "categories": []
+        },
+        {
+          "phase": 2,
+          "title": "Core methods",
+          "body": "Reveal the methods and theory that define the analytical structure.",
+          "categories": [
+            "Core Method"
+          ]
+        },
+        {
+          "phase": 3,
+          "title": "Data foundations",
+          "body": "Add the datasets and source material used to operationalize the model.",
+          "categories": [
+            "Dataset / Data Source"
+          ]
+        },
+        {
+          "phase": 4,
+          "title": "Implementation tools",
+          "body": "Show the software and technical workflow used to build the analysis.",
+          "categories": [
+            "Software / Tool"
+          ]
+        },
+        {
+          "phase": 5,
+          "title": "Validation and context",
+          "body": "Bring in validation, policy context, and interpretation references.",
+          "categories": [
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 6,
+          "title": "Connections",
+          "body": "Draw the relationship labels that connect each source to the analysis.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 7,
+          "title": "Explore",
+          "body": "Select or focus a node to inspect its role and connected evidence.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "id": "bps-jabar",
+          "label": "BPS Jawa Barat rice production statistics",
+          "title": "BPS Jawa Barat rice production statistics",
+          "year": 2024,
+          "category": "Dataset / Data Source",
+          "type": "dataset",
+          "role": "Provides provincial and regency rice-production quantities for supply-side modeling.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data"
+          ]
+        },
+        {
+          "id": "bpiw-big",
+          "label": "Rice field map and administrative boundaries",
+          "title": "Rice field map and administrative boundaries",
+          "year": null,
+          "category": "Dataset / Data Source",
+          "type": "dataset",
+          "role": "Provides spatial boundary and rice-field context for production and district geography.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data"
+          ]
+        },
+        {
+          "id": "osm-roads",
+          "label": "OpenStreetMap West Java road network",
+          "title": "OpenStreetMap West Java road network",
+          "year": null,
+          "category": "Dataset / Data Source",
+          "type": "dataset",
+          "role": "Defines the routable network used for assigning modeled rice flows to road segments.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data",
+            "Model"
+          ]
+        },
+        {
+          "id": "market-hazard-rmu",
+          "label": "Hazard, market and rice-milling-unit sources",
+          "title": "Hazard, market and rice-milling-unit sources",
+          "year": null,
+          "category": "Dataset / Data Source",
+          "type": "dataset group",
+          "role": "Open Data Jawa Barat and Dinas Pertanian Jabar provide hazard, market, and RMU context for prioritization.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data",
+            "Policy"
+          ]
+        },
+        {
+          "id": "wilson-1971",
+          "label": "A family of spatial interaction models",
+          "title": "A family of spatial interaction models",
+          "year": 1971,
+          "category": "Core Method",
+          "type": "citation",
+          "role": "Supports the gravity-model and spatial-interaction logic used to construct OD flows.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method"
+          ]
+        },
+        {
+          "id": "furness-od",
+          "label": "Doubly constrained OD matrix with Furness balancing",
+          "title": "Doubly constrained OD matrix with Furness balancing",
+          "year": null,
+          "category": "Core Method",
+          "type": "method",
+          "role": "Balances production, processing-channel, and destination demand constraints before road assignment.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method",
+            "Model"
+          ]
+        },
+        {
+          "id": "network-tools",
+          "label": "OSMnx, NetworkX, GeoPandas and Python workflow",
+          "title": "OSMnx, NetworkX, GeoPandas and Python workflow",
+          "year": null,
+          "category": "Software / Tool",
+          "type": "tool group",
+          "role": "Implements network extraction, shortest paths, spatial joins, and browser-ready GeoJSON outputs.",
+          "importance": 4,
+          "pipelineStage": [
+            "Model"
+          ]
+        },
+        {
+          "id": "tomtom",
+          "label": "TomTom POI and Routing API",
+          "title": "TomTom POI and Routing API",
+          "year": null,
+          "category": "Validation / Benchmark",
+          "type": "private data/tool",
+          "role": "Provides truck-profile routing and traffic context for checking modeled road priorities.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation"
+          ]
+        },
+        {
+          "id": "robustness-testing",
+          "label": "Agreement, sensitivity and Monte Carlo stable core",
+          "title": "Agreement, sensitivity and Monte Carlo stable core",
+          "year": 2026,
+          "category": "Validation / Benchmark",
+          "type": "validation output",
+          "role": "Tests whether the priority-road ranking survives alternate model assumptions and parameter variation.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation",
+            "Findings"
+          ]
+        },
+        {
+          "id": "pantura-finding",
+          "label": "Pantura priority-corridor finding",
+          "title": "Pantura priority-corridor finding",
+          "year": 2026,
+          "category": "Policy / Planning Context",
+          "type": "finding",
+          "role": "Connects the modeled flows to a transport-planning priority for West Java food-security resilience.",
+          "importance": 3,
+          "pipelineStage": [
+            "Findings",
+            "Policy"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "pangan-center",
+          "target": "bps-jabar",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "pangan-center",
+          "target": "bpiw-big",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "pangan-center",
+          "target": "osm-roads",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "pangan-center",
+          "target": "market-hazard-rmu",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "pangan-center",
+          "target": "wilson-1971",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "pangan-center",
+          "target": "furness-od",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "furness-od",
+          "target": "pangan-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "pangan-center",
+          "target": "network-tools",
+          "relationship": "implemented with"
+        },
+        {
+          "source": "pangan-center",
+          "target": "tomtom",
+          "relationship": "validated against"
+        },
+        {
+          "source": "pangan-center",
+          "target": "robustness-testing",
+          "relationship": "validated against"
+        },
+        {
+          "source": "robustness-testing",
+          "target": "pangan-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "pangan-center",
+          "target": "pantura-finding",
+          "relationship": "supports policy context"
+        },
+        {
+          "source": "pantura-finding",
+          "target": "pangan-center",
+          "relationship": "extends / adapts"
+        }
+      ]
+    },
+    "mbr": {
+      "title": "Satellite Proxy for Low-Income Communities in DKI Jakarta",
+      "summary": "This visual map separates satellite data, machine-learning methods, official validation sources, and interpretation cautions. The full reference list is preserved below.",
+      "center": {
+        "id": "mbr-center",
+        "label": "Satellite proxy for low-income communities in DKI Jakarta",
+        "title": "Can public satellite embeddings approximate the spatial pattern of low-income community morphology in Jakarta?",
+        "type": "Research Question"
+      },
+      "steps": [
+        {
+          "phase": 1,
+          "title": "Research question",
+          "body": "Start from the case-study question at the center of the graph.",
+          "categories": []
+        },
+        {
+          "phase": 2,
+          "title": "Core methods",
+          "body": "Reveal the methods and theory that define the analytical structure.",
+          "categories": [
+            "Core Method"
+          ]
+        },
+        {
+          "phase": 3,
+          "title": "Data foundations",
+          "body": "Add the datasets and source material used to operationalize the model.",
+          "categories": [
+            "Dataset / Data Source"
+          ]
+        },
+        {
+          "phase": 4,
+          "title": "Implementation tools",
+          "body": "Show the software and technical workflow used to build the analysis.",
+          "categories": [
+            "Software / Tool"
+          ]
+        },
+        {
+          "phase": 5,
+          "title": "Validation and context",
+          "body": "Bring in validation, policy context, and interpretation references.",
+          "categories": [
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 6,
+          "title": "Connections",
+          "body": "Draw the relationship labels that connect each source to the analysis.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 7,
+          "title": "Explore",
+          "body": "Select or focus a node to inspect its role and connected evidence.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "id": "alphaearth",
+          "label": "AlphaEarth satellite embeddings",
+          "title": "AlphaEarth satellite embeddings",
+          "year": 2025,
+          "category": "Dataset / Data Source",
+          "type": "citation / data source",
+          "role": "Provides the satellite embedding field used as the core spatial feature set.",
+          "importance": 5,
+          "pipelineStage": [
+            "Data",
+            "Model"
+          ]
+        },
+        {
+          "id": "building-stock",
+          "label": "Temporally harmonised gridded building-stock dataset",
+          "title": "Temporally harmonised gridded building-stock dataset",
+          "year": 2026,
+          "category": "Dataset / Data Source",
+          "type": "citation",
+          "role": "Supports temporal building morphology context for interpreting urban form change.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data",
+            "Validation"
+          ]
+        },
+        {
+          "id": "ipks-bps",
+          "label": "BPS DKI Jakarta IPKS 2020",
+          "title": "BPS DKI Jakarta IPKS 2020",
+          "year": 2022,
+          "category": "Validation / Benchmark",
+          "type": "government source",
+          "role": "Provides official social vulnerability dimensions used for convergent validation.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation"
+          ]
+        },
+        {
+          "id": "meta-rwi",
+          "label": "Meta Relative Wealth Index, Indonesia",
+          "title": "Meta Relative Wealth Index, Indonesia",
+          "year": 2023,
+          "category": "Validation / Benchmark",
+          "type": "open data",
+          "role": "Provides an external wealth-index benchmark for interpreting the proxy.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation"
+          ]
+        },
+        {
+          "id": "wealth-microestimates",
+          "label": "Microestimates of wealth for LMICs",
+          "title": "Microestimates of wealth for LMICs",
+          "year": 2022,
+          "category": "Core Method",
+          "type": "citation",
+          "role": "Supports the broader premise of estimating wealth/deprivation with nontraditional spatial data.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method"
+          ]
+        },
+        {
+          "id": "rwi-limitations",
+          "label": "Strengths and limitations of big-data relative wealth indices in Indonesia",
+          "title": "Strengths and limitations of big-data relative wealth indices in Indonesia",
+          "year": 2023,
+          "category": "Background / Interpretation",
+          "type": "citation",
+          "role": "Keeps limitations visible when interpreting proxy outputs in Indonesia.",
+          "importance": 2,
+          "pipelineStage": [
+            "Policy",
+            "Findings"
+          ]
+        },
+        {
+          "id": "ml-pipeline",
+          "label": "XGBoost, temporal smoothing and quintile classification",
+          "title": "XGBoost, temporal smoothing and quintile classification",
+          "year": null,
+          "category": "Software / Tool",
+          "type": "method group",
+          "role": "Implements the two-stage proxy model, temporal artifact correction, and final classifications.",
+          "importance": 4,
+          "pipelineStage": [
+            "Model"
+          ]
+        },
+        {
+          "id": "statistical-power",
+          "label": "Statistical Power Analysis for the Behavioral Sciences",
+          "title": "Statistical Power Analysis for the Behavioral Sciences",
+          "year": 1988,
+          "category": "Validation / Benchmark",
+          "type": "citation",
+          "role": "Supports effect-size interpretation in the validation table.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation"
+          ]
+        },
+        {
+          "id": "transport-equity-link",
+          "label": "Spatial accessibility and transport inequity in Finland",
+          "title": "Spatial accessibility and transport inequity in Finland",
+          "year": 2024,
+          "category": "Policy / Planning Context",
+          "type": "citation",
+          "role": "Provides a planning-practice reference for adapting equity analysis to a Jakarta poverty-mapping context.",
+          "importance": 3,
+          "pipelineStage": [
+            "Policy"
+          ]
+        },
+        {
+          "id": "mbr-finding",
+          "label": "Persistent deprived and worsening-neighborhood classifications",
+          "title": "Persistent deprived and worsening-neighborhood classifications",
+          "year": 2026,
+          "category": "Background / Interpretation",
+          "type": "finding",
+          "role": "Connects satellite morphology, smoothing, and validation to the final neighborhood trajectory categories.",
+          "importance": 2,
+          "pipelineStage": [
+            "Findings"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "mbr-center",
+          "target": "alphaearth",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "mbr-center",
+          "target": "building-stock",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "mbr-center",
+          "target": "ipks-bps",
+          "relationship": "validated against"
+        },
+        {
+          "source": "mbr-center",
+          "target": "meta-rwi",
+          "relationship": "validated against"
+        },
+        {
+          "source": "mbr-center",
+          "target": "wealth-microestimates",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "mbr-center",
+          "target": "rwi-limitations",
+          "relationship": "interprets results through"
+        },
+        {
+          "source": "rwi-limitations",
+          "target": "mbr-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "mbr-center",
+          "target": "ml-pipeline",
+          "relationship": "implemented with"
+        },
+        {
+          "source": "mbr-center",
+          "target": "statistical-power",
+          "relationship": "validated against"
+        },
+        {
+          "source": "mbr-center",
+          "target": "transport-equity-link",
+          "relationship": "supports policy context"
+        },
+        {
+          "source": "mbr-center",
+          "target": "mbr-finding",
+          "relationship": "interprets results through"
+        }
+      ]
+    },
+    "cbd": {
+      "title": "Mapping Indonesia's Business Centers with DBSCAN",
+      "summary": "This visual map shows how OSM data, DBSCAN theory, Python tooling, and completeness limitations support the CBD clustering story. The full reference list is preserved below.",
+      "center": {
+        "id": "cbd-center",
+        "label": "Mapping Indonesia's business centers using DBSCAN",
+        "title": "Where do commercial POIs form the main business center in each Indonesian province?",
+        "type": "Research Question"
+      },
+      "steps": [
+        {
+          "phase": 1,
+          "title": "Research question",
+          "body": "Start from the case-study question at the center of the graph.",
+          "categories": []
+        },
+        {
+          "phase": 2,
+          "title": "Core methods",
+          "body": "Reveal the methods and theory that define the analytical structure.",
+          "categories": [
+            "Core Method"
+          ]
+        },
+        {
+          "phase": 3,
+          "title": "Data foundations",
+          "body": "Add the datasets and source material used to operationalize the model.",
+          "categories": [
+            "Dataset / Data Source"
+          ]
+        },
+        {
+          "phase": 4,
+          "title": "Implementation tools",
+          "body": "Show the software and technical workflow used to build the analysis.",
+          "categories": [
+            "Software / Tool"
+          ]
+        },
+        {
+          "phase": 5,
+          "title": "Validation and context",
+          "body": "Bring in validation, policy context, and interpretation references.",
+          "categories": [
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 6,
+          "title": "Connections",
+          "body": "Draw the relationship labels that connect each source to the analysis.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        },
+        {
+          "phase": 7,
+          "title": "Explore",
+          "body": "Select or focus a node to inspect its role and connected evidence.",
+          "categories": [
+            "Core Method",
+            "Dataset / Data Source",
+            "Software / Tool",
+            "Validation / Benchmark",
+            "Policy / Planning Context",
+            "Background / Interpretation"
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "id": "osm-poi",
+          "label": "OpenStreetMap Indonesia commercial POIs",
+          "title": "OpenStreetMap Indonesia commercial POIs",
+          "year": null,
+          "category": "Dataset / Data Source",
+          "type": "open data",
+          "role": "Provides the national POI substrate used to detect commercial clusters.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data"
+          ]
+        },
+        {
+          "id": "provincial-boundaries",
+          "label": "Provincial boundaries and province assignment",
+          "title": "Provincial boundaries and province assignment",
+          "year": null,
+          "category": "Dataset / Data Source",
+          "type": "data processing",
+          "role": "Constrains clustering and rankings to comparable province-level geographies.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data"
+          ]
+        },
+        {
+          "id": "jakarta-deep-dive",
+          "label": "Jakarta deep-dive POI subset",
+          "title": "Jakarta deep-dive POI subset",
+          "year": 2026,
+          "category": "Dataset / Data Source",
+          "type": "data artifact",
+          "role": "Uses the separate Jakarta run of 15,417 POIs and 19 clusters to compare the national CBD ranking with a city-scale pattern.",
+          "importance": 4,
+          "pipelineStage": [
+            "Data",
+            "Findings"
+          ]
+        },
+        {
+          "id": "ester-dbscan",
+          "label": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+          "title": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+          "year": 1996,
+          "category": "Core Method",
+          "type": "citation",
+          "role": "Provides the DBSCAN clustering foundation for CBD detection.",
+          "importance": 5,
+          "pipelineStage": [
+            "Method",
+            "Model"
+          ]
+        },
+        {
+          "id": "haversine-adaptive",
+          "label": "Haversine metric and adaptive DBSCAN parameters",
+          "title": "Haversine metric and adaptive DBSCAN parameters",
+          "year": null,
+          "category": "Core Method",
+          "type": "method",
+          "role": "Adapts density clustering to geographic coordinates and province-level variation.",
+          "importance": 5,
+          "pipelineStage": [
+            "Model"
+          ]
+        },
+        {
+          "id": "sklearn-pyosmium",
+          "label": "scikit-learn DBSCAN and pyosmium PBF parsing",
+          "title": "scikit-learn DBSCAN and pyosmium PBF parsing",
+          "year": null,
+          "category": "Software / Tool",
+          "type": "tool group",
+          "role": "Implements national POI extraction and clustering without paid APIs.",
+          "importance": 4,
+          "pipelineStage": [
+            "Model"
+          ]
+        },
+        {
+          "id": "folium-python",
+          "label": "Python and Folium map outputs",
+          "title": "Python and Folium map outputs",
+          "year": null,
+          "category": "Software / Tool",
+          "type": "tool group",
+          "role": "Packages the Jakarta and national CBD outputs into interactive maps embedded on the page.",
+          "importance": 4,
+          "pipelineStage": [
+            "Findings"
+          ]
+        },
+        {
+          "id": "osm-limitations",
+          "label": "OpenStreetMap completeness limitation",
+          "title": "OpenStreetMap completeness limitation",
+          "year": null,
+          "category": "Validation / Benchmark",
+          "type": "interpretation caveat",
+          "role": "Keeps the crowdsourced-data limitation visible when comparing regions.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation",
+            "Findings"
+          ]
+        },
+        {
+          "id": "noise-diagnostic",
+          "label": "Noise ratio and no-CBD diagnostic",
+          "title": "Noise ratio and no-CBD diagnostic",
+          "year": 2026,
+          "category": "Validation / Benchmark",
+          "type": "model diagnostic",
+          "role": "Uses DBSCAN noise share and the 37/38 province result to keep sparse coverage and dispersed commercial form visible in the interpretation.",
+          "importance": 3,
+          "pipelineStage": [
+            "Validation",
+            "Findings"
+          ]
+        },
+        {
+          "id": "cbd-output-json",
+          "label": "Downloadable CBD analysis JSON outputs",
+          "title": "Downloadable CBD analysis JSON outputs",
+          "year": 2026,
+          "category": "Dataset / Data Source",
+          "type": "data artifact",
+          "role": "Publishes per-province CBD, top-cluster, and island-summary outputs for reuse.",
+          "importance": 4,
+          "pipelineStage": [
+            "Findings"
+          ]
+        },
+        {
+          "id": "economic-geography",
+          "label": "CBD ranking and economic-geography interpretation",
+          "title": "CBD ranking and economic-geography interpretation",
+          "year": 2026,
+          "category": "Background / Interpretation",
+          "type": "finding",
+          "role": "Connects cluster size, density, tourism signals, and OSM coverage caveats to the final narrative.",
+          "importance": 2,
+          "pipelineStage": [
+            "Findings",
+            "Policy"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "cbd-center",
+          "target": "osm-poi",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "cbd-center",
+          "target": "provincial-boundaries",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "cbd-center",
+          "target": "jakarta-deep-dive",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "cbd-center",
+          "target": "ester-dbscan",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "ester-dbscan",
+          "target": "cbd-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "cbd-center",
+          "target": "haversine-adaptive",
+          "relationship": "applies method from"
+        },
+        {
+          "source": "cbd-center",
+          "target": "sklearn-pyosmium",
+          "relationship": "implemented with"
+        },
+        {
+          "source": "cbd-center",
+          "target": "folium-python",
+          "relationship": "implemented with"
+        },
+        {
+          "source": "cbd-center",
+          "target": "osm-limitations",
+          "relationship": "validated against"
+        },
+        {
+          "source": "osm-limitations",
+          "target": "cbd-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "cbd-center",
+          "target": "noise-diagnostic",
+          "relationship": "validated against"
+        },
+        {
+          "source": "noise-diagnostic",
+          "target": "cbd-center",
+          "relationship": "extends / adapts"
+        },
+        {
+          "source": "cbd-center",
+          "target": "cbd-output-json",
+          "relationship": "uses data from"
+        },
+        {
+          "source": "cbd-center",
+          "target": "economic-geography",
+          "relationship": "interprets results through"
+        },
+        {
+          "source": "economic-geography",
+          "target": "cbd-center",
+          "relationship": "extends / adapts"
+        }
+      ]
+    }
+  }
+}

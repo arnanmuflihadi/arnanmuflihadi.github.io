@@ -19,6 +19,7 @@
   var kicker = scrolly.querySelector("[data-scrolly-kicker]");
   var caption = scrolly.querySelector("[data-scrolly-legend]");
   var progress = scrolly.querySelector("[data-scrolly-progress]");
+  var stepNav = scrolly.querySelector("[data-transit-stepnav]");
   var mapRoot = scrolly.querySelector("[data-transit-data-map]");
   var status = scrolly.querySelector("[data-map-status]");
   var summaryBox = scrolly.querySelector("[data-map-summary]");
@@ -40,6 +41,7 @@
   var mapFeatures = [];
   var recordsByName = {};
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var navDots = [];
 
   steps.forEach(function (step, i) {
     var heading = step.querySelector("h4");
@@ -57,6 +59,23 @@
       }
     });
   });
+
+  if (stepNav && steps.length) {
+    stepNav.setAttribute("role", "navigation");
+    stepNav.innerHTML = "";
+    steps.forEach(function (step, i) {
+      var heading = step.querySelector("h4");
+      var dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", "Jump to transit step " + (i + 1) + (heading ? ": " + heading.textContent : ""));
+      dot.addEventListener("click", function () {
+        step.scrollIntoView({ behavior: "auto", block: "center" });
+        setActive(i);
+      });
+      stepNav.appendChild(dot);
+      navDots.push(dot);
+    });
+  }
 
   function clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
@@ -457,6 +476,12 @@
         item.classList.toggle("active", i === index);
         if (i === index) item.setAttribute("aria-current", "step");
         else item.removeAttribute("aria-current");
+      });
+      navDots.forEach(function (dot, i) {
+        dot.classList.toggle("is-active", i === index);
+        dot.classList.toggle("is-done", i < index);
+        if (i === index) dot.setAttribute("aria-current", "step");
+        else dot.removeAttribute("aria-current");
       });
       scrolly.setAttribute("data-state", state);
       setText(note, step.getAttribute("data-note"));
