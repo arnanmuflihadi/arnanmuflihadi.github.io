@@ -41,6 +41,23 @@
   var recordsByName = {};
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  steps.forEach(function (step, i) {
+    var heading = step.querySelector("h4");
+    step.tabIndex = 0;
+    step.setAttribute("role", "button");
+    step.setAttribute("aria-label", "Jump to transit story step " + (i + 1) + (heading ? ": " + heading.textContent : ""));
+    step.addEventListener("click", function () {
+      step.scrollIntoView({ behavior: "auto", block: "center" });
+      setActive(i);
+    });
+    step.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        step.click();
+      }
+    });
+  });
+
   function clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
   }

@@ -48,10 +48,22 @@
     var progress = $("[data-story-progress]", root);
     var dots = [];
     var active = -1;
+    var manualNavUntil = 0;
 
     if (progress && steps.length) {
-      steps.forEach(function () {
-        var dot = document.createElement("span");
+      progress.removeAttribute("aria-hidden");
+      progress.setAttribute("role", "navigation");
+      progress.setAttribute("aria-label", "Story chapters");
+      steps.forEach(function (step, i) {
+        var heading = step.querySelector("h4");
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.setAttribute("aria-label", "Jump to step " + (i + 1) + (heading ? ": " + heading.textContent : ""));
+        dot.addEventListener("click", function () {
+          manualNavUntil = Date.now() + 700;
+          step.scrollIntoView({ behavior: "auto", block: "center" });
+          activate(i);
+        });
         progress.appendChild(dot);
         dots.push(dot);
       });
@@ -66,6 +78,8 @@
       dots.forEach(function (dot, i) {
         dot.classList.toggle("is-active", i === index);
         dot.classList.toggle("is-done", i < index);
+        if (i === index) dot.setAttribute("aria-current", "step");
+        else dot.removeAttribute("aria-current");
       });
       onActive(steps[index], index);
     }
@@ -74,6 +88,7 @@
 
     if ("IntersectionObserver" in window && steps.length) {
       var io = new IntersectionObserver(function (entries) {
+        if (Date.now() < manualNavUntil) return;
         entries.forEach(function (entry) {
           if (entry.isIntersecting) activate(steps.indexOf(entry.target));
         });
