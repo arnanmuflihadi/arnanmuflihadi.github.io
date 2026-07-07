@@ -527,7 +527,7 @@ async function buildLayers(){
   map.addLayer({id:"kel-line",type:"line",source:"kel",
     paint:{"line-color":c.onVar,"line-width":["interpolate",["linear"],["zoom"],9,0.4,13,0.9],"line-opacity":0.55}});
 
-  // transit lines (per mode for distinct dash/width — monochrome)
+  // transit lines (per mode for distinct dash/width)
   map.addLayer({id:"ln-brt",type:"line",source:"lines",filter:["==",["get","mode"],"BRT"],
     layout:{"line-cap":"round","line-join":"round"},
     paint:{"line-color":c.onVar,"line-width":["interpolate",["linear"],["zoom"],10,1,14,2],"line-opacity":0.5}});
@@ -558,8 +558,8 @@ async function buildLayers(){
   // facility density heatmap (kernel density of the active categories)
   const isDark = document.documentElement.getAttribute("data-theme")==="dark";
   const HEAT = isDark
-    ? ["rgba(0,0,0,0)","rgba(230,146,115,0.25)","rgba(230,146,115,0.6)","#e69273","#fbe2d6"]
-    : ["rgba(0,0,0,0)","rgba(179,90,58,0.22)","rgba(179,90,58,0.55)","#b35a3a","#4a2113"];
+    ? ["rgba(0,0,0,0)","rgba(132,201,242,0.25)","rgba(132,201,242,0.6)","#84c9f2","#e5f5ff"]
+    : ["rgba(0,0,0,0)","rgba(38,121,174,0.22)","rgba(38,121,174,0.55)","#2679ae","#082536"];
   map.addLayer({id:"fac-heat",type:"heatmap",source:"facheat",maxzoom:17,
     layout:{visibility:"none"},
     paint:{

@@ -372,6 +372,9 @@
   }
 
   function legendRows(title, rows) {
+    if (legendBox) {
+      legendBox.setAttribute("aria-label", title + ": " + rows.map(function (row) { return row[1]; }).join(", "));
+    }
     return "<b>" + esc(title) + "</b>" + rows.map(function (row) {
       return "<div class=\"scrolly-map-legend__row\"><span class=\"scrolly-map-legend__swatch\" style=\"background:" +
         row[0] + "\"></span>" + esc(row[1]) + "</div>";
@@ -381,6 +384,7 @@
   function updateLegend(target) {
     if (!legendBox) return;
     if (target === "delta" || target === "compare") {
+      legendBox.dataset.legendType = "delta";
       legendBox.innerHTML = legendRows("Delta B - A", [
         ["#f1ecd0", "0-2 points"],
         ["#cfe7b5", "2-5"],
@@ -391,6 +395,7 @@
       return;
     }
     if (target === "categories") {
+      legendBox.dataset.legendType = "categories";
       legendBox.innerHTML = legendRows("Scenario B category", [
         ["#d7191c", "Sangat Rendah"],
         ["#fdae61", "Rendah"],
@@ -401,6 +406,7 @@
       return;
     }
     if (target === "hotspot") {
+      legendBox.dataset.legendType = "hotspot";
       legendBox.innerHTML = legendRows("Getis-Ord Gi*", [
         ["#a50026", "Hot Spot 99%"],
         ["#f46d43", "Hot Spot 95%"],
@@ -410,6 +416,7 @@
       ]);
       return;
     }
+    legendBox.dataset.legendType = "score";
     legendBox.innerHTML = legendRows(target === "scenario-a" ? "Scenario A score" : "Scenario B score", [
       ["#efe7cf", "0-10"],
       ["#d8dba2", "10-20"],

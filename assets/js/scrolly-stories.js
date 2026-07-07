@@ -28,6 +28,39 @@
     if (el) el.textContent = value || "";
   }
 
+  function updateStoryLegend(root, step) {
+    var legend = $("[data-story-legend]", root);
+    if (!legend || !step) return;
+    var target = $("[data-story-legend-items]", legend) || legend;
+    var raw = step.getAttribute("data-legend") || "";
+    var entries = raw.split(";").map(function (entry) {
+      var pair = entry.split("=");
+      return {
+        label: (pair[0] || "").trim(),
+        type: (pair[1] || pair[0] || "").trim().toLowerCase().replace(/[^a-z0-9_-]+/g, "-")
+      };
+    }).filter(function (entry) { return entry.label; });
+
+    target.textContent = "";
+    legend.hidden = !entries.length;
+    if (entries.length) {
+      legend.setAttribute("aria-label", "Active layers: " + entries.map(function (entry) { return entry.label; }).join(", "));
+    } else {
+      legend.removeAttribute("aria-label");
+    }
+    entries.forEach(function (entry) {
+      var item = document.createElement("span");
+      item.className = "story-layer-legend__item";
+
+      var swatch = document.createElement("i");
+      swatch.className = "story-layer-legend__swatch story-layer-legend__swatch--" + entry.type;
+      swatch.setAttribute("aria-hidden", "true");
+      item.appendChild(swatch);
+      item.appendChild(document.createTextNode(entry.label));
+      target.appendChild(item);
+    });
+  }
+
   function formatNumber(value, digits) {
     var n = Number(value);
     if (!isFinite(n)) return String(value || "");
@@ -81,6 +114,7 @@
         if (i === index) dot.setAttribute("aria-current", "step");
         else dot.removeAttribute("aria-current");
       });
+      updateStoryLegend(root, steps[index]);
       onActive(steps[index], index);
     }
 
@@ -351,7 +385,7 @@
       rows = (data.sentra.features || []).slice().sort(function (a, b) {
         return Number(featureProp(b, "prod_ton", 0)) - Number(featureProp(a, "prod_ton", 0));
       }).slice(0, 6).map(function (feature) {
-        return { label: featureProp(feature, "kecamatan", ""), value: Number(featureProp(feature, "prod_ton", 0)), color: "#6f7f52" };
+        return { label: featureProp(feature, "kecamatan", ""), value: Number(featureProp(feature, "prod_ton", 0)), color: "var(--viz-sentra)" };
       });
       opts = { title: "Largest Rice Centers", subtitle: "Top kecamatan by modeled production", suffix: " t", digits: 0 };
     } else if (type === "nodes") {
@@ -361,14 +395,14 @@
         counts[cat] = (counts[cat] || 0) + 1;
       });
       rows = Object.keys(counts).map(function (cat) {
-        return { label: nodeCategoryLabel(cat), value: counts[cat], color: cat === "center" ? "#1f6d78" : cat === "gudang" ? "#7b5f46" : "#b35a3a" };
+        return { label: nodeCategoryLabel(cat), value: counts[cat], color: cat === "center" ? "var(--viz-node-center)" : cat === "gudang" ? "var(--viz-node-gudang)" : "var(--viz-node-market)" };
       }).sort(function (a, b) { return b.value - a.value; });
       opts = { title: "Supply-Chain Nodes", subtitle: "Channels and destinations in the model" };
     } else if (type === "od") {
       rows = (data.od.features || []).slice().sort(function (a, b) {
         return Number(featureProp(b, "flow", 0)) - Number(featureProp(a, "flow", 0));
       }).slice(0, 6).map(function (feature) {
-        return { label: featureProp(feature, "origin", "") + " → " + featureProp(feature, "dest", ""), value: Number(featureProp(feature, "flow", 0)), color: "#466b8a" };
+        return { label: featureProp(feature, "origin", "") + " → " + featureProp(feature, "dest", ""), value: Number(featureProp(feature, "flow", 0)), color: "var(--viz-route)" };
       });
       opts = { title: "Largest OD Links", subtitle: "Top modeled desire-line flows", suffix: " t", digits: 0 };
     } else if (type === "flows") {
@@ -377,7 +411,7 @@
         var name = featureProp(feature, "road", "Unnamed road");
         roads[name] = (roads[name] || 0) + (Number(featureProp(feature, "flow", 0)) || 0);
       });
-      rows = Object.keys(roads).map(function (name) { return { label: name, value: roads[name], color: "#6a665d" }; })
+      rows = Object.keys(roads).map(function (name) { return { label: name, value: roads[name], color: "var(--viz-flow)" }; })
         .sort(function (a, b) { return b.value - a.value; }).slice(0, 6);
       opts = { title: "Highest-Load Roads", subtitle: "Flow summed by road name", suffix: " t", digits: 0 };
     } else {
@@ -695,13 +729,13 @@
     }).slice(0, 12);
     var max = sorted.reduce(function (m, row) { return Math.max(m, Number(row[metric]) || 0); }, 1);
     var palette = {
-      "Jawa": "#b35a3a",
-      "Sumatera": "#6f7f52",
-      "Bali & Nusa": "#466b8a",
-      "Sulawesi": "#8a6c3d",
-      "Kalimantan": "#5c518a",
-      "Maluku": "#69716f",
-      "Papua": "#94705c"
+      "Jawa": "var(--viz-region-jawa)",
+      "Sumatera": "var(--viz-region-sumatera)",
+      "Bali & Nusa": "var(--viz-region-bali-nusa)",
+      "Sulawesi": "var(--viz-region-sulawesi)",
+      "Kalimantan": "var(--viz-region-kalimantan)",
+      "Maluku": "var(--viz-region-maluku)",
+      "Papua": "var(--viz-region-papua)"
     };
 
     svg.textContent = "";

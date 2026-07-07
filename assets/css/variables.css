@@ -1,0 +1,224 @@
+/* ============================================================
+   Portfolio palette and design tokens
+   ------------------------------------------------------------
+   To add a new project accent:
+   1. Add --color-<slug>, --color-<slug>-ink, --color-<slug>-soft,
+      --color-<slug>-on, and --color-<slug>-rgb in :root and dark mode.
+   2. Add body/card selectors at the bottom that map --accent,
+      --accent-ink, --accent-soft, --on-accent, and --accent-rgb.
+   3. Add data-project="<slug>" to the project page body or card.
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+
+  /* Suggested palette, adjusted for stronger text contrast on light surfaces. */
+  --color-bg: #f9f6f1;
+  --color-heading: #181817;
+  --color-text: #33302c;
+  --color-primary: #2679ae;
+  --color-primary-ink: #17628f;
+  --color-primary-soft: #dff0fa;
+  --color-primary-on: #ffffff;
+  --color-primary-rgb: 38 121 174;
+  --color-secondary: #3f9e4d;
+  --color-secondary-ink: #2f7336;
+  --color-secondary-soft: #e2f5e6;
+  --color-secondary-on: #102a14;
+  --color-secondary-rgb: 63 158 77;
+  --color-tertiary: #7e5abf;
+  --color-tertiary-ink: #6542a6;
+  --color-tertiary-soft: #eee7fb;
+  --color-tertiary-on: #ffffff;
+  --color-tertiary-rgb: 126 90 191;
+  --color-quaternary: #ad6500;
+  --color-quaternary-ink: #8d5000;
+  --color-quaternary-soft: #ffe9c5;
+  --color-quaternary-on: #ffffff;
+  --color-quaternary-rgb: 173 101 0;
+  --color-highlight: #c34a42;
+  --color-highlight-ink: #a83f37;
+  --color-highlight-soft: #ffe3df;
+  --color-highlight-on: #ffffff;
+  --color-highlight-rgb: 195 74 66;
+  --viz-surplus: #5f8d38;
+  --viz-sentra: #2e8965;
+  --viz-route: #2d77a4;
+  --viz-flow: #756a5d;
+  --viz-node-gudang: #87623f;
+  --viz-node-center: #1c7684;
+  --viz-node-market: var(--color-highlight);
+  --viz-node-bulog: var(--color-tertiary);
+  --viz-region-jawa: var(--color-highlight);
+  --viz-region-sumatera: var(--viz-surplus);
+  --viz-region-bali-nusa: var(--viz-route);
+  --viz-region-sulawesi: var(--color-quaternary);
+  --viz-region-kalimantan: var(--color-tertiary);
+  --viz-region-maluku: #6f7773;
+  --viz-region-papua: #9a6c57;
+
+  /* Site surfaces map the palette into existing component tokens. */
+  --paper: var(--color-bg);
+  --surface: #fffdf8;
+  --surface-2: #f1ebe3;
+  --sc-high: #ece2d8;
+  --sc-highest: #e3d5c6;
+  --ink: var(--color-heading);
+  --ink-soft: var(--color-text);
+  --muted: #69635b;
+  --line: rgba(24, 24, 23, 0.14);
+  --line-soft: rgba(24, 24, 23, 0.07);
+  --outline: rgba(24, 24, 23, 0.24);
+
+  /* Default accent for portfolio/global pages. */
+  --accent: var(--color-highlight);
+  --accent-ink: var(--color-highlight-ink);
+  --accent-soft: var(--color-highlight-soft);
+  --on-accent: var(--color-highlight-on);
+  --accent-rgb: var(--color-highlight-rgb);
+
+  /* elevation */
+  --e1: 0 1px 2px rgba(0,0,0,.06), 0 1px 3px 1px rgba(0,0,0,.04);
+  --e2: 0 1px 2px rgba(0,0,0,.08), 0 3px 10px 1px rgba(0,0,0,.06);
+  --e3: 0 6px 14px 3px rgba(0,0,0,.10), 0 2px 5px rgba(0,0,0,.10);
+  --shadow: var(--e2);
+  --shadow-lg: var(--e3);
+
+  /* type */
+  --font-display: "Roboto Flex", system-ui, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Roboto Flex", system-ui, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, "SF Mono", monospace;
+
+  /* shape */
+  --r-xs: 8px;
+  --r-s: 12px;
+  --r-m: 18px;
+  --r-l: 26px;
+  --r-xl: 36px;
+  --r-full: 999px;
+  --radius: 16px;
+
+  /* layout */
+  --maxw: 1240px;
+  --gutter: clamp(20px, 5vw, 72px);
+
+  /* motion */
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --emph: cubic-bezier(.2, 0, 0, 1);
+  --spring: cubic-bezier(.34, 1.3, .5, 1);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-bg: #151511;
+  --color-heading: #f5f0e7;
+  --color-text: #d9d0c3;
+  --color-primary: #84c9f2;
+  --color-primary-ink: #a9daf7;
+  --color-primary-soft: #15384c;
+  --color-primary-on: #082536;
+  --color-primary-rgb: 132 201 242;
+  --color-secondary: #86d78f;
+  --color-secondary-ink: #a7e5ae;
+  --color-secondary-soft: #183b20;
+  --color-secondary-on: #09230e;
+  --color-secondary-rgb: 134 215 143;
+  --color-tertiary: #b9a2ee;
+  --color-tertiary-ink: #d3c4fb;
+  --color-tertiary-soft: #30234d;
+  --color-tertiary-on: #1b1230;
+  --color-tertiary-rgb: 185 162 238;
+  --color-quaternary: #f5bf62;
+  --color-quaternary-ink: #ffd58d;
+  --color-quaternary-soft: #432c10;
+  --color-quaternary-on: #2a1700;
+  --color-quaternary-rgb: 245 191 98;
+  --color-highlight: #ff9a8f;
+  --color-highlight-ink: #ffb9b2;
+  --color-highlight-soft: #4a211d;
+  --color-highlight-on: #35120f;
+  --color-highlight-rgb: 255 154 143;
+  --viz-surplus: #93c85f;
+  --viz-sentra: #74cfa6;
+  --viz-route: #84c9f2;
+  --viz-flow: #aaa091;
+  --viz-node-gudang: #c69b6f;
+  --viz-node-center: #77cad5;
+  --viz-node-market: var(--color-highlight);
+  --viz-node-bulog: var(--color-tertiary);
+  --viz-region-jawa: var(--color-highlight);
+  --viz-region-sumatera: var(--viz-surplus);
+  --viz-region-bali-nusa: var(--viz-route);
+  --viz-region-sulawesi: var(--color-quaternary);
+  --viz-region-kalimantan: var(--color-tertiary);
+  --viz-region-maluku: #aab6b0;
+  --viz-region-papua: #d6a58d;
+
+  --paper: var(--color-bg);
+  --surface: #202019;
+  --surface-2: #29271f;
+  --sc-high: #332f27;
+  --sc-highest: #40382e;
+  --ink: var(--color-heading);
+  --ink-soft: var(--color-text);
+  --muted: #aaa091;
+  --line: rgba(245, 240, 231, 0.15);
+  --line-soft: rgba(245, 240, 231, 0.07);
+  --outline: rgba(245, 240, 231, 0.25);
+
+  --accent: var(--color-highlight);
+  --accent-ink: var(--color-highlight-ink);
+  --accent-soft: var(--color-highlight-soft);
+  --on-accent: var(--color-highlight-on);
+  --accent-rgb: var(--color-highlight-rgb);
+
+  --e1: 0 1px 3px rgba(0,0,0,.5);
+  --e2: 0 2px 10px rgba(0,0,0,.55);
+  --e3: 0 10px 28px rgba(0,0,0,.6);
+}
+
+body[data-project="portfolio"],
+.card[data-project="portfolio"] {
+  --accent: var(--color-highlight);
+  --accent-ink: var(--color-highlight-ink);
+  --accent-soft: var(--color-highlight-soft);
+  --on-accent: var(--color-highlight-on);
+  --accent-rgb: var(--color-highlight-rgb);
+}
+
+body[data-project="transit"],
+.card[data-project="transit"] {
+  --accent: var(--color-primary);
+  --accent-ink: var(--color-primary-ink);
+  --accent-soft: var(--color-primary-soft);
+  --on-accent: var(--color-primary-on);
+  --accent-rgb: var(--color-primary-rgb);
+}
+
+body[data-project="pangan"],
+.card[data-project="pangan"] {
+  --accent: var(--color-secondary);
+  --accent-ink: var(--color-secondary-ink);
+  --accent-soft: var(--color-secondary-soft);
+  --on-accent: var(--color-secondary-on);
+  --accent-rgb: var(--color-secondary-rgb);
+}
+
+body[data-project="mbr"],
+.card[data-project="mbr"] {
+  --accent: var(--color-tertiary);
+  --accent-ink: var(--color-tertiary-ink);
+  --accent-soft: var(--color-tertiary-soft);
+  --on-accent: var(--color-tertiary-on);
+  --accent-rgb: var(--color-tertiary-rgb);
+}
+
+body[data-project="cbd"],
+.card[data-project="cbd"] {
+  --accent: var(--color-quaternary);
+  --accent-ink: var(--color-quaternary-ink);
+  --accent-soft: var(--color-quaternary-soft);
+  --on-accent: var(--color-quaternary-on);
+  --accent-rgb: var(--color-quaternary-rgb);
+}

@@ -8,12 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=32">
+<link rel="stylesheet" href="assets/css/style.css?v=44">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 </head>
-<body>
+<body data-project="pangan">
 
 <nav class="nav">
   <div class="nav__links">
@@ -328,6 +328,10 @@
             <div class="story-insight-panel" aria-hidden="true">
               <svg class="story-insight-svg" data-pangan-chart></svg>
             </div>
+            <div class="story-layer-legend" data-story-legend aria-live="polite">
+              <span class="story-layer-legend__label">Active layers</span>
+              <div class="story-layer-legend__items" data-story-legend-items></div>
+            </div>
             <div class="story-map-card">
               <div>
                 <div class="story-map-card__kpi" data-story-kpi>254</div>
@@ -340,31 +344,31 @@
           <p class="story-source-note">Source: committed GeoJSON outputs in <code>maps/data/pangan/</code>; road-flow layer is sampled to the highest-flow segments for browser performance.</p>
         </div>
         <div class="story-steps">
-          <article class="story-step" data-layers="kabkota,sentra" data-chart="production" data-kpi="254" data-label="production centers" data-note="The production surface starts with 254 kecamatan centers, scaled by modeled rice output and backed by district food-balance indicators.">
+          <article class="story-step" data-layers="kabkota,sentra" data-chart="production" data-kpi="254" data-label="production centers" data-note="The production surface starts with 254 kecamatan centers, scaled by modeled rice output and backed by district food-balance indicators." data-legend="District balance=balance;Production centers=sentra">
             <span class="story-step__num">01 / Production base</span>
             <h4>Rice supply begins as a scattered agricultural surface.</h4>
             <p>The first layer shows where production clusters appear before the logistics model connects them to formal channels and urban demand.</p>
             <div class="story-step__meta"><span>pangan_sentra.geojson</span><span>pangan_kabkota.geojson</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,nodes" data-chart="nodes" data-kpi="93" data-label="channels and destinations" data-note="Bulog, MRMP, warehouses, capitals, and markets form the modeled channel and demand nodes.">
+          <article class="story-step" data-layers="kabkota,nodes" data-chart="nodes" data-kpi="93" data-label="channels and destinations" data-note="Bulog, MRMP, warehouses, capitals, and markets form the modeled channel and demand nodes." data-legend="District balance=balance;Warehouses=warehouse;Markets=market;Bulog/MRMP=bulog">
             <span class="story-step__num">02 / Supply-chain nodes</span>
             <h4>Channels decide where rice can realistically move.</h4>
             <p>The node layer separates production geography from the distribution network: warehouses, Bulog facilities, public markets, and city centers.</p>
             <div class="story-step__meta"><span>31 warehouses</span><span>27 centers</span><span>40 channels</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,od,nodes" data-chart="od" data-kpi="274" data-label="OD desire lines" data-note="Two gravity-model stages link centers to channels, then channels to destination markets.">
+          <article class="story-step" data-layers="kabkota,od,nodes" data-chart="od" data-kpi="274" data-label="OD desire lines" data-note="Two gravity-model stages link centers to channels, then channels to destination markets." data-legend="OD desire lines=od;Supply-chain nodes=nodes">
             <span class="story-step__num">03 / Gravity OD</span>
             <h4>The model turns supply and demand into two-stage desire lines.</h4>
             <p>OD links reveal the hub-and-spoke structure before trips are constrained by the physical road network.</p>
             <div class="story-step__meta"><span>Stage 1</span><span>Stage 2</span><span>doubly constrained</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,flows,nodes" data-chart="flows" data-kpi="900" data-label="top flow segments" data-note="The browser layer samples the 900 highest-flow road geometries from the 6,029-segment modeled flow output.">
+          <article class="story-step" data-layers="kabkota,flows,nodes" data-chart="flows" data-kpi="900" data-label="top flow segments" data-note="The browser layer samples the 900 highest-flow road geometries from the 6,029-segment modeled flow output." data-legend="Assigned road flow=flow;Supply-chain nodes=nodes">
             <span class="story-step__num">04 / Network load</span>
             <h4>Road assignment exposes the corridors carrying the largest modeled load.</h4>
             <p>Flow is accumulated along OSM road segments, so the picture moves from abstract OD desire to concrete corridor pressure.</p>
             <div class="story-step__meta"><span>6,029 modeled segments</span><span>top-flow sample</span></div>
           </article>
-          <article class="story-step" data-layers="kabkota,flows,priority,nodes,labels" data-chart="priority" data-kpi="50" data-label="priority road segments" data-note="The shortlist combines flow exposure, road class, bridge presence, hazard context, and robustness agreement.">
+          <article class="story-step" data-layers="kabkota,flows,priority,nodes,labels" data-chart="priority" data-kpi="50" data-label="priority road segments" data-note="The shortlist combines flow exposure, road class, bridge presence, hazard context, and robustness agreement." data-legend="Top 50 priority roads=priority;Rank labels=labels;Assigned flow=flow">
             <span class="story-step__num">05 / Priority shortlist</span>
             <h4>The final layer isolates roads where disruption matters most.</h4>
             <p>Priority segments are not simply the busiest links; they are the links where flow, strategic context, and sensitivity tests point to the same intervention value.</p>
@@ -398,11 +402,11 @@
 
     <figure class="figure reveal">
       <div class="dash-embed">
-        <iframe src="maps/pangan_dashboard.html?v=1" title="Interactive food-security explorer for West Java — district indicators, supply-chain nodes, agricultural land, roads and hazards" loading="lazy"></iframe>
+        <iframe src="maps/pangan_dashboard.html?v=2" title="Interactive food-security explorer for West Java — district indicators, supply-chain nodes, agricultural land, roads and hazards" loading="lazy"></iframe>
       </div>
       <figcaption class="figcap--row">
         <span>Interactive explorer — switch district indicators and toggle the agricultural-land, supply-chain, road and hazard layers behind the analysis.</span>
-        <a class="dash-full" href="maps/pangan_dashboard.html?v=1" target="_blank" rel="noopener">Open fullscreen <span class="arrow">↗</span></a>
+        <a class="dash-full" href="maps/pangan_dashboard.html?v=2" target="_blank" rel="noopener">Open fullscreen <span class="arrow">↗</span></a>
       </figcaption>
     </figure>
   </section>
@@ -506,7 +510,7 @@
 <script src="assets/js/main.js?v=7"></script>
 <script src="assets/js/collapsible.js?v=1"></script>
 <script src="assets/js/microinteraction.js?v=1"></script>
-<script src="assets/js/scrolly-stories.js?v=4"></script>
+<script src="assets/js/scrolly-stories.js?v=7"></script>
 <script src="assets/js/literature-map.js?v=4"></script>
 </body>
 </html>
