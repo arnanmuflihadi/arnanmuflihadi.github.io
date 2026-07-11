@@ -580,24 +580,42 @@
       renderPanganChart(root, data, step.getAttribute("data-chart"));
     });
 
-    Promise.all(Object.keys(paths).map(function (key) {
-      return fetchJson(paths[key]).then(function (json) { data[key] = json; });
-    })).then(function () {
-      drawPangan(root, data);
-      root.classList.add("is-loaded");
-      story.activate($$(".story-step", root).indexOf(story.getActiveStep()));
-      var active = story.getActiveStep();
-      if (active) {
-        setText(root, "[data-story-kpi]", active.getAttribute("data-kpi"));
-        setText(root, "[data-story-label]", active.getAttribute("data-label"));
-        setText(root, "[data-story-note]", active.getAttribute("data-note"));
-        renderPanganChart(root, data, active.getAttribute("data-chart"));
-      }
-    }).catch(function (err) {
-      var status = $("[data-story-status]", root);
-      if (status) status.textContent = "The story data could not load. Static figures below remain available.";
-      console.error(err);
-    });
+    function loadPanganData() {
+      Promise.all(Object.keys(paths).map(function (key) {
+        return fetchJson(paths[key]).then(function (json) { data[key] = json; });
+      })).then(function () {
+        drawPangan(root, data);
+        root.classList.add("is-loaded");
+        story.activate($$(".story-step", root).indexOf(story.getActiveStep()));
+        var active = story.getActiveStep();
+        if (active) {
+          setText(root, "[data-story-kpi]", active.getAttribute("data-kpi"));
+          setText(root, "[data-story-label]", active.getAttribute("data-label"));
+          setText(root, "[data-story-note]", active.getAttribute("data-note"));
+          renderPanganChart(root, data, active.getAttribute("data-chart"));
+        }
+      }).catch(function (err) {
+        var status = $("[data-story-status]", root);
+        if (status) status.textContent = "The story data could not load. Static figures below remain available.";
+        console.error(err);
+      });
+    }
+
+    // Combined pangan geojson layers run ~2.5MB — only fetch once the story
+    // section is about to enter view, not on initial page load.
+    if ("IntersectionObserver" in window) {
+      var panganObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            panganObserver.disconnect();
+            loadPanganData();
+          }
+        });
+      }, { rootMargin: "600px 0px" });
+      panganObserver.observe(root);
+    } else {
+      loadPanganData();
+    }
   }
 
   function initImageStory(root) {

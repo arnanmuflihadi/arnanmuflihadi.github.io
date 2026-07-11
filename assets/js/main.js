@@ -30,9 +30,17 @@
     window.addEventListener("scroll", onScroll, { passive: true });
 
     var burger = nav.querySelector(".nav__burger");
-    if (burger) burger.addEventListener("click", function () { nav.classList.toggle("open"); });
+    if (burger) {
+      burger.addEventListener("click", function () {
+        var open = nav.classList.toggle("open");
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
     nav.querySelectorAll(".nav__links a").forEach(function (a) {
-      a.addEventListener("click", function () { nav.classList.remove("open"); });
+      a.addEventListener("click", function () {
+        nav.classList.remove("open");
+        if (burger) burger.setAttribute("aria-expanded", "false");
+      });
     });
   }
 
@@ -139,6 +147,73 @@
     if (mqDesk.addEventListener) mqDesk.addEventListener("change", apply);
     apply();
   }
+
+  /* ---------- Contact form (AJAX submit with loading/success/error states) ---------- */
+  var contactForm = document.querySelector("[data-contact-form]");
+  if (contactForm) {
+    var submitBtn = contactForm.querySelector(".contact__submit");
+    var status = contactForm.querySelector("[data-contact-status]");
+    var submitLabel = submitBtn ? submitBtn.innerHTML : "";
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (status) { status.textContent = ""; status.removeAttribute("data-state"); }
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "Sending…"; }
+      fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { Accept: "application/json" }
+      }).then(function (res) {
+        if (res.ok) {
+          if (status) { status.textContent = "Message sent — thanks! I'll reply by email soon."; status.setAttribute("data-state", "success"); }
+          contactForm.reset();
+        } else {
+          throw new Error("Form endpoint returned " + res.status);
+        }
+      }).catch(function (err) {
+        console.error("Contact form submit failed", err);
+        if (status) {
+          status.innerHTML = "Something went wrong sending this. Please email me directly at <a href=\"mailto:arnanmuflihadi@gmail.com\">arnanmuflihadi@gmail.com</a> instead.";
+          status.setAttribute("data-state", "error");
+        }
+      }).finally(function () {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = submitLabel; }
+      });
+    });
+  }
+
+  /* ---------- Embedded map fallback (blank iframe -> visible message + direct link) ---------- */
+  document.querySelectorAll("iframe[data-map-fallback]").forEach(function (frame) {
+    var loaded = false;
+    var timer = null;
+    frame.addEventListener("load", function () { loaded = true; if (timer) window.clearTimeout(timer); });
+    frame.addEventListener("error", showFallback);
+
+    function armTimer() {
+      // loading="lazy" iframes may sit unloaded off-screen for a while — only
+      // start the "taking a while" clock once the iframe is actually in view.
+      if (loaded || timer) return;
+      timer = window.setTimeout(showFallback, 8000);
+    }
+    function showFallback() {
+      if (loaded || frame.dataset.fallbackShown) return;
+      frame.dataset.fallbackShown = "true";
+      var note = document.createElement("div");
+      note.className = "iframe-fallback";
+      note.innerHTML = 'This map is taking a while to load. <a href="' + frame.src + '" target="_blank" rel="noopener">Open it directly ↗</a>';
+      frame.insertAdjacentElement("afterend", note);
+    }
+
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { armTimer(); io.disconnect(); }
+        });
+      }, { rootMargin: "200px 0px" });
+      io.observe(frame);
+    } else {
+      armTimer();
+    }
+  });
 
   /* ---------- Scrollytelling (pinned stat panel + stepped findings) ---------- */
   document.querySelectorAll("[data-scrolly]").forEach(function (root) {

@@ -571,8 +571,26 @@
       var category = el.getAttribute("data-literature-category");
       el.addEventListener("mouseenter", function () { filterCategory(root, category); });
       el.addEventListener("focus", function () { filterCategory(root, category); });
-      el.addEventListener("mouseleave", function () { clearHighlight(root); });
-      el.addEventListener("blur", function () { clearHighlight(root); });
+      el.addEventListener("mouseleave", function () {
+        if (!el.classList.contains("is-locked")) clearHighlight(root);
+      });
+      el.addEventListener("blur", function () {
+        if (!el.classList.contains("is-locked")) clearHighlight(root);
+      });
+      // Touch devices have no hover, and tapping a <button> does not reliably
+      // fire "focus" (notably iOS Safari) — so tap needs its own toggle path.
+      el.addEventListener("click", function () {
+        var wasLocked = el.classList.contains("is-locked");
+        root.querySelectorAll("[data-literature-category]").forEach(function (chip) {
+          chip.classList.remove("is-locked");
+        });
+        if (wasLocked) {
+          clearHighlight(root);
+        } else {
+          filterCategory(root, category);
+          el.classList.add("is-locked");
+        }
+      });
     });
     var reset = root.querySelector("[data-literature-reset]");
     if (reset) reset.addEventListener("click", function () { clearHighlight(root); setPhase(root, project, 7); });

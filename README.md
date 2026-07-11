@@ -75,7 +75,7 @@ python3 -m http.server 8000
 - `project-pangan.html` uses `assets/js/scrolly-stories.js` to draw the story from committed GeoJSON in `maps/data/pangan/`.
 - `project-cbd.html` uses `assets/js/scrolly-stories.js` to render ranking/density views from `assets/data/cbd/indonesia_cbd.json` and embeds the live Folium maps.
 - `project-mbr.html` uses `assets/js/scrolly-stories.js` with compact chart data in `assets/data/mbr/mbr_story.json`; exported figures remain only where the available raw category fields do not reproduce the published final category counts.
-- Current case-study cache markers are `style.css?v=44`, `variables.css?v=2`, `collapsible.js?v=1`, `microinteraction.js?v=1`, `scrolly-stories.js?v=7`, `scrolly-transit-static.js?v=8`, and `literature-map.js?v=4`.
+- Current case-study cache markers are `style.css?v=45`, `variables.css?v=2`, `main.js?v=8`, `collapsible.js?v=1`, `microinteraction.js?v=1`, `scrolly-stories.js?v=8`, `scrolly-transit-static.js?v=9`, and `literature-map.js?v=5`.
 
 Checklist for new case-study stories:
 1. Prefer committed raw/processed data over static chart images when the data is available.

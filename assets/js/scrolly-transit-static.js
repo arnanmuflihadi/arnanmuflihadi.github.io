@@ -630,6 +630,25 @@
   }
 
   setActive(0);
-  loadMapData();
   requestUpdate();
+
+  // The kelurahan geojson + accessibility data is several MB — only fetch it
+  // once the scrollytelling section is actually about to enter view, not on
+  // initial page load for visitors who never scroll this far.
+  if ("IntersectionObserver" in window) {
+    var dataObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            dataObserver.disconnect();
+            loadMapData();
+          }
+        });
+      },
+      { rootMargin: "600px 0px" }
+    );
+    dataObserver.observe(scrolly);
+  } else {
+    loadMapData();
+  }
 })();

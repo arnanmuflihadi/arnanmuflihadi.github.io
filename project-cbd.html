@@ -8,12 +8,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=44">
+<link rel="stylesheet" href="assets/css/style.css?v=45">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mapping Indonesia's Business Centers with DBSCAN · Arnan Muflihadi">
+<meta property="og:description" content="Identifying the Central Business District (CBD) of every Indonesian province by density-based clustering (DBSCAN) of 91,940 commercial POIs from OpenStreetMap, with interactive maps.">
+<meta property="og:url" content="https://arnanmuflihadi.github.io/project-cbd.html">
+<meta property="og:image" content="https://arnanmuflihadi.github.io/assets/img/cbd/jakarta_barchart.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mapping Indonesia's Business Centers with DBSCAN · Arnan Muflihadi">
+<meta name="twitter:description" content="Identifying the Central Business District (CBD) of every Indonesian province by density-based clustering (DBSCAN) of 91,940 commercial POIs from OpenStreetMap, with interactive maps.">
+<meta name="twitter:image" content="https://arnanmuflihadi.github.io/assets/img/cbd/jakarta_barchart.jpg">
 </head>
 <body data-project="cbd">
+<a class="skip-link" href="#main">Skip to content</a>
 
 <nav class="nav">
   <div class="nav__links">
@@ -26,11 +36,11 @@
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" stroke-linejoin="round"/></svg>
     </button>
   </div>
-  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- ============ HERO ============ -->
-<header class="cs-hero wrap">
+<header class="cs-hero wrap" id="main" tabindex="-1">
   <div class="topo cshero__topo" aria-hidden="true"></div>
   <a href="portfolio.html" class="back">← Back to projects</a>
   <span class="label reveal">Case Study 04 · Data Analysis · Spatial Clustering</span>
@@ -168,16 +178,16 @@
           <div class="story-stage story-stage--media">
             <div class="story-status" data-story-status>Loading CBD ranking data...</div>
             <div class="story-pane is-active" data-cbd-pane="jakarta">
-              <img src="assets/img/cbd/jakarta_barchart.jpg" alt="Top 10 Jakarta clusters by POI count">
+              <img src="assets/img/cbd/jakarta_barchart.jpg" width="1320" height="770" alt="Top 10 Jakarta clusters by POI count">
             </div>
             <div class="story-pane" data-cbd-pane="jakarta-map">
-              <iframe src="maps/jakarta_map.html" title="Interactive CBD map of Jakarta" loading="eager"></iframe>
+              <iframe src="maps/jakarta_map.html" title="Interactive CBD map of Jakarta" loading="lazy" data-map-fallback></iframe>
             </div>
             <div class="story-pane" data-cbd-pane="bars">
               <svg class="story-chart-svg" data-cbd-bars role="img" aria-label="CBD ranking chart"></svg>
             </div>
             <div class="story-pane" data-cbd-pane="indonesia-map">
-              <iframe src="maps/indonesia_map.html" title="Interactive CBD map of Indonesia" loading="eager"></iframe>
+              <iframe src="maps/indonesia_map.html" title="Interactive CBD map of Indonesia" loading="lazy" data-map-fallback></iframe>
             </div>
             <div class="story-map-card">
               <div>
@@ -313,10 +323,10 @@
   <span>Urban Planner &amp; GIS Analyst</span>
 </footer>
 
-<script src="assets/js/main.js?v=7"></script>
+<script src="assets/js/main.js?v=8"></script>
 <script src="assets/js/collapsible.js?v=1"></script>
 <script src="assets/js/microinteraction.js?v=1"></script>
-<script src="assets/js/scrolly-stories.js?v=7"></script>
-<script src="assets/js/literature-map.js?v=4"></script>
+<script src="assets/js/scrolly-stories.js?v=8"></script>
+<script src="assets/js/literature-map.js?v=5"></script>
 </body>
 </html>
