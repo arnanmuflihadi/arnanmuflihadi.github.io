@@ -34,6 +34,37 @@
     editorialCards.forEach(function (card) { card.classList.add("in-view"); });
   }
 
+  /* ---------- Portfolio project progress rail ---------- */
+  var projectProgress = document.querySelector("[data-project-progress]");
+  if (projectProgress && editorialCards.length) {
+    var projectCurrent = projectProgress.querySelector("[data-project-current]");
+    var projectProgressFill = projectProgress.querySelector("[data-project-progress-fill]");
+    var projectProgressFrame = 0;
+
+    function updateProjectProgress() {
+      projectProgressFrame = 0;
+      var marker = window.innerHeight * .46;
+      var activeIndex = 0;
+
+      editorialCards.forEach(function (card, index) {
+        if (card.getBoundingClientRect().top <= marker) activeIndex = index;
+      });
+
+      var ratio = (activeIndex + 1) / editorialCards.length;
+      if (projectCurrent) projectCurrent.textContent = String(activeIndex + 1).padStart(2, "0");
+      if (projectProgressFill) projectProgressFill.style.transform = "scaleY(" + ratio.toFixed(3) + ")";
+    }
+
+    function requestProjectProgress() {
+      if (!projectProgressFrame) projectProgressFrame = window.requestAnimationFrame(updateProjectProgress);
+    }
+
+    window.addEventListener("scroll", requestProjectProgress, { passive: true });
+    window.addEventListener("resize", requestProjectProgress);
+    window.addEventListener("pageshow", requestProjectProgress);
+    updateProjectProgress();
+  }
+
   var parallaxMedia = document.querySelector("[data-parallax-media]");
   var reduceEditorialMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
