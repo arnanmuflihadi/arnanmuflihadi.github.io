@@ -3563,7 +3563,7 @@ body[data-project] .literature-map__step {
   background: transparent;
 }
 
-/* Scrollytelling — analytical visual plus a narrow true-white chapter rail. */
+/* Scrollytelling — analytical visual plus a dark, highlighted chapter rail. */
 body[data-project] .project-story,
 body[data-project] .transit-scrolly {
   padding-inline: var(--gutter);
@@ -3588,7 +3588,7 @@ body[data-project] .story-scrolly,
 body[data-project] .scrolly-static-container {
   grid-template-columns: minmax(0, 1.85fr) minmax(270px, .62fr);
   gap: 0;
-  background: #fff;
+  background: var(--case-night-2);
 }
 body[data-project] .story-visual,
 body[data-project] .scrolly-static-visual {
@@ -3611,19 +3611,19 @@ body[data-project] .scrolly-static-caption { padding: 12px 16px 0; }
 body[data-project] .story-steps,
 body[data-project] .scrolly-static-steps {
   padding: 0;
-  color: var(--case-charcoal);
-  background: #fff;
-  border-left: 1px solid #d9d9d9;
+  color: #f2eee5;
+  background: #101312;
+  border-left: 1px solid rgba(242,238,229,.16);
 }
 body[data-project] .story-step,
 body[data-project] .scrolly-static-step {
   min-height: min(78svh, 760px);
   padding: clamp(44px, 5vw, 72px) clamp(28px, 3.4vw, 50px);
   border: 0;
-  border-bottom: 1px solid #dedede;
-  color: var(--case-charcoal);
-  background: #fff;
-  opacity: .22;
+  border-bottom: 1px solid rgba(242,238,229,.13);
+  color: #f2eee5;
+  background: transparent;
+  opacity: .34;
 }
 body[data-project] .story-step::before,
 body[data-project] .scrolly-static-step::before { display: none; }
@@ -3635,20 +3635,23 @@ body[data-project] .scrolly-static-step::after {
   right: clamp(28px, 3.4vw, 50px);
   bottom: 30px;
   height: 1px;
-  background: linear-gradient(90deg, var(--accent) 0 25%, #d4d4d4 25% 100%);
+  background: linear-gradient(90deg, var(--accent) 0 28%, rgba(242,238,229,.2) 28% 100%);
   opacity: 0;
 }
 body[data-project] .story-step:hover:not(.is-active),
 body[data-project] .scrolly-static-step:hover:not(.active) {
   border-left: 0;
-  background: #fff;
-  opacity: .54;
+  background: rgba(255,255,255,.025);
+  opacity: .68;
 }
 body[data-project] .story-step.is-active,
 body[data-project] .scrolly-static-step.active,
 body[data-project] .transit-scrolly .scrolly-static-step.active {
   border-left: 0;
-  background: #fff;
+  background:
+    linear-gradient(115deg, color-mix(in srgb, var(--accent) 17%, transparent), transparent 70%),
+    rgba(255,255,255,.018);
+  box-shadow: inset 3px 0 0 var(--accent);
   opacity: 1;
 }
 body[data-project] .story-step.is-active::after,
@@ -3656,7 +3659,7 @@ body[data-project] .scrolly-static-step.active::after { opacity: 1; }
 body[data-project] .story-step__num,
 body[data-project] .scrolly-static-step__num {
   margin-bottom: clamp(30px, 5vw, 64px);
-  color: var(--accent-ink);
+  color: color-mix(in srgb, var(--accent) 78%, white);
 }
 body[data-project] .story-step h4,
 body[data-project] .scrolly-static-step h4 {
@@ -3666,9 +3669,19 @@ body[data-project] .scrolly-static-step h4 {
   line-height: 1.02;
   letter-spacing: -.045em;
   text-transform: none;
+  color: rgba(242,238,229,.94);
 }
 body[data-project] .story-step p,
-body[data-project] .scrolly-static-step p { font-size: clamp(13px, 1vw, 16px); }
+body[data-project] .scrolly-static-step p {
+  color: rgba(242,238,229,.64);
+  font-size: clamp(13px, 1vw, 16px);
+}
+body[data-project] .story-step__meta span,
+body[data-project] .story-step.is-active .story-step__meta span {
+  color: rgba(242,238,229,.72);
+  border-color: rgba(242,238,229,.18);
+  background: transparent;
+}
 body[data-project] .case-progress { display: none; }
 
 @media (max-width: 1100px) {
@@ -3687,7 +3700,14 @@ body[data-project] .case-progress { display: none; }
   body[data-project] .story-scrolly,
   body[data-project] .scrolly-static-container { grid-template-columns: 1fr; }
   body[data-project] .story-visual,
-  body[data-project] .scrolly-static-visual { top: 64px; padding: 0; }
+  body[data-project] .scrolly-static-visual {
+    position: relative;
+    top: auto;
+    padding: 0;
+    perspective: none;
+  }
+  body[data-project] .story-stage,
+  body[data-project] .scrolly-static-stage { transform: none !important; }
   body[data-project] .story-steps,
   body[data-project] .scrolly-static-steps { border-left: 0; }
   body[data-project] .story-step,
@@ -3695,22 +3715,106 @@ body[data-project] .case-progress { display: none; }
 }
 
 @media (max-width: 700px) {
-  .editorial-hero__media[data-city-map-stage] { min-height: 70svh; padding: 28px 18px; }
-  .city-map-frame { width: min(90vw, 520px); height: min(65svh, 650px); min-height: 420px; }
-  body[data-project] .cs-hero { padding-top: 100px; }
-  body[data-project] .cs-hero h1 { font-size: clamp(52px, 16vw, 78px); }
+  .editorial-hero__copy {
+    min-height: auto;
+    padding: 28px var(--gutter) 52px;
+  }
+  .editorial-hero h1 {
+    max-width: 9ch;
+    font-size: clamp(52px, 15.6vw, 68px);
+    line-height: .88;
+  }
+  .editorial-hero__intro { max-width: 35ch; font-size: 15px; line-height: 1.55; }
+  .editorial-hero__statement {
+    max-width: 18ch;
+    margin-top: 48px;
+    font-size: clamp(25px, 7.4vw, 34px);
+    line-height: 1.02;
+  }
+  .editorial-hero__media[data-city-map-stage] {
+    min-height: 64svh;
+    padding: 20px 12px 54px;
+    perspective: none;
+  }
+  .city-map-frame {
+    width: min(92vw, 520px);
+    height: min(60svh, 620px);
+    min-height: 390px;
+    transform: none !important;
+    box-shadow: 0 18px 44px rgba(0,0,0,.4);
+  }
+  .editorial-hero__media[data-city-map-stage] figcaption {
+    left: 18px;
+    right: 18px;
+    bottom: 16px;
+  }
+  body[data-project] .cs-hero {
+    min-height: auto;
+    padding-top: 96px;
+    padding-bottom: 30px;
+    row-gap: 18px;
+  }
+  body[data-project] .cs-hero::before {
+    inset: 58px 0 0;
+    background-size: cover, auto 78%;
+    background-position: center, 58% 30%;
+  }
+  body[data-project] .cs-hero h1 {
+    max-width: 100%;
+    font-size: clamp(44px, 13vw, 60px);
+    line-height: .91;
+    text-wrap: pretty;
+  }
+  body[data-project="mbr"] .cs-hero h1 { font-size: clamp(42px, 12.2vw, 56px); }
+  body[data-project] .cs-hero .lede { font-size: 13px; line-height: 1.55; }
   body[data-project] .cs-meta { grid-template-columns: 1fr; }
+  body[data-project] .cs-meta div { padding-block: 10px; }
+  body[data-project] .cs-meta dd { font-size: 10px; line-height: 1.45; }
+  body[data-project] .cs-section { padding-block: 58px; }
   body[data-project] .cs-section__head { grid-template-columns: 38px minmax(0, 1fr); gap: 14px; }
-  body[data-project] .cs-section__head h2 { font-size: clamp(38px, 12vw, 58px); }
+  body[data-project] .cs-section__head h2 { font-size: clamp(36px, 11vw, 52px); }
   body[data-project] .dflow { gap: 8px; }
+  body[data-project] .method-fold summary { gap: 10px; }
+  body[data-project] .method-fold__title { font-size: 14px; }
+  body[data-project] .method-fold__summary { font-size: 12px; line-height: 1.45; }
+  body[data-project] .literature-map__graphic {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
   body[data-project] .project-story__head,
   body[data-project] .scrolly-static-head { grid-template-columns: 1fr; }
   body[data-project] .project-story__head h3,
   body[data-project] .scrolly-static-head h3 { font-size: clamp(38px, 11vw, 58px); }
   body[data-project] .story-stage,
   body[data-project] .scrolly-static-stage { height: min(55svh, 450px); min-height: 330px; }
+  body[data-project] .story-visual,
+  body[data-project] .scrolly-static-visual {
+    position: relative;
+    top: auto;
+    padding: 0;
+  }
+  body[data-project] .story-steps,
+  body[data-project] .scrolly-static-steps { margin-top: 0; padding-inline: 0; }
   body[data-project] .story-step,
-  body[data-project] .scrolly-static-step { padding: 42px var(--gutter) 70px; }
+  body[data-project] .scrolly-static-step {
+    min-height: auto;
+    padding: 34px var(--gutter) 54px;
+  }
+  body[data-project] .story-step__num,
+  body[data-project] .scrolly-static-step__num { margin-bottom: 22px; }
+  body[data-project] .story-step h4,
+  body[data-project] .scrolly-static-step h4 {
+    max-width: 15ch;
+    font-size: clamp(29px, 8.6vw, 38px);
+    line-height: 1.02;
+  }
+  body[data-project] .story-step p,
+  body[data-project] .scrolly-static-step p { font-size: 13px; line-height: 1.55; }
   body[data-project] .story-step::after,
   body[data-project] .scrolly-static-step::after { left: var(--gutter); right: var(--gutter); }
+  body[data-project] .story-source-note,
+  body[data-project] .scrolly-static-caption { padding: 10px var(--gutter) 16px; }
+  body[data-project] .cs-pager { min-height: auto; }
+  body[data-project] .cs-pager a { min-height: 150px; padding: 34px var(--gutter); }
 }
