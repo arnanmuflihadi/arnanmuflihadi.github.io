@@ -92,57 +92,39 @@ function mapArtwork(features, options = {}) {
 }
 
 async function makeHomeCityGrid() {
-  const leftGrid = [];
-  const islandGrid = [];
-  const rightGrid = [];
-  for (let y = 34, index = 0; y < 1580; y += index % 6 === 0 ? 32 : 18, index += 1) {
-    const major = index % 8 === 0;
-    leftGrid.push(`<path d="M-30 ${y} C130 ${y - 18} 290 ${y + 20} 482 ${y - 8}" stroke-width="${major ? 1.8 : .58}" stroke-opacity="${major ? .64 : .28}"/>`);
-    rightGrid.push(`<path d="M772 ${y + 14} C930 ${y - 28} 1060 ${y + 26} 1230 ${y - 10}" stroke-width="${major ? 1.8 : .58}" stroke-opacity="${major ? .64 : .27}"/>`);
-  }
-  for (let x = -20, index = 0; x < 500; x += index % 7 === 0 ? 31 : 18, index += 1) {
-    const major = index % 9 === 0;
-    leftGrid.push(`<path d="M${x} -20 C${x + 42} 390 ${x - 34} 790 ${x + 28} 1620" stroke-width="${major ? 1.7 : .58}" stroke-opacity="${major ? .62 : .27}"/>`);
-  }
-  for (let x = 770, index = 0; x < 1230; x += index % 6 === 0 ? 29 : 17, index += 1) {
-    const major = index % 8 === 0;
-    rightGrid.push(`<path d="M${x} -20 C${x - 48} 360 ${x + 36} 820 ${x - 24} 1620" stroke-width="${major ? 1.7 : .58}" stroke-opacity="${major ? .62 : .27}"/>`);
-  }
-  for (let y = 42, index = 0; y < 1570; y += index % 10 === 0 ? 30 : 15, index += 1) {
-    islandGrid.push(`<path d="M500 ${y} C585 ${y - 9} 682 ${y + 10} 800 ${y - 4}" stroke-width="${index % 11 === 0 ? 1.7 : .66}" stroke-opacity="${index % 11 === 0 ? .76 : .38}"/>`);
-  }
-  for (let x = 536, index = 0; x < 790; x += 17, index += 1) {
-    islandGrid.push(`<path d="M${x} 10 C${x - 34} 520 ${x + 30} 1040 ${x - 16} 1590" stroke-width="${index % 5 === 0 ? 1.8 : .7}" stroke-opacity="${index % 5 === 0 ? .72 : .38}"/>`);
-  }
-  const body = `    <defs>
-      <clipPath id="west-bank"><path d="M-40 70L332 18L404 218L374 438L430 684L382 910L448 1170L392 1570L-40 1620Z"/></clipPath>
-      <clipPath id="central-island"><path d="M638 24L754 12L748 248L774 464L752 698L786 930L748 1170L722 1514L612 1582L590 1370L612 1130L586 890L612 646L590 416L618 192Z"/></clipPath>
-      <clipPath id="east-bank"><path d="M832 4H1240V1620H824L790 1390L832 1164L798 916L838 678L804 426L842 210Z"/></clipPath>
-    </defs>
-    <g clip-path="url(#west-bank)">
-${leftGrid.map((street) => `      ${street}`).join("\n")}
-      <path d="M54 1570C190 1320 94 1060 300 824S142 360 356 54" stroke-width="4" stroke-opacity=".82"/>
-      <path d="M-20 1210C176 1120 246 1000 434 962M-12 610C144 566 294 520 404 418" stroke-width="2.8" stroke-opacity=".72"/>
-    </g>
-    <g clip-path="url(#central-island)">
-${islandGrid.map((street) => `      ${street}`).join("\n")}
-      <path d="M632 1570C700 1260 638 1070 730 848S654 386 724 26" stroke-width="4.4" stroke-opacity=".94"/>
-      <path d="M600 1118L762 1038M600 760L768 704M604 356L760 304" stroke-width="2.4" stroke-opacity=".82"/>
-    </g>
-    <g clip-path="url(#east-bank)">
-${rightGrid.map((street) => `      ${street}`).join("\n")}
-      <path d="M890 1586C1018 1350 900 1110 1090 862S950 338 1172 64" stroke-width="4" stroke-opacity=".82"/>
-      <path d="M804 1260C940 1190 1080 1178 1224 1080M804 540C948 474 1082 500 1222 390" stroke-width="2.8" stroke-opacity=".7"/>
-    </g>
-    <path d="M-40 70L332 18L404 218L374 438L430 684L382 910L448 1170L392 1570M638 24L754 12L748 248L774 464L752 698L786 930L748 1170L722 1514L612 1582M832 4L804 426L838 678L798 916L832 1164L790 1390L824 1620" stroke-width="1.8" stroke-opacity=".92"/>
-    <path d="M392 318C472 304 548 290 614 278M414 520C488 504 550 488 604 470M430 684C498 666 550 652 608 636M382 910C482 892 540 876 588 852M448 1170C510 1150 558 1136 612 1118M774 464C820 448 862 432 914 416M786 930C834 914 880 900 936 884M748 1170C808 1154 862 1140 920 1118" stroke-width="3.2" stroke-opacity=".86"/>
-    <g stroke-width=".9" stroke-opacity=".54">
-      <path d="M596 310H568M596 342H560M602 520H570M604 552H564M590 886H556M594 918H550M612 1190H574M610 1222H566"/>
-      <path d="M776 326H810M780 358H818M760 708H806M764 740H816M782 962H826M776 994H834"/>
-    </g>`;
+  const nyc = await readJSON("assets/data/home/nyc-streets.geojson");
+  const features = nyc.features.filter((feature) => feature.geometry);
+  const project = projector(boundsFor(features), 1200, 1600, 38);
+  const streets = features.map((feature) => {
+    const route = feature.properties?.Route_Type || feature.properties?.route_type || "";
+    const name = feature.properties?.Street_NM || feature.properties?.street_nm || "";
+    const isBroadway = /broadway/i.test(name);
+    const style = isBroadway ? [2.7, .92]
+      : route === "Artrl" ? [2.35, .82]
+        : route === "Mjr_st" ? [1.5, .66]
+          : route === "Gen_use" ? [.58, .28]
+            : [.76, .4];
+    return `    <path d="${geometryPath(feature.geometry, project)}" stroke-width="${style[0]}" stroke-opacity="${style[1]}"/>`;
+  }).join("\n");
+
+  const labels = [
+    ["MANHATTAN", [-73.982, 40.775]],
+    ["BRONX", [-73.925, 40.85]],
+    ["BROOKLYN", [-73.985, 40.687]],
+    ["QUEENS", [-73.915, 40.735]],
+  ].map(([label, coordinates]) => {
+    const [x, y] = project(coordinates);
+    return `    <text x="${x}" y="${y}" fill="currentColor" fill-opacity=".64" stroke="none" font-family="monospace" font-size="13" letter-spacing="3">${label}</text>`;
+  }).join("\n");
+
+  const body = `${streets}
+    <g opacity=".72">${labels}</g>
+    <path d="M38 52H180M1020 1548h142" stroke-width="2" stroke-opacity=".84"/>
+    <text x="38" y="35" fill="currentColor" fill-opacity=".7" stroke="none" font-family="monospace" font-size="11" letter-spacing="2">NYC / 40.7128° N</text>
+    <text x="930" y="1574" fill="currentColor" fill-opacity=".7" stroke="none" font-family="monospace" font-size="11" letter-spacing="2">74.0060° W</text>`;
   await writeFile(path.join(outDir, "city-grid.svg"), svgDocument({
-    title: "Abstract city street grid",
-    description: "A monochrome vector street network inspired by dense coastal cities.",
+    title: "New York City street map",
+    description: "Official New York City street centerlines across Manhattan and the inner boroughs.",
     body,
     width: 1200,
     height: 1600,
