@@ -143,10 +143,10 @@
       var progress = Math.min(1, Math.max(0, window.scrollY / Math.max(1, window.innerHeight)));
       cityCurrentX += (cityTargetX - cityCurrentX) * .12;
       cityCurrentY += (cityTargetY - cityCurrentY) * .12;
-      parallaxMedia.style.setProperty("--city-rotate-x", (3.8 - cityCurrentY * 3.2 + progress * 1.8).toFixed(2) + "deg");
-      parallaxMedia.style.setProperty("--city-rotate-y", (cityCurrentX * 4.8).toFixed(2) + "deg");
-      parallaxMedia.style.setProperty("--city-shift-y", (-10 + progress * 24).toFixed(2) + "px");
-      parallaxMedia.style.setProperty("--city-scale", (1 - progress * .022).toFixed(3));
+      parallaxMedia.style.setProperty("--city-rotate-x", (1.4 - cityCurrentY * 1.2 + progress * .7).toFixed(2) + "deg");
+      parallaxMedia.style.setProperty("--city-rotate-y", (cityCurrentX * 2.4).toFixed(2) + "deg");
+      parallaxMedia.style.setProperty("--city-shift-y", (-4 + progress * 12).toFixed(2) + "px");
+      parallaxMedia.style.setProperty("--city-scale", (1 - progress * .01).toFixed(3));
       if (Math.abs(cityTargetX - cityCurrentX) > .002 || Math.abs(cityTargetY - cityCurrentY) > .002) requestEditorialMedia();
     }
     function requestEditorialMedia() {
@@ -190,10 +190,10 @@
           var stepRect = activeStep.getBoundingClientRect();
           stepOffset = Math.max(-1, Math.min(1, (stepRect.top + stepRect.height * .5 - window.innerHeight * .5) / window.innerHeight));
         }
-        var tilt = stepOffset * -1.7 + Math.sin(progress * Math.PI * 2) * .55;
-        var rotateX = .7 + Math.abs(stepOffset) * .65;
-        var lift = -6 + progress * 12;
-        var scale = .99 - Math.abs(stepOffset) * .008;
+        var tilt = stepOffset * -1.05 + Math.sin(progress * Math.PI * 2) * .32;
+        var rotateX = .45 + Math.abs(stepOffset) * .35;
+        var lift = -4 + progress * 8;
+        var scale = .995 - Math.abs(stepOffset) * .004;
         stage.style.setProperty("--story-tilt", tilt.toFixed(2) + "deg");
         stage.style.setProperty("--story-rotate-x", rotateX.toFixed(2) + "deg");
         stage.style.setProperty("--story-lift", lift.toFixed(2) + "px");

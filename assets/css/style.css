@@ -3319,3 +3319,398 @@ body[data-project] .cs-pager .t {
   body[data-project] .story-stage,
   body[data-project] .scrolly-static-stage { transform: none !important; transition: none !important; }
 }
+
+/* ============================================================
+   EDITORIAL MAP SYSTEM — ANNOTATION CLEANUP
+   Removes the remaining legacy card language and keeps one
+   monochrome, map-led visual grammar across home and projects.
+   ============================================================ */
+
+/* Home — the hero is now a flat vector map sheet, not a 3D render. */
+@media (min-width: 1101px) {
+  .editorial-hero { grid-template-columns: minmax(0, 1fr) minmax(500px, 1fr); }
+}
+.editorial-hero__media[data-city-map-stage] {
+  --city-rotate-x: 1.4deg;
+  --city-shift-y: -4px;
+  padding: clamp(24px, 3vw, 44px);
+  background: #080909;
+}
+.editorial-hero__media[data-city-map-stage]::before,
+.editorial-hero__media[data-city-map-stage]::after,
+.city-map-frame::before,
+.city-map-frame::after { display: none; }
+.city-map-frame {
+  width: min(96%, 760px);
+  height: min(88svh, 900px);
+  min-height: 560px;
+  padding: 0;
+  border: 1px solid rgba(244,244,242,.72);
+  background: #080909;
+  box-shadow: 0 24px 68px rgba(0,0,0,.42);
+  transform: translate3d(0, var(--city-shift-y), 0)
+    rotateX(var(--city-rotate-x)) rotateY(var(--city-rotate-y)) rotateZ(-.9deg)
+    scale(var(--city-scale));
+  transition: border-color .55s var(--ease), box-shadow .55s var(--ease);
+}
+.editorial-hero__media[data-city-map-stage] .city-map-frame img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: none;
+  transform: none;
+  opacity: .96;
+  transition: opacity .55s var(--ease);
+}
+.editorial-hero__media[data-city-map-stage]:hover .city-map-frame {
+  border-color: rgba(244,244,242,.94);
+  box-shadow: 0 30px 74px rgba(0,0,0,.48);
+}
+.editorial-hero__media[data-city-map-stage]:hover .city-map-frame img {
+  filter: none;
+  transform: none;
+  opacity: 1;
+}
+
+/* Project heroes — each case study carries its own analytical map field. */
+body[data-project="transit"] .cs-hero { --project-hero-map: url("../img/maps/hero-transit.svg"); }
+body[data-project="pangan"] .cs-hero { --project-hero-map: url("../img/maps/hero-pangan.svg"); }
+body[data-project="mbr"] .cs-hero { --project-hero-map: url("../img/maps/hero-mbr.svg"); }
+body[data-project="cbd"] .cs-hero { --project-hero-map: url("../img/maps/hero-cbd.svg"); }
+
+body[data-project] {
+  --case-paper: #fff;
+  --case-paper-muted: #ececec;
+  --case-charcoal: #111312;
+  --case-copy: #4e504e;
+}
+body[data-project] .cs-hero {
+  grid-template-columns: minmax(0, .8fr) minmax(420px, 1.2fr);
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  grid-template-areas:
+    "back back"
+    "title title"
+    "lede ."
+    "meta meta";
+  row-gap: clamp(18px, 2.5vh, 30px);
+  isolation: isolate;
+}
+body[data-project] .cs-hero::before {
+  inset: 64px 0 0;
+  z-index: 0;
+  opacity: .58;
+  background-image:
+    linear-gradient(90deg, #090b0b 0%, rgba(9,11,11,.96) 24%, rgba(9,11,11,.28) 65%, rgba(9,11,11,.08) 100%),
+    var(--project-hero-map);
+  background-repeat: no-repeat;
+  background-size: cover, min(74vw, 1160px) auto;
+  background-position: center, right 43%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 14%, #000 88%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0, #000 14%, #000 88%, transparent 100%);
+}
+body[data-project] .cs-hero > * { position: relative; z-index: 1; }
+body[data-project] .cshero__topo { display: none; }
+body[data-project] .cs-hero h1 {
+  align-self: end;
+  max-width: 13ch;
+  font-size: clamp(68px, 7.8vw, 132px);
+  text-wrap: balance;
+}
+body[data-project] .cs-hero .lede {
+  align-self: start;
+  max-width: 48ch;
+  margin: 0;
+}
+body[data-project] .cs-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(8px, 1.5vh, 18px);
+}
+body[data-project] .cs-meta div { padding-block: 15px; }
+body[data-project] .cs-meta dd {
+  font-family: var(--font-mono);
+  font-size: clamp(10px, .9vw, 12px);
+  line-height: 1.5;
+}
+
+/* Number-only section markers and human-scale headings. */
+body[data-project] .cs-section { padding-block: clamp(68px, 8vw, 112px); }
+body[data-project] .cs-section__head {
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(16px, 3vw, 42px);
+  margin-bottom: clamp(34px, 5vw, 62px);
+  padding-top: 14px;
+  border-top-width: 1px;
+}
+body[data-project] .cs-section__head .idx {
+  margin: .5em 0 0;
+  color: var(--accent-ink);
+  font-size: 11px;
+  letter-spacing: .1em;
+}
+body[data-project] .cs-section__head h2 {
+  max-width: 18ch;
+  font-size: clamp(42px, 5.3vw, 76px);
+  font-weight: 560;
+  line-height: .96;
+  letter-spacing: -.048em;
+  text-transform: none;
+}
+
+/* Method — open rules replace the older rounded Material panels. */
+body[data-project] .dflow {
+  gap: clamp(12px, 1.7vw, 26px);
+  margin-bottom: clamp(32px, 5vw, 58px);
+}
+body[data-project] .dflow__phase {
+  padding: 14px 0 0;
+  border: 0;
+  border-top: 1px solid var(--ink);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+body[data-project] .dflow__phase:hover {
+  border-color: var(--accent-ink);
+  box-shadow: none;
+}
+body[data-project] .dflow__head { align-items: baseline; margin-bottom: 20px; }
+body[data-project] .dflow__head .ms { display: none; }
+body[data-project] .dflow__num {
+  display: block;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent-ink);
+}
+body[data-project] .dflow__title { font-size: 15px; font-weight: 600; }
+body[data-project] .dflow__nodes { gap: 0; }
+body[data-project] .dflow__node,
+body[data-project] .dflow__node--data {
+  padding: 13px 0;
+  border: 0;
+  border-top: 1px solid var(--line-soft);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+body[data-project] .dflow__node:hover {
+  border-color: var(--outline);
+  box-shadow: none;
+  transform: none;
+}
+body[data-project] .dflow__node--data::before { display: none; }
+body[data-project] .dflow__node .tx { font-size: 12px; line-height: 1.55; }
+body[data-project] .method-callout {
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 6px 0 6px clamp(16px, 2vw, 26px);
+  border: 0;
+  border-left: 2px solid var(--accent-ink);
+  border-radius: 0;
+  background: transparent;
+}
+body[data-project] .method-callout .ms { display: none; }
+body[data-project] .method-fold {
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+body[data-project] .method-fold__icon { border-radius: 0; box-shadow: none; }
+body[data-project] .formula {
+  padding: 22px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+body[data-project] .stats {
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+body[data-project] .stat {
+  padding-inline: clamp(16px, 2.4vw, 32px);
+  border-right: 1px solid var(--line);
+  background: transparent;
+}
+body[data-project] .stat:last-child { border-right: 0; }
+
+/* Literature views follow the same open, rule-led system. */
+body[data-project] .literature-map__intro,
+body[data-project] .literature-map__detail,
+body[data-project] .literature-map__graphic,
+body[data-project] .literature-map__step,
+body[data-project] .literature-map__fallback,
+body[data-project] .literature-map__metrics span,
+body[data-project] .literature-map__legend-item,
+body[data-project] .literature-map__status button {
+  border-radius: 0;
+  box-shadow: none;
+}
+body[data-project] .literature-map__intro,
+body[data-project] .literature-map__detail,
+body[data-project] .literature-map__graphic,
+body[data-project] .literature-map__step {
+  background: transparent;
+}
+
+/* Scrollytelling — analytical visual plus a narrow true-white chapter rail. */
+body[data-project] .project-story,
+body[data-project] .transit-scrolly {
+  padding-inline: var(--gutter);
+}
+body[data-project] .project-story__head,
+body[data-project] .scrolly-static-head {
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+  align-items: end;
+  column-gap: clamp(34px, 6vw, 92px);
+}
+body[data-project] .project-story__head h3,
+body[data-project] .scrolly-static-head h3 {
+  max-width: 17ch;
+  font-size: clamp(42px, 5.4vw, 78px);
+  font-weight: 560;
+  line-height: .94;
+  text-transform: none;
+}
+body[data-project] .project-story__head p,
+body[data-project] .scrolly-static-head p { margin: 0; }
+body[data-project] .story-scrolly,
+body[data-project] .scrolly-static-container {
+  grid-template-columns: minmax(0, 1.85fr) minmax(270px, .62fr);
+  gap: 0;
+  background: #fff;
+}
+body[data-project] .story-visual,
+body[data-project] .scrolly-static-visual {
+  top: 64px;
+  padding: 0;
+  background: var(--case-night);
+}
+body[data-project] .story-stage,
+body[data-project] .scrolly-static-stage {
+  height: min(78svh, 760px);
+  min-height: 520px;
+  border-color: rgba(242,238,229,.2);
+  box-shadow: none;
+  transform-origin: center right;
+}
+body[data-project] .story-progress,
+body[data-project] .scrolly-static-stepnav { margin: 0; padding: 0 0 0; }
+body[data-project] .story-source-note,
+body[data-project] .scrolly-static-caption { padding: 12px 16px 0; }
+body[data-project] .story-steps,
+body[data-project] .scrolly-static-steps {
+  padding: 0;
+  color: var(--case-charcoal);
+  background: #fff;
+  border-left: 1px solid #d9d9d9;
+}
+body[data-project] .story-step,
+body[data-project] .scrolly-static-step {
+  min-height: min(78svh, 760px);
+  padding: clamp(44px, 5vw, 72px) clamp(28px, 3.4vw, 50px);
+  border: 0;
+  border-bottom: 1px solid #dedede;
+  color: var(--case-charcoal);
+  background: #fff;
+  opacity: .22;
+}
+body[data-project] .story-step::before,
+body[data-project] .scrolly-static-step::before { display: none; }
+body[data-project] .story-step::after,
+body[data-project] .scrolly-static-step::after {
+  content: "";
+  position: absolute;
+  left: clamp(28px, 3.4vw, 50px);
+  right: clamp(28px, 3.4vw, 50px);
+  bottom: 30px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0 25%, #d4d4d4 25% 100%);
+  opacity: 0;
+}
+body[data-project] .story-step:hover:not(.is-active),
+body[data-project] .scrolly-static-step:hover:not(.active) {
+  border-left: 0;
+  background: #fff;
+  opacity: .54;
+}
+body[data-project] .story-step.is-active,
+body[data-project] .scrolly-static-step.active,
+body[data-project] .transit-scrolly .scrolly-static-step.active {
+  border-left: 0;
+  background: #fff;
+  opacity: 1;
+}
+body[data-project] .story-step.is-active::after,
+body[data-project] .scrolly-static-step.active::after { opacity: 1; }
+body[data-project] .story-step__num,
+body[data-project] .scrolly-static-step__num {
+  margin-bottom: clamp(30px, 5vw, 64px);
+  color: var(--accent-ink);
+}
+body[data-project] .story-step h4,
+body[data-project] .scrolly-static-step h4 {
+  max-width: 12ch;
+  font-size: clamp(30px, 3vw, 44px);
+  font-weight: 560;
+  line-height: 1.02;
+  letter-spacing: -.045em;
+  text-transform: none;
+}
+body[data-project] .story-step p,
+body[data-project] .scrolly-static-step p { font-size: clamp(13px, 1vw, 16px); }
+body[data-project] .case-progress { display: none; }
+
+@media (max-width: 1100px) {
+  .editorial-hero__media[data-city-map-stage] { padding: clamp(24px, 5vw, 54px); }
+  .city-map-frame { width: min(88vw, 760px); height: min(78svh, 820px); }
+  body[data-project] .cs-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr) auto auto;
+    grid-template-areas: "back" "title" "lede" "meta";
+  }
+  body[data-project] .cs-hero::before {
+    opacity: .28;
+    background-size: cover, 1280px auto;
+    background-position: center, 58% 42%;
+  }
+  body[data-project] .story-scrolly,
+  body[data-project] .scrolly-static-container { grid-template-columns: 1fr; }
+  body[data-project] .story-visual,
+  body[data-project] .scrolly-static-visual { top: 64px; padding: 0; }
+  body[data-project] .story-steps,
+  body[data-project] .scrolly-static-steps { border-left: 0; }
+  body[data-project] .story-step,
+  body[data-project] .scrolly-static-step { min-height: auto; }
+}
+
+@media (max-width: 700px) {
+  .editorial-hero__media[data-city-map-stage] { min-height: 70svh; padding: 28px 18px; }
+  .city-map-frame { width: min(90vw, 520px); height: min(65svh, 650px); min-height: 420px; }
+  body[data-project] .cs-hero { padding-top: 100px; }
+  body[data-project] .cs-hero h1 { font-size: clamp(52px, 16vw, 78px); }
+  body[data-project] .cs-meta { grid-template-columns: 1fr; }
+  body[data-project] .cs-section__head { grid-template-columns: 38px minmax(0, 1fr); gap: 14px; }
+  body[data-project] .cs-section__head h2 { font-size: clamp(38px, 12vw, 58px); }
+  body[data-project] .dflow { gap: 8px; }
+  body[data-project] .project-story__head,
+  body[data-project] .scrolly-static-head { grid-template-columns: 1fr; }
+  body[data-project] .project-story__head h3,
+  body[data-project] .scrolly-static-head h3 { font-size: clamp(38px, 11vw, 58px); }
+  body[data-project] .story-stage,
+  body[data-project] .scrolly-static-stage { height: min(55svh, 450px); min-height: 330px; }
+  body[data-project] .story-step,
+  body[data-project] .scrolly-static-step { padding: 42px var(--gutter) 70px; }
+  body[data-project] .story-step::after,
+  body[data-project] .scrolly-static-step::after { left: var(--gutter); right: var(--gutter); }
+}
