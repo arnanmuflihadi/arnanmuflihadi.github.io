@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=45">
+<script src="assets/js/theme-init.js?v=1"></script>
+<link rel="stylesheet" href="assets/css/style.css?v=49">
 <!-- Optional privacy-friendly analytics (no cookies). Uncomment and set your domain:
 <script defer data-domain="YOURDOMAIN.com" src="https://plausible.io/js/script.js"></script>
 GoatCounter alternative: <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -26,7 +27,7 @@ GoatCounter alternative: <script data-goatcounter="https://YOURCODE.goatcounter.
 <meta name="twitter:description" content="Portfolio of GIS &amp; spatial analysis for urban and regional planning, transit accessibility, food-supply-chain resilience, and road-network modeling.">
 <meta name="twitter:image" content="https://arnanmuflihadi.github.io/assets/img/profile.jpg">
 </head>
-<body>
+<body class="editorial-home">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <!-- ============ NAV ============ -->
@@ -45,40 +46,49 @@ GoatCounter alternative: <script data-goatcounter="https://YOURCODE.goatcounter.
 </nav>
 
 <!-- ============ HERO ============ -->
-<header class="hero" id="main" tabindex="-1">
-  <div class="hero__grid"></div>
-  <div class="topo hero__topo" aria-hidden="true"></div>
-  <div class="wrap">
-    <div class="hero__coords reveal">
-      <span class="ms">location_on</span><span>06°12′S 106°49′E</span><span>·</span><span>URBAN PLANNING · GIS · SPATIAL ANALYSIS</span>
-    </div>
-    <h1 class="reveal">Mapping decisions<br>into <em>space</em>.</h1>
-    <p class="hero__sub reveal">I build geospatial analyses that connect GIS with urban &amp; regional planning, from transit accessibility to food-supply-chain resilience. The methods stay grounded in the research.</p>
-    <div class="hero__roles reveal">
-      <span class="tag">Spatial Analysis</span>
-      <span class="tag">Accessibility Analysis</span>
-      <span class="tag">Network Modeling</span>
-      <span class="tag">Urban &amp; Regional Planning</span>
-    </div>
-    <div class="hero__cta reveal">
-      <a href="portfolio.html" class="btn"><span class="ms">explore</span> View Portfolio</a>
-      <a href="about.html" class="btn btn--ghost"><span class="ms">person</span> About Me</a>
-    </div>
-    <div class="hero__plan reveal" aria-hidden="true">
-      <div class="hero__north"><span class="ms">navigation</span>N</div>
-      <div class="hero__scalebar">
-        <div class="bar"></div>
-        <div class="ticks"><span>0</span><span>5 km</span></div>
+<main id="main" tabindex="-1">
+  <header class="editorial-hero">
+    <div class="editorial-hero__copy">
+      <h1 aria-label="Mapping decisions into space">
+        <span class="line-mask"><span>Mapping</span></span>
+        <span class="line-mask"><span>decisions</span></span>
+        <span class="line-mask"><span>into space<i>.</i></span></span>
+      </h1>
+
+      <p class="editorial-hero__intro reveal">I build geospatial analyses that connect GIS with urban &amp; regional planning, from transit accessibility to food-supply-chain resilience. The methods stay grounded in the research.</p>
+
+      <div class="editorial-hero__meta reveal" aria-label="Location and map scale">
+        <span class="editorial-hero__cross" aria-hidden="true"></span>
+        <span>06°12′S 106°49′E</span>
+        <span class="editorial-hero__scale" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 km</span>
       </div>
+
+      <a href="portfolio.html" class="editorial-link reveal"><span>View portfolio</span><span aria-hidden="true">→</span></a>
+
+      <p class="editorial-hero__statement reveal">I help cities and regions become more accessible, resilient, and better aligned with how people live.</p>
+      <span class="editorial-hero__scroll" aria-hidden="true">Scroll<i></i></span>
     </div>
-  </div>
-</header>
+
+    <figure class="editorial-hero__media" data-parallax-media>
+      <img src="assets/img/transit/hotspot.jpg" alt="Transit accessibility map of DKI Jakarta">
+      <figcaption>Jakarta, Indonesia · Transit accessibility</figcaption>
+    </figure>
+  </header>
+
+  <section class="practice-strip" aria-label="Core practice">
+    <span>Core practice</span>
+    <span>Spatial analysis</span>
+    <span>Urban planning</span>
+    <span>Network modeling</span>
+  </section>
+</main>
 
 <footer class="foot">
   <span>© <span data-year>2026</span> Arnan Muflihadi</span>
   <span>Urban Planner &amp; GIS Analyst</span>
 </footer>
 
-<script src="assets/js/main.js?v=8"></script>
+<script src="assets/js/main.js?v=13"></script>
 </body>
 </html>
