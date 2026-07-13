@@ -134,12 +134,20 @@
 
   if (parallaxMedia && !reduceEditorialMotion) {
     var editorialTicking = false;
-    var mediaX = 0;
+    var cityTargetX = 0;
+    var cityTargetY = 0;
+    var cityCurrentX = 0;
+    var cityCurrentY = 0;
     function updateEditorialMedia() {
       editorialTicking = false;
       var progress = Math.min(1, Math.max(0, window.scrollY / Math.max(1, window.innerHeight)));
-      parallaxMedia.style.setProperty("--media-y", (-4 + progress * 8).toFixed(2) + "%");
-      parallaxMedia.style.setProperty("--media-x", mediaX.toFixed(2) + "px");
+      cityCurrentX += (cityTargetX - cityCurrentX) * .12;
+      cityCurrentY += (cityTargetY - cityCurrentY) * .12;
+      parallaxMedia.style.setProperty("--city-rotate-x", (3.8 - cityCurrentY * 3.2 + progress * 1.8).toFixed(2) + "deg");
+      parallaxMedia.style.setProperty("--city-rotate-y", (cityCurrentX * 4.8).toFixed(2) + "deg");
+      parallaxMedia.style.setProperty("--city-shift-y", (-10 + progress * 24).toFixed(2) + "px");
+      parallaxMedia.style.setProperty("--city-scale", (1 - progress * .022).toFixed(3));
+      if (Math.abs(cityTargetX - cityCurrentX) > .002 || Math.abs(cityTargetY - cityCurrentY) > .002) requestEditorialMedia();
     }
     function requestEditorialMedia() {
       if (!editorialTicking) {
@@ -149,16 +157,57 @@
     }
     parallaxMedia.addEventListener("pointermove", function (event) {
       var rect = parallaxMedia.getBoundingClientRect();
-      mediaX = ((event.clientX - rect.left) / rect.width - .5) * 12;
+      cityTargetX = Math.max(-1, Math.min(1, ((event.clientX - rect.left) / rect.width - .5) * 2));
+      cityTargetY = Math.max(-1, Math.min(1, ((event.clientY - rect.top) / rect.height - .5) * 2));
       requestEditorialMedia();
     });
     parallaxMedia.addEventListener("pointerleave", function () {
-      mediaX = 0;
+      cityTargetX = 0;
+      cityTargetY = 0;
       requestEditorialMedia();
     });
     window.addEventListener("scroll", requestEditorialMedia, { passive: true });
     window.addEventListener("resize", requestEditorialMedia);
     updateEditorialMedia();
+  }
+
+  /* ---------- Case-study scrollytelling depth ---------- */
+  var editorialStories = Array.prototype.slice.call(document.querySelectorAll(".project-story, .transit-scrolly"));
+  if (editorialStories.length && !reduceEditorialMotion) {
+    var storyDepthFrame = 0;
+    function updateStoryDepth() {
+      storyDepthFrame = 0;
+      editorialStories.forEach(function (story) {
+        var stage = story.querySelector(".story-stage, .scrolly-static-stage");
+        var activeStep = story.querySelector(".story-step.is-active, .scrolly-static-step.active");
+        if (!stage) return;
+        var rootRect = story.getBoundingClientRect();
+        if (rootRect.bottom < -200 || rootRect.top > window.innerHeight + 200) return;
+        var travel = Math.max(1, rootRect.height - window.innerHeight);
+        var progress = Math.max(0, Math.min(1, (window.innerHeight * .42 - rootRect.top) / travel));
+        var stepOffset = 0;
+        if (activeStep) {
+          var stepRect = activeStep.getBoundingClientRect();
+          stepOffset = Math.max(-1, Math.min(1, (stepRect.top + stepRect.height * .5 - window.innerHeight * .5) / window.innerHeight));
+        }
+        var tilt = stepOffset * -1.7 + Math.sin(progress * Math.PI * 2) * .55;
+        var rotateX = .7 + Math.abs(stepOffset) * .65;
+        var lift = -6 + progress * 12;
+        var scale = .99 - Math.abs(stepOffset) * .008;
+        stage.style.setProperty("--story-tilt", tilt.toFixed(2) + "deg");
+        stage.style.setProperty("--story-rotate-x", rotateX.toFixed(2) + "deg");
+        stage.style.setProperty("--story-lift", lift.toFixed(2) + "px");
+        stage.style.setProperty("--story-scale", scale.toFixed(3));
+        story.style.setProperty("--story-progress", progress.toFixed(3));
+      });
+    }
+    function requestStoryDepth() {
+      if (!storyDepthFrame) storyDepthFrame = window.requestAnimationFrame(updateStoryDepth);
+    }
+    window.addEventListener("scroll", requestStoryDepth, { passive: true });
+    window.addEventListener("resize", requestStoryDepth);
+    window.addEventListener("pageshow", requestStoryDepth);
+    updateStoryDepth();
   }
 
   /* ---------- Theme (light/dark, persisted) ---------- */
