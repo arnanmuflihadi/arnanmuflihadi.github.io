@@ -247,7 +247,7 @@
     if (e.key === "Escape" && lb.classList.contains("open")) closeLB();
   });
 
-  /* ---------- Stacked-card depth (Selected Work) ---------- */
+  /* ---------- Obscura-style stacked-card scroll (Selected Work) ---------- */
   var lists = Array.prototype.slice.call(document.querySelectorAll(".work__list"));
   if (lists.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var mqDesk = window.matchMedia("(min-width: 1000px)");
@@ -259,6 +259,8 @@
     function clear() {
       groups.forEach(function (cards) {
         cards.forEach(function (c) {
+          c.style.removeProperty("--stack-scale");
+          c.style.removeProperty("--stack-rotate");
           c.style.removeProperty("--stack-dim");
           c.classList.remove("is-stacked");
         });
@@ -268,16 +270,30 @@
       ticking = false;
       if (!mqDesk.matches) { clear(); return; }
       groups.forEach(function (cards) {
-        // which cards are currently pinned (stacked)?
-        var pinned = cards.map(function (c) {
-          var top = parseFloat(getComputedStyle(c).top) || 0;
-          return c.getBoundingClientRect().top <= top + 1.5;
-        });
         cards.forEach(function (c, i) {
-          var depth = 0;
-          for (var j = i + 1; j < cards.length; j++) { if (pinned[j]) depth++; }
-          c.style.setProperty("--stack-dim", (Math.min(0.34, depth * 0.12)).toFixed(3));
-          c.classList.toggle("is-stacked", depth > 0);
+          var next = cards[i + 1];
+          if (!next) {
+            c.style.setProperty("--stack-scale", "1");
+            c.style.setProperty("--stack-rotate", "0deg");
+            c.style.setProperty("--stack-dim", "0");
+            c.classList.remove("is-stacked");
+            return;
+          }
+
+          // Match the Obscura Services transition: the incoming card rises
+          // over the current one while the current card scales to 87%, tilts
+          // three degrees clockwise, and receives a 50% dark overlay.
+          var nextRect = next.getBoundingClientRect();
+          var stackTop = parseFloat(getComputedStyle(next).top) || 0;
+          var travel = Math.max(1, window.innerHeight - stackTop);
+          var progress = Math.max(0, Math.min(1, (window.innerHeight - nextRect.top) / travel));
+          var scale = 1 - progress * 0.13;
+          var rotation = progress * 3;
+
+          c.style.setProperty("--stack-scale", scale.toFixed(4));
+          c.style.setProperty("--stack-rotate", rotation.toFixed(3) + "deg");
+          c.style.setProperty("--stack-dim", (progress * 0.5).toFixed(3));
+          c.classList.toggle("is-stacked", progress > 0.985);
         });
       });
     }

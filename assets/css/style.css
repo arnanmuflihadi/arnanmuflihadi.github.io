@@ -2255,8 +2255,8 @@ body::before { display: none; }
 .editorial-portfolio .card.is-pointer-down .card__media--icon svg { --card-media-scale: 1.035; transition-duration: .18s; }
 
 /* Obscura Services-inspired scroll stack. On motion-capable desktop screens the
-   two content groups become one continuous stack: each project rises over the
-   previous project while its compact title rail remains visible above it. */
+   project cards share one sticky stage. Each incoming card rises over the
+   previous card while that card scales to 87%, tilts 3deg, and darkens. */
 @media (min-width: 1000px) and (prefers-reduced-motion: no-preference) {
   .editorial-portfolio .work__list {
     display: block;
@@ -2270,49 +2270,35 @@ body::before { display: none; }
   .editorial-portfolio .work__group-head--inline { display: none; }
 
   .editorial-portfolio .work__list .card {
-    --stack-tab: 34px;
+    --stack-scale: 1;
+    --stack-rotate: 0deg;
     --stack-dim: 0;
     position: sticky;
-    top: var(--stack-top);
+    top: 64px;
     z-index: var(--stack-z);
-    height: clamp(512px, calc(100svh - 208px), 760px);
+    height: clamp(540px, calc(100svh - 64px), 760px);
     min-height: 0;
     margin-bottom: 0;
-    padding-top: var(--stack-tab);
-    box-shadow: 0 -1px 0 var(--ink), 0 18px 46px rgb(0 0 0 / .08);
+    padding-top: 0;
+    transform: scale(var(--stack-scale)) rotate(var(--stack-rotate)) !important;
+    transform-origin: center bottom;
+    box-shadow: 0 18px 46px rgb(0 0 0 / .08);
     transition: box-shadow .48s cubic-bezier(.16, 1, .3, 1);
+    will-change: transform;
+  }
+
+  .editorial-portfolio .work__list .card:not([data-stack-order="5"]) {
+    margin-bottom: clamp(84px, 18svh, 164px);
   }
 
   .editorial-portfolio .work__list .card::before {
-    content: attr(data-stack-order) " — " attr(data-stack-title);
-    position: absolute;
-    inset: 0 0 auto;
-    z-index: 8;
-    height: var(--stack-tab);
-    display: flex;
-    align-items: center;
-    pointer-events: none;
-    opacity: 1;
-    padding: 0 clamp(18px, 2.2vw, 34px);
-    overflow: hidden;
-    border-top: 1px solid var(--ink);
-    border-bottom: 1px solid var(--ink);
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--font-display);
-    font-size: clamp(15px, 1.35vw, 20px);
-    font-weight: 540;
-    line-height: 1;
-    letter-spacing: -.025em;
-    text-transform: uppercase;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    display: none;
   }
 
   .editorial-portfolio .work__list .card::after {
     content: "";
     position: absolute;
-    inset: var(--stack-tab) 0 0;
+    inset: 0;
     z-index: 7;
     display: block;
     width: auto;
@@ -2323,7 +2309,7 @@ body::before { display: none; }
   }
 
   .editorial-portfolio .work__list .card.is-stacked {
-    box-shadow: 0 -1px 0 var(--ink), 0 12px 28px rgb(0 0 0 / .12);
+    box-shadow: 0 12px 28px rgb(0 0 0 / .14);
   }
 
   .editorial-portfolio .work__list .card__body {
@@ -2337,11 +2323,11 @@ body::before { display: none; }
   .editorial-portfolio .work__list .card__tags { margin-top: 16px; }
   .editorial-portfolio .work__list .card__evidence { margin-top: 12px; }
 
-  .editorial-portfolio .card[data-stack-order="1"] { --stack-top: 64px; --stack-z: 1; }
-  .editorial-portfolio .card[data-stack-order="2"] { --stack-top: 98px; --stack-z: 2; }
-  .editorial-portfolio .card[data-stack-order="3"] { --stack-top: 132px; --stack-z: 3; }
-  .editorial-portfolio .card[data-stack-order="4"] { --stack-top: 166px; --stack-z: 4; }
-  .editorial-portfolio .card[data-stack-order="5"] { --stack-top: 200px; --stack-z: 5; }
+  .editorial-portfolio .card[data-stack-order="1"] { --stack-z: 1; }
+  .editorial-portfolio .card[data-stack-order="2"] { --stack-z: 2; }
+  .editorial-portfolio .card[data-stack-order="3"] { --stack-z: 3; }
+  .editorial-portfolio .card[data-stack-order="4"] { --stack-z: 4; }
+  .editorial-portfolio .card[data-stack-order="5"] { --stack-z: 5; }
 
   .editorial-portfolio .work__list .card:last-child { margin-bottom: 0; }
 }
