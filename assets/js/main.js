@@ -4,6 +4,132 @@
 (function () {
   "use strict";
 
+  /* ---------- Editorial entrance + motion system ---------- */
+  window.requestAnimationFrame(function () {
+    window.requestAnimationFrame(function () {
+      document.documentElement.classList.add("is-ready");
+    });
+  });
+
+  var editorialCards = Array.prototype.slice.call(document.querySelectorAll(".editorial-portfolio .card"));
+  editorialCards.forEach(function (card) {
+    var num = card.querySelector(".num");
+    var body = card.querySelector(".card__body");
+    var title = card.querySelector("h3");
+    if (num && body) body.setAttribute("data-index", num.textContent.trim());
+    if (num && !card.hasAttribute("data-stack-order")) card.setAttribute("data-stack-order", num.textContent.trim());
+    if (title && !card.hasAttribute("data-stack-title")) card.setAttribute("data-stack-title", title.textContent.trim());
+  });
+  if (editorialCards.length && "IntersectionObserver" in window) {
+    var editorialObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          editorialObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    editorialCards.forEach(function (card) { editorialObserver.observe(card); });
+  } else {
+    editorialCards.forEach(function (card) { card.classList.add("in-view"); });
+  }
+
+  var parallaxMedia = document.querySelector("[data-parallax-media]");
+  var reduceEditorialMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (editorialCards.length && !reduceEditorialMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    var viewCursor = document.createElement("div");
+    viewCursor.className = "card-view-cursor";
+    viewCursor.setAttribute("aria-hidden", "true");
+    viewCursor.innerHTML = "<span>View</span>";
+    document.body.appendChild(viewCursor);
+    document.body.classList.add("card-cursor-ready");
+
+    var cursorX = -120;
+    var cursorY = -120;
+    var targetCursorX = -120;
+    var targetCursorY = -120;
+    var cursorFrame = 0;
+    function animateViewCursor() {
+      cursorX += (targetCursorX - cursorX) * .2;
+      cursorY += (targetCursorY - cursorY) * .2;
+      viewCursor.style.setProperty("--cursor-x", cursorX.toFixed(2) + "px");
+      viewCursor.style.setProperty("--cursor-y", cursorY.toFixed(2) + "px");
+      if (viewCursor.classList.contains("is-active") || Math.abs(targetCursorX - cursorX) > .2 || Math.abs(targetCursorY - cursorY) > .2) {
+        cursorFrame = window.requestAnimationFrame(animateViewCursor);
+      } else {
+        cursorFrame = 0;
+      }
+    }
+    function requestViewCursor() {
+      if (!cursorFrame) cursorFrame = window.requestAnimationFrame(animateViewCursor);
+    }
+
+    editorialCards.forEach(function (card) {
+      var media = card.querySelector(".card__media");
+      if (!media) return;
+      media.addEventListener("pointerenter", function (event) {
+        targetCursorX = event.clientX;
+        targetCursorY = event.clientY;
+        viewCursor.classList.add("is-active");
+        requestViewCursor();
+      });
+      media.addEventListener("pointermove", function (event) {
+        targetCursorX = event.clientX;
+        targetCursorY = event.clientY;
+        var rect = media.getBoundingClientRect();
+        var x = Math.max(-1, Math.min(1, ((event.clientX - rect.left) / rect.width - .5) * 2));
+        var y = Math.max(-1, Math.min(1, ((event.clientY - rect.top) / rect.height - .5) * 2));
+        card.style.setProperty("--card-media-x", (x * -12).toFixed(2) + "px");
+        card.style.setProperty("--card-media-y", (y * -9).toFixed(2) + "px");
+        requestViewCursor();
+      });
+      media.addEventListener("pointerleave", function () {
+        viewCursor.classList.remove("is-active", "is-pressed");
+        card.classList.remove("is-pointer-down");
+        card.style.setProperty("--card-media-x", "0px");
+        card.style.setProperty("--card-media-y", "0px");
+      });
+      media.addEventListener("pointerdown", function () {
+        viewCursor.classList.add("is-pressed");
+        card.classList.add("is-pointer-down");
+      });
+      media.addEventListener("pointerup", function () {
+        viewCursor.classList.remove("is-pressed");
+        card.classList.remove("is-pointer-down");
+      });
+    });
+  }
+
+  if (parallaxMedia && !reduceEditorialMotion) {
+    var editorialTicking = false;
+    var mediaX = 0;
+    function updateEditorialMedia() {
+      editorialTicking = false;
+      var progress = Math.min(1, Math.max(0, window.scrollY / Math.max(1, window.innerHeight)));
+      parallaxMedia.style.setProperty("--media-y", (-4 + progress * 8).toFixed(2) + "%");
+      parallaxMedia.style.setProperty("--media-x", mediaX.toFixed(2) + "px");
+    }
+    function requestEditorialMedia() {
+      if (!editorialTicking) {
+        editorialTicking = true;
+        window.requestAnimationFrame(updateEditorialMedia);
+      }
+    }
+    parallaxMedia.addEventListener("pointermove", function (event) {
+      var rect = parallaxMedia.getBoundingClientRect();
+      mediaX = ((event.clientX - rect.left) / rect.width - .5) * 12;
+      requestEditorialMedia();
+    });
+    parallaxMedia.addEventListener("pointerleave", function () {
+      mediaX = 0;
+      requestEditorialMedia();
+    });
+    window.addEventListener("scroll", requestEditorialMedia, { passive: true });
+    window.addEventListener("resize", requestEditorialMedia);
+    updateEditorialMedia();
+  }
+
   /* ---------- Theme (light/dark, persisted) ---------- */
   var root = document.documentElement;
   var stored = localStorage.getItem("theme");
@@ -16,10 +142,20 @@
     var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", next);
     localStorage.setItem("theme", next);
+    syncThemeControls();
+  }
+  function syncThemeControls() {
+    var dark = root.getAttribute("data-theme") === "dark";
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
+      button.setAttribute("aria-pressed", dark ? "true" : "false");
+      button.setAttribute("aria-label", dark ? "Use light mode" : "Use dark mode");
+      button.setAttribute("title", dark ? "Use light mode" : "Use dark mode");
+    });
   }
   document.querySelectorAll("[data-theme-toggle]").forEach(function (b) {
     b.addEventListener("click", toggleTheme);
   });
+  syncThemeControls();
 
   /* ---------- Navbar: scrolled state + mobile menu ---------- */
   var nav = document.querySelector(".nav");
@@ -114,13 +250,18 @@
   /* ---------- Stacked-card depth (Selected Work) ---------- */
   var lists = Array.prototype.slice.call(document.querySelectorAll(".work__list"));
   if (lists.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    var mqDesk = window.matchMedia("(min-width: 760px)");
-    var groups = lists.map(function (l) { return Array.prototype.slice.call(l.querySelectorAll(".card")); });
+    var mqDesk = window.matchMedia("(min-width: 1000px)");
+    var groups = document.body.classList.contains("editorial-portfolio")
+      ? [editorialCards]
+      : lists.map(function (l) { return Array.prototype.slice.call(l.querySelectorAll(".card")); });
     var ticking = false;
 
     function clear() {
       groups.forEach(function (cards) {
-        cards.forEach(function (c) { c.style.removeProperty("--cs"); c.style.removeProperty("--co"); });
+        cards.forEach(function (c) {
+          c.style.removeProperty("--stack-dim");
+          c.classList.remove("is-stacked");
+        });
       });
     }
     function apply() {
@@ -135,8 +276,8 @@
         cards.forEach(function (c, i) {
           var depth = 0;
           for (var j = i + 1; j < cards.length; j++) { if (pinned[j]) depth++; }
-          c.style.setProperty("--cs", (Math.max(0.88, 1 - depth * 0.04)).toFixed(3));
-          c.style.setProperty("--co", (Math.max(0.5, 1 - depth * 0.16)).toFixed(3));
+          c.style.setProperty("--stack-dim", (Math.min(0.34, depth * 0.12)).toFixed(3));
+          c.classList.toggle("is-stacked", depth > 0);
         });
       });
     }
@@ -144,8 +285,12 @@
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
+    window.addEventListener("load", onScroll, { once: true });
+    window.addEventListener("pageshow", onScroll);
     if (mqDesk.addEventListener) mqDesk.addEventListener("change", apply);
     apply();
+    window.requestAnimationFrame(apply);
+    window.setTimeout(onScroll, 180);
   }
 
   /* ---------- Contact form (AJAX submit with loading/success/error states) ---------- */
