@@ -625,7 +625,7 @@
 
   if (staticOnly) {
     scrolly.classList.add("is-static-manual");
-    if (status) status.textContent = "Static/manual story. Full kelurahan geometry is intentionally not loaded in the case shell; source-supported figures and the explicit map remain available below.";
+    if (status) status.textContent = "Static accessibility figure — load the interactive map below for live geometry.";
     dispatchStoryEvent("story:layout", { mapReady: false, static: true });
     dispatchStoryEvent("story:ready", { mapReady: false, static: true });
     return;

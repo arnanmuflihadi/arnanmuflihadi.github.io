@@ -1,7 +1,19 @@
 /* Shared motion lifecycle: GSAP/ScrollTrigger own presentational scroll state. */
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  const walkFrames = ['01', '02', '03', '04', '05', '06'];
+  // Order is NOT the source filenames' numbering: these six frames are
+  // independent illustration variants, not a rotoscoped cycle, so playing
+  // them 01->06 jumps the stride width around non-monotonically (measured
+  // silhouette widths: 390,340,197,314,413,213px) and reads as a leg twitch.
+  // Sorted by measured stride width (narrowest/legs-crossed to widest/full
+  // stride), the ping-pong below opens and closes the stride smoothly.
+  const walkFrames = ['03', '06', '04', '02', '01', '05'];
+  // Real strides pause briefly at full contact (weight transfer) and snap
+  // quickly through the crossed-leg passing position -- holding every
+  // frame for an equal beat is what makes a walk cycle read as mechanical.
+  // 03 is the narrowest/passing pose, 05 the widest/contact pose (see
+  // widths above), so the sequence's two ends get the beat weighted.
+  const walkFrameBeats = { '03': 0.7, '06': 1, '04': 1, '02': 1, '01': 1, '05': 1.5 };
   const walkFrameSource = (frame) => `assets/img/redesign/analyst-walk-${frame}.webp`;
   const walkIdleSource = 'assets/img/redesign/analyst-walk-01-idle.webp';
   let ctx = null;
@@ -180,7 +192,7 @@
       walk.call(() => {
         sprite.src = walkFrameSource(frame);
         sprite.dataset.frame = frame;
-      }).to({}, { duration: frameDuration });
+      }).to({}, { duration: frameDuration * (walkFrameBeats[frame] || 1) });
     });
     // A small per-step bob sells the weight of each stride without needing
     // more art frames -- two bounces per ping-pong lap, roughly one per foot.

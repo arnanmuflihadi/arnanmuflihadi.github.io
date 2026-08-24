@@ -3040,7 +3040,13 @@ body[data-project] .story-map-card {
   background: rgba(9,11,11,.88);
 }
 body[data-project] .story-pane img,
-body[data-project] .story-image { background: #111413; }
+body[data-project] .story-image {
+  /* The source charts/maps render on white; matching this mat to the
+     near-black stage (as before) left them floating with no frame at
+     all, which read as a broken image rather than a presented figure. */
+  background: #f2ede0;
+  box-shadow: inset 0 0 0 1px rgba(9, 11, 11, .1);
+}
 body[data-project] .story-progress,
 body[data-project] .scrolly-static-stepnav {
   gap: 5px;

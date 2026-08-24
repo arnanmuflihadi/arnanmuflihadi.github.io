@@ -696,7 +696,7 @@
     if (staticOnly) {
       root.classList.add("is-static-manual");
       var staticStatus = $("[data-story-status]", root);
-      if (staticStatus) staticStatus.textContent = "Static/manual story. Full GeoJSON display geometry is intentionally not loaded on this page.";
+      if (staticStatus) staticStatus.textContent = "Static network figure — load the interactive map below for live geometry.";
       announceStoryLayout(root, story, "pangan-static-manual");
       return;
     }

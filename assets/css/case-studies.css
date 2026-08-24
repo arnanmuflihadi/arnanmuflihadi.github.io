@@ -253,3 +253,96 @@ body[data-project="cbd"] { --case-evidence-accent: #a74e38; }
   .dflow__link-line { height: 100%; width: 2px; margin: 0 auto; }
   .dflow__link-dot { margin: 0; position: relative; left: -2px; }
 }
+
+/* Click-to-load map embed (Jakarta/Indonesia/transit/pangan interactive
+   maps): a poster image plus a call-to-action veil in front of an iframe
+   that only fetches on request. Two different hosts use this component --
+   nested in a .story-pane (CBD's Jakarta/Indonesia panes), where it needs
+   its own height:100% to give the veil/poster something to inset:0
+   against, and standalone as a .dash-embed .figure (transit/pangan), which
+   already sets its own fixed height + position:relative and must keep it.
+   Scoping height/position to the .story-pane case only avoids fighting
+   .dash-embed's sizing. Neither host had any CSS for the poster image or
+   the veil at all, so the veil stayed position:static while whatever DID
+   pick up position:absolute (the .story-pane img rule, or nothing on
+   .dash-embed) rendered the CTA and status text either fully hidden
+   behind the poster or blown out to the image's native pixel size. The
+   veil is pointer-events:none except its own children, so the mostly-
+   transparent top/middle keeps the poster (and, once loaded, the live
+   map) visible and interactive; only the bottom caption strip stays
+   opaque and clickable. */
+.story-pane .explicit-embed { height: 100%; position: relative; width: 100%; }
+.explicit-embed__poster {
+  border: 0;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+.explicit-embed__veil {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  inset: 0;
+  justify-content: flex-end;
+  padding: clamp(16px, 2.6vw, 30px);
+  /* .story-map-card is a persistent bottom-left KPI overlay (z-index: 4)
+     shared by every step on this page, not just the embed panes -- clear
+     it so the load button isn't sitting invisibly underneath it. */
+  padding-bottom: clamp(112px, 16vw, 150px);
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  background: linear-gradient(180deg, transparent 0%, transparent 42%, rgba(9, 11, 11, .62) 62%, rgba(9, 11, 11, .96) 78%, rgba(9, 11, 11, .97) 100%);
+}
+.explicit-embed__veil > * { pointer-events: auto; }
+.explicit-embed__kicker {
+  color: var(--accent);
+  font: 600 11px/1 var(--font-mono);
+  letter-spacing: .08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+.explicit-embed__veil > p:not(.explicit-embed__kicker):not(.explicit-embed__status) {
+  color: rgba(242, 237, 224, .82);
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 46ch;
+}
+.explicit-embed__actions { align-items: center; display: flex; flex-wrap: wrap; gap: 16px; }
+.explicit-embed__load {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #15130f;
+  cursor: pointer;
+  font: 600 11px/1 var(--font-mono);
+  letter-spacing: .06em;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  transition: background var(--dur-2, .2s) var(--ease, ease), transform var(--dur-2, .2s) var(--ease, ease);
+}
+.explicit-embed__load:hover,
+.explicit-embed__load:focus-visible { background: #f2ede0; transform: translateY(-1px); }
+.explicit-embed__load:disabled { cursor: default; opacity: .55; transform: none; }
+.explicit-embed__open {
+  color: #f2ede0;
+  font: 600 11px/1 var(--font-mono);
+  letter-spacing: .06em;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-underline-offset: 3px;
+}
+.explicit-embed__status {
+  color: rgba(242, 237, 224, .55);
+  font: 500 11px/1.4 var(--font-mono);
+  margin: 0;
+}
+/* Once the live map has loaded it has its own legend/controls competing
+   for the same space -- the teaser copy has done its job, so it fades
+   out fully rather than lingering as ghost text over the real UI. */
+.explicit-embed__veil { transition: opacity .3s var(--emph, ease); }
+.explicit-embed[data-embed-state="loaded"] .explicit-embed__veil { opacity: 0; pointer-events: none; }
