@@ -66,29 +66,23 @@
 [data-hero-route-stop] { fill: var(--surface); stroke: var(--accent); stroke-width: 2; transform-box: fill-box; transform-origin: 50% 50%; }
 
 .hero-walker {
-  bottom: 14%;
+  bottom: 0;
   display: block;
-  height: 30%;
+  height: 94%;
   left: 8%;
   position: absolute;
   transform-origin: 50% 100%;
   width: auto;
   z-index: 3;
 }
-.walker-figure { display: block; height: 100%; overflow: visible; width: auto; }
-.walker-figure__head,
-.walker-figure__torso,
-.walker-figure__leg rect,
-.walker-figure__arm rect { fill: var(--ink); }
-.walker-figure__shadow { fill: var(--ink); opacity: .16; }
-.walker-figure__thigh,
-.walker-figure__shin,
-.walker-figure__arm { transform-box: fill-box; transform-origin: 50% 0%; }
-.walker-figure__leg[data-leg="back"] .walker-figure__thigh { transform: rotate(-20deg); }
-.walker-figure__leg[data-leg="front"] .walker-figure__thigh { transform: rotate(18deg); }
-.walker-figure__shin { transform: rotate(8deg); }
-.walker-figure__arm[data-arm="back"] { transform: rotate(15deg); }
-.walker-figure__arm[data-arm="front"] { transform: rotate(-15deg); }
+.analyst-sprite {
+  display: block;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  transform-origin: 50% 100%;
+  width: auto;
+}
 
 /* ---------- expertise marquee ---------- */
 .expertise-marquee { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); min-height: 72px; overflow: hidden; position: relative; }
@@ -177,7 +171,7 @@
   .spatial-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); }
   .spatial-hero__lede { font-size: var(--fs-sm); max-width: none; }
   .spatial-hero__strip { height: 96px; }
-  .hero-walker { height: 34%; left: 6%; }
+  .hero-walker { height: 88%; left: 6%; }
   .expertise-marquee__track { font-size: 1.1rem; }
   .home-selected-work { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
   .about-bridge { gap: 32px; padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }

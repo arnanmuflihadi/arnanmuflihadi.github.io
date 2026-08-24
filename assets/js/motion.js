@@ -1,6 +1,9 @@
 /* Shared motion lifecycle: GSAP/ScrollTrigger own presentational scroll state. */
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const walkFrames = ['01', '02', '03', '04', '05', '06'];
+  const walkFrameSource = (frame) => `assets/img/redesign/analyst-walk-${frame}.webp`;
+  const walkIdleSource = 'assets/img/redesign/analyst-walk-01-idle.webp';
   let ctx = null;
   let lenis = null;
   let ticker = null;
@@ -64,13 +67,17 @@
 
   function resetHeroStatic() {
     const walker = document.querySelector('[data-hero-walker]');
+    const sprite = document.querySelector('.analyst-sprite');
     if (!walker) return;
     walker.style.removeProperty('transform');
     walker.style.removeProperty('will-change');
-    walker.querySelectorAll('.walker-figure__leg, .walker-figure__arm').forEach((limb) => {
-      limb.style.removeProperty('transform');
-      limb.style.removeProperty('will-change');
-    });
+    walker.style.removeProperty('left');
+    if (sprite) {
+      sprite.src = walkIdleSource;
+      sprite.dataset.frame = walkFrames[0];
+      sprite.style.removeProperty('transform');
+      sprite.style.removeProperty('will-change');
+    }
   }
 
   function resetAmbientToggle() {
@@ -117,13 +124,7 @@
 
   function createHeroMotion(gsap, ScrollTrigger, hero, media) {
     const walker = media.querySelector('[data-hero-walker]');
-    const figure = media.querySelector('.walker-figure');
-    const thighBack = media.querySelector('[data-joint="thigh-back"]');
-    const thighFront = media.querySelector('[data-joint="thigh-front"]');
-    const shinBack = media.querySelector('[data-joint="shin-back"]');
-    const shinFront = media.querySelector('[data-joint="shin-front"]');
-    const armBack = media.querySelector('.walker-figure__arm[data-arm="back"]');
-    const armFront = media.querySelector('.walker-figure__arm[data-arm="front"]');
+    const sprite = media.querySelector('.analyst-sprite');
     const route = media.querySelector('.hero-route__line');
     const routeProgress = media.querySelector('[data-hero-route-progress]');
     const stops = gsap.utils.toArray('[data-hero-route-stop]');
@@ -131,22 +132,22 @@
     const skylineBack = media.querySelector('[data-parallax="back"]');
     const skylineMid = media.querySelector('[data-parallax="mid"]');
     const skylineFront = media.querySelector('[data-parallax="front"]');
-    if (!walker || !figure) return;
+    if (!walker || !sprite) return;
 
     const isDesktop = desktop();
     const isCompact = compact();
     const repeats = isDesktop ? -1 : 1;
     const journeyEnd = isDesktop ? '82%' : (isCompact ? '68%' : '52%');
     const journeyDuration = isDesktop ? 15 : (isCompact ? 11 : 8);
-    const strideDuration = isDesktop ? 0.36 : 0.44;
+    const frameDuration = isDesktop ? 0.1 : 0.13;
     let travellingRight = true;
     const motions = [];
 
     // Travel belongs to the wrapper (positioned via CSS `left`, relative to
-    // the full strip width); the figure keeps a stable baseline and only
-    // flips to face the actual yoyo direction. Limbs are vector shapes with
-    // a real thigh/knee/shin hinge -- no raster frames to swap or preload.
-    gsap.set(figure, { scaleX: 1, transformOrigin: '50% 50%', willChange: 'transform' });
+    // the full strip width); the illustrated sprite keeps a stable baseline
+    // and only swaps frame / flips to face the actual yoyo direction.
+    gsap.set(walker, { willChange: 'transform' });
+    gsap.set(sprite, { scaleX: 1, transformOrigin: '50% 100%', willChange: 'transform' });
     gsap.set(stops, { scale: 1 });
     if (route) gsap.set(route, { autoAlpha: 0.3 });
     // SVG pathLength is unitless; use attributes instead of CSS pixel values
@@ -165,46 +166,15 @@
         .to(walker, { autoAlpha: 1, duration: 0.5 }, 0.4);
     }
 
-    // Walk cycle: thigh and shin swing on independent multi-point curves so
-    // the knee visibly bends through the swing phase and straightens near
-    // footstrike, rather than the whole leg pivoting as one rigid segment.
-    // The back leg runs the identical curve exactly half a cycle behind the
-    // front leg, written out explicitly rather than computed, so the phase
-    // relationship is easy to verify at a glance.
-    const stride = gsap.timeline({ paused: true, repeat: -1, defaults: { ease: 'sine.inOut', duration: strideDuration } });
-    if (thighBack && thighFront && shinBack && shinFront && armBack && armFront) {
-      const d = strideDuration;
-      const at = (steps) => steps * d;
-      // Front leg: plant (back) -> lift -> forward (plant) -> lift -> plant.
-      stride
-        .to(thighFront, { rotation: -20 }, at(0))
-        .to(thighFront, { rotation: 4 }, at(1))
-        .to(thighFront, { rotation: 20 }, at(2))
-        .to(thighFront, { rotation: 4 }, at(3))
-        .to(thighFront, { rotation: -20 }, at(4))
-        .to(shinFront, { rotation: 6 }, at(0))
-        .to(shinFront, { rotation: 42 }, at(1))
-        .to(shinFront, { rotation: 6 }, at(2))
-        .to(shinFront, { rotation: 12 }, at(3))
-        .to(shinFront, { rotation: 6 }, at(4))
-        // Back leg: same shape, offset by two steps (half the four-step cycle).
-        .to(thighBack, { rotation: 20 }, at(0))
-        .to(thighBack, { rotation: 4 }, at(1))
-        .to(thighBack, { rotation: -20 }, at(2))
-        .to(thighBack, { rotation: 4 }, at(3))
-        .to(thighBack, { rotation: 20 }, at(4))
-        .to(shinBack, { rotation: 6 }, at(0))
-        .to(shinBack, { rotation: 12 }, at(1))
-        .to(shinBack, { rotation: 6 }, at(2))
-        .to(shinBack, { rotation: 42 }, at(3))
-        .to(shinBack, { rotation: 6 }, at(4))
-        .to(armFront, { rotation: 15 }, at(0))
-        .to(armFront, { rotation: -15 }, at(2))
-        .to(armFront, { rotation: 15 }, at(4))
-        .to(armBack, { rotation: -15 }, at(0))
-        .to(armBack, { rotation: 15 }, at(2))
-        .to(armBack, { rotation: -15 }, at(4));
-    }
+    // Walk cycle: the illustrated frame sequence, preloaded before it is
+    // ever added to the ambient rotation so the first swap never pops in.
+    const walk = gsap.timeline({ paused: true, repeat: repeats });
+    walkFrames.forEach((frame) => {
+      walk.call(() => {
+        sprite.src = walkFrameSource(frame);
+        sprite.dataset.frame = frame;
+      }).to({}, { duration: frameDuration });
+    });
 
     const journey = gsap.timeline({
       paused: true,
@@ -212,7 +182,7 @@
       yoyo: true,
       onRepeat: () => {
         travellingRight = !travellingRight;
-        gsap.set(figure, { scaleX: travellingRight ? 1 : -1 });
+        gsap.set(sprite, { scaleX: travellingRight ? 1 : -1 });
       }
     });
     journey.to(walker, { left: journeyEnd, duration: journeyDuration, ease: 'sine.inOut' }, 0);
@@ -227,7 +197,7 @@
         ease: 'sine.inOut'
       }, 0);
     }
-    motions.push(journey, stride);
+    motions.push(journey);
 
     if (isDesktop && skylineBack && skylineMid && skylineFront) {
       motions.push(gsap.to(skylineBack, {
@@ -258,7 +228,25 @@
       if (skylineMid) gsap.to(skylineMid, { y: -34, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
       if (skylineFront) gsap.to(skylineFront, { y: -54, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
     }
-    registerAmbient(motions, hero, ScrollTrigger);
+    const heroEntry = registerAmbient(motions, hero, ScrollTrigger);
+    let walkCancelled = false;
+    const walkTimer = window.setTimeout(() => {
+      const preload = walkFrames.map((frame) => new Promise((resolve) => {
+        const image = new Image();
+        image.onload = resolve;
+        image.onerror = resolve;
+        image.src = walkFrameSource(frame);
+      }));
+      Promise.all(preload).then(() => {
+        if (walkCancelled) return;
+        heroEntry.items.push(walk);
+        updateAmbientPlayback();
+      });
+    }, 200);
+    cleanup.push(() => {
+      walkCancelled = true;
+      clearTimeout(walkTimer);
+    });
   }
 
   function createMarqueeMotion(gsap, ScrollTrigger) {
