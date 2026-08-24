@@ -1297,7 +1297,18 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .story-progress button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .story-map-svg, .story-chart-svg { width: 100%; height: 100%; display: block; }
 .story-map-svg { background: color-mix(in srgb, var(--sc-high) 88%, var(--surface)); }
-.story-static-poster { display: none; height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; z-index: 1; }
+.story-static-poster {
+  display: none; height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; z-index: 1;
+  /* The per-step layer SVG this stage was built for stays deliberately
+     empty in static mode (see .is-static-manual rules below), so the
+     --scrolly-scale/--scrolly-pan-* custom properties motion.js already
+     sets per step (inherited from .scrolly-static-stage) are applied
+     here instead -- the one static photo, not an empty vector layer,
+     is what actually gets the Ken-Burns move as the story advances. */
+  transform: translate(var(--scrolly-pan-x, 0%), var(--scrolly-pan-y, 0%)) scale(var(--scrolly-scale, 1));
+  transform-origin: 50% 50%;
+  transition: transform 1.1s var(--ease);
+}
 .project-story.is-static-manual .story-static-poster,
 .transit-scrolly.is-static-manual .story-static-poster { display: block; }
 .project-story.is-static-manual .story-map-svg,

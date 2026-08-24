@@ -514,9 +514,15 @@
 
     function attach(root) {
       if (!root || root.dataset.motionStoryBound === 'true') return;
-      // Oversized source geometry is deliberately shipped as a static/manual
-      // story. Native chapter buttons remain the only state owner there.
-      if (root.hasAttribute('data-static-story')) return;
+      // data-static-story only skips the multi-MB live GeoJSON fetch (see
+      // scrolly-stories.js/scrolly-transit-static.js) -- the empty map
+      // layers it leaves behind are already hidden by .is-static-manual
+      // CSS. controller.activate()/setActive() never touches that fetch,
+      // it just toggles the (cheap, already-rendered) KPI card, kicker,
+      // legend caption and progress bar, so scroll-driven sync is just as
+      // safe here as on the fully dynamic case studies. Without this, the
+      // step text keeps advancing on scroll while the whole visual panel
+      // sits frozen on step one -- a static story that never seems to move.
       const controller = root.storyController || (root.matches('[data-transit-scrolly]') ? window.transitStory : null);
       const steps = Array.from(root.querySelectorAll('[data-scrolly-step], .story-step'));
       if (!controller || typeof controller.activate !== 'function' || !steps.length) return;
