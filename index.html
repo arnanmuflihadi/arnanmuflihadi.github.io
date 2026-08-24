@@ -6,7 +6,7 @@
 <meta name="description" content="Geospatial analysis for urban systems: transit access, food networks, earth observation, and spatial clustering.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<script>!function(){"use strict";try{var e=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",e==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}}();</script><script>!function(){"use strict";try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&!sessionStorage.getItem("portfolio:welcome-seen")){document.documentElement.classList.add("welcome-intro-pending");window.__welcomeFailSafe=setTimeout(function(){document.documentElement.classList.remove("welcome-intro-pending")},2400)}}catch(e){}}();</script><link rel="stylesheet" href="assets/css/tokens.css?v=1"><link rel="stylesheet" href="assets/css/base.css?v=1"><link rel="stylesheet" href="assets/css/home.css?v=1"><link rel="stylesheet" href="assets/css/motion.css?v=7"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<script>!function(){"use strict";try{var e=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",e==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}}();</script><script>!function(){"use strict";try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&!sessionStorage.getItem("portfolio:welcome-seen")){document.documentElement.classList.add("welcome-intro-pending");window.__welcomeFailSafe=setTimeout(function(){document.documentElement.classList.remove("welcome-intro-pending")},2400)}}catch(e){}}();</script><link rel="stylesheet" href="assets/css/tokens.css?v=1"><link rel="stylesheet" href="assets/css/base.css?v=1"><link rel="stylesheet" href="assets/css/home.css?v=1"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 </head>
 <body id="top" class="redesign home-page">
 <div class="welcome-intro" data-welcome-intro aria-hidden="true"><div class="welcome-intro__panels"><span></span><span></span></div><div class="welcome-intro__content"><p class="eyebrow">ARNAN MUFLIHADI / SPATIAL PRACTICE</p><p class="welcome-intro__word" data-welcome-word>Arriving.</p><p class="welcome-intro__note" data-welcome-note>Plotting a route through the work</p><span class="welcome-intro__track" data-welcome-track><span class="welcome-intro__track-fill" data-welcome-track-fill></span></span></div></div>
@@ -23,10 +23,10 @@
 <aside class="journey-rail" aria-hidden="true" data-journey-rail>
   <div class="journey-rail__line"><span class="journey-rail__progress" data-journey-progress></span></div>
   <ol class="journey-rail__stops">
-    <li data-journey-stop><span class="journey-rail__dot"></span><span class="journey-rail__label">Home</span></li>
-    <li data-journey-stop><span class="journey-rail__dot"></span><span class="journey-rail__label">Work</span></li>
-    <li data-journey-stop><span class="journey-rail__dot"></span><span class="journey-rail__label">About</span></li>
-    <li data-journey-stop><span class="journey-rail__dot"></span><span class="journey-rail__label">Contact</span></li>
+    <li data-journey-stop data-target="[data-hero-stage]" style="--stop-top:0%"><span class="journey-rail__dot"></span><span class="journey-rail__label">Home</span></li>
+    <li data-journey-stop data-target="[data-work-rail]" style="--stop-top:33.33%"><span class="journey-rail__dot"></span><span class="journey-rail__label">Work</span></li>
+    <li data-journey-stop data-target="[data-about-bridge]" style="--stop-top:66.66%"><span class="journey-rail__dot"></span><span class="journey-rail__label">About</span></li>
+    <li data-journey-stop data-target=".contact-cta" style="--stop-top:100%"><span class="journey-rail__dot"></span><span class="journey-rail__label">Contact</span></li>
   </ol>
 </aside>
 <main id="main" tabindex="-1">
@@ -101,7 +101,16 @@
       <use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-01"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-02"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-03"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-04"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-05"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-06"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-07"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-08"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-09"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-10"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-11"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-12"></use>
       <path data-hero-route-progress pathLength="1" d="M533.2 82.8L527.7 76.8L614 71L637.2 89.5L591.8 93.3L589.2 94.3L660.3 147.4L674.5 161.2L669.3 162.2L698.5 190.2L707.5 192L787.8 268.8L800.5 273.1L821.5 275.4L828 277.8L823.8 321.6L829.3 326.1L825.5 329.2L830 355.4L827.5 396.2L830 399.9L839 403.6L829.7 407.6L830.5 437L812.7 454.1L795.5 480.2L760.2 495.7L725.3 506.9L680.7 515.6L477 550.3L405.5 560.4L247.3 586.1L242.2 589.5L224.2 594L214.7 601.1L214 659.3L226.5 662.2L247 664.2L292.7 664.2"></path>
     </svg>
-    <span class="hero-walker" data-hero-walker aria-hidden="true"><img class="analyst-sprite" src="assets/img/redesign/analyst-walk-01-idle.webp" width="320" height="515" alt="" decoding="async"></span>
+    <span class="hero-walker" data-hero-walker aria-hidden="true">
+      <svg class="walker-figure" viewBox="0 0 40 66" width="40" height="66" focusable="false">
+        <g class="walker-figure__leg" data-leg="back"><rect x="15" y="43" width="5" height="21" rx="2.5"/></g>
+        <g class="walker-figure__leg" data-leg="front"><rect x="20" y="43" width="5" height="21" rx="2.5"/></g>
+        <g class="walker-figure__arm" data-arm="back"><rect x="9" y="18" width="4.5" height="18" rx="2.25"/></g>
+        <rect class="walker-figure__torso" x="12.5" y="16" width="15" height="27" rx="7.5"/>
+        <g class="walker-figure__arm" data-arm="front"><rect x="26.5" y="18" width="4.5" height="18" rx="2.25"/></g>
+        <circle class="walker-figure__head" cx="20" cy="9" r="7.5"/>
+      </svg>
+    </span>
   </figure>
 </section>
   <section class="expertise-marquee" aria-label="Areas of practice" data-ambient-stage><div class="expertise-marquee__track">NETWORK ACCESS <i>·</i> FOOD SYSTEMS <i>·</i> EARTH OBSERVATION <i>·</i> URBAN MORPHOLOGY <i>·</i> SPATIAL CLUSTERING <i>·</i></div><button class="ambient-toggle" type="button" data-ambient-toggle aria-pressed="false">Ambient motion <span>On</span></button></section>

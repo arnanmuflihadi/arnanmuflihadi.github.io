@@ -228,3 +228,28 @@ body[data-project="cbd"] { --case-evidence-accent: #a74e38; }
   .case-evidence *,
   .case-study-page .dflow * { transition: none !important; animation: none !important; }
 }
+
+/* Method pipeline connectors: a drawn route segment between phases,
+   replacing the static arrow glyph, built by motion.js at runtime. */
+.dflow__link { flex: 0 0 32px; }
+.dflow__link .ms { display: none; }
+.dflow__link-line {
+  background: var(--accent);
+  border-radius: var(--r-full);
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+.dflow__link-dot {
+  background: var(--accent);
+  border-radius: 50%;
+  display: block;
+  height: 6px;
+  margin: -6px auto 0;
+  width: 6px;
+}
+@media (max-width: 980px) {
+  .dflow__link { flex: 0 0 20px; height: 20px; }
+  .dflow__link-line { height: 100%; width: 2px; margin: 0 auto; }
+  .dflow__link-dot { margin: 0; position: relative; left: -2px; }
+}

@@ -63,8 +63,18 @@
 .route-overlay use { transform-box: fill-box; transform-origin: center; }
 [data-hero-route-progress] { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.5; opacity: .85; }
 
-.hero-walker { bottom: 12%; display: block; height: 14%; left: 44%; position: absolute; transform-origin: 50% 100%; width: auto; z-index: 3; }
-.hero-walker .analyst-sprite { display: block; height: 100%; max-width: none; object-fit: contain; transform-origin: 50% 100%; width: auto; }
+.hero-walker { bottom: 12%; display: block; height: 9%; left: 44%; position: absolute; transform-origin: 50% 100%; width: auto; z-index: 3; }
+.walker-figure { display: block; height: 100%; overflow: visible; width: auto; }
+.walker-figure__head,
+.walker-figure__torso,
+.walker-figure__leg rect,
+.walker-figure__arm rect { fill: var(--ink); }
+.walker-figure__leg,
+.walker-figure__arm { transform-box: fill-box; transform-origin: 50% 0%; }
+.walker-figure__leg[data-leg="back"] { transform: rotate(-17deg); }
+.walker-figure__leg[data-leg="front"] { transform: rotate(17deg); }
+.walker-figure__arm[data-arm="back"] { transform: rotate(15deg); }
+.walker-figure__arm[data-arm="front"] { transform: rotate(-15deg); }
 
 /* ---------- expertise marquee ---------- */
 .expertise-marquee { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); min-height: 72px; overflow: hidden; position: relative; }

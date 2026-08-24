@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/css/base.css?v=1">
 <link rel="stylesheet" href="assets/css/style.css?v=70">
 <link rel="stylesheet" href="assets/css/pages.css?v=1">
-<link rel="stylesheet" href="assets/css/motion.css?v=7">
+
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About · Arnan Muflihadi">
@@ -36,6 +36,15 @@
     <a href="portfolio.html">WORK</a><a href="about.html" aria-current="page">ABOUT</a><a href="contact.html">CONTACT</a><button class="theme-toggle" data-theme-toggle aria-label="Toggle colour theme"><span aria-hidden="true">◐</span></button><button class="nav-close" type="button" data-nav-close>Close <span aria-hidden="true">×</span></button>
   </nav><button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
 </header>
+<aside class="journey-rail" aria-hidden="true" data-journey-rail>
+  <div class="journey-rail__line"><span class="journey-rail__progress" data-journey-progress></span></div>
+  <ol class="journey-rail__stops">
+    <li data-journey-stop data-target=".portfolio-hero" style="--stop-top:0%"><span class="journey-rail__dot"></span><span class="journey-rail__label">Profile</span></li>
+    <li data-journey-stop data-target=".about__grid" style="--stop-top:33.33%"><span class="journey-rail__dot"></span><span class="journey-rail__label">Bio</span></li>
+    <li data-journey-stop data-target="[data-about-flow]" style="--stop-top:66.66%"><span class="journey-rail__dot"></span><span class="journey-rail__label">Experience</span></li>
+    <li data-journey-stop data-target=".route-coda" style="--stop-top:100%"><span class="journey-rail__dot"></span><span class="journey-rail__label">Contact</span></li>
+  </ol>
+</aside>
 <main id="main" tabindex="-1">
   <header class="portfolio-hero section-shell">
     <svg class="page-route-motif" data-page-route viewBox="0 0 620 210" aria-hidden="true"><path data-page-route-line d="M16 164C86 164 98 72 178 72s75 89 151 89 85-98 162-98 73 49 113 49" pathLength="1"/><circle cx="16" cy="164" r="5"/><circle cx="178" cy="72" r="5"/><circle cx="329" cy="161" r="5"/><circle cx="491" cy="63" r="5"/><circle cx="604" cy="112" r="5"/></svg>

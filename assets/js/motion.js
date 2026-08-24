@@ -1,9 +1,6 @@
 /* Shared motion lifecycle: GSAP/ScrollTrigger own presentational scroll state. */
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  const frames = ['01', '02', '03', '04', '05', '06'];
-  const frameSource = (frame) => `assets/img/redesign/analyst-walk-${frame}.webp`;
-  const idleFrameSource = 'assets/img/redesign/analyst-walk-01-idle.webp';
   let ctx = null;
   let lenis = null;
   let ticker = null;
@@ -66,15 +63,14 @@
   }
 
   function resetHeroStatic() {
-    const sprite = document.querySelector('.analyst-sprite');
-    if (!sprite) return;
     const walker = document.querySelector('[data-hero-walker]');
-    sprite.src = idleFrameSource;
-    sprite.dataset.frame = frames[0];
-    sprite.style.removeProperty('transform');
-    sprite.style.removeProperty('will-change');
-    walker?.style.removeProperty('transform');
-    walker?.style.removeProperty('will-change');
+    if (!walker) return;
+    walker.style.removeProperty('transform');
+    walker.style.removeProperty('will-change');
+    walker.querySelectorAll('.walker-figure__leg, .walker-figure__arm').forEach((limb) => {
+      limb.style.removeProperty('transform');
+      limb.style.removeProperty('will-change');
+    });
   }
 
   function resetAmbientToggle() {
@@ -121,7 +117,11 @@
 
   function createHeroMotion(gsap, ScrollTrigger, hero, media) {
     const walker = media.querySelector('[data-hero-walker]');
-    const sprite = media.querySelector('.analyst-sprite');
+    const figure = media.querySelector('.walker-figure');
+    const legBack = media.querySelector('.walker-figure__leg[data-leg="back"]');
+    const legFront = media.querySelector('.walker-figure__leg[data-leg="front"]');
+    const armBack = media.querySelector('.walker-figure__arm[data-arm="back"]');
+    const armFront = media.querySelector('.walker-figure__arm[data-arm="front"]');
     const route = media.querySelector('.route-overlay use:first-child');
     const routeProgress = media.querySelector('[data-hero-route-progress]');
     const stops = gsap.utils.toArray('.route-overlay use:not(:first-child)');
@@ -129,21 +129,22 @@
     const skylineBack = media.querySelector('[data-parallax="back"]');
     const skylineMid = media.querySelector('[data-parallax="mid"]');
     const skylineFront = media.querySelector('[data-parallax="front"]');
-    if (!walker || !sprite) return;
+    if (!walker || !figure) return;
 
     const isDesktop = desktop();
     const isCompact = compact();
     const repeats = isDesktop ? -1 : 1;
     const journeyDistance = isDesktop ? 150 : (isCompact ? 90 : 42);
     const journeyDuration = isDesktop ? 9.4 : (isCompact ? 7 : 5.7);
-    const frameDuration = isDesktop ? 0.105 : 0.14;
+    const strideDuration = isDesktop ? 0.32 : 0.4;
     let travellingRight = true;
     const motions = [];
 
-    // Travel belongs to the wrapper; the artwork keeps a stable baseline and
-    // only swaps frame / flips to face the actual yoyo direction.
+    // Travel belongs to the wrapper; the figure keeps a stable baseline and
+    // only flips to face the actual yoyo direction. Limbs are simple
+    // rotating vector shapes -- no raster frames to swap or preload.
     gsap.set(walker, { xPercent: 0, transformOrigin: '50% 100%', willChange: 'transform' });
-    gsap.set(sprite, { scaleX: 1, transformOrigin: '50% 100%', willChange: 'transform' });
+    gsap.set(figure, { scaleX: 1, transformOrigin: '50% 50%', willChange: 'transform' });
     gsap.set(stops, { scale: 1, transformOrigin: '50% 50%' });
     if (route) gsap.set(route, { autoAlpha: 0.56 });
     // SVG pathLength is unitless; use attributes instead of CSS pixel values
@@ -162,13 +163,14 @@
         .to(walker, { autoAlpha: 1, duration: 0.5 }, 0.4);
     }
 
-    const walk = gsap.timeline({ paused: true, repeat: repeats });
-    frames.forEach((frame) => {
-      walk.call(() => {
-        sprite.src = frameSource(frame);
-        sprite.dataset.frame = frame;
-      }).to({}, { duration: frameDuration });
-    });
+    const stride = gsap.timeline({ paused: true, repeat: -1, yoyo: true, defaults: { ease: 'sine.inOut', duration: strideDuration } });
+    if (legBack && legFront && armBack && armFront) {
+      stride
+        .to(legBack, { rotation: 17 }, 0)
+        .to(legFront, { rotation: -17 }, 0)
+        .to(armBack, { rotation: -15 }, 0)
+        .to(armFront, { rotation: 15 }, 0);
+    }
 
     const journey = gsap.timeline({
       paused: true,
@@ -176,7 +178,7 @@
       yoyo: true,
       onRepeat: () => {
         travellingRight = !travellingRight;
-        gsap.set(sprite, { scaleX: travellingRight ? 1 : -1 });
+        gsap.set(figure, { scaleX: travellingRight ? 1 : -1 });
       }
     });
     journey.to(walker, { xPercent: journeyDistance, duration: journeyDuration, ease: 'sine.inOut' }, 0);
@@ -192,7 +194,7 @@
         ease: 'sine.inOut'
       }, journeyDuration * 0.44);
     }
-    motions.push(journey);
+    motions.push(journey, stride);
 
     if (isDesktop && skylineBack && skylineMid && skylineFront) {
       motions.push(gsap.to(skylineBack, {
@@ -223,25 +225,7 @@
       if (skylineMid) gsap.to(skylineMid, { y: -34, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
       if (skylineFront) gsap.to(skylineFront, { y: -54, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
     }
-    const heroEntry = registerAmbient(motions, hero, ScrollTrigger);
-    let characterCancelled = false;
-    const characterTimer = window.setTimeout(() => {
-      const preload = frames.map((frame) => new Promise((resolve) => {
-        const image = new Image();
-        image.onload = resolve;
-        image.onerror = resolve;
-        image.src = frameSource(frame);
-      }));
-      Promise.all(preload).then(() => {
-        if (characterCancelled) return;
-        heroEntry.items.push(walk);
-        updateAmbientPlayback();
-      });
-    }, 220);
-    cleanup.push(() => {
-      characterCancelled = true;
-      clearTimeout(characterTimer);
-    });
+    registerAmbient(motions, hero, ScrollTrigger);
   }
 
   function createMarqueeMotion(gsap, ScrollTrigger) {
@@ -375,12 +359,10 @@
     const stops = rail ? Array.from(rail.querySelectorAll('[data-journey-stop]')) : [];
     if (!rail || !stops.length) return;
 
-    const sections = [
-      document.querySelector('[data-hero-stage]'),
-      document.querySelector('[data-work-rail]'),
-      document.querySelector('[data-about-bridge]'),
-      document.querySelector('.contact-cta')
-    ];
+    // Each stop names its own section via data-target, so the same rail
+    // markup and script work on any page -- home, Work, About -- without
+    // page-specific selector lists.
+    const sections = stops.map((stop) => document.querySelector(stop.getAttribute('data-target')));
 
     gsap.set(progress, { height: '0%' });
     ScrollTrigger.create({
@@ -587,14 +569,29 @@
       const links = gsap.utils.toArray(flow.querySelectorAll('.dflow__link'));
       if (!phases.length) return;
 
+      // Each connector becomes a small drawn route segment (line + travelling
+      // dot) instead of a static arrow glyph, so the pipeline reads as one
+      // continuous route between phases rather than four separate cards.
+      links.forEach((link) => {
+        link.innerHTML = '<span class="dflow__link-line" aria-hidden="true"></span><span class="dflow__link-dot" aria-hidden="true"></span>';
+      });
+      const lines = gsap.utils.toArray(flow.querySelectorAll('.dflow__link-line'));
+      const dots = gsap.utils.toArray(flow.querySelectorAll('.dflow__link-dot'));
+
       gsap.set(phases, { autoAlpha: 0, y: 16 });
-      gsap.set(links, { autoAlpha: 0, scale: 0.82, transformOrigin: '50% 50%' });
+      gsap.set(flow.querySelectorAll('.dflow__num'), { scale: 0.6, transformOrigin: '50% 50%' });
+      gsap.set(lines, { scaleX: 0, transformOrigin: 'left center' });
+      gsap.set(dots, { autoAlpha: 0, scale: 0 });
       const timeline = gsap.timeline({ paused: true, defaults: { ease: 'power2.out' } });
       phases.forEach((phase, index) => {
-        const at = index * 0.18;
-        timeline.to(phase, { autoAlpha: 1, y: 0, duration: 0.45, clearProps: 'transform,opacity,visibility' }, at);
-        if (links[index]) {
-          timeline.to(links[index], { autoAlpha: 1, scale: 1, duration: 0.22, clearProps: 'transform,opacity,visibility' }, at + 0.22);
+        const at = index * 0.22;
+        const num = phase.querySelector('.dflow__num');
+        timeline.to(phase, { autoAlpha: 1, y: 0, duration: 0.42, clearProps: 'opacity,visibility,transform' }, at);
+        if (num) timeline.to(num, { scale: 1, duration: 0.3, ease: 'back.out(2.2)' }, at + 0.08);
+        if (lines[index]) {
+          timeline.to(lines[index], { scaleX: 1, duration: 0.3, ease: 'power1.inOut' }, at + 0.2)
+            .to(dots[index], { autoAlpha: 1, scale: 1, duration: 0.18 }, at + 0.42)
+            .to(dots[index], { autoAlpha: 0, duration: 0.14 }, at + 0.6);
         }
       });
       ScrollTrigger.create({
@@ -607,7 +604,7 @@
   }
 
   function createCaseChartMotion(gsap, ScrollTrigger) {
-    const chartSelector = '[data-mbr-chart], [data-cbd-bars], [data-alphaearth-chart]';
+    const chartSelector = '[data-mbr-chart], [data-cbd-bars], [data-alphaearth-chart], [data-pangan-chart]';
 
     function playChart(svg) {
       if (!svg || !svg.isConnected) return;
