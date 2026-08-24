@@ -218,12 +218,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .page-curtain b {
   align-self: center;
   color: var(--ground-ink);
-  font: 500 var(--fs-2xs)/1 var(--font-mono);
+  font: 600 clamp(2rem, 5vw, 3.8rem)/1 var(--font-display);
   grid-column: 1 / -1;
   justify-self: center;
-  letter-spacing: .12em;
+  letter-spacing: -.01em;
   position: absolute;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 /* ---------- welcome intro (first-visit only) ---------- */
@@ -242,6 +242,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   z-index: 1100;
 }
 html.welcome-intro-pending .welcome-intro { opacity: 1; pointer-events: auto; visibility: visible; }
+/* Keep the header/nav reachable while the intro plays instead of blocking
+   navigation for its full ~1s -- scoped to the pending state only, so it
+   never affects stacking against the lightbox or other overlays later. */
+html.welcome-intro-pending .site-header { z-index: 1150; }
 .welcome-intro__panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); inset: 0; pointer-events: none; position: absolute; z-index: -1; }
 .welcome-intro__panels span { background: var(--ground); transform: translateY(0); }
 .welcome-intro__panels span:last-child { background: color-mix(in srgb, var(--ground) 94%, var(--accent) 6%); border-left: 1px solid var(--ground-line); }
@@ -330,7 +334,7 @@ html.welcome-intro-pending .welcome-intro { opacity: 1; pointer-events: auto; vi
   position: relative;
   text-decoration: none;
 }
-.atlas-row__index { align-self: start; color: var(--muted); font: 500 var(--fs-2xs)/1 var(--font-mono); padding-top: 7px; }
+.atlas-row__index { align-self: start; color: var(--muted); font: 500 var(--fs-2xs)/1 var(--font-mono); padding-top: 7px; transition: color var(--dur-2) var(--emph); }
 .atlas-row h2, .atlas-row h3 {
   color: var(--ink);
   font-size: clamp(1.5rem, 2.7vw, 2.6rem);
@@ -338,6 +342,7 @@ html.welcome-intro-pending .welcome-intro { opacity: 1; pointer-events: auto; vi
   letter-spacing: -.02em;
   line-height: 1.02;
   margin: 8px 0 8px;
+  transition: color var(--dur-2) var(--emph);
 }
 .atlas-row div > p:last-child { color: var(--ink-soft); font-size: var(--fs-md); line-height: 1.35; margin: 0; max-width: 32ch; }
 .atlas-row picture, .atlas-row > img { background: var(--surface); display: block; height: 156px; overflow: hidden; }
@@ -393,6 +398,31 @@ html.welcome-intro-pending .welcome-intro { opacity: 1; pointer-events: auto; vi
   .work-rail--enhanced .atlas-row h2, .work-rail--enhanced .atlas-row h3 { font-size: clamp(1.4rem, 2vw, 2.1rem) !important; margin: 6px 0 6px; max-width: 18ch; }
   .work-rail--enhanced .atlas-row.is-work-active { border-color: var(--accent); }
   .work-rail--enhanced .atlas-row.is-work-active::before { width: 100%; }
+  .work-rail--enhanced .atlas-row.is-work-active h2,
+  .work-rail--enhanced .atlas-row.is-work-active h3,
+  .work-rail--enhanced .atlas-row.is-work-active .atlas-row__index { color: var(--accent); }
+  .work-rail--enhanced .work-rail__stage { cursor: pointer; }
+  .work-rail__view-chip {
+    align-items: center;
+    background: color-mix(in srgb, var(--ink) 82%, transparent);
+    border-radius: var(--r-full);
+    color: var(--paper);
+    display: inline-flex;
+    font: 600 var(--fs-2xs)/1 var(--font-mono);
+    gap: 8px;
+    letter-spacing: .06em;
+    opacity: 0;
+    padding: 10px 16px;
+    position: absolute;
+    right: 16px;
+    text-transform: uppercase;
+    top: 16px;
+    transform: translateY(-6px);
+    transition: opacity var(--dur-2) var(--emph), transform var(--dur-2) var(--emph);
+    z-index: 3;
+  }
+  .work-rail--enhanced .work-rail__stage:hover .work-rail__view-chip,
+  .work-rail--enhanced .work-rail__stage:focus-visible .work-rail__view-chip { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 699px) {

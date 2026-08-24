@@ -238,17 +238,25 @@
     if (label) label.textContent = transition.label;
     document.documentElement.dataset.routeExit = 'true';
     window.gsap.killTweensOf(curtain);
+    if (label) window.gsap.killTweensOf(label);
     window.gsap.set(curtain, { yPercent: -101, pointerEvents: 'auto' });
+    if (label) window.gsap.set(label, { autoAlpha: 0 });
+    const compact = innerWidth < 700;
+    const closeDuration = compact ? 0.18 : 0.3;
+    const labelDuration = compact ? 0.16 : 0.22;
+    const settleDuration = compact ? 0.08 : 0.12;
     const go = () => location.assign(transition.url.href);
-    navigationTimer = window.setTimeout(go, 700);
-    window.gsap.to(curtain, {
-      yPercent: 0,
-      duration: innerWidth < 700 ? 0.18 : 0.3,
-      ease: 'power2.inOut',
+    // A brief closed-and-settled beat before navigating -- so the
+    // destination name has a moment to actually be read, rather than the
+    // curtain closing and the browser leaving in the same instant.
+    navigationTimer = window.setTimeout(go, (closeDuration + labelDuration + settleDuration) * 1000 + 260);
+    const exitTimeline = window.gsap.timeline({
       onComplete: () => {
         clearTimeout(navigationTimer);
         go();
       }
-    });
+    }).to(curtain, { yPercent: 0, duration: closeDuration, ease: 'power2.inOut' });
+    if (label) exitTimeline.to(label, { autoAlpha: 1, duration: labelDuration, ease: 'power2.out' });
+    exitTimeline.to({}, { duration: settleDuration });
   }, true);
 })();

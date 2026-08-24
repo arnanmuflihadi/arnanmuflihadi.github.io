@@ -63,18 +63,23 @@
     const note = intro.querySelector('[data-welcome-note]');
     const track = intro.querySelector('[data-welcome-track-fill]');
     const panels = Array.from(intro.querySelectorAll('.welcome-intro__panels span'));
-    const duration = innerWidth < 700 ? 0.86 : 1.3;
+    // Overlapped rather than chained: pleurat starts nearly everything on one
+    // shared trigger with only a small intra-element stagger, and its result
+    // reads faster than its own total duration would suggest. Running the
+    // track fill alongside the note instead of after it, and pulling the
+    // panel-lift earlier (0.5x instead of 0.62x), gets the same effect here.
+    const duration = innerWidth < 700 ? 0.68 : 0.95;
     document.addEventListener('keydown', onKeydown);
     window.gsap.set(intro, { autoAlpha: 1 });
     window.gsap.set([word, note], { autoAlpha: 0, y: 16 });
     window.gsap.set(panels, { yPercent: 0 });
     if (track) window.gsap.set(track, { scaleX: 0 });
     welcomeTimeline = window.gsap.timeline({ defaults: { ease: 'power3.out' }, onComplete: finish })
-      .to(word, { autoAlpha: 1, y: 0, duration: duration * 0.3 }, 0.05)
-      .to(note, { autoAlpha: 1, y: 0, duration: duration * 0.22 }, duration * 0.2)
-      .to(track, { scaleX: 1, duration: duration * 0.52, ease: 'power1.inOut' }, duration * 0.28)
-      .to(panels, { yPercent: -104, duration: duration * 0.4, stagger: 0.07, ease: 'power2.inOut' }, duration * 0.62)
-      .to(intro, { autoAlpha: 0, duration: 0.1, ease: 'none' }, duration * 0.94);
+      .to(word, { autoAlpha: 1, y: 0, duration: duration * 0.32 }, 0.05)
+      .to(note, { autoAlpha: 1, y: 0, duration: duration * 0.24 }, duration * 0.16)
+      .to(track, { scaleX: 1, duration: duration * 0.5, ease: 'power1.inOut' }, duration * 0.16)
+      .to(panels, { yPercent: -104, duration: duration * 0.42, stagger: 0.06, ease: 'power2.inOut' }, duration * 0.5)
+      .to(intro, { autoAlpha: 0, duration: 0.1, ease: 'none' }, duration * 0.92);
   }
 
   function resetHeroStatic() {
@@ -174,8 +179,8 @@
       gsap.set(skylineLayers, { autoAlpha: 0, y: 14 });
       gsap.set(walker, { autoAlpha: 0 });
       gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.15 })
-        .to(skylineLayers, { autoAlpha: 1, y: 0, duration: 0.85, stagger: 0.1 }, 0)
-        .to(walker, { autoAlpha: 1, duration: 0.5 }, 0.4);
+        .to(skylineLayers, { autoAlpha: 1, y: 0, duration: 1.0, stagger: 0.1 }, 0)
+        .to(walker, { autoAlpha: 1, duration: 0.55 }, 0.45);
     }
 
     // Walk cycle: the illustrated frame sequence, preloaded before it is
@@ -452,6 +457,16 @@
     stageImage.decoding = 'async';
     stageImage.setAttribute('aria-hidden', 'true');
     frames.appendChild(stageImage);
+    // The stage is a decorative echo of whichever row is active -- the row
+    // itself is already a full, properly-labelled keyboard-accessible link
+    // to the same destination, so the stage stays out of the a11y tree and
+    // just forwards clicks rather than duplicating the link semantics.
+    const viewChip = document.createElement('span');
+    viewChip.className = 'work-rail__view-chip';
+    viewChip.setAttribute('aria-hidden', 'true');
+    viewChip.textContent = 'View case study ↗';
+    stage.appendChild(viewChip);
+    on(stage, 'click', () => { if (rows[active]) rows[active].click(); });
     rail.classList.add('work-rail--enhanced');
 
     let active = -1;
@@ -735,7 +750,7 @@
       onEnter: (batch) => gsap.to(batch, {
         autoAlpha: 1,
         y: 0,
-        duration: 0.6,
+        duration: 0.72,
         ease: 'power2.out',
         stagger: 0.06,
         overwrite: true,
