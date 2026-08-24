@@ -1,96 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arnan Muflihadi, Urban Planner & GIS Analyst</title>
-<meta name="description" content="Portfolio of GIS & spatial analysis for urban and regional planning, transit accessibility, food-supply-chain resilience, and road-network modeling.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
-<script src="assets/js/theme-init.js?v=1"></script>
-<link rel="stylesheet" href="assets/css/style.css?v=55">
-<!-- Optional privacy-friendly analytics (no cookies). Uncomment and set your domain:
-<script defer data-domain="YOURDOMAIN.com" src="https://plausible.io/js/script.js"></script>
-GoatCounter alternative: <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
--->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Arnan Muflihadi, Urban Planner &amp; GIS Analyst">
-<meta property="og:description" content="Portfolio of GIS &amp; spatial analysis for urban and regional planning, transit accessibility, food-supply-chain resilience, and road-network modeling.">
-<meta property="og:url" content="https://arnanmuflihadi.github.io/">
-<meta property="og:image" content="https://arnanmuflihadi.github.io/assets/img/profile.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Arnan Muflihadi, Urban Planner &amp; GIS Analyst">
-<meta name="twitter:description" content="Portfolio of GIS &amp; spatial analysis for urban and regional planning, transit accessibility, food-supply-chain resilience, and road-network modeling.">
-<meta name="twitter:image" content="https://arnanmuflihadi.github.io/assets/img/profile.jpg">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arnan Muflihadi — Geospatial analysis for better urban decisions</title>
+<meta name="description" content="Geospatial analysis for urban systems: transit access, food networks, earth observation, and spatial clustering.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/redesign/hero-environment-828.webp" imagesrcset="assets/img/redesign/hero-environment-640.webp 640w, assets/img/redesign/hero-environment-828.webp 828w, assets/img/redesign/hero-environment-960.webp 960w, assets/img/redesign/hero-environment.webp 1536w" imagesizes="(max-width: 699px) 100vw, 50vw" fetchpriority="high">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<script>!function(){"use strict";try{var e=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",e==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}}();</script><script>!function(){"use strict";try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&!sessionStorage.getItem("portfolio:welcome-seen")){document.documentElement.classList.add("welcome-intro-pending");window.__welcomeFailSafe=setTimeout(function(){document.documentElement.classList.remove("welcome-intro-pending")},2400)}}catch(e){}}();</script><link rel="stylesheet" href="assets/css/home-base.css?v=1"><link rel="stylesheet" href="assets/css/redesign.css?v=12"><link rel="stylesheet" href="assets/css/motion.css?v=6"><link rel="stylesheet" href="assets/css/responsive-art-direction.css?v=11"><link rel="stylesheet" href="assets/css/cohesion.css?v=3"><link rel="stylesheet" href="assets/css/narrative.css?v=1"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 </head>
-<body class="editorial-home">
+<body id="top" class="redesign home-page">
+<div class="welcome-intro" data-welcome-intro aria-hidden="true"><div class="welcome-intro__panels"><span></span><span></span><span></span><span></span></div><div class="welcome-intro__content"><p class="eyebrow">ARNAN MUFLIHADI / SPATIAL PRACTICE</p><p class="welcome-intro__word" data-welcome-word>WELCOME</p><p class="welcome-intro__note" data-welcome-note>Geospatial analysis for real places</p></div></div>
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="page-curtain" aria-hidden="true"><span></span><span></span><span></span><span></span><b data-route-label></b></div>
+<script defer src="assets/js/transition-init.js?v=4"></script>
 
-<!-- ============ NAV ============ -->
-<nav class="nav">
-  <div class="nav__links">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
-      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" stroke-linecap="round"/></svg>
-      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" stroke-linejoin="round"/></svg>
-    </button>
-  </div>
-  <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-</nav>
-
-<!-- ============ HERO ============ -->
+<header class="site-header" data-site-header>
+  <a class="site-brand" href="index.html" aria-current="page">ARNAN MUFLIHADI</a>
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+    <a href="portfolio.html">WORK</a><a href="about.html">ABOUT</a><a href="contact.html">CONTACT</a><button class="theme-toggle" data-theme-toggle aria-label="Toggle colour theme"><span aria-hidden="true">◐</span></button><button class="nav-close" type="button" data-nav-close>Close <span aria-hidden="true">×</span></button>
+  </nav><button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+</header>
 <main id="main" tabindex="-1">
-  <header class="editorial-hero">
-    <div class="editorial-hero__copy">
-      <h1 aria-label="Mapping decisions into space">
-        <span class="line-mask"><span>Mapping</span></span>
-        <span class="line-mask"><span>decisions</span></span>
-        <span class="line-mask"><span>into space<i>.</i></span></span>
-      </h1>
-
-      <p class="editorial-hero__intro reveal">I build geospatial analyses that connect GIS with urban &amp; regional planning, from transit accessibility to food-supply-chain resilience. The methods stay grounded in the research.</p>
-
-      <div class="editorial-hero__meta reveal" aria-label="Location and map scale">
-        <span class="editorial-hero__cross" aria-hidden="true"></span>
-        <span>40°43′N 74°00′W</span>
-        <span class="editorial-hero__scale" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        <span>0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 mi</span>
+<section class="spatial-hero" data-hero-stage>
+  <div class="spatial-hero__copy">
+    <p class="eyebrow">GIS / URBAN ANALYTICS / INDONESIA</p>
+    <h1>Mapping decisions<br>into space.</h1>
+    <p class="spatial-hero__lede">I build evidence-led geospatial analysis for the systems cities depend on: access, food, land, and the changing urban fabric.</p>
+    <a class="text-link" href="#selected-work">Explore selected work <span aria-hidden="true">↘</span></a>
+  </div>
+  <figure class="spatial-hero__media" aria-label="Illustrated urban transit setting for geospatial analysis">
+    <picture class="hero-environment">
+      <source type="image/webp" srcset="assets/img/redesign/hero-environment-640.webp 640w, assets/img/redesign/hero-environment-828.webp 828w, assets/img/redesign/hero-environment-960.webp 960w, assets/img/redesign/hero-environment.webp 1536w" sizes="(max-width: 699px) 100vw, 50vw">
+      <img src="assets/img/redesign/hero-environment-828.webp" width="1536" height="1024" alt="Illustrated Jakarta-like streetscape with a transit stop, buildings, and trees." fetchpriority="high">
+    </picture>
+    <svg class="route-overlay" aria-hidden="true" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+      <use href="assets/img/maps/hero-transit-route-1-overlay.svg#route-1-blok-m-kota"></use>
+      <use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-01"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-02"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-03"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-04"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-05"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-06"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-07"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-08"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-09"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-10"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-11"></use><use href="assets/img/maps/hero-transit-route-1-overlay.svg#stop-12"></use>
+      <path data-hero-route-progress pathLength="1" d="M533.2 82.8L527.7 76.8L614 71L637.2 89.5L591.8 93.3L589.2 94.3L660.3 147.4L674.5 161.2L669.3 162.2L698.5 190.2L707.5 192L787.8 268.8L800.5 273.1L821.5 275.4L828 277.8L823.8 321.6L829.3 326.1L825.5 329.2L830 355.4L827.5 396.2L830 399.9L839 403.6L829.7 407.6L830.5 437L812.7 454.1L795.5 480.2L760.2 495.7L725.3 506.9L680.7 515.6L477 550.3L405.5 560.4L247.3 586.1L242.2 589.5L224.2 594L214.7 601.1L214 659.3L226.5 662.2L247 664.2L292.7 664.2"></path>
+    </svg>
+    <span class="hero-walker" data-hero-walker aria-hidden="true"><img class="analyst-sprite" src="assets/img/redesign/analyst-walk-01-idle.webp" width="320" height="515" alt="" decoding="async"></span>
+  </figure>
+</section>
+  <section class="expertise-marquee" aria-label="Areas of practice" data-ambient-stage><div class="expertise-marquee__track">NETWORK ACCESS <i>·</i> FOOD SYSTEMS <i>·</i> EARTH OBSERVATION <i>·</i> URBAN MORPHOLOGY <i>·</i> SPATIAL CLUSTERING <i>·</i></div><button class="ambient-toggle" type="button" data-ambient-toggle aria-pressed="false">Ambient motion <span>On</span></button></section>
+  <section class="home-selected-work section-shell" id="selected-work" aria-labelledby="selected-work-title" data-home-selected>
+    <div class="home-selected-work__inner">
+      <header class="home-selected-work__heading"><p class="eyebrow">01 / FEATURED CASE STUDIES</p><h2 id="selected-work-title">Two systems.<br>Two urgent questions.</h2><p>Home is a short introduction to the practice. The complete five-study index lives in Work.</p></header>
+      <div class="home-selected-work__grid">
+        <a class="home-project home-project--transit" data-home-project href="project-transit.html">
+          <div class="home-project__copy"><span class="home-project__number">01 / 05</span><p class="eyebrow">NETWORK ACCESS</p><h3>Transit accessibility in DKI Jakarta</h3><p class="home-project__question">Who can actually reach the city?</p><span class="home-project__link">Enter case study <span aria-hidden="true">↗</span></span></div>
+          <figure class="home-project__media" data-home-project-media><picture><source type="image/webp" srcset="assets/img/redesign/transit-640.webp 640w, assets/img/redesign/transit-960.webp 960w, assets/img/redesign/transit-1280.webp 1280w" sizes="(max-width:699px) 100vw, 52vw"><img src="assets/img/transit/skor_b.jpg" alt="Transit accessibility map of Jakarta" width="1280" height="1130" loading="lazy" decoding="async"></picture></figure>
+        </a>
+        <a class="home-project home-project--food" data-home-project href="project-pangan.html">
+          <div class="home-project__copy"><span class="home-project__number">02 / 05</span><p class="eyebrow">FOOD SYSTEMS</p><h3>Critical roads for rice in West Java</h3><p class="home-project__question">Which roads keep West Java’s rice moving?</p><span class="home-project__link">Enter case study <span aria-hidden="true">↗</span></span></div>
+          <figure class="home-project__media" data-home-project-media><picture><source type="image/webp" srcset="assets/img/redesign/pangan-640.webp 640w, assets/img/redesign/pangan-960.webp 960w, assets/img/redesign/pangan-1440.webp 1440w" sizes="(max-width:699px) 100vw, 52vw"><img src="assets/img/pangan/network_flow.jpg" alt="Rice flow across the West Java road network" width="1440" height="1152" loading="lazy" decoding="async"></picture></figure>
+        </a>
       </div>
-
-      <a href="portfolio.html" class="editorial-link reveal"><span>View portfolio</span><span aria-hidden="true">→</span></a>
-
-      <p class="editorial-hero__statement reveal">I help cities and regions become more accessible, resilient, and better aligned with how people live.</p>
-      <span class="editorial-hero__scroll" aria-hidden="true">Scroll<i></i></span>
+      <a class="home-work-link" href="portfolio.html">View all five case studies <span aria-hidden="true">↗</span></a>
     </div>
-
-    <figure class="editorial-hero__media" data-parallax-media data-city-map-stage>
-      <div class="city-map-frame">
-        <img src="assets/img/maps/city-grid.svg" alt="Black-and-white vector map of official New York City street centerlines">
-      </div>
-      <figcaption><span>New York street field · DCP Digital City Map</span><span>Manhattan + inner boroughs</span></figcaption>
-    </figure>
-  </header>
-
-  <section class="practice-strip" aria-label="Core practice">
-    <span>Core practice</span>
-    <span>Spatial analysis</span>
-    <span>Urban planning</span>
-    <span>Network modeling</span>
   </section>
-</main>
-
-<footer class="foot">
-  <span>© <span data-year>2026</span> Arnan Muflihadi</span>
-  <span>Urban Planner &amp; GIS Analyst</span>
-</footer>
-
-<script src="assets/js/main.js?v=18"></script>
-</body>
-</html>
+  <section class="method-flow section-shell" aria-labelledby="method-flow-title" data-method-flow>
+    <div class="method-flow__inner">
+      <header class="method-flow__heading"><p class="eyebrow">02 / METHOD IN MOTION</p><h2 id="method-flow-title">A question finds<br>a spatial answer.</h2><p>One original process connects the work: make a decision question, its evidence, and its limits legible.</p></header>
+      <div class="method-flow__board">
+        <svg class="method-flow__route" aria-hidden="true" viewBox="0 0 1200 260" preserveAspectRatio="none"><path data-method-path pathLength="1" d="M56 78H268C312 78 312 178 363 178H573C622 178 622 85 680 85H892C940 85 940 160 1004 160H1150"></path><circle data-method-node cx="56" cy="78" r="8"></circle><circle data-method-node cx="363" cy="178" r="8"></circle><circle data-method-node cx="680" cy="85" r="8"></circle><circle data-method-node cx="1004" cy="160" r="8"></circle></svg>
+        <ol class="method-flow__steps">
+          <li class="method-flow__step" data-method-step><span class="method-flow__index">01</span><h3>Frame the planning question</h3><p>Name the decision, place, and people the analysis needs to serve.</p></li>
+          <li class="method-flow__step" data-method-step><span class="method-flow__index">02</span><h3>Assemble spatial evidence</h3><p>Bring routes, land, facilities, observations, and their coverage into view.</p></li>
+          <li class="method-flow__step" data-method-step><span class="method-flow__index">03</span><h3>Test method and uncertainty</h3><p>Use a suitable spatial method and state what the evidence can—not cannot—support.</p></li>
+          <li class="method-flow__step" data-method-step><span class="method-flow__index">04</span><h3>Make decision context legible</h3><p>Translate the pattern, trade-off, and next question into a clear spatial story.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section class="about-bridge section-shell"><p class="eyebrow">03 / ABOUT</p><p>I work across GIS, planning, and spatial research—making methods legible enough to inform a decision.</p><a class="text-link" href="about.html">More about my practice <span aria-hidden="true">↘</span></a></section>
+  <section class="contact-cta section-shell"><p class="eyebrow">04 / CONTACT</p><h2>Have a spatial question worth mapping?</h2><a class="button-link" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a><svg class="closing-route" data-closing-route viewBox="0 0 620 190" aria-hidden="true"><path data-closing-route-line d="M16 156C92 156 102 45 182 45s77 91 152 91 84-87 158-87 69 42 112 42" pathLength="1"/><circle cx="16" cy="156" r="5"/><circle cx="182" cy="45" r="5"/><circle cx="334" cy="136" r="5"/><circle cx="492" cy="49" r="5"/><circle cx="604" cy="91" r="5"/></svg></section>
+</main><footer class="site-footer"><span>© <span data-year>2026</span> Arnan Muflihadi</span><span>Urban planner / GIS analyst</span><nav class="site-footer__links" aria-label="Footer links"><a href="mailto:arnanmuflihadi@gmail.com">Email</a><a href="https://linkedin.com/in/arnan-m-999ab5165" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://public.tableau.com/app/profile/arnan.muflihadi" target="_blank" rel="noopener">Tableau <span aria-hidden="true">↗</span></a><a href="assets/cv.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></nav></footer>
+<script defer src="assets/js/main.js?v=24"></script><script defer src="assets/js/microinteraction.js?v=4"></script><script defer src="assets/js/vendor/gsap.min.js"></script><script defer src="assets/js/vendor/ScrollTrigger.min.js"></script><script defer src="assets/js/vendor/lenis.min.js"></script><script defer src="assets/js/site-shell.js?v=2"></script><script defer src="assets/js/motion.js?v=22"></script>
+</body></html>

@@ -7,9 +7,13 @@
 <meta name="description" content="Transit accessibility analysis for DKI Jakarta using an AHP-weighted Cumulative Opportunities Indicator, r5py routing, and Getis-Ord Gi*.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=alt_route,arrow_forward,close,database,expand_more,insights,open_in_full,tips_and_updates,tune&display=block" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=alt_route,arrow_forward,close,database,expand_more,insights,open_in_full,tips_and_updates,tune&display=block" rel="stylesheet"></noscript>
 <script src="assets/js/theme-init.js?v=1"></script>
-<link rel="stylesheet" href="assets/css/style.css?v=55">
+<link rel="stylesheet" href="assets/css/style.css?v=70">
+<link rel="stylesheet" href="assets/css/redesign.css?v=12">
+<link rel="stylesheet" href="assets/css/motion.css?v=6">
+<link rel="stylesheet" href="assets/css/case-studies.css?v=2">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -23,25 +27,21 @@
 <meta name="twitter:description" content="Transit accessibility analysis for DKI Jakarta using an AHP-weighted Cumulative Opportunities Indicator, r5py routing, and Getis-Ord Gi*.">
 <meta name="twitter:image" content="https://arnanmuflihadi.github.io/assets/img/transit/skor_b.jpg">
 </head>
-<body data-project="transit">
+<body id="top" class="redesign case-study-page" data-project="transit">
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="page-curtain" aria-hidden="true"><span></span><span></span><span></span><span></span><b data-route-label></b></div>
+<script src="assets/js/transition-init.js?v=4"></script>
 
-<nav class="nav">
-  <div class="nav__links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
-      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" stroke-linecap="round"/></svg>
-      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" stroke-linejoin="round"/></svg>
-    </button>
-  </div>
-  <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-</nav>
+<header class="site-header" data-site-header>
+  <a class="site-brand" href="index.html">ARNAN MUFLIHADI</a>
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+    <a href="portfolio.html" aria-current="page">WORK</a><a href="about.html">ABOUT</a><a href="contact.html">CONTACT</a><button class="theme-toggle" data-theme-toggle aria-label="Toggle colour theme"><span aria-hidden="true">◐</span></button><button class="nav-close" type="button" data-nav-close>Close <span aria-hidden="true">×</span></button>
+  </nav><button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+</header>
 
 <!-- ============ HERO ============ -->
-<header class="cs-hero wrap" id="main" tabindex="-1">
+<main class="wrap" id="main" tabindex="-1">
+<header class="cs-hero">
   <div class="topo cshero__topo" aria-hidden="true"></div>
   <a href="portfolio.html" class="back">← Back to projects</a>
   <h1 class="reveal">Transit Accessibility in DKI Jakarta</h1>
@@ -53,7 +53,30 @@
   </dl>
 </header>
 
-<main class="wrap">
+<div>
+  <section class="case-evidence" data-case-journey aria-labelledby="transit-evidence-title">
+    <div class="case-evidence__intro">
+      <div>
+        <p class="case-evidence__eyebrow">01 / evidence sequence</p>
+        <h2 id="transit-evidence-title">A 60-minute threshold becomes an equity signal.</h2>
+      </div>
+      <p>The moving line is a reading aid for the documented scenario chain below; it does not depict observed individual trips.</p>
+    </div>
+    <div class="case-evidence__sequence">
+      <svg class="case-evidence__route" viewBox="0 0 1200 70" preserveAspectRatio="none" aria-hidden="true">
+        <path class="case-evidence__route-line" d="M42 42 C150 10 260 60 358 36 S562 12 658 38 S874 62 958 31 S1102 18 1158 39"></path>
+        <path class="case-evidence__route-progress" data-case-journey-route pathLength="1" d="M42 42 C150 10 260 60 358 36 S562 12 658 38 S874 62 958 31 S1102 18 1158 39"></path>
+        <circle class="case-evidence__route-node" data-case-journey-node cx="42" cy="42" r="6"></circle><circle class="case-evidence__route-node" data-case-journey-node cx="358" cy="36" r="6"></circle><circle class="case-evidence__route-node" data-case-journey-node cx="658" cy="38" r="6"></circle><circle class="case-evidence__route-node" data-case-journey-node cx="958" cy="31" r="6"></circle>
+      </svg>
+      <ol class="case-evidence__steps">
+        <li class="case-evidence__step" data-case-journey-step><span class="case-evidence__step-label">origin frame</span><strong class="case-evidence__value">2,733 RW</strong><h3>Origins enter the same accessibility model.</h3><p>Small-area centroids are aggregated to 261 urban villages only after scoring.</p></li>
+        <li class="case-evidence__step" data-case-journey-step><span class="case-evidence__step-label">time budget</span><strong class="case-evidence__value">60 min</strong><h3>Door-to-door transit opportunity window.</h3><p>One documented weekday AM setting holds the comparison assumptions constant.</p></li>
+        <li class="case-evidence__step" data-case-journey-step><span class="case-evidence__step-label">scenario test</span><strong class="case-evidence__value">A → B</strong><h3>Mikrotrans is isolated as the network change.</h3><p>Backbone services are compared with the integrated feeder scenario.</p></li>
+        <li class="case-evidence__step" data-case-journey-step><span class="case-evidence__step-label">result</span><strong class="case-evidence__value">+26.6%</strong><h3>Average accessibility uplift.</h3><p>The gain is positive yet spatially uneven—hence the hotspot and category tests below.</p></li>
+      </ol>
+    </div>
+    <p class="case-evidence__note">Source: Project AHP 60-minute case-study outputs. Accessibility is a modeled cumulative-opportunity index, not observed passenger movement.</p>
+  </section>
 
   <!-- ===== OBJECTIVE ===== -->
   <section class="cs-section">
@@ -113,10 +136,10 @@
       </div>
     </div>
 
-    <aside class="method-callout reveal">
+    <div class="method-callout reveal">
       <span class="ms" aria-hidden="true">tips_and_updates</span>
       <p><b>Read the method as decisions, not a wall of text.</b> Each panel keeps the short reasoning visible first; expand only the parts where you want the full modeling detail. Highlighted terms open concise definitions.</p>
-    </aside>
+    </div>
 
     <div class="cs-prose reveal" data-method-collapsible>
       <p><strong>Conceptual framework.</strong> The study adopts <em><span data-term="Place-based accessibility" data-term-definition="An accessibility view focused on the opportunities reachable from a place, combining land use, transport, time, and traveler assumptions.">place-based accessibility</span></em> (Geurs &amp; van Wee, 2004), which decomposes accessibility into four components: land use (where opportunities are located), transportation (how the network connects them), temporal (when service actually runs), and individual (who is traveling). The first three are modeled explicitly; the fourth is held constant as an average adult traveler. Among the four families of accessibility metrics, the <span data-term="Cumulative opportunities" data-term-definition="A transparent accessibility metric that counts destinations reachable within a fixed travel-time threshold.">cumulative opportunities</span> measure was chosen over gravity-decay and utility-based alternatives because it answers the question policymakers actually ask, &#x201C;how many facilities can a resident reach within 60 minutes?&#x201D;, and because every assumption behind it can be audited.</p>
@@ -162,7 +185,7 @@ Score(rw)   = (RawScore / S_max) × 100
       <p>AHP-weighted cumulative-opportunity scoring normalized to 0–100, then aggregated from RW to urban village. The Scenario A vs B comparison isolates the marginal impact of Mikrotrans, Getis-Ord Gi* detects statistically significant Scenario B clusters, and the latest Project AHP sensitivity outputs verify that the positive Mikrotrans gain holds across tested time cutoffs and AHP weight vectors.</p>
     </div>
 
-    <section class="transit-scrolly reveal" data-transit-scrolly aria-labelledby="transit-story-title">
+    <section class="transit-scrolly reveal" data-transit-scrolly data-static-story aria-labelledby="transit-story-title">
       <div class="scrolly-static-head">
         <h3 id="transit-story-title">From baseline access to feeder-network impact</h3>
         <p>The analytical outputs are sequenced as one narrative from the latest Project AHP 60-minute case-study figure data: baseline accessibility, integrated network access, Mikrotrans uplift, accessibility categories, Getis-Ord Gi* clustering, and final synthesis.</p>
@@ -175,7 +198,8 @@ Score(rw)   = (RawScore / S_max) × 100
             <div class="scrolly-static-kicker" data-scrolly-kicker>Research question</div>
 
             <div class="scrolly-data-map" data-transit-data-map data-map-state="overview">
-              <div class="scrolly-data-map__status" data-map-status>Loading kelurahan accessibility data…</div>
+              <img class="story-static-poster" src="assets/img/transit/skor_b.jpg" width="1280" height="1130" alt="Static Scenario B accessibility map for DKI Jakarta under a 60-minute transit budget." loading="lazy" decoding="async">
+              <div class="scrolly-data-map__status" data-map-status>Static/manual story · full kelurahan geometry is intentionally not loaded in the case shell. The source-supported figures and explicit map are available below.</div>
               <svg class="scrolly-map-svg" data-map-svg viewBox="0 0 1000 720" role="img" aria-label="Data-driven DKI Jakarta kelurahan accessibility map rendered from raw score output">
                 <defs>
                   <clipPath id="transitCompareClip">
@@ -287,13 +311,14 @@ Score(rw)   = (RawScore / S_max) × 100
       <p>Beyond the narrative map, the dashboard now exposes the <strong>raw input layers</strong> and the <strong>60-minute kelurahan accessibility output</strong> used for the figures — the full Jaklingko transit network (TransJakarta, Mikrotrans, MRT, LRT, KRL), administrative boundaries, RW origin points, all <strong>27 facility categories</strong> (11,663 points), Scenario B accessibility scores, Mikrotrans Δ-score, and Getis-Ord Gi* cluster layer.</p>
     </div>
 
-    <figure class="figure reveal">
-      <div class="dash-embed">
-        <iframe src="maps/transit_dashboard.html?v=6" title="Interactive raw-data and score-output explorer for the DKI Jakarta transit accessibility study" loading="lazy" data-map-fallback></iframe>
+    <figure class="figure reveal figure--explicit-embed">
+      <div class="dash-embed explicit-embed" data-explicit-embed>
+        <img class="explicit-embed__poster" src="assets/img/transit/skor_b.jpg" width="1280" height="1130" alt="" loading="lazy" decoding="async">
+        <div class="explicit-embed__veil"><p class="explicit-embed__kicker">Interactive data explorer</p><p>Explore the transit network, accessibility surface, Mikrotrans change, and Gi* cluster layers when you are ready.</p><div class="explicit-embed__actions"><button class="explicit-embed__load" type="button" data-embed-load>Load interactive map</button><a class="explicit-embed__open" href="maps/transit_dashboard.html?v=6" target="_blank" rel="noopener">Open full map ↗</a></div><p class="explicit-embed__status" data-embed-status aria-live="polite">Static preview shown. The interactive map has not been loaded.</p></div>
+        <iframe data-embed-frame data-src="maps/transit_dashboard.html?v=6" title="Interactive raw-data and score-output explorer for the DKI Jakarta transit accessibility study"></iframe>
       </div>
       <figcaption class="figcap--row">
         <span>Interactive explorer — toggle the transit, boundary, facility, accessibility-score, and Mikrotrans-delta layers.</span>
-        <a class="dash-full" href="maps/transit_dashboard.html?v=6" target="_blank" rel="noopener">Open fullscreen <span class="arrow">↗</span></a>
       </figcaption>
     </figure>
 
@@ -301,13 +326,14 @@ Score(rw)   = (RawScore / S_max) × 100
       <p>The same network also powers <strong>Mini Jabodetabek 3D</strong>, a standalone agent-based digital twin: schedule-driven TransJakarta, MRT, LRT, KRL and airport-rail vehicles animate along their real GTFS shapes, and an agent-based simulation shows residents riding Mikrotrans feeders from their RW centroid to essential facilities — the accessibility model above, in motion.</p>
     </div>
 
-    <figure class="figure reveal">
-      <div class="dash-embed">
-        <iframe src="dki-3d/" title="Mini Jabodetabek 3D — agent-based transit simulation" loading="lazy" data-map-fallback></iframe>
+    <figure class="figure reveal figure--explicit-embed">
+      <div class="dash-embed explicit-embed" data-explicit-embed>
+        <img class="explicit-embed__poster" src="assets/img/transit/kategori.jpg" width="1800" height="1313" alt="" loading="lazy" decoding="async">
+        <div class="explicit-embed__veil"><p class="explicit-embed__kicker">Large interactive map</p><p>Mini Jabodetabek 3D loads additional data and opens only when you choose to run it.</p><div class="explicit-embed__actions"><button class="explicit-embed__load" type="button" data-embed-load>Load 3D map</button><a class="explicit-embed__open" href="dki-3d/" target="_blank" rel="noopener">Open 3D map ↗</a></div><p class="explicit-embed__status" data-embed-status aria-live="polite">Static preview shown. The 3D map has not been loaded.</p></div>
+        <iframe data-embed-frame data-src="dki-3d/" title="Mini Jabodetabek 3D — agent-based transit simulation"></iframe>
       </div>
       <figcaption class="figcap--row">
         <span>Mini Jabodetabek 3D — live schedule-based vehicles and an agent-based accessibility simulation.</span>
-        <a class="dash-full" href="dki-3d/" target="_blank" rel="noopener">Open fullscreen <span class="arrow">↗</span></a>
       </figcaption>
     </figure>
   </section>
@@ -376,7 +402,7 @@ Score(rw)   = (RawScore / S_max) × 100
       <span class="idx">06</span>
       <h2>Evidence &amp; Literature</h2>
     </div>
-    <div id="literature-map-transit" class="literature-map reveal" data-literature-map="transit" aria-label="Literature map for the transit accessibility case study">
+    <div id="literature-map-transit" class="literature-map reveal" data-literature-map="transit" role="region" aria-label="Literature map for the transit accessibility case study">
       <p class="literature-map__loading">Loading literature map...</p>
     </div>
   </section>
@@ -410,23 +436,28 @@ Score(rw)   = (RawScore / S_max) × 100
     </div>
   </section>
 
-</main>
+</div></main>
 
 <!-- ===== PAGER ===== -->
-<nav class="cs-pager">
-  <a href="portfolio.html"><span class="label">Index</span><span class="t">← All projects</span></a>
-  <a href="project-pangan.html"><span class="label">Next project</span><span class="t">Rice Supply Chain in West Java →</span></a>
+<nav class="cs-pager" aria-label="Project navigation">
+  <a href="portfolio.html"><span class="label">Project index</span><span class="t">← All projects</span></a>
+  <a href="project-pangan.html"><span class="label">Next project</span><span class="t">Rice supply chain in West Java →</span></a>
 </nav>
 
-<footer class="foot">
-  <span>© <span data-year>2026</span> Arnan Muflihadi</span>
-  <span>Urban Planner &amp; GIS Analyst</span>
+<footer class="site-footer">
+  <span>© <span data-year>2026</span> Arnan Muflihadi</span><span>Urban planner / GIS analyst</span><nav class="site-footer__links" aria-label="Footer links"><a href="mailto:arnanmuflihadi@gmail.com">Email</a><a href="https://linkedin.com/in/arnan-m-999ab5165" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://public.tableau.com/app/profile/arnan.muflihadi" target="_blank" rel="noopener">Tableau <span aria-hidden="true">↗</span></a><a href="assets/cv.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></nav>
 </footer>
 
-<script src="assets/js/main.js?v=18"></script>
+<script src="assets/js/main.js?v=24"></script>
 <script src="assets/js/collapsible.js?v=1"></script>
 <script src="assets/js/microinteraction.js?v=1"></script>
-<script src="assets/js/scrolly-transit-static.js?v=9"></script>
+<script src="assets/js/scrolly-transit-static.js?v=10"></script>
 <script src="assets/js/literature-map.js?v=5"></script>
+
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/site-shell.js?v=2"></script>
+<script src="assets/js/embed-loader.js?v=2"></script>
+<script src="assets/js/motion.js?v=20"></script>
 </body>
 </html>

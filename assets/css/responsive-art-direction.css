@@ -1,0 +1,119 @@
+/* Approved environment and analyst frames are the only hero artwork. */
+
+/* Pleurat-forensics reconstruction: one warm, shared canvas rather than two panels. */
+.spatial-hero {
+  background: #f4ebdd;
+  --ink: #27231f;
+  --copy: #403a33;
+  --mute: #746b60;
+  --paper: #f4ebdd;
+  --signal: #c86458;
+  display: block;
+  min-height: min(900px, calc(100svh - 72px));
+  position: relative;
+}
+.spatial-hero__copy {
+  color: #403a33;
+  justify-content: flex-start;
+  max-width: min(61rem, 68vw);
+  padding: clamp(92px, 12vw, 174px) clamp(28px, 5vw, 72px) 0;
+  position: relative;
+  z-index: 4;
+}
+.spatial-hero .eyebrow { display: none; }
+.spatial-hero h1 {
+  font-size: clamp(4.6rem, 8.6vw, 8.9rem);
+  line-height: .84;
+  margin: 0;
+  max-width: 8.4ch;
+}
+.spatial-hero__lede, .spatial-hero .text-link { color: #403a33; }
+.spatial-hero__lede {
+  margin: clamp(24px, 3vw, 44px) 0 0;
+  max-width: 24rem;
+}
+.spatial-hero .text-link { margin-left: 0; margin-top: 25px; }
+.spatial-hero__media {
+  background: #f3e9d7;
+  inset: 0;
+  margin: 0;
+  min-height: 0;
+  position: absolute;
+  z-index: 1;
+}
+.spatial-hero__media::before { background: linear-gradient(180deg, #f4ebdd 0 40%, rgba(244,235,221,.82) 52%, rgba(244,235,221,0) 69%); content: ""; inset: 0; pointer-events: none; position: absolute; z-index: 1; }
+.spatial-hero__media > .hero-environment { display: block; filter: none; height: 100%; inset: 0; position: absolute; width: 100%; z-index: 0; }
+.spatial-hero__media > .hero-environment > img { display: block; height: 100%; object-fit: cover; object-position: center 58%; width: 100%; }
+.spatial-hero .route-overlay { bottom: -7%; display: block; height: 58%; left: 27%; opacity: .78; position: absolute; top: auto; width: 63%; z-index: 2; }
+.spatial-hero__media > .analyst-sprite { bottom: 4%; height: 28%; left: 43%; object-fit: contain; position: absolute; width: auto; z-index: 3; }
+.ambient-toggle { align-items: center; display: inline-flex; }
+
+/* Homepage cohesion: alternate material and pace after the illustrated hero. */
+.spatial-atlas {
+  --ink: #27231f;
+  --copy: #403a33;
+  --mute: #6f655a;
+  --line: #c9bbab;
+  background: #f4ebdd;
+  color: #403a33;
+  max-width: none;
+}
+.spatial-atlas .section-heading,
+.spatial-atlas .atlas-list { margin-left: auto; margin-right: auto; max-width: 1312px; }
+.spatial-atlas .section-heading { grid-template-columns: .7fr 1.45fr .7fr; }
+.spatial-atlas .atlas-row:nth-child(1) picture { background: #d7a43c; }
+.spatial-atlas .atlas-row:nth-child(2) picture { background: #dfbca7; }
+.spatial-atlas .atlas-row:nth-child(1) picture img,
+.spatial-atlas .atlas-row:nth-child(2) picture img {
+  filter: contrast(1.14) saturate(.78) sepia(.1);
+}
+.spatial-atlas .atlas-row:nth-child(1)::before,
+.spatial-atlas .atlas-row:nth-child(2)::before { background: #c86458; }
+.spatial-atlas .atlas-row:nth-child(n+3) picture,
+.spatial-atlas .atlas-row:nth-child(n+3) > img { background: #e5d7c1; }
+.spatial-atlas .atlas-row:nth-child(n+3) img { filter: saturate(.74) sepia(.1); }
+
+.practice-links {
+  --ink: #27231f;
+  --copy: #403a33;
+  --mute: #4a3c25;
+  --line: rgba(39,35,31,.28);
+  background: #d7a43c;
+  color: #403a33;
+  max-width: none;
+}
+.practice-links > * { margin-left: auto; margin-right: auto; max-width: 1312px; }
+.practice-links h2 { max-width: 1080px; }
+.practice-links a span { color: #c86458; }
+
+.about-bridge {
+  --ink: #27231f;
+  --copy: #403a33;
+  --mute: #62584e;
+  background: #e5d7c1;
+  color: #403a33;
+}
+.about-bridge > * { margin-left: auto; margin-right: auto; max-width: 1312px; }
+.contact-cta { background: #27231f; }
+.contact-cta h2 { color: #f4ebdd; }
+.contact-cta .eyebrow { color: #d7a43c; }
+.contact-cta .button-link { background: #c86458; color: #151511; }
+.spatial-atlas .atlas-media-stage__label { background: #f4ebdd; color: #27231f; }
+html[data-theme="light"] .about-page .about__meta dt,
+html[data-theme="light"] .about-page .entry__meta { color: #62584e; }
+
+@media (max-width: 699px) {
+  .spatial-hero { min-height: 820px; }
+  .spatial-hero__copy { max-width: 100%; min-height: 0; overflow: hidden; padding: 74px 20px 0; width: 100%; }
+  .spatial-hero h1 { font-size: clamp(3.75rem, 16vw, 5rem); max-width: 7ch; }
+  .spatial-hero__lede { max-width: 100%; width: 100%; }
+  .spatial-hero__lede, .spatial-hero .text-link { margin-left: 0; }
+  .spatial-hero__lede { margin-top: 24px; }
+  .spatial-hero__media { height: 100%; inset: 0; }
+  .spatial-hero__media > .hero-environment > img { object-position: 68% 58%; }
+  .spatial-hero .route-overlay { bottom: 4%; height: 34%; left: 8%; width: 88%; }
+  .spatial-hero__media > .analyst-sprite { bottom: 6%; height: 22%; left: 42%; }
+  .ambient-toggle { display: none; }
+  .spatial-atlas .section-heading { display: block; }
+  .spatial-atlas .section-heading > p:last-child { margin-top: 20px; }
+}

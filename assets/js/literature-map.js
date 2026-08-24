@@ -259,6 +259,43 @@
     }).join("");
   }
 
+  function evidencePhaseLabel(node) {
+    var phase = phaseForNode(node);
+    return "Evidence phase " + phase + ": " + (PHASE_LABELS[phase] || "Explore");
+  }
+
+  function nodeControlsMarkup(project) {
+    return [
+      '<section class="literature-map__node-controls" aria-label="Evidence sources">',
+      "<h4>Explore evidence sources</h4>",
+      '<ul class="literature-map__node-list">',
+      (project.nodes || []).map(function (node) {
+        var title = node.title || node.label || "Source";
+        var phaseLabel = evidencePhaseLabel(node);
+        return [
+          "<li>",
+          '<button class="literature-map__node-control" type="button" data-literature-node-control data-node-id="',
+          escapeHtml(node.id),
+          '" data-node-category="',
+          escapeHtml(node.category),
+          '" aria-pressed="false" aria-label="',
+          escapeHtml(title + ". " + phaseLabel),
+          '">',
+          '<span class="literature-map__node-control-title">',
+          escapeHtml(title),
+          "</span>",
+          '<span class="literature-map__node-control-phase">',
+          escapeHtml(phaseLabel),
+          "</span>",
+          "</button>",
+          "</li>"
+        ].join("");
+      }).join(""),
+      "</ul>",
+      "</section>"
+    ].join("");
+  }
+
   function graphMarkup(data, project) {
     var positions = nodePositions(project);
     var byId = {};
@@ -328,11 +365,8 @@
       var node = position.node;
       var meta = categoryMeta(data, node.category);
       var radius = nodeRadius(node);
-      var label = [node.title || node.label, yearLabel(node), node.category, node.role].filter(Boolean).join(" · ");
       return [
-        '<g class="literature-map__node" role="button" tabindex="0" aria-label="',
-        escapeHtml(label),
-        '" data-node-id="',
+        '<g class="literature-map__node" data-node-id="',
         escapeHtml(node.id),
         '" data-node-category="',
         escapeHtml(node.category),
@@ -362,7 +396,7 @@
     }).join("");
 
     return [
-      '<svg class="literature-map__svg" viewBox="0 0 1000 640" role="img" aria-label="Literature network graph">',
+      '<svg class="literature-map__svg" viewBox="0 0 1000 640" aria-hidden="true" focusable="false">',
       '<rect class="literature-map__plot-bg" x="0" y="0" width="1000" height="640" rx="28"></rect>',
       '<g class="literature-map__center-halo" aria-hidden="true">',
       '<circle cx="',
@@ -437,6 +471,9 @@
     root.querySelectorAll(".is-related, .is-selected, .is-muted").forEach(function (el) {
       el.classList.remove("is-related", "is-selected", "is-muted");
     });
+    root.querySelectorAll("[data-literature-node-control]").forEach(function (control) {
+      control.setAttribute("aria-pressed", "false");
+    });
   }
 
   function selectNode(root, project, id) {
@@ -457,6 +494,9 @@
       el.classList.toggle("is-related", !!related[nodeId] && nodeId !== id);
       el.classList.toggle("is-muted", !related[nodeId]);
     });
+    root.querySelectorAll("[data-literature-node-control]").forEach(function (control) {
+      control.setAttribute("aria-pressed", control.getAttribute("data-node-id") === id ? "true" : "false");
+    });
     root.querySelectorAll(".literature-map__edge-group").forEach(function (el) {
       var isRelated = el.getAttribute("data-edge-source") === id || el.getAttribute("data-edge-target") === id;
       el.classList.toggle("is-related", isRelated);
@@ -469,6 +509,9 @@
 
   function filterCategory(root, category) {
     root.classList.add("is-filtered");
+    root.querySelectorAll("[data-literature-node-control]").forEach(function (control) {
+      control.setAttribute("aria-pressed", "false");
+    });
     root.querySelectorAll("[data-node-category]").forEach(function (el) {
       var match = el.getAttribute("data-node-category") === category;
       el.classList.toggle("is-selected", match);
@@ -551,21 +594,27 @@
       "</div>",
       '<div class="literature-map__story">',
       '<div class="literature-map__graphic">',
-      '<div class="literature-map__status"><span data-literature-phase-label>Research question</span><em>Select nodes or category chips to filter</em><button type="button" data-literature-reset>Reset</button></div>',
+      '<div class="literature-map__status"><span data-literature-phase-label>Research question</span><em>Select sources or category chips to filter</em><button type="button" data-literature-reset>Reset</button></div>',
       graphMarkup(data, project),
       "</div>",
+      '<div class="literature-map__aside">',
+      nodeControlsMarkup(project),
       '<div class="literature-map__steps" aria-label="Literature map reveal steps">',
       stepMarkup(project),
+      "</div>",
       "</div>",
       "</div>",
       fallbackMarkup(data, project)
     ].join("");
 
-    root.querySelectorAll("[data-node-id]").forEach(function (el) {
+    root.querySelectorAll(".literature-map__node[data-node-id]").forEach(function (el) {
       var id = el.getAttribute("data-node-id");
       el.addEventListener("click", function () { selectNode(root, project, id); });
-      el.addEventListener("focus", function () { selectNode(root, project, id); });
       el.addEventListener("mouseenter", function () { selectNode(root, project, id); });
+    });
+    root.querySelectorAll("[data-literature-node-control]").forEach(function (control) {
+      var id = control.getAttribute("data-node-id");
+      control.addEventListener("click", function () { selectNode(root, project, id); });
     });
     root.querySelectorAll("[data-literature-category]").forEach(function (el) {
       var category = el.getAttribute("data-literature-category");

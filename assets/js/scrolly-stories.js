@@ -76,64 +76,174 @@
     });
   }
 
+  var STORY_CONTROLLER_KEY = "__portfolioStoryController";
+  var STORY_INITIALIZER_KEY = "__portfolioStoryInitializers";
+
+  function dispatchStoryEvent(root, type, detail) {
+    var payload = detail || {};
+    payload.controller = payload.controller || root[STORY_CONTROLLER_KEY] || root.storyController || null;
+    payload.root = root;
+    try {
+      root.dispatchEvent(new CustomEvent(type, { bubbles: true, detail: payload }));
+    } catch (err) {
+      // CustomEvent is supported by the browsers this static site targets;
+      // keep an older-browser fallback without changing the story itself.
+      var event = document.createEvent("CustomEvent");
+      event.initCustomEvent(type, true, false, payload);
+      root.dispatchEvent(event);
+    }
+  }
+
+  function announceStoryReady(root, controller, source) {
+    if (root.__portfolioStoryReady) return;
+    root.__portfolioStoryReady = true;
+    dispatchStoryEvent(root, "story:ready", {
+      controller: controller,
+      source: source || "static",
+      state: controller.getState()
+    });
+  }
+
+  function announceStoryLayout(root, controller, source) {
+    var notify = function () {
+      dispatchStoryEvent(root, "story:layout", {
+        controller: controller,
+        source: source || "data",
+        state: controller.getState()
+      });
+    };
+    if (window.requestAnimationFrame) window.requestAnimationFrame(notify);
+    else window.setTimeout(notify, 0);
+  }
+
+  function announceStoryError(root, controller, source, err) {
+    dispatchStoryEvent(root, "story:error", {
+      controller: controller,
+      source: source || "data",
+      message: err && err.message ? err.message : String(err || "Unknown story error"),
+      error: err || null,
+      state: controller && controller.getState ? controller.getState() : null
+    });
+  }
+
+  function beginStoryInit(root, key) {
+    var initializers = root[STORY_INITIALIZER_KEY] || {};
+    if (initializers[key]) return false;
+    initializers[key] = true;
+    root[STORY_INITIALIZER_KEY] = initializers;
+    return true;
+  }
+
   function bindStory(root, onActive) {
+    var existing = root[STORY_CONTROLLER_KEY] || root.storyController;
+    if (existing) return existing;
+
     var steps = $$(".story-step", root);
     var progress = $("[data-story-progress]", root);
     var dots = [];
     var active = -1;
     var manualNavUntil = 0;
+    var controller;
+
+    // Story steps are articles in the reading order, never custom buttons.
+    // Manual chapter navigation belongs exclusively to the native progress buttons.
+    steps.forEach(function (step) {
+      if (step.getAttribute("role") === "button") step.removeAttribute("role");
+      step.removeAttribute("tabindex");
+      step.removeAttribute("aria-pressed");
+    });
+
+    function getState() {
+      return {
+        activeIndex: active,
+        activeStep: steps[active] || null,
+        stepCount: steps.length
+      };
+    }
+
+    function clampIndex(index) {
+      var parsed = Number(index);
+      if (!isFinite(parsed)) parsed = active >= 0 ? active : 0;
+      return Math.max(0, Math.min(steps.length - 1, Math.round(parsed)));
+    }
+
+    function applyActive(index, force) {
+      if (!steps.length) return getState();
+      var next = clampIndex(index);
+      if (next === active && !force) return getState();
+      active = next;
+      steps.forEach(function (step, i) {
+        step.classList.toggle("is-active", i === active);
+      });
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle("is-active", i === active);
+        dot.classList.toggle("is-done", i < active);
+        if (i === active) dot.setAttribute("aria-current", "step");
+        else dot.removeAttribute("aria-current");
+      });
+      updateStoryLegend(root, steps[active]);
+      onActive(steps[active], active);
+      var state = getState();
+      // Data renderers own the factual SVG and chapter state. This event lets
+      // the shared GSAP layer apply a short presentational entrance only after
+      // the new visual is complete; it does not alter values or narration.
+      dispatchStoryEvent(root, "story:visual-change", {
+        controller: controller,
+        state: state,
+        activeStep: steps[active],
+        source: "story-state"
+      });
+      return state;
+    }
+
+    function activate(index, options) {
+      options = options || {};
+      if (!steps.length) return getState();
+      var next = clampIndex(index);
+      if (options.scroll && steps[next].scrollIntoView) {
+        manualNavUntil = Date.now() + 700;
+        steps[next].scrollIntoView({
+          behavior: options.behavior || "auto",
+          block: options.block || "center"
+        });
+      }
+      return applyActive(next, Boolean(options.force));
+    }
 
     if (progress && steps.length) {
       progress.removeAttribute("aria-hidden");
       progress.setAttribute("role", "navigation");
-      progress.setAttribute("aria-label", "Story chapters");
+      if (!progress.getAttribute("aria-label")) progress.setAttribute("aria-label", "Story chapters");
       steps.forEach(function (step, i) {
         var heading = step.querySelector("h4");
         var dot = document.createElement("button");
         dot.type = "button";
         dot.setAttribute("aria-label", "Jump to step " + (i + 1) + (heading ? ": " + heading.textContent : ""));
         dot.addEventListener("click", function () {
-          manualNavUntil = Date.now() + 700;
-          step.scrollIntoView({ behavior: "auto", block: "center" });
-          activate(i);
+          controller.activate(i, { scroll: true });
         });
         progress.appendChild(dot);
         dots.push(dot);
       });
     }
 
-    function activate(index) {
-      if (index < 0 || index >= steps.length || index === active) return;
-      active = index;
-      steps.forEach(function (step, i) {
-        step.classList.toggle("is-active", i === index);
-      });
-      dots.forEach(function (dot, i) {
-        dot.classList.toggle("is-active", i === index);
-        dot.classList.toggle("is-done", i < index);
-        if (i === index) dot.setAttribute("aria-current", "step");
-        else dot.removeAttribute("aria-current");
-      });
-      updateStoryLegend(root, steps[index]);
-      onActive(steps[index], index);
-    }
+    controller = {
+      activate: activate,
+      refresh: function () {
+        return applyActive(active >= 0 ? active : 0, true);
+      },
+      getState: getState,
+      getActiveStep: function () { return steps[active] || steps[0] || null; },
+      getCount: function () { return steps.length; },
+      destroy: function () {}
+    };
+    controller = Object.freeze(controller);
+    root[STORY_CONTROLLER_KEY] = controller;
+    root.storyController = controller;
 
     activate(0);
 
-    if ("IntersectionObserver" in window && steps.length) {
-      var io = new IntersectionObserver(function (entries) {
-        if (Date.now() < manualNavUntil) return;
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) activate(steps.indexOf(entry.target));
-        });
-      }, { threshold: 0, rootMargin: "-38% 0px -38% 0px" });
-      steps.forEach(function (step) { io.observe(step); });
-    }
-
-    return {
-      activate: activate,
-      getActiveStep: function () { return steps[active] || steps[0]; }
-    };
+    return controller;
   }
 
   function setPane(root, name, attrName) {
@@ -352,16 +462,16 @@
       var idx = rows.length - 1 - i;
       return "L" + x(idx).toFixed(1) + " " + y(Number(row.q1)).toFixed(1);
     }).join(" ") + " Z";
-    svg.appendChild(svgEl("path", { d: area, fill: "var(--accent-soft)", opacity: .68 }));
-    svg.appendChild(svgEl("path", { d: pathFor("q1"), fill: "none", stroke: "var(--outline)", "stroke-width": 1.2 }));
-    svg.appendChild(svgEl("path", { d: pathFor("q3"), fill: "none", stroke: "var(--outline)", "stroke-width": 1.2 }));
-    svg.appendChild(svgEl("path", { d: pathFor("mean"), fill: "none", stroke: "var(--accent)", "stroke-width": 4, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+    svg.appendChild(svgEl("path", { "class": "story-chart-band", d: area, fill: "var(--accent-soft)", opacity: .68 }));
+    svg.appendChild(svgEl("path", { "class": "story-chart-line story-chart-line--q1", d: pathFor("q1"), fill: "none", stroke: "var(--outline)", "stroke-width": 1.2, pathLength: 1 }));
+    svg.appendChild(svgEl("path", { "class": "story-chart-line story-chart-line--q3", d: pathFor("q3"), fill: "none", stroke: "var(--outline)", "stroke-width": 1.2, pathLength: 1 }));
+    svg.appendChild(svgEl("path", { "class": "story-chart-line story-chart-line--mean", d: pathFor("mean"), fill: "none", stroke: "var(--accent)", "stroke-width": 4, "stroke-linecap": "round", "stroke-linejoin": "round", pathLength: 1 }));
 
     rows.forEach(function (row, i) {
       var label = svgEl("text", { "class": "story-chart-label", x: x(i), y: height - 24, "text-anchor": "middle" });
       label.textContent = row.year;
       svg.appendChild(label);
-      svg.appendChild(svgEl("circle", { cx: x(i).toFixed(1), cy: y(Number(row.mean)).toFixed(1), r: 4, fill: "var(--accent)" }));
+      svg.appendChild(svgEl("circle", { "class": "story-chart-point", cx: x(i).toFixed(1), cy: y(Number(row.mean)).toFixed(1), r: 4, fill: "var(--accent)" }));
     });
   }
 
@@ -560,6 +670,8 @@
   }
 
   function initPangan(root) {
+    if (!beginStoryInit(root, "pangan")) return;
+    var staticOnly = root.hasAttribute("data-static-story");
     var paths = {
       kabkota: "maps/data/pangan/pangan_kabkota.geojson",
       sentra: "maps/data/pangan/pangan_sentra.geojson",
@@ -579,6 +691,15 @@
       setText(root, "[data-story-note]", step.getAttribute("data-note"));
       renderPanganChart(root, data, step.getAttribute("data-chart"));
     });
+    announceStoryReady(root, story, "pangan-static");
+
+    if (staticOnly) {
+      root.classList.add("is-static-manual");
+      var staticStatus = $("[data-story-status]", root);
+      if (staticStatus) staticStatus.textContent = "Static/manual story. Full GeoJSON display geometry is intentionally not loaded on this page.";
+      announceStoryLayout(root, story, "pangan-static-manual");
+      return;
+    }
 
     function loadPanganData() {
       Promise.all(Object.keys(paths).map(function (key) {
@@ -586,17 +707,12 @@
       })).then(function () {
         drawPangan(root, data);
         root.classList.add("is-loaded");
-        story.activate($$(".story-step", root).indexOf(story.getActiveStep()));
-        var active = story.getActiveStep();
-        if (active) {
-          setText(root, "[data-story-kpi]", active.getAttribute("data-kpi"));
-          setText(root, "[data-story-label]", active.getAttribute("data-label"));
-          setText(root, "[data-story-note]", active.getAttribute("data-note"));
-          renderPanganChart(root, data, active.getAttribute("data-chart"));
-        }
+        story.refresh();
+        announceStoryLayout(root, story, "pangan-data");
       }).catch(function (err) {
         var status = $("[data-story-status]", root);
         if (status) status.textContent = "The story data could not load. Static figures below remain available.";
+        announceStoryError(root, story, "pangan-data", err);
         console.error(err);
       });
     }
@@ -627,6 +743,29 @@
     var swipeHandle = $("[data-story-swipe-handle]", root);
     var swipeRange = $("[data-story-swipe-range]", root);
     if (!img) return;
+    if (!beginStoryInit(root, "image")) return;
+
+    function setResponsiveImage(target, src, srcset, sizes) {
+      if (!target || !src) return;
+      if (srcset) target.setAttribute("srcset", srcset);
+      else target.removeAttribute("srcset");
+      if (sizes) target.setAttribute("sizes", sizes);
+      else target.removeAttribute("sizes");
+      target.src = src;
+    }
+
+    function loadSwipeAssets() {
+      if (!swipe || swipe.dataset.assetsLoaded === "true") return;
+      $$('[data-alpha-swipe-src]', swipe).forEach(function (asset) {
+        setResponsiveImage(
+          asset,
+          asset.getAttribute("data-alpha-swipe-src"),
+          asset.getAttribute("data-alpha-swipe-srcset"),
+          asset.getAttribute("data-alpha-swipe-sizes")
+        );
+      });
+      swipe.dataset.assetsLoaded = "true";
+    }
 
     function setSwipe(value) {
       var n = Math.max(0, Math.min(100, Number(value) || 0));
@@ -691,8 +830,10 @@
       });
     }
 
-    bindStory(root, function (step) {
+    var story = bindStory(root, function (step) {
       var src = step.getAttribute("data-image");
+      var srcset = step.getAttribute("data-image-srcset") || "";
+      var sizes = step.getAttribute("data-image-sizes") || "";
       var alt = step.getAttribute("data-alt") || step.querySelector("h4") && step.querySelector("h4").textContent || "";
       var cap = step.getAttribute("data-caption") || "";
       var compare = step.hasAttribute("data-compare");
@@ -701,12 +842,15 @@
       else img.removeAttribute("aria-hidden");
       if (swipe) {
         swipe.hidden = !compare;
-        if (compare) setSwipe(step.getAttribute("data-swipe-start") || 50);
+        if (compare) {
+          loadSwipeAssets();
+          setSwipe(step.getAttribute("data-swipe-start") || 50);
+        }
       }
-      if (!compare && src && img.getAttribute("src") !== src) {
+      if (!compare && src && (img.getAttribute("src") !== src || img.getAttribute("srcset") !== srcset || img.getAttribute("sizes") !== sizes)) {
         img.classList.add("is-swapping");
         window.setTimeout(function () {
-          img.src = src;
+          setResponsiveImage(img, src, srcset, sizes);
           img.alt = alt;
           img.classList.remove("is-swapping");
         }, 120);
@@ -719,6 +863,13 @@
     });
 
     root.classList.add("is-loaded");
+    announceStoryReady(root, story, "image-static");
+
+    function notifyImageLayout() {
+      announceStoryLayout(root, story, "image");
+    }
+    img.addEventListener("load", notifyImageLayout);
+    if (img.complete) notifyImageLayout();
   }
 
   function alphaChartText(svg, value, attrs) {
@@ -740,14 +891,9 @@
 
   function startAlphaChartMotion(svg) {
     if (!svg) return;
-    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    svg.classList.remove("is-drawn");
-    svg.classList.add("is-animated");
-    if (reduce) {
-      svg.classList.add("is-drawn");
-      return;
-    }
-    window.requestAnimationFrame(function () { svg.classList.add("is-drawn"); });
+    // The shared GSAP lifecycle owns chart presentation. Leaving this SVG in
+    // its final static state is the no-JS and reduced-motion fallback.
+    svg.classList.remove("is-animated", "is-drawn");
   }
 
   function renderAlphaScenarioContext(svg) {
@@ -1005,6 +1151,7 @@
   }
 
   function initAlphaEarthChart(root) {
+    if (!beginStoryInit(root, "alphaearth-chart")) return;
     var storyData = null;
     var story = bindStory(root, function (step) {
       setText(root, "[data-story-kpi]", step.getAttribute("data-kpi"));
@@ -1012,41 +1159,36 @@
       setText(root, "[data-story-note]", step.getAttribute("data-note"));
       if (storyData) renderAlphaEarthChart(root, storyData, step.getAttribute("data-alpha-chart"));
     });
+    announceStoryReady(root, story, "alphaearth-chart-static");
 
     function load() {
       loadAlphaEarthStoryData().then(function (data) {
         storyData = data;
         root.classList.add("is-loaded");
-        var active = story.getActiveStep();
-        if (active) renderAlphaEarthChart(root, storyData, active.getAttribute("data-alpha-chart"));
+        story.refresh();
+        announceStoryLayout(root, story, "alphaearth-chart-data");
       }).catch(function (err) {
         var status = $("[data-story-status]", root);
         if (status) status.textContent = "The interactive scenario data could not load. The accessible tables below remain available.";
+        announceStoryError(root, story, "alphaearth-chart-data", err);
         console.error(err);
       });
     }
 
-    if ("IntersectionObserver" in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            observer.disconnect();
-            load();
-          }
-        });
-      }, { rootMargin: "600px 0px" });
-      observer.observe(root);
-    } else {
-      load();
-    }
+    // This manifest is only a few kilobytes and is shared across the two
+    // AlphaEarth chart stories. Preloading it keeps evidence ready when a
+    // reader reaches the analysis instead of making the chart depend on an
+    // IntersectionObserver timing race in a long-form case study.
+    load();
   }
 
   function initAlphaEarthBoundaries(root) {
+    if (!beginStoryInit(root, "alphaearth-boundaries")) return;
     var index = $("[data-boundary-index]", root);
     var title = $("[data-boundary-title]", root);
     var copy = $("[data-boundary-copy]", root);
     var items = $$("[data-boundary-key]", root);
-    bindStory(root, function (step, activeIndex) {
+    var story = bindStory(root, function (step, activeIndex) {
       var key = step.getAttribute("data-boundary");
       if (index) index.textContent = String(activeIndex + 1).padStart(2, "0") + " / 05";
       if (title) title.textContent = step.getAttribute("data-boundary-title") || "";
@@ -1059,20 +1201,28 @@
       });
     });
     root.classList.add("is-loaded");
+    announceStoryReady(root, story, "alphaearth-boundaries-static");
   }
 
   function renderMbrModel(svg, data) {
     var model = data.modelSummary && data.modelSummary[0];
     if (!model) return;
-    renderCompactBars(svg, [
-      { label: "R² out-of-fold", value: model.r2, color: "var(--accent)" },
-      { label: "Spearman ρ", value: model.spearman, color: "#466b8a" },
-      { label: "MAE", value: model.mae, color: "#6f7f52" }
-    ], {
-      title: "Stage 1 Model Fit",
-      subtitle: model.features + " AlphaEarth features · " + model.model,
-      digits: 3
+    svg.textContent = "";
+    svg.setAttribute("viewBox", "0 0 840 500");
+    svg.setAttribute("aria-label", "Stage 1 MBR model evidence: out-of-fold R squared 0.806, Spearman correlation 0.935, and MAE 0.789. The metrics are shown separately because they use different units.");
+    alphaChartTitle(svg, "Stage 1 evidence, read as three measures", "" + model.features + " AlphaEarth features · " + model.model + " · values are not a shared bar scale");
+    [
+      { value: formatNumber(model.r2, 3), label: "out-of-fold R²", note: "morphology fit" },
+      { value: formatNumber(model.spearman, 3), label: "Spearman ρ", note: "ranking agreement" },
+      { value: formatNumber(model.mae, 3), label: "mean absolute error", note: "model-score units" }
+    ].forEach(function (item, index) {
+      var x = 42 + index * 264;
+      svg.appendChild(svgEl("rect", { "class": "mbr-chart__card", x: x, y: 138, width: 236, height: 214, rx: 7 }));
+      alphaChartText(svg, item.value, { "class": "mbr-chart__metric", x: x + 20, y: 220 });
+      alphaChartText(svg, item.label, { "class": "mbr-chart__label", x: x + 20, y: 260 });
+      alphaChartText(svg, item.note, { "class": "mbr-chart__note", x: x + 20, y: 298 });
     });
+    alphaChartText(svg, "Each metric answers a different validation question; none is presented as a composite score.", { "class": "alphaearth-chart__annotation", x: 42, y: 430 });
   }
 
   function renderMbrQuintiles(svg, data) {
@@ -1125,6 +1275,7 @@
   }
 
   function initMbr(root) {
+    if (!beginStoryInit(root, "mbr")) return;
     var storyData = null;
     var story = bindStory(root, function (step) {
       var pane = step.getAttribute("data-pane") || "chart";
@@ -1135,17 +1286,17 @@
       setText(root, "[data-story-note]", step.getAttribute("data-note"));
       if (storyData && pane === "chart") renderMbrChart(root, storyData, chart);
     });
+    announceStoryReady(root, story, "mbr-static");
 
     fetchJson("assets/data/mbr/mbr_story.json").then(function (json) {
       storyData = json;
       root.classList.add("is-loaded");
-      var active = story.getActiveStep();
-      if (active && (active.getAttribute("data-pane") || "chart") === "chart") {
-        renderMbrChart(root, storyData, active.getAttribute("data-chart") || "model");
-      }
+      story.refresh();
+      announceStoryLayout(root, story, "mbr-data");
     }).catch(function (err) {
       var status = $("[data-story-status]", root);
       if (status) status.textContent = "The MBR story data could not load. Exported figures remain available in the story.";
+      announceStoryError(root, story, "mbr-data", err);
       console.error(err);
     });
   }
@@ -1228,6 +1379,7 @@
   }
 
   function initCbd(root) {
+    if (!beginStoryInit(root, "cbd")) return;
     var rows = null;
     var barsSvg = $("[data-cbd-bars]", root);
     var activeMetric = "n_poi";
@@ -1241,17 +1393,17 @@
       setText(root, "[data-story-note]", step.getAttribute("data-note"));
       if (rows && pane === "bars") renderCbdBars(barsSvg, rows, metric);
     });
+    announceStoryReady(root, story, "cbd-static");
 
     fetchJson("assets/data/cbd/indonesia_cbd.json").then(function (json) {
       rows = Array.isArray(json) ? json : [];
       root.classList.add("is-loaded");
-      var active = story.getActiveStep();
-      if (active) {
-        renderCbdBars(barsSvg, rows, active.getAttribute("data-metric") || activeMetric);
-      }
+      story.refresh();
+      announceStoryLayout(root, story, "cbd-data");
     }).catch(function (err) {
       var status = $("[data-story-status]", root);
       if (status) status.textContent = "The CBD data could not load. Static figures and maps below remain available.";
+      announceStoryError(root, story, "cbd-data", err);
       console.error(err);
     });
   }

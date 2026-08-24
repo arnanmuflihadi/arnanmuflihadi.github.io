@@ -753,6 +753,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(230px, .26fr);
   gap: clamp(18px, 2.5vw, 28px); align-items: start;
 }
+.literature-map__aside { display: grid; gap: 18px; }
 .literature-map__graphic {
   position: sticky; top: clamp(88px, 11vh, 126px);
   min-width: 0; overflow-x: auto; padding-bottom: 10px;
@@ -765,7 +766,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   text-transform: uppercase;
 }
 .literature-map__status em {
-  justify-self: center; color: color-mix(in srgb, var(--muted) 82%, transparent);
+  justify-self: center; color: var(--muted);
   font-style: normal; font-size: 10px; letter-spacing: .06em;
 }
 .literature-map__status button {
@@ -852,6 +853,50 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .literature-map.is-filtered .literature-map__edge-group.is-related .literature-map__edge {
   stroke: var(--accent-ink); stroke-width: 1.6;
 }
+.literature-map__node-controls {
+  padding-block: 14px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.literature-map__node-controls h4 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+.literature-map__node-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.literature-map__node-control {
+  appearance: none;
+  display: grid;
+  width: 100%;
+  gap: 3px;
+  padding: 9px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition: color .2s var(--emph), padding-left .2s var(--emph), opacity .2s var(--emph);
+}
+.literature-map__node-list li:last-child .literature-map__node-control { border-bottom: 0; }
+.literature-map__node-control-title { font-size: 12.5px; font-weight: 650; line-height: 1.35; }
+.literature-map__node-control-phase {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.literature-map__node-control:hover,
+.literature-map__node-control:focus-visible,
+.literature-map__node-control[aria-pressed="true"] {
+  padding-left: 7px;
+  color: var(--accent-ink);
+  outline: none;
+}
+.literature-map__node-control:focus-visible { box-shadow: inset 2px 0 0 var(--accent); }
+.literature-map.is-filtered .literature-map__node-control.is-muted { opacity: .46; }
 .literature-map__steps { display: grid; gap: 12px; }
 .literature-map__step {
   padding: 14px 15px; border: 1px solid var(--line-soft); border-radius: var(--r-m);
@@ -957,7 +1002,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .scrolly__progress span.is-active { background: var(--accent-ink); }
 .scrolly__steps { display: flex; flex-direction: column; gap: clamp(48px, 8vw, 96px); padding: 4px 0; }
 .scrolly__step {
-  padding-left: 20px; border-left: 2px solid var(--line); opacity: .38; transition: opacity .4s var(--ease), border-color .4s var(--ease);
+  padding-left: 20px; border-left: 2px solid var(--line); opacity: .60; transition: opacity .4s var(--ease), border-color .4s var(--ease);
 }
 .scrolly__step.is-active { opacity: 1; border-color: var(--accent-ink); }
 .scrolly__step-idx {
@@ -1283,6 +1328,18 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .story-progress button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .story-map-svg, .story-chart-svg { width: 100%; height: 100%; display: block; }
 .story-map-svg { background: color-mix(in srgb, var(--sc-high) 88%, var(--surface)); }
+.story-static-poster { display: none; height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; z-index: 1; }
+.project-story.is-static-manual .story-static-poster,
+.transit-scrolly.is-static-manual .story-static-poster { display: block; }
+.project-story.is-static-manual .story-map-svg,
+.transit-scrolly.is-static-manual .scrolly-map-svg { opacity: 0; pointer-events: none; }
+.project-story.is-static-manual .story-insight-panel,
+.project-story.is-static-manual .story-layer-legend,
+.transit-scrolly.is-static-manual .scrolly-map-panel,
+.transit-scrolly.is-static-manual .compare-divider,
+.transit-scrolly.is-static-manual .compare-label,
+.transit-scrolly.is-static-manual .scrolly-static-spotlight,
+.transit-scrolly.is-static-manual .scrolly-static-callout { display: none; }
 .story-map-layer { opacity: 0; transition: opacity .42s var(--emph); }
 .story-map-layer.is-visible { opacity: 1; }
 .story-map-unit { fill: color-mix(in srgb, var(--surface) 76%, var(--accent-soft)); stroke: color-mix(in srgb, var(--ink) 34%, transparent); stroke-width: .7; vector-effect: non-scaling-stroke; }
@@ -1569,15 +1626,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   flex: 1 1 0; min-width: 0; display: flex; flex-direction: column;
   background: var(--surface); border: 1px solid var(--outline-soft);
   border-radius: var(--r-l); box-shadow: var(--e1); padding: 16px 15px 17px;
-  opacity: 0; transform: translateY(22px) scale(.96);
-  transition: opacity .6s var(--emph), transform .6s var(--spring), border-color .3s, box-shadow .3s;
+  /* A methodology must remain readable before JavaScript loads. GSAP adds
+     its entrance only on motion-capable sessions. */
+  opacity: 1; transform: none;
+  transition: border-color .3s, box-shadow .3s;
 }
 .dflow__phase:hover { border-color: var(--outline); box-shadow: var(--e2); }
-.dflow.in .dflow__phase { opacity: 1; transform: none; }
-.dflow.in .dflow__phase:nth-child(1) { transition-delay: .05s; }
-.dflow.in .dflow__phase:nth-child(3) { transition-delay: .25s; }
-.dflow.in .dflow__phase:nth-child(5) { transition-delay: .45s; }
-.dflow.in .dflow__phase:nth-child(7) { transition-delay: .65s; }
 .dflow__head { display: flex; align-items: center; gap: 9px; margin-bottom: 13px; }
 .dflow__num { font-family: var(--font-mono); font-size: 11px; font-weight: 600; width: 24px; height: 24px; flex: none; display: grid; place-items: center; border-radius: var(--r-full); background: var(--accent-soft); color: var(--accent-ink); }
 .dflow__head .ms { font-size: 19px; color: var(--ink); }
@@ -1592,12 +1646,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .dflow__node--data::before { content: ""; position: absolute; top: 5px; left: 10px; right: 10px; height: 9px; border: 1px solid var(--outline); border-radius: 50%; background: var(--surface-2); }
 .dflow__node--data .st { color: var(--ink); }
 .dflow__node--data .tx { font-family: var(--font-mono); font-size: 11px; line-height: 1.55; }
-/* connector (animate opacity only; rotate the inner icon for the column layout) */
-.dflow__link { flex: 0 0 24px; align-self: center; display: grid; place-items: center; color: var(--muted); opacity: 0; transition: opacity .5s var(--emph); }
-.dflow.in .dflow__link { opacity: 1; }
-.dflow.in .dflow__link:nth-child(2) { transition-delay: .18s; }
-.dflow.in .dflow__link:nth-child(4) { transition-delay: .38s; }
-.dflow.in .dflow__link:nth-child(6) { transition-delay: .58s; }
+/* Connector stays present without JavaScript; GSAP owns its optional entrance. */
+.dflow__link { flex: 0 0 24px; align-self: center; display: grid; place-items: center; color: var(--muted); opacity: 1; }
 .dflow__link .ms { font-size: 22px; }
 @media (max-width: 980px) {
   .dflow { flex-direction: column; }
@@ -1653,9 +1703,11 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
    LIGHTBOX (M3 dialog)
    ============================================================ */
 .lb { position: fixed; inset: 0; z-index: 1000; background: color-mix(in srgb, #000 72%, transparent); backdrop-filter: blur(8px); display: grid; place-items: center; padding: 4vw; opacity: 0; pointer-events: none; transition: opacity .4s var(--emph); }
+.lb[hidden] { display: none !important; }
 .lb.open { opacity: 1; pointer-events: auto; }
 .lb img { max-width: 94vw; max-height: 88vh; border-radius: var(--r-l); box-shadow: var(--e3); transform: scale(.96); transition: transform .4s var(--spring); }
 .lb.open img { transform: scale(1); }
+.lb__title { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .lb__cap { position: absolute; bottom: 20px; left: 0; right: 0; text-align: center; font-family: var(--font-mono); font-size: 12px; color: color-mix(in srgb, #fff 80%, transparent); padding-inline: 20px; }
 .lb__close { position: absolute; top: 22px; right: 26px; width: 48px; height: 48px; border-radius: var(--r-full); border: 0; background: rgba(255,255,255,.12); color: #fff; cursor: pointer; display: grid; place-items: center; transition: transform .4s var(--spring), background .3s; }
 .lb__close .ms { font-size: 24px; }
@@ -1848,7 +1900,7 @@ body::before { display: none; }
   top: 10px;
   color: var(--ink);
 }
-.theme-toggle {
+.nav__links .theme-toggle {
   display: grid;
   position: fixed;
   right: clamp(92px, 8vw, 118px);
@@ -1861,7 +1913,7 @@ body::before { display: none; }
   background: transparent;
   color: var(--ink);
 }
-.theme-toggle:hover { background: transparent; transform: none; }
+.nav__links .theme-toggle:hover { background: transparent; transform: none; }
 
 .btn {
   border-radius: 0;
@@ -3150,7 +3202,7 @@ body[data-project] .scrolly-static-step {
   border-radius: 0;
   color: var(--case-charcoal);
   background: transparent;
-  opacity: .38;
+  opacity: .64;
   transform: none;
 }
 body[data-project] .story-step:hover:not(.is-active),
@@ -3236,6 +3288,9 @@ body[data-project] .case-progress {
 }
 body[data-project] .case-progress a,
 body[data-project] .case-progress a span { border-radius: 0; }
+/* The desktop-only progress rail keeps its visual dot, but each native link
+   owns a 24px pointer target for keyboard and touch-equivalent operation. */
+body[data-project] .case-progress a { width: 24px; height: 24px; }
 body[data-project] .cs-pager {
   min-height: 44svh;
   border-top: 0;
@@ -3307,7 +3362,12 @@ body[data-project] .cs-pager .t {
   body[data-project] .cs-section__head { grid-template-columns: 1fr; gap: 12px; }
   body[data-project] .cs-section__head h2 { font-size: clamp(44px, 15vw, 72px); }
   body[data-project] .project-story,
-  body[data-project] .transit-scrolly { padding-inline: 0; }
+  body[data-project] .transit-scrolly {
+    width: calc(100% + var(--gutter) + var(--gutter));
+    margin-left: calc(0px - var(--gutter));
+    margin-right: calc(0px - var(--gutter));
+    padding-inline: 0;
+  }
   body[data-project] .project-story__head,
   body[data-project] .scrolly-static-head {
     margin-inline: var(--gutter);
@@ -3641,7 +3701,7 @@ body[data-project] .scrolly-static-step {
   border-bottom: 1px solid rgba(242,238,229,.13);
   color: #f2eee5;
   background: transparent;
-  opacity: .34;
+  opacity: .64;
 }
 body[data-project] .story-step::before,
 body[data-project] .scrolly-static-step::before { display: none; }
@@ -3693,6 +3753,10 @@ body[data-project] .story-step p,
 body[data-project] .scrolly-static-step p {
   color: rgba(242,238,229,.64);
   font-size: clamp(13px, 1vw, 16px);
+}
+body[data-project] .story-step:not(.is-active) p,
+body[data-project] .scrolly-static-step:not(.active) p {
+  color: rgba(242,238,229,.96);
 }
 body[data-project] .story-step__meta span,
 body[data-project] .story-step.is-active .story-step__meta span {
@@ -3755,7 +3819,7 @@ body[data-project="alphaearth"] .story-caption { bottom: 118px; }
   background: #0e110d;
   /* Let vertical touch gestures continue scrolling the story; the custom
      pointer handler only uses horizontal movement for the comparison. */
-  touch-action: pan-y;
+  touch-action: pan-y pinch-zoom;
 }
 .alphaearth-swipe[hidden] { display: none; }
 .alphaearth-swipe__base,
@@ -3880,27 +3944,6 @@ body[data-project="alphaearth"] .project-story.is-compare .story-image {
 .alphaearth-story-chart .story-chart-label,
 .alphaearth-story-chart .story-chart-value { fill: rgba(242,238,229,.67); }
 .alphaearth-story-chart .story-chart-axis { stroke: rgba(242,238,229,.16); }
-.alphaearth-story-chart.is-animated .alphaearth-chart__bar,
-.alphaearth-story-chart.is-animated .story-chart-bar,
-.alphaearth-story-chart.is-animated .alphaearth-chart__range {
-  transform-box: fill-box;
-  transform-origin: left center;
-  transition: transform .72s var(--emph), opacity .42s var(--emph);
-}
-.alphaearth-story-chart.is-animated:not(.is-drawn) .alphaearth-chart__bar,
-.alphaearth-story-chart.is-animated:not(.is-drawn) .story-chart-bar,
-.alphaearth-story-chart.is-animated:not(.is-drawn) .alphaearth-chart__range { opacity: .14; transform: scaleX(.02); }
-.alphaearth-story-chart.is-animated .alphaearth-chart__line {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset .9s var(--emph), opacity .4s var(--emph);
-}
-.alphaearth-story-chart.is-animated:not(.is-drawn) .alphaearth-chart__line { opacity: .2; stroke-dashoffset: 1; }
-.alphaearth-story-chart.is-animated:not(.is-drawn) .alphaearth-chart__point,
-.alphaearth-story-chart.is-animated:not(.is-drawn) .alphaearth-chart__end-label { opacity: 0; }
-.alphaearth-story-chart.is-animated .alphaearth-chart__point,
-.alphaearth-story-chart.is-animated .alphaearth-chart__end-label { transition: opacity .36s .52s var(--emph); }
-
 .alphaearth-boundary-card {
   position: absolute;
   inset: clamp(26px, 7vw, 86px) clamp(22px, 6vw, 78px) auto;
@@ -4223,4 +4266,77 @@ body[data-project] .case-progress { display: none; }
   .alphaearth-swipe__overlay,
   .alphaearth-story-chart *,
   .alphaearth-boundary-list li { transition: none !important; }
+}
+
+/* Accessibility contrast guardrails — preserve the editorial hierarchy through
+   borders, spacing, and active states instead of dimming readable copy. */
+html[data-theme="light"] body.about-page :is(.about__meta dt, .entry__meta) {
+  color: #62584e;
+}
+html[data-theme="light"] body.case-study-page {
+  --muted: #6d6d6d;
+}
+body[data-project] .scrolly__step,
+body[data-project] .literature-map__step,
+body[data-project] .scrolly-static-step {
+  opacity: 1;
+}
+body[data-project] .story-source-note,
+body[data-project] .scrolly-static-caption {
+  color: rgba(242, 238, 229, .62);
+}
+body[data-project] .story-source-note code { color: inherit; }
+body[data-project] .story-step__meta span,
+body[data-project] .story-step.is-active .story-step__meta span {
+  color: rgba(242, 238, 229, .86);
+}
+body[data-project] :is(.story-step__num, .scrolly-static-step__num) {
+  color: color-mix(in srgb, var(--accent) 45%, #f2eee5);
+}
+body[data-project] .cs-pager .label {
+  color: color-mix(in srgb, var(--accent) 80%, #fff);
+}
+html[data-theme="dark"] body[data-project="pangan"] .pl-stage--src .pl-chip {
+  background: rgba(255, 255, 255, .12);
+  border-color: rgba(242, 238, 229, .28);
+  color: #f2eee5;
+}
+body[data-project="alphaearth"] :is(
+  .alphaearth-chart__scope-note,
+  .alphaearth-chart__pilot-label,
+  .alphaearth-chart__axis-label,
+  .alphaearth-chart__annotation,
+  .alphaearth-chart__range-label,
+  .alphaearth-chart__gate-copy,
+  .alphaearth-story-chart .story-chart-subtitle,
+  .alphaearth-story-chart .story-chart-label,
+  .alphaearth-story-chart .story-chart-value
+) {
+  fill: rgba(242, 238, 229, .78);
+}
+body[data-project="alphaearth"] .alphaearth-boundary-card p {
+  color: rgba(242, 238, 229, .78);
+}
+body[data-project="alphaearth"] .alphaearth-boundary-list li {
+  color: rgba(242, 238, 229, .72);
+}
+html[data-theme="dark"] body[data-project="alphaearth"] :is(
+  .alphaearth-state-label--context,
+  .alphaearth-state-label--withheld
+) {
+  color: #f5bf62;
+}
+html[data-theme="dark"] body[data-project="alphaearth"] .alphaearth-state-label--withheld {
+  color: #ff9a8f;
+}
+
+/* Axe 4.10.3: the static literature fallback sits on a warmer paper than the
+   normal case copy, so keep its source labels one step darker in light mode. */
+html[data-theme="light"] body.case-study-page .literature-map__fallback p span {
+  color: #6c6c6c;
+}
+
+/* Transit story chapter indices sit on the night-stage surface. */
+html[data-theme="light"] body[data-project="transit"] .scrolly-static-step__num {
+  color: #6d8592;
 }

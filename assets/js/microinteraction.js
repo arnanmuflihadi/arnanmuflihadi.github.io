@@ -1,7 +1,7 @@
 /*
   Shared micro-interactions
   -------------------------
-  - Case-study reading progress bar and section dots.
+  - Case-study section orientation and inline term definitions.
   - Inline term definitions via data-term-definition.
   - Pointer-aware card highlight for the portfolio overview.
 */
@@ -16,36 +16,6 @@
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
     return id || fallback;
-  }
-
-  function initReadingProgress() {
-    if (!document.querySelector(".cs-hero")) return;
-
-    var bar = document.createElement("div");
-    bar.className = "read-progress";
-    bar.setAttribute("aria-hidden", "true");
-    bar.innerHTML = "<span></span>";
-    document.body.appendChild(bar);
-
-    var fill = bar.querySelector("span");
-    var ticking = false;
-
-    function update() {
-      ticking = false;
-      var max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-      var pct = Math.min(1, Math.max(0, window.scrollY / max));
-      fill.style.transform = "scaleX(" + pct.toFixed(4) + ")";
-    }
-
-    function requestUpdate() {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(update);
-    }
-
-    update();
-    window.addEventListener("scroll", requestUpdate, { passive: true });
-    window.addEventListener("resize", requestUpdate);
   }
 
   function initSectionRail() {
@@ -199,7 +169,6 @@
   }
 
   function init() {
-    initReadingProgress();
     initSectionRail();
     initTermTooltips();
     initCardHighlights();

@@ -1,103 +1,114 @@
-# Geospatial Portfolio — Arnan Muflihadi
+# Arnan Muflihadi — Geospatial Portfolio
 
-A static portfolio site (pure HTML/CSS/JS, no build step). Responsive, with light/dark mode and project-specific accent colors. Typeface system: **Roboto Flex + Roboto Mono**.
+This is a static multi-page portfolio (HTML, CSS, and JavaScript only). It has no build step, backend, or framework requirement, and is intended to remain compatible with GitHub Pages.
 
+The shared visual system uses **Roboto Flex** and **Roboto Mono**, an editorial geospatial palette, and progressive enhancement for navigation and motion. All links and assets are relative so the site can be served from a repository root or a GitHub Pages project path.
+
+## Routes
+
+| Route | Purpose |
+| --- | --- |
+| `index.html` | Homepage: editorial geospatial introduction and selected work. |
+| `portfolio.html` | Complete selected-work index. |
+| `about.html` | Profile, CV download, experience, education, and publications. |
+| `contact.html` | Direct email, LinkedIn, Tableau, and CV links. |
+| `project-transit.html` | DKI Jakarta transit accessibility case study. |
+| `project-pangan.html` | West Java rice-supply-network case study. |
+| `project-alphaearth-food.html` | Historical paddy-screening case study. |
+| `project-mbr.html` | Satellite proxy for low-income communities case study. |
+| `project-cbd.html` | Indonesia business-center clustering case study. |
+| `404.html` | Recovery page for unknown routes. |
+
+## Local preview
+
+Run a plain static server from this folder:
+
+```bash
+cd "/Users/arnanmuflihadi/Documents/Portofolio GIS/website"
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
+
+Open [http://127.0.0.1:4173/index.html](http://127.0.0.1:4173/index.html). Use the server rather than `file://` URLs so relative map embeds and browser-module-like fetches behave consistently.
+
+For a Pages-equivalent staging directory, use the repository server rather than adding a dependency:
+
+```bash
+node scripts/serve-pages-preview.mjs --root /absolute/path/to/_site --port 4173
+```
+
+The preview builds deterministic gzip level-9 copies of eligible text files into an OS-temporary cache before it listens, streams all responses, keeps media/PDFs and `dki-3d/` identity-encoded, and removes that cache on clean shutdown. It serves `404.html` with an HTTP 404 status for unknown paths, matching the recovery behavior expected from a Pages artifact.
+
+## Shared shell and motion ownership
+
+- `assets/js/theme-init.js` applies the stored colour preference before first paint.
+- `assets/js/main.js` owns the baseline theme control, year, legacy progressive enhancements, and case-study utilities that are still loaded by the relevant pages.
+- `assets/js/site-shell.js` owns the shared editorial header: the mobile menu, Escape handling, and page-curtain navigation policy.
+- `assets/js/transition-init.js` enables the page curtain only when JavaScript is available.
+- `assets/js/motion.js` is the shared GSAP/ScrollTrigger/Lenis orchestration layer. It activates only where supported hooks exist (principally the homepage) and is deliberately not a second animation engine for case studies.
+- `assets/css/motion.css` contains the shared motion presentation and reduced-motion fallbacks. Keep substantive content visible when `prefers-reduced-motion: reduce` is active.
+- Vendor files live in `assets/js/vendor/`: `gsap.min.js`, `ScrollTrigger.min.js`, and `lenis.min.js`. Keep their loading order before `motion.js` on pages that use the shared motion layer.
+
+All ten top-level routes use the canonical `site-header`, `page-curtain`, and `site-footer` markup. When editing a route, retain the `data-site-*`, `data-nav-*`, and `data-theme-toggle` hooks so the shared shell remains accessible.
+
+The precise local-library versions, licences, sources, and checksums are recorded in [assets/js/vendor/THIRD_PARTY.md](assets/js/vendor/THIRD_PARTY.md). Do not replace or update a vendored file without updating that provenance record and re-running the static audit.
+
+## Asset and cache discipline
+
+- The approved homepage environment master is `assets/img/redesign/hero-environment.png`; its WebP sibling is a delivery derivative, not a replacement for the master. Keep the PNG fallback in the `<picture>` element.
+- The analyst walk frames and live SVG route are separate, original assets. Do not substitute reference-site artwork or regenerate them during a CSS/JS-only pass.
+- Project listing images use committed responsive derivatives where available. Derivatives must preserve the source image's analytical meaning, dimensions/aspect intent, and alt/caption relationship; they are not a licence to alter data graphics.
+- When changing a shared CSS or JavaScript asset, bump its query version consistently in every top-level route. Then test a fresh local URL or a new local server origin so an old cached response cannot masquerade as current work.
+
+## Local validation
+
+The repository has no package install step. Run the static route and asset checks from the site root after any shared-shell, route, asset, or map change:
+
+```bash
+node scripts/audit-static-site.mjs
+node --check assets/js/main.js
+node --check assets/js/site-shell.js
+node --check assets/js/transition-init.js
+node --check assets/js/motion.js
+git diff --check
+```
+
+The audit is a release gate, not a visual substitute: also inspect desktop, tablet, mobile, reduced-motion, keyboard, explicit-map, and case-story states in a browser before publishing.
+
+## Explicit map embeds
+
+Interactive maps are committed static documents, embedded by case-study pages with local `iframe` URLs. They are not fetched from a runtime map service.
+
+| Case study | Local embed(s) |
+| --- | --- |
+| Transit | `maps/transit_dashboard.html` and `dki-3d/` |
+| Food systems | `maps/pangan_dashboard.html` |
+| Business centers | `maps/jakarta_map.html` and `maps/indonesia_map.html` |
+
+`assets/js/embed-loader.js` owns the explicit opt-in map controls. Keep iframe titles descriptive, a static preview, and a direct “Open full map” action for every heavy embed; never restore an automatic iframe `src` on page entry.
+
+## Repository layout
+
+```text
 website/
-├── index.html              # Landing (hero only)
-├── portfolio.html          # Portfolio (stacked-card deck, 2 groups)
-├── about.html              # About & CV (bio, photo, CV download)
-├── capabilities.html       # Capabilities grid
-├── contact.html            # Contact (links + Formspree form)
-├── 404.html                # Custom not-found page
-├── project-transit.html    # Case study 01 — Transit Accessibility (DKI Jakarta)
-├── project-pangan.html     # Case study 02 — Rice Supply Chain (West Java)
-├── project-mbr.html        # Case study 03 — Satellite MBR Proxy (DKI Jakarta)
-├── project-cbd.html        # Case study 04 — CBD Clustering (Indonesia, interactive maps)
-├── maps/                   # self-contained Folium/Leaflet maps (embedded via iframe)
-├── .nojekyll               # Required so GitHub Pages serves the assets/ folder
-└── assets/
-    ├── css/variables.css   # palette, light/dark tokens, and project accent mappings
-    ├── css/style.css       # cache-busted as style.css?v=N — bump N on every CSS change
-    ├── js/main.js          # same: main.js?v=N
-    ├── js/collapsible.js   # progressive enhancement for collapsed methodology panels
-    ├── js/microinteraction.js # case-study progress rail, term tooltips, and card pointer feedback
-    ├── js/scrolly-stories.js # Pangan/MBR/CBD scrollytelling controller
-    ├── js/literature-map.js # animated Litmaps-inspired literature network controller
-    ├── cv.pdf              # downloadable CV (regenerate via matplotlib script if updated)
-    ├── data/literature-maps.json # curated nodes, edges, categories, and roles for each literature map
-    ├── data/cbd/           # downloadable CBD analysis JSON
-    ├── data/mbr/           # compact MBR story data derived from local pipeline CSV outputs
-    └── img/                # topo.svg background, profile.jpg, per-project map images
+├── index.html
+├── portfolio.html
+├── about.html
+├── contact.html
+├── 404.html
+├── project-*.html
+├── maps/                       # committed interactive map documents and data
+├── dki-3d/                     # committed static transit simulation
+├── assets/
+│   ├── css/                    # base, editorial, and motion styles
+│   ├── js/                     # shared shell, motion, and case-study scripts
+│   ├── data/                   # committed data used by case studies
+│   ├── img/                    # portfolio imagery and map assets
+│   └── cv.pdf                  # downloadable CV
+└── .nojekyll                   # preserves static assets on GitHub Pages
 ```
 
-## ✏️ Remaining to-do
-1. **Contact form** — create a free form at formspree.io and replace `YOUR_FORM_ID` in `contact.html`.
-2. **Analytics (optional)** — uncomment the Plausible/GoatCounter snippet in `index.html` and set your domain.
+## GitHub Pages
 
-## 🚀 Deploy to GitHub Pages
+Publish this directory as the repository root (or configure it as the Pages source). Because this is a static MPA, no dependency installation or build command is needed before publishing.
 
-### Option A — serve from the repo root (simplest)
-```bash
-cd website
-git init
-git add .
-git commit -m "Geospatial portfolio"
-git branch -M main
-git remote add origin https://github.com/<username>/<username>.github.io.git
-git push -u origin main
-```
-If the repo is named `<username>.github.io`, the site is live at `https://<username>.github.io`.
-For any other repo name (e.g. `portfolio`), go to **Settings → Pages → Source: main / root**; the site is live at `https://<username>.github.io/portfolio/`.
-
-### Option B — serve from a `/docs` folder
-Rename this folder to `docs`, push to the repo, then **Settings → Pages → Source: main / docs**.
-
-## 🔍 Local preview
-```bash
-cd website
-python3 -m http.server 8000
-# open http://localhost:8000
-```
-
-## 🎨 Notes
-- **Topographic background:** the contour lines in `assets/img/topo.svg` were generated by running `matplotlib`'s `contour()` over a synthetic elevation field. They are applied as a theme-aware CSS `mask-image`, so the lines automatically flip color between light and dark mode. Tune intensity via the `opacity` of `.hero__topo` / `.cshero__topo` / `.contact__topo` in `style.css`.
-
-## Palette system
-- `assets/css/variables.css` defines the site palette, semantic surface/text tokens, light/dark equivalents, and project accent mappings.
-- Global pages use `--color-highlight`. Case-study pages set `data-project` on `<body>` so progress bars, section markers, buttons, literature maps, and scrollytelling controls inherit the right accent: `transit` blue, `pangan` green, `mbr` purple, and `cbd` golden amber.
-- Portfolio cards also use `data-project` so each card can show its project color independently on hover, focus, tags, story cues, and the left accent rail.
-- To add a new project color, add `--color-<slug>`, `--color-<slug>-ink`, `--color-<slug>-soft`, `--color-<slug>-on`, and `--color-<slug>-rgb` in both light and dark blocks, then map `body[data-project="<slug>"]` and `.card[data-project="<slug>"]` to `--accent`, `--accent-ink`, `--accent-soft`, `--on-accent`, and `--accent-rgb`.
-- Keep text colors on `--ink`, `--ink-soft`, or the contrast-tested `--accent-ink`; use the brighter `--accent` mainly for fills, rails, markers, and hover/focus affordances.
-
-## Scrollytelling system
-- `project-transit.html` uses its own already-edited `assets/js/scrolly-transit-static.js`; it is intentionally separate from this continuation.
-- `project-pangan.html` uses `assets/js/scrolly-stories.js` to draw the story from committed GeoJSON in `maps/data/pangan/`.
-- `project-cbd.html` uses `assets/js/scrolly-stories.js` to render ranking/density views from `assets/data/cbd/indonesia_cbd.json` and embeds the live Folium maps.
-- `project-mbr.html` uses `assets/js/scrolly-stories.js` with compact chart data in `assets/data/mbr/mbr_story.json`; exported figures remain only where the available raw category fields do not reproduce the published final category counts.
-- Current case-study cache markers are `style.css?v=45`, `variables.css?v=2`, `main.js?v=8`, `collapsible.js?v=1`, `microinteraction.js?v=1`, `scrolly-stories.js?v=8`, `scrolly-transit-static.js?v=9`, and `literature-map.js?v=5`.
-
-Checklist for new case-study stories:
-1. Prefer committed raw/processed data over static chart images when the data is available.
-2. Keep image-based scrollytelling only as an explicit fallback when source data is missing or the available raw field conflicts with the published final result.
-3. Remove static figures or maps that duplicate a data-driven scrollytelling state; keep only distinct supporting evidence.
-4. Bump `style.css?v=N` and the story script version on edited pages so GitHub Pages does not serve stale assets.
-
-## Literature map system
-- Each case-study page has a separate `Evidence & Literature Map` section immediately before the plain References section. The full reference list stays in the HTML for credibility, accessibility, SEO, and no-JavaScript fallback.
-- `assets/js/literature-map.js` fetches `assets/data/literature-maps.json`, selects the matching project key, and renders a curated SVG citation network. It does not geocode references, does not use Leaflet, and does not replace the bibliography.
-- Each project has a `center` research-question node, representative `nodes`, and explicit `edges` with relationship labels such as `uses data from`, `applies method from`, `implemented with`, `validated against`, `supports policy context`, `interprets results through`, and `extends / adapts`.
-- Node categories are `Core Method`, `Dataset / Data Source`, `Software / Tool`, `Validation / Benchmark`, `Policy / Planning Context`, and `Background / Interpretation`. Node size comes from `importance` on a 1-5 scale.
-- The component uses `IntersectionObserver` for a mini-scroll reveal: center node, methods, data, tools, validation/context, connections, then free exploration. It respects `prefers-reduced-motion` by showing the full graph immediately.
-- To add a new case-study map, add a `projects.<slug>` object in `literature-maps.json`, place `<div id="literature-map-<slug>" class="literature-map" data-literature-map="<slug>">` before the References section, and include `assets/js/literature-map.js?v=4` near the end of the page.
-
-## Micro-interactions and collapsibles
-- `assets/js/microinteraction.js` adds the case-study reading progress bar, desktop section-dot navigation, inline term tooltips, and pointer-aware card feedback. Add a definition by wrapping a term with `data-term-definition="Short explanation"` and, optionally, `data-term="Label"`.
-- `assets/js/collapsible.js` enhances any prose container marked `data-method-collapsible`. Direct child paragraphs that begin with `<strong>Title.</strong>` become collapsed method panels; any following formula/table/list content stays inside that panel until the next titled paragraph.
-- Keep the original prose in the HTML. The collapsible behavior is progressive enhancement: without JavaScript, the full method remains visible.
-- Motion must stay purposeful and light. When changing animations, update the `prefers-reduced-motion` rules in `style.css` and verify at one mobile width plus one desktop width.
-
-## Adding or modifying story steps
-- For Pangan, MBR, and CBD, edit the `.story-step` elements in the relevant page. The shared `assets/js/scrolly-stories.js` reads each step's `data-*` attributes to swap panes, charts, KPIs, labels, notes, optional `data-legend` layer chips, and progress buttons.
-- For Transit, edit `.scrolly-static-step` elements in `project-transit.html`. `assets/js/scrolly-transit-static.js` reads `data-layer-target`, `data-state`, `data-note`, `data-legend`, and pan/scale attributes to update the SVG map layers and chapter navigation.
-- Prefer adding a new committed data layer first; use image crossfade or zoom only when the raw data is unavailable or cannot reproduce the published result.
+When adding a route or changing shared assets, prefer relative URLs, preserve the `404.html` recovery page, and ensure the target path works through a local static server before publishing.

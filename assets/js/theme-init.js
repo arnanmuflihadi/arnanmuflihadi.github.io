@@ -3,8 +3,7 @@
   "use strict";
   try {
     var saved = window.localStorage.getItem("theme");
-    var systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.setAttribute("data-theme", saved || (systemDark ? "dark" : "light"));
+    document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
   } catch (error) {
     document.documentElement.setAttribute("data-theme", "light");
   }

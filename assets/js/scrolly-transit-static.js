@@ -13,6 +13,15 @@
   var scrolly = document.querySelector("[data-transit-scrolly]");
   if (!scrolly) return;
 
+  // Keep a small, stable public surface for integrations without making the
+  // narrative articles act like controls. A repeated script include should not
+  // attach a second set of listeners to the same story.
+  var controller = window.transitStory || window.TransitStory || {};
+  window.transitStory = controller;
+  window.TransitStory = controller;
+  if (scrolly.__transitStoryInitialized) return;
+  scrolly.__transitStoryInitialized = true;
+
   var stage = scrolly.querySelector(".scrolly-static-stage");
   var steps = Array.prototype.slice.call(scrolly.querySelectorAll("[data-scrolly-step]"));
   var note = scrolly.querySelector("[data-scrolly-note]");
@@ -36,28 +45,19 @@
 
   var activeIndex = -1;
   var activeTarget = "overview";
-  var ticking = false;
   var mapReady = false;
+  var staticOnly = scrolly.hasAttribute("data-static-story");
   var mapFeatures = [];
   var recordsByName = {};
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var navDots = [];
 
-  steps.forEach(function (step, i) {
-    var heading = step.querySelector("h4");
-    step.tabIndex = 0;
-    step.setAttribute("role", "button");
-    step.setAttribute("aria-label", "Jump to transit story step " + (i + 1) + (heading ? ": " + heading.textContent : ""));
-    step.addEventListener("click", function () {
-      step.scrollIntoView({ behavior: "auto", block: "center" });
-      setActive(i);
-    });
-    step.addEventListener("keydown", function (event) {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        step.click();
-      }
-    });
+  steps.forEach(function (step) {
+    // Story chapters are articles, not faux buttons. Clear attributes left by
+    // older builds so they retain their native, non-focusable semantics.
+    step.removeAttribute("tabindex");
+    step.removeAttribute("role");
+    step.removeAttribute("aria-label");
   });
 
   if (stepNav && steps.length) {
@@ -69,8 +69,7 @@
       dot.type = "button";
       dot.setAttribute("aria-label", "Jump to transit step " + (i + 1) + (heading ? ": " + heading.textContent : ""));
       dot.addEventListener("click", function () {
-        step.scrollIntoView({ behavior: "auto", block: "center" });
-        setActive(i);
+        activateStep(i, true);
       });
       stepNav.appendChild(dot);
       navDots.push(dot);
@@ -471,6 +470,14 @@
     renderLabels(activeTarget);
   }
 
+  function setNeutralComparison() {
+    stage.style.setProperty("--split", "50%");
+    if (clipRect) {
+      clipRect.setAttribute("x", (MAP_W * 0.5).toFixed(2));
+      clipRect.setAttribute("width", (MAP_W * 0.5).toFixed(2));
+    }
+  }
+
   function setActive(index) {
     index = clamp(index, 0, steps.length - 1);
     var step = steps[index];
@@ -501,64 +508,43 @@
     stage.style.setProperty("--scrolly-scale", reduceMotion ? "1" : (step.getAttribute("data-scale") || "1"));
     stage.style.setProperty("--scrolly-pan-x", reduceMotion ? "0%" : (step.getAttribute("data-pan-x") || "0%"));
     stage.style.setProperty("--scrolly-pan-y", reduceMotion ? "0%" : (step.getAttribute("data-pan-y") || "0%"));
+    setNeutralComparison();
   }
 
-  function closestStepIndex() {
-    var viewport = window.innerHeight || document.documentElement.clientHeight;
-    var anchor = viewport * 0.46;
-    var best = 0;
-    var bestDistance = Infinity;
-
-    steps.forEach(function (step, i) {
-      var rect = step.getBoundingClientRect();
-      var focusLine = rect.top + rect.height * 0.38;
-      var distance = Math.abs(focusLine - anchor);
-      if (distance < bestDistance) {
-        bestDistance = distance;
-        best = i;
-      }
-    });
-
-    return best;
-  }
-
-  function updateCompareSplit(index) {
-    var step = steps[index];
-    var target = step.getAttribute("data-layer-target");
-    if (target !== "compare") {
-      stage.style.setProperty("--split", step.getAttribute("data-split") || "50%");
-      if (clipRect) {
-        clipRect.setAttribute("x", MAP_W * 0.5);
-        clipRect.setAttribute("width", MAP_W * 0.5);
-      }
-      return;
-    }
-
-    var rect = step.getBoundingClientRect();
-    var viewport = window.innerHeight || document.documentElement.clientHeight;
-    var local = clamp((viewport * 0.72 - rect.top) / (rect.height + viewport * 0.25), 0, 1);
-    var split = 34 + local * 42;
-    var splitX = MAP_W * split / 100;
-    stage.style.setProperty("--split", split.toFixed(1) + "%");
-    if (clipRect) {
-      clipRect.setAttribute("x", splitX.toFixed(2));
-      clipRect.setAttribute("width", (MAP_W - splitX).toFixed(2));
-    }
-  }
-
-  function update() {
-    ticking = false;
-    var index = closestStepIndex();
+  function activateStep(index, shouldScroll) {
+    index = clamp(Number(index) || 0, 0, steps.length - 1);
+    if (shouldScroll) steps[index].scrollIntoView({ behavior: "auto", block: "center" });
     setActive(index);
-    updateCompareSplit(index);
+    return index;
   }
 
-  function requestUpdate() {
-    if (!ticking) {
-      ticking = true;
-      window.requestAnimationFrame(update);
-    }
+  function dispatchStoryEvent(type, detail) {
+    scrolly.dispatchEvent(new CustomEvent(type, {
+      bubbles: true,
+      detail: detail || {}
+    }));
   }
+
+  controller.element = scrolly;
+  controller.activate = function (index, options) {
+    return activateStep(index, Boolean(options && options.scroll));
+  };
+  controller.refresh = function () {
+    setActive(activeIndex < 0 ? 0 : activeIndex);
+    return controller.getState();
+  };
+  controller.getState = function () {
+    return {
+      activeIndex: activeIndex,
+      activeTarget: activeTarget,
+      mapReady: mapReady
+    };
+  };
+  controller.getCount = function () { return steps.length; };
+  controller.destroy = function () {
+    if (dataObserver) dataObserver.disconnect();
+  };
+  scrolly.storyController = Object.freeze(controller);
 
   async function loadMapData() {
     try {
@@ -610,27 +596,40 @@
       mapReady = true;
       mapRoot.classList.add("is-ready");
       setMapState(activeTarget);
+      dispatchStoryEvent("story:layout", {
+        featureCount: mapFeatures.length,
+        mapReady: mapReady
+      });
+      dispatchStoryEvent("story:ready", {
+        featureCount: mapFeatures.length,
+        mapReady: mapReady
+      });
     } catch (error) {
       if (status) status.textContent = "The accessibility map data could not be loaded. Check the local data files and reload.";
       console.error("Transit scrolly data load failed", error);
+      dispatchStoryEvent("story:error", { error: error });
     }
   }
-
-  window.addEventListener("scroll", requestUpdate, { passive: true });
-  window.addEventListener("resize", requestUpdate);
 
   if (window.matchMedia) {
     var motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     var onMotionChange = function () {
       reduceMotion = motionQuery.matches;
-      requestUpdate();
+      controller.refresh();
     };
     if (motionQuery.addEventListener) motionQuery.addEventListener("change", onMotionChange);
     else if (motionQuery.addListener) motionQuery.addListener(onMotionChange);
   }
 
   setActive(0);
-  requestUpdate();
+
+  if (staticOnly) {
+    scrolly.classList.add("is-static-manual");
+    if (status) status.textContent = "Static/manual story. Full kelurahan geometry is intentionally not loaded in the case shell; source-supported figures and the explicit map remain available below.";
+    dispatchStoryEvent("story:layout", { mapReady: false, static: true });
+    dispatchStoryEvent("story:ready", { mapReady: false, static: true });
+    return;
+  }
 
   // The kelurahan geojson + accessibility data is several MB — only fetch it
   // once the scrollytelling section is actually about to enter view, not on

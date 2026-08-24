@@ -1,0 +1,632 @@
+/*
+ * Shared editorial cohesion for the approved geospatial redesign.
+ * This file deliberately loads after the legacy stylesheet so the three
+ * primary routes can share one shell without destabilising case studies.
+ */
+
+/* Home keeps its approved warm illustration field; Work and About inherit the
+ * same material vocabulary while retaining a deliberate page-specific rhythm. */
+.redesign.home-page {
+  --paper: #f4ebdd;
+  --ink: #27231f;
+  --copy: #403a33;
+  --mute: #746b60;
+  --line: #c9bbab;
+  --signal: #c86458;
+  --surface: #e5d7c1;
+}
+
+html[data-theme="light"] .redesign.portfolio-page,
+html[data-theme="light"] .redesign.about-page {
+  --paper: #f4ebdd;
+  --ink: #27231f;
+  --copy: #403a33;
+  --mute: #746b60;
+  --line: #c9bbab;
+  --signal: #c86458;
+  --surface: #e5d7c1;
+}
+
+html[data-theme="dark"] .redesign.portfolio-page {
+  --paper: #27231f;
+  --ink: #f4ebdd;
+  --copy: #ede0cd;
+  --mute: #c5b4a0;
+  --line: #66584b;
+  --signal: #e68a76;
+  --surface: #3b3129;
+}
+
+html[data-theme="dark"] .redesign.about-page {
+  --paper: #302923;
+  --ink: #f4ebdd;
+  --copy: #eadccb;
+  --mute: #c4b29d;
+  --line: #6a5a4c;
+  --signal: #e68a76;
+  --surface: #46382d;
+}
+
+.redesign.portfolio-page,
+.redesign.about-page {
+  background: var(--paper);
+}
+
+/* A persistent shell is the continuity device; only the active destination
+ * changes state. This also neutralises the old fixed-position theme toggle. */
+.redesign .site-header {
+  background: var(--paper);
+  border-color: var(--line);
+  color: var(--copy);
+}
+
+/* The approved Home illustration stays warm in dark mode, while the persistent
+ * shell takes the same ink state as the Work route it leads into. */
+html[data-theme="dark"] .redesign.home-page .site-header {
+  --copy: #ede0cd;
+  --ink: #f4ebdd;
+  --line: #66584b;
+  --signal: #e68a76;
+  background: #27231f;
+}
+
+.redesign .site-nav {
+  gap: clamp(18px, 2vw, 28px);
+}
+
+.redesign .site-nav a {
+  position: relative;
+}
+
+@media (min-width: 700px) {
+  .redesign .site-nav a[aria-current="page"]::after {
+    background: var(--signal);
+    border-radius: 50%;
+    bottom: -12px;
+    content: "";
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 4px;
+  }
+}
+
+.redesign .site-header .theme-toggle {
+  align-self: center;
+  border-left: 1px solid var(--line);
+  flex: 0 0 44px;
+  inset: auto;
+  margin: 0 0 0 4px;
+  padding: 0 0 0 18px;
+  position: static;
+}
+
+/* Shared opening contract: one type scale and one restrained cartographic
+ * trace, then a different surface for each route. */
+.portfolio-page .portfolio-hero,
+.about-page .portfolio-hero {
+  align-items: flex-start;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  isolation: isolate;
+  min-height: min(760px, calc(100svh - 72px));
+  overflow: hidden;
+  padding-bottom: clamp(72px, 11vw, 156px);
+  padding-top: clamp(72px, 11vw, 156px);
+  position: relative;
+}
+
+.about-page .portfolio-hero {
+  background: var(--surface);
+}
+
+.portfolio-page .portfolio-hero > :not(.page-route-motif),
+.about-page .portfolio-hero > :not(.page-route-motif) {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-page .portfolio-hero h1,
+.about-page .portfolio-hero h1 {
+  max-width: 9.5ch;
+}
+
+.about-page .portfolio-hero h1 {
+  max-width: 6ch;
+}
+
+.portfolio-hero__lede {
+  margin-bottom: 0;
+}
+
+.page-route-motif {
+  color: var(--signal);
+  height: clamp(150px, 19vw, 246px);
+  opacity: 0.78;
+  pointer-events: none;
+  position: absolute;
+  right: clamp(-44px, 1vw, 26px);
+  top: clamp(82px, 11vw, 158px);
+  width: min(52vw, 690px);
+  z-index: 0;
+}
+
+.page-route-motif path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.page-route-motif circle {
+  fill: var(--paper);
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.about-page .page-route-motif {
+  bottom: clamp(42px, 8vw, 110px);
+  right: clamp(-26px, 4vw, 60px);
+  top: auto;
+  width: min(46vw, 610px);
+}
+
+.about-page .page-route-motif circle {
+  fill: var(--surface);
+}
+
+/* Work has two featured editorial encounters before resolving into a quiet
+ * index, rather than repeating one generic project card five times. */
+.portfolio-page .portfolio-atlas {
+  background: var(--paper);
+  max-width: none;
+  padding-bottom: clamp(94px, 12vw, 178px);
+  padding-top: clamp(88px, 12vw, 178px);
+}
+
+.portfolio-page .portfolio-atlas .atlas-list {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1312px;
+}
+
+.portfolio-page .portfolio-atlas .atlas-row:nth-child(1) picture {
+  background: #d7a43c;
+}
+
+.portfolio-page .portfolio-atlas .atlas-row:nth-child(2) picture {
+  background: #dfbca7;
+}
+
+.portfolio-page .portfolio-atlas .atlas-row:nth-child(1) picture img,
+.portfolio-page .portfolio-atlas .atlas-row:nth-child(2) picture img {
+  filter: contrast(1.1) saturate(0.8) sepia(0.08);
+}
+
+.portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) picture,
+.portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) > img {
+  background: var(--surface);
+}
+
+.portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) img {
+  filter: saturate(0.74) sepia(0.08);
+}
+
+@media (min-width: 1100px) {
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1),
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) {
+    gap: clamp(30px, 4vw, 70px);
+    grid-template-columns: 48px minmax(0, 0.88fr) minmax(420px, 1.12fr) 30px;
+    min-height: clamp(480px, 47vw, 680px);
+    padding: clamp(28px, 4vw, 60px) 0;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1) picture,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1) > img,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) picture,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) > img {
+    height: clamp(390px, 38vw, 590px);
+    margin: 0;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1) h2,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) h2 {
+    font-size: clamp(3rem, 5vw, 5.8rem);
+    max-width: 11ch;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) {
+    grid-template-columns: 48px minmax(420px, 1.12fr) minmax(0, 0.88fr) 30px;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) > div {
+    grid-column: 3;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) > picture,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) > img {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) {
+    grid-template-columns: 48px minmax(0, 1.25fr) minmax(190px, 0.45fr) 28px;
+    min-height: 150px;
+    padding: 20px 0;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) picture,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) > img {
+    height: 104px;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) h2 {
+    font-size: clamp(1.45rem, 2.3vw, 2.5rem);
+    max-width: 22ch;
+  }
+}
+
+.portfolio-page .other-practice {
+  --copy: #403a33;
+  --ink: #27231f;
+  --line: rgba(39, 35, 31, 0.28);
+  --mute: #4a3c25;
+  background: #d7a43c;
+  color: #403a33;
+}
+
+.portfolio-page .other-practice a span {
+  color: #c86458;
+}
+
+/* About exits the old card/CV language for the same ruled, spacious editorial
+ * field used by the project index. The facts themselves are unchanged. */
+.about-page .about {
+  background: var(--paper);
+  max-width: none;
+  padding-bottom: clamp(90px, 12vw, 172px);
+  padding-top: clamp(84px, 11vw, 156px);
+}
+
+.about-page .about > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1312px;
+}
+
+.about-page .about__grid {
+  border-top: 1px solid var(--line);
+  padding-top: clamp(34px, 5vw, 72px);
+}
+
+.about-page .about__photo {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.about-page .about__meta {
+  background: transparent;
+  border-radius: 0;
+  display: block;
+  margin-top: 26px;
+  overflow: visible;
+}
+
+.about-page .about__meta div {
+  background: transparent;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0 16px;
+}
+
+.about-page .about__meta div:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.about-page .about__meta dt,
+.about-page .about__meta dd {
+  color: var(--copy);
+}
+
+.about-page .about__meta dt {
+  color: var(--mute);
+}
+
+.about-page .about__cta .btn {
+  background: transparent;
+  border-bottom: 1px solid var(--ink);
+  color: var(--ink);
+  padding: 0 0 9px;
+}
+
+.about-page .cs-section {
+  border-color: var(--line);
+  padding-bottom: 0;
+  padding-top: clamp(76px, 10vw, 142px);
+}
+
+.about-page .cs-section__head h2 {
+  color: var(--ink);
+  font-size: clamp(3rem, 6vw, 6.2rem);
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+}
+
+.about-page .flow {
+  margin-bottom: 0;
+}
+
+.about-page .flow__track {
+  background: var(--line);
+  bottom: 28px;
+  left: 15px;
+  top: 8px;
+  width: 1px;
+}
+
+.about-page .flow__track::before {
+  background: var(--signal);
+  transform: scaleY(1);
+  transition: none;
+}
+
+.about-page .flow__track::after {
+  display: none;
+}
+
+.js.motion-ready .about-page .flow.is-cohesion-flow .flow__track::before {
+  transform: scaleY(0);
+  transition: transform 1.05s cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+.js.motion-ready .about-page .flow.is-cohesion-flow.is-flow-drawn .flow__track::before {
+  transform: scaleY(1);
+}
+
+.about-page .flow__step {
+  gap: clamp(18px, 2.4vw, 38px);
+  opacity: 1;
+  padding-bottom: clamp(34px, 5vw, 68px);
+  transform: none;
+}
+
+.about-page .flow__node {
+  background: var(--paper);
+  border-color: var(--signal);
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--ink);
+  height: 32px;
+  width: 32px;
+}
+
+.about-page .flow__step--end .flow__node {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: #27231f;
+}
+
+.about-page .flow__card {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 clamp(22px, 3vw, 34px);
+}
+
+.about-page .flow__step:hover .flow__card {
+  border-color: var(--signal);
+  box-shadow: none;
+}
+
+.about-page .flow__stage {
+  color: var(--mute);
+  margin-bottom: 8px;
+}
+
+.about-page .flow__card h3 {
+  color: var(--ink);
+  font-size: clamp(1.45rem, 2.4vw, 2.7rem);
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  margin-bottom: 10px;
+}
+
+.about-page .flow__card p,
+.about-page .entry p {
+  color: var(--copy);
+}
+
+.about-page .entries {
+  border-top: 1px solid var(--line);
+}
+
+.about-page .entry {
+  border-color: var(--line);
+  padding: clamp(28px, 4vw, 48px) 0;
+}
+
+.about-page .entry h3 {
+  color: var(--ink);
+  font-size: clamp(1.45rem, 2.4vw, 2.6rem);
+  letter-spacing: -0.045em;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.about-page .entry__meta {
+  color: var(--mute);
+  margin-bottom: 11px;
+}
+
+/* Work and About finish with the same decisive, non-card contact gesture that
+ * closes Home. The live route is animated by the existing shared motion file. */
+.route-coda {
+  background: #27231f;
+  color: #f4ebdd;
+  max-width: none;
+  padding-bottom: clamp(80px, 12vw, 180px);
+  padding-top: clamp(80px, 12vw, 180px);
+}
+
+.route-coda > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1312px;
+}
+
+.route-coda .eyebrow {
+  color: #d7a43c;
+}
+
+.route-coda h2 {
+  color: #f4ebdd;
+  font-size: clamp(3rem, 7vw, 8rem);
+  font-variation-settings: "opsz" 110, "wght" 550;
+  letter-spacing: -0.07em;
+  line-height: 0.88;
+  margin: 22px 0 48px;
+  max-width: 1100px;
+}
+
+.route-coda .button-link {
+  background: #c86458;
+  color: #151511;
+}
+
+.route-coda .closing-route {
+  color: #c86458;
+}
+
+.route-coda .closing-route circle {
+  fill: #27231f;
+}
+
+@media (max-width: 699px) {
+  .redesign .site-header .theme-toggle {
+    border-left: 0;
+    margin: 18px 0 0;
+    padding: 0;
+  }
+
+  .portfolio-page .portfolio-hero,
+  .about-page .portfolio-hero {
+    min-height: min(620px, calc(100svh - 64px));
+    padding-bottom: 92px;
+    padding-top: 88px;
+  }
+
+  .portfolio-page .portfolio-hero h1,
+  .about-page .portfolio-hero h1 {
+    font-size: clamp(3.55rem, 14.5vw, 5.4rem);
+    max-width: 8.5ch;
+  }
+
+  .page-route-motif {
+    height: 118px;
+    opacity: 0.72;
+    right: -24px;
+    top: auto;
+    bottom: 28px;
+    width: min(88vw, 420px);
+  }
+
+  .about-page .page-route-motif {
+    bottom: 28px;
+    right: -20px;
+    width: min(80vw, 360px);
+  }
+
+  .portfolio-page .portfolio-atlas {
+    padding-bottom: 106px;
+    padding-top: 80px;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1),
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) {
+    padding-bottom: 38px;
+    padding-top: 32px;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1) picture,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1) > img,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) picture,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) > img {
+    height: 70vw;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(1) h2,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(2) h2 {
+    font-size: 2.35rem;
+    line-height: 0.92;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) {
+    padding: 25px 0;
+  }
+
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) picture,
+  .portfolio-page .portfolio-atlas .atlas-row:nth-child(n + 3) > img {
+    display: none;
+  }
+
+  .about-page .about {
+    padding-bottom: 90px;
+    padding-top: 76px;
+  }
+
+  .about-page .about__grid {
+    gap: 34px;
+  }
+
+  .about-page .about__meta {
+    margin-top: 18px;
+  }
+
+  .about-page .cs-section {
+    padding-top: 72px;
+  }
+
+  .about-page .cs-section__head h2 {
+    font-size: 3.25rem;
+  }
+
+  .about-page .flow__step {
+    gap: 16px;
+  }
+
+  .about-page .flow__node {
+    height: 30px;
+    width: 30px;
+  }
+
+  .route-coda {
+    padding-bottom: 88px;
+    padding-top: 88px;
+  }
+
+  .route-coda h2 {
+    font-size: 3.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-route-motif path {
+    stroke-dasharray: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+
+  .page-route-motif circle,
+  .about-page .flow__step {
+    transform: none !important;
+  }
+
+  .about-page .flow__track::before {
+    transform: scaleY(1) !important;
+    transition: none !important;
+  }
+}
