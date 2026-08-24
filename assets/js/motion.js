@@ -168,12 +168,29 @@
 
     // Walk cycle: the illustrated frame sequence, preloaded before it is
     // ever added to the ambient rotation so the first swap never pops in.
-    const walk = gsap.timeline({ paused: true, repeat: repeats });
+    // Ping-ponging (1->6 then 6->1, via yoyo) instead of hard-restarting at
+    // frame 6 removes the jump-cut every loop -- the sequence always ends
+    // exactly where it began, by construction, with no art dependency.
+    // Frames swap at a fixed rate, and the walker's own travel below is
+    // linear rather than eased for the same reason: an eased "slow down,
+    // speed up" pace next to a constant leg cadence is what reads as feet
+    // sliding on the ground instead of a real stride.
+    const walk = gsap.timeline({ paused: true, repeat: -1, yoyo: true });
     walkFrames.forEach((frame) => {
       walk.call(() => {
         sprite.src = walkFrameSource(frame);
         sprite.dataset.frame = frame;
       }).to({}, { duration: frameDuration });
+    });
+    // A small per-step bob sells the weight of each stride without needing
+    // more art frames -- two bounces per ping-pong lap, roughly one per foot.
+    const bob = gsap.to(sprite, {
+      y: -3,
+      duration: frameDuration * 3,
+      ease: 'sine.inOut',
+      paused: true,
+      repeat: -1,
+      yoyo: true
     });
 
     const journey = gsap.timeline({
@@ -185,8 +202,8 @@
         gsap.set(sprite, { scaleX: travellingRight ? 1 : -1 });
       }
     });
-    journey.to(walker, { left: journeyEnd, duration: journeyDuration, ease: 'sine.inOut' }, 0);
-    if (routeProgress) journey.to(routeProgress, { attr: { 'stroke-dashoffset': 0 }, duration: journeyDuration, ease: 'sine.inOut' }, 0);
+    journey.to(walker, { left: journeyEnd, duration: journeyDuration, ease: 'none' }, 0);
+    if (routeProgress) journey.to(routeProgress, { attr: { 'stroke-dashoffset': 0 }, duration: journeyDuration, ease: 'none' }, 0);
     if (stops.length) {
       journey.to(stops, {
         scale: 1.3,
@@ -239,7 +256,7 @@
       }));
       Promise.all(preload).then(() => {
         if (walkCancelled) return;
-        heroEntry.items.push(walk);
+        heroEntry.items.push(walk, bob);
         updateAmbientPlayback();
       });
     }, 200);
