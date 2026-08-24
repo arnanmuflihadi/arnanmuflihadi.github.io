@@ -7,16 +7,16 @@
 
 /* ---------- hero ---------- */
 .spatial-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, .92fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: calc(100svh - 72px);
 }
 .spatial-hero__copy {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: clamp(48px, 8vw, 116px) clamp(24px, 5vw, 84px);
+  padding: clamp(56px, 9vw, 128px) clamp(24px, 5vw, 84px) clamp(40px, 6vw, 80px);
 }
 .spatial-hero h1 {
   font-size: var(--fs-display);
@@ -24,55 +24,69 @@
   line-height: .98;
   margin: 22px 0 26px;
 }
-.spatial-hero__lede { color: var(--ink-soft); font-size: var(--fs-lg); line-height: 1.5; max-width: 30rem; }
+.spatial-hero__lede { color: var(--ink-soft); font-size: var(--fs-lg); line-height: 1.5; max-width: 42rem; }
 .spatial-hero .text-link { margin-top: 32px; }
 
-.spatial-hero__media {
+/* The strip runs the full width of the hero, edge to edge, as one
+   elongated filmstrip rather than a boxed illustration panel. */
+.spatial-hero__strip {
   background: var(--surface);
+  height: clamp(120px, 15vw, 220px);
   isolation: isolate;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
-.hero-skyline {
+.hero-strip {
   --sky-top: var(--surface);
   --sky-bottom: var(--surface-2);
   height: 100%;
   width: 100%;
 }
-.hero-skyline .bld { fill: var(--ink); }
-.hero-skyline .bld--back { opacity: .22; }
-.hero-skyline .bld--mid { opacity: .5; }
-.hero-skyline .bld--front { opacity: .92; }
-.hero-skyline .bld-win .win { fill: var(--surface); opacity: .55; }
-.hero-skyline__ground { fill: var(--ink); opacity: .92; }
-.hero-skyline__groundline { stroke: var(--ink); stroke-width: 2; }
-[data-theme="dark"] .hero-skyline .bld-win .win { opacity: .8; fill: var(--accent-soft); }
+.hero-strip .bld { fill: var(--ink); }
+.hero-strip .bld--back { opacity: .22; }
+.hero-strip .bld--mid { opacity: .5; }
+.hero-strip .bld--front { opacity: .92; }
+.hero-strip .bld-win .win { fill: var(--surface); opacity: .55; }
+.hero-strip__ground { fill: var(--ink); opacity: .92; }
+.hero-strip__groundline { stroke: var(--ink); stroke-width: 2; }
+[data-theme="dark"] .hero-strip .bld-win .win { opacity: .8; fill: var(--accent-soft); }
 
-.route-overlay {
-  height: 58%;
-  left: 6%;
+.hero-route {
+  bottom: 0;
+  height: 100%;
+  left: 0;
   pointer-events: none;
   position: absolute;
-  top: auto;
-  bottom: 10%;
-  width: 88%;
+  width: 100%;
   z-index: 2;
 }
-.route-overlay use:first-child { color: var(--accent); opacity: .5; }
-.route-overlay use:not(:first-child) { color: var(--accent); opacity: .68; }
-.route-overlay use { transform-box: fill-box; transform-origin: center; }
-[data-hero-route-progress] { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.5; opacity: .85; }
+.hero-route__line { fill: none; stroke: var(--accent); stroke-width: 2; opacity: .3; }
+.hero-route__progress { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; opacity: .8; }
+[data-hero-route-stop] { fill: var(--surface); stroke: var(--accent); stroke-width: 2; transform-box: fill-box; transform-origin: 50% 50%; }
 
-.hero-walker { bottom: 12%; display: block; height: 9%; left: 44%; position: absolute; transform-origin: 50% 100%; width: auto; z-index: 3; }
+.hero-walker {
+  bottom: 14%;
+  display: block;
+  height: 30%;
+  left: 8%;
+  position: absolute;
+  transform-origin: 50% 100%;
+  width: auto;
+  z-index: 3;
+}
 .walker-figure { display: block; height: 100%; overflow: visible; width: auto; }
 .walker-figure__head,
 .walker-figure__torso,
 .walker-figure__leg rect,
 .walker-figure__arm rect { fill: var(--ink); }
-.walker-figure__leg,
+.walker-figure__shadow { fill: var(--ink); opacity: .16; }
+.walker-figure__thigh,
+.walker-figure__shin,
 .walker-figure__arm { transform-box: fill-box; transform-origin: 50% 0%; }
-.walker-figure__leg[data-leg="back"] { transform: rotate(-17deg); }
-.walker-figure__leg[data-leg="front"] { transform: rotate(17deg); }
+.walker-figure__leg[data-leg="back"] .walker-figure__thigh { transform: rotate(-20deg); }
+.walker-figure__leg[data-leg="front"] .walker-figure__thigh { transform: rotate(18deg); }
+.walker-figure__shin { transform: rotate(8deg); }
 .walker-figure__arm[data-arm="back"] { transform: rotate(15deg); }
 .walker-figure__arm[data-arm="front"] { transform: rotate(-15deg); }
 
@@ -151,7 +165,6 @@
   .home-selected-work__heading { display: block; }
   .home-selected-work__heading h2 { margin: 14px 0; }
   .home-selected-work__heading > p:last-child { max-width: 32rem; }
-  .spatial-hero { grid-template-columns: 1fr 1fr; }
   .spatial-hero h1 { font-size: clamp(3.4rem, 7vw, 5.6rem); }
   .about-bridge { grid-template-columns: 1fr; }
   .about-bridge__intro, .about-bridge__method { padding-left: var(--gutter); padding-right: var(--gutter); }
@@ -159,11 +172,12 @@
 }
 
 @media (max-width: 699px) {
-  .spatial-hero { display: block; min-height: 0; }
-  .spatial-hero__copy { padding: 56px 20px 36px; }
+  .spatial-hero { min-height: 0; }
+  .spatial-hero__copy { padding: 56px 20px 32px; }
   .spatial-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); }
   .spatial-hero__lede { font-size: var(--fs-sm); max-width: none; }
-  .spatial-hero__media { height: 62vw; min-height: 240px; }
+  .spatial-hero__strip { height: 96px; }
+  .hero-walker { height: 34%; left: 6%; }
   .expertise-marquee__track { font-size: 1.1rem; }
   .home-selected-work { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
   .about-bridge { gap: 32px; padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }

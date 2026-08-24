@@ -118,13 +118,15 @@
   function createHeroMotion(gsap, ScrollTrigger, hero, media) {
     const walker = media.querySelector('[data-hero-walker]');
     const figure = media.querySelector('.walker-figure');
-    const legBack = media.querySelector('.walker-figure__leg[data-leg="back"]');
-    const legFront = media.querySelector('.walker-figure__leg[data-leg="front"]');
+    const thighBack = media.querySelector('[data-joint="thigh-back"]');
+    const thighFront = media.querySelector('[data-joint="thigh-front"]');
+    const shinBack = media.querySelector('[data-joint="shin-back"]');
+    const shinFront = media.querySelector('[data-joint="shin-front"]');
     const armBack = media.querySelector('.walker-figure__arm[data-arm="back"]');
     const armFront = media.querySelector('.walker-figure__arm[data-arm="front"]');
-    const route = media.querySelector('.route-overlay use:first-child');
+    const route = media.querySelector('.hero-route__line');
     const routeProgress = media.querySelector('[data-hero-route-progress]');
-    const stops = gsap.utils.toArray('.route-overlay use:not(:first-child)');
+    const stops = gsap.utils.toArray('[data-hero-route-stop]');
     const copy = hero.querySelector('.spatial-hero__copy');
     const skylineBack = media.querySelector('[data-parallax="back"]');
     const skylineMid = media.querySelector('[data-parallax="mid"]');
@@ -134,42 +136,74 @@
     const isDesktop = desktop();
     const isCompact = compact();
     const repeats = isDesktop ? -1 : 1;
-    const journeyDistance = isDesktop ? 150 : (isCompact ? 90 : 42);
-    const journeyDuration = isDesktop ? 9.4 : (isCompact ? 7 : 5.7);
-    const strideDuration = isDesktop ? 0.32 : 0.4;
+    const journeyEnd = isDesktop ? '82%' : (isCompact ? '68%' : '52%');
+    const journeyDuration = isDesktop ? 15 : (isCompact ? 11 : 8);
+    const strideDuration = isDesktop ? 0.36 : 0.44;
     let travellingRight = true;
     const motions = [];
 
-    // Travel belongs to the wrapper; the figure keeps a stable baseline and
-    // only flips to face the actual yoyo direction. Limbs are simple
-    // rotating vector shapes -- no raster frames to swap or preload.
-    gsap.set(walker, { xPercent: 0, transformOrigin: '50% 100%', willChange: 'transform' });
+    // Travel belongs to the wrapper (positioned via CSS `left`, relative to
+    // the full strip width); the figure keeps a stable baseline and only
+    // flips to face the actual yoyo direction. Limbs are vector shapes with
+    // a real thigh/knee/shin hinge -- no raster frames to swap or preload.
     gsap.set(figure, { scaleX: 1, transformOrigin: '50% 50%', willChange: 'transform' });
-    gsap.set(stops, { scale: 1, transformOrigin: '50% 50%' });
-    if (route) gsap.set(route, { autoAlpha: 0.56 });
+    gsap.set(stops, { scale: 1 });
+    if (route) gsap.set(route, { autoAlpha: 0.3 });
     // SVG pathLength is unitless; use attributes instead of CSS pixel values
     // so the active route segment genuinely draws and reverses with travel.
-    if (routeProgress) gsap.set(routeProgress, { attr: { 'stroke-dasharray': 1, 'stroke-dashoffset': 1 }, autoAlpha: 0.62 });
+    if (routeProgress) gsap.set(routeProgress, { attr: { 'stroke-dasharray': 1, 'stroke-dashoffset': 1 }, autoAlpha: 0.8 });
 
     // One-time arrival: the scene builds in layer by layer instead of
     // appearing fully formed, so the welcome curtain lifts on something
     // already coming to life rather than a static hero frame.
     const skylineLayers = [skylineBack, skylineMid, skylineFront].filter(Boolean);
     if (skylineLayers.length) {
-      gsap.set(skylineLayers, { autoAlpha: 0, y: 18 });
+      gsap.set(skylineLayers, { autoAlpha: 0, y: 14 });
       gsap.set(walker, { autoAlpha: 0 });
       gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.15 })
-        .to(skylineLayers, { autoAlpha: 1, y: 0, duration: 0.85, stagger: 0.12 }, 0)
+        .to(skylineLayers, { autoAlpha: 1, y: 0, duration: 0.85, stagger: 0.1 }, 0)
         .to(walker, { autoAlpha: 1, duration: 0.5 }, 0.4);
     }
 
-    const stride = gsap.timeline({ paused: true, repeat: -1, yoyo: true, defaults: { ease: 'sine.inOut', duration: strideDuration } });
-    if (legBack && legFront && armBack && armFront) {
+    // Walk cycle: thigh and shin swing on independent multi-point curves so
+    // the knee visibly bends through the swing phase and straightens near
+    // footstrike, rather than the whole leg pivoting as one rigid segment.
+    // The back leg runs the identical curve exactly half a cycle behind the
+    // front leg, written out explicitly rather than computed, so the phase
+    // relationship is easy to verify at a glance.
+    const stride = gsap.timeline({ paused: true, repeat: -1, defaults: { ease: 'sine.inOut', duration: strideDuration } });
+    if (thighBack && thighFront && shinBack && shinFront && armBack && armFront) {
+      const d = strideDuration;
+      const at = (steps) => steps * d;
+      // Front leg: plant (back) -> lift -> forward (plant) -> lift -> plant.
       stride
-        .to(legBack, { rotation: 17 }, 0)
-        .to(legFront, { rotation: -17 }, 0)
-        .to(armBack, { rotation: -15 }, 0)
-        .to(armFront, { rotation: 15 }, 0);
+        .to(thighFront, { rotation: -20 }, at(0))
+        .to(thighFront, { rotation: 4 }, at(1))
+        .to(thighFront, { rotation: 20 }, at(2))
+        .to(thighFront, { rotation: 4 }, at(3))
+        .to(thighFront, { rotation: -20 }, at(4))
+        .to(shinFront, { rotation: 6 }, at(0))
+        .to(shinFront, { rotation: 42 }, at(1))
+        .to(shinFront, { rotation: 6 }, at(2))
+        .to(shinFront, { rotation: 12 }, at(3))
+        .to(shinFront, { rotation: 6 }, at(4))
+        // Back leg: same shape, offset by two steps (half the four-step cycle).
+        .to(thighBack, { rotation: 20 }, at(0))
+        .to(thighBack, { rotation: 4 }, at(1))
+        .to(thighBack, { rotation: -20 }, at(2))
+        .to(thighBack, { rotation: 4 }, at(3))
+        .to(thighBack, { rotation: 20 }, at(4))
+        .to(shinBack, { rotation: 6 }, at(0))
+        .to(shinBack, { rotation: 12 }, at(1))
+        .to(shinBack, { rotation: 6 }, at(2))
+        .to(shinBack, { rotation: 42 }, at(3))
+        .to(shinBack, { rotation: 6 }, at(4))
+        .to(armFront, { rotation: 15 }, at(0))
+        .to(armFront, { rotation: -15 }, at(2))
+        .to(armFront, { rotation: 15 }, at(4))
+        .to(armBack, { rotation: -15 }, at(0))
+        .to(armBack, { rotation: 15 }, at(2))
+        .to(armBack, { rotation: -15 }, at(4));
     }
 
     const journey = gsap.timeline({
@@ -181,18 +215,17 @@
         gsap.set(figure, { scaleX: travellingRight ? 1 : -1 });
       }
     });
-    journey.to(walker, { xPercent: journeyDistance, duration: journeyDuration, ease: 'sine.inOut' }, 0);
+    journey.to(walker, { left: journeyEnd, duration: journeyDuration, ease: 'sine.inOut' }, 0);
     if (routeProgress) journey.to(routeProgress, { attr: { 'stroke-dashoffset': 0 }, duration: journeyDuration, ease: 'sine.inOut' }, 0);
     if (stops.length) {
-      journey.to(stops.slice(4, 7), {
-        autoAlpha: 1,
-        scale: 1.22,
-        duration: 0.26,
-        stagger: 0.18,
+      journey.to(stops, {
+        scale: 1.3,
+        duration: 0.3,
+        stagger: journeyDuration / stops.length,
         yoyo: true,
         repeat: 1,
         ease: 'sine.inOut'
-      }, journeyDuration * 0.44);
+      }, 0);
     }
     motions.push(journey, stride);
 
@@ -714,7 +747,7 @@
     const { gsap, ScrollTrigger } = window;
     gsap.registerPlugin(ScrollTrigger);
     const hero = document.querySelector('[data-hero-stage]');
-    const media = document.querySelector('.spatial-hero__media');
+    const media = document.querySelector('.spatial-hero__strip');
 
     const routeAllowsLenis = Boolean(hero && media) || document.body.matches('[data-smooth-scroll="desktop"]');
     if (routeAllowsLenis && desktop() && window.Lenis) {
