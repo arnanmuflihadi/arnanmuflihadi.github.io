@@ -49,17 +49,20 @@
 
     const word = intro.querySelector('[data-welcome-word]');
     const note = intro.querySelector('[data-welcome-note]');
+    const track = intro.querySelector('[data-welcome-track-fill]');
     const panels = Array.from(intro.querySelectorAll('.welcome-intro__panels span'));
-    const duration = innerWidth < 700 ? 0.82 : 1.22;
+    const duration = innerWidth < 700 ? 0.86 : 1.3;
     document.addEventListener('keydown', onKeydown);
     window.gsap.set(intro, { autoAlpha: 1 });
-    window.gsap.set([word, note], { autoAlpha: 0, y: 20 });
+    window.gsap.set([word, note], { autoAlpha: 0, y: 16 });
     window.gsap.set(panels, { yPercent: 0 });
+    if (track) window.gsap.set(track, { scaleX: 0 });
     welcomeTimeline = window.gsap.timeline({ defaults: { ease: 'power3.out' }, onComplete: finish })
-      .to(word, { autoAlpha: 1, y: 0, duration: duration * 0.36 }, 0)
-      .to(note, { autoAlpha: 1, y: 0, duration: duration * 0.2 }, duration * 0.18)
-      .to(panels, { yPercent: -104, duration: duration * 0.5, stagger: 0.045, ease: 'power2.inOut' }, duration * 0.5)
-      .to(intro, { autoAlpha: 0, duration: 0.12, ease: 'none' }, duration * 0.86);
+      .to(word, { autoAlpha: 1, y: 0, duration: duration * 0.3 }, 0.05)
+      .to(note, { autoAlpha: 1, y: 0, duration: duration * 0.22 }, duration * 0.2)
+      .to(track, { scaleX: 1, duration: duration * 0.52, ease: 'power1.inOut' }, duration * 0.28)
+      .to(panels, { yPercent: -104, duration: duration * 0.4, stagger: 0.07, ease: 'power2.inOut' }, duration * 0.62)
+      .to(intro, { autoAlpha: 0, duration: 0.1, ease: 'none' }, duration * 0.94);
   }
 
   function resetHeroStatic() {
@@ -146,6 +149,18 @@
     // SVG pathLength is unitless; use attributes instead of CSS pixel values
     // so the active route segment genuinely draws and reverses with travel.
     if (routeProgress) gsap.set(routeProgress, { attr: { 'stroke-dasharray': 1, 'stroke-dashoffset': 1 }, autoAlpha: 0.62 });
+
+    // One-time arrival: the scene builds in layer by layer instead of
+    // appearing fully formed, so the welcome curtain lifts on something
+    // already coming to life rather than a static hero frame.
+    const skylineLayers = [skylineBack, skylineMid, skylineFront].filter(Boolean);
+    if (skylineLayers.length) {
+      gsap.set(skylineLayers, { autoAlpha: 0, y: 18 });
+      gsap.set(walker, { autoAlpha: 0 });
+      gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.15 })
+        .to(skylineLayers, { autoAlpha: 1, y: 0, duration: 0.85, stagger: 0.12 }, 0)
+        .to(walker, { autoAlpha: 1, duration: 0.5 }, 0.4);
+    }
 
     const walk = gsap.timeline({ paused: true, repeat: repeats });
     frames.forEach((frame) => {
@@ -334,42 +349,59 @@
     });
   }
 
-  function createMethodFlowMotion(gsap, ScrollTrigger) {
-    const flow = document.querySelector('[data-method-flow]');
-    const path = flow?.querySelector('[data-method-path]');
-    const nodes = flow ? Array.from(flow.querySelectorAll('[data-method-node]')) : [];
-    const steps = flow ? Array.from(flow.querySelectorAll('[data-method-step]')) : [];
-    if (!flow || !path || !steps.length) return;
+  function createAboutBridgeMotion(gsap, ScrollTrigger) {
+    const bridge = document.querySelector('[data-about-bridge]');
+    const steps = bridge ? Array.from(bridge.querySelectorAll('[data-method-step]')) : [];
+    if (!bridge || !steps.length) return;
 
-    // The semantic list and route remain complete without JS. This is only a
-    // scroll-time presentation layer, never the owner of method content.
-    gsap.set(path, { strokeDasharray: 1, strokeDashoffset: 1 });
-    gsap.set(nodes, { scale: 1, transformOrigin: '50% 50%' });
-    gsap.set(steps, { autoAlpha: 0, y: 18 });
+    // The method list is complete, readable content without JS; this is
+    // only a scroll-time stagger, never the owner of the content.
+    gsap.set(steps, { autoAlpha: 0, y: 14 });
     gsap.timeline({
-      scrollTrigger: {
-        trigger: flow,
-        start: 'top 74%',
-        once: true
-      }
-    })
-      .to(path, { strokeDashoffset: 0, duration: 1.15, ease: 'power2.inOut' }, 0)
-      .to(steps, {
-        autoAlpha: 1,
-        y: 0,
-        duration: 0.56,
-        stagger: 0.15,
-        ease: 'power2.out',
-        clearProps: 'opacity,visibility,transform'
-      }, 0.15)
-      .to(nodes, {
-        scale: 1.34,
-        duration: 0.22,
-        stagger: 0.15,
-        yoyo: true,
-        repeat: 1,
-        ease: 'sine.inOut'
-      }, 0.4);
+      scrollTrigger: { trigger: bridge, start: 'top 78%', once: true }
+    }).to(steps, {
+      autoAlpha: 1,
+      y: 0,
+      duration: 0.5,
+      stagger: 0.09,
+      ease: 'power2.out',
+      clearProps: 'opacity,visibility,transform'
+    });
+  }
+
+  function createJourneyRail(gsap, ScrollTrigger) {
+    const rail = document.querySelector('[data-journey-rail]');
+    const progress = rail?.querySelector('[data-journey-progress]');
+    const stops = rail ? Array.from(rail.querySelectorAll('[data-journey-stop]')) : [];
+    if (!rail || !stops.length) return;
+
+    const sections = [
+      document.querySelector('[data-hero-stage]'),
+      document.querySelector('[data-work-rail]'),
+      document.querySelector('[data-about-bridge]'),
+      document.querySelector('.contact-cta')
+    ];
+
+    gsap.set(progress, { height: '0%' });
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: 'top top',
+      end: 'bottom bottom',
+      onUpdate: (self) => gsap.set(progress, { height: `${Math.round(self.progress * 100)}%` })
+    });
+
+    sections.forEach((section, index) => {
+      const stop = stops[index];
+      if (!section || !stop) return;
+      const activate = () => stops.forEach((item, itemIndex) => item.classList.toggle('is-active', itemIndex === index));
+      ScrollTrigger.create({
+        trigger: section,
+        start: 'top 55%',
+        end: 'bottom 45%',
+        onEnter: activate,
+        onEnterBack: activate
+      });
+    });
   }
 
   function createWorkRailMotion(gsap, ScrollTrigger) {
@@ -702,7 +734,8 @@
       createClosingRouteMotion(gsap, ScrollTrigger);
       createEditorialRouteMotion(gsap, ScrollTrigger);
       createHomeSelectedMotion(gsap, ScrollTrigger);
-      createMethodFlowMotion(gsap, ScrollTrigger);
+      createAboutBridgeMotion(gsap, ScrollTrigger);
+      createJourneyRail(gsap, ScrollTrigger);
       createWorkRailMotion(gsap, ScrollTrigger);
       createAboutFlowMotion(gsap, ScrollTrigger);
       createCaseStoryMotion(ScrollTrigger);

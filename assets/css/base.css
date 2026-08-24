@@ -242,11 +242,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   z-index: 1100;
 }
 html.welcome-intro-pending .welcome-intro { opacity: 1; pointer-events: auto; visibility: visible; }
-.welcome-intro__panels { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); inset: 0; pointer-events: none; position: absolute; z-index: -1; }
-.welcome-intro__panels span { background: var(--ground); border-right: 1px solid var(--ground-line); transform: translateY(0); }
-.welcome-intro__panels span:nth-child(2) { background: color-mix(in srgb, var(--ground) 88%, var(--accent) 12%); }
-.welcome-intro__panels span:nth-child(3) { background: color-mix(in srgb, var(--ground) 78%, var(--accent) 22%); }
-.welcome-intro__panels span:nth-child(4) { background: var(--accent); }
+.welcome-intro__panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); inset: 0; pointer-events: none; position: absolute; z-index: -1; }
+.welcome-intro__panels span { background: var(--ground); transform: translateY(0); }
+.welcome-intro__panels span:last-child { background: color-mix(in srgb, var(--ground) 94%, var(--accent) 6%); border-left: 1px solid var(--ground-line); }
 .welcome-intro__content {
   align-items: flex-start;
   display: flex;
@@ -402,4 +400,117 @@ html.welcome-intro-pending .welcome-intro { opacity: 1; pointer-events: auto; vi
   .atlas-row picture, .atlas-row > img { grid-column: 2 / 4; height: 48vw; margin-top: 6px; }
   .atlas-row__arrow { grid-column: 3; grid-row: 1; font-size: 18px; }
   .atlas-row h2, .atlas-row h3 { font-size: 1.6rem; }
+}
+
+/* ---------- welcome intro: route-loading track ---------- */
+.welcome-intro__track {
+  background: var(--ground-line);
+  display: block;
+  height: 2px;
+  margin-top: clamp(28px, 4vw, 44px);
+  overflow: hidden;
+  position: relative;
+  width: min(320px, 46vw);
+}
+.welcome-intro__track-fill {
+  background: var(--accent);
+  display: block;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  width: 100%;
+}
+
+/* ============================================================
+   Journey rail — a fixed wayfinding line beside the content that
+   tracks scroll progress and the active section, desktop only.
+   Doubles as the throughline for an otherwise section-by-section page.
+   ============================================================ */
+.journey-rail {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .journey-rail {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 46vh;
+    left: max(28px, calc((100vw - var(--maxw) - 2 * var(--gutter)) / 4));
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 40;
+  }
+  .journey-rail__line {
+    background: var(--line);
+    border-radius: var(--r-full);
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    width: 2px;
+  }
+  .journey-rail__progress {
+    background: var(--accent);
+    border-radius: var(--r-full);
+    display: block;
+    height: 0%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: height var(--dur-1) linear;
+    width: 100%;
+  }
+  .journey-rail__stops {
+    display: contents;
+    list-style: none;
+  }
+  .journey-rail li[data-journey-stop] {
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: var(--stop-top, 0%);
+    transform: translateY(-50%);
+  }
+  .journey-rail li[data-journey-stop]:nth-child(1) { --stop-top: 0%; }
+  .journey-rail li[data-journey-stop]:nth-child(2) { --stop-top: 33.33%; }
+  .journey-rail li[data-journey-stop]:nth-child(3) { --stop-top: 66.66%; }
+  .journey-rail li[data-journey-stop]:nth-child(4) { --stop-top: 100%; }
+  .journey-rail__dot {
+    background: var(--paper);
+    border: 2px solid var(--line);
+    border-radius: 50%;
+    display: block;
+    height: 9px;
+    transition: background var(--dur-2) var(--ease), border-color var(--dur-2) var(--ease), transform var(--dur-2) var(--spring);
+    width: 9px;
+  }
+  .journey-rail__label {
+    color: var(--muted);
+    font: 500 var(--fs-2xs)/1 var(--font-mono);
+    letter-spacing: .1em;
+    margin-left: 14px;
+    opacity: 0;
+    text-transform: uppercase;
+    transform: translateX(-4px);
+    transition: opacity var(--dur-2) var(--ease), transform var(--dur-2) var(--ease);
+    white-space: nowrap;
+  }
+  .journey-rail li[data-journey-stop].is-active .journey-rail__dot {
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: scale(1.35);
+  }
+  .journey-rail li[data-journey-stop].is-active .journey-rail__label {
+    color: var(--ink);
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-rail__progress { transition: none; }
+  .journey-rail__dot, .journey-rail__label { transition: none; }
 }

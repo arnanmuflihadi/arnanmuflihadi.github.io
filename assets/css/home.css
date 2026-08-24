@@ -1,5 +1,5 @@
 /* ============================================================
-   Homepage — hero, marquee, selected work, method, about bridge,
+   Homepage — hero, marquee, selected work, about+method bridge,
    contact close. Loads after tokens.css + base.css.
    ============================================================ */
 
@@ -67,11 +67,11 @@
 .hero-walker .analyst-sprite { display: block; height: 100%; max-width: none; object-fit: contain; transform-origin: 50% 100%; width: auto; }
 
 /* ---------- expertise marquee ---------- */
-.expertise-marquee { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); min-height: 84px; overflow: hidden; position: relative; }
+.expertise-marquee { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); min-height: 72px; overflow: hidden; position: relative; }
 .expertise-marquee__track {
   align-items: center; color: var(--ink); display: flex;
-  font: 500 clamp(1.3rem, 2vw, 2rem)/1 var(--font-display);
-  gap: 22px; letter-spacing: -.01em; min-height: 84px; white-space: nowrap;
+  font: 500 clamp(1.2rem, 1.8vw, 1.8rem)/1 var(--font-display);
+  gap: 22px; letter-spacing: -.01em; min-height: 72px; white-space: nowrap;
 }
 .expertise-marquee__track i { color: var(--accent); font-style: normal; }
 .ambient-toggle {
@@ -83,36 +83,44 @@
 }
 
 /* ---------- shared section rhythm ---------- */
-.home-selected-work, .method-flow { padding-bottom: var(--sec-pad); padding-top: var(--sec-pad); }
-.home-selected-work__heading, .method-flow__heading {
-  display: grid; gap: 0; grid-template-columns: .8fr 1.3fr .7fr; margin-bottom: clamp(48px, 6vw, 84px);
+.home-selected-work { padding-bottom: var(--sec-pad); padding-top: var(--sec-pad); }
+.home-selected-work__heading {
+  display: grid; gap: 0; grid-template-columns: .8fr 1.3fr .7fr; margin-bottom: clamp(40px, 5vw, 68px);
 }
-.home-selected-work__heading h2, .method-flow__heading h2 { font-size: var(--fs-h2); margin: 20px 0 0; }
-.home-selected-work__heading > p:last-child, .method-flow__heading > p:last-child {
+.home-selected-work__heading h2 { font-size: var(--fs-h2); margin: 16px 0 0; }
+.home-selected-work__heading > p:last-child {
   align-self: end; color: var(--muted); font-size: var(--fs-md); line-height: 1.45; margin: 0; max-width: 17rem;
 }
-.home-work-link { margin-top: clamp(28px, 4vw, 44px); }
+.home-work-link { margin-top: clamp(24px, 3.4vw, 36px); }
 
-/* ---------- method flow ---------- */
-.method-flow__board { position: relative; }
-.method-flow__route { color: var(--line); height: auto; width: 100%; }
-.method-flow__route path { fill: none; stroke: currentColor; stroke-width: 2; }
-.method-flow__route circle { fill: var(--paper); stroke: var(--accent); stroke-width: 2; }
-[data-method-path] { stroke: var(--accent); }
-.method-flow__steps { display: grid; gap: 28px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
-.method-flow__step { border-top: 1px solid var(--line); padding-top: 20px; }
-.method-flow__index { color: var(--accent); display: block; font: 600 var(--fs-2xs)/1 var(--font-mono); letter-spacing: .08em; margin-bottom: 14px; }
-.method-flow__step h3 { font-size: var(--fs-xl); margin-bottom: 8px; }
-.method-flow__step p { color: var(--ink-soft); font-size: var(--fs-sm); line-height: 1.45; }
-
-/* ---------- about bridge ---------- */
+/* ---------- about + method bridge ---------- */
 .about-bridge {
   background: var(--surface);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: clamp(36px, 5vw, 64px);
+  grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
   max-width: none;
   padding: var(--sec-pad-sm) var(--gutter);
 }
-.about-bridge > * { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
-.about-bridge > p:nth-child(2) { color: var(--ink); font-size: var(--fs-h3); letter-spacing: -.022em; line-height: 1.08; margin: 22px auto; max-width: 42ch; }
+.about-bridge__intro,
+.about-bridge__method { margin: 0 auto; max-width: var(--maxw); width: 100%; }
+.about-bridge { padding-left: 0; padding-right: 0; }
+.about-bridge__intro { padding-left: var(--gutter); }
+.about-bridge__method { padding-right: var(--gutter); }
+.about-bridge__intro h2 {
+  color: var(--ink); font-size: var(--fs-h4); letter-spacing: -.018em; line-height: 1.08; margin: 14px 0 14px; max-width: 15ch;
+}
+.about-bridge__intro > p:not(.eyebrow) { color: var(--ink-soft); font-size: var(--fs-md); line-height: 1.5; max-width: 34ch; }
+.about-bridge__intro .text-link { margin-top: 26px; }
+
+.about-bridge__method { display: grid; gap: 0; list-style: none; }
+.about-bridge__method-step { border-top: 1px solid var(--line); padding: 18px 0; }
+.about-bridge__method-step:first-child { border-top: 0; padding-top: 0; }
+.about-bridge__method-step:last-child { padding-bottom: 0; }
+.about-bridge__method-index { color: var(--accent); font: 600 var(--fs-2xs)/1 var(--font-mono); letter-spacing: .08em; }
+.about-bridge__method-step h3 { font-size: var(--fs-lg); margin: 8px 0 4px; }
+.about-bridge__method-step p { color: var(--ink-soft); font-size: var(--fs-sm); line-height: 1.45; max-width: 46ch; }
 
 /* ---------- contact close (ground band) ---------- */
 .contact-cta {
@@ -125,17 +133,19 @@
 .contact-cta .eyebrow { color: var(--ground-muted); }
 .contact-cta h2 { color: var(--ground-ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
 .contact-cta .button-link { margin-left: auto; margin-right: auto; }
-.closing-route { color: var(--accent); display: block; height: auto; margin: clamp(44px, 7vw, 88px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
+.closing-route { color: var(--accent); display: block; height: auto; margin: clamp(36px, 5.5vw, 68px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
 .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
 .closing-route circle { fill: var(--ground); stroke: currentColor; stroke-width: 2; }
 
 @media (max-width: 1099px) {
-  .home-selected-work__heading, .method-flow__heading { display: block; }
-  .home-selected-work__heading h2, .method-flow__heading h2 { margin: 18px 0; }
-  .home-selected-work__heading > p:last-child, .method-flow__heading > p:last-child { max-width: 32rem; }
+  .home-selected-work__heading { display: block; }
+  .home-selected-work__heading h2 { margin: 14px 0; }
+  .home-selected-work__heading > p:last-child { max-width: 32rem; }
   .spatial-hero { grid-template-columns: 1fr 1fr; }
   .spatial-hero h1 { font-size: clamp(3.4rem, 7vw, 5.6rem); }
-  .method-flow__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-bridge { grid-template-columns: 1fr; }
+  .about-bridge__intro, .about-bridge__method { padding-left: var(--gutter); padding-right: var(--gutter); }
+  .about-bridge__intro h2 { max-width: 22ch; }
 }
 
 @media (max-width: 699px) {
@@ -144,10 +154,9 @@
   .spatial-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); }
   .spatial-hero__lede { font-size: var(--fs-sm); max-width: none; }
   .spatial-hero__media { height: 62vw; min-height: 240px; }
-  .expertise-marquee__track { font-size: 1.15rem; }
-  .home-selected-work, .method-flow { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
-  .method-flow__steps { grid-template-columns: 1fr; gap: 20px; }
-  .about-bridge > p:nth-child(2) { font-size: var(--fs-h4); }
+  .expertise-marquee__track { font-size: 1.1rem; }
+  .home-selected-work { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
+  .about-bridge { gap: 32px; padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
   .contact-cta h2 { font-size: clamp(2.4rem, 11vw, 3.4rem); }
 }
 
