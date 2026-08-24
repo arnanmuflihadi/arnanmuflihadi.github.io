@@ -1,0 +1,164 @@
+/* ============================================================
+   Design tokens — single source of truth.
+   Every surface, type size, spacing, motion, and radius value used
+   anywhere on the site is declared here once. Nothing below this file
+   redefines --paper, --ink, --accent, etc. Route-specific look comes
+   from composition (which section, which band) not new palettes.
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+
+  /* ---- surfaces (light) ---- */
+  --paper:      #f8f4ec;   /* page ground */
+  --surface:    #efe7d8;   /* raised panel / card */
+  --surface-2:  #e6dac2;   /* deeper raised panel */
+  --sc-high:    #e0d3b8;
+  --sc-highest: #d6c6a5;
+  --ink:        #1b1a16;   /* headings */
+  --ink-soft:   #3a362f;   /* body copy */
+  --muted:      #706a5e;   /* captions, meta */
+  --line:       rgba(27, 26, 22, .16);
+  --line-soft:  rgba(27, 26, 22, .08);
+  --outline:    rgba(27, 26, 22, .34);
+
+  /* ---- ground band (deliberately dark; hero close, contact, coda) ---- */
+  --ground:      #15130f;
+  --ground-ink:  #f3ede0;
+  --ground-line: rgba(243, 237, 224, .16);
+  --ground-muted:#a89d8a;
+
+  /* ---- accent: one signal color, everywhere ---- */
+  --accent:      #c2295b;
+  --accent-ink:  #9e1c48;
+  --accent-soft: #fbe4ec;
+  --on-accent:   #fff8f4;
+  --accent-rgb:  194 41 91;
+
+  /* ---- semantic chart colors (unchanged hues; real data legends) ---- */
+  --viz-surplus:   #5f8d38;
+  --viz-sentra:    #2e8965;
+  --viz-route:     #2d77a4;
+  --viz-flow:      #756a5d;
+  --viz-node-gudang: #87623f;
+  --viz-node-center: #1c7684;
+  --viz-node-market: var(--accent);
+  --viz-node-bulog:  #7e5abf;
+  --viz-region-jawa:      var(--accent);
+  --viz-region-sumatera:  var(--viz-surplus);
+  --viz-region-bali-nusa: var(--viz-route);
+  --viz-region-sulawesi:  #ad6500;
+  --viz-region-kalimantan:#7e5abf;
+  --viz-region-maluku:    #6f7773;
+  --viz-region-papua:     #9a6c57;
+
+  /* ---- elevation ---- */
+  --e1: 0 1px 2px rgba(27,26,22,.05), 0 1px 3px 1px rgba(27,26,22,.04);
+  --e2: 0 1px 2px rgba(27,26,22,.06), 0 4px 14px 1px rgba(27,26,22,.07);
+  --e3: 0 8px 22px 3px rgba(27,26,22,.10), 0 2px 6px rgba(27,26,22,.08);
+  --shadow: var(--e2);
+  --shadow-lg: var(--e3);
+  --focus-ring: var(--accent);
+
+  /* ---- type families ---- */
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-sans:    "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---- fluid type scale ---- */
+  --fs-micro: 10px;
+  --fs-2xs:   11px;
+  --fs-xs:    12.5px;
+  --fs-sm:    15px;
+  --fs-md:    17px;
+  --fs-lg:    clamp(1.15rem, 1.3vw + .9rem, 1.35rem);
+  --fs-xl:    clamp(1.4rem, 2vw + .9rem, 1.85rem);
+  --fs-h4:    clamp(1.7rem, 2.6vw + .9rem, 2.5rem);
+  --fs-h3:    clamp(2.1rem, 3.4vw + .9rem, 3.4rem);
+  --fs-h2:    clamp(2.6rem, 4.6vw + .8rem, 4.6rem);
+  --fs-h1:    clamp(3rem, 6.4vw + .6rem, 6.6rem);
+  --fs-display: clamp(3.6rem, 8.6vw + .4rem, 9rem);
+
+  /* ---- spacing / section rhythm ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --sec-pad-sm: clamp(64px, 9vw, 112px);
+  --sec-pad:    clamp(80px, 12vw, 176px);
+  --sec-pad-lg: clamp(96px, 14vw, 210px);
+  --gutter:     clamp(20px, 4vw, 64px);
+  --maxw:       1312px;
+
+  /* ---- motion ---- */
+  --ease:      cubic-bezier(.22, 1, .36, 1);
+  --emph:      cubic-bezier(.2, 0, 0, 1);
+  --spring:    cubic-bezier(.34, 1.3, .5, 1);
+  --dur-1: .18s;
+  --dur-2: .32s;
+  --dur-3: .55s;
+
+  /* ---- shape ---- */
+  --r-xs: 2px;
+  --r-s:  4px;
+  --r-m:  6px;
+  --r-l:  10px;
+  --r-xl: 16px;
+  --r-full: 999px;
+  --radius: 6px;
+
+  /* ---- controls ---- */
+  --ctl-h: 46px;
+  --ctl-h-sm: 34px;
+  --ctl-pad-x: 22px;
+  --ctl-pad-x-sm: 14px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --paper:      #15130f;
+  --surface:    #201c15;
+  --surface-2:  #2a251c;
+  --sc-high:    #332c20;
+  --sc-highest: #3d3425;
+  --ink:        #f3ede0;
+  --ink-soft:   #dcd3c1;
+  --muted:      #a89d8a;
+  --line:       rgba(243, 237, 224, .16);
+  --line-soft:  rgba(243, 237, 224, .08);
+  --outline:    rgba(243, 237, 224, .32);
+
+  --ground:      #0c0b08;
+  --ground-ink:  #f3ede0;
+  --ground-line: rgba(243, 237, 224, .14);
+  --ground-muted:#8f8471;
+
+  --accent:      #ff6fa0;
+  --accent-ink:  #ff8fb4;
+  --accent-soft: #3a1524;
+  --on-accent:   #1b0810;
+  --accent-rgb:  255 111 160;
+
+  --viz-surplus:   #93c85f;
+  --viz-sentra:    #6fd1a8;
+  --viz-route:     #7cc2f0;
+  --viz-flow:      #aaa091;
+  --viz-node-gudang: #c79a68;
+  --viz-node-center: #5fc4d6;
+  --viz-node-bulog:  #b9a2ee;
+  --viz-region-sulawesi:  #f5bf62;
+  --viz-region-kalimantan:#b9a2ee;
+
+  --e1: 0 1px 2px rgba(0,0,0,.3), 0 1px 3px 1px rgba(0,0,0,.24);
+  --e2: 0 1px 2px rgba(0,0,0,.34), 0 6px 18px 1px rgba(0,0,0,.32);
+  --e3: 0 10px 26px 3px rgba(0,0,0,.4), 0 3px 8px rgba(0,0,0,.34);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-1: 0s; --dur-2: 0s; --dur-3: 0s; }
+}

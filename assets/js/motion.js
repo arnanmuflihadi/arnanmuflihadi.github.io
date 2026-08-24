@@ -123,7 +123,9 @@
     const routeProgress = media.querySelector('[data-hero-route-progress]');
     const stops = gsap.utils.toArray('.route-overlay use:not(:first-child)');
     const copy = hero.querySelector('.spatial-hero__copy');
-    const environment = media.querySelector('.hero-environment');
+    const skylineBack = media.querySelector('[data-parallax="back"]');
+    const skylineMid = media.querySelector('[data-parallax="mid"]');
+    const skylineFront = media.querySelector('[data-parallax="front"]');
     if (!walker || !sprite) return;
 
     const isDesktop = desktop();
@@ -177,17 +179,12 @@
     }
     motions.push(journey);
 
-    if (isDesktop && environment) {
-      motions.push(gsap.to(environment, {
-        x: 3,
-        y: -2,
-        scale: 1.004,
-        duration: 10,
-        ease: 'sine.inOut',
-        paused: true,
-        repeat: -1,
-        yoyo: true,
-        willChange: 'transform'
+    if (isDesktop && skylineBack && skylineMid && skylineFront) {
+      motions.push(gsap.to(skylineBack, {
+        x: -8, duration: 12, ease: 'sine.inOut', paused: true, repeat: -1, yoyo: true, willChange: 'transform'
+      }));
+      motions.push(gsap.to(skylineMid, {
+        x: -4, duration: 9, ease: 'sine.inOut', paused: true, repeat: -1, yoyo: true, willChange: 'transform'
       }));
     }
     if (isDesktop) {
@@ -204,6 +201,12 @@
         ease: 'none',
         scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true }
       });
+      // Depth-of-field: the skyline layers drift past each other at
+      // different rates as the hero scrolls out, echoing the walker's
+      // own parallax and reinforcing that this is a built, layered scene.
+      if (skylineBack) gsap.to(skylineBack, { y: -18, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
+      if (skylineMid) gsap.to(skylineMid, { y: -34, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
+      if (skylineFront) gsap.to(skylineFront, { y: -54, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
     }
     const heroEntry = registerAmbient(motions, hero, ScrollTrigger);
     let characterCancelled = false;

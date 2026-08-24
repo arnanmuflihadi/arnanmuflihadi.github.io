@@ -1,5 +1,3 @@
-@import url("./variables.css?v=3");
-
 /* ============================================================
    ARNAN MUFLIHADI — GEOSPATIAL PORTFOLIO
    Material 3 Expressive · vibrant project palette
@@ -113,34 +111,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 /* ============================================================
    NAVBAR — floating pill app bar
    ============================================================ */
-.nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: center;
-  padding: 14px var(--gutter);
-  transition: padding .4s var(--emph);
-  pointer-events: none;
-}
-.nav__links {
-  pointer-events: auto;
-  display: flex; align-items: center; gap: 4px;
-  padding: 6px;
-  background: color-mix(in srgb, var(--surface) 82%, transparent);
-  backdrop-filter: saturate(180%) blur(16px);
-  -webkit-backdrop-filter: saturate(180%) blur(16px);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--r-full);
-  box-shadow: var(--e1);
-  transition: box-shadow .4s var(--emph), background .4s var(--emph);
-}
 .nav.scrolled .nav__links { box-shadow: var(--e2); }
-.nav__links a {
-  font-family: var(--font-sans); font-size: 13.5px; font-weight: 500; letter-spacing: .005em;
-  color: var(--ink-soft); padding: 9px 16px; border-radius: var(--r-full);
-  display: inline-flex; align-items: center; min-height: 44px;
-  transition: background .25s var(--emph), color .25s;
-}
-.nav__links a:hover { background: var(--sc-high); color: var(--ink); }
-.nav__links a[aria-current="page"] { background: var(--accent-soft); color: var(--accent-ink); }
 
 .theme-toggle {
   pointer-events: auto;
@@ -157,8 +128,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 [data-theme="dark"] .theme-toggle .sun { display: none; }
 [data-theme="dark"] .theme-toggle .moon { display: block; }
 
-.nav__burger { pointer-events: auto; display: none; flex-direction: column; gap: 5px; background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--r-full); cursor: pointer; padding: 13px; box-shadow: var(--e1); }
-.nav__burger span { width: 20px; height: 2px; border-radius: 2px; background: var(--ink); transition: transform .35s var(--emph), opacity .25s; }
 .nav.open .nav__burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav.open .nav__burger span:nth-child(2) { opacity: 0; }
 .nav.open .nav__burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -1770,62 +1739,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    EDITORIAL SYSTEM — 2026 REFRESH
    Obscura-inspired motion language, translated for GIS work.
    ============================================================ */
-:root {
-  color-scheme: light;
-  --paper: #fff;
-  --surface: #fff;
-  --surface-2: #f4f4f4;
-  --sc-high: #ededed;
-  --sc-highest: #e4e4e4;
-  --ink: #0a0a0a;
-  --ink-soft: #262626;
-  --muted: #727272;
-  --line: rgba(10, 10, 10, .22);
-  --line-soft: rgba(10, 10, 10, .1);
-  --outline: rgba(10, 10, 10, .38);
-  --accent: #e32219;
-  --accent-ink: #cc1912;
-  --accent-soft: #fff0ef;
-  --on-accent: #fff;
-  --accent-rgb: 227 34 25;
-  --portfolio-accent: #e32219;
-  --portfolio-accent-ink: #cc1912;
-  --portfolio-accent-soft: #fff0ef;
-  --r-xs: 0;
-  --r-s: 0;
-  --r-m: 0;
-  --r-l: 0;
-  --r-xl: 0;
-  --e1: none;
-  --e2: none;
-  --e3: none;
-  --maxw: 1480px;
-  --gutter: clamp(18px, 1.4vw, 28px);
-}
-
-[data-theme="dark"] {
-  color-scheme: dark;
-  --paper: #0a0a0a;
-  --surface: #0a0a0a;
-  --surface-2: #151515;
-  --sc-high: #1d1d1d;
-  --sc-highest: #252525;
-  --ink: #f5f5f1;
-  --ink-soft: #cecec8;
-  --muted: #8e8e88;
-  --line: rgba(245, 245, 241, .24);
-  --line-soft: rgba(245, 245, 241, .11);
-  --outline: rgba(245, 245, 241, .4);
-  --accent: #ff4b42;
-  --accent-ink: #ff6a62;
-  --accent-soft: #35110f;
-  --on-accent: #0a0a0a;
-  --accent-rgb: 255 75 66;
-  --portfolio-accent: #ff4b42;
-  --portfolio-accent-ink: #ff6a62;
-  --portfolio-accent-soft: #35110f;
-}
-
 body {
   background: var(--paper);
   color: var(--ink);
@@ -1836,14 +1749,6 @@ body::before { display: none; }
 
 /* Minimal studio-style navigation. The brand is decorative because the
    existing semantic navigation remains intact and keyboard accessible. */
-.nav {
-  height: 64px;
-  padding: 0 var(--gutter);
-  justify-content: center;
-  background: color-mix(in srgb, var(--paper) 94%, transparent);
-  border-bottom: 1px solid transparent;
-  mix-blend-mode: normal;
-}
 .nav.scrolled { border-bottom-color: var(--line-soft); }
 .nav::before {
   content: "ARNAN MUFLIHADI®";
@@ -1867,39 +1772,8 @@ body::before { display: none; }
   box-shadow: none;
   backdrop-filter: none;
 }
-.nav__links a {
-  min-height: 44px;
-  padding: 0;
-  border-radius: 0;
-  color: var(--muted);
-  font-size: 15px;
-  font-weight: 520;
-  overflow: hidden;
-  position: relative;
-}
-.nav__links a::before {
-  content: attr(href);
-  position: absolute;
-  inset: auto 0 7px;
-  height: 1px;
-  background: currentColor;
-  transform: translateX(-105%);
-  transition: transform .45s var(--ease);
-  font-size: 0;
-}
 .nav__links a:hover,
-.nav__links a[aria-current="page"] {
-  background: transparent;
-  color: var(--ink);
-}
 .nav__links a:hover::before,
-.nav__links a[aria-current="page"]::before { transform: none; }
-.nav__links a:last-of-type {
-  position: fixed;
-  right: var(--gutter);
-  top: 10px;
-  color: var(--ink);
-}
 .nav__links .theme-toggle {
   display: grid;
   position: fixed;
@@ -2103,9 +1977,9 @@ body::before { display: none; }
 
 /* Portfolio index: open editorial rows, large numbers, sharp media. */
 .editorial-portfolio {
-  --accent: var(--portfolio-accent);
-  --accent-ink: var(--portfolio-accent-ink);
-  --accent-soft: var(--portfolio-accent-soft);
+  --accent: var(--accent);
+  --accent-ink: var(--accent-ink);
+  --accent-soft: var(--accent-soft);
 }
 .editorial-portfolio .page-top { padding-top: 110px; padding-bottom: 100px; }
 .portfolio-intro {
@@ -2231,9 +2105,9 @@ body::before { display: none; }
 .editorial-portfolio .work__list { gap: 0; }
 .editorial-portfolio .card,
 .editorial-portfolio .card:nth-child(even) {
-  --accent: var(--portfolio-accent);
-  --accent-ink: var(--portfolio-accent-ink);
-  --accent-soft: var(--portfolio-accent-soft);
+  --accent: var(--accent);
+  --accent-ink: var(--accent-ink);
+  --accent-soft: var(--accent-soft);
   display: grid;
   grid-template-columns: minmax(340px, .9fr) minmax(0, 1.45fr);
   min-height: clamp(470px, 48vw, 690px);

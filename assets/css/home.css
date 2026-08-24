@@ -1,0 +1,156 @@
+/* ============================================================
+   Homepage — hero, marquee, selected work, method, about bridge,
+   contact close. Loads after tokens.css + base.css.
+   ============================================================ */
+
+.home-page main { overflow: clip; }
+
+/* ---------- hero ---------- */
+.spatial-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, .92fr);
+  min-height: calc(100svh - 72px);
+}
+.spatial-hero__copy {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(48px, 8vw, 116px) clamp(24px, 5vw, 84px);
+}
+.spatial-hero h1 {
+  font-size: var(--fs-display);
+  letter-spacing: -.026em;
+  line-height: .98;
+  margin: 22px 0 26px;
+}
+.spatial-hero__lede { color: var(--ink-soft); font-size: var(--fs-lg); line-height: 1.5; max-width: 30rem; }
+.spatial-hero .text-link { margin-top: 32px; }
+
+.spatial-hero__media {
+  background: var(--surface);
+  isolation: isolate;
+  overflow: hidden;
+  position: relative;
+}
+.hero-skyline {
+  --sky-top: var(--surface);
+  --sky-bottom: var(--surface-2);
+  height: 100%;
+  width: 100%;
+}
+.hero-skyline .bld { fill: var(--ink); }
+.hero-skyline .bld--back { opacity: .22; }
+.hero-skyline .bld--mid { opacity: .5; }
+.hero-skyline .bld--front { opacity: .92; }
+.hero-skyline .bld-win .win { fill: var(--surface); opacity: .55; }
+.hero-skyline__ground { fill: var(--ink); opacity: .92; }
+.hero-skyline__groundline { stroke: var(--ink); stroke-width: 2; }
+[data-theme="dark"] .hero-skyline .bld-win .win { opacity: .8; fill: var(--accent-soft); }
+
+.route-overlay {
+  height: 58%;
+  left: 6%;
+  pointer-events: none;
+  position: absolute;
+  top: auto;
+  bottom: 10%;
+  width: 88%;
+  z-index: 2;
+}
+.route-overlay use:first-child { color: var(--accent); opacity: .5; }
+.route-overlay use:not(:first-child) { color: var(--accent); opacity: .68; }
+.route-overlay use { transform-box: fill-box; transform-origin: center; }
+[data-hero-route-progress] { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.5; opacity: .85; }
+
+.hero-walker { bottom: 12%; display: block; height: 14%; left: 44%; position: absolute; transform-origin: 50% 100%; width: auto; z-index: 3; }
+.hero-walker .analyst-sprite { display: block; height: 100%; max-width: none; object-fit: contain; transform-origin: 50% 100%; width: auto; }
+
+/* ---------- expertise marquee ---------- */
+.expertise-marquee { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); min-height: 84px; overflow: hidden; position: relative; }
+.expertise-marquee__track {
+  align-items: center; color: var(--ink); display: flex;
+  font: 500 clamp(1.3rem, 2vw, 2rem)/1 var(--font-display);
+  gap: 22px; letter-spacing: -.01em; min-height: 84px; white-space: nowrap;
+}
+.expertise-marquee__track i { color: var(--accent); font-style: normal; }
+.ambient-toggle {
+  bottom: 50%;
+  box-shadow: var(--e2);
+  position: absolute;
+  right: var(--gutter);
+  transform: translateY(50%);
+}
+
+/* ---------- shared section rhythm ---------- */
+.home-selected-work, .method-flow { padding-bottom: var(--sec-pad); padding-top: var(--sec-pad); }
+.home-selected-work__heading, .method-flow__heading {
+  display: grid; gap: 0; grid-template-columns: .8fr 1.3fr .7fr; margin-bottom: clamp(48px, 6vw, 84px);
+}
+.home-selected-work__heading h2, .method-flow__heading h2 { font-size: var(--fs-h2); margin: 20px 0 0; }
+.home-selected-work__heading > p:last-child, .method-flow__heading > p:last-child {
+  align-self: end; color: var(--muted); font-size: var(--fs-md); line-height: 1.45; margin: 0; max-width: 17rem;
+}
+.home-work-link { margin-top: clamp(28px, 4vw, 44px); }
+
+/* ---------- method flow ---------- */
+.method-flow__board { position: relative; }
+.method-flow__route { color: var(--line); height: auto; width: 100%; }
+.method-flow__route path { fill: none; stroke: currentColor; stroke-width: 2; }
+.method-flow__route circle { fill: var(--paper); stroke: var(--accent); stroke-width: 2; }
+[data-method-path] { stroke: var(--accent); }
+.method-flow__steps { display: grid; gap: 28px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
+.method-flow__step { border-top: 1px solid var(--line); padding-top: 20px; }
+.method-flow__index { color: var(--accent); display: block; font: 600 var(--fs-2xs)/1 var(--font-mono); letter-spacing: .08em; margin-bottom: 14px; }
+.method-flow__step h3 { font-size: var(--fs-xl); margin-bottom: 8px; }
+.method-flow__step p { color: var(--ink-soft); font-size: var(--fs-sm); line-height: 1.45; }
+
+/* ---------- about bridge ---------- */
+.about-bridge {
+  background: var(--surface);
+  max-width: none;
+  padding: var(--sec-pad-sm) var(--gutter);
+}
+.about-bridge > * { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
+.about-bridge > p:nth-child(2) { color: var(--ink); font-size: var(--fs-h3); letter-spacing: -.022em; line-height: 1.08; margin: 22px auto; max-width: 42ch; }
+
+/* ---------- contact close (ground band) ---------- */
+.contact-cta {
+  background: var(--ground);
+  color: var(--ground-ink);
+  max-width: none;
+  padding: var(--sec-pad) var(--gutter);
+}
+.contact-cta > * { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
+.contact-cta .eyebrow { color: var(--ground-muted); }
+.contact-cta h2 { color: var(--ground-ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
+.contact-cta .button-link { margin-left: auto; margin-right: auto; }
+.closing-route { color: var(--accent); display: block; height: auto; margin: clamp(44px, 7vw, 88px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
+.closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
+.closing-route circle { fill: var(--ground); stroke: currentColor; stroke-width: 2; }
+
+@media (max-width: 1099px) {
+  .home-selected-work__heading, .method-flow__heading { display: block; }
+  .home-selected-work__heading h2, .method-flow__heading h2 { margin: 18px 0; }
+  .home-selected-work__heading > p:last-child, .method-flow__heading > p:last-child { max-width: 32rem; }
+  .spatial-hero { grid-template-columns: 1fr 1fr; }
+  .spatial-hero h1 { font-size: clamp(3.4rem, 7vw, 5.6rem); }
+  .method-flow__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 699px) {
+  .spatial-hero { display: block; min-height: 0; }
+  .spatial-hero__copy { padding: 56px 20px 36px; }
+  .spatial-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); }
+  .spatial-hero__lede { font-size: var(--fs-sm); max-width: none; }
+  .spatial-hero__media { height: 62vw; min-height: 240px; }
+  .expertise-marquee__track { font-size: 1.15rem; }
+  .home-selected-work, .method-flow { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
+  .method-flow__steps { grid-template-columns: 1fr; gap: 20px; }
+  .about-bridge > p:nth-child(2) { font-size: var(--fs-h4); }
+  .contact-cta h2 { font-size: clamp(2.4rem, 11vw, 3.4rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-row picture img, .atlas-row > img, .atlas-row__arrow { transition: none !important; }
+}

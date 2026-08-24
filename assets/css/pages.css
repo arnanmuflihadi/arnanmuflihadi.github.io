@@ -1,0 +1,125 @@
+/* ============================================================
+   Secondary pages — Work index, About, Contact. Loads after
+   tokens.css + base.css. Case studies use case-studies.css instead.
+   ============================================================ */
+
+.secondary-page main { overflow: clip; }
+
+/* ---------- shared page-open header (Work / About) ---------- */
+.portfolio-hero {
+  align-items: flex-start;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  justify-content: center;
+  min-height: min(72svh, 640px);
+  overflow: hidden;
+  padding-bottom: var(--sec-pad-sm);
+  padding-top: var(--sec-pad-sm);
+  position: relative;
+}
+.portfolio-hero > :not(.page-route-motif) { position: relative; z-index: 1; }
+.portfolio-hero h1 { font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .96; margin: 20px 0 24px; max-width: 11ch; }
+.portfolio-hero__lede, .portfolio-hero > p:last-child { color: var(--ink-soft); font-size: var(--fs-lg); line-height: 1.5; max-width: 40rem; }
+
+.page-route-motif {
+  color: var(--accent);
+  height: clamp(140px, 17vw, 220px);
+  opacity: .5;
+  pointer-events: none;
+  position: absolute;
+  right: clamp(-30px, 2vw, 40px);
+  top: clamp(70px, 10vw, 140px);
+  width: min(48vw, 620px);
+  z-index: 0;
+}
+.page-route-motif path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
+.page-route-motif circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }
+
+/* ---------- Work: atlas index ---------- */
+.portfolio-atlas { background: var(--paper); max-width: none; padding-bottom: var(--sec-pad); padding-top: var(--sec-pad-sm); }
+.portfolio-atlas .atlas-list, .portfolio-atlas .work-rail { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
+
+.other-practice { background: var(--surface); max-width: none; padding: var(--sec-pad-sm) var(--gutter); }
+.other-practice > * { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
+.other-practice > div { border-top: 1px solid var(--line); margin-top: 26px; }
+.other-practice a {
+  align-items: center; border-bottom: 1px solid var(--line); display: flex;
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(1.25rem, 2.4vw, 2.2rem); justify-content: space-between;
+  letter-spacing: -.015em; padding: 20px 0; text-decoration: none;
+}
+.other-practice a span { color: var(--accent); }
+
+/* ---------- ground-band CTA (Work / About close, and Home's own) ---------- */
+.route-coda {
+  background: var(--ground);
+  color: var(--ground-ink);
+  max-width: none;
+  padding: var(--sec-pad) var(--gutter);
+}
+.route-coda > * { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
+.route-coda .eyebrow { color: var(--ground-muted); }
+.route-coda h2 { color: var(--ground-ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
+.route-coda .button-link { margin-left: auto; margin-right: auto; }
+.route-coda .closing-route { color: var(--accent); display: block; height: auto; margin: clamp(44px, 7vw, 88px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
+.route-coda .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
+.route-coda .closing-route circle { fill: var(--ground); stroke: currentColor; stroke-width: 2; }
+
+/* ---------- About ---------- */
+.about-page .about { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
+.about-page .about__photo { background: var(--surface); border-radius: var(--r-m); }
+.about-page .about__bio p { font-family: var(--font-sans); }
+.about-page .about__bio p:first-child { font-size: var(--fs-xl); font-weight: 500; }
+.about-page .about__cta .btn {
+  background: var(--accent); border-color: var(--accent); border-radius: var(--r-full);
+  color: var(--on-accent); font-family: var(--font-mono); font-weight: 600; letter-spacing: .02em;
+}
+.about-page .about__cta .btn:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+.about-page .cs-section__head .idx { color: var(--accent); }
+
+/* ---------- Contact ---------- */
+.contact-hero {
+  background: var(--ground);
+  color: var(--ground-ink);
+  min-height: calc(100svh - 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: var(--sec-pad);
+  padding-top: var(--sec-pad-sm);
+}
+.contact-hero .eyebrow { color: var(--ground-muted); }
+.contact-hero h1 { color: var(--ground-ink); font-size: var(--fs-display); letter-spacing: -.026em; line-height: .96; margin: 22px 0 24px; max-width: 14ch; }
+.contact-hero__lede { color: var(--ground-muted); font-size: var(--fs-lg); line-height: 1.5; max-width: 34rem; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 44px; }
+.contact-links__item {
+  align-items: center; border: 1px solid var(--ground-line); color: var(--ground-ink);
+  display: inline-flex; font: 500 var(--fs-sm)/1 var(--font-sans); gap: 10px;
+  min-height: 48px; padding: 0 20px; text-decoration: none;
+  transition: background var(--dur-1) var(--ease), color var(--dur-1) var(--ease), border-color var(--dur-1) var(--ease);
+}
+.contact-links__item span:last-child { color: var(--accent); }
+.contact-links__item:hover, .contact-links__item:focus-visible {
+  background: var(--accent); border-color: var(--accent); color: var(--on-accent);
+}
+.contact-links__item:hover span:last-child, .contact-links__item:focus-visible span:last-child { color: var(--on-accent); }
+
+@media (max-width: 1099px) {
+  .portfolio-hero h1 { max-width: 9ch; }
+}
+
+@media (max-width: 699px) {
+  .portfolio-hero { min-height: min(560px, calc(100svh - 64px)); padding-bottom: 72px; padding-top: 72px; }
+  .portfolio-hero h1 { font-size: clamp(2.6rem, 13vw, 3.6rem); max-width: 9ch; }
+  .page-route-motif { height: 110px; opacity: .42; right: -20px; top: auto; bottom: 24px; width: min(78vw, 380px); }
+  .other-practice a { font-size: 1.3rem; }
+  .route-coda { padding-bottom: 72px; padding-top: 72px; }
+  .route-coda h2 { font-size: clamp(2.4rem, 11vw, 3.2rem); }
+  .about-page .about__grid { display: block; }
+  .about-page .about__side { margin-bottom: 32px; }
+  .contact-hero { padding-top: 64px; }
+  .contact-hero h1 { font-size: clamp(2.6rem, 13vw, 3.8rem); }
+}
