@@ -427,18 +427,34 @@
       onUpdate: (self) => gsap.set(progress, { height: `${Math.round(self.progress * 100)}%` })
     });
 
-    sections.forEach((section, index) => {
-      const stop = stops[index];
-      if (!section || !stop) return;
-      const activate = () => stops.forEach((item, itemIndex) => item.classList.toggle('is-active', itemIndex === index));
-      ScrollTrigger.create({
-        trigger: section,
-        start: 'top 55%',
-        end: 'bottom 45%',
-        onEnter: activate,
-        onEnterBack: activate
+    // Geometry-driven rather than per-section onEnter/onEnterBack events:
+    // case-study chapters vary wildly in height (a 600px chapter next to a
+    // 5000px one) and some grow after async chart/data loads, which leaves
+    // cached ScrollTrigger start/end pixel positions stale -- the nearest-
+    // section-to-anchor recompute on every scroll tick can't drift out of
+    // sync the way discrete enter/exit events on stale triggers can.
+    let syncFrame = 0;
+    const syncActive = () => {
+      syncFrame = 0;
+      const anchor = innerHeight * 0.5;
+      let bestIndex = -1;
+      let bestDistance = Infinity;
+      sections.forEach((section, index) => {
+        if (!section) return;
+        const rect = section.getBoundingClientRect();
+        const distance = anchor < rect.top ? rect.top - anchor : (anchor > rect.bottom ? anchor - rect.bottom : 0);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestIndex = index;
+        }
       });
-    });
+      stops.forEach((item, index) => item.classList.toggle('is-active', index === bestIndex));
+    };
+    const scheduleSync = () => { if (!syncFrame) syncFrame = requestAnimationFrame(syncActive); };
+    on(window, 'scroll', scheduleSync, { passive: true });
+    cleanup.push(() => { if (syncFrame) cancelAnimationFrame(syncFrame); });
+    ScrollTrigger.create({ trigger: document.body, start: 'top top', end: 'bottom bottom', onRefresh: scheduleSync });
+    scheduleSync();
   }
 
   function createWorkRailMotion(gsap, ScrollTrigger) {

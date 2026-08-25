@@ -534,6 +534,32 @@ html.welcome-intro-pending .site-header { z-index: 1150; }
     opacity: 1;
     transform: translateX(0);
   }
+
+  /* Chapter variant (case-study pages): pleurat's own chapter rail shows
+     every number + label at once, muted until its chapter is active,
+     rather than a dot that only reveals a label on the current stop. */
+  .journey-rail--chapters { height: 52vh; }
+  .journey-rail--chapters .journey-rail__dot { display: none; }
+  .journey-rail--chapters .journey-rail__num {
+    color: var(--muted);
+    font: 600 10px/1 var(--font-mono);
+    letter-spacing: .04em;
+    transition: color var(--dur-2) var(--ease);
+  }
+  .journey-rail--chapters .journey-rail__label {
+    color: var(--muted);
+    font: 500 11px/1 var(--font-sans);
+    letter-spacing: 0;
+    margin-left: 10px;
+    opacity: 1;
+    text-transform: none;
+    transform: none;
+  }
+  .journey-rail--chapters li[data-journey-stop].is-active .journey-rail__num,
+  .journey-rail--chapters li[data-journey-stop].is-active .journey-rail__label {
+    color: var(--accent);
+  }
+  .journey-rail--chapters li[data-journey-stop].is-active .journey-rail__label { color: var(--ink); }
 }
 
 @media (prefers-reduced-motion: reduce) {

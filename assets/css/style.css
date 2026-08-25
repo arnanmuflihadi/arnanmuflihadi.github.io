@@ -4231,3 +4231,41 @@ html[data-theme="light"] body.case-study-page .literature-map__fallback p span {
 html[data-theme="light"] body[data-project="transit"] .scrolly-static-step__num {
   color: #6d8592;
 }
+
+/* ============================================================
+   Case-study chapters — two-column reading layout.
+   Pleurat's own case studies run every "01 Overview"-style chapter
+   as a number+heading column beside a wider prose column, not a
+   heading stacked on top of full-width text. .cs-section already had
+   no background of its own (it just shows the page underneath, light
+   by default), so this is a layout-only change -- column 1 gets
+   .cs-section__head, column 2 gets everything else in the chapter
+   (prose, method pipeline, tables), each on its own row via grid
+   auto-placement, so the heading sits at the top of a mostly-empty
+   left column while the right column does the actual reading.
+   ============================================================ */
+@media (min-width: 1024px) {
+  body[data-project] .cs-section {
+    display: grid;
+    grid-template-columns: minmax(0, .34fr) minmax(0, .66fr);
+    column-gap: clamp(32px, 4.5vw, 72px);
+    align-items: start;
+  }
+  body[data-project] .cs-section__head {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+  body[data-project] .cs-section__head .idx { margin: 0 0 .7em; }
+  body[data-project] .cs-section__head h2 {
+    font-size: clamp(26px, 2.3vw, 38px);
+    font-weight: 540;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    max-width: 14ch;
+  }
+  body[data-project] .cs-section > *:not(.cs-section__head) { grid-column: 2; }
+}
