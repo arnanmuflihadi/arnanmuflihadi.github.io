@@ -183,14 +183,34 @@
   addEventListener('pageshow', () => closeMenu({ restoreFocus: false }));
   applyMenuState(false, { restoreFocus: false, focus: false });
 
+  // Timing measured off pleurat.com/work's own curtain (--cover:.48s,
+  // --reveal:.52s, --stagger:38ms over 8 columns); scaled down for small/
+  // slow devices the same way this file already scaled the old single-wipe
+  // curtain, so a full 8-column stagger doesn't feel sluggish on mobile.
+  const curtainTiming = () => {
+    const compact = innerWidth < 700;
+    return {
+      compact,
+      stagger: compact ? 0.022 : 0.038,
+      cover: compact ? 0.32 : 0.48,
+      reveal: compact ? 0.34 : 0.52,
+      labelFade: compact ? 0.22 : 0.3
+    };
+  };
+
   const clearRouteEntry = () => {
     const root = document.documentElement;
     const curtain = document.querySelector('.page-curtain');
     root.removeAttribute('data-route-entry');
     root.removeAttribute('data-route-exit');
     if (curtain) {
-      curtain.style.removeProperty('transform');
       curtain.style.removeProperty('pointer-events');
+      curtain.querySelectorAll(':scope > span').forEach((span) => span.style.removeProperty('transform'));
+      const labelWrap = curtain.querySelector('b');
+      if (labelWrap) {
+        labelWrap.style.removeProperty('opacity');
+        labelWrap.style.removeProperty('visibility');
+      }
     }
     window.PortfolioRouteTransition?.clear?.();
   };
@@ -203,13 +223,26 @@
       requestAnimationFrame(clearRouteEntry);
       return;
     }
-    window.gsap.set(curtain, { yPercent: 0, pointerEvents: 'auto' });
-    window.gsap.to(curtain, {
+    const spans = curtain.querySelectorAll(':scope > span');
+    // GSAP's autoAlpha sets visibility:inherit (not visible) at alpha 1, so
+    // it has to animate the visibility:hidden element itself -- the <b>
+    // wrapper -- not the text-only inner span, or it just inherits hidden
+    // right back from its own parent.
+    const labelWrap = curtain.querySelector('b');
+    const t = curtainTiming();
+    window.gsap.set(curtain, { pointerEvents: 'auto' });
+    window.gsap.set(spans, { yPercent: 0 });
+    if (labelWrap) window.gsap.set(labelWrap, { autoAlpha: 1 });
+    const revealTimeline = window.gsap.timeline({ onComplete: clearRouteEntry });
+    if (labelWrap) revealTimeline.to(labelWrap, { autoAlpha: 0, duration: t.labelFade * 0.7, ease: 'power2.in' }, 0);
+    // Reversed stagger (from: 'end') so the curtain opens from the edge
+    // opposite the one it closed from, instead of just rewinding itself.
+    revealTimeline.to(spans, {
       yPercent: -101,
-      duration: innerWidth < 700 ? 0.14 : 0.2,
-      ease: 'power2.out',
-      onComplete: clearRouteEntry
-    });
+      duration: t.reveal,
+      ease: 'power4.inOut',
+      stagger: { each: t.stagger, from: 'end' }
+    }, t.labelFade * 0.35);
   };
 
   revealRouteEntry();
@@ -234,29 +267,37 @@
       return;
     }
 
-    const label = curtain.querySelector('[data-route-label]');
-    if (label) label.textContent = transition.label;
+    const spans = curtain.querySelectorAll(':scope > span');
+    const labelText = curtain.querySelector('[data-route-label]');
+    const labelWrap = curtain.querySelector('b');
+    if (labelText) labelText.textContent = transition.label;
     document.documentElement.dataset.routeExit = 'true';
-    window.gsap.killTweensOf(curtain);
-    if (label) window.gsap.killTweensOf(label);
-    window.gsap.set(curtain, { yPercent: -101, pointerEvents: 'auto' });
-    if (label) window.gsap.set(label, { autoAlpha: 0 });
-    const compact = innerWidth < 700;
-    const closeDuration = compact ? 0.18 : 0.3;
-    const labelDuration = compact ? 0.16 : 0.22;
-    const settleDuration = compact ? 0.08 : 0.12;
+    window.gsap.killTweensOf(spans);
+    if (labelWrap) window.gsap.killTweensOf(labelWrap);
+    window.gsap.set(curtain, { pointerEvents: 'auto' });
+    window.gsap.set(spans, { yPercent: -101 });
+    if (labelWrap) window.gsap.set(labelWrap, { autoAlpha: 0 });
+
+    const t = curtainTiming();
+    const wipeSpan = (spans.length - 1) * t.stagger + t.cover;
+    const settleDuration = t.compact ? 0.1 : 0.16;
     const go = () => location.assign(transition.url.href);
     // A brief closed-and-settled beat before navigating -- so the
     // destination name has a moment to actually be read, rather than the
     // curtain closing and the browser leaving in the same instant.
-    navigationTimer = window.setTimeout(go, (closeDuration + labelDuration + settleDuration) * 1000 + 260);
+    navigationTimer = window.setTimeout(go, (wipeSpan + settleDuration) * 1000 + 260);
     const exitTimeline = window.gsap.timeline({
       onComplete: () => {
         clearTimeout(navigationTimer);
         go();
       }
-    }).to(curtain, { yPercent: 0, duration: closeDuration, ease: 'power2.inOut' });
-    if (label) exitTimeline.to(label, { autoAlpha: 1, duration: labelDuration, ease: 'power2.out' });
+    }).to(spans, {
+      yPercent: 0,
+      duration: t.cover,
+      ease: 'power4.inOut',
+      stagger: { each: t.stagger, from: 'start' }
+    }, 0);
+    if (labelWrap) exitTimeline.to(labelWrap, { autoAlpha: 1, duration: t.labelFade, ease: 'power2.out' }, t.cover * 0.55);
     exitTimeline.to({}, { duration: settleDuration });
   }, true);
 })();

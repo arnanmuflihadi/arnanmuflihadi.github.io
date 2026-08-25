@@ -200,31 +200,77 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .site-footer__links a:hover,
 .site-footer__links a:focus-visible { color: var(--accent); }
 
-/* ---------- page-transition curtain ---------- */
+/* ---------- page-transition curtain ----------
+   8 independent strips instead of one rigid block, each sliding in/out on
+   its own clock (measured off pleurat.com/work: 8 cols, 38ms stagger,
+   cubic-bezier(.72,0,.22,1)-ish ease, cover .48s / reveal .52s) -- the
+   reveal runs the stagger in reverse order from the cover, so the wipe
+   opens from the opposite edge it closed from instead of just rewinding.
+   power4.inOut approximates that curve without needing the CustomEase
+   plugin, which isn't loaded here. Paper/ink/surface tokens carry the
+   panel so it already matches the toggled theme, unlike pleurat's own
+   fixed cream + separate .is-dark override. */
 .page-curtain { display: none; }
 .js .page-curtain {
-  background: var(--ground);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: block;
   inset: 0;
+  overflow: hidden;
   pointer-events: none;
   position: fixed;
-  transform: translateY(-101%);
+  visibility: hidden;
   z-index: 999;
 }
-.js[data-route-entry] .page-curtain { pointer-events: auto; transform: translateY(0); }
-.js[data-route-exit] .page-curtain { pointer-events: auto; }
-.page-curtain span { background: var(--accent); border-right: 1px solid var(--ground-line); }
+.js[data-route-entry] .page-curtain,
+.js[data-route-exit] .page-curtain { pointer-events: auto; visibility: visible; }
+/* No CSS transform here on purpose -- GSAP's yPercent caches whatever
+   static transform an element has on its first gsap.set/to call and
+   keeps stacking new yPercent values on top of it, so a CSS
+   translateY(-101%) baseline gets baked in permanently and every
+   later yPercent ends up offset by an extra -101%. Positioning is
+   handled entirely by the container's visibility:hidden gate plus the
+   gsap.set() calls site-shell.js already makes before every tween. */
+.page-curtain > span {
+  background-color: var(--paper);
+  background-image:
+    repeating-linear-gradient(0deg, var(--line-soft) 0px, var(--line-soft) 1px, transparent 1px, transparent 4px),
+    linear-gradient(var(--paper), var(--surface));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: calc(12.5% + 1px);
+  will-change: transform;
+}
+.page-curtain > span:nth-of-type(1) { left: 0%; }
+.page-curtain > span:nth-of-type(2) { left: 12.5%; }
+.page-curtain > span:nth-of-type(3) { left: 25%; }
+.page-curtain > span:nth-of-type(4) { left: 37.5%; }
+.page-curtain > span:nth-of-type(5) { left: 50%; }
+.page-curtain > span:nth-of-type(6) { left: 62.5%; }
+.page-curtain > span:nth-of-type(7) { left: 75%; }
+.page-curtain > span:nth-of-type(8) { left: 87.5%; }
+.page-curtain > span::after {
+  background: var(--accent);
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  opacity: .9;
+  position: absolute;
+  right: 0;
+}
 .page-curtain b {
-  align-self: center;
-  color: var(--ground-ink);
-  font: 600 clamp(2rem, 5vw, 3.8rem)/1 var(--font-display);
-  grid-column: 1 / -1;
-  justify-self: center;
-  letter-spacing: -.01em;
+  align-items: center;
+  color: var(--ink);
+  display: flex;
+  font: 600 clamp(2rem, 5vw, 3.8rem)/.92 var(--font-display);
+  inset: 0;
+  justify-content: center;
+  letter-spacing: -.03em;
   position: absolute;
   text-align: center;
+  visibility: hidden;
 }
+.page-curtain b .page-curtain__dot { color: var(--accent); }
 
 /* ---------- welcome intro (first-visit only) ---------- */
 .welcome-intro {

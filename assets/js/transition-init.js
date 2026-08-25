@@ -40,7 +40,12 @@
     if (valid) {
       if (label) label.textContent = labelText;
       root.setAttribute('data-route-entry', 'true');
-      cleanupTimer = window.setTimeout(clear, 800);
+      // Failsafe only -- site-shell.js's GSAP timeline normally calls
+      // clear() itself via onComplete. Worst case for the 8-column
+      // reversed-stagger reveal is ~0.89s (7 * 38ms stagger + .52s reveal,
+      // plus the label pre-fade offset), so this must clear comfortably
+      // after that or it can yank the curtain mid-animation.
+      cleanupTimer = window.setTimeout(clear, 1400);
     } else {
       clear();
     }
