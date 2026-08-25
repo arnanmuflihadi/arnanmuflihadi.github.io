@@ -2929,9 +2929,16 @@ body[data-project] .cs-section__head h2 {
   text-transform: uppercase;
 }
 
-/* Shared full-bleed data-story field. */
-body[data-project] .project-story,
-body[data-project] .transit-scrolly {
+/* Shared full-bleed data-story field.
+
+   The inverted token set below used to sit on this whole section, which
+   is why the story read as a dark room that ignored the page theme. It
+   now scopes to .story-stage only -- the map/media panel genuinely is a
+   dark surface and its SVG fills are derived from --surface/--sc-high,
+   so those must stay inverted for the map to render. Everything outside
+   the panel (reading column, progress, notes) inherits the real theme. */
+body[data-project] .story-stage,
+body[data-project] .scrolly-static-stage {
   --ink: #f2eee5;
   --ink-soft: #cbc4b8;
   --paper: #f2eee5;
@@ -2941,13 +2948,17 @@ body[data-project] .transit-scrolly {
   --muted: #a8a095;
   --line: rgba(242,238,229,.2);
   --line-soft: rgba(242,238,229,.1);
+  color: #f2eee5;
+}
+body[data-project] .project-story,
+body[data-project] .transit-scrolly {
   width: 100vw;
   margin: clamp(62px, 9vw, 126px) 0 clamp(72px, 10vw, 140px) calc(50% - 50vw);
   padding: clamp(64px, 8vw, 116px) var(--gutter) clamp(72px, 9vw, 132px);
-  color: #f2eee5;
-  background: var(--case-night);
-  border-top: 1px solid rgba(242,238,229,.18);
-  border-bottom: 1px solid rgba(242,238,229,.18);
+  color: var(--ink-soft);
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   overflow: clip;
 }
 body[data-project] .project-story__head,
@@ -2959,7 +2970,7 @@ body[data-project] .scrolly-static-head {
   display: grid;
   grid-template-columns: clamp(124px, 17vw, 250px) minmax(0, 1fr);
   gap: 12px clamp(26px, 5vw, 82px);
-  border-bottom: 1px solid rgba(242,238,229,.24);
+  border-bottom: 1px solid var(--line);
 }
 body[data-project] .project-story__head::before,
 body[data-project] .scrolly-static-head::before { display: none; }
@@ -2987,7 +2998,7 @@ body[data-project] .scrolly-static-head h3::after { display: none; }
 body[data-project] .project-story__head p,
 body[data-project] .scrolly-static-head p {
   max-width: 64ch;
-  color: rgba(242,238,229,.62);
+  color: var(--muted);
   font-family: var(--font-mono);
   font-size: clamp(12px, 1.1vw, 15px);
   line-height: 1.7;
@@ -3074,7 +3085,7 @@ body[data-project] .scrolly-static-stepnav button {
 body[data-project] .story-source-note,
 body[data-project] .scrolly-static-caption {
   max-width: 92ch;
-  color: rgba(242,238,229,.45);
+  color: var(--muted);
   border-left-color: var(--accent);
 }
 body[data-project] .story-steps,
@@ -4174,15 +4185,12 @@ body[data-project] .scrolly-static-step {
 }
 body[data-project] .story-source-note,
 body[data-project] .scrolly-static-caption {
-  color: rgba(242, 238, 229, .62);
+  color: var(--muted);
 }
 body[data-project] .story-source-note code { color: inherit; }
 body[data-project] .story-step__meta span,
 body[data-project] .story-step.is-active .story-step__meta span {
-  color: rgba(242, 238, 229, .86);
-}
-body[data-project] :is(.story-step__num, .scrolly-static-step__num) {
-  color: color-mix(in srgb, var(--accent) 45%, #f2eee5);
+  color: var(--muted);
 }
 body[data-project] .cs-pager .label {
   color: color-mix(in srgb, var(--accent) 80%, #fff);
@@ -4227,9 +4235,146 @@ html[data-theme="light"] body.case-study-page .literature-map__fallback p span {
   color: #6c6c6c;
 }
 
-/* Transit story chapter indices sit on the night-stage surface. */
-html[data-theme="light"] body[data-project="transit"] .scrolly-static-step__num {
-  color: #6d8592;
+
+/* ============================================================
+   Scrollytelling — pleurat design language.
+
+   The old treatment was a full-bleed near-black band with its own
+   hardcoded palette (--case-night on the container, #101312 on the
+   reading column, rgba(242,238,229,..) text), a 3D rotateX/scale tilt
+   on the stage, a decorative accent gradient wash on the active step,
+   and a 270px reading column carrying 44px display type. It ignored
+   the theme entirely -- on the light default the whole page went cream
+   while this one section stayed black, which is what read as "still
+   the old design".
+
+   Pleurat's case studies (measured on pleurat.com/work/otee) are flat
+   and light: a cream sheet, zero border-radius, no shadows, no tilt,
+   a 10.5px/.18em uppercase accent eyebrow, a ~29px/1.12 weight-500
+   heading, and 17px/1.72 body in a column wide enough to actually
+   read. Media panels stay dark where the media itself is dark -- their
+   own app screenshots sit as dark rectangles on the cream sheet -- so
+   the map stage keeps its night surface and becomes the one dark
+   element, rather than the section being a dark room.
+   ============================================================ */
+body[data-project] .story-scrolly,
+body[data-project] .scrolly-static-container {
+  grid-template-columns: minmax(0, 1.5fr) minmax(340px, .8fr);
+  gap: clamp(26px, 3.4vw, 56px);
+  background: transparent;
+}
+body[data-project] .story-visual,
+body[data-project] .scrolly-static-visual {
+  background: transparent;
+  perspective: none;
+}
+/* The stage stays the dark media panel, but flat -- the tilt/lift was
+   the most dated part of the old treatment. */
+body[data-project] .story-stage,
+body[data-project] .scrolly-static-stage {
+  transform: none;
+  box-shadow: none;
+  border: 1px solid var(--line);
+}
+body[data-project] .story-steps,
+body[data-project] .scrolly-static-steps {
+  background: transparent;
+  border-left: 0;
+  color: var(--ink-soft);
+}
+body[data-project] .story-step,
+body[data-project] .scrolly-static-step {
+  padding: clamp(38px, 4.4vw, 62px) 0 clamp(38px, 4.4vw, 62px) clamp(20px, 2.2vw, 34px);
+  border: 0;
+  border-left: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-soft);
+  opacity: 1;
+  transition: border-color var(--dur-2) var(--emph);
+}
+/* Decorative-only rules from the dark treatment. */
+body[data-project] .story-step::after,
+body[data-project] .scrolly-static-step::after { display: none; }
+body[data-project] .story-step:hover:not(.is-active),
+body[data-project] .scrolly-static-step:hover:not(.active) {
+  background: transparent;
+  border-left-color: var(--line-soft);
+  opacity: 1;
+}
+body[data-project] .story-step.is-active,
+body[data-project] .scrolly-static-step.active,
+body[data-project] .transit-scrolly .scrolly-static-step.active {
+  background: transparent;
+  box-shadow: none;
+  border-left: 1px solid var(--accent);
+  opacity: 1;
+}
+body[data-project] .story-step__num,
+body[data-project] .scrolly-static-step__num {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font: 600 10.5px/1.55 var(--font-mono);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+body[data-project] .story-step.is-active .story-step__num,
+body[data-project] .scrolly-static-step.active .scrolly-static-step__num { color: var(--accent); }
+body[data-project] .story-step h4,
+body[data-project] .scrolly-static-step h4 {
+  max-width: 20ch;
+  font-size: clamp(23px, 2.1vw, 30px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -.02em;
+  text-transform: none;
+  color: var(--muted);
+  transition: color var(--dur-2) var(--emph);
+}
+body[data-project] .story-step.is-active h4,
+body[data-project] .scrolly-static-step.active h4 { color: var(--ink); }
+body[data-project] .story-step p,
+body[data-project] .scrolly-static-step p,
+body[data-project] .story-step:not(.is-active) p,
+body[data-project] .scrolly-static-step:not(.active) p {
+  max-width: 46ch;
+  font-size: clamp(15px, 1.15vw, 17px);
+  line-height: 1.72;
+  color: var(--muted);
+  transition: color var(--dur-2) var(--emph);
+}
+body[data-project] .story-step.is-active p,
+body[data-project] .scrolly-static-step.active p { color: var(--ink-soft); }
+body[data-project] .story-step__meta span,
+body[data-project] .story-step.is-active .story-step__meta span {
+  color: var(--muted);
+  border-color: var(--line);
+  background: transparent;
+}
+body[data-project] .story-source-note,
+body[data-project] .scrolly-static-caption {
+  padding: 14px 0 0;
+  color: var(--muted);
+}
+body[data-project] .story-progress button,
+body[data-project] .scrolly-static-stepnav button { background: var(--line); background-clip: content-box; }
+body[data-project] .story-progress button.is-active,
+body[data-project] .story-progress button.is-done,
+body[data-project] .scrolly-static-stepnav button.is-active,
+body[data-project] .scrolly-static-stepnav button.is-done { background: var(--accent); background-clip: content-box; }
+/* Section intro: the 78px display heading belonged to the dark band;
+   bring it into the same register as the chapter heads above it. */
+body[data-project] .project-story__head h3,
+body[data-project] .scrolly-static-head h3 {
+  max-width: 24ch;
+  font-size: clamp(27px, 2.7vw, 42px);
+  font-weight: 520;
+  line-height: 1.08;
+  letter-spacing: -.025em;
+}
+
+@media (max-width: 980px) {
+  body[data-project] .story-scrolly,
+  body[data-project] .scrolly-static-container { grid-template-columns: 1fr; }
 }
 
 /* ============================================================
