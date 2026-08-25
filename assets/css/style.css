@@ -2812,20 +2812,16 @@ body[data-project] .cs-hero {
     "meta meta";
   column-gap: clamp(44px, 7vw, 118px);
   row-gap: clamp(18px, 2.8vh, 34px);
-  color: var(--ground-ink);
-  background: var(--ground);
+  color: var(--ink);
+  background: var(--paper);
 }
+/* content/position/pointer-events only -- every project page sets
+   body[data-project], and the project-specific rule below fully replaces
+   inset/opacity/background-image/mask for all of them, so this rule never
+   paints its own texture on a live page. */
 body[data-project] .cs-hero::before {
   content: "";
   position: absolute;
-  inset: 64px 0 0;
-  opacity: .22;
-  background:
-    linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px);
-  background-size: 72px 72px;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 24%, #000 76%, transparent);
-          mask-image: linear-gradient(to bottom, transparent, #000 24%, #000 76%, transparent);
   pointer-events: none;
 }
 body[data-project] .cs-hero::after {
@@ -2833,7 +2829,7 @@ body[data-project] .cs-hero::after {
   right: var(--gutter);
   height: 1px;
   border-radius: 0;
-  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--ground-ink) 32%, transparent) 18%, color-mix(in srgb, var(--ground-ink) 14%, transparent));
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--ink) 32%, transparent) 18%, color-mix(in srgb, var(--ink) 14%, transparent));
   opacity: 1;
 }
 body[data-project] .cs-hero .back {
@@ -2842,15 +2838,15 @@ body[data-project] .cs-hero .back {
   width: max-content;
   margin: 0;
   padding: 7px 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--ground-ink) 32%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 32%, transparent);
   border-radius: 0;
-  color: color-mix(in srgb, var(--ground-ink) 68%, transparent);
+  color: var(--muted);
   text-transform: uppercase;
 }
 body[data-project] .cs-hero .back:hover,
 body[data-project] .cs-hero .back:focus-visible {
   padding-left: 0;
-  color: var(--ground-ink);
+  color: var(--ink);
   border-color: var(--accent);
   background: transparent;
 }
@@ -2864,7 +2860,7 @@ body[data-project] .cs-hero h1 {
   align-self: end;
   max-width: 12ch;
   margin: 0;
-  color: var(--ground-ink);
+  color: var(--ink);
   font-size: clamp(70px, 8.4vw, 144px);
   font-weight: 610;
   line-height: .84;
@@ -2875,7 +2871,7 @@ body[data-project] .cs-hero .lede {
   align-self: end;
   max-width: 42ch;
   margin: 0 0 .5em;
-  color: color-mix(in srgb, var(--ground-ink) 78%, transparent);
+  color: var(--ink-soft);
   font-family: var(--font-mono);
   font-size: clamp(14px, 1.25vw, 18px);
   font-weight: 400;
@@ -2886,21 +2882,21 @@ body[data-project] .cs-meta {
   grid-area: meta;
   margin: clamp(10px, 2vh, 26px) 0 0;
   border: 0;
-  border-top: 1px solid color-mix(in srgb, var(--ground-ink) 34%, transparent);
-  border-bottom: 1px solid color-mix(in srgb, var(--ground-ink) 18%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--ink) 34%, transparent);
+  border-bottom: 1px solid var(--line);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
 }
 body[data-project] .cs-meta div {
   padding: 18px 20px 17px 0;
-  border-right: 1px solid color-mix(in srgb, var(--ground-ink) 20%, transparent);
+  border-right: 1px solid var(--line);
   background: transparent;
 }
 body[data-project] .cs-meta div + div { padding-left: clamp(20px, 3vw, 48px); }
 body[data-project] .cs-meta div:last-child { border-right: 0; }
 body[data-project] .cs-meta dt { color: var(--accent); }
-body[data-project] .cs-meta dd { color: color-mix(in srgb, var(--ground-ink) 80%, transparent); }
+body[data-project] .cs-meta dd { color: var(--ink-soft); }
 
 body[data-project] main.wrap { max-width: 1380px; }
 body[data-project] .cs-section {
@@ -3206,18 +3202,15 @@ body[data-project] .case-progress a { width: 24px; height: 24px; }
 body[data-project] .cs-pager {
   min-height: 44svh;
   border-top: 0;
-  color: var(--ground-ink);
-  background: var(--ground);
 }
 body[data-project] .cs-pager a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 90px;
-  border-top: 1px solid var(--ground-line);
+  border-top: 1px solid var(--line);
 }
-body[data-project] .cs-pager a:hover { background: color-mix(in srgb, var(--ground) 85%, #fff); }
-body[data-project] .cs-pager a:last-child { border-left-color: var(--ground-line); }
+body[data-project] .cs-pager a:last-child { border-left-color: var(--line); }
 body[data-project] .cs-pager .label { color: var(--accent); }
 body[data-project] .cs-pager .t {
   max-width: 18ch;
@@ -3398,6 +3391,13 @@ body[data-project] .cs-hero::before {
   -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 14%, #000 88%, transparent 100%);
           mask-image: linear-gradient(to bottom, transparent 0, #000 14%, #000 88%, transparent 100%);
 }
+/* The scrim + map SVG are authored dark-on-light-stroke (the map's own
+   color="#f4f4f2" is baked into the file and unreachable from here, since
+   an externally-referenced background-image SVG can't inherit page custom
+   properties). Inverting the composited layer in light theme lands within
+   a few rgb points of --paper/--ink -- cheaper and more exact than
+   maintaining a second set of map SVGs per theme. */
+html[data-theme="light"] body[data-project] .cs-hero::before { filter: invert(1); }
 body[data-project] .cs-hero > * { position: relative; z-index: 1; }
 body[data-project] .cshero__topo { display: none; }
 body[data-project] .cs-hero h1 {
