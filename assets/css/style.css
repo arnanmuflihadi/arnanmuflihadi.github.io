@@ -2812,8 +2812,8 @@ body[data-project] .cs-hero {
     "meta meta";
   column-gap: clamp(44px, 7vw, 118px);
   row-gap: clamp(18px, 2.8vh, 34px);
-  color: #f3efe6;
-  background: var(--case-night);
+  color: var(--ground-ink);
+  background: var(--ground);
 }
 body[data-project] .cs-hero::before {
   content: "";
@@ -2833,7 +2833,7 @@ body[data-project] .cs-hero::after {
   right: var(--gutter);
   height: 1px;
   border-radius: 0;
-  background: linear-gradient(90deg, var(--accent), rgba(243,239,230,.32) 18%, rgba(243,239,230,.14));
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--ground-ink) 32%, transparent) 18%, color-mix(in srgb, var(--ground-ink) 14%, transparent));
   opacity: 1;
 }
 body[data-project] .cs-hero .back {
@@ -2842,15 +2842,15 @@ body[data-project] .cs-hero .back {
   width: max-content;
   margin: 0;
   padding: 7px 0;
-  border-bottom: 1px solid rgba(243,239,230,.32);
+  border-bottom: 1px solid color-mix(in srgb, var(--ground-ink) 32%, transparent);
   border-radius: 0;
-  color: rgba(243,239,230,.68);
+  color: color-mix(in srgb, var(--ground-ink) 68%, transparent);
   text-transform: uppercase;
 }
 body[data-project] .cs-hero .back:hover,
 body[data-project] .cs-hero .back:focus-visible {
   padding-left: 0;
-  color: #f3efe6;
+  color: var(--ground-ink);
   border-color: var(--accent);
   background: transparent;
 }
@@ -2864,7 +2864,7 @@ body[data-project] .cs-hero h1 {
   align-self: end;
   max-width: 12ch;
   margin: 0;
-  color: #f3efe6;
+  color: var(--ground-ink);
   font-size: clamp(70px, 8.4vw, 144px);
   font-weight: 610;
   line-height: .84;
@@ -2875,7 +2875,7 @@ body[data-project] .cs-hero .lede {
   align-self: end;
   max-width: 42ch;
   margin: 0 0 .5em;
-  color: rgba(243,239,230,.78);
+  color: color-mix(in srgb, var(--ground-ink) 78%, transparent);
   font-family: var(--font-mono);
   font-size: clamp(14px, 1.25vw, 18px);
   font-weight: 400;
@@ -2886,21 +2886,21 @@ body[data-project] .cs-meta {
   grid-area: meta;
   margin: clamp(10px, 2vh, 26px) 0 0;
   border: 0;
-  border-top: 1px solid rgba(243,239,230,.34);
-  border-bottom: 1px solid rgba(243,239,230,.18);
+  border-top: 1px solid color-mix(in srgb, var(--ground-ink) 34%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--ground-ink) 18%, transparent);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
 }
 body[data-project] .cs-meta div {
   padding: 18px 20px 17px 0;
-  border-right: 1px solid rgba(243,239,230,.2);
+  border-right: 1px solid color-mix(in srgb, var(--ground-ink) 20%, transparent);
   background: transparent;
 }
 body[data-project] .cs-meta div + div { padding-left: clamp(20px, 3vw, 48px); }
 body[data-project] .cs-meta div:last-child { border-right: 0; }
 body[data-project] .cs-meta dt { color: var(--accent); }
-body[data-project] .cs-meta dd { color: rgba(243,239,230,.8); }
+body[data-project] .cs-meta dd { color: color-mix(in srgb, var(--ground-ink) 80%, transparent); }
 
 body[data-project] main.wrap { max-width: 1380px; }
 body[data-project] .cs-section {
@@ -3196,8 +3196,6 @@ body[data-project] .case-progress {
   right: 18px;
   padding: 10px 8px;
   border-radius: 0;
-  border-color: rgba(242,238,229,.18);
-  background: rgba(9,11,11,.72);
   box-shadow: none;
 }
 body[data-project] .case-progress a,
@@ -3208,18 +3206,18 @@ body[data-project] .case-progress a { width: 24px; height: 24px; }
 body[data-project] .cs-pager {
   min-height: 44svh;
   border-top: 0;
-  color: #f2eee5;
-  background: var(--case-night);
+  color: var(--ground-ink);
+  background: var(--ground);
 }
 body[data-project] .cs-pager a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 90px;
-  border-top: 1px solid rgba(242,238,229,.18);
+  border-top: 1px solid var(--ground-line);
 }
-body[data-project] .cs-pager a:hover { background: #151817; }
-body[data-project] .cs-pager a:last-child { border-left-color: rgba(242,238,229,.18); }
+body[data-project] .cs-pager a:hover { background: color-mix(in srgb, var(--ground) 85%, #fff); }
+body[data-project] .cs-pager a:last-child { border-left-color: var(--ground-line); }
 body[data-project] .cs-pager .label { color: var(--accent); }
 body[data-project] .cs-pager .t {
   max-width: 18ch;
