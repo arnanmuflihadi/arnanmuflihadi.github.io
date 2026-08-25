@@ -2952,8 +2952,20 @@ body[data-project] .scrolly-static-stage {
 }
 body[data-project] .project-story,
 body[data-project] .transit-scrolly {
-  width: 100vw;
-  margin: clamp(62px, 9vw, 126px) 0 clamp(72px, 10vw, 140px) calc(50% - 50vw);
+  /* width:100vw + margin-left:calc(50% - 50vw) resolves the % against this
+     element's own containing block, not the viewport -- both .project-story
+     and .transit-scrolly sit nested inside a numbered .cs-section chapter
+     (a grid item in a ~1000px column since the two-column chapter layout),
+     so the breakout's accuracy depends on that grid area happening to be
+     close to viewport width. Once the section spans both grid columns
+     (below) the residual error was small at the viewport tested, but it's
+     not guaranteed at other widths. Breaking out by a fixed --gutter
+     amount instead (same technique already used for this element at the
+     mobile breakpoint below) is exact regardless of the containing
+     block's width, at the cost of reaching the edge of the page's own
+     margin rather than the literal browser viewport edge. */
+  width: calc(100% + var(--gutter) + var(--gutter));
+  margin: clamp(62px, 9vw, 126px) calc(0px - var(--gutter)) clamp(72px, 10vw, 140px);
   padding: clamp(64px, 8vw, 116px) var(--gutter) clamp(72px, 9vw, 132px);
   color: var(--ink-soft);
   background: var(--surface);
@@ -4413,4 +4425,11 @@ body[data-project] .scrolly-static-head h3 {
     max-width: 14ch;
   }
   body[data-project] .cs-section > *:not(.cs-section__head) { grid-column: 2; }
+  /* .project-story/.transit-scrolly are full-bleed data bands that break
+     out to (near-)viewport width -- placing them in the narrow prose
+     column (like every other chapter child) would squeeze that breakout
+     down to the column's own width instead. Span both columns so the
+     full-bleed content has the whole chapter's width to break out from. */
+  body[data-project] .cs-section > .project-story,
+  body[data-project] .cs-section > .transit-scrolly { grid-column: 1 / -1; }
 }
