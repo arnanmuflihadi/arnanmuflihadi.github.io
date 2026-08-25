@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/css/base.css?v=3">
 <link rel="stylesheet" href="assets/css/style.css?v=72">
 
-<link rel="stylesheet" href="assets/css/case-studies.css?v=6">
+<link rel="stylesheet" href="assets/css/case-studies.css?v=7">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -185,7 +185,7 @@ Score(rw)   = (RawScore / S_max) × 100
       <p>AHP-weighted cumulative-opportunity scoring normalized to 0–100, then aggregated from RW to urban village. The Scenario A vs B comparison isolates the marginal impact of Mikrotrans, Getis-Ord Gi* detects statistically significant Scenario B clusters, and the latest Project AHP sensitivity outputs verify that the positive Mikrotrans gain holds across tested time cutoffs and AHP weight vectors.</p>
     </div>
 
-    <section class="transit-scrolly reveal" data-transit-scrolly data-static-story aria-labelledby="transit-story-title">
+    <section class="transit-scrolly reveal" data-transit-scrolly aria-labelledby="transit-story-title">
       <div class="scrolly-static-head">
         <h3 id="transit-story-title">From baseline access to feeder-network impact</h3>
         <p>The analytical outputs are sequenced as one narrative from the latest Project AHP 60-minute case-study figure data: baseline accessibility, integrated network access, Mikrotrans uplift, accessibility categories, Getis-Ord Gi* clustering, and final synthesis.</p>
@@ -198,8 +198,7 @@ Score(rw)   = (RawScore / S_max) × 100
             <div class="scrolly-static-kicker" data-scrolly-kicker>Research question</div>
 
             <div class="scrolly-data-map" data-transit-data-map data-map-state="overview">
-              <img class="story-static-poster" src="assets/img/transit/skor_b.jpg" width="1280" height="1130" alt="Static Scenario B accessibility map for DKI Jakarta under a 60-minute transit budget." loading="lazy" decoding="async">
-              <div class="scrolly-data-map__status" data-map-status>Static accessibility figure · load the interactive map below for live geometry.</div>
+              <div class="scrolly-data-map__status" data-map-status>Loading kelurahan accessibility data…</div>
               <svg class="scrolly-map-svg" data-map-svg viewBox="0 0 1000 720" role="img" aria-label="Data-driven DKI Jakarta kelurahan accessibility map rendered from raw score output">
                 <defs>
                   <clipPath id="transitCompareClip">
@@ -311,11 +310,9 @@ Score(rw)   = (RawScore / S_max) × 100
       <p>Beyond the narrative map, the dashboard now exposes the <strong>raw input layers</strong> and the <strong>60-minute kelurahan accessibility output</strong> used for the figures — the full Jaklingko transit network (TransJakarta, Mikrotrans, MRT, LRT, KRL), administrative boundaries, RW origin points, all <strong>27 facility categories</strong> (11,663 points), Scenario B accessibility scores, Mikrotrans Δ-score, and Getis-Ord Gi* cluster layer.</p>
     </div>
 
-    <figure class="figure reveal figure--explicit-embed">
-      <div class="dash-embed explicit-embed" data-explicit-embed>
-        <img class="explicit-embed__poster" src="assets/img/transit/skor_b.jpg" width="1280" height="1130" alt="" loading="lazy" decoding="async">
-        <div class="explicit-embed__veil"><p class="explicit-embed__kicker">Interactive data explorer</p><p>Explore the transit network, accessibility surface, Mikrotrans change, and Gi* cluster layers when you are ready.</p><div class="explicit-embed__actions"><button class="explicit-embed__load" type="button" data-embed-load>Load interactive map</button><a class="explicit-embed__open" href="maps/transit_dashboard.html?v=6" target="_blank" rel="noopener">Open full map ↗</a></div><p class="explicit-embed__status" data-embed-status aria-live="polite">Static preview shown. The interactive map has not been loaded.</p></div>
-        <iframe data-embed-frame data-src="maps/transit_dashboard.html?v=6" title="Interactive raw-data and score-output explorer for the DKI Jakarta transit accessibility study"></iframe>
+    <figure class="figure reveal">
+      <div class="dash-embed">
+        <iframe src="maps/transit_dashboard.html?v=6" title="Interactive raw-data and score-output explorer for the DKI Jakarta transit accessibility study" loading="lazy" data-map-fallback></iframe>
       </div>
       <figcaption class="figcap--row">
         <span>Interactive explorer — toggle the transit, boundary, facility, accessibility-score, and Mikrotrans-delta layers.</span>
@@ -326,11 +323,9 @@ Score(rw)   = (RawScore / S_max) × 100
       <p>The same network also powers <strong>Mini Jabodetabek 3D</strong>, a standalone agent-based digital twin: schedule-driven TransJakarta, MRT, LRT, KRL and airport-rail vehicles animate along their real GTFS shapes, and an agent-based simulation shows residents riding Mikrotrans feeders from their RW centroid to essential facilities — the accessibility model above, in motion.</p>
     </div>
 
-    <figure class="figure reveal figure--explicit-embed">
-      <div class="dash-embed explicit-embed" data-explicit-embed>
-        <img class="explicit-embed__poster" src="assets/img/transit/kategori.jpg" width="1800" height="1313" alt="" loading="lazy" decoding="async">
-        <div class="explicit-embed__veil"><p class="explicit-embed__kicker">Large interactive map</p><p>Mini Jabodetabek 3D loads additional data and opens only when you choose to run it.</p><div class="explicit-embed__actions"><button class="explicit-embed__load" type="button" data-embed-load>Load 3D map</button><a class="explicit-embed__open" href="dki-3d/" target="_blank" rel="noopener">Open 3D map ↗</a></div><p class="explicit-embed__status" data-embed-status aria-live="polite">Static preview shown. The 3D map has not been loaded.</p></div>
-        <iframe data-embed-frame data-src="dki-3d/" title="Mini Jabodetabek 3D — agent-based transit simulation"></iframe>
+    <figure class="figure reveal">
+      <div class="dash-embed">
+        <iframe src="dki-3d/" title="Mini Jabodetabek 3D — agent-based transit simulation" loading="lazy" data-map-fallback></iframe>
       </div>
       <figcaption class="figcap--row">
         <span>Mini Jabodetabek 3D — live schedule-based vehicles and an agent-based accessibility simulation.</span>
@@ -457,7 +452,6 @@ Score(rw)   = (RawScore / S_max) × 100
 <script src="assets/js/vendor/gsap.min.js"></script>
 <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
 <script src="assets/js/site-shell.js?v=7"></script>
-<script src="assets/js/embed-loader.js?v=2"></script>
 <script src="assets/js/motion.js?v=32"></script>
 </body>
 </html>

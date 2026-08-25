@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/css/base.css?v=3">
 <link rel="stylesheet" href="assets/css/style.css?v=72">
 
-<link rel="stylesheet" href="assets/css/case-studies.css?v=6">
+<link rel="stylesheet" href="assets/css/case-studies.css?v=7">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -339,16 +339,15 @@
       <p>OD matrices were built for both stages (254 centers × 40 channels; 40 channels × 53 destinations), visualized as desire lines &amp; heatmaps. Flow was accumulated per OSM edge (line width ∝ log flow), composite scoring integrated 5 dimensions, and robustness was tested across 4 dimensions including a 1,000-sample Dirichlet Monte Carlo.</p>
     </div>
 
-    <section class="project-story reveal" data-pangan-scrolly data-static-story aria-label="Manual rice supply-chain story">
+    <section class="project-story reveal" data-pangan-scrolly aria-label="Interactive rice supply-chain story">
       <div class="project-story__head">
         <h3>From rice fields to critical corridors</h3>
-        <p>This story runs on precomputed network figures, keeping the chapter sequence fast and source-supported. The full interactive map loads on demand below.</p>
+        <p>This interactive layer rebuilds the case-study map from the committed GeoJSON outputs: district balances, production centers, supply-chain nodes, modeled OD desire lines, network flow, and the final priority-road shortlist.</p>
       </div>
       <div class="story-scrolly">
         <div class="story-visual">
           <div class="story-stage story-stage--map">
-            <img class="story-static-poster" src="assets/img/pangan/network_flow.jpg" width="1440" height="1152" alt="Static West Java modeled rice-flow network figure, showing source-supported corridor pressure rather than live geometry." loading="lazy" decoding="async">
-            <div class="story-status" data-story-status>Static network figure · load the interactive map below for live geometry.</div>
+            <div class="story-status" data-story-status>Loading West Java GeoJSON layers...</div>
             <svg class="story-map-svg" viewBox="0 0 1000 720" role="img" aria-label="West Java rice supply-chain network map">
               <g class="story-map-layer" data-layer="kabkota"></g>
               <g class="story-map-layer" data-layer="sentra"></g>
@@ -374,7 +373,7 @@
             </div>
           </div>
           <div class="story-progress" data-story-progress aria-label="Rice supply-chain story chapters"></div>
-          <p class="story-source-note">Source: committed GeoJSON outputs in <code>maps/data/pangan/</code>. Evidence figures are precomputed for speed — the full interactive map is available on demand below.</p>
+          <p class="story-source-note">Source: committed GeoJSON outputs in <code>maps/data/pangan/</code>; road-flow layer is sampled to the highest-flow segments for browser performance.</p>
         </div>
         <div class="story-steps">
           <article class="story-step" data-layers="kabkota,sentra" data-chart="production" data-kpi="254" data-label="production centers" data-note="The production surface starts with 254 kecamatan centers, scaled by modeled rice output and backed by district food-balance indicators." data-legend="District balance=balance;Production centers=sentra">
@@ -433,11 +432,9 @@
       <figcaption>Figure 3. Channel-inflow comparison across the 3 flow-assignment models.</figcaption>
     </figure>
 
-    <figure class="figure reveal figure--explicit-embed">
-      <div class="dash-embed explicit-embed" data-explicit-embed>
-        <img class="explicit-embed__poster" src="assets/img/pangan/network_flow.jpg" width="1440" height="1152" alt="">
-        <div class="explicit-embed__veil"><p class="explicit-embed__kicker">Interactive data explorer</p><p>Switch district indicators and inspect agricultural land, supply-chain, road, and hazard layers when you are ready.</p><div class="explicit-embed__actions"><button class="explicit-embed__load" type="button" data-embed-load>Load interactive map</button><a class="explicit-embed__open" href="maps/pangan_dashboard.html?v=2" target="_blank" rel="noopener">Open full map ↗</a></div><p class="explicit-embed__status" data-embed-status aria-live="polite">Static preview shown. The interactive map has not been loaded.</p></div>
-        <iframe data-embed-frame data-src="maps/pangan_dashboard.html?v=2" title="Interactive food-security explorer for West Java — district indicators, supply-chain nodes, agricultural land, roads and hazards"></iframe>
+    <figure class="figure reveal">
+      <div class="dash-embed">
+        <iframe src="maps/pangan_dashboard.html?v=2" title="Interactive food-security explorer for West Java — district indicators, supply-chain nodes, agricultural land, roads and hazards" loading="lazy"></iframe>
       </div>
       <figcaption class="figcap--row">
         <span>Interactive explorer — switch district indicators and toggle the agricultural-land, supply-chain, road and hazard layers behind the analysis.</span>
@@ -549,7 +546,6 @@
 <script src="assets/js/vendor/gsap.min.js"></script>
 <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
 <script src="assets/js/site-shell.js?v=7"></script>
-<script src="assets/js/embed-loader.js?v=2"></script>
 <script src="assets/js/motion.js?v=32"></script>
 </body>
 </html>
