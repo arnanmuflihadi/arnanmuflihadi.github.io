@@ -12,9 +12,9 @@
   });
 
   /* ---------- Theme (light/dark, persisted) ---------- */
+  /* data-theme itself is already set pre-paint by theme-init.js; this just
+     wires up the toggle button and its aria state. */
   var root = document.documentElement;
-  var stored = localStorage.getItem("theme");
-  root.setAttribute("data-theme", stored === "dark" ? "dark" : "light");
   function toggleTheme() {
     var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", next);
@@ -33,29 +33,6 @@
     b.addEventListener("click", toggleTheme);
   });
   syncThemeControls();
-
-  /* ---------- Navbar: scrolled state + mobile menu ---------- */
-  var nav = document.querySelector(".nav");
-  if (nav) {
-    var navSolid = document.body.classList.contains("nav-solid");
-    var onScroll = function () { nav.classList.toggle("scrolled", navSolid || window.scrollY > 24); };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-
-    var burger = nav.querySelector(".nav__burger");
-    if (burger) {
-      burger.addEventListener("click", function () {
-        var open = nav.classList.toggle("open");
-        burger.setAttribute("aria-expanded", open ? "true" : "false");
-      });
-    }
-    nav.querySelectorAll(".nav__links a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        nav.classList.remove("open");
-        if (burger) burger.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
 
   /* ---------- Current year ---------- */
   document.querySelectorAll("[data-year]").forEach(function (e) {

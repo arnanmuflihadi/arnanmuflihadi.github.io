@@ -3,7 +3,7 @@
    Material 3 Expressive · vibrant project palette
    ============================================================ */
 
-/* Design tokens live in variables.css so project accents can be reused across pages. */
+/* Design tokens live in tokens.css so project accents can be reused across pages. */
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

@@ -53,13 +53,6 @@
       .replace(/'/g, "&#39;");
   }
 
-  function slug(value) {
-    return String(value || "")
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-|-$/g, "");
-  }
-
   function yearLabel(node) {
     return node.year == null || node.year === "" ? "n.d." : String(node.year);
   }
@@ -81,18 +74,6 @@
 
   function phaseForNode(node) {
     return CATEGORY_PHASE[node.category] || 5;
-  }
-
-  function visibleForPhase(node, phase) {
-    return phase >= phaseForNode(node);
-  }
-
-  function edgeVisible(edge, byId, phase) {
-    if (phase < 6) {
-      var target = byId[edge.target] || byId[edge.source];
-      return target ? visibleForPhase(target, phase) : phase >= 6;
-    }
-    return true;
   }
 
   function nodeRadius(node) {

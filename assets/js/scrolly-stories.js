@@ -234,8 +234,7 @@
       },
       getState: getState,
       getActiveStep: function () { return steps[active] || steps[0] || null; },
-      getCount: function () { return steps.length; },
-      destroy: function () {}
+      getCount: function () { return steps.length; }
     };
     controller = Object.freeze(controller);
     root[STORY_CONTROLLER_KEY] = controller;
