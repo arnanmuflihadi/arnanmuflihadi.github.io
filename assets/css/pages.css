@@ -35,7 +35,8 @@
   width: min(48vw, 620px);
   z-index: 0;
 }
-.page-route-motif path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
+.page-route-motif__grid line { stroke: var(--line); stroke-width: 1; }
+.page-route-motif path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
 .page-route-motif circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }
 
 /* ---------- Work: atlas index ---------- */
