@@ -176,24 +176,34 @@
 
     const isDesktop = desktop();
     const isCompact = compact();
-    const repeats = isDesktop ? -1 : 1;
-    const journeyDuration = isDesktop ? 15 : (isCompact ? 11 : 8);
+    const routeDuration = isDesktop ? 15 : (isCompact ? 11 : 8);
     const frameDuration = isDesktop ? 0.1 : 0.13;
-    // The walker no longer travels -- the city does. Front (closest) moves
-    // the most, back (most distant) the least, a plain 4:2:1 depth ratio.
-    const travel = {
-      front: isDesktop ? 640 : (isCompact ? 460 : 320),
-      mid: isDesktop ? 320 : (isCompact ? 230 : 160),
-      back: isDesktop ? 160 : (isCompact ? 115 : 80)
+    // She always faces right and never turns around, so the city can only
+    // ever scroll one way -- a true loop, not a there-and-back yoyo. Each
+    // layer travels exactly its own measured tiling period per cycle, so
+    // the moment it resets it's already showing the identical next tile
+    // and the wrap is invisible. Front (closest) moves fastest, back
+    // (most distant) slowest, a plain 4:2:1 depth ratio.
+    const backSpeed = isDesktop ? 40 : (isCompact ? 29 : 20);
+    const speed = { front: backSpeed * 4, mid: backSpeed * 2, back: backSpeed };
+    const setupLoop = (layer, key) => {
+      if (!layer) return null;
+      const period = layer.getBBox().width;
+      if (!period) return null;
+      tileParallaxLayer(layer, period);
+      return gsap.to(layer, {
+        x: -period,
+        duration: period / speed[key],
+        ease: 'none',
+        paused: true,
+        repeat: -1,
+        willChange: 'transform'
+      });
     };
-    tileParallaxLayer(skylineFront, travel.front);
-    tileParallaxLayer(skylineMid, travel.mid);
-    tileParallaxLayer(skylineBack, travel.back);
-    let travellingRight = true;
     const motions = [];
 
-    // The illustrated sprite keeps a stable baseline and only swaps frame /
-    // flips to face the actual yoyo direction; it never itself travels.
+    // The illustrated sprite keeps a stable baseline, always facing right,
+    // and only swaps frame for the leg cycle; it never itself travels.
     gsap.set(walker, { willChange: 'transform' });
     gsap.set(sprite, { scaleX: 1, transformOrigin: '50% 100%', willChange: 'transform' });
     gsap.set(stops, { scale: 1 });
@@ -241,33 +251,37 @@
       yoyo: true
     });
 
-    const journey = gsap.timeline({
-      paused: true,
-      repeat: repeats,
-      yoyo: true,
-      onRepeat: () => {
-        travellingRight = !travellingRight;
-        gsap.set(sprite, { scaleX: travellingRight ? 1 : -1 });
-      }
-    });
-    // Buildings slide the opposite way from the walker's implied facing --
-    // walking right means the street comes from ahead and recedes behind,
-    // i.e. the scene translates left underneath a figure that never moves.
-    if (skylineFront) journey.to(skylineFront, { x: -travel.front, duration: journeyDuration, ease: 'none', willChange: 'transform' }, 0);
-    if (skylineMid) journey.to(skylineMid, { x: -travel.mid, duration: journeyDuration, ease: 'none', willChange: 'transform' }, 0);
-    if (skylineBack) journey.to(skylineBack, { x: -travel.back, duration: journeyDuration, ease: 'none', willChange: 'transform' }, 0);
-    if (routeProgress) journey.to(routeProgress, { attr: { 'stroke-dashoffset': 0 }, duration: journeyDuration, ease: 'none' }, 0);
+    // Buildings slide leftward -- walking right means the street comes
+    // from ahead and recedes behind, i.e. the scene translates left
+    // underneath a figure that never moves and never turns around.
+    [setupLoop(skylineFront, 'front'), setupLoop(skylineMid, 'mid'), setupLoop(skylineBack, 'back')]
+      .filter(Boolean)
+      .forEach((loop) => motions.push(loop));
+
+    // The route line is a decorative pulse, not literal progress -- there's
+    // no fixed destination to arrive at once the city loops forever -- so
+    // it draws and un-draws continuously rather than tracking travel.
+    if (routeProgress) {
+      motions.push(gsap.to(routeProgress, {
+        attr: { 'stroke-dashoffset': 0 },
+        duration: routeDuration,
+        ease: 'none',
+        paused: true,
+        repeat: -1,
+        yoyo: true
+      }));
+    }
     if (stops.length) {
-      journey.to(stops, {
+      motions.push(gsap.to(stops, {
         scale: 1.3,
         duration: 0.3,
-        stagger: journeyDuration / stops.length,
+        stagger: routeDuration / stops.length,
         yoyo: true,
-        repeat: 1,
+        repeat: -1,
+        paused: true,
         ease: 'sine.inOut'
-      }, 0);
+      }));
     }
-    motions.push(journey);
     if (isDesktop) {
       if (copy) {
         gsap.to(copy, {
