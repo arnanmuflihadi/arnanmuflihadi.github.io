@@ -209,9 +209,47 @@
     // Buildings slide leftward -- walking right means the street comes
     // from ahead and recedes behind, i.e. the scene translates left
     // underneath a figure that never moves and never turns around.
-    [setupLoop(skylineFront, 'front'), setupLoop(skylineMid, 'mid'), setupLoop(skylineBack, 'back')]
+    const frontLoop = setupLoop(skylineFront, 'front');
+    [frontLoop, setupLoop(skylineMid, 'mid'), setupLoop(skylineBack, 'back')]
       .filter(Boolean)
       .forEach((loop) => motions.push(loop));
+
+    // Each rooftop sign pops as she draws level with it -- like pleurat's
+    // own street-view, where the callout beside the walker changes as she
+    // passes each stop. Checked against real screen position every tick
+    // rather than pre-computed from the SVG viewBox math, so it stays
+    // correct through resize and the layer's own tiled repeats without
+    // needing to re-derive the crop/scale relationship by hand.
+    if (frontLoop) {
+      const signs = Array.from(skylineFront.querySelectorAll('.bld-sign'));
+      if (signs.length) {
+        gsap.set(signs, { transformOrigin: '50% 100%', transformBox: 'fill-box' });
+        const passed = new Set();
+        frontLoop.eventCallback('onUpdate', () => {
+          const walkerRect = walker.getBoundingClientRect();
+          const walkerX = walkerRect.left + walkerRect.width / 2;
+          signs.forEach((sign) => {
+            const r = sign.getBoundingClientRect();
+            const isNear = walkerX >= r.left && walkerX <= r.right;
+            if (isNear && !passed.has(sign)) {
+              passed.add(sign);
+              gsap.timeline()
+                .to(sign, { scale: 1.28, y: -4, duration: 0.22, ease: 'back.out(2.6)' })
+                .to(sign, { scale: 1, y: 0, duration: 0.36, ease: 'power2.out' });
+              const board = sign.querySelector('.bld-sign__board');
+              if (board) {
+                gsap.fromTo(board,
+                  { filter: 'brightness(1)' },
+                  { filter: 'brightness(1.45)', duration: 0.18, yoyo: true, repeat: 1, ease: 'power1.inOut' }
+                );
+              }
+            } else if (!isNear) {
+              passed.delete(sign);
+            }
+          });
+        });
+      }
+    }
 
     // The route line is a decorative pulse, not literal progress -- there's
     // no fixed destination to arrive at once the city loops forever -- so

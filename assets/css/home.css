@@ -85,7 +85,13 @@
    continuously, so the city reads as an endless street scrolling past a
    stationary figure rather than the figure crossing a static backdrop. */
 .hero-walker {
-  bottom: 0;
+  /* The skyline's ground line sits 16% up from the strip's bottom edge
+     (a 32-of-200-unit sidewalk band in the SVG viewBox), but the Totoro
+     clip carries a ~22.7% empty margin below his own feet inside its
+     150x150 frame -- bottom:0 alone left him standing visibly below the
+     buildings' feet. Lifting the box by (16% - .227 * height) puts his
+     actual feet, not his box edge, on the same line as the buildings'. */
+  bottom: 4.21%;
   display: block;
   height: 52%;
   left: 9%;
@@ -193,7 +199,7 @@
   .spatial-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); }
   .spatial-hero__lede { font-size: var(--fs-sm); max-width: none; }
   .spatial-hero__strip { height: 96px; }
-  .hero-walker { height: 58%; left: 7%; }
+  .hero-walker { bottom: 2.85%; height: 58%; left: 7%; }
   .expertise-marquee__track { font-size: 1.1rem; }
   .home-selected-work { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
   .about-bridge { gap: 32px; padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
