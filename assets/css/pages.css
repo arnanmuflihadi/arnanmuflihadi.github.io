@@ -65,7 +65,8 @@
 .route-coda h2 { color: var(--ground-ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
 .route-coda .button-link { margin-left: auto; margin-right: auto; }
 .route-coda .closing-route { color: var(--accent); display: block; height: auto; margin: clamp(44px, 7vw, 88px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
-.route-coda .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
+.route-coda .closing-route__grid line { stroke: var(--ground-line); stroke-width: 1; }
+.route-coda .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
 .route-coda .closing-route circle { fill: var(--ground); stroke: currentColor; stroke-width: 2; }
 
 /* ---------- About ---------- */
