@@ -52,6 +52,20 @@
 .hero-strip__groundline { stroke: var(--ink); stroke-width: 2; }
 [data-theme="dark"] .hero-strip .bld-win .win { opacity: .8; fill: var(--accent-soft); }
 
+/* Rooftop signage -- each signed building along the front row names one
+   of the five analytical methods behind the case studies (same wording
+   as the expertise marquee below the hero), so the street the analyst
+   walks is literally built from her own practice. */
+.bld-sign { opacity: .92; }
+.bld-sign__pole { stroke: var(--ink); stroke-width: 1; }
+.bld-sign__board { fill: var(--accent); }
+.bld-sign__label {
+  fill: var(--on-accent);
+  font: 600 9px/1 var(--font-mono);
+  letter-spacing: .02em;
+  text-anchor: middle;
+}
+
 .hero-route {
   bottom: 0;
   height: 100%;
@@ -65,11 +79,15 @@
 .hero-route__progress { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; opacity: .8; }
 [data-hero-route-stop] { fill: var(--surface); stroke: var(--accent); stroke-width: 2; transform-box: fill-box; transform-origin: 50% 50%; }
 
+/* The walker sits at a fixed spot -- pleurat's own street-view keeps its
+   walker at a static transform too -- and the parallax layers travel
+   instead, so the city reads as scrolling past a stationary figure
+   rather than the figure crossing a static backdrop. */
 .hero-walker {
   bottom: 0;
   display: block;
   height: 94%;
-  left: 8%;
+  left: 40%;
   position: absolute;
   transform-origin: 50% 100%;
   width: auto;
@@ -171,7 +189,7 @@
   .spatial-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); }
   .spatial-hero__lede { font-size: var(--fs-sm); max-width: none; }
   .spatial-hero__strip { height: 96px; }
-  .hero-walker { height: 88%; left: 6%; }
+  .hero-walker { height: 88%; left: 34%; }
   .expertise-marquee__track { font-size: 1.1rem; }
   .home-selected-work { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
   .about-bridge { gap: 32px; padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }

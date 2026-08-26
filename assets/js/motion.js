@@ -36,6 +36,29 @@
     cleanup.push(() => target.removeEventListener(type, listener, options));
   };
 
+  // The hero skyline's buildings are hand-authored out to a fixed width;
+  // scrolling a layer past that width would run off the end of the drawn
+  // city into blank canvas. Clone the layer's own original content,
+  // shifted by its measured width, as many times as needed to comfortably
+  // outlast the travel distance that will be animated onto it -- so the
+  // street the analyst walks never visibly runs out.
+  function tileParallaxLayer(layer, travelDistance) {
+    if (!layer || !travelDistance) return;
+    const box = layer.getBBox();
+    const period = box.width;
+    if (!period) return;
+    const originals = Array.from(layer.children);
+    const needed = box.x + box.width + travelDistance;
+    let copies = 1;
+    while (box.x + copies * period < needed && copies < 8) {
+      const wrap = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      wrap.setAttribute('transform', `translate(${copies * period} 0)`);
+      originals.forEach((node) => wrap.appendChild(node.cloneNode(true)));
+      layer.appendChild(wrap);
+      copies += 1;
+    }
+  }
+
   function createWelcomeIntro() {
     const root = document.documentElement;
     const intro = document.querySelector('[data-welcome-intro]');
@@ -154,15 +177,23 @@
     const isDesktop = desktop();
     const isCompact = compact();
     const repeats = isDesktop ? -1 : 1;
-    const journeyEnd = isDesktop ? '82%' : (isCompact ? '68%' : '52%');
     const journeyDuration = isDesktop ? 15 : (isCompact ? 11 : 8);
     const frameDuration = isDesktop ? 0.1 : 0.13;
+    // The walker no longer travels -- the city does. Front (closest) moves
+    // the most, back (most distant) the least, a plain 4:2:1 depth ratio.
+    const travel = {
+      front: isDesktop ? 640 : (isCompact ? 460 : 320),
+      mid: isDesktop ? 320 : (isCompact ? 230 : 160),
+      back: isDesktop ? 160 : (isCompact ? 115 : 80)
+    };
+    tileParallaxLayer(skylineFront, travel.front);
+    tileParallaxLayer(skylineMid, travel.mid);
+    tileParallaxLayer(skylineBack, travel.back);
     let travellingRight = true;
     const motions = [];
 
-    // Travel belongs to the wrapper (positioned via CSS `left`, relative to
-    // the full strip width); the illustrated sprite keeps a stable baseline
-    // and only swaps frame / flips to face the actual yoyo direction.
+    // The illustrated sprite keeps a stable baseline and only swaps frame /
+    // flips to face the actual yoyo direction; it never itself travels.
     gsap.set(walker, { willChange: 'transform' });
     gsap.set(sprite, { scaleX: 1, transformOrigin: '50% 100%', willChange: 'transform' });
     gsap.set(stops, { scale: 1 });
@@ -188,10 +219,10 @@
     // Ping-ponging (1->6 then 6->1, via yoyo) instead of hard-restarting at
     // frame 6 removes the jump-cut every loop -- the sequence always ends
     // exactly where it began, by construction, with no art dependency.
-    // Frames swap at a fixed rate, and the walker's own travel below is
-    // linear rather than eased for the same reason: an eased "slow down,
-    // speed up" pace next to a constant leg cadence is what reads as feet
-    // sliding on the ground instead of a real stride.
+    // Frames swap at a fixed rate, and the city's travel below is linear
+    // rather than eased for the same reason: an eased "slow down, speed
+    // up" pace next to a constant leg cadence is what reads as the ground
+    // sliding under stationary feet instead of a real stride.
     const walk = gsap.timeline({ paused: true, repeat: -1, yoyo: true });
     walkFrames.forEach((frame) => {
       walk.call(() => {
@@ -219,7 +250,12 @@
         gsap.set(sprite, { scaleX: travellingRight ? 1 : -1 });
       }
     });
-    journey.to(walker, { left: journeyEnd, duration: journeyDuration, ease: 'none' }, 0);
+    // Buildings slide the opposite way from the walker's implied facing --
+    // walking right means the street comes from ahead and recedes behind,
+    // i.e. the scene translates left underneath a figure that never moves.
+    if (skylineFront) journey.to(skylineFront, { x: -travel.front, duration: journeyDuration, ease: 'none', willChange: 'transform' }, 0);
+    if (skylineMid) journey.to(skylineMid, { x: -travel.mid, duration: journeyDuration, ease: 'none', willChange: 'transform' }, 0);
+    if (skylineBack) journey.to(skylineBack, { x: -travel.back, duration: journeyDuration, ease: 'none', willChange: 'transform' }, 0);
     if (routeProgress) journey.to(routeProgress, { attr: { 'stroke-dashoffset': 0 }, duration: journeyDuration, ease: 'none' }, 0);
     if (stops.length) {
       journey.to(stops, {
@@ -232,15 +268,6 @@
       }, 0);
     }
     motions.push(journey);
-
-    if (isDesktop && skylineBack && skylineMid && skylineFront) {
-      motions.push(gsap.to(skylineBack, {
-        x: -8, duration: 12, ease: 'sine.inOut', paused: true, repeat: -1, yoyo: true, willChange: 'transform'
-      }));
-      motions.push(gsap.to(skylineMid, {
-        x: -4, duration: 9, ease: 'sine.inOut', paused: true, repeat: -1, yoyo: true, willChange: 'transform'
-      }));
-    }
     if (isDesktop) {
       if (copy) {
         gsap.to(copy, {
