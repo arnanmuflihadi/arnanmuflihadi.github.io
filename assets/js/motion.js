@@ -13,6 +13,9 @@
 
   const desktop = () => innerWidth >= 1100 && matchMedia('(hover: hover) and (pointer: fine)').matches;
   const compact = () => innerWidth >= 700 && innerWidth < 1100;
+  // Matches the .journey-rail CSS breakpoint (base.css) -- below this the
+  // rail is display:none, so there's nothing for the scroll tracker to do.
+  const journeyRailVisible = () => innerWidth >= 1440;
   const eligible = () => !reduced.matches
     && !(navigator.connection && navigator.connection.saveData)
     && Boolean(window.gsap && window.ScrollTrigger);
@@ -29,7 +32,12 @@
   // street the analyst walks never visibly runs out.
   function tileParallaxLayer(layer, travelDistance) {
     if (!layer || !travelDistance) return;
-    const box = layer.getBBox();
+    let box;
+    try {
+      box = layer.getBBox();
+    } catch {
+      return;
+    }
     const period = box.width;
     if (!period) return;
     const originals = Array.from(layer.children);
@@ -170,7 +178,12 @@
     const speed = { front: backSpeed * 4, mid: backSpeed * 2, back: backSpeed };
     const setupLoop = (layer, key) => {
       if (!layer) return null;
-      const period = layer.getBBox().width;
+      let period;
+      try {
+        period = layer.getBBox().width;
+      } catch {
+        return null;
+      }
       if (!period) return null;
       tileParallaxLayer(layer, period);
       return gsap.to(layer, {
@@ -433,7 +446,7 @@
     const rail = document.querySelector('[data-journey-rail]');
     const progress = rail?.querySelector('[data-journey-progress]');
     const stops = rail ? Array.from(rail.querySelectorAll('[data-journey-stop]')) : [];
-    if (!rail || !stops.length) return;
+    if (!rail || !stops.length || !journeyRailVisible()) return;
 
     // Each stop names its own section via data-target, so the same rail
     // markup and script work on any page -- home, Work, About -- without
@@ -550,6 +563,7 @@
       rail.classList.remove('work-rail--enhanced');
       rows.forEach((row) => row.classList.remove('is-work-active'));
       frames.replaceChildren();
+      viewChip.remove();
       if (category) category.textContent = '';
       if (title) title.textContent = '';
       if (question) question.textContent = '';

@@ -101,12 +101,12 @@
 
   function nodePositions(project) {
     var grouped = {};
-    project.nodes.forEach(function (node) {
+    (project.nodes || []).forEach(function (node) {
       if (!grouped[node.category]) grouped[node.category] = [];
       grouped[node.category].push(node);
     });
 
-    return project.nodes.map(function (node) {
+    return (project.nodes || []).map(function (node) {
       var group = grouped[node.category] || [node];
       var index = group.indexOf(node);
       var count = group.length;
@@ -197,7 +197,7 @@
       "<h4>Text summary of evidence categories</h4>",
       CATEGORY_ORDER.map(function (category) {
         var meta = categoryMeta(data, category);
-        var items = project.nodes
+        var items = (project.nodes || [])
           .filter(function (node) { return node.category === category; })
           .slice(0, 4)
           .map(function (node) { return escapeHtml(node.label); })
@@ -303,7 +303,7 @@
     byId[center.id] = { node: center, x: CENTER.x, y: CENTER.y, center: true };
     positions.forEach(function (position) { byId[position.node.id] = position; });
 
-    var edgeMarkup = project.edges.map(function (edge, index) {
+    var edgeMarkup = (project.edges || []).map(function (edge, index) {
       var source = byId[edge.source] || byId[center.id];
       var target = byId[edge.target] || byId[center.id];
       var targetNode = target.node && target.node.id !== center.id ? target.node : source.node;
