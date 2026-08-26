@@ -178,7 +178,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background: var(--paper);
   border: 1px solid var(--line);
   display: inline-flex;
-  height: 40px;
+  min-height: 44px;
   padding: 0 14px;
 }
 .ambient-toggle span { color: var(--accent); margin-left: 8px; }
@@ -350,7 +350,7 @@ html.welcome-intro-pending .site-header { z-index: 1150; }
   }
   .js .site-header[data-menu-open="true"] .site-nav { opacity: 1; pointer-events: auto; transform: none; }
   .js .site-nav a { color: var(--ink); font-size: clamp(2.1rem, 9vw, 3.2rem); letter-spacing: -.03em; }
-  .js .nav-close { bottom: 24px; display: block; left: 20px; position: absolute; }
+  .js .nav-close { align-items: center; bottom: 24px; display: flex; left: 20px; min-height: 44px; padding: 4px 8px; margin: 0 0 -4px -8px; position: absolute; }
   .js .nav__burger { display: grid; height: 44px; place-content: center; position: relative; width: 44px; }
   .nav__burger span { background: currentColor; display: block; height: 1px; margin: 3px; width: 19px; }
   .theme-toggle { border: 0; margin: 18px 0 0; padding: 0; }
