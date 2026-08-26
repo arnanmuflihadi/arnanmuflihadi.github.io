@@ -75,8 +75,11 @@
   width: 100%;
   z-index: 2;
 }
-.hero-route__line { fill: none; stroke: var(--accent); stroke-width: 2; opacity: .3; }
-.hero-route__progress { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; opacity: .8; }
+/* A street grid underneath the highlighted route -- reads as an actual
+   map she's navigating rather than an abstract decorative line. */
+.hero-route__grid line { stroke: var(--line); stroke-width: 1; }
+.hero-route__line { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; opacity: .3; }
+.hero-route__progress { fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; opacity: .85; }
 [data-hero-route-stop] { fill: var(--surface); stroke: var(--accent); stroke-width: 2; transform-box: fill-box; transform-origin: 50% 50%; }
 
 /* The walker sits at a fixed spot near the left edge, always facing

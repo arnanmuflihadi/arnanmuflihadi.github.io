@@ -6,7 +6,7 @@
 <meta name="description" content="Geospatial analysis for urban systems: transit access, food networks, earth observation, and spatial clustering.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<script>!function(){"use strict";try{var e=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",e==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}}();</script><script>!function(){"use strict";try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&!sessionStorage.getItem("portfolio:welcome-seen")){document.documentElement.classList.add("welcome-intro-pending");window.__welcomeFailSafe=setTimeout(function(){document.documentElement.classList.remove("welcome-intro-pending")},2400)}}catch(e){}}();</script><link rel="stylesheet" href="assets/css/tokens.css?v=1"><link rel="stylesheet" href="assets/css/base.css?v=7"><link rel="stylesheet" href="assets/css/home.css?v=7"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<script>!function(){"use strict";try{var e=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",e==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}}();</script><script>!function(){"use strict";try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&!sessionStorage.getItem("portfolio:welcome-seen")){document.documentElement.classList.add("welcome-intro-pending");window.__welcomeFailSafe=setTimeout(function(){document.documentElement.classList.remove("welcome-intro-pending")},2400)}}catch(e){}}();</script><link rel="stylesheet" href="assets/css/tokens.css?v=1"><link rel="stylesheet" href="assets/css/base.css?v=7"><link rel="stylesheet" href="assets/css/home.css?v=8"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 </head>
 <body id="top" class="redesign home-page">
 <div class="welcome-intro" data-welcome-intro aria-hidden="true"><div class="welcome-intro__panels"><span></span><span></span></div><div class="welcome-intro__content"><p class="eyebrow">ARNAN MUFLIHADI / SPATIAL PRACTICE</p><p class="welcome-intro__word" data-welcome-word>Arriving.</p><p class="welcome-intro__note" data-welcome-note>Plotting a route through the work</p><span class="welcome-intro__track" data-welcome-track><span class="welcome-intro__track-fill" data-welcome-track-fill></span></span></div></div>
@@ -177,15 +177,26 @@
   <line class="hero-strip__groundline" x1="0" y1="168" x2="2600" y2="168"/>
 </svg>
     <svg class="hero-route" aria-hidden="true" viewBox="0 0 1400 200" preserveAspectRatio="none">
-      <path class="hero-route__line" d="M0 132C120 132 150 96 280 96S420 150 560 150 700 84 840 84 980 138 1120 138 1260 100 1400 100" pathLength="1"></path>
-      <path class="hero-route__progress" data-hero-route-progress pathLength="1" d="M0 132C120 132 150 96 280 96S420 150 560 150 700 84 840 84 980 138 1120 138 1260 100 1400 100"></path>
+      <g class="hero-route__grid">
+        <line x1="0" y1="50" x2="1400" y2="50"></line>
+        <line x1="0" y1="100" x2="1400" y2="100"></line>
+        <line x1="0" y1="150" x2="1400" y2="150"></line>
+        <line x1="150" y1="0" x2="150" y2="200"></line>
+        <line x1="380" y1="0" x2="380" y2="200"></line>
+        <line x1="610" y1="0" x2="610" y2="200"></line>
+        <line x1="840" y1="0" x2="840" y2="200"></line>
+        <line x1="1070" y1="0" x2="1070" y2="200"></line>
+        <line x1="1300" y1="0" x2="1300" y2="200"></line>
+      </g>
+      <path class="hero-route__line" d="M0 100 L150 100 L150 50 L380 50 L380 150 L610 150 L610 100 L840 100 L840 50 L1070 50 L1070 150 L1300 150 L1300 100 L1400 100" pathLength="1"></path>
+      <path class="hero-route__progress" data-hero-route-progress pathLength="1" d="M0 100 L150 100 L150 50 L380 50 L380 150 L610 150 L610 100 L840 100 L840 50 L1070 50 L1070 150 L1300 150 L1300 100 L1400 100"></path>
       <g class="hero-route__stops">
-        <circle data-hero-route-stop cx="0" cy="132" r="4"></circle>
-        <circle data-hero-route-stop cx="280" cy="96" r="4"></circle>
-        <circle data-hero-route-stop cx="560" cy="150" r="4"></circle>
-        <circle data-hero-route-stop cx="840" cy="84" r="4"></circle>
-        <circle data-hero-route-stop cx="1120" cy="138" r="4"></circle>
-        <circle data-hero-route-stop cx="1400" cy="100" r="4"></circle>
+        <circle data-hero-route-stop cx="150" cy="50" r="4"></circle>
+        <circle data-hero-route-stop cx="380" cy="150" r="4"></circle>
+        <circle data-hero-route-stop cx="610" cy="100" r="4"></circle>
+        <circle data-hero-route-stop cx="840" cy="50" r="4"></circle>
+        <circle data-hero-route-stop cx="1070" cy="150" r="4"></circle>
+        <circle data-hero-route-stop cx="1300" cy="100" r="4"></circle>
       </g>
     </svg>
     <span class="hero-walker" data-hero-walker aria-hidden="true">
