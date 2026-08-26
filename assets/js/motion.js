@@ -1,21 +1,6 @@
 /* Shared motion lifecycle: GSAP/ScrollTrigger own presentational scroll state. */
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  // Order is NOT the source filenames' numbering: these six frames are
-  // independent illustration variants, not a rotoscoped cycle, so playing
-  // them 01->06 jumps the stride width around non-monotonically (measured
-  // silhouette widths: 390,340,197,314,413,213px) and reads as a leg twitch.
-  // Sorted by measured stride width (narrowest/legs-crossed to widest/full
-  // stride), the ping-pong below opens and closes the stride smoothly.
-  const walkFrames = ['03', '06', '04', '02', '01', '05'];
-  // Real strides pause briefly at full contact (weight transfer) and snap
-  // quickly through the crossed-leg passing position -- holding every
-  // frame for an equal beat is what makes a walk cycle read as mechanical.
-  // 03 is the narrowest/passing pose, 05 the widest/contact pose (see
-  // widths above), so the sequence's two ends get the beat weighted.
-  const walkFrameBeats = { '03': 0.7, '06': 1, '04': 1, '02': 1, '01': 1, '05': 1.5 };
-  const walkFrameSource = (frame) => `assets/img/redesign/analyst-walk-${frame}.webp`;
-  const walkIdleSource = 'assets/img/redesign/analyst-walk-01-idle.webp';
   let ctx = null;
   let lenis = null;
   let ticker = null;
@@ -113,8 +98,6 @@
     walker.style.removeProperty('will-change');
     walker.style.removeProperty('left');
     if (sprite) {
-      sprite.src = walkIdleSource;
-      sprite.dataset.frame = walkFrames[0];
       sprite.style.removeProperty('transform');
       sprite.style.removeProperty('will-change');
     }
@@ -177,7 +160,6 @@
     const isDesktop = desktop();
     const isCompact = compact();
     const routeDuration = isDesktop ? 15 : (isCompact ? 11 : 8);
-    const frameDuration = isDesktop ? 0.1 : 0.13;
     // She always faces right and never turns around, so the city can only
     // ever scroll one way -- a true loop, not a there-and-back yoyo. Each
     // layer travels exactly its own measured tiling period per cycle, so
@@ -202,10 +184,10 @@
     };
     const motions = [];
 
-    // The illustrated sprite keeps a stable baseline, always facing right,
-    // and only swaps frame for the leg cycle; it never itself travels.
+    // The sprite is a looping video with its own baked-in walk cycle now
+    // (CSS mirrors it to face right); it keeps a stable baseline and never
+    // itself travels.
     gsap.set(walker, { willChange: 'transform' });
-    gsap.set(sprite, { scaleX: 1, transformOrigin: '50% 100%', willChange: 'transform' });
     gsap.set(stops, { scale: 1 });
     if (route) gsap.set(route, { autoAlpha: 0.3 });
     // SVG pathLength is unitless; use attributes instead of CSS pixel values
@@ -223,33 +205,6 @@
         .to(skylineLayers, { autoAlpha: 1, y: 0, duration: 1.0, stagger: 0.1 }, 0)
         .to(walker, { autoAlpha: 1, duration: 0.55 }, 0.45);
     }
-
-    // Walk cycle: the illustrated frame sequence, preloaded before it is
-    // ever added to the ambient rotation so the first swap never pops in.
-    // Ping-ponging (1->6 then 6->1, via yoyo) instead of hard-restarting at
-    // frame 6 removes the jump-cut every loop -- the sequence always ends
-    // exactly where it began, by construction, with no art dependency.
-    // Frames swap at a fixed rate, and the city's travel below is linear
-    // rather than eased for the same reason: an eased "slow down, speed
-    // up" pace next to a constant leg cadence is what reads as the ground
-    // sliding under stationary feet instead of a real stride.
-    const walk = gsap.timeline({ paused: true, repeat: -1, yoyo: true });
-    walkFrames.forEach((frame) => {
-      walk.call(() => {
-        sprite.src = walkFrameSource(frame);
-        sprite.dataset.frame = frame;
-      }).to({}, { duration: frameDuration * (walkFrameBeats[frame] || 1) });
-    });
-    // A small per-step bob sells the weight of each stride without needing
-    // more art frames -- two bounces per ping-pong lap, roughly one per foot.
-    const bob = gsap.to(sprite, {
-      y: -3,
-      duration: frameDuration * 3,
-      ease: 'sine.inOut',
-      paused: true,
-      repeat: -1,
-      yoyo: true
-    });
 
     // Buildings slide leftward -- walking right means the street comes
     // from ahead and recedes behind, i.e. the scene translates left
@@ -303,25 +258,12 @@
       if (skylineMid) gsap.to(skylineMid, { y: -34, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
       if (skylineFront) gsap.to(skylineFront, { y: -54, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
     }
-    const heroEntry = registerAmbient(motions, hero, ScrollTrigger);
-    let walkCancelled = false;
-    const walkTimer = window.setTimeout(() => {
-      const preload = walkFrames.map((frame) => new Promise((resolve) => {
-        const image = new Image();
-        image.onload = resolve;
-        image.onerror = resolve;
-        image.src = walkFrameSource(frame);
-      }));
-      Promise.all(preload).then(() => {
-        if (walkCancelled) return;
-        heroEntry.items.push(walk, bob);
-        updateAmbientPlayback();
-      });
-    }, 200);
-    cleanup.push(() => {
-      walkCancelled = true;
-      clearTimeout(walkTimer);
-    });
+    // The video exposes the same play()/pause() interface registerAmbient
+    // already calls on GSAP tweens, so it rides the identical ambient
+    // lifecycle (paused out of view, on reduced-motion, or via the toggle)
+    // with no separate wiring.
+    motions.push(sprite);
+    registerAmbient(motions, hero, ScrollTrigger);
   }
 
   function createMarqueeMotion(gsap, ScrollTrigger) {
