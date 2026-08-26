@@ -3425,7 +3425,7 @@ body[data-project="alphaearth"] .cs-hero .lede { max-width: 53ch; }
   grid-area: actions; display: flex; flex-wrap: wrap; gap: 22px; align-items: center;
   padding-top: 4px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
 }
-.alphaearth-hero-actions a { color: rgba(243,239,230,.78); border-bottom: 1px solid rgba(243,239,230,.28); padding-bottom: 7px; }
+.alphaearth-hero-actions a { color: var(--ink-soft); border-bottom: 1px solid var(--line); padding-bottom: 7px; }
 .alphaearth-hero-actions a:hover, .alphaearth-hero-actions a:focus-visible { color: var(--accent); border-color: var(--accent); }
 
 .alphaearth-brief { padding: clamp(40px, 6vw, 80px) 0 clamp(28px, 4vw, 52px); border-bottom: 1px solid var(--line); }

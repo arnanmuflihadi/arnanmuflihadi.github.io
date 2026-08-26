@@ -3,11 +3,11 @@
    Editorial, source-labelled and fully readable without motion.
    ============================================================ */
 body.case-study-page {
-  --case-evidence-ink: #171817;
-  --case-evidence-muted: #5b584f;
-  --case-evidence-paper: #eee8da;
-  --case-evidence-line: rgba(23, 24, 23, .2);
-  --case-evidence-soft: rgba(23, 24, 23, .08);
+  --case-evidence-ink: var(--ink);
+  --case-evidence-muted: var(--muted);
+  --case-evidence-paper: var(--surface);
+  --case-evidence-line: var(--line);
+  --case-evidence-soft: var(--line-soft);
   --case-evidence-accent: #b76b3f;
 }
 body[data-project="transit"] { --case-evidence-accent: #b36d36; }
@@ -15,6 +15,13 @@ body[data-project="pangan"] { --case-evidence-accent: #667845; }
 body[data-project="alphaearth"] { --case-evidence-accent: #617945; }
 body[data-project="mbr"] { --case-evidence-accent: #76596f; }
 body[data-project="cbd"] { --case-evidence-accent: #a74e38; }
+
+[data-theme="dark"] body.case-study-page { --case-evidence-accent: #d98f5f; }
+[data-theme="dark"] body[data-project="transit"] { --case-evidence-accent: #e0975a; }
+[data-theme="dark"] body[data-project="pangan"] { --case-evidence-accent: #9dbb6e; }
+[data-theme="dark"] body[data-project="alphaearth"] { --case-evidence-accent: #93c06e; }
+[data-theme="dark"] body[data-project="mbr"] { --case-evidence-accent: #c48fb8; }
+[data-theme="dark"] body[data-project="cbd"] { --case-evidence-accent: #e08064; }
 
 .case-evidence {
   width: 100vw;
