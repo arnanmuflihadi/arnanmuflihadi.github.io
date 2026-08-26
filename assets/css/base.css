@@ -275,8 +275,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* ---------- welcome intro (first-visit only) ---------- */
 .welcome-intro {
   align-items: stretch;
-  background: var(--ground);
-  color: var(--ground-ink);
+  background: var(--paper);
+  color: var(--ink);
   display: grid;
   inset: 0;
   isolation: isolate;
@@ -293,8 +293,8 @@ html.welcome-intro-pending .welcome-intro { opacity: 1; pointer-events: auto; vi
    never affects stacking against the lightbox or other overlays later. */
 html.welcome-intro-pending .site-header { z-index: 1150; }
 .welcome-intro__panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); inset: 0; pointer-events: none; position: absolute; z-index: -1; }
-.welcome-intro__panels span { background: var(--ground); transform: translateY(0); }
-.welcome-intro__panels span:last-child { background: color-mix(in srgb, var(--ground) 94%, var(--accent) 6%); border-left: 1px solid var(--ground-line); }
+.welcome-intro__panels span { background: var(--paper); transform: translateY(0); }
+.welcome-intro__panels span:last-child { background: color-mix(in srgb, var(--paper) 94%, var(--accent) 6%); border-left: 1px solid var(--line); }
 .welcome-intro__content {
   align-items: flex-start;
   display: flex;
@@ -306,9 +306,9 @@ html.welcome-intro-pending .site-header { z-index: 1150; }
   position: relative;
   width: 100%;
 }
-.welcome-intro .eyebrow { color: var(--ground-ink); opacity: .72; }
+.welcome-intro .eyebrow { color: var(--ink); opacity: .72; }
 .welcome-intro__word {
-  color: var(--ground-ink);
+  color: var(--ink);
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(3.4rem, 11vw, 10.5rem);
@@ -319,7 +319,7 @@ html.welcome-intro-pending .site-header { z-index: 1150; }
 }
 .welcome-intro__note {
   align-items: center;
-  color: var(--ground-ink);
+  color: var(--ink);
   display: flex;
   font: 500 var(--fs-2xs)/1.35 var(--font-mono);
   gap: 10px;
@@ -480,7 +480,7 @@ html.welcome-intro-pending .site-header { z-index: 1150; }
 
 /* ---------- welcome intro: route-loading track ---------- */
 .welcome-intro__track {
-  background: var(--ground-line);
+  background: var(--line);
   display: block;
   height: 2px;
   margin-top: clamp(28px, 4vw, 44px);

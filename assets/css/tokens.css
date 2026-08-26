@@ -22,12 +22,6 @@
   --line-soft:  rgba(27, 26, 22, .08);
   --outline:    rgba(27, 26, 22, .34);
 
-  /* ---- ground band (deliberately dark; hero close, contact, coda) ---- */
-  --ground:      #15130f;
-  --ground-ink:  #f3ede0;
-  --ground-line: rgba(243, 237, 224, .16);
-  --ground-muted:#a89d8a;
-
   /* ---- accent: one signal color, everywhere ---- */
   --accent:      #c2295b;
   --accent-ink:  #9e1c48;
@@ -133,11 +127,6 @@
   --line:       rgba(243, 237, 224, .16);
   --line-soft:  rgba(243, 237, 224, .08);
   --outline:    rgba(243, 237, 224, .32);
-
-  --ground:      #0c0b08;
-  --ground-ink:  #f3ede0;
-  --ground-line: rgba(243, 237, 224, .14);
-  --ground-muted:#8f8471;
 
   --accent:      #ff6fa0;
   --accent-ink:  #ff8fb4;

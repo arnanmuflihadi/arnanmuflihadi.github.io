@@ -54,21 +54,21 @@
 }
 .other-practice a span { color: var(--accent); }
 
-/* ---------- ground-band CTA (Work / About close, and Home's own) ---------- */
+/* ---------- closing CTA (Work / About close, and Home's own) ---------- */
 .route-coda {
-  background: var(--ground);
-  color: var(--ground-ink);
+  background: var(--paper);
+  color: var(--ink);
   max-width: none;
   padding: var(--sec-pad) var(--gutter);
 }
 .route-coda > * { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
-.route-coda .eyebrow { color: var(--ground-muted); }
-.route-coda h2 { color: var(--ground-ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
+.route-coda .eyebrow { color: var(--muted); }
+.route-coda h2 { color: var(--ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
 .route-coda .button-link { margin-left: auto; margin-right: auto; }
 .route-coda .closing-route { color: var(--accent); display: block; height: auto; margin: clamp(44px, 7vw, 88px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
-.route-coda .closing-route__grid line { stroke: var(--ground-line); stroke-width: 1; }
+.route-coda .closing-route__grid line { stroke: var(--line); stroke-width: 1; }
 .route-coda .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
-.route-coda .closing-route circle { fill: var(--ground); stroke: currentColor; stroke-width: 2; }
+.route-coda .closing-route circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }
 
 /* ---------- About ---------- */
 .about-page .about { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
@@ -84,8 +84,8 @@
 
 /* ---------- Contact ---------- */
 .contact-hero {
-  background: var(--ground);
-  color: var(--ground-ink);
+  background: var(--paper);
+  color: var(--ink);
   min-height: calc(100svh - 72px);
   display: flex;
   flex-direction: column;
@@ -93,12 +93,12 @@
   padding-bottom: var(--sec-pad);
   padding-top: var(--sec-pad-sm);
 }
-.contact-hero .eyebrow { color: var(--ground-muted); }
-.contact-hero h1 { color: var(--ground-ink); font-size: var(--fs-display); letter-spacing: -.026em; line-height: .96; margin: 22px 0 24px; max-width: 14ch; }
-.contact-hero__lede { color: var(--ground-muted); font-size: var(--fs-lg); line-height: 1.5; max-width: 34rem; }
+.contact-hero .eyebrow { color: var(--muted); }
+.contact-hero h1 { color: var(--ink); font-size: var(--fs-display); letter-spacing: -.026em; line-height: .96; margin: 22px 0 24px; max-width: 14ch; }
+.contact-hero__lede { color: var(--muted); font-size: var(--fs-lg); line-height: 1.5; max-width: 34rem; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 44px; }
 .contact-links__item {
-  align-items: center; border: 1px solid var(--ground-line); color: var(--ground-ink);
+  align-items: center; border: 1px solid var(--line); color: var(--ink);
   display: inline-flex; font: 500 var(--fs-sm)/1 var(--font-sans); gap: 10px;
   min-height: 48px; padding: 0 20px; text-decoration: none;
   transition: background var(--dur-1) var(--ease), color var(--dur-1) var(--ease), border-color var(--dur-1) var(--ease);

@@ -171,24 +171,24 @@
 .about-bridge__method-step h3 { font-size: var(--fs-lg); margin: 8px 0 4px; }
 .about-bridge__method-step p { color: var(--ink-soft); font-size: var(--fs-sm); line-height: 1.45; max-width: 46ch; }
 
-/* ---------- contact close (ground band) ---------- */
+/* ---------- contact close ---------- */
 .contact-cta {
-  background: var(--ground);
-  color: var(--ground-ink);
+  background: var(--paper);
+  color: var(--ink);
   max-width: none;
   padding: var(--sec-pad) var(--gutter);
 }
 .contact-cta > * { margin-left: auto; margin-right: auto; max-width: var(--maxw); }
-.contact-cta .eyebrow { color: var(--ground-muted); }
-.contact-cta h2 { color: var(--ground-ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
+.contact-cta .eyebrow { color: var(--muted); }
+.contact-cta h2 { color: var(--ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
 .contact-cta .button-link { margin-left: auto; margin-right: auto; }
 .closing-route { color: var(--accent); display: block; height: auto; margin: clamp(36px, 5.5vw, 68px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
 /* A faint street grid under the route, same treatment as the hero strip's
-   map -- this sits on the dark ground band, so the grid uses the ground
-   token pair rather than the light-surface --line. */
-.closing-route__grid line { stroke: var(--ground-line); stroke-width: 1; }
+   map -- this section now follows the page theme like everything else, so
+   the grid uses the same --line token as the light-surface contexts. */
+.closing-route__grid line { stroke: var(--line); stroke-width: 1; }
 .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
-.closing-route circle { fill: var(--ground); stroke: currentColor; stroke-width: 2; }
+.closing-route circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }
 
 @media (max-width: 1099px) {
   .home-selected-work__heading { display: block; }
