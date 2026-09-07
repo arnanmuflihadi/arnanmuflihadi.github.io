@@ -19,7 +19,9 @@
       curtain.style.removeProperty('transform');
       curtain.style.removeProperty('pointer-events');
     }
-    try { sessionStorage.removeItem(key); } catch (_) {}
+    try { sessionStorage.removeItem(key); } catch (_) {
+      // Storage is optional; the transition has an in-memory fallback.
+    }
   }
 
   window.PortfolioRouteTransition = { clear: clear };
@@ -28,8 +30,12 @@
     clear();
   } else {
     var candidate = null;
-    try { candidate = JSON.parse(sessionStorage.getItem(key) || 'null'); } catch (_) {}
-    try { sessionStorage.removeItem(key); } catch (_) {}
+    try { candidate = JSON.parse(sessionStorage.getItem(key) || 'null'); } catch (_) {
+      // A blocked or malformed stored value simply disables the handoff.
+    }
+    try { sessionStorage.removeItem(key); } catch (_) {
+      // Storage is optional; stale state is harmless without it.
+    }
     var age = candidate && Number(candidate.createdAt);
     var labelText = candidate && typeof candidate.destinationLabel === 'string'
       ? Array.from(candidate.destinationLabel.replace(/\s+/g, ' ').trim()).slice(0, 80).join('')

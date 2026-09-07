@@ -10,6 +10,9 @@
   let cleanup = [];
   let userAmbientEnabled = true;
   let welcomeTimeline = null;
+  let analyst3D = null;
+  let closingMap3D = null;
+  let heroArrived = false;
 
   const desktop = () => innerWidth >= 1100 && matchMedia('(hover: hover) and (pointer: fine)').matches;
   const compact = () => innerWidth >= 700 && innerWidth < 1100;
@@ -45,9 +48,11 @@
     let copies = 1;
     while (box.x + copies * period < needed && copies < 8) {
       const wrap = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      wrap.dataset.parallaxClone = 'true';
       wrap.setAttribute('transform', `translate(${copies * period} 0)`);
       originals.forEach((node) => wrap.appendChild(node.cloneNode(true)));
       layer.appendChild(wrap);
+      cleanup.push(() => wrap.remove());
       copies += 1;
     }
   }
@@ -69,7 +74,9 @@
       finish();
     };
 
-    try { sessionStorage.setItem('portfolio:welcome-seen', 'true'); } catch (_) {}
+    try { sessionStorage.setItem('portfolio:welcome-seen', 'true'); } catch (_) {
+      // Storage is optional; visitors can still use the intro normally.
+    }
     if (reduced.matches || !window.gsap) {
       finish();
       return;
@@ -100,15 +107,10 @@
 
   function resetHeroStatic() {
     const walker = document.querySelector('[data-hero-walker]');
-    const sprite = document.querySelector('.analyst-sprite');
     if (!walker) return;
     walker.style.removeProperty('transform');
     walker.style.removeProperty('will-change');
     walker.style.removeProperty('left');
-    if (sprite) {
-      sprite.style.removeProperty('transform');
-      sprite.style.removeProperty('will-change');
-    }
   }
 
   function resetAmbientToggle() {
@@ -155,7 +157,6 @@
 
   function createHeroMotion(gsap, ScrollTrigger, hero, media) {
     const walker = media.querySelector('[data-hero-walker]');
-    const sprite = media.querySelector('.analyst-sprite');
     const route = media.querySelector('.hero-route__line');
     const routeProgress = media.querySelector('[data-hero-route-progress]');
     const stops = gsap.utils.toArray('[data-hero-route-stop]');
@@ -163,7 +164,7 @@
     const skylineBack = media.querySelector('[data-parallax="back"]');
     const skylineMid = media.querySelector('[data-parallax="mid"]');
     const skylineFront = media.querySelector('[data-parallax="front"]');
-    if (!walker || !sprite) return;
+    if (!walker) return;
 
     const isDesktop = desktop();
     const isCompact = compact();
@@ -174,7 +175,7 @@
     // the moment it resets it's already showing the identical next tile
     // and the wrap is invisible. Front (closest) moves fastest, back
     // (most distant) slowest, a plain 4:2:1 depth ratio.
-    const backSpeed = isDesktop ? 40 : (isCompact ? 29 : 20);
+    const backSpeed = isDesktop ? 14 : (isCompact ? 12 : 10);
     const speed = { front: backSpeed * 4, mid: backSpeed * 2, back: backSpeed };
     const setupLoop = (layer, key) => {
       if (!layer) return null;
@@ -197,9 +198,8 @@
     };
     const motions = [];
 
-    // The sprite is a looping video with its own baked-in walk cycle now
-    // (CSS mirrors it to face right); it keeps a stable baseline and never
-    // itself travels.
+    // The original 3D analyst faces +X. The street moves beneath the
+    // grounded walk cycle; never mirror the model or the surrounding scene.
     gsap.set(walker, { willChange: 'transform' });
     gsap.set(stops, { scale: 1 });
     if (route) gsap.set(route, { autoAlpha: 0.3 });
@@ -211,7 +211,8 @@
     // appearing fully formed, so the welcome curtain lifts on something
     // already coming to life rather than a static hero frame.
     const skylineLayers = [skylineBack, skylineMid, skylineFront].filter(Boolean);
-    if (skylineLayers.length) {
+    if (skylineLayers.length && !heroArrived) {
+      heroArrived = true;
       gsap.set(skylineLayers, { autoAlpha: 0, y: 14 });
       gsap.set(walker, { autoAlpha: 0 });
       gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.15 })
@@ -238,7 +239,21 @@
       if (signs.length) {
         gsap.set(signs, { transformOrigin: '50% 100%', transformBox: 'fill-box' });
         const passed = new Set();
+        const responses = new Set();
+        motions.push({
+          play: () => responses.forEach((response) => response.play()),
+          pause: () => responses.forEach((response) => response.pause())
+        });
+        cleanup.push(() => {
+          responses.forEach((response) => response.kill());
+          gsap.set(signs, { clearProps: 'transform' });
+          gsap.set(signs.flatMap((sign) => Array.from(sign.querySelectorAll('.bld-sign__board'))), { clearProps: 'filter' });
+        });
+        let lastSignCheck = 0;
         frontLoop.eventCallback('onUpdate', () => {
+          const now = performance.now();
+          if (now - lastSignCheck < 100) return;
+          lastSignCheck = now;
           const walkerRect = walker.getBoundingClientRect();
           const walkerX = walkerRect.left + walkerRect.width / 2;
           signs.forEach((sign) => {
@@ -246,14 +261,16 @@
             const isNear = walkerX >= r.left && walkerX <= r.right;
             if (isNear && !passed.has(sign)) {
               passed.add(sign);
-              gsap.timeline()
+              const response = gsap.timeline({ onComplete: () => responses.delete(response) });
+              responses.add(response);
+              response
                 .to(sign, { scale: 1.28, y: -4, duration: 0.22, ease: 'back.out(2.6)' })
                 .to(sign, { scale: 1, y: 0, duration: 0.36, ease: 'power2.out' });
               const board = sign.querySelector('.bld-sign__board');
               if (board) {
-                gsap.fromTo(board,
+                response.fromTo(board,
                   { filter: 'brightness(1)' },
-                  { filter: 'brightness(1.45)', duration: 0.18, yoyo: true, repeat: 1, ease: 'power1.inOut' }
+                  { filter: 'brightness(1.45)', duration: 0.18, yoyo: true, repeat: 1, ease: 'power1.inOut' }, 0
                 );
               }
             } else if (!isNear) {
@@ -309,12 +326,10 @@
       if (skylineMid) gsap.to(skylineMid, { y: -34, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
       if (skylineFront) gsap.to(skylineFront, { y: -54, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: '35% top', scrub: true } });
     }
-    // The video exposes the same play()/pause() interface registerAmbient
-    // already calls on GSAP tweens, so it rides the identical ambient
-    // lifecycle (paused out of view, on reduced-motion, or via the toggle)
-    // with no separate wiring.
-    motions.push(sprite);
-    registerAmbient(motions, hero, ScrollTrigger);
+    // Renderer and city share offscreen, tab-visibility, and user-pause
+    // ownership. The renderer uses the GSAP clock, not another RAF loop.
+    if (analyst3D) motions.push(analyst3D);
+    registerAmbient(motions, media, ScrollTrigger);
   }
 
   function createMarqueeMotion(gsap, ScrollTrigger) {
@@ -333,6 +348,34 @@
   }
 
   function createClosingRouteMotion(gsap, ScrollTrigger) {
+    const mapHost = document.querySelector('[data-closing-map]');
+    if (mapHost && window.createClosingMap3D) {
+      // Allocate the below-fold renderer only on first visibility. One shared
+      // ambient gate owns pause, tab visibility, user preference, and teardown.
+      const mapPlayback = {
+        play() {
+          closingMap3D ||= window.createClosingMap3D(mapHost, { gsap });
+          closingMap3D?.play();
+        },
+        pause() { closingMap3D?.pause(); }
+      };
+      if ('IntersectionObserver' in window) {
+        // Visibility, not scroll progress, controls this canvas. Observe the
+        // live box so breakpoint reflow cannot leave a stale scroll boundary
+        // and incorrectly freeze a visible map after rotating/resizing.
+        const bounds = mapHost.getBoundingClientRect();
+        const entry = { items: [mapPlayback], inView: bounds.bottom > 0 && bounds.top < innerHeight };
+        ambientEntries.push(entry);
+        const observer = new IntersectionObserver(([observed]) => {
+          entry.inView = observed.isIntersecting;
+          updateAmbientPlayback();
+        });
+        observer.observe(mapHost);
+        cleanup.push(() => observer.disconnect());
+      } else {
+        registerAmbient([mapPlayback], mapHost, ScrollTrigger);
+      }
+    }
     const motif = document.querySelector('[data-closing-route]');
     const path = motif?.querySelector('[data-closing-route-line]');
     if (!motif || !path || (!desktop() && !compact())) return;
@@ -518,6 +561,19 @@
     stage.appendChild(viewChip);
     on(stage, 'click', () => { if (rows[active]) rows[active].click(); });
     rail.classList.add('work-rail--enhanced');
+
+    // Depth belongs to the preview wrapper, never to chart axes or data.
+    // The child image retains its existing reveal/scale ownership.
+    const tiltX = gsap.quickTo(frames, 'rotationX', { duration: 0.55, ease: 'power2.out' });
+    const tiltY = gsap.quickTo(frames, 'rotationY', { duration: 0.55, ease: 'power2.out' });
+    on(stage, 'pointermove', (event) => {
+      if (event.pointerType === 'touch') return;
+      const box = stage.getBoundingClientRect();
+      tiltX((0.5 - (event.clientY - box.top) / box.height) * 5);
+      tiltY(((event.clientX - box.left) / box.width - 0.5) * 6);
+    });
+    on(stage, 'pointerleave', () => { tiltX(0); tiltY(0); });
+    cleanup.push(() => { tiltX.tween.kill(); tiltY.tween.kill(); });
 
     let active = -1;
     const activate = (index, instant = false) => {
@@ -811,6 +867,9 @@
   }
 
   function destroy() {
+    ambientEntries.forEach((entry) => entry.items.forEach((item) => item.pause()));
+    analyst3D?.pause();
+    closingMap3D?.pause();
     cleanup.forEach((off) => off());
     cleanup = [];
     clearTimeout(refreshTimer);
@@ -829,10 +888,26 @@
     destroy();
     resetHeroStatic();
     const button = document.querySelector('[data-ambient-toggle]');
-    userAmbientEnabled = !button || button.getAttribute('aria-pressed') !== 'false';
+    if (!button?.disabled) userAmbientEnabled = !button || button.getAttribute('aria-pressed') !== 'false';
     resetAmbientToggle();
 
-    if (!eligible()) return;
+    // Static 3D is initialized before the reduced-motion/Save-Data gate.
+    // Keep a single context across resize; never allocate a new GPU context
+    // for every ScrollTrigger refresh. The matching poster remains without WebGL.
+    const walker = document.querySelector('[data-hero-walker]');
+    if (walker && window.createAnalyst3D) {
+      analyst3D ||= window.createAnalyst3D(walker, { gsap: window.gsap });
+      analyst3D?.resize();
+      if (!eligible()) analyst3D?.static();
+    }
+
+    closingMap3D?.resize();
+    if (!eligible()) {
+      // On first reduced-motion visit the source-matched poster needs no GPU;
+      // if the preference changes live, keep one still render of the same map.
+      closingMap3D?.static();
+      return;
+    }
     const { gsap, ScrollTrigger } = window;
     gsap.registerPlugin(ScrollTrigger);
     const hero = document.querySelector('[data-hero-stage]');
@@ -888,6 +963,12 @@
   if (reduced.addEventListener) reduced.addEventListener('change', init);
   else reduced.addListener(init);
   addEventListener('resize', scheduleInit);
-  addEventListener('pagehide', destroy);
+  addEventListener('pagehide', () => {
+    destroy();
+    analyst3D?.destroy();
+    analyst3D = null;
+    closingMap3D?.destroy();
+    closingMap3D = null;
+  });
   addEventListener('pageshow', (event) => { if (event.persisted) scheduleInit(); });
 })();

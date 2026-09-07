@@ -88,32 +88,30 @@
    continuously, so the city reads as an endless street scrolling past a
    stationary figure rather than the figure crossing a static backdrop. */
 .hero-walker {
-  /* The skyline's ground line sits 16% up from the strip's bottom edge
-     (a 32-of-200-unit sidewalk band in the SVG viewBox), but the Totoro
-     clip carries a ~22.7% empty margin below his own feet inside its
-     150x150 frame -- bottom:0 alone left him standing visibly below the
-     buildings' feet. Lifting the box by (16% - .227 * height) puts his
-     actual feet, not his box edge, on the same line as the buildings'. */
-  bottom: 4.21%;
+  /* Model feet and contact shadow occupy the canvas bottom edge. */
+  bottom: 14%;
   display: block;
-  height: 52%;
+  height: 76%;
   left: 9%;
   position: absolute;
   transform-origin: 50% 100%;
+  aspect-ratio: 4 / 5;
   width: auto;
+  pointer-events: none;
   z-index: 3;
 }
-/* Source clip faces left; mirrored to match the walker's fixed
-   always-faces-right convention. */
-.analyst-sprite {
+.analyst-canvas,
+.analyst-fallback {
   display: block;
   height: 100%;
   max-width: none;
   object-fit: contain;
-  transform: scaleX(-1);
-  transform-origin: 50% 100%;
-  width: auto;
+  width: 100%;
+  position: absolute;
+  inset: 0;
 }
+.hero-walker[data-renderer="webgl"] .analyst-fallback { visibility: hidden; }
+.hero-walker:not([data-renderer="webgl"]) .analyst-canvas { visibility: hidden; }
 
 /* ---------- expertise marquee ---------- */
 .expertise-marquee { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); min-height: 72px; overflow: hidden; position: relative; }
@@ -190,6 +188,33 @@
 .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
 .closing-route circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }
 
+/* The Contact annotation becomes one unframed cartographic maquette.
+   This host is isolated from the hero image and legacy SVG selectors. */
+.contact-cta .closing-map {
+  aspect-ratio: 1.9;
+  contain: layout paint;
+  isolation: isolate;
+  margin: clamp(28px, 4vw, 54px) auto 0;
+  max-width: 960px;
+  position: relative;
+  width: 100%;
+}
+.closing-map > .closing-map__poster,
+.closing-map > .closing-map__canvas {
+  display: block;
+  height: 100%;
+  inset: 0;
+  max-width: none;
+  object-fit: contain;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+.closing-map > .closing-map__poster[hidden] { display: none; }
+@media (max-width: 699px) {
+  .contact-cta .closing-map { aspect-ratio: 1.38; margin-top: 28px; }
+}
+
 @media (max-width: 1099px) {
   .home-selected-work__heading { display: block; }
   .home-selected-work__heading h2 { margin: 14px 0; }
@@ -206,7 +231,7 @@
   .spatial-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); }
   .spatial-hero__lede { font-size: var(--fs-sm); max-width: none; }
   .spatial-hero__strip { height: 96px; }
-  .hero-walker { bottom: 2.85%; height: 58%; left: 7%; }
+  .hero-walker { bottom: 14%; height: 86%; left: 7%; }
   .expertise-marquee__track { font-size: 1.1rem; }
   .home-selected-work { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
   .about-bridge { gap: 32px; padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }

@@ -33,8 +33,12 @@
   right: clamp(-30px, 2vw, 40px);
   top: clamp(70px, 10vw, 140px);
   width: min(48vw, 620px);
+  transform: perspective(900px) rotateX(34deg) rotateZ(-12deg);
+  transform-origin: 50% 50%;
   z-index: 0;
 }
+.page-route-motif__grid { transform: translateY(10px); opacity: .65; }
+.page-route-motif [data-page-route-line] { filter: drop-shadow(0 7px 0 color-mix(in srgb, var(--accent) 18%, transparent)); }
 .page-route-motif__grid line { stroke: var(--line); stroke-width: 1; }
 .page-route-motif path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
 .page-route-motif circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }

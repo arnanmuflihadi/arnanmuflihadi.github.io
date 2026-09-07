@@ -428,6 +428,8 @@ html.welcome-intro-pending .site-header { z-index: 1150; }
     top: 96px;
   }
   .work-rail__frames { height: 100%; position: relative; width: 100%; }
+  .work-rail--enhanced .work-rail__stage { perspective: 1100px; }
+  .work-rail--enhanced .work-rail__frames { transform-origin: 50% 50%; }
   .work-rail__frame { height: 100%; inset: 0; object-fit: cover; opacity: 0; position: absolute; transform: scale(1.02); width: 100%; }
   .work-rail__frame.is-work-active { opacity: 1; }
   .work-rail__caption {
