@@ -1,0 +1,320 @@
+/* ============================================================
+   News page — Inversa-inspired instrument-panel direction.
+   Deliberately single-theme (dark). Does not use variables.css
+   tokens or the shared .cs-hero grid — News has its own hero,
+   card, and scrollytelling components, defined here in full.
+   Loaded only on news.html.
+   ============================================================ */
+
+:root{
+  /* Grounds are olive-tinted rather than neutral — a warm-black family
+     reads as chosen, where a blue-grey black reads as default. */
+  --n-bg:#13140e; --n-surface:#181815; --n-surface-2:#20211b;
+  --n-ink:#f4f3e8; --n-ink-soft:#a8a89b; --n-muted:#6f7065;
+  --n-line:rgba(244,243,232,.11); --n-line-strong:rgba(244,243,232,.22);
+  /* Mint carries the signal; acid-lime is the second voice, reserved for
+     genuinely live/alert states so it stays loud. */
+  --n-accent:#00d399; --n-accent-ink:#4fe3b6; --n-accent-soft:#0d2a22;
+  --n-live:#ebfc72;
+  --n-warn:#f1664d;
+  --n-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --n-ease:cubic-bezier(.22,1,.36,1);
+  /* Cut-corner geometry used on panels and the hero index. */
+  --n-cut:14px;
+}
+
+body[data-project="news"]{
+  background:var(--n-bg); color:var(--n-ink);
+  /* Shared components on this page (dflow, .foot, .ms) read --font-mono
+     from variables.css; repoint it so they inherit JetBrains Mono too
+     instead of falling back to a system face. */
+  --font-mono:var(--n-mono);
+}
+body[data-project="news"] .theme-toggle{ display:none; }
+body[data-project="news"] .nav__links{
+  background:color-mix(in srgb, var(--n-bg) 80%, transparent);
+  border-color:var(--n-line);
+}
+body[data-project="news"] .nav__links a{ color:var(--n-ink-soft); }
+body[data-project="news"] .nav__links a:hover{ background:var(--n-surface-2); color:var(--n-ink); }
+body[data-project="news"] .nav__links a[aria-current="page"]{ background:var(--n-accent-soft); color:var(--n-accent-ink); }
+body[data-project="news"] .foot{ background:var(--n-bg); color:var(--n-muted); border-top:1px solid var(--n-line); }
+body[data-project="news"] .foot a{ color:var(--n-ink-soft); }
+
+@keyframes nPulse{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes nScroll{0%{opacity:.2;transform:scaleY(.4);transform-origin:top}50%{opacity:1;transform:scaleY(1);transform-origin:top}100%{opacity:.2;transform:scaleY(.4);transform-origin:top}}
+
+/* ============ HERO ============ */
+.n-hero{max-width:1180px;margin:0 auto;padding:64px 20px 40px;}
+.n-hero-hud{
+  display:flex;flex-wrap:wrap;gap:24px 40px;font-family:var(--n-mono);
+  padding-bottom:26px;margin-bottom:28px;border-bottom:1px solid var(--n-line);
+}
+.n-hero-hud .item .lbl{display:block;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--n-muted);margin-bottom:5px;}
+.n-hero-hud .item .val{font-size:15px;color:var(--n-ink);font-variant-numeric:tabular-nums;}
+.n-hero-hud .item .val.up{color:var(--n-accent-ink);}
+.n-hero-hud .item .val.warn{color:var(--n-warn);}
+/* Acid-lime is held back for genuinely live readouts, so it stays loud. */
+.n-hero-hud .live{margin-left:auto;display:flex;align-items:center;gap:7px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--n-live);}
+.n-hero-hud .live i{width:6px;height:6px;border-radius:50%;background:var(--n-live);animation:nPulse 1.4s infinite;}
+
+.n-hero h1{
+  font-family:'Roboto Flex',-apple-system,'Helvetica Neue',sans-serif;
+  font-size:clamp(44px,8.5vw,104px);font-weight:700;
+  /* Tight tracking + sub-1 leading is the reference's display signature. */
+  letter-spacing:-.04em;line-height:.9;margin:0 0 24px;max-width:13ch;color:var(--n-ink);
+  text-transform:uppercase;text-wrap:balance;
+}
+.n-hero h1 span{color:var(--n-accent);}
+.n-hero .lede{font-size:15.5px;color:var(--n-ink-soft);max-width:56ch;line-height:1.62;margin:0 0 30px;}
+
+.n-hero-index{
+  display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--n-line);margin-bottom:26px;
+  clip-path:polygon(0 0, 100% 0, 100% calc(100% - var(--n-cut)), calc(100% - var(--n-cut)) 100%, 0 100%);
+}
+.n-hero-index a{
+  font-family:var(--n-mono);font-size:11.5px;letter-spacing:.03em;color:var(--n-ink-soft);
+  padding:12px 17px;border-right:1px solid var(--n-line);border-bottom:1px solid var(--n-line);text-decoration:none;
+  display:flex;align-items:center;gap:8px;transition:color .2s,background .2s;
+}
+.n-hero-index a b{color:var(--n-muted);font-weight:500;}
+.n-hero-index a:hover{color:var(--n-accent-ink);background:var(--n-accent-soft);}
+
+.n-search{position:relative;max-width:380px;}
+.n-search input{
+  width:100%;font-family:-apple-system,sans-serif;font-size:14px;padding:12px 16px 12px 38px;
+  border-radius:2px;border:1px solid var(--n-line);background:var(--n-surface);color:var(--n-ink);outline:none;
+}
+.n-search input:focus{border-color:var(--n-accent);}
+.n-search .ic{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.5;font-size:14px;}
+.n-search .hint{position:absolute;right:13px;top:50%;transform:translateY(-50%);font-family:var(--n-mono);font-size:10px;color:var(--n-muted);border:1px solid var(--n-line);border-radius:4px;padding:1px 6px;}
+
+.n-scrolldown{margin-top:26px;font-family:var(--n-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--n-muted);display:flex;align-items:center;gap:8px;}
+.n-scrolldown i{width:1px;height:20px;background:linear-gradient(var(--n-accent),transparent);animation:nScroll 1.6s infinite;}
+
+/* ============ SECTION HEAD ============ */
+.n-sec{max-width:1180px;margin:0 auto;padding:74px 20px 0;}
+.n-sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px;}
+.n-sec-head .idx{font-family:var(--n-mono);font-size:12px;color:var(--n-accent-ink);white-space:nowrap;}
+.n-sec-head h2{font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:-.02em;margin:0;color:var(--n-ink);}
+.n-sec-head .rule{flex:1;height:1px;background:var(--n-line);}
+.n-sec-sub{font-size:14px;color:var(--n-ink-soft);max-width:74ch;line-height:1.65;margin:14px 0 30px;}
+.n-sec-sub b{color:var(--n-ink);}
+
+/* ============ CARD GRID (grid-line, Inversa index-card language) ============ */
+.n-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--n-line);border:1px solid var(--n-line);}
+@media(max-width:980px){.n-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:640px){.n-grid{grid-template-columns:1fr;}}
+.n-card{background:var(--n-bg);padding:0;display:flex;flex-direction:column;position:relative;}
+.n-card-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--n-surface-2);}
+.n-card-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.12) contrast(1.05) saturate(.92);display:block;transition:transform .6s var(--n-ease);}
+.n-card:hover .n-card-media img{transform:scale(1.045);}
+.n-card-media .idx-tag{
+  position:absolute;top:10px;left:10px;font-family:var(--n-mono);font-size:9.5px;letter-spacing:.08em;
+  color:var(--n-ink);background:rgba(11,12,14,.72);backdrop-filter:blur(3px);padding:5px 9px;border-radius:2px;
+}
+.n-bk{
+  position:absolute;top:10px;right:10px;z-index:2;width:30px;height:30px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(11,12,14,.6);color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center;
+  backdrop-filter:blur(3px);transition:transform .2s,background .2s;
+}
+.n-bk:hover{transform:scale(1.1);background:rgba(11,12,14,.8);}
+.n-bk.saved{background:var(--n-accent-soft);color:var(--n-accent-ink);}
+.n-card-body{padding:19px 19px 22px;display:flex;flex-direction:column;gap:11px;flex:1;}
+.n-card-tags{display:flex;gap:9px;align-items:center;flex-wrap:wrap;font-family:var(--n-mono);font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;}
+.n-cat{color:var(--n-accent-ink);}
+.n-src{color:var(--n-muted);}
+.n-card h3{font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:16px;font-weight:600;line-height:1.32;margin:0;letter-spacing:-.008em;color:var(--n-ink);}
+.n-card p.dek{font-size:12.5px;color:var(--n-ink-soft);line-height:1.58;margin:0;}
+.n-card-insight{
+  font-size:12px;line-height:1.55;color:var(--n-ink-soft);padding:10px 0 0;border-top:1px dashed var(--n-line-strong);
+}
+.n-card-insight b{display:block;margin-bottom:4px;font-family:var(--n-mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--n-accent-ink);}
+.n-card-fact{
+  margin-top:auto;padding-top:11px;border-top:1px dashed var(--n-line-strong);
+  font-family:var(--n-mono);font-size:10px;letter-spacing:.03em;color:var(--n-muted);line-height:1.5;
+  display:flex;gap:7px;
+}
+.n-card-fact i{width:5px;height:5px;border-radius:50%;background:var(--n-accent);flex:none;margin-top:5px;}
+.n-card-fact.watch i{background:var(--n-warn);}
+.n-card-fact b{color:var(--n-ink-soft);text-transform:uppercase;letter-spacing:.06em;}
+
+/* Feature (first) card: wider media on desktop */
+.n-grid > .n-card:first-child{grid-column:span 3;}
+@media(max-width:980px){.n-grid > .n-card:first-child{grid-column:span 2;}}
+@media(min-width:760px){
+  .n-grid > .n-card:first-child{display:grid;grid-template-columns:1.15fr 1fr;}
+  .n-grid > .n-card:first-child .n-card-media{aspect-ratio:auto;height:100%;max-height:440px;}
+  .n-grid > .n-card:first-child .n-card-body{justify-content:center;max-height:440px;overflow-y:auto;}
+  .n-grid > .n-card:first-child h3{font-size:23px;}
+}
+@media(max-width:640px){.n-grid > .n-card:first-child{grid-column:span 1;}}
+
+/* ============ STORY SCROLLY (sticky photo stage + numbered steps) ============ */
+.n-scrolly{max-width:1180px;margin:30px auto 0;padding:0 20px;display:grid;grid-template-columns:1.1fr 1fr;gap:0;}
+/* Mobile: single column, but .n-visual and .n-steps share ONE grid area
+   instead of auto-placing into two separate rows. Two separate rows would
+   give the sticky panel a containing block no taller than itself — zero
+   "slack" to actually stick within, which reads as stuck/broken mid-scroll.
+   Stacking them into the same area makes the row as tall as .n-steps (the
+   long one), giving sticky the same scroll range it has on desktop. */
+@media(max-width:820px){
+  .n-scrolly{grid-template-columns:1fr;grid-template-areas:"stack";gap:0;}
+  .n-steps{grid-area:stack;margin-top:290px;}
+}
+
+.n-visual{position:sticky;top:80px;align-self:start;height:calc(100vh - 130px);max-height:540px;z-index:2;isolation:isolate;}
+@media(max-width:820px){.n-visual{grid-area:stack;top:10px;height:270px;}}
+
+.n-stage{
+  position:relative;height:100%;overflow:hidden;background:#000;
+  border:1px solid var(--n-line);display:flex;flex-direction:column;
+  box-shadow:0 20px 50px -22px rgba(0,0,0,.6);
+  /* Bevelled bottom-right corner — a machined/instrument cue rather than
+     a rounded card. Border-radius is dropped since clip-path governs the
+     silhouette. */
+  border-radius:0;
+  clip-path:polygon(0 0, 100% 0, 100% calc(100% - var(--n-cut)), calc(100% - var(--n-cut)) 100%, 0 100%);
+  /* Set continuously by news.js as you scroll (0..1). Defaults keep the
+     panel correct if JS never runs. */
+  --scrub:0; --local:0;
+}
+.n-stage-photo{position:absolute;inset:0;overflow:hidden;}
+.n-stage-photo img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity .7s var(--n-ease);
+  filter:saturate(.85) contrast(1.05);
+  /* Slow parallax drift + scale tied to scroll position, not to the
+     discrete step change — this is what makes the panel feel attached
+     to the scroll rather than snapping between states. */
+  transform:scale(calc(1.10 - (var(--scrub) * 0.06)))
+            translate3d(0, calc(var(--scrub) * -3%), 0);
+  will-change:transform,opacity;
+}
+.n-stage-photo img.on{opacity:1;}
+@media (prefers-reduced-motion: reduce){
+  .n-stage-photo img{transform:none;transition:opacity .2s;}
+}
+.n-stage-scrim{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg, rgba(6,7,8,.15) 0%, rgba(6,7,8,.4) 48%, rgba(6,7,8,.94) 100%),
+    linear-gradient(90deg, rgba(6,7,8,.5) 0%, rgba(6,7,8,.05) 55%);
+}
+/* No-photo variant (Currency): flat instrument panel, no image layer */
+.n-stage.no-photo{ background:var(--n-surface-2); }
+.n-stage.no-photo .n-stage-scrim{ background:radial-gradient(circle at 82% 12%, rgba(143,224,196,.09), transparent 55%); }
+
+.n-stage-inner{position:relative;z-index:1;height:100%;padding:26px 26px 26px;display:flex;flex-direction:column;overflow-y:auto;}
+.n-stage-top{display:flex;justify-content:space-between;align-items:flex-start;flex:none;}
+.n-stage-counter{font-family:var(--n-mono);font-size:12px;letter-spacing:.08em;color:rgba(240,238,231,.7);font-variant-numeric:tabular-nums;}
+.n-stage.no-photo .n-stage-counter{color:var(--n-muted);}
+.n-stage-counter b{color:var(--n-accent-ink);font-weight:600;}
+.n-stage-badge{
+  font-family:var(--n-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--n-accent-ink);
+  border:1px solid rgba(143,224,196,.4);background:rgba(6,7,8,.4);backdrop-filter:blur(4px);border-radius:20px;padding:4px 10px;
+  display:flex;align-items:center;gap:6px;
+}
+.n-stage-badge i{width:5px;height:5px;border-radius:50%;background:var(--n-accent);animation:nPulse 1.4s infinite;}
+
+.n-stage-kpi{margin-top:auto;flex:none;}
+.n-stage-kpi .lbl{font-family:var(--n-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(240,238,231,.6);margin-bottom:9px;min-height:13px;}
+.n-stage.no-photo .n-stage-kpi .lbl{color:var(--n-muted);}
+.n-stage-kpi .num{font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:clamp(28px,4.4vw,44px);font-weight:700;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums;transition:opacity .18s;text-shadow:0 2px 12px rgba(0,0,0,.5);color:var(--n-ink);}
+.n-stage-kpi .note{margin-top:11px;font-size:12.5px;color:rgba(240,238,231,.78);max-width:36ch;line-height:1.55;min-height:36px;}
+.n-stage.no-photo .n-stage-kpi .note{color:var(--n-ink-soft);}
+
+.n-stage-progress{display:flex;gap:5px;margin-top:18px;flex:none;}
+.n-stage-progress i{flex:1;height:3px;background:rgba(240,238,231,.18);border-radius:2px;overflow:hidden;position:relative;}
+.n-stage.no-photo .n-stage-progress i{background:var(--n-line-strong);}
+.n-stage-progress i b{position:absolute;inset:0;background:var(--n-accent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--n-ease);display:block;}
+.n-stage-progress i.done b{transform:scaleX(1);}
+/* The active segment fills continuously with scroll position rather than
+   snapping to full the moment the step activates. */
+.n-stage-progress i.active b{transform:scaleX(var(--local,1));transition:none;}
+.n-stage-credit{margin-top:9px;font-family:var(--n-mono);font-size:8.5px;letter-spacing:.06em;color:rgba(240,238,231,.4);flex:none;}
+
+.n-steps{padding:8px 0;position:relative;z-index:1;background:var(--n-bg);}
+.n-step{
+  min-height:56vh;display:flex;flex-direction:column;justify-content:center;
+  padding:24px 32px;border-left:2px solid transparent;
+  opacity:.35;transform:translateX(0);transition:opacity .4s var(--n-ease),border-color .4s var(--n-ease),transform .4s var(--n-ease);
+}
+.n-step.is-active{opacity:1;border-left-color:var(--n-accent);transform:translateX(6px);background:linear-gradient(90deg,rgba(143,224,196,.05),transparent 75%);}
+.n-step-num{font-family:var(--n-mono);font-size:10px;color:var(--n-muted);letter-spacing:.08em;transition:color .3s;}
+.n-step.is-active .n-step-num{color:var(--n-accent-ink);}
+.n-step h4{font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:18px;font-weight:600;margin:8px 0 6px;letter-spacing:-.01em;color:var(--n-ink);}
+.n-step p{font-size:13px;color:var(--n-ink-soft);line-height:1.6;margin:0;max-width:42ch;}
+
+/* Currency converter + gauge, restyled for the instrument panel */
+.n-conv{display:grid;gap:9px;margin-top:14px;}
+.n-conv__row{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:end;}
+.n-conv label{display:block;font-family:var(--n-mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--n-muted);margin-bottom:5px;}
+.n-conv input,.n-conv select{
+  width:100%;font-family:-apple-system,sans-serif;font-size:13.5px;padding:8px 9px;border-radius:2px;
+  border:1px solid var(--n-line);background:var(--n-bg);color:var(--n-ink);outline:none;
+}
+.n-conv input:focus,.n-conv select:focus{border-color:var(--n-accent);}
+.n-conv__swap{width:34px;height:34px;border-radius:50%;border:1px solid var(--n-line);background:var(--n-bg);color:var(--n-ink);cursor:pointer;transition:transform .3s;}
+.n-conv__swap:hover{transform:rotate(180deg);border-color:var(--n-accent);color:var(--n-accent-ink);}
+.n-conv__out{margin-top:4px;padding:11px;border-radius:2px;background:var(--n-accent-soft);color:var(--n-accent-ink);font-size:12.5px;text-align:center;}
+.n-conv__out b{display:block;font-family:-apple-system,sans-serif;font-size:18px;margin-top:2px;}
+.n-gauge-track{position:relative;height:10px;border-radius:6px;margin:22px 0 8px;background:linear-gradient(90deg,#c97a52,#e0a06a,#8fe0c4);}
+.n-gauge-mark{position:absolute;top:-6px;width:4px;height:22px;background:var(--n-ink);border-radius:3px;box-shadow:0 0 0 2px var(--n-bg);}
+.n-gauge-bub{position:absolute;top:-28px;transform:translateX(-50%);font-family:var(--n-mono);font-size:10px;font-weight:700;background:var(--n-ink);color:var(--n-bg);padding:2px 7px;border-radius:3px;white-space:nowrap;}
+.n-gauge-ends{display:flex;justify-content:space-between;font-family:var(--n-mono);font-size:9px;color:var(--n-muted);}
+
+/* ============ CHARTS ============ */
+.n-chart-wrap{border:1px solid var(--n-line);border-radius:2px;background:var(--n-surface);padding:clamp(18px,2.4vw,26px);margin:30px 0 16px;}
+.n-chart-note{font-size:12px;color:var(--n-muted);margin-top:10px;line-height:1.65;}
+.n-chart-note b{color:var(--n-ink-soft);}
+
+/* ============ EXPLAINERS + GLOSSARY ============ */
+.n-explainer{border:1px solid var(--n-line);border-radius:2px;background:var(--n-surface);padding:clamp(20px,3vw,28px);margin-bottom:16px;}
+.n-explainer h3{font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:clamp(18px,2.2vw,22px);margin:0 0 12px;color:var(--n-ink);}
+.n-explainer .tldr{background:var(--n-accent-soft);border-left:2px solid var(--n-accent);padding:11px 14px;font-size:13px;color:var(--n-ink-soft);margin-bottom:14px;line-height:1.55;}
+.n-explainer .blk{margin-bottom:13px;}
+.n-explainer .blk b.lbl{display:block;font-family:var(--n-mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--n-muted);margin-bottom:6px;}
+.n-explainer .blk p{color:var(--n-ink-soft);font-size:13.5px;line-height:1.62;margin:0;}
+.n-explainer .deeper{font-family:var(--n-mono);font-size:11px;color:var(--n-muted);border-top:1px dashed var(--n-line-strong);padding-top:11px;line-height:1.6;}
+.n-explainer .deeper b{color:var(--n-ink-soft);}
+
+.n-glossary{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--n-line);border:1px solid var(--n-line);margin-top:8px;}
+.n-gterm{background:var(--n-bg);padding:14px 15px;font-size:12.5px;line-height:1.55;color:var(--n-ink-soft);}
+.n-gterm b{display:block;font-family:-apple-system,sans-serif;font-size:14px;margin-bottom:4px;color:var(--n-accent-ink);}
+
+/* ============ FACT-CHECK ============ */
+.n-fc-box{border:1px solid var(--n-line);border-radius:2px;background:var(--n-surface);padding:clamp(22px,3vw,28px);max-width:760px;}
+.n-fc-box input{width:100%;padding:11px 13px;font-size:13.5px;border:1px solid var(--n-line);border-radius:2px;margin-bottom:11px;background:var(--n-bg);color:var(--n-ink);}
+.n-fc-box input:focus{outline:none;border-color:var(--n-accent);}
+.n-fc-box button{
+  font-family:-apple-system,sans-serif;font-size:13.5px;font-weight:600;background:var(--n-accent);color:#06120f;
+  border:none;padding:11px 22px;border-radius:2px;cursor:pointer;
+}
+.n-fc-result{margin-top:15px;padding:15px;border-radius:2px;background:var(--n-surface-2);font-size:13px;line-height:1.65;display:none;color:var(--n-ink-soft);}
+.n-fc-result.show{display:block;}
+.n-fc-example{border-top:1px solid var(--n-line);padding-top:15px;margin-top:22px;}
+.n-fc-example + .n-fc-example{margin-top:15px;}
+.n-fc-example h4{font-size:14.5px;margin:0 0 7px;color:var(--n-ink);}
+.n-fc-example p{font-size:13px;color:var(--n-ink-soft);line-height:1.6;margin:0 0 7px;}
+
+/* ============ DFLOW (Solutions) — dark restyle ============ */
+body[data-project="news"] .dflow__node{background:var(--n-surface);border-color:var(--n-line);}
+body[data-project="news"] .dflow__head .ms{color:var(--n-accent-ink);}
+body[data-project="news"] .dflow__num{background:var(--n-accent);color:#06120f;}
+body[data-project="news"] .dflow__link .ms{color:var(--n-muted);}
+.n-dflow-note{margin-top:18px;color:var(--n-ink-soft);font-size:14px;line-height:1.6;max-width:74ch;}
+
+/* ============ REFERENCE LINKS ============ */
+.n-refs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1px;background:var(--n-line);border:1px solid var(--n-line);}
+.n-refs a{display:block;padding:16px 17px;background:var(--n-bg);transition:background .2s;}
+.n-refs a:hover{background:var(--n-surface);}
+.n-refs a span.cat{display:block;font-family:var(--n-mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--n-accent-ink);margin-bottom:6px;}
+.n-refs a strong{display:block;font-size:14px;margin-bottom:4px;color:var(--n-ink);font-weight:600;}
+.n-refs a em{font-style:normal;font-size:12px;color:var(--n-muted);}
+
+footer.n-foot-note{max-width:1180px;margin:50px auto 0;padding:0 20px 70px;}
+
+@media(max-width:700px){
+  .n-grid{grid-template-columns:1fr;}
+}
