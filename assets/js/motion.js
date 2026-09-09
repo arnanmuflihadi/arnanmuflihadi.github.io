@@ -350,11 +350,30 @@
   function createSpatialMapMotion(gsap, ScrollTrigger) {
     document.querySelectorAll('[data-closing-map]').forEach((host) => {
       if (!window.createClosingMap3D) return;
+      // A map travels from an establishing angle to a closer reading as its
+      // own section passes through the viewport. Native scroll remains free;
+      // there is no pinned spacer or second scroll/animation engine.
+      let scrollProgress = 0.5;
+      const scrollScene = ScrollTrigger.create({
+        trigger: host,
+        start: host.classList.contains('page-map') ? 'clamp(top 65%)' : 'top 90%',
+        end: host.classList.contains('page-map') ? 'center 30%' : 'center 45%',
+        onUpdate: (self) => {
+          scrollProgress = self.progress;
+          spatialMaps3D.get(host)?.setScrollProgress(scrollProgress);
+        },
+        onRefresh: (self) => {
+          scrollProgress = self.progress;
+          spatialMaps3D.get(host)?.setScrollProgress(scrollProgress);
+        }
+      });
+      scrollProgress = scrollScene.progress;
       // Each surface is allocated once and shares the existing ambient clock.
       // Offscreen surfaces retain their context but perform no rendering work.
       const playback = {
         play() {
           if (!spatialMaps3D.has(host)) spatialMaps3D.set(host, window.createClosingMap3D(host, { gsap }));
+          spatialMaps3D.get(host)?.setScrollProgress(scrollProgress);
           spatialMaps3D.get(host)?.play();
         },
         pause() { spatialMaps3D.get(host)?.pause(); }

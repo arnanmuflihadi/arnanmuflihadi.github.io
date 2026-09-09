@@ -28,7 +28,7 @@
       host.dataset.playing = 'false';
       if (poster) poster.hidden = false;
     };
-    const noop = { play() {}, pause() {}, resize() {}, static() {}, snapshot() { return null; }, destroy() {} };
+    const noop = { play() {}, pause() {}, resize() {}, setScrollProgress() {}, static() {}, snapshot() { return null; }, destroy() {} };
     fallback();
     if (!T || !gsap || navigator.connection?.saveData) return noop;
 
@@ -410,11 +410,50 @@
 
     let playing = false, destroyed = false, contextLost = false, resumeOnRestore = false;
     let seconds = 0, accumulated = 0, lastWidth = 0, lastHeight = 0;
+    let scrollTarget = 0.5, scrollPosition = 0.5, scrollDriven = false;
+    let interactionPoint = -1, activePoint = -1;
+    const selectionScope = host.closest('.study-atlas') || host;
+    const selectionLinks = variantName === 'atlas'
+      ? [...new Set([...selectionScope.querySelectorAll('[data-map-select]'), ...host.querySelectorAll('[data-map-point]')])]
+      : [];
+    const clamp = (value) => Math.max(0, Math.min(1, value));
+    const smooth = (value) => value * value * (3 - 2 * value);
+    const applySelection = (position, moving) => {
+      const reading = clamp((position - 0.12) / 0.76) * 4;
+      const selected = interactionPoint >= 0 ? interactionPoint : (moving && scrollDriven ? Math.round(reading) : -1);
+      focusMaterials.forEach((focus, i) => {
+        const weight = Math.max(0, 1 - Math.abs(reading - i));
+        focus.opacity = interactionPoint >= 0 ? (i === interactionPoint ? 0.20 : 0)
+          : (moving && scrollDriven ? weight * 0.16 : 0);
+      });
+      if (activePoint === selected) return;
+      activePoint = selected;
+      selectionLinks.forEach((link) => { link.dataset.mapActive = String(Number(link.dataset.mapSelect ?? link.dataset.mapPoint) === selected); });
+      host.dataset.activeMapPoint = selected < 0 ? '' : String(selected);
+    };
+    // ScrollTrigger supplies a destination; this renderer eases towards it on
+    // the existing capped GSAP clock. No pointer/scroll handler renders a frame.
+    const setScrollProgress = (progress) => {
+      if (!Number.isFinite(progress)) return;
+      scrollDriven = true;
+      scrollTarget = clamp(progress);
+    };
     const state = (time, moving = true) => {
-      map.rotation.y = variant.rotation + (moving ? Math.sin(time * 0.18) * (variant.semantic ? 0.008 : 0.026) : 0);
-      // Start at the poster's marker position, so enabling motion does not
-      // teleport the signal from a static/reduced-motion frame.
-      const progress = moving ? (0.6 + time / 14) % 1 : 0.6;
+      const scroll = moving && scrollDriven;
+      const progressEase = smooth(scrollPosition);
+      const strength = innerWidth < 700 ? 0.48 : 1;
+      const closing = variantName === 'inquiry' || variantName === 'city';
+      map.rotation.y = variant.rotation + (scroll ? (-0.14 + progressEase * 0.26) * strength : 0)
+        + (moving ? Math.sin(time * 0.18) * (variant.semantic ? 0.008 : 0.026) : 0);
+      map.rotation.x = scroll ? (0.055 - progressEase * 0.09) * strength : 0;
+      map.position.y = scroll ? (closing ? -0.16 + progressEase * 0.20 : -0.045 + progressEase * 0.09) * strength : 0;
+      // Leave breathing room for the orbit and projected native link markers.
+      const scale = scroll ? 1 - (0.075 - progressEase * 0.035) * strength : 1;
+      map.scale.setScalar(scale);
+      if (scroll && variantName === 'method') map.scale.y *= 1 + (-0.16 + progressEase * 0.20) * strength;
+      // Scroll owns the route signal while active; static mode restores the
+      // poster's authored marker position without changing the map's meaning.
+      const progress = scroll ? 0.035 + progressEase * 0.93 : (moving ? (0.6 + time / 14) % 1 : 0.6);
       runner.position.copy(route.getPointAt(progress));
       stops.forEach(({ u, pulse, pulseMat }) => {
         const distance = Math.min(Math.abs(progress-u), 1-Math.abs(progress-u));
@@ -422,6 +461,7 @@
         pulse.scale.setScalar(0.14 + activity * 0.15);
         pulseMat.opacity = 0.16 + activity * 0.4;
       });
+      applySelection(scrollPosition, moving);
     };
     const render = () => {
       if (destroyed || contextLost) return;
@@ -455,7 +495,11 @@
       accumulated += Math.min(delta, 80);
       const frameInterval = innerWidth < 700 ? 1000 / 24 : 1000 / 30;
       if (accumulated < frameInterval) return;
-      seconds += accumulated / 1000; accumulated = 0;
+      const elapsed = accumulated / 1000;
+      seconds += elapsed; accumulated = 0;
+      // Exponential damping is frame-rate independent and catches up cleanly
+      // after a fast wheel gesture or native touch scroll.
+      scrollPosition += (scrollTarget - scrollPosition) * (1 - Math.exp(-elapsed / 0.18));
       state(seconds); render();
     };
     const pause = () => {
@@ -463,12 +507,12 @@
       gsap.ticker.remove(tick); host.dataset.playing = 'false';
     };
     const play = () => {
-      if (destroyed) return;
+      if (destroyed || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       if (contextLost) { resumeOnRestore = true; return; }
       if (playing) return;
       playing = true; host.dataset.playing = 'true'; gsap.ticker.add(tick);
     };
-    const staticScene = () => { pause(); seconds = 0; state(0, false); resize(); render(); };
+    const staticScene = () => { pause(); seconds = 0; scrollDriven = false; scrollPosition = scrollTarget = 0.5; state(0, false); resize(); render(); };
     const lost = (event) => {
       event.preventDefault();
       const resume = playing;
@@ -485,15 +529,12 @@
     canvas.addEventListener('webglcontextrestored', restored);
     const selectionListeners = [];
     if (variantName === 'atlas') {
-      const scope = host.closest('.study-atlas') || host;
-      const links = [...new Set([...scope.querySelectorAll('[data-map-select]'), ...host.querySelectorAll('[data-map-point]')])];
+      const links = selectionLinks;
       const updateSelection = () => {
         const selected = links.find((link) => link === document.activeElement) || links.find((link) => link.matches(':hover'));
-        const active = selected ? Number(selected.dataset.mapSelect ?? selected.dataset.mapPoint) : -1;
-        focusMaterials.forEach((focus, i) => { focus.opacity = i === active ? 0.20 : 0; });
-        links.forEach((link) => { link.dataset.mapActive = String(Number(link.dataset.mapSelect ?? link.dataset.mapPoint) === active); });
-        host.dataset.activeMapPoint = active < 0 ? '' : String(active);
-        render();
+        interactionPoint = selected ? Number(selected.dataset.mapSelect ?? selected.dataset.mapPoint) : -1;
+        applySelection(scrollPosition, playing);
+        if (!playing) render();
       };
       links.forEach((link) => ['pointerenter','pointerleave','focus','blur'].forEach((type) => {
         link.addEventListener(type,updateSelection);
@@ -504,7 +545,7 @@
     host.dataset.renderer = 'webgl'; canvas.style.visibility = 'visible';
     if (poster) poster.hidden = true;
     return {
-      play, pause, resize, static: staticScene,
+      play, pause, resize, setScrollProgress, static: staticScene,
       snapshot() { render(); return contextLost ? null : canvas.toDataURL('image/webp', 0.92); },
       destroy() {
         pause(); destroyed = true;
