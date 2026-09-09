@@ -36,14 +36,14 @@
     renderer.setClearColor(0x000000, 0);
     renderer.outputColorSpace = T.SRGBColorSpace;
     renderer.toneMapping = T.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.2;
+    renderer.toneMappingExposure = 1.08;
 
     const scene = new T.Scene();
     const camera = new T.OrthographicCamera(-1, 1, 1.21, -1.18, 0.1, 30);
     camera.position.set(4.1, 2.65, 8.5);
     camera.lookAt(0.035, 1.105, 0);
-    scene.add(new T.HemisphereLight(0xfff7e8, 0x66625d, 2.5));
-    const key = new T.DirectionalLight(0xfff2db, 3.2);
+    scene.add(new T.HemisphereLight(0xfff7e8, 0x66625d, 1.9));
+    const key = new T.DirectionalLight(0xfff2db, 2.8);
     key.position.set(4, 7, 6);
     scene.add(key);
     const rim = new T.DirectionalLight(0xc4dddc, 1.1);
@@ -195,6 +195,14 @@
       const shadow = mesh(shadowGeometry, mat, scene, [0.02, 0.004 + index * 0.0002, 0], [0.30 + index * 0.055, 0.18 + index * 0.035, 1]);
       shadow.rotation.x = -Math.PI / 2;
     });
+    // Contact belongs to each shoe, not the middle of the canvas. Two
+    // small, inexpensive discs make planted feet read as weight-bearing.
+    legs.forEach((leg) => {
+      const mat = new T.MeshBasicMaterial({ color: 0x302c23, transparent: true, opacity: 0.18, depthWrite: false, side: T.DoubleSide });
+      materials.push(mat);
+      leg.shadow = mesh(shadowGeometry, mat, scene, [0, 0.006, leg.side * 0.145], [0.19, 0.085, 1]);
+      leg.shadow.rotation.x = -Math.PI / 2;
+    });
 
     let destroyed = false;
     let playing = false;
@@ -215,26 +223,41 @@
 
     const pose = (seconds) => {
       const cycle = (seconds / cycleDuration) % 1;
-      const bob = 0.012 * Math.sin(cycle * tau * 2);
-      const sway = 0.012 * Math.sin(cycle * tau);
+      // The body rises over the supporting leg, settles at double support.
+      const bob = -0.009 * Math.cos((cycle - 0.06) * tau * 2);
+      const sway = 0.008 * Math.sin(cycle * tau);
       torso.position.set(0, bob, sway);
-      torso.rotation.x = 0.018 * Math.sin(cycle * tau);
+      // Keep shoulders and hips connected: rotating the torso around the
+      // floor-origin moved it away from the separately articulated limbs.
+      torso.rotation.x = 0;
+      head.position.y = 1.969 - bob * 0.35;
       head.rotation.y = 0.025 * Math.sin(cycle * tau);
       legs.forEach((leg, index) => {
         const u = (cycle + index * 0.5) % 1;
         const stance = u < 0.62;
         const swing = Math.max(0, (u - 0.62) / 0.38);
-        const footX = stance ? 0.25 - 0.50 * (u / 0.62) : -0.25 + 0.50 * smoothstep(swing);
-        const lift = stance ? 0 : 0.17 * Math.sin(swing * Math.PI);
+        // A C1 Hermite return matches the planted foot's backward speed
+        // at both ends. No abrupt stop at toe-off or snap at touchdown.
+        const tangent = -0.50 * 0.38 / 0.62;
+        const footX = stance ? 0.25 - 0.50 * (u / 0.62)
+          : -0.25 + 0.50 * smoothstep(swing) + tangent * (2 * swing ** 3 - 3 * swing ** 2 + swing);
+        const arc = Math.sin(swing * Math.PI);
+        const lift = stance ? 0 : 0.155 * arc * arc;
         leg.foot.position.set(footX, lift, leg.side * 0.145);
-        leg.foot.rotation.z = stance ? 0 : 0.10 * Math.sin(swing * tau);
+        // Taper ankle roll along with clearance: neither toe cuts through
+        // the ground as the swing resolves into the next planted step.
+        leg.foot.rotation.z = stance ? 0 : 0.10 * Math.sin(swing * tau) * arc;
+        leg.shadow.position.x = footX + 0.06;
+        const contact = 1 - Math.min(1, lift / 0.155);
+        leg.shadow.material.opacity = 0.035 + contact * 0.145;
+        leg.shadow.scale.set(0.15 + contact * 0.04, 0.065 + contact * 0.02, 1);
         leg.h.set(-0.025, 0.995 + bob, leg.side * 0.145 + sway);
         leg.a.set(footX - 0.012, 0.113 + lift, leg.side * 0.145);
         const dx = leg.a.x - leg.h.x;
         const dy = leg.a.y - leg.h.y;
         const distance = Math.max(0.001, Math.hypot(dx, dy));
-        const upperLength = 0.485;
-        const lowerLength = 0.475;
+        const upperLength = 0.475;
+        const lowerLength = 0.465;
         const reach = Math.min(distance, upperLength + lowerLength - 0.001);
         const along = (upperLength * upperLength - lowerLength * lowerLength + reach * reach) / (2 * reach);
         const bend = Math.sqrt(Math.max(0, upperLength * upperLength - along * along));
@@ -252,8 +275,11 @@
       });
       arms.forEach((arm, index) => {
         const u = (cycle + index * 0.5) % 1;
-        const angle = -0.47 * Math.cos(u * tau);
-        const forearmAngle = angle + 0.31;
+        const carrying = arm.side === 1;
+        // The free arm counterbalances the stride; the field map stays
+        // deliberately held, with a quieter swing and a bent elbow.
+        const angle = -(carrying ? 0.20 : 0.40) * Math.cos((u - 0.06) * tau);
+        const forearmAngle = carrying ? 0.72 + angle * 0.55 : angle + 0.28;
         arm.s.set(0.003, 1.586 + bob, arm.side * 0.253 + sway);
         arm.e.set(arm.s.x + Math.sin(angle) * 0.285,
           arm.s.y - Math.cos(angle) * 0.285, arm.side * 0.268 + sway);
@@ -266,7 +292,7 @@
         arm.hand.position.copy(arm.w);
         arm.hand.rotation.z = forearmAngle;
         arm.carry.position.copy(arm.w);
-        arm.carry.rotation.z = forearmAngle * 0.65;
+        arm.carry.rotation.z = carrying ? 0.12 + angle * 0.25 : forearmAngle * 0.65;
       });
     };
 

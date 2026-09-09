@@ -10,9 +10,9 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <script>!function(){"use strict";try{var e=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",e==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}}();</script>
 <link rel="stylesheet" href="assets/css/tokens.css?v=2">
-<link rel="stylesheet" href="assets/css/base.css?v=10">
+<link rel="stylesheet" href="assets/css/base.css?v=11">
 <link rel="stylesheet" href="assets/css/style.css?v=85">
-<link rel="stylesheet" href="assets/css/pages.css?v=5">
+<link rel="stylesheet" href="assets/css/pages.css?v=6"><link rel="stylesheet" href="assets/css/spatial-maps.css?v=3">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <meta property="og:type" content="website">
@@ -46,11 +46,11 @@
   </ol>
 </aside>
 <main id="main" tabindex="-1">
-  <header class="portfolio-hero section-shell">
-    <svg class="page-route-motif" data-page-route viewBox="0 0 620 210" aria-hidden="true"><g class="page-route-motif__grid"><line x1="0" y1="45" x2="620" y2="45"/><line x1="0" y1="105" x2="620" y2="105"/><line x1="0" y1="165" x2="620" y2="165"/><line x1="140" y1="0" x2="140" y2="210"/><line x1="320" y1="0" x2="320" y2="210"/><line x1="480" y1="0" x2="480" y2="210"/></g><path data-page-route-line d="M10 165 L140 165 L140 45 L320 45 L320 165 L480 165 L480 105 L610 105" pathLength="1"/><circle cx="140" cy="165" r="5"/><circle cx="140" cy="45" r="5"/><circle cx="320" cy="45" r="5"/><circle cx="320" cy="165" r="5"/><circle cx="480" cy="165" r="5"/><circle cx="480" cy="105" r="5"/></svg>
+  <header class="portfolio-hero portfolio-hero--map spatial-editorial section-shell">
     <p class="eyebrow">PROFILE / GIS &amp; URBAN PLANNING</p>
     <h1>About &amp; CV</h1>
-    <p class="portfolio-hero__lede">Urban planner and GIS analyst based in Bandung, Indonesia.</p>
+    <p class="portfolio-hero__lede">Urban planner and GIS analyst based in Bandung, Indonesia. I connect the physical place, the spatial evidence, and the planning question.</p>
+    <figure class="context-map"><div class="closing-map page-map" data-closing-map data-map-variant="method"><img class="closing-map__poster" src="assets/img/redesign/method-map-3d.webp?v=3" width="1200" height="720" loading="eager" decoding="async" alt=""></div><figcaption><div class="context-map__steps"><span><b>01</b>Place</span><span><b>02</b>Evidence</span><span><b>03</b>Decision</span></div><p>How I approach spatial work: understand a place, connect the evidence, and make the decision context legible.</p></figcaption></figure><div class="page-map-controls"><button class="ambient-toggle" type="button" data-ambient-toggle aria-pressed="true">Ambient motion <span>On</span></button></div>
   </header>
 
   <section class="about section-shell section" aria-labelledby="about-profile-title">
@@ -153,9 +153,9 @@
       </div>
     </div>
   </section>
-  <section class="route-coda section-shell" aria-labelledby="about-coda-title"><p class="eyebrow">NEXT / CONTACT</p><h2 id="about-coda-title">Have a spatial question worth mapping?</h2><a class="button-link" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a><svg class="closing-route" data-closing-route viewBox="0 0 620 190" aria-hidden="true"><g class="closing-route__grid"><line x1="0" y1="40" x2="620" y2="40"/><line x1="0" y1="95" x2="620" y2="95"/><line x1="0" y1="150" x2="620" y2="150"/><line x1="140" y1="0" x2="140" y2="190"/><line x1="320" y1="0" x2="320" y2="190"/><line x1="480" y1="0" x2="480" y2="190"/></g><path data-closing-route-line d="M10 150 L140 150 L140 40 L320 40 L320 150 L480 150 L480 95 L610 95" pathLength="1"/><circle cx="140" cy="150" r="5"/><circle cx="140" cy="40" r="5"/><circle cx="320" cy="40" r="5"/><circle cx="320" cy="150" r="5"/><circle cx="480" cy="150" r="5"/><circle cx="480" cy="95" r="5"/></svg></section>
+  <section class="route-coda spatial-coda spatial-editorial section-shell" aria-labelledby="about-coda-title"><div class="spatial-coda__copy"><p class="eyebrow">NEXT / CONTACT</p><h2 id="about-coda-title">Have a spatial question worth mapping?</h2><p>Tell me the place, the decision, and what is still unknown. That is where the work begins.</p><a class="button-link" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a></div><figure class="context-map"><div class="closing-map " data-closing-map data-map-variant="inquiry"><img class="closing-map__poster" src="assets/img/redesign/inquiry-map-3d.webp?v=3" width="1200" height="720" loading="lazy" decoding="async" alt=""></div><figcaption>Your place. Your question. Our starting point.</figcaption></figure></section>
 </main>
 <footer class="site-footer"><span>© <span data-year>2026</span> Arnan Muflihadi</span><span>Urban planner / GIS analyst</span><nav class="site-footer__links" aria-label="Footer links"><a href="mailto:arnanmuflihadi@gmail.com">Email</a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></nav></footer>
-<script defer src="assets/js/main.js?v=25"></script><script defer src="assets/js/vendor/gsap.min.js"></script><script defer src="assets/js/vendor/ScrollTrigger.min.js"></script><script defer src="assets/js/vendor/lenis.min.js"></script><script defer src="assets/js/site-shell.js?v=10"></script><script defer src="assets/js/motion.js?v=39"></script>
+<script defer src="assets/js/main.js?v=26"></script><script defer src="assets/js/vendor/gsap.min.js"></script><script defer src="assets/js/vendor/ScrollTrigger.min.js"></script><script defer src="assets/js/vendor/lenis.min.js"></script><script defer src="assets/js/site-shell.js?v=11"></script><script defer src="assets/js/vendor/three-hero.min.js?v=180.1"></script><script defer src="assets/js/closing-map-3d.js?v=3"></script><script defer src="assets/js/motion.js?v=42"></script>
 </body>
 </html>

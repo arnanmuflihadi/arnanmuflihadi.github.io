@@ -18,7 +18,9 @@
   function toggleTheme() {
     var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", next);
-    localStorage.setItem("theme", next);
+    // A private/restricted browser may deny persistence. The current page
+    // must still change theme and keep its accessible button state in sync.
+    try { localStorage.setItem("theme", next); } catch (_) {}
     syncThemeControls();
   }
   function syncThemeControls() {

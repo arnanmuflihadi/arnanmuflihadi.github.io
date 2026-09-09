@@ -20,28 +20,10 @@
   padding-top: var(--sec-pad-sm);
   position: relative;
 }
-.portfolio-hero > :not(.page-route-motif) { position: relative; z-index: 1; }
+.portfolio-hero > * { position: relative; z-index: 1; }
 .portfolio-hero h1 { font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .96; margin: 20px 0 24px; max-width: 11ch; }
 .portfolio-hero__lede, .portfolio-hero > p:last-child { color: var(--ink-soft); font-size: var(--fs-lg); line-height: 1.5; max-width: 40rem; }
 
-.page-route-motif {
-  color: var(--accent);
-  height: clamp(140px, 17vw, 220px);
-  opacity: .5;
-  pointer-events: none;
-  position: absolute;
-  right: clamp(-30px, 2vw, 40px);
-  top: clamp(70px, 10vw, 140px);
-  width: min(48vw, 620px);
-  transform: perspective(900px) rotateX(34deg) rotateZ(-12deg);
-  transform-origin: 50% 50%;
-  z-index: 0;
-}
-.page-route-motif__grid { transform: translateY(10px); opacity: .65; }
-.page-route-motif [data-page-route-line] { filter: drop-shadow(0 7px 0 color-mix(in srgb, var(--accent) 18%, transparent)); }
-.page-route-motif__grid line { stroke: var(--line); stroke-width: 1; }
-.page-route-motif path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
-.page-route-motif circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }
 
 /* ---------- Work: atlas index ---------- */
 .portfolio-atlas { background: var(--paper); max-width: none; padding-bottom: var(--sec-pad); padding-top: var(--sec-pad-sm); }
@@ -69,10 +51,6 @@
 .route-coda .eyebrow { color: var(--muted); }
 .route-coda h2 { color: var(--ink); font-size: var(--fs-h1); letter-spacing: -.026em; line-height: .98; margin: 20px auto 40px; max-width: 20ch; }
 .route-coda .button-link { margin-left: auto; margin-right: auto; }
-.route-coda .closing-route { color: var(--accent); display: block; height: auto; margin: clamp(44px, 7vw, 88px) auto 0; max-width: 620px; opacity: .85; width: min(56vw, 620px); }
-.route-coda .closing-route__grid line { stroke: var(--line); stroke-width: 1; }
-.route-coda .closing-route path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
-.route-coda .closing-route circle { fill: var(--paper); stroke: currentColor; stroke-width: 2; }
 
 /* ---------- About ---------- */
 .about-page .about { padding-bottom: var(--sec-pad-sm); padding-top: var(--sec-pad-sm); }
@@ -120,7 +98,6 @@
 @media (max-width: 699px) {
   .portfolio-hero { min-height: min(560px, calc(100svh - 64px)); padding-bottom: 72px; padding-top: 72px; }
   .portfolio-hero h1 { font-size: clamp(2.6rem, 13vw, 3.6rem); max-width: 9ch; }
-  .page-route-motif { height: 110px; opacity: .42; right: -20px; top: auto; bottom: 24px; width: min(78vw, 380px); }
   .other-practice a { font-size: 1.3rem; }
   .route-coda { padding-bottom: 72px; padding-top: 72px; }
   .route-coda h2 { font-size: clamp(2.4rem, 11vw, 3.2rem); }

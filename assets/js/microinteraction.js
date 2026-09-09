@@ -22,15 +22,21 @@
     var sections = Array.prototype.slice.call(document.querySelectorAll("main .cs-section"));
     if (sections.length < 3) return;
 
-    var nav = document.createElement("nav");
-    nav.className = "case-progress";
-    nav.setAttribute("aria-label", "Case study sections");
+    var nav = document.querySelector("[data-case-outline]");
+    var hasOutline = Boolean(nav);
+    if (!nav) {
+      nav = document.createElement("nav");
+      nav.className = "case-progress";
+      nav.setAttribute("aria-label", "Case study sections");
+    }
 
     sections.forEach(function (section, index) {
       var heading = section.querySelector("h2");
       var idx = section.querySelector(".idx");
       var title = heading ? heading.textContent.trim() : "Section " + (index + 1);
       if (!section.id) section.id = slug(title, "case-section-" + (index + 1));
+
+      if (hasOutline) return;
 
       var link = document.createElement("a");
       link.href = "#" + section.id;
@@ -39,14 +45,14 @@
       nav.appendChild(link);
     });
 
-    document.body.appendChild(nav);
+    if (!hasOutline) document.body.appendChild(nav);
     var links = Array.prototype.slice.call(nav.querySelectorAll("a"));
 
     function activate(section) {
       links.forEach(function (link) {
         var active = link.getAttribute("href") === "#" + section.id;
         link.classList.toggle("is-active", active);
-        if (active) link.setAttribute("aria-current", "step");
+        if (active) link.setAttribute("aria-current", hasOutline ? "location" : "step");
         else link.removeAttribute("aria-current");
       });
     }
@@ -69,6 +75,7 @@
 
     var tip = document.createElement("div");
     tip.className = "term-popover";
+    tip.id = "term-definition-popover";
     tip.setAttribute("role", "tooltip");
     tip.hidden = true;
     document.body.appendChild(tip);
@@ -92,7 +99,10 @@
 
     function show(term) {
       window.clearTimeout(closeTimer);
-      if (active && active !== term) active.setAttribute("aria-expanded", "false");
+      if (active && active !== term) {
+        active.setAttribute("aria-expanded", "false");
+        active.removeAttribute("aria-describedby");
+      }
       active = term;
       tip.textContent = "";
       var title = document.createElement("strong");
@@ -104,13 +114,17 @@
       tip.appendChild(body);
       tip.setAttribute("aria-label", title.textContent + ". " + body.textContent);
       term.setAttribute("aria-expanded", "true");
+      term.setAttribute("aria-describedby", tip.id);
       positionTerm(term);
     }
 
     function hideSoon(delay) {
       window.clearTimeout(closeTimer);
       closeTimer = window.setTimeout(function () {
-        if (active) active.setAttribute("aria-expanded", "false");
+        if (active) {
+          active.setAttribute("aria-expanded", "false");
+          active.removeAttribute("aria-describedby");
+        }
         active = null;
         tip.hidden = true;
       }, delay == null ? 90 : delay);
@@ -122,6 +136,7 @@
       term.setAttribute("role", "button");
       term.setAttribute("tabindex", "0");
       term.setAttribute("aria-expanded", "false");
+      term.setAttribute("aria-controls", tip.id);
 
       term.addEventListener("mouseenter", function () { show(term); });
       term.addEventListener("mouseleave", function () { hideSoon(110); });

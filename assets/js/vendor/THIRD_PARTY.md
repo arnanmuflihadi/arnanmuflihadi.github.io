@@ -7,8 +7,8 @@
 | Lenis | 1.3.23 | jsDelivr npm mirror | MIT | `1375bb5f82062a5ba4ccb2ec5b420ee41578abf4ec04673a6bcfa6714b95f885` |
 | Three.js home subset | 0.180.0 | npm registry; curated local IIFE build | MIT, `THREE-LICENSE.txt` | `cec9da7ff6f46d2ad9f97893c3d35dfeb97beb11bc4389b22b78040df69b1baa` |
 
-The Three.js subset loads on Home only. It supports the original procedural
-analyst and the original Contact map maquette, not downloaded models.
+The Three.js subset loads on Home, Work, About and News. It supports the original
+procedural analyst and contextual spatial models, not downloaded models.
 The map adds shape extrusion, a curved route, and node rings to that same build.
 No controls, model loaders,
 post-processing, physics, or new animation scheduler are included. Reproduce

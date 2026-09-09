@@ -12,6 +12,7 @@
     document.querySelector('.skip-link'),
     document.querySelector('.site-brand'),
     document.querySelector('main'),
+    document.querySelector('.cs-pager'),
     document.querySelector('.site-footer')
   ].filter(Boolean);
   const inertState = new Map();
@@ -108,7 +109,9 @@
   const menuFocusable = () => {
     if (!nav) return toggle ? [toggle] : [];
     const controls = Array.from(nav.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
-    return toggle ? [toggle].concat(controls) : controls;
+    // The burger follows the nav in the document. Preserve that order so
+    // native Tab traversal and the wrap-around guard use the same sequence.
+    return (toggle ? controls.concat(toggle) : controls).filter((control) => control.getClientRects().length > 0);
   };
 
   const applyMenuState = (open, options = {}) => {

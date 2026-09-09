@@ -11,7 +11,7 @@
   let userAmbientEnabled = true;
   let welcomeTimeline = null;
   let analyst3D = null;
-  let closingMap3D = null;
+  const spatialMaps3D = new Map();
   let heroArrived = false;
 
   const desktop = () => innerWidth >= 1100 && matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -347,62 +347,32 @@
     registerAmbient([loop], stage, ScrollTrigger);
   }
 
-  function createClosingRouteMotion(gsap, ScrollTrigger) {
-    const mapHost = document.querySelector('[data-closing-map]');
-    if (mapHost && window.createClosingMap3D) {
-      // Allocate the below-fold renderer only on first visibility. One shared
-      // ambient gate owns pause, tab visibility, user preference, and teardown.
-      const mapPlayback = {
+  function createSpatialMapMotion(gsap, ScrollTrigger) {
+    document.querySelectorAll('[data-closing-map]').forEach((host) => {
+      if (!window.createClosingMap3D) return;
+      // Each surface is allocated once and shares the existing ambient clock.
+      // Offscreen surfaces retain their context but perform no rendering work.
+      const playback = {
         play() {
-          closingMap3D ||= window.createClosingMap3D(mapHost, { gsap });
-          closingMap3D?.play();
+          if (!spatialMaps3D.has(host)) spatialMaps3D.set(host, window.createClosingMap3D(host, { gsap }));
+          spatialMaps3D.get(host)?.play();
         },
-        pause() { closingMap3D?.pause(); }
+        pause() { spatialMaps3D.get(host)?.pause(); }
       };
       if ('IntersectionObserver' in window) {
-        // Visibility, not scroll progress, controls this canvas. Observe the
-        // live box so breakpoint reflow cannot leave a stale scroll boundary
-        // and incorrectly freeze a visible map after rotating/resizing.
-        const bounds = mapHost.getBoundingClientRect();
-        const entry = { items: [mapPlayback], inView: bounds.bottom > 0 && bounds.top < innerHeight };
+        const bounds = host.getBoundingClientRect();
+        const entry = { items: [playback], inView: bounds.bottom > 0 && bounds.top < innerHeight };
         ambientEntries.push(entry);
         const observer = new IntersectionObserver(([observed]) => {
           entry.inView = observed.isIntersecting;
           updateAmbientPlayback();
         });
-        observer.observe(mapHost);
+        observer.observe(host);
         cleanup.push(() => observer.disconnect());
       } else {
-        registerAmbient([mapPlayback], mapHost, ScrollTrigger);
+        registerAmbient([playback], host, ScrollTrigger);
       }
-    }
-    const motif = document.querySelector('[data-closing-route]');
-    const path = motif?.querySelector('[data-closing-route-line]');
-    if (!motif || !path || (!desktop() && !compact())) return;
-    const nodes = Array.from(motif.querySelectorAll('circle'));
-    const loop = gsap.timeline({ paused: true, repeat: desktop() ? -1 : 1, repeatDelay: 1.3 });
-    gsap.set(path, { strokeDasharray: '0.72 0.28', strokeDashoffset: 0.9 });
-    gsap.set(nodes, { transformOrigin: '50% 50%' });
-    loop.to(path, { strokeDashoffset: 0, duration: 2.8, ease: 'sine.inOut' }, 0)
-      .to(nodes, { scale: 1.34, duration: 0.26, stagger: 0.18, yoyo: true, repeat: 1, ease: 'sine.inOut' }, 0.3)
-      .to(path, { strokeDashoffset: -0.22, duration: 1.8, ease: 'sine.inOut' }, 2.8);
-    registerAmbient([loop], motif, ScrollTrigger);
-  }
-
-  function createEditorialRouteMotion(gsap, ScrollTrigger) {
-    const hero = document.querySelector('.portfolio-page .portfolio-hero, .about-page .portfolio-hero');
-    const motif = hero?.querySelector('[data-page-route]');
-    const path = motif?.querySelector('[data-page-route-line]');
-    if (!hero || !motif || !path || (!desktop() && !compact())) return;
-
-    const nodes = Array.from(motif.querySelectorAll('circle'));
-    const loop = gsap.timeline({ paused: true, repeat: desktop() ? -1 : 0, repeatDelay: 1.5 });
-    gsap.set(path, { strokeDasharray: '0.74 0.26', strokeDashoffset: 0.82 });
-    gsap.set(nodes, { transformOrigin: '50% 50%' });
-    loop.to(path, { strokeDashoffset: 0, duration: 3.8, ease: 'sine.inOut' }, 0)
-      .to(nodes, { scale: 1.26, duration: 0.24, stagger: 0.2, yoyo: true, repeat: 1, ease: 'sine.inOut' }, 0.45)
-      .to(path, { strokeDashoffset: -0.18, duration: 1.7, ease: 'sine.inOut' }, 3.8);
-    registerAmbient([loop], hero, ScrollTrigger);
+    });
   }
 
   function createAboutFlowMotion(gsap, ScrollTrigger) {
@@ -439,7 +409,8 @@
     const projects = section ? Array.from(section.querySelectorAll('[data-home-project]')) : [];
     if (!section || !projects.length) return;
 
-    gsap.set(projects, { autoAlpha: 0, y: 28 });
+    // Project links remain in the keyboard/accessibility tree before entry.
+    gsap.set(projects, { y: 28 });
     ScrollTrigger.batch(projects, {
       start: 'top 82%',
       once: true,
@@ -847,7 +818,11 @@
     // Case heroes carry the page's LCP text. Keep them visible in the first
     // paint; the route curtain remains the entry transition while below-fold
     // evidence still receives the shared reveal treatment.
-    const items = gsap.utils.toArray('.reveal').filter((item) => !item.closest('.cs-hero') && !item.matches('.dflow'));
+    const interactive = 'a[href], button, input, select, textarea, summary, [tabindex]';
+    const items = gsap.utils.toArray('.reveal').filter((item) =>
+      !item.closest('.cs-hero') && !item.matches('.dflow') &&
+      !item.matches(interactive) && !item.querySelector(interactive)
+    );
     if (!items.length) return;
     document.documentElement.classList.remove('js-reveal');
     gsap.set(items, { autoAlpha: 0, y: 20 });
@@ -869,7 +844,7 @@
   function destroy() {
     ambientEntries.forEach((entry) => entry.items.forEach((item) => item.pause()));
     analyst3D?.pause();
-    closingMap3D?.pause();
+    spatialMaps3D.forEach((map) => map?.pause());
     cleanup.forEach((off) => off());
     cleanup = [];
     clearTimeout(refreshTimer);
@@ -901,11 +876,11 @@
       if (!eligible()) analyst3D?.static();
     }
 
-    closingMap3D?.resize();
+    spatialMaps3D.forEach((map) => map?.resize());
     if (!eligible()) {
       // On first reduced-motion visit the source-matched poster needs no GPU;
       // if the preference changes live, keep one still render of the same map.
-      closingMap3D?.static();
+      spatialMaps3D.forEach((map) => map?.static());
       return;
     }
     const { gsap, ScrollTrigger } = window;
@@ -925,8 +900,7 @@
     ctx = gsap.context(() => {
       if (hero && media) createHeroMotion(gsap, ScrollTrigger, hero, media);
       createMarqueeMotion(gsap, ScrollTrigger);
-      createClosingRouteMotion(gsap, ScrollTrigger);
-      createEditorialRouteMotion(gsap, ScrollTrigger);
+      createSpatialMapMotion(gsap, ScrollTrigger);
       createHomeSelectedMotion(gsap, ScrollTrigger);
       createAboutBridgeMotion(gsap, ScrollTrigger);
       createJourneyRail(gsap, ScrollTrigger);
@@ -967,8 +941,8 @@
     destroy();
     analyst3D?.destroy();
     analyst3D = null;
-    closingMap3D?.destroy();
-    closingMap3D = null;
+    spatialMaps3D.forEach((map) => map?.destroy());
+    spatialMaps3D.clear();
   });
   addEventListener('pageshow', (event) => { if (event.persisted) scheduleInit(); });
 })();

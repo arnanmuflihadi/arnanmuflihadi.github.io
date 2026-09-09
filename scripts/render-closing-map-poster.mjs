@@ -13,18 +13,36 @@ try {
   for (const file of ['vendor/three-hero.min.js', 'vendor/gsap.min.js', 'closing-map-3d.js']) {
     await page.addScriptTag({ path: resolve(root, 'assets/js', file) });
   }
-  const webp = await page.evaluate(() => {
-    const host = document.querySelector('.closing-map');
-    const map = window.createClosingMap3D(host, { gsap: window.gsap });
-    if (host.dataset.renderer !== 'webgl') throw new Error('Map could not render');
-    map.static();
-    const data = map.snapshot();
-    map.destroy();
-    return data;
-  });
-  const output = resolve(root, 'assets/img/redesign/closing-map-3d.webp');
-  await writeFile(output, Buffer.from(webp.split(',')[1], 'base64'));
-  console.log(`Exported source-matched static map: ${output}`);
+  const variants = {
+    city: 'closing-map-3d.webp',
+    district: 'district-map-3d.webp',
+    garden: 'garden-map-3d.webp',
+    river: 'river-map-3d.webp',
+    atlas: 'atlas-map-3d.webp',
+    method: 'method-map-3d.webp',
+    fieldnotes: 'fieldnotes-map-3d.webp',
+    inquiry: 'inquiry-map-3d.webp'
+  };
+  for (const [variant, filename] of Object.entries(variants)) {
+    // The work atlas is a horizontal transect. Preserve its wide framing in
+    // the fallback instead of baking unused portrait whitespace into the asset.
+    const height = variant === 'atlas' ? 462 : 720;
+    await page.setViewportSize({ width: 1200, height });
+    await page.locator('.closing-map').evaluate((host, value) => { host.style.height = `${value}px`; }, height);
+    const webp = await page.evaluate((name) => {
+      const host = document.querySelector('.closing-map');
+      host.dataset.mapVariant = name;
+      const map = window.createClosingMap3D(host, { gsap: window.gsap });
+      if (host.dataset.renderer !== 'webgl') throw new Error(`Map variant ${name} could not render`);
+      map.static();
+      const data = map.snapshot();
+      map.destroy();
+      return data;
+    }, variant);
+    const output = resolve(root, 'assets/img/redesign', filename);
+    await writeFile(output, Buffer.from(webp.split(',')[1], 'base64'));
+    console.log(`Exported source-matched ${variant} map: ${output}`);
+  }
 } finally {
   await browser.close();
 }
