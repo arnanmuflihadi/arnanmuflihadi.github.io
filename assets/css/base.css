@@ -58,6 +58,37 @@ h1, h2, h3, h4 {
 .text-link:hover span,
 .text-link:focus-visible span { transform: translate(2px, -2px); }
 
+/* Draw direction marks instead of relying on Unicode arrows. Some mobile
+   font stacks substitute colour emoji for those glyphs, which interrupts the
+   site's deliberately quiet editorial typography. */
+.ui-arrow {
+  --arrow-turn: 0deg;
+  background-color: currentColor;
+  color: inherit;
+  display: inline-block;
+  flex: 0 0 auto;
+  font-size: 0;
+  height: var(--arrow-size, 1rem);
+  overflow: hidden;
+  text-indent: -9999px;
+  vertical-align: -.1em;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 14 14 2M6 2h8v8' fill='none' stroke='black' stroke-width='1.65' stroke-linecap='square' stroke-linejoin='miter'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 14 14 2M6 2h8v8' fill='none' stroke='black' stroke-width='1.65' stroke-linecap='square' stroke-linejoin='miter'/%3E%3C/svg%3E") center / contain no-repeat;
+  transform: rotate(var(--arrow-turn));
+  transform-origin: 50% 50%;
+  transition: transform var(--dur-2) var(--ease), background-color var(--dur-2) var(--ease);
+  width: var(--arrow-size, 1rem);
+}
+.ui-arrow--se { --arrow-turn: 90deg; }
+.ui-arrow--up { --arrow-turn: -45deg; }
+.ui-arrow--right { --arrow-turn: 45deg; }
+.ui-arrow--left { --arrow-turn: -135deg; }
+.ui-arrow--down { --arrow-turn: 135deg; }
+.text-link:hover > .ui-arrow,
+.text-link:focus-visible > .ui-arrow,
+.atlas-row:hover .atlas-row__arrow,
+.atlas-row:focus-visible .atlas-row__arrow { transform: rotate(var(--arrow-turn)) translate(2px, -2px); }
+
 .button-link {
   align-items: center;
   background: var(--accent);
@@ -222,6 +253,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .js[data-route-entry] .page-curtain,
 .js[data-route-exit] .page-curtain { pointer-events: auto; visibility: visible; }
+/* A staggered curtain used to expose vertical slices of the destination
+   heading while it opened. Let the route label carry the handoff and reveal
+   the destination only after the final panel has cleared. */
+.js[data-route-entry] body > :is(main, .site-header, .site-footer, .journey-rail, .cs-pager) { opacity: 0; transition: none; }
+.js body > :is(main, .site-header, .site-footer, .journey-rail, .cs-pager) { transition: opacity .16s var(--ease); }
+@media (prefers-reduced-motion: reduce) {
+  .js body > :is(main, .site-header, .site-footer, .journey-rail, .cs-pager) { transition: none; }
+}
 /* No CSS transform here on purpose -- GSAP's yPercent caches whatever
    static transform an element has on its first gsap.set/to call and
    keeps stacking new yPercent values on top of it, so a CSS
@@ -259,14 +298,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   right: 0;
 }
 .page-curtain b {
-  align-items: center;
   color: var(--ink);
-  display: flex;
-  font: 600 clamp(2rem, 5vw, 3.8rem)/.92 var(--font-display);
-  inset: 0;
-  justify-content: center;
+  display: block;
+  font: 600 clamp(2rem, 5vw, 3.8rem)/1.08 var(--font-display);
+  inset: 50% 24px auto;
   letter-spacing: -.03em;
   position: absolute;
+  transform: translateY(-50%);
+  overflow-wrap: anywhere;
+  text-wrap: balance;
   text-align: center;
   visibility: hidden;
 }
@@ -411,14 +451,14 @@ html.welcome-intro-pending .site-header { z-index: 1150; }
 .atlas-row div > p:last-child { color: var(--ink-soft); font-size: var(--fs-md); line-height: 1.35; margin: 0; max-width: 32ch; }
 .atlas-row picture, .atlas-row > img { background: var(--surface); display: block; height: 156px; overflow: hidden; }
 .atlas-row picture img, .atlas-row > img { height: 100%; object-fit: cover; width: 100%; }
-.atlas-row__arrow { color: var(--accent); font-size: 22px; transition: transform var(--dur-1) var(--ease); }
+.atlas-row__arrow { color: var(--accent); font-size: 22px; }
 .atlas-row::before { background: var(--accent); content: ""; height: 1px; left: 0; position: absolute; top: 0; transition: width var(--dur-2) var(--ease); width: 0; }
 
 @media (hover: hover) and (pointer: fine) {
   .atlas-row:hover::before, .atlas-row:focus-visible::before { width: 100%; }
   .atlas-row:hover picture img, .atlas-row:hover > img,
   .atlas-row:focus-visible picture img, .atlas-row:focus-visible > img { transform: scale(1.03); }
-  .atlas-row:hover .atlas-row__arrow, .atlas-row:focus-visible .atlas-row__arrow { transform: translate(3px, -3px); }
+  .atlas-row:hover .atlas-row__arrow, .atlas-row:focus-visible .atlas-row__arrow { transform: rotate(var(--arrow-turn)) translate(3px, -3px); }
   .atlas-row picture img, .atlas-row > img { transition: transform var(--dur-3) var(--ease); will-change: transform; }
 }
 

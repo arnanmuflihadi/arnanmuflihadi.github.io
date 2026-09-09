@@ -25,6 +25,21 @@
     return Array.from(label).slice(0, 80).join('') || 'View page';
   };
 
+  // The same destination must carry the same title whether reached from
+  // the menu, a project card, or a contextual CTA.
+  const routeLabels = Object.freeze({
+    'index.html': 'Home',
+    'portfolio.html': 'Work',
+    'about.html': 'About',
+    'news.html': 'News',
+    'contact.html': 'Contact',
+    'project-transit.html': 'Transit access',
+    'project-pangan.html': 'Food networks',
+    'project-alphaearth-food.html': 'Earth observation',
+    'project-mbr.html': 'Urban morphology',
+    'project-cbd.html': 'Business centres'
+  });
+
   const classifyClick = (event, link) => {
     if (!link || !event || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return null;
     if (link.target || link.hasAttribute('download')) return null;
@@ -34,7 +49,8 @@
     try { url = new URL(link.href, location.href); } catch (_) { return null; }
     if (url.origin !== location.origin || url.hash || !/\.html$/i.test(url.pathname)) return null;
     if (url.pathname === location.pathname || /\/maps\//.test(url.pathname)) return null;
-    return { url, label: normalizeLabel(link.getAttribute('aria-label') || link.textContent) };
+    const pageName = url.pathname.split('/').pop();
+    return { url, label: routeLabels[pageName] || normalizeLabel(link.getAttribute('aria-label') || link.querySelector('h2, h3')?.textContent || link.textContent) };
   };
 
   window.SiteNavigationPolicy = Object.freeze({ classifyClick, normalizeLabel });

@@ -528,7 +528,11 @@
     const viewChip = document.createElement('span');
     viewChip.className = 'work-rail__view-chip';
     viewChip.setAttribute('aria-hidden', 'true');
-    viewChip.textContent = 'View case study ↗';
+    viewChip.textContent = 'View case study ';
+    const viewArrow = document.createElement('span');
+    viewArrow.className = 'ui-arrow';
+    viewArrow.setAttribute('aria-hidden', 'true');
+    viewChip.appendChild(viewArrow);
     stage.appendChild(viewChip);
     on(stage, 'click', () => { if (rows[active]) rows[active].click(); });
     rail.classList.add('work-rail--enhanced');
