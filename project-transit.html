@@ -151,11 +151,11 @@
 
     <div class="method-callout reveal">
       <span class="ms" aria-hidden="true">tips_and_updates</span>
-      <p><b>Read the method as decisions, not a wall of text.</b> Each panel keeps the short reasoning visible first; expand only the parts where you want the full modeling detail. Highlighted terms open concise definitions.</p>
+      <p><b>Method, in brief.</b> Each panel starts with the decision it documents; expand it for the full modeling detail. Highlighted terms open concise definitions.</p>
     </div>
 
     <div class="cs-prose reveal" data-method-collapsible>
-      <p><strong>Conceptual framework.</strong> The study adopts <em><span data-term="Place-based accessibility" data-term-definition="An accessibility view focused on the opportunities reachable from a place, combining land use, transport, time, and traveler assumptions.">place-based accessibility</span></em> (Geurs &amp; van Wee, 2004), which decomposes accessibility into four components: land use (where opportunities are located), transportation (how the network connects them), temporal (when service actually runs), and individual (who is traveling). The first three are modeled explicitly; the fourth is held constant as an average adult traveler. Among the four families of accessibility metrics, the <span data-term="Cumulative opportunities" data-term-definition="A transparent accessibility metric that counts destinations reachable within a fixed travel-time threshold.">cumulative opportunities</span> measure was chosen over gravity-decay and utility-based alternatives because it answers the question policymakers actually ask, &#x201C;how many facilities can a resident reach within 60 minutes?&#x201D;, and because every assumption behind it can be audited.</p>
+      <p><strong>Conceptual framework.</strong> The study adopts <em><span data-term="Place-based accessibility" data-term-definition="An accessibility view focused on the opportunities reachable from a place, combining land use, transport, time, and traveler assumptions.">place-based accessibility</span></em> (Geurs &amp; van Wee, 2004), which decomposes accessibility into four components: land use (where opportunities are located), transportation (how the network connects them), temporal (when service actually runs), and individual (who is traveling). The first three are modeled explicitly; the fourth is held constant as an average adult traveler. Among the four families of accessibility metrics, the <span data-term="Cumulative opportunities" data-term-definition="A transparent accessibility metric that counts destinations reachable within a fixed travel-time threshold.">cumulative opportunities</span> measure was chosen over gravity-decay and utility-based alternatives because it answers this study&rsquo;s stated question: &#x201C;how many facilities can a resident reach within 60 minutes?&#x201D; Its assumptions can be inspected on the page.</p>
       <p><strong>Origins and spatial units.</strong> The origin set is the 2,733 RW centroids, the smallest administrative unit with reliable boundaries in Jakarta. Scoring at RW level and then averaging up to the 261 urban villages reduces the Modifiable Areal Unit Problem (MAUP): each village score is built from many small samples instead of one arbitrary point. Every centroid also carries its RDTR zoning attribute from a spatial overlay, so accessibility can later be read against land-use designations.</p>
       <p><strong>Destinations and AHP weighting.</strong> A hospital does not matter the same as an ATM, so the 27 destination categories are weighted with the <span data-term="Analytic Hierarchy Process" data-term-definition="A pairwise-comparison method that converts expert or evidence-based priorities into normalized weights and checks consistency.">Analytic Hierarchy Process</span>. Seven criteria (Employment, Education, Healthcare, Transit-hub access, Food, Public services, Social-inclusion) were compared pairwise on Saaty&#x2019;s 1–9 scale from a literature-derived evidence-scoring matrix, cross-checked two ways (geometric-mean approximation vs. the exact principal eigenvector, agreeing to within 0.1 point) — Consistency Ratio CR = 0.008, far below the 0.10 acceptability threshold. Transit-hub access was then folded out of the operational index (rail stations cannot also be the destination the score is measuring, or it becomes circular) and the remainder renormalized, giving the weights actually used: <strong>Employment 31.0%, Healthcare 25.8%, Education 21.5%</strong> (Primary 10.1% + Secondary 11.4%), <strong>Food 11.6%, Public Services 5.9%, Parks/Social-inclusion 4.2%</strong>.</p>
       <p><strong>Routing model.</strong> Travel times come from r5py, the Python interface to Conveyal&#x2019;s R5, the reference engine for time-dependent multimodal routing on GTFS. The mode is TRANSIT + WALK, departing Wednesday 07:30 (a typical AM peak) with a 60-minute departure window. The window matters: R5 averages over many departure times, so a village&#x2019;s score does not hinge on luckily catching a single bus, the &#x201C;first-bus bias&#x201D; documented by Owen &amp; Levinson (2015). The matrix covers every RW × destination pair twice, once per network: <strong>Scenario A</strong> (163 backbone routes: rail + TransJakarta, no Mikrotrans) and <strong>Scenario B</strong> (262 backbone + Mikrotrans routes, including 99 Mikrotrans JAK feeder routes).</p>
@@ -163,7 +163,7 @@
 RawScore    = Σ [ A(rw,k) × w_AHP(k) ]   for k = 1..27
 Score(rw)   = (RawScore / S_max) × 100
 Δ(village)  = Score_B − Score_A</div>
-      <p><strong>Scoring and comparison.</strong> For each RW and category, the count of reachable destinations is multiplied by the category&#x2019;s AHP weight; the weighted sum is normalized 0–100 against the highest raw score observed anywhere, and RW scores are averaged to villages. Because both scenarios share identical origins, destinations, weights, and parameters, the difference Δ = B − A cleanly isolates what the feeder network adds.</p>
+      <p><strong>Scoring and comparison.</strong> For each RW and category, the count of reachable destinations is multiplied by the category&#x2019;s AHP weight; the weighted sum is normalized 0–100 against the highest raw score observed anywhere, and RW scores are averaged to villages. With identical origins, destinations, weights, and parameters, the difference Δ = B − A estimates the modeled contribution of the feeder-network scenario.</p>
       <p><strong>Spatial statistics and validation.</strong> <span data-term="Getis-Ord Gi*" data-term-definition="A local spatial statistic that tests whether high or low values cluster more strongly than expected by chance.">Getis-Ord Gi*</span> (KNN k = 6, 999 permutations) tests whether high and low Scenario B scores cluster more strongly than chance would allow. The Project AHP pipeline also reruns the composite index across 15-, 30-, 45-, 60-, and 75-minute cutoffs and tests multiple AHP weight vectors. The latest run reports that the Mikrotrans gain remains positive for every tested weight vector and cutoff, so the core Scenario B finding does not depend on a single time threshold or category-weight assumption.</p>
     </div>
   </section>
@@ -195,13 +195,13 @@ Score(rw)   = (RawScore / S_max) × 100
       <h2>Analysis</h2>
     </div>
     <div class="cs-prose reveal">
-      <p>AHP-weighted cumulative-opportunity scoring normalized to 0–100, then aggregated from RW to urban village. The Scenario A vs B comparison isolates the marginal impact of Mikrotrans, Getis-Ord Gi* detects statistically significant Scenario B clusters, and the latest Project AHP sensitivity outputs verify that the positive Mikrotrans gain holds across tested time cutoffs and AHP weight vectors.</p>
+      <p>AHP-weighted cumulative-opportunity scoring is normalized to 0–100, then aggregated from RW to urban village. The Scenario A vs B comparison estimates the modeled effect of Mikrotrans, Getis-Ord Gi* tests Scenario B clusters, and the reported sensitivity runs retain a positive Mikrotrans gain across the tested time cutoffs and AHP weight vectors.</p>
     </div>
 
     <section class="transit-scrolly reveal" data-transit-scrolly aria-labelledby="transit-story-title">
       <div class="scrolly-static-head">
         <h3 id="transit-story-title">From baseline access to feeder-network impact</h3>
-        <p>The analytical outputs are sequenced as one narrative from the latest Project AHP 60-minute case-study figure data: baseline accessibility, integrated network access, Mikrotrans uplift, accessibility categories, Getis-Ord Gi* clustering, and final synthesis.</p>
+        <p>The sequence reads the 60-minute case-study figures in order: baseline accessibility, integrated network access, Mikrotrans uplift, accessibility categories, Getis-Ord Gi* clustering, then a final synthesis.</p>
       </div>
 
       <div class="scrolly-static-container">
@@ -382,11 +382,11 @@ Score(rw)   = (RawScore / S_max) × 100
         </div>
         <div class="scrolly__step" data-num="75 : 77" data-label="Hot Spot : Cold Spot kelurahan">
           <span class="scrolly__step-idx">04</span>
-          <p><strong>A confirmed core-periphery divide.</strong> Getis-Ord Gi* identifies 75 hot-spot kelurahan and 77 cold-spot kelurahan at 95%+ confidence, so high and low access are structural clusters rather than isolated outliers.</p>
+          <p><strong>A clustered core-periphery pattern.</strong> Getis-Ord Gi* identifies 75 hot-spot kelurahan and 77 cold-spot kelurahan at 95%+ confidence. In this model output, high and low access cluster rather than appearing as isolated locations.</p>
         </div>
         <div class="scrolly__step" data-num="ρ=0.92–0.98" data-label="Rank stability, threshold & AHP sensitivity">
           <span class="scrolly__step-idx">05</span>
-          <p><strong>Robust results.</strong> Threshold sensitivity yields Spearman ρ = 0.92–0.98 across the 30/45/60-minute cutoffs, and the AHP weight-vector check keeps the Mikrotrans gain positive under every tested weighting.</p>
+          <p><strong>Sensitivity check.</strong> Threshold sensitivity yields Spearman ρ = 0.92–0.98 across the 30/45/60-minute cutoffs, and the AHP weight-vector check keeps the Mikrotrans gain positive under every tested weighting.</p>
         </div>
       </div>
     </div>
@@ -400,7 +400,7 @@ Score(rw)   = (RawScore / S_max) × 100
           <tr><td>Maximum</td><td class="num">73.62</td><td class="num">84.23</td><td class="num">+32.83</td></tr>
         </tbody>
       </table>
-      <p><strong>Conclusion:</strong> even with the most complete transit network, DKI Jakarta&#x2019;s accessibility ceiling stays below optimum (max 84.23/100) and remains starkly uneven. Getis-Ord Gi* identifies a broad central hot-spot cluster and a peripheral cold-spot ring, while places such as Pondok Ranggon remain effectively isolated within a 60-minute transit budget. The Mikrotrans feeder delivers a measurable but geographically uneven accessibility gain, strongest in Sukabumi Utara (+32.83), and the latest Project AHP sensitivity verdict keeps that gain positive across tested cutoffs and AHP weight vectors.</p>
+      <p><strong>Conclusion:</strong> In the modeled Scenario B network, the highest village score is 84.23/100 and access remains uneven. Getis-Ord Gi* identifies a central hot-spot cluster and a peripheral cold-spot ring; Pondok Ranggon records 2.47/100 within the 60-minute setting. Mikrotrans adds a positive but geographically uneven modeled gain, with the largest reported increase in Sukabumi Utara (+32.83). That gain remains positive in the reported cutoff and weight-vector sensitivity runs.</p>
     </div>
   </section>
 
