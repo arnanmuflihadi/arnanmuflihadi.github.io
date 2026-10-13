@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="case-study-document" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choosing where to visit: screening Bandung's café neighbourhoods · Arnan Muflihadi</title>
+<meta name="description" content="A screening dashboard for choosing which Bandung neighbourhoods to visit for a café: hexagon cells, visible limits, Pareto groups instead of a score, and a report that says what the data cannot tell you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap" rel="stylesheet"></noscript>
+<script>!function(){"use strict";try{var e=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",e==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}}();</script>
+<link rel="stylesheet" href="assets/css/tokens.css?v=2">
+<link rel="stylesheet" href="assets/css/base.css?v=13">
+<link rel="stylesheet" href="assets/css/style.css?v=85">
+
+<link rel="stylesheet" href="assets/css/case-studies.css?v=9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0c0d'/><circle cx='50' cy='50' r='16' fill='%23f4f4f3'/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Choosing where to visit: screening Bandung's café neighbourhoods · Arnan Muflihadi">
+<meta property="og:description" content="A screening dashboard for choosing which Bandung neighbourhoods to visit for a café: hexagon cells, visible limits, Pareto groups instead of a score, and a report that says what the data cannot tell you.">
+<meta property="og:url" content="https://arnanmuflihadi.github.io/project-bandung-cafe.html">
+<meta property="og:image" content="https://arnanmuflihadi.github.io/assets/img/bandung/map-light.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Choosing where to visit: screening Bandung's café neighbourhoods · Arnan Muflihadi">
+<meta name="twitter:description" content="A screening dashboard for choosing which Bandung neighbourhoods to visit for a café: hexagon cells, visible limits, Pareto groups instead of a score, and a report that says what the data cannot tell you.">
+<meta name="twitter:image" content="https://arnanmuflihadi.github.io/assets/img/bandung/map-light.webp">
+<style>
+  .bc-figs{display:grid;gap:clamp(14px,2vw,24px);margin:28px 0}
+  .bc-figs--two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bc-fig{margin:0}
+  .bc-fig img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+  .bc-fig figcaption{margin-top:8px;font-size:13px;line-height:1.55;color:var(--muted);max-width:62ch}
+  .bc-fig--phone img{max-width:340px}
+  .bc-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:26px 0}
+  .bc-facts strong{display:block;font:700 28px/1.1 var(--font-display,inherit);color:var(--ink)}
+  .bc-facts span{display:block;margin-top:4px;font-size:13px;line-height:1.5;color:var(--muted)}
+  @media (max-width:760px){.bc-figs--two,.bc-facts{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="top" class="secondary-page case-study-page" data-project="bandung-cafe">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page-curtain" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><b><span data-route-label></span><span class="page-curtain__dot">.</span></b></div>
+<script defer src="assets/js/transition-init.js?v=5"></script>
+
+<header class="site-header" data-site-header>
+  <a class="site-brand" href="index.html">ARNAN MUFLIHADI</a>
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+    <a href="portfolio.html" aria-current="page">WORK</a><a href="about.html">ABOUT</a><a href="news.html">NEWS</a><a href="contact.html">CONTACT</a><button class="theme-toggle" data-theme-toggle aria-label="Toggle colour theme"><span aria-hidden="true">◐</span></button><button class="nav-close" type="button" data-nav-close>Close <span aria-hidden="true">×</span></button>
+  </nav><button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+</header>
+<aside class="journey-rail journey-rail--chapters" aria-hidden="true" data-journey-rail>
+  <div class="journey-rail__line"><span class="journey-rail__progress" data-journey-progress></span></div>
+  <ol class="journey-rail__stops">
+    <li data-journey-stop data-target="#ch-01" style="--stop-top:0.0%"><span class="journey-rail__num">01</span><span class="journey-rail__label">Objective</span></li>
+    <li data-journey-stop data-target="#ch-02" style="--stop-top:20.0%"><span class="journey-rail__num">02</span><span class="journey-rail__label">Method</span></li>
+    <li data-journey-stop data-target="#ch-03" style="--stop-top:40.0%"><span class="journey-rail__num">03</span><span class="journey-rail__label">Data</span></li>
+    <li data-journey-stop data-target="#ch-04" style="--stop-top:60.0%"><span class="journey-rail__num">04</span><span class="journey-rail__label">The tool</span></li>
+    <li data-journey-stop data-target="#ch-05" style="--stop-top:80.0%"><span class="journey-rail__num">05</span><span class="journey-rail__label">What it cannot say</span></li>
+    <li data-journey-stop data-target="#ch-06" style="--stop-top:100.0%"><span class="journey-rail__num">06</span><span class="journey-rail__label">How it was checked</span></li>
+    </ol>
+</aside>
+
+<!-- ============ HERO ============ -->
+<main class="wrap" id="main" tabindex="-1">
+<header class="cs-hero">
+  <div class="topo cshero__topo" aria-hidden="true"></div>
+  <a href="portfolio.html" class="back">&larr; Back to projects</a>
+  <h1 class="reveal">Choosing where to visit: screening Bandung&#x2019;s caf&eacute; neighbourhoods</h1>
+  <p class="lede reveal">A caf&eacute; owner cannot walk every kelurahan. This tool narrows 1,599 hexagon cells to a shortlist worth a site visit, prints every limit that shaped the list, and says plainly what the data cannot know.</p>
+  <dl class="cs-meta reveal">
+    <div><dt class="sr-only">Study area</dt><dd>Kota Bandung &middot; cells of about 0.1 km&sup2;</dd></div>
+    <div><dt class="sr-only">Methods</dt><dd>Pareto grouping &middot; percentile positions &middot; limit sensitivity</dd></div>
+    <div><dt class="sr-only">Tools</dt><dd>Python &middot; FastAPI &middot; DuckDB &middot; Next.js &middot; MapLibre</dd></div>
+  </dl>
+  <nav class="case-outline" data-case-outline aria-label="On this page"><p>On this page</p><ol><li><a href="#ch-01"><span aria-hidden="true">01</span>Objective</a></li><li><a href="#ch-02"><span aria-hidden="true">02</span>Method</a></li><li><a href="#ch-03"><span aria-hidden="true">03</span>Data</a></li><li><a href="#ch-04"><span aria-hidden="true">04</span>The tool</a></li><li><a href="#ch-05"><span aria-hidden="true">05</span>What it cannot say</a></li><li><a href="#ch-06"><span aria-hidden="true">06</span>How it was checked</a></li></ol></nav>
+</header>
+
+<div>
+  <section class="cs-section" id="ch-01" tabindex="-1">
+    <div class="cs-section__head reveal"><span class="idx">01</span><h2>Objective</h2></div>
+    <div class="cs-prose reveal">
+      <p>Someone planning a new caf&eacute; in Bandung has a practical question before any lease: <strong>which neighbourhoods are worth walking this week?</strong> The tool answers that and nothing more. It screens places for a site visit; it does not say where to open, and it never predicts sales.</p>
+      <p>That boundary shapes every design choice. There is no rent, no footfall count and no sales figure in the data, so any single &ldquo;best location&rdquo; score would be invented. The product shows evidence, the limits applied to it, and what to check on foot.</p>
+    </div>
+    <div class="bc-facts reveal" aria-label="Scale of the screening">
+      <div><strong>1,599</strong><span>hexagon cells of about 0.1 km&sup2; inside Kota Bandung</span></div>
+      <div><strong>2 limits</strong><span>street connectivity and nearby caf&eacute;s, each printed with its real threshold and what it hides</span></div>
+      <div><strong>0 scores</strong><span>indicators stay separate; areas are grouped, never ranked by a composite</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section" id="ch-02" tabindex="-1">
+    <div class="cs-section__head reveal"><span class="idx">02</span><h2>Method</h2></div>
+    <div class="cs-prose reveal">
+      <ul>
+        <li><strong>Cells.</strong> The city is cut into hexagons, the shape of the data unit. Each cell carries separate indicators: young-adult exposure, residential population, commercial activity, tourism, nearby caf&eacute;s, built intensity and street connectivity.</li>
+        <li><strong>Position, honestly worded.</strong> An indicator is shown as where the cell sits among Bandung cells. When many cells share a value (about 43% record zero for some counts), the tool says &ldquo;at zero, as in about 43% of cells&rdquo; instead of a percentile that would overstate it.</li>
+        <li><strong>Limits the reader sets.</strong> A street-connectivity floor, a nearby-caf&eacute; ceiling and an optional district. Each is stated with its threshold (for example &ldquo;at most 17 recorded caf&eacute;s within 500 m&rdquo;), how many cells it hides, and a one-click way to remove it with the exact number of areas that would return.</li>
+        <li><strong>Groups, not a score.</strong> Cells that remain are grouped by Pareto dominance on the chosen indicators: group 1 holds the cells that no other cell beats on every indicator. The reader&rsquo;s priority orders each group. The list shows the best-placed cell of each kelurahan.</li>
+        <li><strong>Sensitivity.</strong> Each limit the brief sets is moved by 10 percentile points, up and down, to see whether an area still qualifies. A brief with no limits is told there was nothing to move.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cs-section" id="ch-03" tabindex="-1">
+    <div class="cs-section__head reveal"><span class="idx">03</span><h2>Data</h2></div>
+    <div class="cs-prose reveal">
+      <p>The indicators come from OpenStreetMap contributors (ODbL), Overture Maps Foundation places and buildings, WorldPop population surfaces (CC BY 4.0) and European Commission JRC layers (CC BY 4.0). Population is a modelled 1 km surface: the report states that it overstates the city centre and is never a headcount, and the interface calls it &ldquo;modelled people&rdquo; wherever a figure appears.</p>
+      <p>Some checks used licensed or municipal data. That data is not shown, derived into figures here, or republished on this site.</p>
+    </div>
+  </section>
+
+  <section class="cs-section" id="ch-04" tabindex="-1">
+    <div class="cs-section__head reveal"><span class="idx">04</span><h2>The tool</h2></div>
+    <div class="cs-prose reveal"><p>A numbered hexagon is the one device that ties the page together: the marker on the map and the badge in the list are the same mark with the same number. Everything else is kept quiet, with one pink reserved for what the reader has picked.</p></div>
+    <div class="bc-figs"><figure class="bc-fig reveal"><img src="assets/img/bandung/map-light.webp" width="1440" height="900" alt="Bandung map of hexagon cells with fifty numbered pink hexagon markers beside a list of limits" loading="lazy" decoding="async"><figcaption>The shortlist on the map. The cool ramp shows the chosen indicator; the numbered hexagons are the areas to inspect, in review order. The rail on the left keeps the limits that shaped the list open.</figcaption></figure></div>
+    <div class="bc-figs bc-figs--two">
+      <figure class="bc-fig reveal"><img src="assets/img/bandung/card.webp" width="1440" height="900" alt="The selected area card with the indicators and where each sits among Bandung cells" loading="lazy" decoding="async"><figcaption>The selected area states the position of each indicator, its value in plain units, and what each measure does not capture.</figcaption></figure>
+      <figure class="bc-fig reveal"><img src="assets/img/bandung/list.webp" width="1440" height="900" alt="A list of areas, each with a numbered hexagon and two small bars" loading="lazy" decoding="async"><figcaption>The list repeats the map&rsquo;s numbers. Each row has two small bars for the chosen indicators; a value many cells share reads &ldquo;tied&rdquo; or &ldquo;zero&rdquo;, not a percentile.</figcaption></figure>
+    </div>
+    <div class="bc-figs bc-figs--two">
+      <figure class="bc-fig reveal"><img src="assets/img/bandung/brief.webp" width="1440" height="900" alt="The brief: audience, street connectivity, nearby caf&eacute; setting and district" loading="lazy" decoding="async"><figcaption>The brief has four choices. Each says what it keeps, in numbers taken from the same masks the search uses.</figcaption></figure>
+      <figure class="bc-fig reveal"><img src="assets/img/bandung/map-dark.webp" width="1440" height="900" alt="The same shortlist in the dark theme" loading="lazy" decoding="async"><figcaption>The dark theme uses the same single-hue ramp; pink stays the only warm colour.</figcaption></figure>
+    </div>
+    <div class="bc-figs"><div class="bc-fig bc-fig--phone reveal"><img src="assets/img/bandung/mobile.webp" width="780" height="1688" alt="Phone layout with the map above the list" loading="lazy" decoding="async"><figcaption>On a phone the map comes first, with the first twenty markers and the one picked; the list keeps all fifty with the same numbers.</figcaption></div></div>
+  </section>
+
+  <section class="cs-section" id="ch-05" tabindex="-1">
+    <div class="cs-section__head reveal"><span class="idx">05</span><h2>What it cannot say</h2></div>
+    <div class="cs-prose reveal">
+      <ul>
+        <li>It has no rent, available units, frontage, observed passing activity or sales. The report lists these as things to check on site.</li>
+        <li>Caf&eacute; counts come from open map data, which misses some caf&eacute;s; a low count can mean few <em>mapped</em> caf&eacute;s. No caf&eacute; is confirmed open.</li>
+        <li>&ldquo;Young-adult exposure&rdquo; is where 15&ndash;34 year olds live. It does not locate campuses or count students, and the audience note says so where the choice is made.</li>
+        <li>A cell is about 0.1 km&sup2;; a kelurahan can stand for several, and the report names the one cell its figures describe.</li>
+        <li>Nothing here validates against business outcomes, because none were available. The tool is for choosing where to look, not for judging whether a caf&eacute; will work.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cs-section" id="ch-06" tabindex="-1">
+    <div class="cs-section__head reveal"><span class="idx">06</span><h2>How it was checked</h2></div>
+    <div class="cs-prose reveal">
+      <p>More than 850 automated tests run against the real data. The dashboard&rsquo;s own logic (headings, ordering, what removing a limit adds, how a value is printed) is executed under Node against live API responses, and the same value rule is required to print identically in the app and the printed report over every cell and indicator.</p>
+      <p>Several independent review passes, using separate AI reviewers given only the data and the documentation, re-derived the screening from the raw tables and read the reports as an outsider would. They found real defects: a value at the exact median described as &ldquo;below the midpoint&rdquo;, a report that described only the first of several compared areas, and a limit that was tested against a caf&eacute; ceiling the brief never set. Each was fixed and pinned by a test, and the tests themselves were checked by breaking the code on purpose and confirming a test failed.</p>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- ===== PAGER ===== -->
+<nav class="cs-pager" aria-label="Project navigation">
+  <a href="project-cbd.html"><span class="label">Previous project</span><span class="t">&larr; Mapping Indonesia&rsquo;s Business Centers with DBSCAN</span></a>
+  <a href="portfolio.html"><span class="label">Project index</span><span class="t">All projects &rarr;</span></a>
+</nav>
+
+<footer class="site-footer">
+  <span>&copy; <span data-year>2026</span> Arnan Muflihadi</span><span>Urban planner / GIS analyst</span><nav class="site-footer__links" aria-label="Footer links"><a href="mailto:arnanmuflihadi@gmail.com">Email</a><a href="#top">Back to top <span aria-hidden="true" class="ui-arrow ui-arrow--up"></span></a></nav>
+</footer>
+
+<script defer src="assets/js/main.js?v=26"></script>
+<script defer src="assets/js/collapsible.js?v=1"></script>
+<script defer src="assets/js/microinteraction.js?v=1"></script>
+
+<script defer src="assets/js/vendor/gsap.min.js"></script>
+<script defer src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="assets/js/site-shell.js?v=12"></script>
+<script defer src="assets/js/motion.js?v=44"></script>
+</body>
+</html>
