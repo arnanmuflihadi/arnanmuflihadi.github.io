@@ -1,0 +1,11 @@
+{
+  "removedNearTriangles": 728,
+  "removedFarTriangles": 104,
+  "sharedSourceTreesAndProps": true,
+  "newImageTextures": 0,
+  "unchangedTownGlbBodyBytes": 11084692,
+  "filteredGrassGeometries": 8,
+  "filteredGrassCpuArrayBytes": 4400832,
+  "hybridGlassCpuArrayBytes": 5747448,
+  "metric": "Actual retained typed-array byte lengths, not GPU/process memory"
+}

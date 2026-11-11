@@ -1,0 +1,56 @@
+{
+  "phase": "S1",
+  "creator": "Quaternius",
+  "source_page": "https://quaternius.com/packs/ultimatetexturedbuildings.html",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "attribution_required": false,
+  "files": [
+    {
+      "file": "validation/asset-selection-s1/acquired/quaternius-ultimate-buildings/1Story_GableRoof.fbx",
+      "bytes": 62492,
+      "sha256": "c663b53832ad0d686daac52b2f308a0b1d9034b7454c22b3bb28301cc4f6ba66",
+      "source": "https://drive.google.com/file/d/12NomxtrKA2m9C8_YQBvcYla_7cDkBCPA/view"
+    },
+    {
+      "file": "validation/asset-selection-s1/acquired/quaternius-ultimate-buildings/2Story_Balcony.fbx",
+      "bytes": 127116,
+      "sha256": "ef6b6bb610c41a4d1495c038d604b4a9a5f2212da9e85ff668ff81293d01afa4",
+      "source": "https://drive.google.com/drive/folders/1X3vM9MO2XvGEbM7pmA0LwsOz9PUW1Jrl (exact filename)"
+    },
+    {
+      "file": "validation/asset-selection-s1/acquired/quaternius-ultimate-buildings/2Story_Columns.fbx",
+      "bytes": 115852,
+      "sha256": "b5ee12181c821c0a13492ed2294793532e9137f15f4f9e4ddf94a3c5a2a7e4c6",
+      "source": "https://drive.google.com/file/d/1FVcUDiQ9DpnLFT5lxWEs1N7Yodzs7go-/view"
+    },
+    {
+      "file": "validation/asset-selection-s1/acquired/quaternius-ultimate-buildings/2Story_RoundRoof.fbx",
+      "bytes": 90844,
+      "sha256": "44115cc753dda2352f1904f064b8ecb5a8b45d81b6be38be4dfc8eba8ba5c564",
+      "source": "https://drive.google.com/file/d/1qMZUknI8ztZ2TolsMysWsfSyDyfj-_J1/view"
+    },
+    {
+      "file": "validation/asset-selection-s1/acquired/quaternius-ultimate-buildings/LICENSE-source.txt",
+      "bytes": 386,
+      "sha256": "cb79cd042e6557f5a68ebef10c0d9b60d9d11766f3c46c304a3d8843bc91d61a",
+      "source": "https://drive.google.com/file/d/1tSk6QjHVGJtpPSDuggR02LyNgO0bBG7g/view"
+    },
+    {
+      "file": "validation/asset-selection-s1/acquired/quaternius-ultimate-buildings/LICENSE.txt",
+      "bytes": 293,
+      "sha256": "e1c2b3743d165933d9ed791fc78be059b8e5a8371bade19e798a069cebcfd372",
+      "source": "https://drive.google.com/file/d/1tSk6QjHVGJtpPSDuggR02LyNgO0bBG7g/view"
+    },
+    {
+      "file": "validation/asset-selection-s1/acquired/quaternius-ultimate-buildings/Texture_Light.png",
+      "bytes": 3212,
+      "sha256": "ed8c7eea22f37be7ea98af3ed31078470e4cbb94a9724c0ce0f51ba5475899e8",
+      "source": "https://drive.google.com/file/d/1mhju4DYyluV21jtQh-LUWnaEpT5lN_GX/view"
+    }
+  ],
+  "new_model_files": 4,
+  "new_pack_count": 1,
+  "full_pack_downloaded": false,
+  "public_raw_redistribution": "Permitted for these CC0 files; not blanket clearance for catalog candidates"
+}

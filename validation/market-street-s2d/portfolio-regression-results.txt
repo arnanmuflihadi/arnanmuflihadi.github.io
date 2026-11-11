@@ -1,0 +1,24 @@
+✔ registry contains six unique, existing research routes (1.489291ms)
+✔ URL roundtrip preserves hosting path, hash, unrelated parameters and project context (1.256042ms)
+✔ invalid deep links and saved mission values are sanitized (0.264583ms)
+✔ collision prevents tunnelling, permits wall sliding and bounds the district (1.653416ms)
+✔ both landmark focus positions are safe and reachable from the spawn (9.480084ms)
+✔ player controls move, sprint, turn, animate and stop against real collision data (1.782583ms)
+✔ camera pulls ahead of a building behind the player (1.094ms)
+✔ bounded substep movement cannot tunnel through a major building (1.120166ms)
+✔ camera swept line detects walls and passes above low furniture (0.117833ms)
+✔ camera recovers behind a player near a wall without NaN or wall penetration (1.797917ms)
+✔ imported character walks, runs, damps and stops against obstacles (25.88825ms)
+✔ scene core stays independent of portfolio DOM and legacy missions; art-review route remains noindex (0.491625ms)
+✔ unobstructed camera stays outside the character at every review viewpoint (0.527583ms)
+✔ vaulted roof has outward upper and lower surface normals (0.912583ms)
+✔ actual authored district has safe viewpoints and walkable routes between them (50.426917ms)
+✔ feet follow paving and the rising station access ramp (0.329833ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 200.005167

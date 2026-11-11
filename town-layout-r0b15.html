@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Transit Kingdom — Town layout study</title><link rel="stylesheet" href="assets/css/town-layout.css?v=1"></head>
+<body><header><a href="index.html?experience=adventure&amp;project=mbr&amp;build=73">Return to the landscape</a><span>AR(N)AN / Transit Kingdom</span><a href="docs/town-composition-review/index.html">Composition review</a></header>
+<main data-town-review><canvas tabindex="0" aria-label="Town layout preview. WASD to move, Shift to run, Space to jump; drag or Q and R to turn the camera in third-person view."></canvas>
+<aside id="town-panel"><p>R0-B1.5 · Reversible planning preview</p><h1>The market approach</h1><p>Ten commercial envelopes frame a pedestrian street, a shared square and the Atlas Guild. Planning volumes only; owner review pending.</p>
+<label>Camera<select data-view></select></label><label><input type="checkbox" data-preview checked> Show temporary town layer</label><label><input type="checkbox" data-labels checked> Plan annotations</label>
+<details><summary>Check a walking route</summary><label>Journey<select data-route></select></label><button data-start>Start route check</button><label><input type="checkbox" data-bearing checked> Assist route bearing while I move</label><p>Hold W to walk, Shift + W to run. Bearing assistance steers toward the next waypoint; movement and jumps still use the existing player controller. Uncheck for free exploration.</p><output data-navigation>No check started.</output></details>
+<details><summary>Atlas Guild research shelves</summary><p>Real studies, independent of the fictional town.</p><nav data-research></nav></details>
+<details><summary>Measured scene data</summary><pre data-diagnostics>Preparing the island…</pre></details>
+<p role="status" data-status>Loading the approved landscape…</p><button data-retry hidden>Retry landscape loading</button></aside>
+<button class="panel-toggle" data-panel aria-expanded="true" aria-controls="town-panel">Hide panel</button><div data-plan-labels aria-hidden="true"></div>
+<div class="place-name"><span data-place>Transit Kingdom</span><small>Temporary blockout · owner approval pending</small></div>
+<div class="review-controls"><a data-guild-link hidden href="project-transit.html">Atlas Guild · read the transit study</a><button data-pause aria-pressed="false">Pause atmosphere</button><label>Quality<select data-quality><option value="standard">Standard</option><option value="eco">Eco</option></select></label></div>
+<div class="touch-controls"><button data-move="w" aria-label="Move forward">↑</button><button data-move="a" aria-label="Move left">←</button><button data-move="s" aria-label="Move backward">↓</button><button data-move="d" aria-label="Move right">→</button><button data-combat-action="jump">Jump</button></div></main>
+<script type="module" src="assets/js/town-layout/showcase.js?v=composition-junction-final"></script></body></html>

@@ -1,0 +1,185 @@
+{
+  "phone390": {
+    "controls": [
+      {
+        "height": 44,
+        "label": "Use light mode",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Close ×",
+        "width": 58.25
+      },
+      {
+        "height": 44,
+        "label": "Read the atlas",
+        "width": 98.734375
+      },
+      {
+        "height": 44,
+        "label": "Open menu",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "EFind a guide or landmark",
+        "width": 362
+      },
+      {
+        "height": 44,
+        "label": "SpaceJump",
+        "width": 177.5
+      },
+      {
+        "height": 44,
+        "label": "Controls / pause",
+        "width": 177.5
+      },
+      {
+        "height": 44,
+        "label": "Walk forward",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Walk left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Walk backward",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Walk right",
+        "width": 44
+      }
+    ],
+    "height": 844,
+    "overflow": false,
+    "width": 390,
+    "world": {
+      "animationTime": "0.9837008344650187",
+      "cameraY": "22.846",
+      "characterReady": "true",
+      "districtAssets": "{\"world\":\"Transit Kingdom / Landscape\",\"revision\":\"R0A.63\",\"terrainOnly\":true,\"architectureInstances\":0,\"reservations\":{\"skyport\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":9,\"constructed\":false},\"station\":{\"x\":-5,\"z\":5,\"y\":21,\"radius\":8,\"constructed\":false},\"settlement\":{\"x\":32,\"z\":12,\"y\":22,\"radius\":11,\"constructed\":false},\"overlook\":{\"x\":-80,\"z\":5,\"y\":32,\"radius\":5,\"constructed\":false,\"natural\":true},\"dragon\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":6.5,\"constructed\":false}},\"imported\":{\"tree\":145,\"fern\":710,\"hangingFern\":42},\"terrain\":{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85},\"vegetationBatches\":12,\"palms\":10,\"grassBlades\":27444,\"files\":{\"requests\":2,\"cachedFiles\":2,\"loadedFiles\":2},\"geometry\":{\"meshes\":40,\"triangles\":1276069,\"geometries\":23,\"materials\":36,\"textures\":4,\"missingTextures\":[]},\"surfaceTriangles\":26416,\"sourceFiles\":[\"canopy-tree.glb\",\"fern.glb\"],\"cloudCount\":40,\"settlement\":null}",
+      "explorerLoadMs": "415.80",
+      "firstWorldFrameMs": "413.10",
+      "grounded": "true",
+      "initialWorldLoadMs": "149.70",
+      "interactionMode": "adventure",
+      "islandDimensions": "{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85}",
+      "jumpCount": "0",
+      "jumpPhase": "grounded",
+      "landingCount": "0",
+      "lenisPrevent": "",
+      "livingWorld": "",
+      "locomotion": "Idle",
+      "mode": "adventure",
+      "npcCount": "1",
+      "npcReady": "true",
+      "paused": "false",
+      "performanceEvidence": "{\"samples\":600,\"meanFrameMs\":8.916666666666666,\"p95FrameMs\":16.5,\"measuredFps\":112.14953271028038,\"walking\":{\"samples\":0,\"meanFrameMs\":0,\"p95FrameMs\":0,\"measuredFps\":0},\"meanRenderSubmissionMs\":0.46883333327869575,\"drawCalls\":47,\"triangles\":1289747,\"memory\":{\"geometries\":48,\"textures\":16,\"programs\":20},\"viewport\":[390,784],\"drawingBuffer\":[526,1058],\"pixelRatio\":1.35,\"shadows\":true,\"mode\":\"adventure\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\",\"metric\":\"Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only\"}",
+      "playerX": "27.000",
+      "playerY": "16.030",
+      "playerZ": "57.000",
+      "reducedMotion": "false",
+      "rendererCount": "1",
+      "reviewEvidence": "{\"view\":\"live\",\"camera\":{\"position\":[27,22.845983976558152,66.26001350148935],\"quaternion\":[-0.23334293573562226,0,0,0.9723945055080685],\"fov\":60,\"aspect\":0.49744897959183676},\"player\":[27,16.030228493031395,57],\"sceneId\":\"7821c597-101c-492c-bae6-fd5191dd461d\",\"worldId\":\"transit-landscape-r0a\"}",
+      "sceneId": "7821c597-101c-492c-bae6-fd5191dd461d",
+      "sceneryReady": "true",
+      "selectedProject": "mbr",
+      "totalReadyMs": "570.40",
+      "transferEvidence": "[{\"file\":\"canopy-tree.glb\",\"transferBytes\":0,\"encodedBytes\":719224,\"durationMs\":3},{\"file\":\"fern.glb\",\"transferBytes\":0,\"encodedBytes\":104876,\"durationMs\":1.7999999970197678},{\"file\":\"urban-explorer.glb\",\"transferBytes\":0,\"encodedBytes\":1581480,\"durationMs\":6},{\"file\":\"city-resident.glb\",\"transferBytes\":300,\"encodedBytes\":1186388,\"durationMs\":6.399999998509884},{\"file\":\"jump-animations.glb\",\"transferBytes\":300,\"encodedBytes\":267260,\"durationMs\":4.899999998509884}]",
+      "verticalVelocity": "0",
+      "worldId": "transit-landscape-r0a",
+      "worldReady": "true"
+    }
+  },
+  "phoneMoved": {
+    "animationTime": "0.3484673174931993",
+    "cameraY": "22.817",
+    "characterReady": "true",
+    "districtAssets": "{\"world\":\"Transit Kingdom / Landscape\",\"revision\":\"R0A.63\",\"terrainOnly\":true,\"architectureInstances\":0,\"reservations\":{\"skyport\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":9,\"constructed\":false},\"station\":{\"x\":-5,\"z\":5,\"y\":21,\"radius\":8,\"constructed\":false},\"settlement\":{\"x\":32,\"z\":12,\"y\":22,\"radius\":11,\"constructed\":false},\"overlook\":{\"x\":-80,\"z\":5,\"y\":32,\"radius\":5,\"constructed\":false,\"natural\":true},\"dragon\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":6.5,\"constructed\":false}},\"imported\":{\"tree\":145,\"fern\":710,\"hangingFern\":42},\"terrain\":{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85},\"vegetationBatches\":12,\"palms\":10,\"grassBlades\":27444,\"files\":{\"requests\":2,\"cachedFiles\":2,\"loadedFiles\":2},\"geometry\":{\"meshes\":40,\"triangles\":1276069,\"geometries\":23,\"materials\":36,\"textures\":4,\"missingTextures\":[]},\"surfaceTriangles\":26416,\"sourceFiles\":[\"canopy-tree.glb\",\"fern.glb\"],\"cloudCount\":40,\"settlement\":null}",
+    "explorerLoadMs": "415.80",
+    "firstWorldFrameMs": "413.10",
+    "grounded": "true",
+    "initialWorldLoadMs": "149.70",
+    "interactionMode": "adventure",
+    "islandDimensions": "{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85}",
+    "jumpCount": "0",
+    "jumpPhase": "grounded",
+    "landingCount": "0",
+    "lenisPrevent": "",
+    "livingWorld": "",
+    "locomotion": "Walk",
+    "mode": "adventure",
+    "npcCount": "1",
+    "npcReady": "true",
+    "paused": "false",
+    "performanceEvidence": "{\"samples\":600,\"meanFrameMs\":8.805666666666657,\"p95FrameMs\":15.89999999999418,\"measuredFps\":113.56323579513206,\"walking\":{\"samples\":41,\"meanFrameMs\":8.941463414634288,\"p95FrameMs\":15.900000000023285,\"measuredFps\":111.83851609383346},\"meanRenderSubmissionMs\":0.4746666666741172,\"drawCalls\":47,\"triangles\":1289747,\"memory\":{\"geometries\":48,\"textures\":16,\"programs\":20},\"viewport\":[390,784],\"drawingBuffer\":[526,1058],\"pixelRatio\":1.35,\"shadows\":true,\"mode\":\"adventure\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\",\"metric\":\"Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only\"}",
+    "playerX": "29.109",
+    "playerY": "16.001",
+    "playerZ": "57.000",
+    "reducedMotion": "false",
+    "rendererCount": "1",
+    "reviewEvidence": "{\"view\":\"live\",\"camera\":{\"position\":[29.06109843600602,22.81668306375028,66.26001293823214],\"quaternion\":[-0.23334598345112637,-0.002502656843749431,-0.0006005663379484297,0.9723903681320701],\"fov\":60,\"aspect\":0.49744897959183676},\"player\":[29.108764042377132,16.00085329362507,57],\"sceneId\":\"7821c597-101c-492c-bae6-fd5191dd461d\",\"worldId\":\"transit-landscape-r0a\"}",
+    "sceneId": "7821c597-101c-492c-bae6-fd5191dd461d",
+    "sceneryReady": "true",
+    "selectedProject": "mbr",
+    "totalReadyMs": "570.40",
+    "transferEvidence": "[{\"file\":\"canopy-tree.glb\",\"transferBytes\":0,\"encodedBytes\":719224,\"durationMs\":3},{\"file\":\"fern.glb\",\"transferBytes\":0,\"encodedBytes\":104876,\"durationMs\":1.7999999970197678},{\"file\":\"urban-explorer.glb\",\"transferBytes\":0,\"encodedBytes\":1581480,\"durationMs\":6},{\"file\":\"city-resident.glb\",\"transferBytes\":300,\"encodedBytes\":1186388,\"durationMs\":6.399999998509884},{\"file\":\"jump-animations.glb\",\"transferBytes\":300,\"encodedBytes\":267260,\"durationMs\":4.899999998509884}]",
+    "verticalVelocity": "0",
+    "worldId": "transit-landscape-r0a",
+    "worldReady": "true"
+  },
+  "motionOn": {
+    "paused": "true",
+    "reduced": "true"
+  },
+  "phone320": {
+    "height": 720,
+    "overflow": false,
+    "width": 320,
+    "world": {
+      "animationTime": "0.23933432674403166",
+      "cameraY": "22.817",
+      "characterReady": "true",
+      "districtAssets": "{\"world\":\"Transit Kingdom / Landscape\",\"revision\":\"R0A.63\",\"terrainOnly\":true,\"architectureInstances\":0,\"reservations\":{\"skyport\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":9,\"constructed\":false},\"station\":{\"x\":-5,\"z\":5,\"y\":21,\"radius\":8,\"constructed\":false},\"settlement\":{\"x\":32,\"z\":12,\"y\":22,\"radius\":11,\"constructed\":false},\"overlook\":{\"x\":-80,\"z\":5,\"y\":32,\"radius\":5,\"constructed\":false,\"natural\":true},\"dragon\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":6.5,\"constructed\":false}},\"imported\":{\"tree\":145,\"fern\":710,\"hangingFern\":42},\"terrain\":{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85},\"vegetationBatches\":12,\"palms\":10,\"grassBlades\":27444,\"files\":{\"requests\":2,\"cachedFiles\":2,\"loadedFiles\":2},\"geometry\":{\"meshes\":40,\"triangles\":1276069,\"geometries\":23,\"materials\":36,\"textures\":4,\"missingTextures\":[]},\"surfaceTriangles\":26416,\"sourceFiles\":[\"canopy-tree.glb\",\"fern.glb\"],\"cloudCount\":40,\"settlement\":null}",
+      "explorerLoadMs": "415.80",
+      "firstWorldFrameMs": "413.10",
+      "grounded": "true",
+      "initialWorldLoadMs": "149.70",
+      "interactionMode": "adventure",
+      "islandDimensions": "{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85}",
+      "jumpCount": "0",
+      "jumpPhase": "grounded",
+      "landingCount": "0",
+      "lenisPrevent": "",
+      "livingWorld": "",
+      "locomotion": "Idle",
+      "mode": "adventure",
+      "npcCount": "1",
+      "npcReady": "true",
+      "paused": "false",
+      "performanceEvidence": "{\"samples\":600,\"meanFrameMs\":9.25,\"p95FrameMs\":16.70000000001164,\"measuredFps\":108.10810810810811,\"walking\":{\"samples\":144,\"meanFrameMs\":8.622222222222263,\"p95FrameMs\":9.39999999999418,\"measuredFps\":115.97938144329842},\"meanRenderSubmissionMs\":0.47266666671882074,\"drawCalls\":48,\"triangles\":1289915,\"memory\":{\"geometries\":48,\"textures\":16,\"programs\":20},\"viewport\":[390,784],\"drawingBuffer\":[526,1058],\"pixelRatio\":1.35,\"shadows\":true,\"mode\":\"adventure\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\",\"metric\":\"Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only\"}",
+      "playerX": "29.118",
+      "playerY": "16.001",
+      "playerZ": "57.000",
+      "reducedMotion": "false",
+      "rendererCount": "1",
+      "reviewEvidence": "{\"view\":\"live\",\"camera\":{\"position\":[29.11787031493204,22.8166661671448,66.26001350148934],\"quaternion\":[-0.23334293573562243,0,0,0.9723945055080685],\"fov\":60,\"aspect\":0.48484848484848486},\"player\":[29.11787031493204,16.000910683618052,57],\"sceneId\":\"7821c597-101c-492c-bae6-fd5191dd461d\",\"worldId\":\"transit-landscape-r0a\"}",
+      "sceneId": "7821c597-101c-492c-bae6-fd5191dd461d",
+      "sceneryReady": "true",
+      "selectedProject": "mbr",
+      "totalReadyMs": "570.40",
+      "transferEvidence": "[{\"file\":\"canopy-tree.glb\",\"transferBytes\":0,\"encodedBytes\":719224,\"durationMs\":3},{\"file\":\"fern.glb\",\"transferBytes\":0,\"encodedBytes\":104876,\"durationMs\":1.7999999970197678},{\"file\":\"urban-explorer.glb\",\"transferBytes\":0,\"encodedBytes\":1581480,\"durationMs\":6},{\"file\":\"city-resident.glb\",\"transferBytes\":300,\"encodedBytes\":1186388,\"durationMs\":6.399999998509884},{\"file\":\"jump-animations.glb\",\"transferBytes\":300,\"encodedBytes\":267260,\"durationMs\":4.899999998509884}]",
+      "verticalVelocity": "0",
+      "worldId": "transit-landscape-r0a",
+      "worldReady": "true"
+    }
+  },
+  "limitations": "Viewport emulation on this Mac, not a physical phone benchmark."
+}

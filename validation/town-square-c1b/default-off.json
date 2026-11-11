@@ -1,0 +1,22 @@
+{
+  "mode": "editorial",
+  "renderers": "1",
+  "resources": [
+    {
+      "durationMs": 13.800000011920927,
+      "encodedBytes": 719224,
+      "file": "canopy-tree.glb",
+      "transferBytes": 719524
+    },
+    {
+      "durationMs": 9,
+      "encodedBytes": 104876,
+      "file": "fern.glb",
+      "transferBytes": 105176
+    }
+  ],
+  "scene": "3c2893c9-e94f-43a1-b334-c6745d87f3ef",
+  "sceneryReady": "true",
+  "world": "transit-landscape-r0a",
+  "townPanel": 0
+}

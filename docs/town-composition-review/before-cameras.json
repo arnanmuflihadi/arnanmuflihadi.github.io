@@ -1,0 +1,182 @@
+[
+  {
+    "file": "1-arrival.jpg",
+    "view": "arrival",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-final-validation-5-evidence#arrival",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        27,
+        18.799999618530272,
+        60
+      ],
+      "quaternion": [
+        0.09089629882679906,
+        -0.054078418268728314,
+        0.004943316048475933,
+        0.9943786759396978
+      ]
+    },
+    "viewport": [
+      1280,
+      720
+    ],
+    "canvas": [
+      1280,
+      658
+    ],
+    "drawingBuffer": [
+      1280,
+      658
+    ],
+    "effectiveDPR": 1,
+    "quality": "standard",
+    "lighting": "Unchanged R0-A3; exposure 0.96"
+  },
+  {
+    "file": "2-market.jpg",
+    "view": "market",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-final-validation-5-evidence#market",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        38,
+        22.62500059294542,
+        30
+      ],
+      "quaternion": [
+        0.05484596083545849,
+        0.2190410408094441,
+        -0.012333004270902248,
+        0.9740948824559158
+      ]
+    },
+    "viewport": [
+      1280,
+      720
+    ],
+    "canvas": [
+      1280,
+      658
+    ],
+    "drawingBuffer": [
+      1280,
+      658
+    ],
+    "effectiveDPR": 1,
+    "quality": "standard",
+    "lighting": "Unchanged R0-A3; exposure 0.96"
+  },
+  {
+    "file": "3-square.jpg",
+    "view": "square",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-final-validation-5-evidence#square",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        32,
+        23.949999237060545,
+        20
+      ],
+      "quaternion": [
+        0.12196656553041352,
+        0.2647871989399506,
+        -0.033782782911756876,
+        0.9559658046964794
+      ]
+    },
+    "viewport": [
+      1280,
+      720
+    ],
+    "canvas": [
+      1280,
+      658
+    ],
+    "drawingBuffer": [
+      1280,
+      658
+    ],
+    "effectiveDPR": 1,
+    "quality": "standard",
+    "lighting": "Unchanged R0-A3; exposure 0.96"
+  },
+  {
+    "file": "4-aerial.jpg",
+    "view": "aerial",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-final-validation-5-evidence#aerial",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        125,
+        115,
+        155
+      ],
+      "quaternion": [
+        -0.23159692545805735,
+        0.331366479550536,
+        0.08426437365451625,
+        0.9107461971818884
+      ]
+    },
+    "viewport": [
+      1280,
+      720
+    ],
+    "canvas": [
+      1280,
+      658
+    ],
+    "drawingBuffer": [
+      1280,
+      658
+    ],
+    "effectiveDPR": 1,
+    "quality": "standard",
+    "lighting": "Unchanged R0-A3; exposure 0.96"
+  },
+  {
+    "file": "side-preservation.jpg",
+    "view": "side",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-final-validation-5-evidence#side",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 53,
+      "position": [
+        -145,
+        5,
+        155
+      ],
+      "quaternion": [
+        -0.04435940320584239,
+        -0.3603381248366482,
+        -0.01715783526871181,
+        0.9316084412591598
+      ]
+    },
+    "viewport": [
+      1280,
+      720
+    ],
+    "canvas": [
+      1280,
+      658
+    ],
+    "drawingBuffer": [
+      1280,
+      658
+    ],
+    "effectiveDPR": 1,
+    "quality": "standard",
+    "lighting": "Unchanged R0-A3; exposure 0.96"
+  }
+]

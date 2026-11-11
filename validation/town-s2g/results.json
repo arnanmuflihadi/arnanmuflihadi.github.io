@@ -1,0 +1,644 @@
+{
+  "phase": "S2-G",
+  "status": "Owner approval pending; no deployment; A retained by default",
+  "checkpoint": {
+    "ref": "refs/heads/codex/checkpoint-s2f-before-s2g",
+    "commit": "05c9912153bdc80b85c1bd0ead9a5534fe2dc5ed",
+    "parent": "dffaf125c1999615852772093f04255f5ebb48e4",
+    "current_branch_unchanged": "codex/floating-atlas-r0",
+    "original_index_unchanged": true,
+    "protected_files": 3166,
+    "scope": "Full non-ignored working tree checkpoint; no checkout, reset, stash or deployment."
+  },
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "dpr": 1,
+    "exposure": 0.96,
+    "shadows": true,
+    "shadowType": 2,
+    "antialias": true,
+    "near": 0.12,
+    "far": 1600,
+    "glass": "A (A authored, B alpha, C hybrid)"
+  },
+  "final_camera_benchmarks": [
+    {
+      "enabled": true,
+      "glassVariant": "A",
+      "polished": true,
+      "frames": 790,
+      "medianMs": 16.599999999998545,
+      "p95Ms": 17.900000000001455,
+      "renderCpuMedianMs": 3.699999988079071,
+      "renderCpuP95Ms": 4.5,
+      "drawCallRange": [
+        283,
+        587
+      ],
+      "triangleRange": [
+        2596196,
+        4143537
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": true,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 959,
+      "medianMs": 11.19999999999709,
+      "p95Ms": 17,
+      "renderCpuMedianMs": 1.5,
+      "renderCpuP95Ms": 1.800000011920929,
+      "drawCallRange": [
+        283,
+        390
+      ],
+      "triangleRange": [
+        2596196,
+        2730590
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": true,
+      "glassVariant": "C",
+      "polished": true,
+      "frames": 772,
+      "medianMs": 16.60000000000582,
+      "p95Ms": 22.10000000000582,
+      "renderCpuMedianMs": 3.699999988079071,
+      "renderCpuP95Ms": 4.5,
+      "drawCallRange": [
+        284,
+        589
+      ],
+      "triangleRange": [
+        2596196,
+        4143113
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": false,
+      "glassVariant": "A",
+      "polished": true,
+      "frames": 1123,
+      "medianMs": 11.10000000000582,
+      "p95Ms": 16.70000000001164,
+      "renderCpuMedianMs": 0.699999988079071,
+      "renderCpuP95Ms": 0.9000000059604645,
+      "drawCallRange": [
+        138,
+        150
+      ],
+      "triangleRange": [
+        2340886,
+        2362014
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    }
+  ],
+  "glass_path_study_before_buffer_deduplication": [
+    {
+      "name": "main",
+      "glassVariant": "A",
+      "polished": true,
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 2390,
+      "seconds": 33.126300000000164,
+      "distanceMetres": 69.64080747791185,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        36.00000000000207,
+        20.75936011979112,
+        0.1058572704374737
+      ],
+      "maxFootRise": 0.174285888671875,
+      "maxFootDrop": 0.16902422904968262,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.580812339648232,
+      "frameTiming": {
+        "medianMs": 16.39999999999418,
+        "p95Ms": 22.20000000001164
+      },
+      "allPassDraws": [
+        250,
+        602
+      ],
+      "allPassTriangles": [
+        2502762,
+        4164471
+      ]
+    },
+    {
+      "name": "return",
+      "glassVariant": "A",
+      "polished": true,
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 2314,
+      "seconds": 33.12730000000008,
+      "distanceMetres": 69.65446206314665,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        24.067436950853526,
+        14.98088243637744,
+        65.90716257120285
+      ],
+      "maxFootRise": 0.16902422904968262,
+      "maxFootDrop": 0.174285888671875,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5819083008574986,
+      "frameTiming": {
+        "medianMs": 16.599999999976717,
+        "p95Ms": 22.20000000001164
+      },
+      "allPassDraws": [
+        248,
+        571
+      ],
+      "allPassTriangles": [
+        2458907,
+        4140457
+      ]
+    },
+    {
+      "name": "main",
+      "glassVariant": "B",
+      "polished": true,
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 2684,
+      "seconds": 33.12749999999986,
+      "distanceMetres": 69.61557342019518,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        36.000000000000995,
+        20.75998032121084,
+        0.12005238028701579
+      ],
+      "maxFootRise": 0.174285888671875,
+      "maxFootDrop": 0.16902422904968262,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.574138377526097,
+      "frameTiming": {
+        "medianMs": 11.200000000011642,
+        "p95Ms": 17.5
+      },
+      "allPassDraws": [
+        250,
+        399
+      ],
+      "allPassTriangles": [
+        2502762,
+        2741748
+      ]
+    },
+    {
+      "name": "main",
+      "glassVariant": "C",
+      "polished": true,
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 2428,
+      "seconds": 33.122999999999855,
+      "distanceMetres": 69.66133845633104,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        36.00000000000165,
+        20.760281115867343,
+        0.1269369391713552
+      ],
+      "maxFootRise": 0.174285888671875,
+      "maxFootDrop": 0.16902422904968262,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5683705808558273,
+      "frameTiming": {
+        "medianMs": 15.700000000011642,
+        "p95Ms": 22.20000000001164
+      },
+      "allPassDraws": [
+        251,
+        604
+      ],
+      "allPassTriangles": [
+        2502762,
+        4164047
+      ]
+    },
+    {
+      "name": "edge",
+      "glassVariant": "A",
+      "polished": true,
+      "success": true,
+      "reason": "guard stopped lateral walk",
+      "frames": 216,
+      "seconds": 4.35839999999997,
+      "distanceMetres": 4.649740734172106,
+      "start": [
+        36,
+        19.361619031429292,
+        39
+      ],
+      "end": [
+        40.649740734172106,
+        19.3596190571785,
+        39
+      ],
+      "maxFootRise": 0.012000024318695068,
+      "maxFootDrop": 0.012000024318695068,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 11.497928531752041,
+      "frameTiming": {
+        "medianMs": 22.099999999976717,
+        "p95Ms": 50.29999999998836
+      },
+      "allPassDraws": [
+        517,
+        517
+      ],
+      "allPassTriangles": [
+        3997625,
+        3997625
+      ]
+    },
+    {
+      "name": "jump",
+      "glassVariant": "A",
+      "polished": true,
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 347,
+      "seconds": 8.593300000000156,
+      "distanceMetres": 17.91313094725725,
+      "start": [
+        36,
+        19.883047676086427,
+        38
+      ],
+      "end": [
+        36,
+        21.97400007247925,
+        20.08686905274275
+      ],
+      "maxFootRise": 0.21474920250003748,
+      "maxFootDrop": 0.21696999999999989,
+      "maxAirHeight": 1.1648173575000023,
+      "supportEvents": [],
+      "jumps": 1,
+      "landings": 1,
+      "minCameraDistance": 11.289360446703238,
+      "frameTiming": {
+        "medianMs": 27.600000000034925,
+        "p95Ms": 66.70000000001164
+      },
+      "allPassDraws": [
+        571,
+        579
+      ],
+      "allPassTriangles": [
+        4121633,
+        4157681
+      ]
+    }
+  ],
+  "final_default_two_way_traversal": [
+    {
+      "name": "main",
+      "glassVariant": "A",
+      "polished": true,
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 2727,
+      "seconds": 33.116400000000056,
+      "distanceMetres": 69.56954575145483,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        36.00000000000115,
+        20.760374836338713,
+        0.1290820042148517
+      ],
+      "maxFootRise": 0.174285888671875,
+      "maxFootDrop": 0.16902422904968262,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.574302606200845,
+      "frameTiming": {
+        "medianMs": 11.199999999982538,
+        "p95Ms": 17
+      },
+      "allPassDraws": [
+        250,
+        602
+      ],
+      "allPassTriangles": [
+        2502762,
+        4164471
+      ]
+    },
+    {
+      "name": "return",
+      "glassVariant": "A",
+      "polished": true,
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 2651,
+      "seconds": 33.12160000000012,
+      "distanceMetres": 69.61470601096276,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        24.07018395102415,
+        14.98189294695876,
+        65.9032779030771
+      ],
+      "maxFootRise": 0.16902422904968262,
+      "maxFootDrop": 0.17428588867187855,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5754539837810446,
+      "frameTiming": {
+        "medianMs": 11.200000000011642,
+        "p95Ms": 17.400000000023283
+      },
+      "allPassDraws": [
+        248,
+        571
+      ],
+      "allPassTriangles": [
+        2458907,
+        4140457
+      ]
+    }
+  ],
+  "clearance": {
+    "enabled": true,
+    "polish": true,
+    "glass": "A",
+    "relocatedInstances": 25,
+    "palmTrunks": 1,
+    "grassBlades": 91,
+    "changedGrassChunks": 4,
+    "stoneShadowMeshes": 17,
+    "glassGeometry": [
+      {
+        "authored": 556,
+        "retainedTransmission": 132,
+        "alpha": 424
+      }
+    ],
+    "unresolved": []
+  },
+  "geometry_cost": {
+    "removedNearTriangles": 728,
+    "removedFarTriangles": 104,
+    "filteredGrassGeometries": 8,
+    "incrementalGrassCpuArrayBytes": 277632,
+    "incrementalHybridCpuArrayBytes": 3336,
+    "newImageTextures": 0,
+    "unchangedTownGlbBodyBytes": 11084692,
+    "metric": "Measured incremental retained typed-array bytes; approved attribute buffers shared, independent subset indices owned; not GPU/process memory"
+  },
+  "cache": {
+    "requests": 6,
+    "cachedFiles": 6,
+    "loadedFiles": 6
+  },
+  "asset_metrics": {
+    "market": {
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    },
+    "interfaces": {
+      "meshes": 6,
+      "triangles": 8404,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "foundations": {
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "support": {
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    }
+  },
+  "resources_after_all_variants": {
+    "geometries": 244,
+    "textures": 23,
+    "programs": 62,
+    "heap": 93234908
+  },
+  "network": [
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+      "transferBytes": 10008204,
+      "encodedBytes": 10007904,
+      "decodedBytes": 10007904,
+      "durationMs": 25.099999994039536
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+      "transferBytes": 527472,
+      "encodedBytes": 527172,
+      "decodedBytes": 527172,
+      "durationMs": 11
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+      "transferBytes": 543752,
+      "encodedBytes": 543452,
+      "decodedBytes": 543452,
+      "durationMs": 11.199999988079071
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+      "transferBytes": 6464,
+      "encodedBytes": 6164,
+      "decodedBytes": 6164,
+      "durationMs": 9.799999982118607
+    }
+  ],
+  "passes": {
+    "A": {
+      "view": "glazing",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 168
+        },
+        {
+          "target": "offscreen 1",
+          "viewport": [
+            0,
+            0,
+            1280,
+            656
+          ],
+          "draws": 145
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            656
+          ],
+          "draws": 155
+        }
+      ]
+    },
+    "B": {
+      "view": "glazing",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 168
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            656
+          ],
+          "draws": 155
+        }
+      ]
+    },
+    "C": {
+      "view": "glazing",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 169
+        },
+        {
+          "target": "offscreen 1",
+          "viewport": [
+            0,
+            0,
+            1280,
+            656
+          ],
+          "draws": 145
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            656
+          ],
+          "draws": 156
+        }
+      ]
+    }
+  },
+  "regression": {
+    "full_unique_checks_passed": 85,
+    "final_focused_checks_passed": 6,
+    "static_audit": "58 inherited findings, audited source pages unchanged"
+  },
+  "errors": [],
+  "warnings": [],
+  "source_hashes": {
+    "assets/js/floating-atlas/town-stabilization.js": "648095d02d9266160afe45ce1c9de5f258ee9d1a0073be9187eba42d9accdab4",
+    "assets/js/floating-atlas/town-integration.js": "4135594f63d0827b6d05214d497bca67950d41f7bf253e98704daa88ff15ce3a",
+    "assets/js/floating-atlas/town-review.js": "496997119745e9909da0183806a1abf8252dc5366b000da85a1d7d25abd0d819"
+  }
+}

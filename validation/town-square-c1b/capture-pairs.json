@@ -1,0 +1,247 @@
+[
+  {
+    "id": "squareArrival",
+    "before": {
+      "file": "before-01-market-arrival",
+      "camera": {
+        "position": [
+          32.3,
+          24.264,
+          7.9
+        ],
+        "quaternion": [
+          -0.0416237613066176,
+          0.7506224265414657,
+          0.04750411694044454,
+          0.6577057048113543
+        ],
+        "fov": 56,
+        "aspect": 1.951219512195122
+      },
+      "calls": 291,
+      "triangles": 2625658,
+      "square": false,
+      "errors": [],
+      "warnings": []
+    },
+    "after": {
+      "file": "01-market-arrival",
+      "camera": {
+        "position": [
+          32.3,
+          24.264,
+          7.9
+        ],
+        "quaternion": [
+          -0.0416237613066176,
+          0.7506224265414657,
+          0.04750411694044454,
+          0.6577057048113543
+        ],
+        "fov": 56,
+        "aspect": 1.951219512195122
+      },
+      "calls": 319,
+      "triangles": 2663718,
+      "square": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "squareInterior",
+    "before": {
+      "file": "before-02-square-interior",
+      "camera": {
+        "position": [
+          27,
+          23.45,
+          13
+        ],
+        "quaternion": [
+          -0.020645243856017816,
+          0.2668723234582526,
+          0.0057184015005671005,
+          0.9634937658139764
+        ],
+        "fov": 62,
+        "aspect": 1.951219512195122
+      },
+      "calls": 255,
+      "triangles": 2596384,
+      "square": false,
+      "errors": [],
+      "warnings": []
+    },
+    "after": {
+      "file": "02-square-interior",
+      "camera": {
+        "position": [
+          27,
+          23.45,
+          13
+        ],
+        "quaternion": [
+          -0.020645243856017816,
+          0.2668723234582526,
+          0.0057184015005671005,
+          0.9634937658139764
+        ],
+        "fov": 62,
+        "aspect": 1.951219512195122
+      },
+      "calls": 283,
+      "triangles": 2634332,
+      "square": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "squareElevated",
+    "before": {
+      "file": "before-03-elevated-town",
+      "camera": {
+        "position": [
+          3,
+          44,
+          -13
+        ],
+        "quaternion": [
+          0.10207306994204411,
+          0.8882981364000668,
+          0.23975149424781605,
+          -0.3781887495242479
+        ],
+        "fov": 36,
+        "aspect": 1.951219512195122
+      },
+      "calls": 351,
+      "triangles": 2692362,
+      "square": false,
+      "errors": [],
+      "warnings": []
+    },
+    "after": {
+      "file": "03-elevated-town",
+      "camera": {
+        "position": [
+          3,
+          44,
+          -13
+        ],
+        "quaternion": [
+          0.10207306994204411,
+          0.8882981364000668,
+          0.23975149424781605,
+          -0.3781887495242479
+        ],
+        "fov": 36,
+        "aspect": 1.951219512195122
+      },
+      "calls": 379,
+      "triangles": 2730310,
+      "square": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "squareSupport",
+    "before": {
+      "file": "before-04-square-foundations",
+      "camera": {
+        "position": [
+          15.4,
+          21.6,
+          1
+        ],
+        "quaternion": [
+          0.005806689212447423,
+          0.9030429285909636,
+          0.012213447778720691,
+          -0.4293373768676589
+        ],
+        "fov": 58,
+        "aspect": 1.951219512195122
+      },
+      "calls": 346,
+      "triangles": 2688946,
+      "square": false,
+      "errors": [],
+      "warnings": []
+    },
+    "after": {
+      "file": "04-square-foundations",
+      "camera": {
+        "position": [
+          15.4,
+          21.6,
+          1
+        ],
+        "quaternion": [
+          0.005806689212447423,
+          0.9030429285909636,
+          0.012213447778720691,
+          -0.4293373768676589
+        ],
+        "fov": 58,
+        "aspect": 1.951219512195122
+      },
+      "calls": 374,
+      "triangles": 2726958,
+      "square": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "squareIsland",
+    "before": {
+      "file": "before-05-full-island",
+      "camera": {
+        "position": [
+          146,
+          138.6,
+          199
+        ],
+        "quaternion": [
+          -0.21364684306111617,
+          0.2906026675481791,
+          0.06673824834375851,
+          0.9302962551101173
+        ],
+        "fov": 48,
+        "aspect": 1.951219512195122
+      },
+      "calls": 367,
+      "triangles": 2621576,
+      "square": false,
+      "errors": [],
+      "warnings": []
+    },
+    "after": {
+      "file": "05-full-island",
+      "camera": {
+        "position": [
+          146,
+          138.6,
+          199
+        ],
+        "quaternion": [
+          -0.21364684306111617,
+          0.2906026675481791,
+          0.06673824834375851,
+          0.9302962551101173
+        ],
+        "fov": 48,
+        "aspect": 1.951219512195122
+      },
+      "calls": 395,
+      "triangles": 2660108,
+      "square": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

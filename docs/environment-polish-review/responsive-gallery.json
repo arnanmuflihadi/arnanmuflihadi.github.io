@@ -1,0 +1,39 @@
+{
+  "documentWidth": 390,
+  "focusableLinks": [
+    {
+      "height": 72.390625,
+      "label": "Walk the polished landscape",
+      "width": 173
+    },
+    {
+      "height": 72.390625,
+      "label": "Changes and test results",
+      "width": 173
+    },
+    {
+      "height": 72.390625,
+      "label": "Asset provenance",
+      "width": 173
+    },
+    {
+      "height": 72.390625,
+      "label": "Read the MBR study",
+      "width": 173
+    }
+  ],
+  "images": [
+    {
+      "top": 478.6796875,
+      "width": 358
+    },
+    {
+      "top": 730.453125,
+      "width": 358
+    }
+  ],
+  "viewport": [
+    390,
+    844
+  ]
+}

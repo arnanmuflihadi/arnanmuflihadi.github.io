@@ -1,0 +1,188 @@
+[
+  {
+    "id": "skyport-lookout",
+    "run": 1,
+    "waypoint": 31,
+    "complete": true,
+    "elapsed": 112.71129999997761,
+    "movingSeconds": 57.16820000000227,
+    "distance": 224.78178324107463,
+    "ascent": 36.05948931311247,
+    "descent": 4.822014553655972,
+    "blockedSeconds": 0,
+    "maxSupportError": 0,
+    "minCameraDistance": 4.704431012699803,
+    "maxCrossTrack": 0.5346773893032561,
+    "jumpsStart": 0,
+    "landingsStart": 0,
+    "start": [
+      27,
+      17.149999618530273,
+      60
+    ],
+    "guided": true,
+    "end": [
+      -44.64086155090835,
+      48.63615612798682,
+      -48.58404761714296
+    ],
+    "jumps": 1,
+    "landings": 1,
+    "sampledFrames": 2536
+  },
+  {
+    "id": "return-loop",
+    "run": 2,
+    "waypoint": 20,
+    "complete": true,
+    "elapsed": 51.87840000000117,
+    "movingSeconds": 42.95710000000078,
+    "distance": 199.22860138626078,
+    "ascent": 2.119421226968292,
+    "descent": 28.24621846793385,
+    "blockedSeconds": 0,
+    "maxSupportError": 0,
+    "minCameraDistance": 4.570682502233674,
+    "maxCrossTrack": 0.5232271626150293,
+    "jumpsStart": 1,
+    "landingsStart": 1,
+    "start": [
+      -45,
+      48.726797622435285,
+      -49
+    ],
+    "guided": true,
+    "end": [
+      35.48253911397206,
+      22.600000381469727,
+      12.172364406691694
+    ],
+    "jumps": 0,
+    "landings": 0,
+    "sampledFrames": 1167
+  },
+  {
+    "id": "garden-loop",
+    "run": 3,
+    "waypoint": 14,
+    "complete": true,
+    "elapsed": 78.98289999999554,
+    "movingSeconds": 37.61800000000076,
+    "distance": 78.99253755102333,
+    "ascent": 0.3117642924584878,
+    "descent": 5.7455719003429735,
+    "blockedSeconds": 0,
+    "maxSupportError": 0,
+    "minCameraDistance": 9.096807333713842,
+    "maxCrossTrack": 0.5367763096218789,
+    "jumpsStart": 1,
+    "landingsStart": 1,
+    "start": [
+      30,
+      22.600000381469727,
+      14
+    ],
+    "guided": true,
+    "end": [
+      27.169448180378378,
+      17.16619277358524,
+      59.48184243118085
+    ],
+    "jumps": 0,
+    "landings": 0,
+    "sampledFrames": 1777
+  },
+  {
+    "id": "entrance-circuit",
+    "run": 4,
+    "waypoint": 26,
+    "complete": true,
+    "elapsed": 25.26200000000061,
+    "movingSeconds": 24.729000000000536,
+    "distance": 107.93847476441493,
+    "ascent": 4.446037569797355,
+    "descent": 0.9460375697973546,
+    "blockedSeconds": 0,
+    "maxSupportError": 0,
+    "minCameraDistance": 2.91318148905081,
+    "maxCrossTrack": 0.52272461053341,
+    "jumpsStart": 1,
+    "landingsStart": 1,
+    "start": [
+      36,
+      19.100000381469727,
+      40
+    ],
+    "guided": true,
+    "end": [
+      28.451526443829582,
+      22.600000381469727,
+      7.999195827879631
+    ],
+    "jumps": 0,
+    "landings": 0,
+    "sampledFrames": 568
+  },
+  {
+    "id": "market-square",
+    "run": 1,
+    "waypoint": 5,
+    "complete": true,
+    "elapsed": 32.86650000000067,
+    "movingSeconds": 13.349899999999902,
+    "distance": 27.762748017685404,
+    "ascent": 3.5000000000002736,
+    "descent": 2.7355895326763857e-13,
+    "blockedSeconds": 0,
+    "maxSupportError": 0,
+    "minCameraDistance": 10.828602287012922,
+    "maxCrossTrack": 0.5277883462925992,
+    "jumpsStart": 0,
+    "landingsStart": 0,
+    "start": [
+      36,
+      19.100000381469727,
+      40
+    ],
+    "guided": true,
+    "end": [
+      36,
+      22.600000381469727,
+      12.527376972387787
+    ],
+    "jumps": 0,
+    "landings": 0,
+    "sampledFrames": 605
+  },
+  {
+    "id": "square-guild",
+    "run": 2,
+    "waypoint": 5,
+    "complete": true,
+    "elapsed": 8.499999999999892,
+    "movingSeconds": 7.96109999999988,
+    "distance": 16.833218696425032,
+    "ascent": 2.584771908133945,
+    "descent": 0.11485050793997686,
+    "blockedSeconds": 0,
+    "maxSupportError": 0,
+    "minCameraDistance": 4.4504429830032075,
+    "maxCrossTrack": 0.525453981001247,
+    "jumpsStart": 0,
+    "landingsStart": 0,
+    "start": [
+      36,
+      22.600000381469727,
+      12
+    ],
+    "guided": true,
+    "end": [
+      39.99972761350819,
+      25.069921781663695,
+      1.3463296529779556
+    ],
+    "jumps": 0,
+    "landings": 0,
+    "sampledFrames": 167
+  }
+]

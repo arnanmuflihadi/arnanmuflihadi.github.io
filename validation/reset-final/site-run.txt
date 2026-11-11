@@ -1,0 +1,107 @@
+{
+  "primaryRoute": {
+    "lengthMetres": 44.37456329357661,
+    "directMetres": 41.99999999999999,
+    "minElevation": 15.039897932043289,
+    "maxElevation": 15.514999389648441,
+    "maxGradePercent": 2.024840539549741,
+    "turns": 4,
+    "clearSpineWidth": 6,
+    "noStairs": true
+  },
+  "foundations": [
+    {
+      "id": "B1",
+      "floorBase": 15.239999999999998,
+      "maxBaseToGround": 0.02648982551406398,
+      "minBaseToGround": -0.011840697206594086,
+      "method": "Original lower shell datum minus exact adjusted terrain at plot perimeter; upper finished thresholds measured separately by controller"
+    },
+    {
+      "id": "B2",
+      "floorBase": 15.239999999999998,
+      "maxBaseToGround": 0.028517331465174323,
+      "minBaseToGround": 0.018451699780744235,
+      "method": "Original lower shell datum minus exact adjusted terrain at plot perimeter; upper finished thresholds measured separately by controller"
+    },
+    {
+      "id": "B3",
+      "floorBase": 15.399999999999999,
+      "maxBaseToGround": 0.02499999999999858,
+      "minBaseToGround": -0.0019274027198115107,
+      "method": "Original lower shell datum minus exact adjusted terrain at plot perimeter; upper finished thresholds measured separately by controller"
+    },
+    {
+      "id": "B4",
+      "floorBase": 15.399999999999999,
+      "maxBaseToGround": 0.02499999999999858,
+      "minBaseToGround": 0.016426472678599424,
+      "method": "Original lower shell datum minus exact adjusted terrain at plot perimeter; upper finished thresholds measured separately by controller"
+    }
+  ],
+  "terrain": {
+    "changedVertices": 1453,
+    "changedTriangleFootprintM2": 2501.932846955955,
+    "fillEstimateM3": 2098.1849723509404,
+    "cutEstimateM3": 367.29416943818444,
+    "minDelta": -2.3689756393432617,
+    "maxDelta": 5.126429557800293,
+    "rimChanged": false,
+    "waterfallAndCliffsChanged": false,
+    "method": "Existing terrain vertices and triangle sampler; bounded local blending, same topology"
+  },
+  "vegetation": {
+    "treeMoves": 22,
+    "treeRemovals": 2,
+    "palmChanges": 2,
+    "understoryCleared": 68,
+    "grassChunksAdjusted": 7,
+    "matchedTreeParts": 268,
+    "sourceTrunks": 134
+  },
+  "geometry": {
+    "meshes": 90,
+    "triangles": 112904,
+    "geometries": 90,
+    "materials": 54,
+    "textures": 0,
+    "missingTextures": []
+  },
+  "files": [
+    {
+      "path": "validation/market-street-s2d/market-street-optimized.glb",
+      "bytes": 10007904
+    },
+    {
+      "path": "validation/reset-final/fountain.glb",
+      "bytes": 507708
+    },
+    {
+      "path": "validation/reset-final/pavilion.glb",
+      "bytes": 437072
+    },
+    {
+      "path": "validation/reset-final/bench.glb",
+      "bytes": 330100
+    },
+    {
+      "path": "validation/reset-final/cafe-set.glb",
+      "bytes": 359544
+    }
+  ],
+  "restoration": {
+    "pass": true,
+    "roundTrips": 2,
+    "scene": "128a58d0-2e91-40d9-9721-40c558be0430",
+    "compared": "Every terrain vertex/normal/colour/trail, all instanced matrices, all original colliders and scene children"
+  },
+  "preservation": {
+    "filesChecked": 2201,
+    "changed": [
+      "ASSET_MANIFEST.md",
+      "assets/js/floating-atlas/entry.js"
+    ],
+    "missing": [],
+    "approvedArchivesAndMastersUnchanged": true
+  }
+}

@@ -1,0 +1,19 @@
+✔ local terrain geometry, exact sampler, normals and floor caps agree (1297.695042ms)
+✔ terrain flag restores exact surface, vegetation, obstacles and sampler; cached geometry survives LOD (465.648167ms)
+✔ actual unchanged controller traverses implemented approaches, reservation ground and highland in both directions (526.983166ms)
+✔ jump lands on the modified surface without changing movement physics (427.80525ms)
+✔ existing camera clearance samples the same adjusted ground and restores the original (418.060625ms)
+✔ town requires exact local development flag and is off on every public/default route (0.761292ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (119.350833ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (700.078083ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (620.154417ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (405.93775ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (452.939541ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3276.309542

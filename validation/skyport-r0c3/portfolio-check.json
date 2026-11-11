@@ -1,0 +1,17 @@
+{
+  "editorial": {
+    "mode": "editorial",
+    "project": "mbr",
+    "rendererCount": "1"
+  },
+  "projects": [
+    "project-transit.html",
+    "project-pangan.html",
+    "project-alphaearth-food.html",
+    "project-mbr.html",
+    "project-cbd.html",
+    "project-bandung-cafe.html"
+  ],
+  "indexURL": "http://127.0.0.1:4176/portfolio.html",
+  "completeSixStudyIndex": true
+}

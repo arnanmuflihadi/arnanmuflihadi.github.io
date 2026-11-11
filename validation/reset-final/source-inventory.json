@@ -1,0 +1,1206 @@
+{
+  "market": {
+    "groups": [
+      {
+        "name": "MarketStreet36m",
+        "parent": "S2D_Optimized_Export",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -18,
+          -3.8631129264831543,
+          -40
+        ],
+        "max": [
+          18,
+          11.9320068359375,
+          10
+        ],
+        "data": {
+          "name": "MarketStreet36m",
+          "coordinate_mapping": "Three.js origin (36,18.6,44); local Blender (u,v,h) -> game (36+u,18.6+h,44-v)",
+          "source": "S2C Market Street; conditional art approval; no production deployment"
+        },
+        "children": [
+          {
+            "name": "B1_Kopi_Awan001",
+            "data": {
+              "name": "B1 Kopi Awan.001",
+              "module": "Building shell",
+              "optimization": "Original geometry retained",
+              "batch": "B1 Kopi Awan",
+              "repeat": false,
+              "walkable": false,
+              "study_grading": false,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "B2_Lembaran_Shophouse001",
+            "data": {
+              "name": "B2 Lembaran Shophouse.001",
+              "module": "Building shell",
+              "optimization": "Original geometry retained",
+              "batch": "B2 Lembaran Shophouse",
+              "repeat": false,
+              "walkable": false,
+              "study_grading": false,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "B3_Rupa_Rimba_Atelier001",
+            "data": {
+              "name": "B3 Rupa Rimba Atelier.001",
+              "module": "Building shell",
+              "optimization": "Original geometry retained",
+              "batch": "B3 Rupa Rimba Atelier",
+              "repeat": false,
+              "walkable": false,
+              "study_grading": false,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "B4_Serambi_Corner_Shop001",
+            "data": {
+              "name": "B4 Serambi Corner Shop.001",
+              "module": "Building shell",
+              "optimization": "Original geometry retained",
+              "batch": "B4 Serambi Corner Shop",
+              "repeat": false,
+              "walkable": false,
+              "study_grading": false,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "GradingStudy",
+            "data": {
+              "name": "GradingStudy",
+              "batch": "GradingStudy",
+              "repeat": false,
+              "walkable": false,
+              "study_grading": true,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "Landscape",
+            "data": {
+              "name": "Landscape",
+              "batch": "Landscape",
+              "repeat": false,
+              "walkable": false,
+              "study_grading": false,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "StreetFurniture",
+            "data": {
+              "name": "StreetFurniture",
+              "batch": "StreetFurniture",
+              "repeat": false,
+              "walkable": false,
+              "study_grading": false,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "WalkableStreet",
+            "data": {
+              "name": "WalkableStreet",
+              "batch": "WalkableStreet",
+              "repeat": false,
+              "walkable": true,
+              "study_grading": false,
+              "source_phase": "S2-C"
+            }
+          },
+          {
+            "name": "MarketStreet36m0",
+            "data": {
+              "name": "MarketStreet36m.0"
+            }
+          },
+          {
+            "name": "MarketStreet36m1",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.1"
+            }
+          },
+          {
+            "name": "MarketStreet36m2",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.2"
+            }
+          },
+          {
+            "name": "MarketStreet36m3",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.3"
+            }
+          },
+          {
+            "name": "MarketStreet36m4",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.4"
+            }
+          },
+          {
+            "name": "MarketStreet36m5",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.5"
+            }
+          },
+          {
+            "name": "MarketStreet36m6",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.6"
+            }
+          },
+          {
+            "name": "MarketStreet36m7",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.7"
+            }
+          },
+          {
+            "name": "MarketStreet36m8",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.8"
+            }
+          },
+          {
+            "name": "MarketStreet36m9",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.9"
+            }
+          },
+          {
+            "name": "MarketStreet36m10",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.10"
+            }
+          },
+          {
+            "name": "MarketStreet36m11",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.11"
+            }
+          },
+          {
+            "name": "MarketStreet36m12",
+            "mesh": true,
+            "data": {
+              "name": "MarketStreet36m.12"
+            }
+          }
+        ]
+      },
+      {
+        "name": "B1_Kopi_Awan001",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -14.020001411437988,
+          1.2028571367263794,
+          -14.369999885559082
+        ],
+        "max": [
+          -3.039966583251953,
+          10.014863967895508,
+          -5.629999160766602
+        ],
+        "data": {
+          "name": "B1 Kopi Awan.001",
+          "module": "Building shell",
+          "optimization": "Original geometry retained",
+          "batch": "B1 Kopi Awan",
+          "repeat": false,
+          "walkable": false,
+          "study_grading": false,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Cube273",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_1",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_2",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_3",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_4",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_5",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_6",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_7",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_8",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_9",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_10",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_11",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_12",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_13",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_14",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_15",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_16",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube273_17",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "B2_Lembaran_Shophouse001",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          3.408168077468872,
+          1.3942856788635254,
+          -14.930998802185059
+        ],
+        "max": [
+          13.83349895477295,
+          10.50428581237793,
+          -7.468998908996582
+        ],
+        "data": {
+          "name": "B2 Lembaran Shophouse.001",
+          "module": "Building shell",
+          "optimization": "Original geometry retained",
+          "batch": "B2 Lembaran Shophouse",
+          "repeat": false,
+          "walkable": false,
+          "study_grading": false,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Cube296",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_1",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_2",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_3",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_4",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_5",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_6",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_7",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_8",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_9",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_10",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_11",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_12",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_13",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_14",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_15",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_16",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_17",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_18",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_19",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube296_20",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "B3_Rupa_Rimba_Atelier001",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -13.833500862121582,
+          3.119999647140503,
+          -26.85049819946289
+        ],
+        "max": [
+          -3.696500539779663,
+          9.130000114440918,
+          -16.74949836730957
+        ],
+        "data": {
+          "name": "B3 Rupa Rimba Atelier.001",
+          "module": "Building shell",
+          "optimization": "Original geometry retained",
+          "batch": "B3 Rupa Rimba Atelier",
+          "repeat": false,
+          "walkable": false,
+          "study_grading": false,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Cube411",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_1",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_2",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_3",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_4",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_5",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_6",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_7",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_8",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_9",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_10",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_11",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_12",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_13",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_14",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube411_15",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "B4_Serambi_Corner_Shop001",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          3.2503671646118164,
+          3.119999885559082,
+          -27.733749389648438
+        ],
+        "max": [
+          13.791200637817383,
+          11.9320068359375,
+          -17.749300003051758
+        ],
+        "data": {
+          "name": "B4 Serambi Corner Shop.001",
+          "module": "Building shell",
+          "optimization": "Original geometry retained",
+          "batch": "B4 Serambi Corner Shop",
+          "repeat": false,
+          "walkable": false,
+          "study_grading": false,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Cube481",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_1",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_2",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_3",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_4",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_5",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_6",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_7",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_8",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_9",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_10",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_11",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_12",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_13",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_14",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_15",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_16",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Cube481_17",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "GradingStudy",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -18,
+          -3.8631129264831543,
+          -40
+        ],
+        "max": [
+          18,
+          3.8299999237060547,
+          10
+        ],
+        "data": {
+          "name": "GradingStudy",
+          "batch": "GradingStudy",
+          "repeat": false,
+          "walkable": false,
+          "study_grading": true,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Measured_terrain__local_art_grading_proposal001",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Measured_terrain__local_art_grading_proposal001_1",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "Landscape",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -15.385629653930664,
+          -3.0777945518493652,
+          -36.704586029052734
+        ],
+        "max": [
+          16.220001220703125,
+          8.395981788635254,
+          0
+        ],
+        "data": {
+          "name": "Landscape",
+          "batch": "Landscape",
+          "repeat": false,
+          "walkable": false,
+          "study_grading": false,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Terrace_stone_return008",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Terrace_stone_return008_1",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Terrace_stone_return008_2",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Terrace_stone_return008_3",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Terrace_stone_return008_4",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Terrace_stone_return008_5",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Terrace_stone_return008_6",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "StreetFurniture",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -7.224999904632568,
+          0.9214285612106323,
+          -34.65999984741211
+        ],
+        "max": [
+          7.202499866485596,
+          6.71999979019165,
+          -5.039999961853027
+        ],
+        "data": {
+          "name": "StreetFurniture",
+          "batch": "StreetFurniture",
+          "repeat": false,
+          "walkable": false,
+          "study_grading": false,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Outdoor_cafe_table_top003",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Outdoor_cafe_table_top003_1",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Outdoor_cafe_table_top003_2",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Outdoor_cafe_table_top003_3",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Outdoor_cafe_table_top003_4",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "WalkableStreet",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -8,
+          -1.187999963760376,
+          -36
+        ],
+        "max": [
+          8,
+          4.013999938964844,
+          8
+        ],
+        "data": {
+          "name": "WalkableStreet",
+          "batch": "WalkableStreet",
+          "repeat": false,
+          "walkable": true,
+          "study_grading": false,
+          "source_phase": "S2-C"
+        },
+        "children": [
+          {
+            "name": "Continuous_stepped_market_paving001",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Continuous_stepped_market_paving001_1",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Continuous_stepped_market_paving001_2",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Continuous_stepped_market_paving001_3",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Continuous_stepped_market_paving001_4",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "Continuous_stepped_market_paving001_5",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      },
+      {
+        "name": "MarketStreet36m0",
+        "parent": "MarketStreet36m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -16.800087886653586,
+          -2.5309698581695557,
+          -34.71282603414234
+        ],
+        "max": [
+          16.23819102269087,
+          8.425999893188475,
+          8.344399013153748
+        ],
+        "data": {
+          "name": "MarketStreet36m.0"
+        },
+        "children": [
+          {
+            "name": "tree002",
+            "mesh": true,
+            "data": {}
+          },
+          {
+            "name": "tree002_1",
+            "mesh": true,
+            "data": {}
+          }
+        ]
+      }
+    ],
+    "materials": [
+      "S2A / sandstone base",
+      "S2A / limestone paving",
+      "S2A / oiled tropical timber",
+      "S2A / warm lime plaster",
+      "S2A / soft blue green glass",
+      "S2A / patinated bronze frames",
+      "S2A / cut timber edges",
+      "S2A / aged brass",
+      "colormap",
+      "S2A / terracotta 0",
+      "S2A / terracotta 1",
+      "S2A / terracotta 2",
+      "S2A / terracotta 3",
+      "S2A / terracotta 4",
+      "S2A / planter soil",
+      "Leaves.001",
+      "S2A / recessed sage plaster",
+      "S2A / warm sign lettering",
+      "S2C / soft ochre plaster",
+      "S2C / shared low-cost teal glazing",
+      "S2C / upper blue green glazing",
+      "S2C / dusty clay plaster",
+      "S2C / corner ivory plaster",
+      "Bark_NormalTree.002",
+      "Leaves_NormalTree.002",
+      "S2C / tropical meadow 0",
+      "S2C / tropical meadow 1",
+      "S2C / palm bark",
+      "S2C / broad tropical leaf 0",
+      "S2C / broad tropical leaf 1",
+      "S2C / broad tropical leaf 2",
+      "S2C / coral ginger bloom",
+      "S2C / warm pedestrian stone 0",
+      "S2C / warm pedestrian stone 1",
+      "S2C / warm pedestrian stone 2",
+      "S2C / warm pedestrian stone 3",
+      "S2C / arrival garden path"
+    ]
+  },
+  "square": {
+    "groups": [
+      {
+        "name": "Telaga_Awan__export_manifest",
+        "parent": "R0-C1A__Telaga_Awan",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "min": [
+          -41.33203887939453,
+          0.2203662097454071,
+          -47.267879486083984
+        ],
+        "max": [
+          1.1653518676757812,
+          7.065577983856201,
+          -29.391740798950195
+        ],
+        "data": {
+          "name": "Telaga Awan / export manifest",
+          "square_manifest": "{\"phase\": \"R0-C1B\", \"mapping\": \"Blender (u,v,h)=(X-36,44-Z,Y-18.6), export Y-up then translate (36,18.6,44)\", \"court_floor_y\": 21.8, \"forecourt_floor_y\": 22.614, \"cost\": {\"Paving\": 6108, \"Supports\": 552, \"Fountain\": 2944, \"Timber shade\": 932, \"Planting\": 762, \"Furniture\": 3644, \"Proposed routes\": 4664}, \"paver_before\": 32400, \"paver_after\": 6000, \"colliders\": [{\"x\": 20.699999809265137, \"z\": 10.950000762939453, \"w\": 0.12999916076660156, \"d\": 0.12999725341796875, \"minY\": 21.959999895095827, \"h\": 24.44999990463257, \"square\": \"Shade timber post\"}, {\"x\": 20.699999809265137, \"z\": 14.149999618530273, \"w\": 0.12999916076660156, \"d\": 0.13000106811523438, \"minY\": 21.959999895095827, \"h\": 24.44999990463257, \"square\": \"Shade timber post.001\"}, {\"x\": 24.300000190734863, \"z\": 10.950000762939453, \"w\": 0.12999916076660156, \"d\": 0.12999725341796875, \"minY\": 21.959999895095827, \"h\": 24.44999990463257, \"square\": \"Shade timber post.002\"}, {\"x\": 24.300000190734863, \"z\": 14.149999618530273, \"w\": 0.12999916076660156, \"d\": 0.13000106811523438, \"minY\": 21.959999895095827, \"h\": 24.44999990463257, \"square\": \"Shade timber post.003\"}, {\"x\": 20.81999969482422, \"z\": 6.200000762939453, \"w\": 0.6200008392333984, \"d\": 1.3499984741210938, \"minY\": 21.800000047683717, \"h\": 22.240000104904176, \"square\": \"Planted seating-edge trough\"}, {\"x\": 20.81999969482422, \"z\": 7.700000762939453, \"w\": 0.6200008392333984, \"d\": 1.3499984741210938, \"minY\": 21.800000047683717, \"h\": 22.240000104904176, \"square\": \"Planted seating-edge trough.001\"}, {\"x\": 20.81999969482422, \"z\": 9.200000762939453, \"w\": 0.6200008392333984, \"d\": 1.3499984741210938, \"minY\": 21.800000047683717, \"h\": 22.240000104904176, \"square\": \"Planted seating-edge trough.002\"}, {\"x\": 27.550000190734863, \"z\": 8.25, \"w\": 0.8999996185302734, \"d\": 0.6999969482421875, \"minY\": 21.800000047683717, \"h\": 22.45000014305115, \"square\": \"Seat-end planted trough\"}, {\"x\": 27.550000190734863, \"z\": 13.950000762939453, \"w\": 0.8999996185302734, \"d\": 0.7000007629394531, \"minY\": 21.800000047683717, \"h\": 22.45000014305115, \"square\": \"Seat-end planted trough.001\"}, {\"x\": 21.300000190734863, \"z\": 11.200000762939453, \"w\": 0.2199993133544922, \"d\": 0.4199981689453125, \"minY\": 21.800000047683717, \"h\": 22.240000104904176, \"square\": \"Seat stone pier\"}, {\"x\": 23.699999809265137, \"z\": 11.200000762939453, \"w\": 0.2199993133544922, \"d\": 0.4199981689453125, \"minY\": 21.800000047683717, \"h\": 22.240000104904176, \"square\": \"Seat stone pier.001\"}, {\"x\": 21.300000190734863, \"z\": 13.899999618530273, \"w\": 0.2199993133544922, \"d\": 0.4199981689453125, \"minY\": 21.800000047683717, \"h\": 22.240000104904176, \"square\": \"Seat stone pier.002\"}, {\"x\": 23.699999809265137, \"z\": 13.899999618530273, \"w\": 0.2199993133544922, \"d\": 0.4199981689453125, \"minY\": 21.800000047683717, \"h\": 22.240000104904176, \"square\": \"Seat stone pier.003\"}, {\"x\": 22.199999809265137, \"z\": 5.5, \"w\": 0.8400001525878906, \"d\": 0.839996337890625, \"minY\": 22.54000005722046, \"h\": 22.584999895095827, \"square\": \"Square cafe table\"}, {\"x\": 22.199999809265137, \"z\": 4.799999237060547, \"w\": 0.4400005340576172, \"d\": 0.44000244140625, \"minY\": 22.225, \"h\": 22.275000190734865, \"square\": \"Cafe chair seat\"}, {\"x\": 22.020000457763672, \"z\": 4.619998931884766, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg\"}, {\"x\": 22.020000457763672, \"z\": 4.979999542236328, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg.001\"}, {\"x\": 22.380000114440918, \"z\": 4.619998931884766, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg.002\"}, {\"x\": 22.380000114440918, \"z\": 4.979999542236328, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg.003\"}, {\"x\": 22.199999809265137, \"z\": 4.599998474121094, \"w\": 0.43000030517578125, \"d\": 0.04000091552734375, \"minY\": 22.430000162124635, \"h\": 22.67000017166138, \"square\": \"Cafe chair back\"}, {\"x\": 22.199999809265137, \"z\": 6.200000762939453, \"w\": 0.4400005340576172, \"d\": 0.44000244140625, \"minY\": 22.225, \"h\": 22.275000190734865, \"square\": \"Cafe chair seat.001\"}, {\"x\": 22.020000457763672, \"z\": 6.020000457763672, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg.004\"}, {\"x\": 22.020000457763672, \"z\": 6.380001068115234, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg.005\"}, {\"x\": 22.380000114440918, \"z\": 6.020000457763672, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg.006\"}, {\"x\": 22.380000114440918, \"z\": 6.380001068115234, \"w\": 0.034999847412109375, \"d\": 0.035003662109375, \"minY\": 21.830000019073488, \"h\": 22.240000104904176, \"square\": \"Cafe chair leg.007\"}, {\"x\": 22.199999809265137, \"z\": 6.400001525878906, \"w\": 0.43000030517578125, \"d\": 0.04000091552734375, \"minY\": 22.430000162124635, \"h\": 22.67000017166138, \"square\": \"Cafe chair back.001\"}, {\"x\": 27.550000190734863, \"z\": 11.099998474121094, \"w\": 0.8999996185302734, \"d\": 5.0, \"minY\": 21.800000047683717, \"h\": 22.20000014305115, \"square\": \"Apron-facing stone seat plinth\"}, {\"x\": 27.67923879623413, \"z\": 4.759239196777344, \"w\": 0.3745107650756836, \"d\": 0.3661956787109375, \"minY\": 22.164577341079713, \"h\": 22.281422472000123, \"square\": \"Approach continuous guard\", \"oriented\": {\"w\": 0.5225485827257403, \"d\": 0.085, \"rotation\": 0.7853966732821283}}, {\"x\": 27.67923879623413, \"z\": 4.759239196777344, \"w\": 0.3745107650756836, \"d\": 0.3661956787109375, \"minY\": 22.464577531814577, \"h\": 22.581422662734987, \"square\": \"Approach continuous guard.001\", \"oriented\": {\"w\": 0.5225485827257403, \"d\": 0.085, \"rotation\": 0.7853966732821283}}, {\"x\": 27.67923879623413, \"z\": 4.759239196777344, \"w\": 0.3745107650756836, \"d\": 0.3661956787109375, \"minY\": 22.814577674865724, \"h\": 22.931422328948976, \"square\": \"Approach continuous guard.002\", \"oriented\": {\"w\": 0.5225485827257403, \"d\": 0.085, \"rotation\": 0.7853966732821283}}, {\"x\": 25.625853538513184, \"z\": 2.9207611083984375, \"w\": 0.28670310974121094, \"d\": 0.3661956787109375, \"minY\": 22.164577341079713, \"h\": 22.281422472000123, \"square\": \"Approach continuous guard.003\", \"oriented\": {\"w\": 0.45692977494036896, \"d\": 0.085, \"rotation\": 0.9737907097404546}}, {\"x\": 25.625853538513184, \"z\": 2.9207611083984375, \"w\": 0.28670310974121094, \"d\": 0.3661956787109375, \"minY\": 22.464577531814577, \"h\": 22.581422662734987, \"square\": \"Approach continuous guard.004\", \"oriented\": {\"w\": 0.45692977494036896, \"d\": 0.085, \"rotation\": 0.9737907097404546}}, {\"x\": 25.625853538513184, \"z\": 2.9207611083984375, \"w\": 0.28670310974121094, \"d\": 0.3661956787109375, \"minY\": 22.814577674865724, \"h\": 22.931422328948976, \"square\": \"Approach continuous guard.005\", \"oriented\": {\"w\": 0.45692977494036896, \"d\": 0.085, \"rotation\": 0.9737907097404546}}, {\"x\": 27.999238967895508, \"z\": 4.439239501953125, \"w\": 0.3745098114013672, \"d\": 0.3661956787109375, \"minY\": 22.21057734489441, \"h\": 22.32742247581482, \"square\": \"Approach continuous guard.006\", \"oriented\": {\"w\": 0.5225479083756617, \"d\": 0.085, \"rotation\": 0.7853981633974483}}, {\"x\": 27.999238967895508, \"z\": 4.439239501953125, \"w\": 0.3745098114013672, \"d\": 0.3661956787109375, \"minY\": 22.510577535629274, \"h\": 22.627422428131105, \"square\": \"Approach continuous guard.007\", \"oriented\": {\"w\": 0.5225479083756617, \"d\": 0.085, \"rotation\": 0.7853981633974483}}, {\"x\": 27.999238967895508, \"z\": 4.439239501953125, \"w\": 0.3745098114013672, \"d\": 0.3661956787109375, \"minY\": 22.86057767868042, \"h\": 22.977422332763673, \"square\": \"Approach continuous guard.008\", \"oriented\": {\"w\": 0.5225479083756617, \"d\": 0.085, \"rotation\": 0.7853981633974483}}, {\"x\": 25.840156078338623, \"z\": 2.6007614135742188, \"w\": 0.28180408477783203, \"d\": 0.3661956787109375, \"minY\": 22.21057734489441, \"h\": 22.32742247581482, \"square\": \"Approach continuous guard.009\", \"oriented\": {\"w\": 0.45372904204464737, \"d\": 0.085, \"rotation\": 0.9861747108649227}}, {\"x\": 25.840156078338623, \"z\": 2.6007614135742188, \"w\": 0.28180408477783203, \"d\": 0.3661956787109375, \"minY\": 22.510577535629274, \"h\": 22.627422428131105, \"square\": \"Approach continuous guard.010\", \"oriented\": {\"w\": 0.45372904204464737, \"d\": 0.085, \"rotation\": 0.9861747108649227}}, {\"x\": 25.840156078338623, \"z\": 2.6007614135742188, \"w\": 0.28180408477783203, \"d\": 0.3661956787109375, \"minY\": 22.86057767868042, \"h\": 22.977422332763673, \"square\": \"Approach continuous guard.011\", \"oriented\": {\"w\": 0.45372904204464737, \"d\": 0.085, \"rotation\": 0.9861747108649227}}, {\"x\": 28.319198608398438, \"z\": 4.119239807128906, \"w\": 0.37442970275878906, \"d\": 0.3661956787109375, \"minY\": 22.256577348709108, \"h\": 22.373422479629518, \"square\": \"Approach continuous guard.012\", \"oriented\": {\"w\": 0.522152912207254, \"d\": 0.085, \"rotation\": 0.7862721352137877}}, {\"x\": 28.319198608398438, \"z\": 4.119239807128906, \"w\": 0.37442970275878906, \"d\": 0.3661956787109375, \"minY\": 22.55657753944397, \"h\": 22.673422431945802, \"square\": \"Approach continuous guard.013\", \"oriented\": {\"w\": 0.522152912207254, \"d\": 0.085, \"rotation\": 0.7862721352137877}}, {\"x\": 28.319198608398438, \"z\": 4.119239807128906, \"w\": 0.37442970275878906, \"d\": 0.3661956787109375, \"minY\": 22.90657768249512, \"h\": 23.02342233657837, \"square\": \"Approach continuous guard.014\", \"oriented\": {\"w\": 0.522152912207254, \"d\": 0.085, \"rotation\": 0.7862721352137877}}, {\"x\": 26.05317974090576, \"z\": 2.28076171875, \"w\": 0.28446006774902344, \"d\": 0.3661956787109375, \"minY\": 22.256577348709108, \"h\": 22.373422479629518, \"square\": \"Approach continuous guard.015\", \"oriented\": {\"w\": 0.4554407972145109, \"d\": 0.085, \"rotation\": 0.9794977467772507}}, {\"x\": 26.05317974090576, \"z\": 2.28076171875, \"w\": 0.28446006774902344, \"d\": 0.3661956787109375, \"minY\": 22.55657753944397, \"h\": 22.673422431945802, \"square\": \"Approach continuous guard.016\", \"oriented\": {\"w\": 0.4554407972145109, \"d\": 0.085, \"rotation\": 0.9794977467772507}}, {\"x\": 26.05317974090576, \"z\": 2.28076171875, \"w\": 0.28446006774902344, \"d\": 0.3661956787109375, \"minY\": 22.90657768249512, \"h\": 23.02342233657837, \"square\": \"Approach continuous guard.017\", \"oriented\": {\"w\": 0.4554407972145109, \"d\": 0.085, \"rotation\": 0.9794977467772507}}, {\"x\": 28.62535786628723, \"z\": 3.7992401123046875, \"w\": 0.34882497787475586, \"d\": 0.3661956787109375, \"minY\": 22.302577352523805, \"h\": 22.419422483444215, \"square\": \"Approach continuous guard.018\", \"oriented\": {\"w\": 0.5019740611007357, \"d\": 0.085, \"rotation\": 0.8342374858537294}}, {\"x\": 28.62535786628723, \"z\": 3.7992401123046875, \"w\": 0.34882497787475586, \"d\": 0.3661956787109375, \"minY\": 22.602577781677248, \"h\": 22.7194224357605, \"square\": \"Approach continuous guard.019\", \"oriented\": {\"w\": 0.5019740611007357, \"d\": 0.085, \"rotation\": 0.8342374858537294}}, {\"x\": 28.62535786628723, \"z\": 3.7992401123046875, \"w\": 0.34882497787475586, \"d\": 0.3661956787109375, \"minY\": 22.952577686309816, \"h\": 23.069422340393068, \"square\": \"Approach continuous guard.020\", \"oriented\": {\"w\": 0.5019740611007357, \"d\": 0.085, \"rotation\": 0.8342374858537294}}, {\"x\": 26.273048877716064, \"z\": 1.9607620239257812, \"w\": 0.29346370697021484, \"d\": 0.3661956787109375, \"minY\": 22.302577352523805, \"h\": 22.419422483444215, \"square\": \"Approach continuous guard.021\", \"oriented\": {\"w\": 0.4613920750606301, \"d\": 0.085, \"rotation\": 0.9572194456151595}}, {\"x\": 26.273048877716064, \"z\": 1.9607620239257812, \"w\": 0.29346370697021484, \"d\": 0.3661956787109375, \"minY\": 22.602577781677248, \"h\": 22.7194224357605, \"square\": \"Approach continuous guard.022\", \"oriented\": {\"w\": 0.4613920750606301, \"d\": 0.085, \"rotation\": 0.9572194456151595}}, {\"x\": 26.273048877716064, \"z\": 1.9607620239257812, \"w\": 0.29346370697021484, \"d\": 0.3661956787109375, \"minY\": 22.952577686309816, \"h\": 23.069422340393068, \"square\": \"Approach continuous guard.023\", \"oriented\": {\"w\": 0.4613920750606301, \"d\": 0.085, \"rotation\": 0.9572194456151595}}, {\"x\": 28.926156997680664, \"z\": 3.433443069458008, \"w\": 0.3751821517944336, \"d\": 0.4572334289550781, \"minY\": 22.349086618423463, \"h\": 22.46491322517395, \"square\": \"Approach continuous guard.024\", \"oriented\": {\"w\": 0.5864510471462485, \"d\": 0.085, \"rotation\": 0.9222569553675284}}, {\"x\": 28.926156997680664, \"z\": 3.433443069458008, \"w\": 0.3751821517944336, \"d\": 0.4572334289550781, \"minY\": 22.649087047576906, \"h\": 22.764913177490236, \"square\": \"Approach continuous guard.025\", \"oriented\": {\"w\": 0.5864510471462485, \"d\": 0.085, \"rotation\": 0.9222569553675284}}, {\"x\": 28.926156997680664, \"z\": 3.433443069458008, \"w\": 0.3751821517944336, \"d\": 0.4572334289550781, \"minY\": 22.999086952209474, \"h\": 23.114913082122804, \"square\": \"Approach continuous guard.026\", \"oriented\": {\"w\": 0.5864510471462485, \"d\": 0.085, \"rotation\": 0.9222569553675284}}, {\"x\": 26.475240230560303, \"z\": 1.6865596771240234, \"w\": 0.24717044830322266, \"d\": 0.2756004333496094, \"minY\": 22.347833967208864, \"h\": 22.46616587638855, \"square\": \"Approach continuous guard.027\", \"oriented\": {\"w\": 0.36018632101950493, \"d\": 0.085, \"rotation\": 0.9060896427588021}}, {\"x\": 26.475240230560303, \"z\": 1.6865596771240234, \"w\": 0.24717044830322266, \"d\": 0.2756004333496094, \"minY\": 22.647834396362306, \"h\": 22.766165828704835, \"square\": \"Approach continuous guard.028\", \"oriented\": {\"w\": 0.36018632101950493, \"d\": 0.085, \"rotation\": 0.9060896427588021}}, {\"x\": 26.475240230560303, \"z\": 1.6865596771240234, \"w\": 0.24717044830322266, \"d\": 0.2756004333496094, \"minY\": 22.997834300994874, \"h\": 23.116165733337404, \"square\": \"Approach continuous guard.029\", \"oriented\": {\"w\": 0.36018632101950493, \"d\": 0.085, \"rotation\": 0.9060896427588021}}, {\"x\": 29.185773611068726, \"z\": 2.9643516540527344, \"w\": 0.2808051109313965, \"d\": 0.56439208984375, \"minY\": 22.39447364807129, \"h\": 22.512193059921266, \"square\": \"Approach continuous guard.030\", \"oriented\": {\"w\": 0.6364449735699302, \"d\": 0.085, \"rotation\": 1.1934276013337894}}, {\"x\": 29.185773611068726, \"z\": 2.9643516540527344, \"w\": 0.2808051109313965, \"d\": 0.56439208984375, \"minY\": 22.694473838806154, \"h\": 22.81219301223755, \"square\": \"Approach continuous guard.031\", \"oriented\": {\"w\": 0.6364449735699302, \"d\": 0.085, \"rotation\": 1.1934276013337894}}, {\"x\": 29.185773611068726, \"z\": 2.9643516540527344, \"w\": 0.2808051109313965, \"d\": 0.56439208984375, \"minY\": 23.044473743438722, \"h\": 23.16219291687012, \"square\": \"Approach continuous guard.032\", \"oriented\": {\"w\": 0.6364449735699302, \"d\": 0.085, \"rotation\": 1.1934276013337894}}, {\"x\": 26.653703212738037, \"z\": 1.3912067413330078, \"w\": 0.24999713897705078, \"d\": 0.3995094299316406, \"minY\": 22.39314160346985, \"h\": 22.513525104522706, \"square\": \"Approach continuous guard.033\", \"oriented\": {\"w\": 0.4738669765054854, \"d\": 0.085, \"rotation\": 1.1130942083681274}}, {\"x\": 26.653703212738037, \"z\": 1.3912067413330078, \"w\": 0.24999713897705078, \"d\": 0.3995094299316406, \"minY\": 22.693142032623292, \"h\": 22.81352481842041, \"square\": \"Approach continuous guard.034\", \"oriented\": {\"w\": 0.4738669765054854, \"d\": 0.085, \"rotation\": 1.1130942083681274}}, {\"x\": 26.653703212738037, \"z\": 1.3912067413330078, \"w\": 0.24999713897705078, \"d\": 0.3995094299316406, \"minY\": 23.04314193725586, \"h\": 23.16352472305298, \"square\": \"Approach continuous guard.035\", \"oriented\": {\"w\": 0.4738669765054854, \"d\": 0.085, \"rotation\": 1.1130942083681274}}, {\"x\": 29.37022089958191, \"z\": 2.4788341522216797, \"w\": 0.23611783981323242, \"d\": 0.4819984436035156, \"minY\": 22.440591192245485, \"h\": 22.55940899848938, \"square\": \"Approach continuous guard.036\", \"oriented\": {\"w\": 0.5428879361760572, \"d\": 0.085, \"rotation\": 1.2222084765477426}}, {\"x\": 29.37022089958191, \"z\": 2.4788341522216797, \"w\": 0.23611783981323242, \"d\": 0.4819984436035156, \"minY\": 22.740591621398927, \"h\": 22.859408473968507, \"square\": \"Approach continuous guard.037\", \"oriented\": {\"w\": 0.5428879361760572, \"d\": 0.085, \"rotation\": 1.2222084765477426}}, {\"x\": 29.37022089958191, \"z\": 2.4788341522216797, \"w\": 0.23611783981323242, \"d\": 0.4819984436035156, \"minY\": 23.090591526031496, \"h\": 23.209408378601076, \"square\": \"Approach continuous guard.038\", \"oriented\": {\"w\": 0.5428879361760572, \"d\": 0.085, \"rotation\": 1.2222084765477426}}, {\"x\": 26.876206874847412, \"z\": 0.9878330230712891, \"w\": 0.3329458236694336, \"d\": 0.4819984436035156, \"minY\": 22.440591192245485, \"h\": 22.55940899848938, \"square\": \"Approach continuous guard.039\", \"oriented\": {\"w\": 0.5885603994479123, \"d\": 0.085, \"rotation\": 1.029570349396432}}, {\"x\": 26.876206874847412, \"z\": 0.9878330230712891, \"w\": 0.3329458236694336, \"d\": 0.4819984436035156, \"minY\": 22.740591621398927, \"h\": 22.859408473968507, \"square\": \"Approach continuous guard.040\", \"oriented\": {\"w\": 0.5885603994479123, \"d\": 0.085, \"rotation\": 1.029570349396432}}, {\"x\": 26.876206874847412, \"z\": 0.9878330230712891, \"w\": 0.3329458236694336, \"d\": 0.4819984436035156, \"minY\": 23.090591526031496, \"h\": 23.209408378601076, \"square\": \"Approach continuous guard.041\", \"oriented\": {\"w\": 0.5885603994479123, \"d\": 0.085, \"rotation\": 1.029570349396432}}, {\"x\": 29.538487672805786, \"z\": 2.0343894958496094, \"w\": 0.24925756454467773, \"d\": 0.48199462890625, \"minY\": 22.48725781440735, \"h\": 22.606075382232667, \"square\": \"Approach continuous guard.042\", \"oriented\": {\"w\": 0.547962188971022, \"d\": 0.085, \"rotation\": 1.1940595934240865}}, {\"x\": 29.538487672805786, \"z\": 2.0343894958496094, \"w\": 0.24925756454467773, \"d\": 0.48199462890625, \"minY\": 22.787258243560792, \"h\": 22.906075096130373, \"square\": \"Approach continuous guard.043\", \"oriented\": {\"w\": 0.547962188971022, \"d\": 0.085, \"rotation\": 1.1940595934240865}}, {\"x\": 29.538487672805786, \"z\": 2.0343894958496094, \"w\": 0.24925756454467773, \"d\": 0.48199462890625, \"minY\": 23.13725814819336, \"h\": 23.25607500076294, \"square\": \"Approach continuous guard.044\", \"oriented\": {\"w\": 0.547962188971022, \"d\": 0.085, \"rotation\": 1.1940595934240865}}, {\"x\": 27.168548583984375, \"z\": 0.5433883666992188, \"w\": 0.37917518615722656, \"d\": 0.48199462890625, \"minY\": 22.48725781440735, \"h\": 22.606075382232667, \"square\": \"Approach continuous guard.045\", \"oriented\": {\"w\": 0.6162654480590308, \"d\": 0.085, \"rotation\": 0.9503209619125801}}, {\"x\": 27.168548583984375, \"z\": 0.5433883666992188, \"w\": 0.37917518615722656, \"d\": 0.48199462890625, \"minY\": 22.787258243560792, \"h\": 22.906075096130373, \"square\": \"Approach continuous guard.046\", \"oriented\": {\"w\": 0.6162654480590308, \"d\": 0.085, \"rotation\": 0.9503209619125801}}, {\"x\": 27.168548583984375, \"z\": 0.5433883666992188, \"w\": 0.37917518615722656, \"d\": 0.48199462890625, \"minY\": 23.13725814819336, \"h\": 23.25607500076294, \"square\": \"Approach continuous guard.047\", \"oriented\": {\"w\": 0.6162654480590308, \"d\": 0.085, \"rotation\": 0.9503209619125801}}, {\"x\": 29.72965717315674, \"z\": 1.589944839477539, \"w\": 0.277923583984375, \"d\": 0.4819984436035156, \"minY\": 22.533924436569215, \"h\": 22.652742004394533, \"square\": \"Approach continuous guard.048\", \"oriented\": {\"w\": 0.5603330299659338, \"d\": 0.085, \"rotation\": 1.134724290377761}}, {\"x\": 29.72965717315674, \"z\": 1.589944839477539, \"w\": 0.2779226303100586, \"d\": 0.4819984436035156, \"minY\": 22.833924865722658, \"h\": 22.952741718292238, \"square\": \"Approach continuous guard.049\", \"oriented\": {\"w\": 0.5603330299659338, \"d\": 0.085, \"rotation\": 1.134724290377761}}, {\"x\": 29.72965717315674, \"z\": 1.589944839477539, \"w\": 0.2779226303100586, \"d\": 0.4819984436035156, \"minY\": 23.183924770355226, \"h\": 23.302741622924806, \"square\": \"Approach continuous guard.050\", \"oriented\": {\"w\": 0.5603330299659338, \"d\": 0.085, \"rotation\": 1.134724290377761}}, {\"x\": 27.51112127304077, \"z\": 0.09894371032714844, \"w\": 0.4247922897338867, \"d\": 0.4819984436035156, \"minY\": 22.533924436569215, \"h\": 22.652742004394533, \"square\": \"Approach continuous guard.051\", \"oriented\": {\"w\": 0.6466392541544796, \"d\": 0.085, \"rotation\": 0.8800225133750041}}, {\"x\": 27.51112174987793, \"z\": 0.09894371032714844, \"w\": 0.4247913360595703, \"d\": 0.4819984436035156, \"minY\": 22.833924865722658, \"h\": 22.952741718292238, \"square\": \"Approach continuous guard.052\", \"oriented\": {\"w\": 0.6466392541544796, \"d\": 0.085, \"rotation\": 0.8800225133750041}}, {\"x\": 27.51112174987793, \"z\": 0.09894371032714844, \"w\": 0.4247913360595703, \"d\": 0.4819984436035156, \"minY\": 23.183924770355226, \"h\": 23.302741622924806, \"square\": \"Approach continuous guard.053\", \"oriented\": {\"w\": 0.6466392541544796, \"d\": 0.085, \"rotation\": 0.8800225133750041}}, {\"x\": 29.95806312561035, \"z\": 1.1455001831054688, \"w\": 0.3173084259033203, \"d\": 0.48199462890625, \"minY\": 22.58059129714966, \"h\": 22.699408626556398, \"square\": \"Approach continuous guard.054\", \"oriented\": {\"w\": 0.57997375802685, \"d\": 0.085, \"rotation\": 1.0582552870644266}}, {\"x\": 29.95806312561035, \"z\": 1.1455001831054688, \"w\": 0.3173084259033203, \"d\": 0.48199462890625, \"minY\": 22.880591487884523, \"h\": 22.999408340454103, \"square\": \"Approach continuous guard.055\", \"oriented\": {\"w\": 0.57997375802685, \"d\": 0.085, \"rotation\": 1.0582552870644266}}, {\"x\": 29.95806312561035, \"z\": 1.1455001831054688, \"w\": 0.3173084259033203, \"d\": 0.48199462890625, \"minY\": 23.23059139251709, \"h\": 23.34940824508667, \"square\": \"Approach continuous guard.056\", \"oriented\": {\"w\": 0.57997375802685, \"d\": 0.085, \"rotation\": 1.0582552870644266}}, {\"x\": 27.900628566741943, \"z\": -0.3455009460449219, \"w\": 0.4649820327758789, \"d\": 0.48199462890625, \"minY\": 22.58059129714966, \"h\": 22.699408626556398, \"square\": \"Approach continuous guard.057\", \"oriented\": {\"w\": 0.6755248368152045, \"d\": 0.085, \"rotation\": 0.8241627275625624}}, {\"x\": 27.900628566741943, \"z\": -0.3455009460449219, \"w\": 0.4649820327758789, \"d\": 0.48199462890625, \"minY\": 22.880591487884523, \"h\": 22.999408340454103, \"square\": \"Approach continuous guard.058\", \"oriented\": {\"w\": 0.6755248368152045, \"d\": 0.085, \"rotation\": 0.8241627275625624}}, {\"x\": 27.900628566741943, \"z\": -0.3455009460449219, \"w\": 0.4649820327758789, \"d\": 0.48199462890625, \"minY\": 23.23059139251709, \"h\": 23.34940824508667, \"square\": \"Approach continuous guard.059\", \"oriented\": {\"w\": 0.6755248368152045, \"d\": 0.085, \"rotation\": 0.8241627275625624}}, {\"x\": 30.232783794403076, \"z\": 0.7010574340820312, \"w\": 0.3625974655151367, \"d\": 0.48199462890625, \"minY\": 22.627258396148683, \"h\": 22.74683198928833, \"square\": \"Approach continuous guard.060\", \"oriented\": {\"w\": 0.6059468501557363, \"d\": 0.085, \"rotation\": 0.977793829070454}}, {\"x\": 30.232783794403076, \"z\": 0.7010574340820312, \"w\": 0.3625974655151367, \"d\": 0.48199462890625, \"minY\": 22.927258110046388, \"h\": 23.046831703186037, \"square\": \"Approach continuous guard.061\", \"oriented\": {\"w\": 0.6059468501557363, \"d\": 0.085, \"rotation\": 0.977793829070454}}, {\"x\": 30.232783794403076, \"z\": 0.7010574340820312, \"w\": 0.3625974655151367, \"d\": 0.48199462890625, \"minY\": 23.277258014678956, \"h\": 23.396832084655763, \"square\": \"Approach continuous guard.062\", \"oriented\": {\"w\": 0.6059468501557363, \"d\": 0.085, \"rotation\": 0.977793829070454}}, {\"x\": 28.32851552963257, \"z\": -0.7899456024169922, \"w\": 0.4949378967285156, \"d\": 0.4819984436035156, \"minY\": 22.627258396148683, \"h\": 22.746075248718263, \"square\": \"Approach continuous guard.063\", \"oriented\": {\"w\": 0.6981816847413407, \"d\": 0.085, \"rotation\": 0.7859724829802217}}, {\"x\": 28.32851552963257, \"z\": -0.7899456024169922, \"w\": 0.4949378967285156, \"d\": 0.4819984436035156, \"minY\": 22.927258110046388, \"h\": 23.046074962615968, \"square\": \"Approach continuous guard.064\", \"oriented\": {\"w\": 0.6981816847413407, \"d\": 0.085, \"rotation\": 0.7859724829802217}}, {\"x\": 28.328515768051147, \"z\": -0.7899456024169922, \"w\": 0.49493837356567383, \"d\": 0.4819984436035156, \"minY\": 23.277258014678956, \"h\": 23.396075344085695, \"square\": \"Approach continuous guard.065\", \"oriented\": {\"w\": 0.6981813477603449, \"d\": 0.085, \"rotation\": 0.7859730200359298}}, {\"x\": 30.557642936706543, \"z\": 0.25661277770996094, \"w\": 0.4089813232421875, \"d\": 0.4819984436035156, \"minY\": 22.67392501831055, \"h\": 22.801165199279787, \"square\": \"Approach continuous guard.066\", \"oriented\": {\"w\": 0.6358016452784303, \"d\": 0.085, \"rotation\": 0.9035304123574819}}, {\"x\": 30.557642936706543, \"z\": 0.25661277770996094, \"w\": 0.4089813232421875, \"d\": 0.4819984436035156, \"minY\": 22.973924732208253, \"h\": 23.10116491317749, \"square\": \"Approach continuous guard.067\", \"oriented\": {\"w\": 0.6358016452784303, \"d\": 0.085, \"rotation\": 0.9035304123574819}}, {\"x\": 30.557642936706543, \"z\": 0.25661277770996094, \"w\": 0.4089813232421875, \"d\": 0.4819984436035156, \"minY\": 23.32392511367798, \"h\": 23.451165294647218, \"square\": \"Approach continuous guard.068\", \"oriented\": {\"w\": 0.6358016452784303, \"d\": 0.085, \"rotation\": 0.9035304123574819}}, {\"x\": 28.780975341796875, \"z\": -1.2343902587890625, \"w\": 0.5098447799682617, \"d\": 0.48199462890625, \"minY\": 22.67392501831055, \"h\": 22.79274187088013, \"square\": \"Approach continuous guard.069\", \"oriented\": {\"w\": 0.7097604975315741, \"d\": 0.085, \"rotation\": 0.7680052029503501}}, {\"x\": 28.780975341796875, \"z\": -1.2343902587890625, \"w\": 0.5098447799682617, \"d\": 0.48199462890625, \"minY\": 22.973924732208253, \"h\": 23.092741584777833, \"square\": \"Approach continuous guard.070\", \"oriented\": {\"w\": 0.7097604975315741, \"d\": 0.085, \"rotation\": 0.7680052029503501}}, {\"x\": 28.780975341796875, \"z\": -1.2343902587890625, \"w\": 0.5098447799682617, \"d\": 0.48199462890625, \"minY\": 23.32392511367798, \"h\": 23.44274196624756, \"square\": \"Approach continuous guard.071\", \"oriented\": {\"w\": 0.7097604975315741, \"d\": 0.085, \"rotation\": 0.7680052029503501}}, {\"x\": 30.931206703186035, \"z\": -0.18783187866210938, \"w\": 0.4516468048095703, \"d\": 0.48199462890625, \"minY\": 22.728087997436525, \"h\": 22.85549840927124, \"square\": \"Approach continuous guard.072\", \"oriented\": {\"w\": 0.6657381600570536, \"d\": 0.085, \"rotation\": 0.84209086507799}}, {\"x\": 30.931206703186035, \"z\": -0.18783187866210938, \"w\": 0.4516477584838867, \"d\": 0.48199462890625, \"minY\": 23.02808771133423, \"h\": 23.155498600006105, \"square\": \"Approach continuous guard.073\", \"oriented\": {\"w\": 0.6657381600570536, \"d\": 0.085, \"rotation\": 0.84209086507799}}, {\"x\": 30.931206703186035, \"z\": -0.18783187866210938, \"w\": 0.4516468048095703, \"d\": 0.48199462890625, \"minY\": 23.378088092803956, \"h\": 23.505498504638673, \"square\": \"Approach continuous guard.074\", \"oriented\": {\"w\": 0.6657381600570536, \"d\": 0.085, \"rotation\": 0.84209086507799}}, {\"x\": 29.238943576812744, \"z\": -1.6788349151611328, \"w\": 0.5048933029174805, \"d\": 0.4819984436035156, \"minY\": 22.720591640472414, \"h\": 22.839408493041994, \"square\": \"Approach continuous guard.075\", \"oriented\": {\"w\": 0.7058557897630855, \"d\": 0.085, \"rotation\": 0.7739615966562441}}, {\"x\": 29.238943576812744, \"z\": -1.6788349151611328, \"w\": 0.5048942565917969, \"d\": 0.4819984436035156, \"minY\": 23.02059135437012, \"h\": 23.139408683776857, \"square\": \"Approach continuous guard.076\", \"oriented\": {\"w\": 0.7058557897630855, \"d\": 0.085, \"rotation\": 0.7739615966562441}}, {\"x\": 29.238943576812744, \"z\": -1.6788349151611328, \"w\": 0.5048933029174805, \"d\": 0.4819984436035156, \"minY\": 23.370591735839845, \"h\": 23.489408588409425, \"square\": \"Approach continuous guard.077\", \"oriented\": {\"w\": 0.7058557897630855, \"d\": 0.085, \"rotation\": 0.7739615966562441}}, {\"x\": 31.089041709899902, \"z\": -0.4435310363769531, \"w\": 0.154571533203125, \"d\": 0.122406005859375, \"minY\": 22.78240022659302, \"h\": 22.900018310546876, \"square\": \"Approach continuous guard.078\", \"oriented\": {\"w\": 0.17630960231161463, \"d\": 0.085, \"rotation\": 2.460275407373181}}, {\"x\": 31.089041709899902, \"z\": -0.4435310363769531, \"w\": 0.154571533203125, \"d\": 0.122406005859375, \"minY\": 23.082400417327882, \"h\": 23.20001850128174, \"square\": \"Approach continuous guard.079\", \"oriented\": {\"w\": 0.17630960231161463, \"d\": 0.085, \"rotation\": 2.460275407373181}}, {\"x\": 31.089041709899902, \"z\": -0.4435310363769531, \"w\": 0.154571533203125, \"d\": 0.122406005859375, \"minY\": 23.43240032196045, \"h\": 23.550018405914308, \"square\": \"Approach continuous guard.080\", \"oriented\": {\"w\": 0.17630960231161463, \"d\": 0.085, \"rotation\": 2.460275407373181}}, {\"x\": 29.907485485076904, \"z\": -2.3120250701904297, \"w\": 0.9232587814331055, \"d\": 0.8648567199707031, \"minY\": 22.76932535171509, \"h\": 22.88400802612305, \"square\": \"Approach continuous guard.081\", \"oriented\": {\"w\": 1.2723745071925583, \"d\": 0.085, \"rotation\": 0.7526729995685398}}, {\"x\": 29.907485485076904, \"z\": -2.3120250701904297, \"w\": 0.9232587814331055, \"d\": 0.8648567199707031, \"minY\": 23.069325542449953, \"h\": 23.18400821685791, \"square\": \"Approach continuous guard.082\", \"oriented\": {\"w\": 1.2723745071925583, \"d\": 0.085, \"rotation\": 0.7526729995685398}}, {\"x\": 29.907485485076904, \"z\": -2.3120250701904297, \"w\": 0.9232587814331055, \"d\": 0.8648567199707031, \"minY\": 23.41932544708252, \"h\": 23.53400812149048, \"square\": \"Approach continuous guard.083\", \"oriented\": {\"w\": 1.2723745071925583, \"d\": 0.085, \"rotation\": 0.7526729995685398}}, {\"x\": 30.989905834197998, \"z\": -0.40384864807128906, \"w\": 0.1649627685546875, \"d\": 0.17772293090820312, \"minY\": 22.82830104827881, \"h\": 22.89658603668213, \"square\": \"Approach continuous guard.084\", \"oriented\": {\"w\": 0.25641735098427754, \"d\": 0.085, \"rotation\": -2.239046120904367}}, {\"x\": 30.989905834197998, \"z\": -0.40384864807128906, \"w\": 0.1649627685546875, \"d\": 0.17772293090820312, \"minY\": 23.128301239013673, \"h\": 23.196586227416994, \"square\": \"Approach continuous guard.085\", \"oriented\": {\"w\": 0.25641735098427754, \"d\": 0.085, \"rotation\": -2.239046120904367}}, {\"x\": 30.989905834197998, \"z\": -0.40384864807128906, \"w\": 0.1649627685546875, \"d\": 0.17772293090820312, \"minY\": 23.47830114364624, \"h\": 23.546586132049562, \"square\": \"Approach continuous guard.086\", \"oriented\": {\"w\": 0.25641735098427754, \"d\": 0.085, \"rotation\": -2.239046120904367}}, {\"x\": 30.885209560394287, \"z\": -2.8247222900390625, \"w\": 1.0932769775390625, \"d\": 0.26734161376953125, \"minY\": 22.81750020980835, \"h\": 22.894023990631105, \"square\": \"Approach continuous guard.087\", \"oriented\": {\"w\": 1.1714373635026052, \"d\": 0.085, \"rotation\": 0.1857898928518812}}, {\"x\": 30.885209560394287, \"z\": -2.8247222900390625, \"w\": 1.0932769775390625, \"d\": 0.26734161376953125, \"minY\": 23.117500400543214, \"h\": 23.194024181365968, \"square\": \"Approach continuous guard.088\", \"oriented\": {\"w\": 1.1714373635026052, \"d\": 0.085, \"rotation\": 0.1857898928518812}}, {\"x\": 30.885209560394287, \"z\": -2.8247222900390625, \"w\": 1.0932769775390625, \"d\": 0.26734161376953125, \"minY\": 23.467500305175783, \"h\": 23.544024085998537, \"square\": \"Approach continuous guard.089\", \"oriented\": {\"w\": 1.1714373635026052, \"d\": 0.085, \"rotation\": 0.1857898928518812}}, {\"x\": 31.18577766418457, \"z\": -0.3449745178222656, \"w\": 0.5174379348754883, \"d\": 0.09346771240234375, \"minY\": 22.828928565979005, \"h\": 22.90535697937012, \"square\": \"Approach continuous guard.090\", \"oriented\": {\"w\": 0.5772683567580161, \"d\": 0.085, \"rotation\": 0.05635520423616188}}, {\"x\": 31.18577766418457, \"z\": -0.3449745178222656, \"w\": 0.5174379348754883, \"d\": 0.09346771240234375, \"minY\": 23.12892875671387, \"h\": 23.205357170104982, \"square\": \"Approach continuous guard.091\", \"oriented\": {\"w\": 0.5772683567580161, \"d\": 0.085, \"rotation\": 0.05635520423616188}}, {\"x\": 31.18577766418457, \"z\": -0.3449745178222656, \"w\": 0.5174379348754883, \"d\": 0.09346771240234375, \"minY\": 23.478928661346437, \"h\": 23.55535707473755, \"square\": \"Approach continuous guard.092\", \"oriented\": {\"w\": 0.5772683567580161, \"d\": 0.085, \"rotation\": 0.05635520423616188}}, {\"x\": 31.675835132598877, \"z\": -2.9407386779785156, \"w\": 0.5037078857421875, \"d\": 0.09346771240234375, \"minY\": 22.828928565979005, \"h\": 22.90535697937012, \"square\": \"Approach continuous guard.093\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 31.675835132598877, \"z\": -2.9407386779785156, \"w\": 0.5037078857421875, \"d\": 0.09346771240234375, \"minY\": 23.12892875671387, \"h\": 23.205357170104982, \"square\": \"Approach continuous guard.094\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 31.675835132598877, \"z\": -2.9407386779785156, \"w\": 0.5037078857421875, \"d\": 0.09346771240234375, \"minY\": 23.478928661346437, \"h\": 23.55535707473755, \"square\": \"Approach continuous guard.095\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 31.70354652404785, \"z\": -0.3735466003417969, \"w\": 0.5404186248779297, \"d\": 0.09346771240234375, \"minY\": 22.840357398986818, \"h\": 22.916785335540773, \"square\": \"Approach continuous guard.096\", \"oriented\": {\"w\": 0.6007126678910579, \"d\": 0.085, \"rotation\": 0.053863238456250594}}, {\"x\": 31.70354652404785, \"z\": -0.3735466003417969, \"w\": 0.5404186248779297, \"d\": 0.09346771240234375, \"minY\": 23.14035758972168, \"h\": 23.216785526275636, \"square\": \"Approach continuous guard.097\", \"oriented\": {\"w\": 0.6007126678910579, \"d\": 0.085, \"rotation\": 0.053863238456250594}}, {\"x\": 31.70354652404785, \"z\": -0.3735466003417969, \"w\": 0.5404186248779297, \"d\": 0.09346771240234375, \"minY\": 23.49035749435425, \"h\": 23.566785430908205, \"square\": \"Approach continuous guard.098\", \"oriented\": {\"w\": 0.6007126678910579, \"d\": 0.085, \"rotation\": 0.053863238456250594}}, {\"x\": 32.175835371017456, \"z\": -2.969310760498047, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 22.840357398986818, \"h\": 22.916785335540773, \"square\": \"Approach continuous guard.099\", \"oriented\": {\"w\": 0.5708159365656598, \"d\": 0.085, \"rotation\": 0.05708205888583173}}, {\"x\": 32.175835371017456, \"z\": -2.969310760498047, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.14035758972168, \"h\": 23.216785526275636, \"square\": \"Approach continuous guard.100\", \"oriented\": {\"w\": 0.5708159365656598, \"d\": 0.085, \"rotation\": 0.05708205888583173}}, {\"x\": 32.175835371017456, \"z\": -2.969310760498047, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.49035749435425, \"h\": 23.566785430908205, \"square\": \"Approach continuous guard.101\", \"oriented\": {\"w\": 0.5708159365656598, \"d\": 0.085, \"rotation\": 0.05708205888583173}}, {\"x\": 32.298970222473145, \"z\": -0.4021186828613281, \"w\": 0.6700124740600586, \"d\": 0.09346771240234375, \"minY\": 22.851785755157472, \"h\": 22.928214168548585, \"square\": \"Approach continuous guard.102\", \"oriented\": {\"w\": 0.7326074298133081, \"d\": 0.085, \"rotation\": 0.04313405359722031}}, {\"x\": 32.298970222473145, \"z\": -0.4021186828613281, \"w\": 0.6700124740600586, \"d\": 0.09346771240234375, \"minY\": 23.151785945892335, \"h\": 23.22821435928345, \"square\": \"Approach continuous guard.103\", \"oriented\": {\"w\": 0.7326074298133081, \"d\": 0.085, \"rotation\": 0.04313405359722031}}, {\"x\": 32.298970222473145, \"z\": -0.4021186828613281, \"w\": 0.6700124740600586, \"d\": 0.09346771240234375, \"minY\": 23.501785850524904, \"h\": 23.578214263916017, \"square\": \"Approach continuous guard.104\", \"oriented\": {\"w\": 0.7326074298133081, \"d\": 0.085, \"rotation\": 0.04313405359722031}}, {\"x\": 32.675835371017456, \"z\": -2.997882843017578, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 22.851785755157472, \"h\": 22.928214168548585, \"square\": \"Approach continuous guard.105\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 32.675835371017456, \"z\": -2.997882843017578, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.151785945892335, \"h\": 23.22821435928345, \"square\": \"Approach continuous guard.106\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 32.675835371017456, \"z\": -2.997882843017578, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.501785850524904, \"h\": 23.578214263916017, \"square\": \"Approach continuous guard.107\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 32.959256291389465, \"z\": -0.43068885803222656, \"w\": 0.6630613803863525, \"d\": 0.09346389770507812, \"minY\": 22.863214588165285, \"h\": 22.93964252471924, \"square\": \"Approach continuous guard.108\", \"oriented\": {\"w\": 0.7292906275367776, \"d\": 0.085, \"rotation\": 0.04334539940274903}}, {\"x\": 32.959256291389465, \"z\": -0.43068885803222656, \"w\": 0.6630613803863525, \"d\": 0.09346389770507812, \"minY\": 23.163214778900148, \"h\": 23.239642715454103, \"square\": \"Approach continuous guard.109\", \"oriented\": {\"w\": 0.7292906275367776, \"d\": 0.085, \"rotation\": 0.04334539940274903}}, {\"x\": 32.959256291389465, \"z\": -0.43068885803222656, \"w\": 0.6630613803863525, \"d\": 0.09346389770507812, \"minY\": 23.513214683532716, \"h\": 23.58964262008667, \"square\": \"Approach continuous guard.110\", \"oriented\": {\"w\": 0.7292906275367776, \"d\": 0.085, \"rotation\": 0.04334539940274903}}, {\"x\": 33.175835371017456, \"z\": -3.0264549255371094, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 22.863214588165285, \"h\": 22.93964252471924, \"square\": \"Approach continuous guard.111\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 33.175835371017456, \"z\": -3.0264549255371094, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.163214778900148, \"h\": 23.239642715454103, \"square\": \"Approach continuous guard.112\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 33.175835371017456, \"z\": -3.0264549255371094, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.513214683532716, \"h\": 23.58964262008667, \"square\": \"Approach continuous guard.113\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 33.61685085296631, \"z\": -0.459259033203125, \"w\": 0.6571846008300781, \"d\": 0.09346771240234375, \"minY\": 22.87464294433594, \"h\": 22.951071357727052, \"square\": \"Approach continuous guard.114\", \"oriented\": {\"w\": 0.7258584258307967, \"d\": 0.085, \"rotation\": 0.043578197282051555}}, {\"x\": 33.61685085296631, \"z\": -0.459259033203125, \"w\": 0.6571846008300781, \"d\": 0.09346771240234375, \"minY\": 23.174643135070802, \"h\": 23.251071548461915, \"square\": \"Approach continuous guard.115\", \"oriented\": {\"w\": 0.7258584258307967, \"d\": 0.085, \"rotation\": 0.043578197282051555}}, {\"x\": 33.61685085296631, \"z\": -0.459259033203125, \"w\": 0.6571846008300781, \"d\": 0.09346771240234375, \"minY\": 23.52464303970337, \"h\": 23.601071453094484, \"square\": \"Approach continuous guard.116\", \"oriented\": {\"w\": 0.7258584258307967, \"d\": 0.085, \"rotation\": 0.043578197282051555}}, {\"x\": 33.675835371017456, \"z\": -3.0550270080566406, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 22.87464294433594, \"h\": 22.951071357727052, \"square\": \"Approach continuous guard.117\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 33.675835371017456, \"z\": -3.0550270080566406, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.174643135070802, \"h\": 23.251071548461915, \"square\": \"Approach continuous guard.118\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 33.675835371017456, \"z\": -3.0550270080566406, \"w\": 0.5037083625793457, \"d\": 0.09346771240234375, \"minY\": 23.52464303970337, \"h\": 23.601071453094484, \"square\": \"Approach continuous guard.119\", \"oriented\": {\"w\": 0.5708156985354023, \"d\": 0.085, \"rotation\": 0.057082086045591056}}, {\"x\": 34.26004606485367, \"z\": -0.48783111572265625, \"w\": 0.6319457292556763, \"d\": 0.09346771240234375, \"minY\": 22.88607177734375, \"h\": 22.962499713897706, \"square\": \"Approach continuous guard.120\", \"oriented\": {\"w\": 0.7000547563555157, \"d\": 0.085, \"rotation\": 0.04536412804162326}}, {\"x\": 34.26004606485367, \"z\": -0.48783111572265625, \"w\": 0.6319457292556763, \"d\": 0.09346771240234375, \"minY\": 23.186071968078615, \"h\": 23.26249990463257, \"square\": \"Approach continuous guard.121\", \"oriented\": {\"w\": 0.7000547563555157, \"d\": 0.085, \"rotation\": 0.04536412804162326}}, {\"x\": 34.26004606485367, \"z\": -0.48783111572265625, \"w\": 0.6319457292556763, \"d\": 0.09346771240234375, \"minY\": 23.536071872711183, \"h\": 23.612499809265138, \"square\": \"Approach continuous guard.122\", \"oriented\": {\"w\": 0.7000547563555157, \"d\": 0.085, \"rotation\": 0.04536412804162326}}, {\"x\": 34.17583531141281, \"z\": -3.083597183227539, \"w\": 0.503707766532898, \"d\": 0.09346389770507812, \"minY\": 22.88607177734375, \"h\": 22.962499713897706, \"square\": \"Approach continuous guard.123\", \"oriented\": {\"w\": 0.570815361902058, \"d\": 0.085, \"rotation\": 0.05707449505820353}}, {\"x\": 34.17583531141281, \"z\": -3.083597183227539, \"w\": 0.503707766532898, \"d\": 0.09346389770507812, \"minY\": 23.186071968078615, \"h\": 23.26249990463257, \"square\": \"Approach continuous guard.124\", \"oriented\": {\"w\": 0.570815361902058, \"d\": 0.085, \"rotation\": 0.05707449505820353}}, {\"x\": 34.17583531141281, \"z\": -3.083597183227539, \"w\": 0.503707766532898, \"d\": 0.09346389770507812, \"minY\": 23.536071872711183, \"h\": 23.612499809265138, \"square\": \"Approach continuous guard.125\", \"oriented\": {\"w\": 0.570815361902058, \"d\": 0.085, \"rotation\": 0.05707449505820353}}, {\"x\": 27.519238471984863, \"z\": 4.919239044189453, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Approach guard post\"}, {\"x\": 25.516693115234375, \"z\": 3.080760955810547, \"w\": 0.07155609130859375, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Approach guard post.001\"}, {\"x\": 28.159238815307617, \"z\": 4.279239654541016, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.89200005531311, \"h\": 22.942000007629396, \"square\": \"Approach guard post.002\"}, {\"x\": 25.946007251739502, \"z\": 2.4407615661621094, \"w\": 0.07357120513916016, \"d\": 0.05500030517578125, \"minY\": 21.89200005531311, \"h\": 22.942000007629396, \"square\": \"Approach guard post.003\"}, {\"x\": 28.76881504058838, \"z\": 3.639240264892578, \"w\": 0.06371498107910156, \"d\": 0.05500030517578125, \"minY\": 21.984000062942506, \"h\": 23.03400001525879, \"square\": \"Approach guard post.004\"}, {\"x\": 26.38624334335327, \"z\": 1.8007621765136719, \"w\": 0.07000064849853516, \"d\": 0.05500030517578125, \"minY\": 21.984000062942506, \"h\": 23.03400001525879, \"square\": \"Approach guard post.005\"}, {\"x\": 29.289536952972412, \"z\": 2.7010574340820312, \"w\": 0.07353591918945312, \"d\": 0.05500030517578125, \"minY\": 22.07666668891907, \"h\": 23.126666641235353, \"square\": \"Approach guard post.006\"}, {\"x\": 26.743712425231934, \"z\": 1.2100563049316406, \"w\": 0.06342697143554688, \"d\": 0.05500030517578125, \"minY\": 22.07666668891907, \"h\": 23.126666641235353, \"square\": \"Approach guard post.007\"}, {\"x\": 29.626938343048096, \"z\": 1.8121681213378906, \"w\": 0.07010173797607422, \"d\": 0.05500030517578125, \"minY\": 22.1699999332428, \"h\": 23.219999885559083, \"square\": \"Approach guard post.008\"}, {\"x\": 27.328482151031494, \"z\": 0.3211669921875, \"w\": 0.058953285217285156, \"d\": 0.05500030517578125, \"minY\": 22.1699999332428, \"h\": 23.219999885559083, \"square\": \"Approach guard post.009\"}, {\"x\": 30.08415198326111, \"z\": 0.92327880859375, \"w\": 0.059572696685791016, \"d\": 0.05500030517578125, \"minY\": 22.26333341598511, \"h\": 23.313333129882814, \"square\": \"Approach guard post.010\"}, {\"x\": 28.10711693763733, \"z\": -0.5677223205566406, \"w\": 0.06970071792602539, \"d\": 0.05500030517578125, \"minY\": 22.26333341598511, \"h\": 23.313333129882814, \"square\": \"Approach guard post.011\"}, {\"x\": 30.733806133270264, \"z\": 0.034389495849609375, \"w\": 0.0628499984741211, \"d\": 0.05500030517578125, \"minY\": 22.36396417617798, \"h\": 23.41528902053833, \"square\": \"Approach guard post.012\"}, {\"x\": 29.011191844940186, \"z\": -1.4566116333007812, \"w\": 0.07361316680908203, \"d\": 0.05500030517578125, \"minY\": 22.35666666030884, \"h\": 23.406666851043703, \"square\": \"Approach guard post.013\"}, {\"x\": 31.04792547225952, \"z\": -0.4770088195800781, \"w\": 0.06882953643798828, \"d\": 0.05500030517578125, \"minY\": 22.46279582977295, \"h\": 23.514120674133302, \"square\": \"Approach guard post.014\"}, {\"x\": 30.343416690826416, \"z\": -2.722991943359375, \"w\": 0.05712127685546875, \"d\": 0.05500030517578125, \"minY\": 22.44999990463257, \"h\": 23.500000095367433, \"square\": \"Approach guard post.015\"}, {\"x\": 31.43888783454895, \"z\": -0.35926055908203125, \"w\": 0.06760072708129883, \"d\": 0.05500030517578125, \"minY\": 22.472194766998292, \"h\": 23.523519611358644, \"square\": \"Approach guard post.016\"}, {\"x\": 31.925835132598877, \"z\": -2.9550247192382812, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 22.472194766998292, \"h\": 23.523519611358644, \"square\": \"Approach guard post.017\"}, {\"x\": 32.630733132362366, \"z\": -0.41640472412109375, \"w\": 0.08151888847351074, \"d\": 0.05500030517578125, \"minY\": 22.49505195617676, \"h\": 23.54637680053711, \"square\": \"Approach guard post.018\"}, {\"x\": 32.925835371017456, \"z\": -3.0121688842773438, \"w\": 0.05499982833862305, \"d\": 0.05500030517578125, \"minY\": 22.49505195617676, \"h\": 23.54637680053711, \"square\": \"Approach guard post.019\"}, {\"x\": 33.944650053977966, \"z\": -0.4735450744628906, \"w\": 0.07465291023254395, \"d\": 0.05500030517578125, \"minY\": 22.517908906936647, \"h\": 23.569233989715578, \"square\": \"Approach guard post.020\"}, {\"x\": 33.925835371017456, \"z\": -3.0693130493164062, \"w\": 0.05499982833862305, \"d\": 0.05500030517578125, \"minY\": 22.517908906936647, \"h\": 23.569233989715578, \"square\": \"Approach guard post.021\"}, {\"x\": 35.00131222605705, \"z\": 0.8322410583496094, \"w\": 0.05500000715255737, \"d\": 0.05500030517578125, \"minY\": 20.75473508834839, \"h\": 21.80605731010437, \"square\": \"Landing stair guard post\"}, {\"x\": 34.251312255859375, \"z\": -0.06776046752929688, \"w\": 0.05500006675720215, \"d\": 0.05500030517578125, \"minY\": 21.64104518890381, \"h\": 22.693689918518068, \"square\": \"Landing stair guard post.001\"}, {\"x\": 33.501312255859375, \"z\": -0.9677619934082031, \"w\": 0.05499982833862305, \"d\": 0.05500030517578125, \"minY\": 22.528677558898927, \"h\": 23.580000019073488, \"square\": \"Landing stair guard post.002\"}, {\"x\": 34.25131231546402, \"z\": -0.06776046752929688, \"w\": 1.5754882097244263, \"d\": 1.8508758544921875, \"minY\": 21.11895570755005, \"h\": 22.965779399871828, \"square\": \"Landing stair guard rail\", \"oriented\": {\"w\": 2.4130772471981023, \"d\": 0.085, \"rotation\": 2.265533769178824}}, {\"x\": 34.25131231546402, \"z\": -0.06776046752929688, \"w\": 1.5754882097244263, \"d\": 1.8508758544921875, \"minY\": 21.418955659866334, \"h\": 23.26577959060669, \"square\": \"Landing stair guard rail.001\", \"oriented\": {\"w\": 2.4130772471981023, \"d\": 0.085, \"rotation\": 2.265533769178824}}, {\"x\": 34.25131231546402, \"z\": -0.06776046752929688, \"w\": 1.5754882097244263, \"d\": 1.8508758544921875, \"minY\": 21.768955802917482, \"h\": 23.61577949523926, \"square\": \"Landing stair guard rail.002\", \"oriented\": {\"w\": 2.4130772471981023, \"d\": 0.085, \"rotation\": 2.265533769178824}}, {\"x\": 36.99868777394295, \"z\": -0.8322410583496094, \"w\": 0.05500000715255737, \"d\": 0.05500030517578125, \"minY\": 20.75473508834839, \"h\": 21.80605754852295, \"square\": \"Landing stair guard post.003\"}, {\"x\": 36.248687744140625, \"z\": -1.73223876953125, \"w\": 0.05500000715255737, \"d\": 0.05500030517578125, \"minY\": 21.64104495048523, \"h\": 22.693689918518068, \"square\": \"Landing stair guard post.004\"}, {\"x\": 35.498687759041786, \"z\": -2.6322402954101562, \"w\": 0.054999977350234985, \"d\": 0.05500030517578125, \"minY\": 22.528677558898927, \"h\": 23.580000019073488, \"square\": \"Landing stair guard post.005\"}, {\"x\": 36.248687744140625, \"z\": -1.7322406768798828, \"w\": 1.5754883289337158, \"d\": 1.8508720397949219, \"minY\": 21.11895570755005, \"h\": 22.965779399871828, \"square\": \"Landing stair guard rail.003\", \"oriented\": {\"w\": 2.4130743166657243, \"d\": 0.085, \"rotation\": 2.2655348114450544}}, {\"x\": 36.24868768453598, \"z\": -1.7322406768798828, \"w\": 1.5754882097244263, \"d\": 1.8508720397949219, \"minY\": 21.418955659866334, \"h\": 23.26577959060669, \"square\": \"Landing stair guard rail.004\", \"oriented\": {\"w\": 2.4130743166657243, \"d\": 0.085, \"rotation\": 2.2655348114450544}}, {\"x\": 36.248687744140625, \"z\": -1.7322406768798828, \"w\": 1.5754883289337158, \"d\": 1.8508720397949219, \"minY\": 21.768955802917482, \"h\": 23.61577949523926, \"square\": \"Landing stair guard rail.005\", \"oriented\": {\"w\": 2.4130743166657243, \"d\": 0.085, \"rotation\": 2.2655348114450544}}, {\"x\": 20.550000190734863, \"z\": 4.099998474121094, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post\"}, {\"x\": 21.712499618530273, \"z\": 4.099998474121094, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.001\"}, {\"x\": 22.875, \"z\": 4.099998474121094, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.002\"}, {\"x\": 24.037500381469727, \"z\": 4.099998474121094, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.003\"}, {\"x\": 25.199999809265137, \"z\": 4.099998474121094, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.004\"}, {\"x\": 22.875, \"z\": 4.099998474121094, \"w\": 4.649999618530273, \"d\": 0.06500244140625, \"minY\": 22.16749987602234, \"h\": 22.2324999332428, \"square\": \"Court perimeter rail\", \"oriented\": {\"w\": 4.719999618530274, \"d\": 0.085, \"rotation\": -0.0}}, {\"x\": 22.875, \"z\": 4.099998474121094, \"w\": 4.649999618530273, \"d\": 0.06500244140625, \"minY\": 22.467500066757204, \"h\": 22.532500123977663, \"square\": \"Court perimeter rail.001\", \"oriented\": {\"w\": 4.719999618530274, \"d\": 0.085, \"rotation\": -0.0}}, {\"x\": 22.875, \"z\": 4.099998474121094, \"w\": 4.649999618530273, \"d\": 0.06500244140625, \"minY\": 22.81750020980835, \"h\": 22.882499790191652, \"square\": \"Court perimeter rail.002\", \"oriented\": {\"w\": 4.719999618530274, \"d\": 0.085, \"rotation\": -0.0}}, {\"x\": 20.550000190734863, \"z\": 4.099998474121094, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.005\"}, {\"x\": 20.550000190734863, \"z\": 5.216667175292969, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.006\"}, {\"x\": 20.550000190734863, \"z\": 6.333332061767578, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.007\"}, {\"x\": 20.550000190734863, \"z\": 7.450000762939453, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.008\"}, {\"x\": 20.550000190734863, \"z\": 8.566665649414062, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.009\"}, {\"x\": 20.550000190734863, \"z\": 9.683334350585938, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.010\"}, {\"x\": 20.550000190734863, \"z\": 10.799999237060547, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.011\"}, {\"x\": 20.550000190734863, \"z\": 7.44999885559082, \"w\": 0.06500053405761719, \"d\": 6.700000762939453, \"minY\": 22.16749987602234, \"h\": 22.2324999332428, \"square\": \"Court perimeter rail.003\", \"oriented\": {\"w\": 6.770000762939453, \"d\": 0.085, \"rotation\": -1.5707963267948966}}, {\"x\": 20.550000190734863, \"z\": 7.44999885559082, \"w\": 0.06500053405761719, \"d\": 6.700000762939453, \"minY\": 22.467500066757204, \"h\": 22.532500123977663, \"square\": \"Court perimeter rail.004\", \"oriented\": {\"w\": 6.770000762939453, \"d\": 0.085, \"rotation\": -1.5707963267948966}}, {\"x\": 20.550000190734863, \"z\": 7.44999885559082, \"w\": 0.06500053405761719, \"d\": 6.700000762939453, \"minY\": 22.81750020980835, \"h\": 22.882499790191652, \"square\": \"Court perimeter rail.005\", \"oriented\": {\"w\": 6.770000762939453, \"d\": 0.085, \"rotation\": -1.5707963267948966}}, {\"x\": 20.550000190734863, \"z\": 14.350000381469727, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.012\"}, {\"x\": 21.766666412353516, \"z\": 14.350000381469727, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.013\"}, {\"x\": 22.983333587646484, \"z\": 14.350000381469727, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.014\"}, {\"x\": 24.199999809265137, \"z\": 14.350000381469727, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.015\"}, {\"x\": 25.416666984558105, \"z\": 14.350000381469727, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.016\"}, {\"x\": 26.633333206176758, \"z\": 14.350000381469727, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.017\"}, {\"x\": 27.850000381469727, \"z\": 14.350000381469727, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Court perimeter post.018\"}, {\"x\": 24.200000286102295, \"z\": 14.350000381469727, \"w\": 7.300000190734863, \"d\": 0.06499862670898438, \"minY\": 22.16749987602234, \"h\": 22.2324999332428, \"square\": \"Court perimeter rail.006\", \"oriented\": {\"w\": 7.370000190734864, \"d\": 0.085, \"rotation\": -0.0}}, {\"x\": 24.200000286102295, \"z\": 14.350000381469727, \"w\": 7.300000190734863, \"d\": 0.06499862670898438, \"minY\": 22.467500066757204, \"h\": 22.532500123977663, \"square\": \"Court perimeter rail.007\", \"oriented\": {\"w\": 7.370000190734864, \"d\": 0.085, \"rotation\": -0.0}}, {\"x\": 24.200000286102295, \"z\": 14.350000381469727, \"w\": 7.300000190734863, \"d\": 0.06499862670898438, \"minY\": 22.81750020980835, \"h\": 22.882499790191652, \"square\": \"Court perimeter rail.008\", \"oriented\": {\"w\": 7.370000190734864, \"d\": 0.085, \"rotation\": -0.0}}, {\"x\": 20.5, \"z\": 11.299999237060547, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Highland stair guard post\"}, {\"x\": 19.600000381469727, \"z\": 11.299999237060547, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.403391933441164, \"h\": 22.453391885757448, \"square\": \"Highland stair guard post.001\"}, {\"x\": 18.700000762939453, \"z\": 11.299999237060547, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.00678381919861, \"h\": 22.056783771514894, \"square\": \"Highland stair guard post.002\"}, {\"x\": 17.799999237060547, \"z\": 11.299999237060547, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 20.610175704956056, \"h\": 21.66017589569092, \"square\": \"Highland stair guard post.003\"}, {\"x\": 19.149999618530273, \"z\": 11.299999237060547, \"w\": 2.7262115478515625, \"d\": 0.06500244140625, \"minY\": 20.98043546676636, \"h\": 22.2297402381897, \"square\": \"Highland stair guard rail\", \"oriented\": {\"w\": 2.770000762939453, \"d\": 0.085, \"rotation\": -3.141592653589793}}, {\"x\": 19.149999618530273, \"z\": 11.299999237060547, \"w\": 2.7262115478515625, \"d\": 0.06500244140625, \"minY\": 21.280435419082643, \"h\": 22.529740428924562, \"square\": \"Highland stair guard rail.001\", \"oriented\": {\"w\": 2.770000762939453, \"d\": 0.085, \"rotation\": -3.141592653589793}}, {\"x\": 19.149999618530273, \"z\": 11.299999237060547, \"w\": 2.7262115478515625, \"d\": 0.06500244140625, \"minY\": 21.63043556213379, \"h\": 22.87974033355713, \"square\": \"Highland stair guard rail.002\", \"oriented\": {\"w\": 2.770000762939453, \"d\": 0.085, \"rotation\": -3.141592653589793}}, {\"x\": 20.5, \"z\": 13.899999618530273, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.800000047683717, \"h\": 22.85, \"square\": \"Highland stair guard post.004\"}, {\"x\": 19.600000381469727, \"z\": 13.899999618530273, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.403391933441164, \"h\": 22.453391885757448, \"square\": \"Highland stair guard post.005\"}, {\"x\": 18.700000762939453, \"z\": 13.899999618530273, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.00678381919861, \"h\": 22.056783771514894, \"square\": \"Highland stair guard post.006\"}, {\"x\": 17.799999237060547, \"z\": 13.899999618530273, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 20.610175704956056, \"h\": 21.66017589569092, \"square\": \"Highland stair guard post.007\"}, {\"x\": 19.149999618530273, \"z\": 13.899999618530273, \"w\": 2.7262115478515625, \"d\": 0.06499862670898438, \"minY\": 20.98043546676636, \"h\": 22.2297402381897, \"square\": \"Highland stair guard rail.003\", \"oriented\": {\"w\": 2.770000762939453, \"d\": 0.085, \"rotation\": -3.141592653589793}}, {\"x\": 19.149999618530273, \"z\": 13.899999618530273, \"w\": 2.7262115478515625, \"d\": 0.06499862670898438, \"minY\": 21.280435419082643, \"h\": 22.529740428924562, \"square\": \"Highland stair guard rail.004\", \"oriented\": {\"w\": 2.770000762939453, \"d\": 0.085, \"rotation\": -3.141592653589793}}, {\"x\": 19.149999618530273, \"z\": 13.899999618530273, \"w\": 2.7262115478515625, \"d\": 0.06499862670898438, \"minY\": 21.63043556213379, \"h\": 22.87974033355713, \"square\": \"Highland stair guard rail.005\", \"oriented\": {\"w\": 2.770000762939453, \"d\": 0.085, \"rotation\": -3.141592653589793}}, {\"x\": 27.850000381469727, \"z\": 4.900001525878906, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.799999809265138, \"h\": 22.85, \"square\": \"Retained exposed-edge post\"}, {\"x\": 27.850000381469727, \"z\": 5.900001525878906, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.799999809265138, \"h\": 22.85, \"square\": \"Retained exposed-edge post.001\"}, {\"x\": 27.850000381469727, \"z\": 6.900001525878906, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.799999809265138, \"h\": 22.85, \"square\": \"Retained exposed-edge post.002\"}, {\"x\": 27.850000381469727, \"z\": 7.900001525878906, \"w\": 0.05500030517578125, \"d\": 0.05500030517578125, \"minY\": 21.799999809265138, \"h\": 22.85, \"square\": \"Retained exposed-edge post.003\"}, {\"x\": 27.850000381469727, \"z\": 6.400001525878906, \"w\": 0.06500053405761719, \"d\": 3.0, \"minY\": 22.16749987602234, \"h\": 22.2324999332428, \"square\": \"Retained exposed-edge rail\"}, {\"x\": 27.850000381469727, \"z\": 6.400001525878906, \"w\": 0.06500053405761719, \"d\": 3.0, \"minY\": 22.467500066757204, \"h\": 22.532500123977663, \"square\": \"Retained exposed-edge rail.001\"}, {\"x\": 27.850000381469727, \"z\": 6.400001525878906, \"w\": 0.06500053405761719, \"d\": 3.0, \"minY\": 22.81750020980835, \"h\": 22.882499790191652, \"square\": \"Retained exposed-edge rail.002\"}, {\"x\": 25.12, \"z\": 9.0, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 25.03474507641264, \"z\": 9.4286054442489, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 24.791959594928933, \"z\": 9.791959594928933, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 24.428605444248902, \"z\": 10.03474507641264, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 24.0, \"z\": 10.120000000000001, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 23.571394555751098, \"z\": 10.03474507641264, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 23.208040405071067, \"z\": 9.791959594928933, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 22.96525492358736, \"z\": 9.4286054442489, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 22.88, \"z\": 9.0, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 22.96525492358736, \"z\": 8.5713945557511, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 23.208040405071067, \"z\": 8.208040405071067, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 23.571394555751098, \"z\": 7.965254923587359, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 24.0, \"z\": 7.88, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 24.428605444248902, \"z\": 7.965254923587359, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 24.791959594928933, \"z\": 8.208040405071067, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}, {\"x\": 25.03474507641264, \"z\": 8.571394555751098, \"w\": 0.56, \"d\": 0.56, \"minY\": 21.8, \"h\": 22.3, \"square\": \"Fountain basin\"}], \"support_resurvey\": [{\"name\": \"Terrain-scribed retaining / west\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / west.001\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / west.002\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / west.003\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / west.004\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / west.005\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / west.006\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / west.007\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / west.008\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / west.009\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / west.010\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / west.011\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / west.012\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.001\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.002\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.003\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.004\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.005\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.006\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.007\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.008\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / south.009\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / north\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / north.001\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / north.002\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / north.003\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / north.004\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / north.005\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / north.006\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / north.007\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / north.008\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / north.009\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.001\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Terrain-scribed retaining / east.002\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.003\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.004\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.005\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.006\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.007\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.008\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.009\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.010\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.011\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Terrain-scribed retaining / east.012\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Approach stone shoe\", \"toe_vertices_adjusted\": 8}, {\"name\": \"Approach timber bearing\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach stone shoe.001\", \"toe_vertices_adjusted\": 8}, {\"name\": \"Approach timber bearing.001\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach stone shoe.002\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach timber bearing.002\", \"toe_vertices_adjusted\": 3}, {\"name\": \"Approach stone shoe.003\", \"toe_vertices_adjusted\": 8}, {\"name\": \"Approach timber bearing.003\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach stone shoe.004\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Approach timber bearing.004\", \"toe_vertices_adjusted\": 0}, {\"name\": \"Approach stone shoe.005\", \"toe_vertices_adjusted\": 8}, {\"name\": \"Approach timber bearing.005\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach stone shoe.006\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Approach timber bearing.006\", \"toe_vertices_adjusted\": 0}, {\"name\": \"Approach stone shoe.007\", \"toe_vertices_adjusted\": 0}, {\"name\": \"Approach timber bearing.007\", \"toe_vertices_adjusted\": 0}, {\"name\": \"Approach stone shoe.008\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach timber bearing.008\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Approach stone shoe.009\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach timber bearing.009\", \"toe_vertices_adjusted\": 1}, {\"name\": \"Approach stone shoe.010\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach timber bearing.010\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Approach stone shoe.011\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach stone shoe.012\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach timber bearing.012\", \"toe_vertices_adjusted\": 3}, {\"name\": \"Approach stone shoe.013\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach stone shoe.014\", \"toe_vertices_adjusted\": 4}, {\"name\": \"Approach timber bearing.014\", \"toe_vertices_adjusted\": 2}, {\"name\": \"Approach stone shoe.015\", \"toe_vertices_adjusted\": 4}], \"terrain_baseline\": \"accepted R0-C1A.5; 539 source vertices updated in derivative context only\", \"routes\": [{\"name\": \"Graded square approach from existing north landing\", \"width\": 2.6, \"points\": [[26.6, 4.0, 21.8], [26.895867875145175, 3.68, 21.846], [27.15276978005532, 3.36, 21.892], [27.383593836280696, 3.04, 21.938000000000002], [27.59981576848936, 2.7199999999999998, 21.984], [27.81149890446714, 2.4, 22.03], [27.980594799551188, 1.9555555555555555, 22.076666666666668], [28.17606969789904, 1.511111111111111, 22.123333333333335], [28.411325517157582, 1.0666666666666667, 22.17], [28.694508520994532, 0.6222222222222222, 22.21666666666667], [29.02850931909844, 0.1777777777777776, 22.263333333333332], [29.410962867178668, -0.2666666666666666, 22.31], [29.834248466965423, -0.7111111111111112, 22.356666666666666], [30.285489766209736, -1.1555555555555554, 22.403333333333332], [30.746554758683445, -1.6, 22.45], [31.2560091255085, -1.6285714285714286, 22.46142857142857], [31.765402283237655, -1.6571428571428573, 22.47285714285714], [32.27472718568147, -1.6857142857142857, 22.484285714285715], [32.83798252266757, -1.7142857142857144, 22.495714285714286], [33.39657179557667, -1.7428571428571429, 22.507142857142856], [33.95055513825015, -1.7714285714285716, 22.518571428571427], [34.5, -1.8, 22.529999999999998]], \"playable\": \"NOT TESTED - isolated design\"}, {\"name\": \"Future Guild approach reservation\", \"width\": 2.6, \"points\": [[36, 0, 20.754735], [40, -4, 22.085899047851562], [44, -8, 23.61463134765625]], \"playable\": \"UNBUILT - plan reservation only\"}, {\"name\": \"Proposed natural trail to existing ridge junction\", \"width\": 2.1, \"points\": [[17.8, 12.6, 20.56517578125], [17.385714285714286, 12.485714285714286, 20.54160095214844], [16.97142857142857, 12.371428571428572, 20.534993896484377], [16.557142857142857, 12.257142857142856, 20.534978637695314], [16.142857142857142, 12.142857142857142, 20.534993896484377], [15.72857142857143, 12.028571428571428, 20.534993896484377], [15.314285714285715, 11.914285714285715, 20.534993896484377], [14.9, 11.8, 20.534993896484377], [14.485714285714286, 11.685714285714285, 20.534993896484377], [14.071428571428573, 11.571428571428571, 20.534993896484377], [13.657142857142858, 11.457142857142857, 20.534993896484377], [13.242857142857144, 11.342857142857143, 20.53496337890625], [12.82857142857143, 11.228571428571428, 20.53494812011719], [12.414285714285715, 11.114285714285714, 20.534917602539064], [12.0, 11.0, 20.53317810058594], [11.578947368421053, 10.842105263157896, 20.52976013183594], [11.157894736842106, 10.68421052631579, 20.52719665527344], [10.736842105263158, 10.526315789473685, 20.514348754882814], [10.31578947368421, 10.368421052631579, 20.491048583984377], [9.894736842105264, 10.210526315789474, 20.446767578125], [9.473684210526315, 10.052631578947368, 20.38559509277344], [9.052631578947368, 9.894736842105264, 20.331868896484377], [8.631578947368421, 9.736842105263158, 20.252950439453127], [8.210526315789474, 9.578947368421053, 20.17143798828125], [7.7894736842105265, 9.421052631578947, 20.09634948730469], [7.368421052631579, 9.263157894736842, 19.998525390625], [6.947368421052632, 9.105263157894736, 19.88669372558594], [6.526315789473684, 8.947368421052632, 19.800359497070314], [6.105263157894737, 8.789473684210526, 19.71518493652344], [5.684210526315789, 8.631578947368421, 19.633123168945314], [5.2631578947368425, 8.473684210526315, 19.565938720703127], [4.842105263157895, 8.31578947368421, 19.585653076171877], [4.421052631578948, 8.157894736842106, 19.668157348632814], [4.0, 8.0, 19.78264404296875], [3.590909090909091, 7.863636363636363, 19.936849365234377], [3.1818181818181817, 7.7272727272727275, 20.10539794921875], [2.7727272727272725, 7.590909090909091, 20.257772216796877], [2.3636363636363633, 7.454545454545455, 20.38846374511719], [1.9545454545454546, 7.318181818181818, 20.4964501953125], [1.5454545454545454, 7.181818181818182, 20.5871484375], [1.1363636363636362, 7.045454545454545, 20.661397705078127], [0.7272727272727271, 6.909090909090909, 20.719930419921877], [0.31818181818181834, 6.7727272727272725, 20.76334167480469], [-0.09090909090909083, 6.636363636363637, 20.797811279296877], [-0.5, 6.5, 20.82523132324219], [-0.9090909090909092, 6.363636363636363, 20.847646484375], [-1.3181818181818183, 6.2272727272727275, 20.866964111328127], [-1.7272727272727275, 6.090909090909091, 20.885991821289064], [-2.1363636363636367, 5.954545454545455, 20.904866943359377], [-2.545454545454546, 5.818181818181818, 20.92294860839844], [-2.954545454545454, 5.681818181818182, 20.941488037109377], [-3.3636363636363633, 5.545454545454545, 20.96018005371094], [-3.7727272727272725, 5.409090909090909, 20.9788720703125], [-4.181818181818182, 5.272727272727273, 20.99228454589844], [-4.590909090909092, 5.136363636363637, 21.01628662109375], [-5, 5, 21.046087036132814]], \"playable\": \"NOT TESTED - isolated design\"}], \"cameras\": [{\"name\": \"C1 Market-to-square eye 1.65m\", \"native_position\": [-3.700000047683716, 36.099998474121094, 5.664000034332275], \"rotation_euler\": [1.527348518371582, 1.4629489442086197e-07, 1.7025585174560547], \"lens_mm\": 26.0, \"horizontal_fov_deg\": 69.39030966512573, \"eye_above_support_m\": 1.65, \"support_height_game\": 22.614, \"ortho_width_m\": null, \"site_position_x_z_y\": [32.299999952316284, 7.900001525878906, 24.264000034332277], \"game_position_xyz\": [32.299999952316284, 24.264000034332277, 7.900001525878906]}, {\"name\": \"C1 Square interior eye 1.65m\", \"native_position\": [-9.0, 31.0, 4.849999904632568], \"rotation_euler\": [1.6478182077407837, -4.7317513462985517e-08, 0.5404195189476013], \"lens_mm\": 23.0, \"horizontal_fov_deg\": 76.09408569397988, \"eye_above_support_m\": 1.65, \"support_height_game\": 21.8, \"ortho_width_m\": null, \"site_position_x_z_y\": [27.0, 13.0, 23.44999990463257], \"game_position_xyz\": [27.0, 23.44999990463257, 13.0]}, {\"name\": \"C1 Elevated composition\", \"native_position\": [-33.0, 57.0, 25.399999618530273], \"rotation_euler\": [1.0435595512390137, -2.794496367641841e-08, -2.3365890979766846], \"lens_mm\": 42.0, \"horizontal_fov_deg\": 46.397181333762305, \"eye_above_support_m\": null, \"support_height_game\": null, \"ortho_width_m\": null, \"site_position_x_z_y\": [3.0, -13.0, 43.999999618530275], \"game_position_xyz\": [3.0, 43.999999618530275, -13.0]}, {\"name\": \"C1 Measured top-down\", \"native_position\": [-13.0, 39.0, 81.4000015258789], \"rotation_euler\": [0.0, -0.0, 0.0], \"lens_mm\": 40.0, \"horizontal_fov_deg\": 48.455489575996914, \"eye_above_support_m\": null, \"support_height_game\": null, \"ortho_width_m\": 65.0, \"site_position_x_z_y\": [23.0, 5.0, 100.0000015258789], \"game_position_xyz\": [23.0, 100.0000015258789, 5.0]}]}"
+        },
+        "children": [
+          {
+            "name": "C1__compacted_highland_earth__walking_surface",
+            "mesh": true,
+            "data": {
+              "name": "C1 / compacted highland earth / walking surface",
+              "walkable": true
+            }
+          },
+          {
+            "name": "C1__deep_green_metal__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / deep green metal / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__jade_water__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / jade water / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__oiled_timber__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / oiled timber / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__planting_soil__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / planting soil / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__sign_lettering__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / sign lettering / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__soft_water_highlights__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / soft water highlights / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__terracotta__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / terracotta / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__terracotta__walking_surface",
+            "mesh": true,
+            "data": {
+              "name": "C1 / terracotta / walking surface",
+              "walkable": true
+            }
+          },
+          {
+            "name": "C1__tropical_leaf__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / tropical leaf / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__warm_limestone__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / warm limestone / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__warm_limestone__walking_surface",
+            "mesh": true,
+            "data": {
+              "name": "C1 / warm limestone / walking surface",
+              "walkable": true
+            }
+          },
+          {
+            "name": "C1__warm_volcanic_stone__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / warm volcanic stone / static",
+              "walkable": false
+            }
+          },
+          {
+            "name": "C1__weathered_bronze__static",
+            "mesh": true,
+            "data": {
+              "name": "C1 / weathered bronze / static",
+              "walkable": false
+            }
+          }
+        ]
+      }
+    ],
+    "materials": [
+      "C1 / compacted highland earth",
+      "C1 / deep green metal",
+      "C1 / jade water",
+      "C1 / oiled timber",
+      "C1 / planting soil",
+      "C1 / sign lettering",
+      "C1 / soft water highlights",
+      "C1 / terracotta",
+      "C1 / tropical leaf",
+      "C1 / warm limestone",
+      "C1 / warm volcanic stone",
+      "C1 / weathered bronze"
+    ]
+  }
+}

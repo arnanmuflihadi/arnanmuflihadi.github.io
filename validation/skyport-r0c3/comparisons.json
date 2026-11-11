@@ -1,0 +1,190 @@
+[
+  {
+    "view": "01-island",
+    "camera": {
+      "position": [
+        143,
+        121,
+        194
+      ],
+      "quaternion": [
+        -0.19827553929456282,
+        0.327381355607055,
+        0.07046707494521927,
+        0.9211637475861728
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "callsBefore": 398,
+    "callsAfter": 414,
+    "trianglesBefore": 2513652,
+    "trianglesAfter": 2542852
+  },
+  {
+    "view": "02-aerial",
+    "camera": {
+      "position": [
+        8.180623088591787,
+        28,
+        84.51954370331835
+      ],
+      "quaternion": [
+        -0.2730544526830383,
+        -0.12048209377785121,
+        -0.03449166511653683,
+        0.9538006374428359
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "callsBefore": 387,
+    "callsAfter": 403,
+    "trianglesBefore": 2576868,
+    "trianglesAfter": 2606068
+  },
+  {
+    "view": "03-arrival",
+    "camera": {
+      "position": [
+        15.0601402178293,
+        16.689897932043287,
+        69.93625724009176
+      ],
+      "quaternion": [
+        0.048188581973641356,
+        0.3003217045943351,
+        -0.015193801534084745,
+        0.9524987573282526
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "callsBefore": 397,
+    "callsAfter": 413,
+    "trianglesBefore": 2585836,
+    "trianglesAfter": 2615036
+  },
+  {
+    "view": "04-town-route",
+    "camera": {
+      "position": [
+        13.790369546506986,
+        16.717643159295413,
+        70.21497294156852
+      ],
+      "quaternion": [
+        0.015231990430771522,
+        0.2739702590564563,
+        -0.00433972417221161,
+        0.9616077424886743
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6500000000000004
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "callsBefore": 398,
+    "callsAfter": 414,
+    "trianglesBefore": 2586004,
+    "trianglesAfter": 2615204
+  },
+  {
+    "view": "05-market-return",
+    "camera": {
+      "position": [
+        8.177222981616742,
+        16.924999640101486,
+        60.10643270862386
+      ],
+      "quaternion": [
+        -0.012911231164788638,
+        0.9528374392746929,
+        -0.040949193654353594,
+        -0.30042849060186255
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6500000000000004
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "callsBefore": 235,
+    "callsAfter": 251,
+    "trianglesBefore": 2390431,
+    "trianglesAfter": 2419631
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "samples": 145,
+  "width": 6,
+  "headroom": 2.1,
+  "includes": "architecture, props, planter and plant bounds; excludes terrain/support",
+  "blockers": []
+}

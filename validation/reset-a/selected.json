@@ -1,0 +1,60 @@
+{
+  "A": {
+    "centre": [
+      32,
+      19
+    ],
+    "angle": 240,
+    "score": 17.572456719154808,
+    "h0": 18.507425591355315,
+    "grade": 0.08,
+    "meanAdjustment": 1.4169768514268524,
+    "maxUnfilled": 3.241146149813904,
+    "maxSupport": 3.4411461498139033,
+    "treePlotConflicts": 1,
+    "entry": [
+      44.000000000000014,
+      39.78460969082652
+    ],
+    "tie": [
+      27.0,
+      57.0
+    ],
+    "tieDistance": 0.0,
+    "spurDirect": 24.194413890342222,
+    "extraApproachLength": 6.770550756332309,
+    "approachLength": 30.96496464667453,
+    "approachMeanGrade": 0.08,
+    "entryAngle": 74.63932041874921,
+    "template": "linear"
+  },
+  "B": {
+    "centre": [
+      -1,
+      47
+    ],
+    "angle": 235,
+    "score": 4.641376944327198,
+    "h0": 13.79464999520401,
+    "grade": 0.020000000000000004,
+    "meanAdjustment": 0.6037099197995519,
+    "maxUnfilled": 0.0,
+    "maxSupport": 0.20000000000000107,
+    "treePlotConflicts": 9,
+    "entry": [
+      9.324375854318834,
+      61.74473679720185
+    ],
+    "tie": [
+      27.0,
+      57.0
+    ],
+    "tieDistance": 0.0,
+    "spurDirect": 18.3013719762784,
+    "extraApproachLength": 9.64335832893838,
+    "approachLength": 27.94473030521678,
+    "approachMeanGrade": 0.08,
+    "entryAngle": 70.02590842598975,
+    "template": "hub"
+  }
+}

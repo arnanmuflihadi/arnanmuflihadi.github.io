@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4175/assets/game/atlas-guild/atlas-guild.glb?v=c2-2",
+      "transferBytes": 1527956,
+      "encodedBytes": 1527656,
+      "durationMs": 10.300000011920929
+    }
+  ],
+  "assetSha256": "6e189d7ef30221fa93457f497dda42e805081be4a42c3a5a219be08d0ceb090d",
+  "note": "Captured on first load of this same optimized GLB, before the camera-query-only correction"
+}

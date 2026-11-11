@@ -1,0 +1,62 @@
+{
+  "unit": "metres",
+  "blender_axes": "Z-up, front -Y",
+  "gltf_axes": "Y-up, front +Z",
+  "anchors": {
+    "Building shell": [
+      0,
+      0,
+      0
+    ],
+    "Shopfront and doors": [
+      0,
+      -3.55,
+      0.24
+    ],
+    "Windows": [
+      0,
+      0,
+      0
+    ],
+    "Balcony": [
+      0,
+      -2.85,
+      3.5
+    ],
+    "Roof A": [
+      0,
+      0.5,
+      6.45
+    ],
+    "Timber structures": [
+      0,
+      0,
+      0
+    ],
+    "Sun screens": [
+      1.26,
+      -3.14,
+      4.08
+    ],
+    "Planters": [
+      0,
+      0,
+      0
+    ],
+    "Decorative props": [
+      0,
+      -3.55,
+      0
+    ],
+    "Interior": [
+      0,
+      0,
+      0
+    ]
+  },
+  "roofB": [
+    0,
+    0.5,
+    6.45
+  ]
+}

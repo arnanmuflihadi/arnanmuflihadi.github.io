@@ -1,0 +1,114 @@
+{
+  "mbrEvidence": {
+    "dataset": {
+      "cameraY": "22.846",
+      "characterReady": "true",
+      "districtAssets": "{\"world\":\"Transit Kingdom / Landscape\",\"revision\":\"R0A2.67\",\"terrainOnly\":true,\"architectureInstances\":0,\"reservations\":{\"skyport\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":9,\"constructed\":false},\"station\":{\"x\":-5,\"z\":5,\"y\":21,\"radius\":8,\"constructed\":false},\"settlement\":{\"x\":32,\"z\":12,\"y\":22,\"radius\":11,\"constructed\":false},\"overlook\":{\"x\":-80,\"z\":5,\"y\":32,\"radius\":5,\"constructed\":false,\"natural\":true},\"dragon\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":6.5,\"constructed\":false}},\"imported\":{\"tree\":134,\"fern\":660,\"hangingFern\":24},\"terrain\":{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85},\"growthForms\":{\"spreading\":60,\"emergent\":36,\"windswept\":38},\"landscapeZones\":{\"forest\":107,\"meadow\":24,\"ridge\":3},\"vegetationBatches\":18,\"derivedTreeGeometries\":6,\"palms\":10,\"shrubs\":131,\"grassBlades\":28063,\"detail\":{\"grassChunks\":31,\"activeGrassChunks\":31,\"nearGrassChunks\":31,\"farGrassChunks\":0,\"eco\":false},\"files\":{\"requests\":2,\"cachedFiles\":2,\"loadedFiles\":2},\"geometry\":{\"meshes\":73,\"triangles\":1321126,\"geometries\":61,\"materials\":33,\"textures\":4,\"missingTextures\":[]},\"surfaceTriangles\":26416,\"sourceFiles\":[\"canopy-tree.glb\",\"fern.glb\"],\"cloudCount\":34,\"settlement\":null}",
+      "explorerLoadMs": "143.70",
+      "firstWorldFrameMs": "271.20",
+      "initialWorldLoadMs": "176.70",
+      "interactionMode": "adventure",
+      "islandDimensions": "{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85}",
+      "lenisPrevent": "",
+      "livingWorld": "",
+      "mode": "adventure",
+      "npcCount": "1",
+      "npcReady": "true",
+      "paused": "true",
+      "performanceEvidence": "{\"samples\":0,\"meanFrameMs\":0,\"p95FrameMs\":0,\"measuredFps\":0,\"walking\":{\"samples\":0,\"meanFrameMs\":0,\"p95FrameMs\":0,\"measuredFps\":0},\"meanRenderSubmissionMs\":0,\"drawCalls\":87,\"triangles\":1221726,\"memory\":{\"geometries\":97,\"textures\":16,\"programs\":20},\"viewport\":[1280,656],\"drawingBuffer\":[1728,885],\"pixelRatio\":1.35,\"shadows\":true,\"detail\":{\"grassChunks\":31,\"activeGrassChunks\":31,\"nearGrassChunks\":14,\"farGrassChunks\":17,\"eco\":false},\"mode\":\"adventure\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\",\"metric\":\"Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only\"}",
+      "playerX": "27.000",
+      "playerY": "16.030",
+      "playerZ": "57.000",
+      "reducedMotion": "false",
+      "rendererCount": "1",
+      "reviewEvidence": "{\"view\":\"live\",\"camera\":{\"position\":[27,22.845983976558152,66.26001350148935],\"quaternion\":[-0.23334293573562226,0,0,0.9723945055080685],\"fov\":60,\"aspect\":1.951219512195122},\"player\":[27,16.030228493031395,57],\"sceneId\":\"864626de-350e-4e47-bb44-dda43fac8cb8\",\"worldId\":\"transit-landscape-r0a\"}",
+      "sceneId": "864626de-350e-4e47-bb44-dda43fac8cb8",
+      "sceneryReady": "true",
+      "selectedProject": "mbr",
+      "totalReadyMs": "326.40",
+      "transferEvidence": "[{\"file\":\"canopy-tree.glb\",\"transferBytes\":0,\"encodedBytes\":719224,\"durationMs\":1.2999999970197678},{\"file\":\"fern.glb\",\"transferBytes\":0,\"encodedBytes\":104876,\"durationMs\":1},{\"file\":\"urban-explorer.glb\",\"transferBytes\":0,\"encodedBytes\":1581480,\"durationMs\":1.8999999985098839},{\"file\":\"city-resident.glb\",\"transferBytes\":0,\"encodedBytes\":1186388,\"durationMs\":1.6999999955296516},{\"file\":\"jump-animations.glb\",\"transferBytes\":0,\"encodedBytes\":267260,\"durationMs\":0.8999999985098839}]",
+      "worldId": "transit-landscape-r0a",
+      "worldReady": "true"
+    },
+    "dialog": "Close study\n\nURBAN MORPHOLOGY / JAKARTA\n\nA Satellite Proxy for Low-Income Communities in DKI Jakarta\n\nA morphology-based proxy, complementary to official measures; not a household income estimate.\n\nSatellite embeddings · XGBoost · Temporal harmonization\n\nResearch finding\n\nThe study models visible urban morphology as a proxy, complementary to official measures.\n\nThis is not a household income estimate. The fictional landscape does not identify low-income residents or depict measured deprivation.\n\nRead complete case study →\nThis realm is not constructed yet. The complete research remains available.",
+    "links": [
+      {
+        "href": "project-mbr.html",
+        "text": "Read complete case study →"
+      }
+    ]
+  },
+  "mbrArticle": {
+    "heading": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+    "url": "http://127.0.0.1:4173/project-mbr.html"
+  },
+  "workEvidence": {
+    "links": [
+      {
+        "href": "project-transit.html",
+        "text": "01"
+      },
+      {
+        "href": "project-pangan.html",
+        "text": "02"
+      },
+      {
+        "href": "project-alphaearth-food.html",
+        "text": "03"
+      },
+      {
+        "href": "project-mbr.html",
+        "text": "04"
+      },
+      {
+        "href": "project-cbd.html",
+        "text": "05"
+      },
+      {
+        "href": "project-transit.html",
+        "text": "01Transit access"
+      },
+      {
+        "href": "project-pangan.html",
+        "text": "02Food networks"
+      },
+      {
+        "href": "project-alphaearth-food.html",
+        "text": "03Earth observation"
+      },
+      {
+        "href": "project-mbr.html",
+        "text": "04Urban morphology"
+      },
+      {
+        "href": "project-cbd.html",
+        "text": "05Business centres"
+      },
+      {
+        "href": "project-transit.html",
+        "text": "01NETWORK ACCESSTransit accessibility in DKI JakartaWho can actually reach the city?"
+      },
+      {
+        "href": "project-pangan.html",
+        "text": "02FOOD SYSTEMSCritical roads for rice in West JavaWhich roads keep West Java’s rice moving?"
+      },
+      {
+        "href": "project-alphaearth-food.html",
+        "text": "03EARTH OBSERVATIONHistorical paddy screening in West JavaWhere does the historical signal justify closer inspection?"
+      },
+      {
+        "href": "project-mbr.html",
+        "text": "04URBAN MORPHOLOGYSatellite proxy for low-income communitiesWhat can satellite morphology reveal—and what can’t it replace?"
+      },
+      {
+        "href": "project-cbd.html",
+        "text": "05SPATIAL CLUSTERINGMapping Indonesia’s business centersWhere do commercial centers emerge from 91,940 POIs?"
+      },
+      {
+        "href": "project-bandung-cafe.html",
+        "text": "06SITE SCREENINGChoosing where to visit for a café in BandungWhich neighbourhoods deserve a site visit, and what can the data not say?"
+      }
+    ],
+    "world": "transit-landscape-r0a"
+  }
+}

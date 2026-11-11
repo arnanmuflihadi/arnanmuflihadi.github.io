@@ -1,0 +1,75 @@
+{
+  "models": [
+    {
+      "id": "city-resident",
+      "source": "https://quaternius.com/packs/ultimatemodularcharacters.html",
+      "sourceFile": "Casual.gltf",
+      "author": "Quaternius",
+      "license": "CC0-1.0",
+      "sourceSha256": "55c654d09a2a5ff6e3bd6158d4a1b462f181cd6f1e12a0f5e9d959f9c3abc438",
+      "outputSha256": "8a53aaf80ca07e16e215f96a999d0d9909d307b5c1805b2f863e967f06245e05",
+      "bytes": 1186388,
+      "animationOnly": false,
+      "clips": {
+        "Idle_Neutral": "Idle",
+        "Walk": "Walk",
+        "Run": "Run",
+        "Wave": "Wave",
+        "Interact": "Interact"
+      },
+      "changes": [
+        "Retain selected authored clips and original matching rig; rename actions",
+        "Hold animated horizontal Root translation constant where present; retain authored body motion",
+        "Matte nonmetallic materials; deduplicate/prune; embed all buffers and images"
+      ]
+    },
+    {
+      "id": "explorer-actions",
+      "source": "https://quaternius.com/packs/ultimatemodularcharacters.html",
+      "sourceFile": "Adventurer.gltf",
+      "author": "Quaternius",
+      "license": "CC0-1.0",
+      "sourceSha256": "21f7a61afb6bd6cef6961490c367594e3c2fc01ec1f041662131172ce763063e",
+      "outputSha256": "8a357845fe1634e3a4a1f0a9dca22b9cb51b5a7488e6cd0a063c199906041439",
+      "bytes": 623948,
+      "animationOnly": true,
+      "clips": {
+        "Punch_Left": "Attack1",
+        "Punch_Right": "Attack2",
+        "Roll": "Dodge",
+        "HitRecieve": "Hit",
+        "Death": "Defeat",
+        "Idle_Sword": "Guard"
+      },
+      "changes": [
+        "Retain selected authored clips and original matching rig; rename actions",
+        "Hold animated horizontal Root translation constant where present; retain authored body motion",
+        "Matte nonmetallic materials; deduplicate/prune; embed all buffers and images"
+      ]
+    },
+    {
+      "id": "mosskeeper",
+      "source": "https://quaternius.com/packs/ultimatemonsters.html",
+      "sourceFile": "MushroomKing.gltf",
+      "author": "Quaternius",
+      "license": "CC0-1.0",
+      "sourceSha256": "ccf27e126b881d80a2046c3ab96ddd94eb996837480e783142009ecd6629a3a4",
+      "outputSha256": "76164545b4fbabd95c52de28caa42a0be45ed87244cd5520a2df188de3e6a27b",
+      "bytes": 499044,
+      "animationOnly": false,
+      "clips": {
+        "Idle": "Idle",
+        "Walk": "Walk",
+        "Run": "Run",
+        "Punch": "Attack",
+        "HitReact": "Hit",
+        "Death": "Defeat"
+      },
+      "changes": [
+        "Retain selected authored clips and original matching rig; rename actions",
+        "Hold animated horizontal Root translation constant where present; retain authored body motion",
+        "Matte nonmetallic materials; deduplicate/prune; embed all buffers and images"
+      ]
+    }
+  ]
+}

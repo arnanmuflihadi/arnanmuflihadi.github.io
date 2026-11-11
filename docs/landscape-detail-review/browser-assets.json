@@ -1,0 +1,238 @@
+{
+  "world": "Transit Kingdom / Landscape",
+  "revision": "R0A3.73",
+  "terrainOnly": true,
+  "architectureInstances": 0,
+  "reservations": {
+    "skyport": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 9,
+      "constructed": false
+    },
+    "station": {
+      "x": -5,
+      "z": 5,
+      "y": 21,
+      "radius": 8,
+      "constructed": false
+    },
+    "settlement": {
+      "x": 32,
+      "z": 12,
+      "y": 22,
+      "radius": 11,
+      "constructed": false
+    },
+    "overlook": {
+      "x": -80,
+      "z": 5,
+      "y": 32,
+      "radius": 5,
+      "constructed": false,
+      "natural": true
+    },
+    "dragon": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 6.5,
+      "constructed": false
+    }
+  },
+  "imported": {
+    "tree": 134,
+    "fern": 678,
+    "hangingFern": 24
+  },
+  "terrain": {
+    "width": 177.6201171875,
+    "depth": 183,
+    "surfaceMin": 10.28,
+    "surfaceMax": 49,
+    "undersideMin": -85
+  },
+  "geology": {
+    "clusters": 7,
+    "rockPieces": 28,
+    "sharedRockGeometries": 3
+  },
+  "waterfall": {
+    "source": [
+      -72,
+      10.399999999999999,
+      38
+    ],
+    "termination": [
+      -81.6,
+      -67.6,
+      45.2
+    ],
+    "widthAtLip": 3.6,
+    "fallHeight": 78,
+    "volumeTriangles": 1032,
+    "bankRocks": 11,
+    "mistCards": 9
+  },
+  "growthForms": {
+    "spreading": 33,
+    "emergent": 22,
+    "windswept": 24,
+    "tiered": 22,
+    "umbrella": 33
+  },
+  "landscapeZones": {
+    "forest": 107,
+    "meadow": 24,
+    "ridge": 3
+  },
+  "palms": 10,
+  "shrubs": 131,
+  "vegetationBatches": 16,
+  "derivedTreeGeometries": 10,
+  "trailDetails": {
+    "clusters": 18,
+    "floweringPlants": 18,
+    "broadleafPlants": 18,
+    "smallStones": 18,
+    "points": [
+      {
+        "x": 26.88549845398838,
+        "z": 43.85114374057807,
+        "route": "arrival",
+        "pathClearance": 1.7733760383387576
+      },
+      {
+        "x": 16.305612968870673,
+        "z": 41.694387031129324,
+        "route": "arrival",
+        "pathClearance": 2.2604386817052715
+      },
+      {
+        "x": 17.02701741873651,
+        "z": 30.770275760721994,
+        "route": "arrival",
+        "pathClearance": 1.9363706626347283
+      },
+      {
+        "x": 7.777323562979605,
+        "z": 26.03181091957434,
+        "route": "arrival",
+        "pathClearance": 2.2104710754007098
+      },
+      {
+        "x": 11.589080609749377,
+        "z": 16.293513850179014,
+        "route": "arrival",
+        "pathClearance": 2.2461823115969315
+      },
+      {
+        "x": -1.6096061165508817,
+        "z": 12.32056672820597,
+        "route": "arrival",
+        "pathClearance": 1.5861549558409023
+      },
+      {
+        "x": -38.215984809526965,
+        "z": -6.771646030301023,
+        "route": "ridge",
+        "pathClearance": 1.919282673229463
+      },
+      {
+        "x": -33.911535656420924,
+        "z": -25.311925040505354,
+        "route": "ridge",
+        "pathClearance": 1.6436544109426883
+      },
+      {
+        "x": -43.762810820937894,
+        "z": -43.02004053167934,
+        "route": "ridge",
+        "pathClearance": 1.7067511216504514
+      },
+      {
+        "x": -46.525659273098086,
+        "z": -42.020527418478466,
+        "route": "overlook",
+        "pathClearance": 1.9187022160185743
+      },
+      {
+        "x": -56.89802228907635,
+        "z": -21.672805943753694,
+        "route": "overlook",
+        "pathClearance": 1.9603762592188998
+      },
+      {
+        "x": -69.51553352434686,
+        "z": 0.9689329513062832,
+        "route": "overlook",
+        "pathClearance": 2.069367949879959
+      },
+      {
+        "x": -73.75411335003807,
+        "z": 5.381170025057099,
+        "route": "return",
+        "pathClearance": 1.7474419187929007
+      },
+      {
+        "x": -49.71795848108171,
+        "z": 8.699649041699825,
+        "route": "return",
+        "pathClearance": 1.919282673229461
+      },
+      {
+        "x": 1.1883201604947544,
+        "z": 5.99906267372028,
+        "route": "clearing",
+        "pathClearance": 1.8231660558580192
+      },
+      {
+        "x": 25,
+        "z": 8.946150659847262,
+        "route": "clearing",
+        "pathClearance": 1.5538493401527376
+      },
+      {
+        "x": 38.98897237207715,
+        "z": 16.00735175194857,
+        "route": "meadow",
+        "pathClearance": 2.2922977161564635
+      },
+      {
+        "x": 37.99617014283051,
+        "z": 42.18414887497669,
+        "route": "meadow",
+        "pathClearance": 2.0168315739603706
+      }
+    ]
+  },
+  "grassBlades": 28063,
+  "detail": {
+    "grassChunks": 31,
+    "activeGrassChunks": 31,
+    "nearGrassChunks": 31,
+    "farGrassChunks": 0,
+    "eco": false
+  },
+  "files": {
+    "requests": 2,
+    "cachedFiles": 2,
+    "loadedFiles": 2
+  },
+  "geometry": {
+    "meshes": 82,
+    "triangles": 1335218,
+    "geometries": 73,
+    "materials": 40,
+    "textures": 4,
+    "missingTextures": []
+  },
+  "surfaceTriangles": 26416,
+  "sourceFiles": [
+    "canopy-tree.glb",
+    "fern.glb"
+  ],
+  "cloudCount": 34,
+  "settlement": null
+}

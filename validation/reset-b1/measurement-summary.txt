@@ -1,0 +1,157 @@
+{
+  "B0": {
+    "centre": [
+      -1,
+      47
+    ],
+    "h0": 13.94865844389921,
+    "plotTreeConflictIds": [
+      3,
+      8,
+      11,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57
+    ],
+    "combinedOldArrivalTreeIds": [
+      3,
+      8,
+      11,
+      13,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57,
+      58,
+      60
+    ],
+    "tallTreeConflictIds": [
+      3,
+      8,
+      11,
+      13,
+      16
+    ],
+    "cutEstimateM3": 48.494957711962975,
+    "boundedFillEstimateM3": 354.1287216989071,
+    "supportAfterGradingMax": 0.29015325410922976,
+    "minCliffLipDistance": 14.84561751104055,
+    "arrivalRetain": {
+      "threshold": [
+        27,
+        17.15,
+        60
+      ],
+      "directHorizontal": 17.761525706731877,
+      "levelDifference": 3.201341556100788,
+      "risersAtMax018": 18
+    },
+    "arrivalReposition": {
+      "threshold": [
+        12.192258036074067,
+        14.86065066558912,
+        65.8404970186468
+      ],
+      "thresholdMove": 15.91793414658558,
+      "landingCentre": [
+        16.494081308706914,
+        71.98413735081425
+      ],
+      "landingDiameter": 15,
+      "landingY": 14.86065066558912,
+      "landingGroundRange": [
+        13.798500640373899,
+        16.016408298423784
+      ],
+      "landingCutMax": 1.1557576328346642,
+      "landingFillMax": 1.062150025215221,
+      "landingMaxIslandFraction": 1.0069502348707822,
+      "routeHorizontal": 5,
+      "levelDifference": 0.9119922216899088,
+      "risersAtMax018": 6,
+      "sampledDiscOnly": true,
+      "outsideSurfaceSamples": 5,
+      "surfaceSamples": 192,
+      "groundRangeExcludesOffIslandSentinel": true
+    }
+  },
+  "B1": {
+    "centre": [
+      1.8670321550114704,
+      44.992482472771336
+    ],
+    "h0": 16.50931920266267,
+    "plotTreeConflictIds": [
+      8,
+      16,
+      48,
+      53,
+      54,
+      57
+    ],
+    "combinedOldArrivalTreeIds": [
+      8,
+      13,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57,
+      58,
+      61
+    ],
+    "tallTreeConflictIds": [
+      8,
+      13,
+      16
+    ],
+    "cutEstimateM3": 16.705409927323053,
+    "boundedFillEstimateM3": 843.6907047849139,
+    "supportAfterGradingMax": 2.957573256240991,
+    "minCliffLipDistance": 18.053330292453396,
+    "arrivalRetain": {
+      "threshold": [
+        27,
+        17.15,
+        60
+      ],
+      "directHorizontal": 14.8109233492784,
+      "levelDifference": 0.6406807973373283,
+      "risersAtMax018": 4
+    },
+    "arrivalReposition": {
+      "threshold": [
+        15.059290191085537,
+        14.607456459408704,
+        63.83297949141814
+      ],
+      "thresholdMove": 12.540824634861064,
+      "landingCentre": [
+        19.361113463718382,
+        69.97661982358558
+      ],
+      "landingDiameter": 15,
+      "landingY": 14.607456459408704,
+      "landingGroundRange": [
+        13.80718242197752,
+        15.69683078613853
+      ],
+      "landingCutMax": 1.0893743267298266,
+      "landingFillMax": 0.8002740374311834,
+      "landingMaxIslandFraction": 0.9753239305812942,
+      "routeHorizontal": 5,
+      "levelDifference": -1.9018627432539663,
+      "risersAtMax018": 11,
+      "sampledDiscOnly": true,
+      "outsideSurfaceSamples": 0,
+      "surfaceSamples": 192,
+      "groundRangeExcludesOffIslandSentinel": true
+    }
+  }
+}

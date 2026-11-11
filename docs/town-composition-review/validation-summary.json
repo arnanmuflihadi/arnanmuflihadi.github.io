@@ -1,0 +1,41 @@
+{
+  "revision": "R0-B1.5-composition-repair.3",
+  "tests": {
+    "passed": 106,
+    "failed": 0,
+    "skipped": 0
+  },
+  "completedBrowserChecks": [
+    "skyport-lookout",
+    "return-loop",
+    "garden-loop",
+    "entrance-circuit",
+    "market-square",
+    "square-guild"
+  ],
+  "cameraIntersections": 0,
+  "allPlotsSafe": true,
+  "allEntrancesClear": true,
+  "plaza": {
+    "grossPavedArea": 328,
+    "sampledGrossArea": 329,
+    "levelCapsuleClearArea": 267.5625,
+    "centralClearRectangle": [
+      30,
+      5,
+      37,
+      15
+    ],
+    "centralClearArea": 70,
+    "coreClear": true
+  },
+  "matchedCameras": true,
+  "staticAudit": {
+    "findings": 58,
+    "identicalToBaseline": true
+  },
+  "productionUnchanged": true,
+  "licensesUnchanged": true,
+  "humanApproval": "pending",
+  "phaseBoundary": "STOP before R0-B2"
+}

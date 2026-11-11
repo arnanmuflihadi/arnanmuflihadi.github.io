@@ -1,0 +1,66 @@
+{
+  "phase": "R0-RESET-A",
+  "recommendation": "RE-SITE",
+  "ownerDecision": "pending",
+  "implementationAuthorized": false,
+  "r0c2": "paused",
+  "alternatives": [
+    {
+      "alternative": "A",
+      "site": [
+        32,
+        19
+      ],
+      "clusterAreaM2": 973.5679269999997,
+      "hardProgrammeM2": 661.5,
+      "terrainRange": [
+        15.231448019508397,
+        22.0
+      ],
+      "rawMedianGrade": 25.253871657078687,
+      "lowSlopePatchM2": 137.25,
+      "cutM3": 260.4336158492201,
+      "fillM3": 511.45766822674716,
+      "supportRange": [
+        0.0,
+        3.4973943922839865
+      ],
+      "primaryRouteM": 74.06427373970935,
+      "coreRouteM": 41.54739669387622,
+      "arrivalRouteM": 32.51687704583313,
+      "civicGrade": 0.08,
+      "treePlotConflicts": 1,
+      "treeAllConflicts": 4
+    },
+    {
+      "alternative": "B",
+      "site": [
+        -1,
+        47
+      ],
+      "clusterAreaM2": 904.1996865,
+      "hardProgrammeM2": 588.75,
+      "terrainRange": [
+        12.58850518978998,
+        15.678658443899211
+      ],
+      "rawMedianGrade": 11.353896481261504,
+      "lowSlopePatchM2": 452.25,
+      "cutM3": 94.29309816311815,
+      "fillM3": 362.95662684833104,
+      "supportRange": [
+        0.0,
+        0.29015325410922976
+      ],
+      "primaryRouteM": 56.654414102363795,
+      "coreRouteM": 29.547396693876234,
+      "arrivalRouteM": 27.10701740848756,
+      "civicGrade": 0.020000000000000004,
+      "treePlotConflicts": 9,
+      "treeAllConflicts": 12
+    }
+  ],
+  "scope": "measurement and layout study only",
+  "newRuntimeMeasurements": false,
+  "newControllerTests": false
+}

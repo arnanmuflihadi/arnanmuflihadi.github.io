@@ -1,0 +1,108 @@
+{
+  "phase": "R0-RESET-B1",
+  "recommendation": "NO-GO",
+  "meaning": "Do not advance B under the current minimal-change / tall-tree-preservation brief; no construction approval implied",
+  "ownerDecision": "pending",
+  "preferredStudiedConfiguration": "B0",
+  "centre": [
+    -1,
+    47
+  ],
+  "orientationDegreesFromPositiveX": 235,
+  "clockwiseBearingFromNorth": 325,
+  "marketEntry": [
+    9.324375854318834,
+    13.94865844389921,
+    61.74473679720185
+  ],
+  "squareFloor": 14.22865844389921,
+  "guildEntryFloor": 14.37865844389921,
+  "legacyPotentialConflicts": 12,
+  "actualConflictsIncludingOverhangs": 12,
+  "legacyPlotPotential": 9,
+  "actualPlotColliderIntersections": 10,
+  "tallTreesAffected": 5,
+  "tallDefinition": ">=10 m survey height, not verified age",
+  "selectedArrivalStrategy": "A: retain threshold, a paper two-flight section with one approach bend",
+  "arrivalHorizontalLength": 18.176426142130527,
+  "arrivalStepPolylineLength": 21.377767698231317,
+  "arrivalLevelChange": -3.201341556100788,
+  "arrivalRisers": 18,
+  "arrivalRiserHeight": 0.17785230867226598,
+  "newControllerTraversal": "NOT TESTED: no proposed support or collision geometry installed",
+  "newSiteSearch": false,
+  "detailedBuildingGLBsMoved": false,
+  "detailedBuildingGLBsLoadedInProof": false,
+  "newTerrainGrading": false,
+  "newBlenderGeometry": false,
+  "blockers": [
+    "12 actual trunk/envelope conflicts, including five >=10 m trees; tested shift retains four tall-tree conflicts and raises bounded fill from 354 to 844 m3 / residual supports 0.29 to 2.96 m.",
+    "Arrival remains visually obstructed by B2 and foliage; the on-axis relocated landing reserve clips the cliff lip. Direct central Guild rays are clear; this is not a claim of total Guild occlusion."
+  ],
+  "validation": {
+    "phase": "R0-RESET-B1",
+    "requiredScreenshots": 5,
+    "screenshotDimensions": [
+      [
+        1440,
+        900
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "allOneRenderer": true,
+    "sameSceneAllViews": true,
+    "terrainAgreementSamples": 90,
+    "terrainMaxError": 0,
+    "zeroDetailedBuildingGLBLoads": true,
+    "allOriginalTrunksRetained": true,
+    "newCollisions": 0,
+    "newRuntimeErrors": 0,
+    "naturalWalkJumpLanding": true,
+    "newRouteTraversal": "NOT TESTED; no new support or collision geometry permitted",
+    "defaultOff": true,
+    "mbrAccessible": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+    "editorialModeSameScene": true,
+    "preservation": true,
+    "renderComparisonSameCamera": true,
+    "renderComparisonSameScene": true,
+    "overlayDrawCallDelta": 110,
+    "overlaySubmittedTriangleDelta": 6008,
+    "quality": {
+      "captureViewport": [
+        1440,
+        900
+      ],
+      "canvas": [
+        1440,
+        836
+      ],
+      "dpr": 1,
+      "shadows": true,
+      "toneMapping": "ACES .96",
+      "frameMetric": "static diagnostic counters including shadow passes, not production/walking performance"
+    },
+    "syntaxChecks": "entry.js and preview.js: PASS",
+    "fullRegressionSuite": "NOT RUN, as scoped",
+    "decision": "NO-GO recommendation; owner approval pending"
+  },
+  "squareGuildRays": {
+    "entranceClear": true,
+    "upperReserveClear": true,
+    "landmarkArtisticApproval": false
+  }
+}

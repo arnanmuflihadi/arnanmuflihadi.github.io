@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "guild": true,
+  "mode": "adventure",
+  "originalProps": 42,
+  "paused": "false",
+  "polish": true,
+  "rendererCount": "1",
+  "url": "http://127.0.0.1:4176/index.html?dev-town=s2f&town-layout=reset-final&town-props=cc0&town-guild=r0c2&town-skyport=r0c3&town-skyport-polish=r0c3-1&town-review=1&build=c31-final&experience=adventure&project=transit",
+  "warnings": []
+}

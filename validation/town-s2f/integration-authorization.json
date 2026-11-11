@@ -1,0 +1,18 @@
+{
+  "scope": "S2-F user authorization: controlled localhost-only default-off integration; no public deployment or artistic approval",
+  "checkpoint": "refs/heads/codex/checkpoint-s2e-before-s2f",
+  "files": [
+    {
+      "file": "assets/js/floating-atlas/entry.js",
+      "before_file": "validation/town-s2f/pre-integration/entry.js",
+      "before_sha256": "6387b6435d6361eaaffc023d3c4f30cda14e1782180e529c7db4614b5cac987c",
+      "after_sha256": "9621afd82bff8040856fbca8327b3f25c94df19a893c402dc79d75c84d1bfdd3"
+    },
+    {
+      "file": "assets/js/living-atlas-controller.js",
+      "before_file": "validation/town-s2f/pre-integration/living-atlas-controller.js",
+      "before_sha256": "d59c458c5cdc5bef828b7adca6a748ed48e328b9eb364e4892164fc2f361000c",
+      "after_sha256": "28903367838da3bb7ebf97b1a094e6dbb82c53091a1162701369143da2a77413"
+    }
+  ]
+}

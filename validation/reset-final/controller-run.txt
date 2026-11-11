@@ -1,0 +1,292 @@
+{
+  "rows": [
+    {
+      "name": "continuous civic spine",
+      "reverse": false,
+      "hz": 20,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 21.15,
+      "distance": 44.222512645666356,
+      "air": 0,
+      "maxUp": 0.002125958627257063,
+      "maxDown": 5.329070518200751e-15,
+      "minCamera": 9.994790850311569,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -8.979016068688292,
+        15.514999389648436,
+        35.60503029698026
+      ],
+      "target": 8
+    },
+    {
+      "name": "continuous civic spine",
+      "reverse": true,
+      "hz": 20,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 21.15,
+      "distance": 44.22273500830576,
+      "air": 0,
+      "maxUp": 3.552713678800501e-15,
+      "maxDown": 0.002126082566526577,
+      "minCamera": 5.454222254856741,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        15.013320517580606,
+        15.040976874476485,
+        69.86939177839491
+      ],
+      "target": 8
+    },
+    {
+      "name": "continuous civic spine",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 21.15,
+      "distance": 44.188114442614214,
+      "air": 0,
+      "maxUp": 0.000708660923610438,
+      "maxDown": 3.552713678800501e-15,
+      "minCamera": 10.021537431984592,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -8.959824099208868,
+        15.514999389648438,
+        35.6314530494413
+      ],
+      "target": 8
+    },
+    {
+      "name": "continuous civic spine",
+      "reverse": true,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 21.15,
+      "distance": 44.18742096667545,
+      "air": 0,
+      "maxUp": 3.552713678800501e-15,
+      "maxDown": 0.0007086941888445608,
+      "minCamera": 5.404619302580419,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        14.987317812973455,
+        15.041576098758474,
+        69.83225606207033
+      ],
+      "target": 8
+    },
+    {
+      "name": "door B1",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 1.6166666666666667,
+      "distance": 3.250330088010999,
+      "air": 0,
+      "maxUp": 0,
+      "maxDown": 0.00212616222388462,
+      "minCamera": 1.5926241314503866,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        3.2204027000043327,
+        15.287388299414618,
+        58.69413728031384
+      ],
+      "target": 2
+    },
+    {
+      "name": "door B2",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 1.7666666666666666,
+      "distance": 3.5653300879184635,
+      "air": 0,
+      "maxUp": 0,
+      "maxDown": 0.001953684421042823,
+      "minCamera": 1.5923575512129124,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        8.803464666296014,
+        15.280572621842222,
+        54.78483520522446
+      ],
+      "target": 2
+    },
+    {
+      "name": "door B3",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 2.05,
+      "distance": 4.160330087903486,
+      "air": 0,
+      "maxUp": 5.329070518200751e-15,
+      "maxDown": 0.0029914525672971592,
+      "minCamera": 1.5839437547513258,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -8.668043542772155,
+        15.418960238246687,
+        48.70689812568499
+      ],
+      "target": 2
+    },
+    {
+      "name": "door B4",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 1.9833333333333334,
+      "distance": 4.020330087904028,
+      "air": 0,
+      "maxUp": 3.552713678800501e-15,
+      "maxDown": 0.002117403694947839,
+      "minCamera": 1.5838620937239103,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        3.111903638465856,
+        15.4326453625889,
+        40.4584903096699
+      ],
+      "target": 2
+    },
+    {
+      "name": "optional forest branch",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 11.533333333333333,
+      "distance": 23.965004570969743,
+      "air": 0,
+      "maxUp": 0.018466613521489705,
+      "maxDown": 0.03498704707874367,
+      "minCamera": 4.133489883059011,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        10.865964222698178,
+        19.014184689432724,
+        22.03255791629837
+      ],
+      "target": 4
+    },
+    {
+      "name": "optional forest branch",
+      "reverse": true,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 11.533333333333333,
+      "distance": 23.96563357817214,
+      "air": 0,
+      "maxUp": 0.0011834806368504758,
+      "maxDown": 0.01847437145455899,
+      "minCamera": 7.8774961496950535,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -0.6893842946593324,
+        15.4808215738611,
+        34.407922216334605
+      ],
+      "target": 4
+    },
+    {
+      "name": "fountain collision",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": false,
+      "seconds": 3.183333333333333,
+      "distance": 2.275427927235884,
+      "air": 0,
+      "maxUp": 3.552713678800501e-15,
+      "maxDown": 3.552713678800501e-15,
+      "minCamera": 11.497929068270956,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -1.748654044230989,
+        15.514999389648436,
+        45.98807678579239
+      ],
+      "target": 1
+    },
+    {
+      "name": "arrival guard",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": false,
+      "seconds": 3.4833333333333334,
+      "distance": 2.935330088661462,
+      "air": 0,
+      "maxUp": 0,
+      "maxDown": 0.005949127550914923,
+      "minCamera": 1.5841055397274788,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        16.743776389597713,
+        14.829776342986946,
+        72.34073888288181
+      ],
+      "target": 1
+    },
+    {
+      "name": "jump landing",
+      "reverse": false,
+      "hz": 60,
+      "success": true,
+      "endpointReached": true,
+      "seconds": 4.3,
+      "distance": 8.885097110872033,
+      "air": 45,
+      "maxUp": 0.10012500000000024,
+      "maxDown": 0.09695833333333326,
+      "minCamera": 11.276885543457434,
+      "peak": 1.1484879326878197,
+      "jumps": 1,
+      "landings": 1,
+      "end": [
+        3.3265162520677265,
+        15.47270226292176,
+        51.43545876590676
+      ],
+      "target": 2
+    }
+  ],
+  "maxTerrainError": 2.1316282072803006e-14,
+  "maxSupportError": 6.973533928089637e-8
+}

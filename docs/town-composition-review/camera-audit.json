@@ -1,0 +1,35 @@
+{
+  "routes": [
+    {
+      "id": "skyport-lookout",
+      "samples": 2536,
+      "intersections": 0
+    },
+    {
+      "id": "return-loop",
+      "samples": 1167,
+      "intersections": 0
+    },
+    {
+      "id": "garden-loop",
+      "samples": 1777,
+      "intersections": 0
+    },
+    {
+      "id": "entrance-circuit",
+      "samples": 568,
+      "intersections": 0
+    },
+    {
+      "id": "market-square",
+      "samples": 605,
+      "intersections": 0
+    },
+    {
+      "id": "square-guild",
+      "samples": 167,
+      "intersections": 0
+    }
+  ],
+  "method": "Recorded native camera-to-capsule rays against actual planning meshes, every eighth frame; origin +1.25 m, near .03 m, far shortened .08 m. Existing foliage excluded."
+}

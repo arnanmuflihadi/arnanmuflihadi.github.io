@@ -1,0 +1,16 @@
+✔ environmental polish preserves every ground vertex, triangle, support sample, route and reservation (44.829333ms)
+✔ derived tree growth preserves source buffers and detail/animation changes reuse existing geometry (293.031167ms)
+✔ waterfall is a closed volume joined to the stream, with depth and a lower cloud termination (5.237583ms)
+✔ fall stays visible outside the cliff, trail accents clear paths, and new water motion is reducible (313.660375ms)
+✔ R0-A rendered terrain support is exact and the chiseled underside is watertight (1699.388584ms)
+✔ R0-A active graph has no rejected architecture, uses two scenery GLBs, and disposes every observed resource (257.547125ms)
+✔ R0-A every ridge and valley route is reachable using unchanged locomotion with final nature colliders (237.691667ms)
+✔ R0-A character jumps, lands, falls and recovers; camera clears natural elevation at all areas (264.85ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2607.264375

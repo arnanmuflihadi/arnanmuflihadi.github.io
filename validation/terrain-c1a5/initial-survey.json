@@ -1,0 +1,172 @@
+{
+  "plots": [
+    {
+      "id": "Kopi Awan",
+      "x": 27.7,
+      "z": 34,
+      "w": 7.2,
+      "d": 8,
+      "floor": 20.043,
+      "minGap": 2.8155218983548984,
+      "maxGap": 5.9285635724555
+    },
+    {
+      "id": "Rupa Rimba",
+      "x": 27.7,
+      "z": 22.2,
+      "w": 8,
+      "d": 8,
+      "floor": 21.96,
+      "minGap": 0.4914240336366653,
+      "maxGap": 7.4506591829351425
+    },
+    {
+      "id": "Lembaran",
+      "x": 44.3,
+      "z": 32.8,
+      "w": 6.2,
+      "d": 8.8,
+      "floor": 20.234,
+      "minGap": 0.20305777619574172,
+      "maxGap": 4.19271011138861
+    },
+    {
+      "id": "Serambi",
+      "x": 44.3,
+      "z": 21.4,
+      "w": 8,
+      "d": 8,
+      "floor": 21.96,
+      "minGap": 0.9718245477951619,
+      "maxGap": 6.3538888178886275
+    }
+  ],
+  "nearby": [
+    {
+      "mesh": 0,
+      "name": "Authored landscape / exact support triangles",
+      "vertices": 13313,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 1,
+      "name": "Chiseled geological strata / closed underside",
+      "vertices": 4369,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 2,
+      "name": "Painterly blue sky / horizon and lower atmosphere",
+      "vertices": 693,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 25,
+      "name": "Living landscape / fern",
+      "vertices": 243,
+      "instanced": true,
+      "count": 268,
+      "near": 2,
+      "material": "Leaves"
+    },
+    {
+      "mesh": 26,
+      "name": "Living landscape / fern",
+      "vertices": 243,
+      "instanced": true,
+      "count": 272,
+      "near": 1,
+      "material": "Leaves"
+    },
+    {
+      "mesh": 27,
+      "name": "Living landscape / fern",
+      "vertices": 243,
+      "instanced": true,
+      "count": 138,
+      "near": 1,
+      "material": "Leaves"
+    },
+    {
+      "mesh": 56,
+      "name": "Zone grass / curved blades",
+      "vertices": 16530,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 57,
+      "name": "Zone grass / curved blades",
+      "vertices": 11200,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 58,
+      "name": "Zone grass / curved blades",
+      "vertices": 11410,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 60,
+      "name": "Zone grass / curved blades",
+      "vertices": 17330,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 62,
+      "name": "Zone grass / curved blades",
+      "vertices": 13470,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 63,
+      "name": "Zone grass / curved blades",
+      "vertices": 14510,
+      "count": 1,
+      "near": 1,
+      "material": ""
+    },
+    {
+      "mesh": 76,
+      "name": "",
+      "vertices": 46,
+      "instanced": true,
+      "count": 37,
+      "near": 4,
+      "material": ""
+    },
+    {
+      "mesh": 80,
+      "name": "",
+      "vertices": 112,
+      "instanced": true,
+      "count": 18,
+      "near": 4,
+      "material": ""
+    },
+    {
+      "mesh": 81,
+      "name": "",
+      "vertices": 204,
+      "instanced": true,
+      "count": 18,
+      "near": 3,
+      "material": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "baselineFiles": 1135,
+  "changed": [],
+  "missing": [],
+  "pass": true,
+  "scope": "previous assets, sources and evidence included in phase-start checkpoint",
+  "newOutputs": [
+    "validation/reset-a",
+    "docs/urban-atlas/reset-a"
+  ],
+  "productionChangesAuthorized": false
+}

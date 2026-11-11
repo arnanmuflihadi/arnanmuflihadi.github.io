@@ -1,0 +1,459 @@
+{
+  "mode": "adventure",
+  "position": [
+    "12.000",
+    "10.015",
+    "47.000"
+  ],
+  "project": "mbr",
+  "rendererCount": "1",
+  "sceneId": "e6335a27-6e6a-4e9f-97a2-9f43d0f525dc",
+  "study": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+  "url": "http://127.0.0.1:4173/index.html?build=56&experience=adventure&project=mbr&panel=study",
+  "walkButtons": 0,
+  "worldId": "transit-kingdom-r0",
+  "work": {
+    "assets": {
+      "fernBatches": 3,
+      "files": {
+        "cachedFiles": 3,
+        "loadedFiles": 3,
+        "requests": 3
+      },
+      "geometry": {
+        "geometries": 167,
+        "materials": 98,
+        "meshes": 369,
+        "missingTextures": [],
+        "textures": 35,
+        "triangles": 393127
+      },
+      "imported": {
+        "fern": 76,
+        "hangingFern": 14,
+        "tree": 32
+      },
+      "revision": "R0.56",
+      "settlement": {
+        "buildings": [
+          {
+            "colliders": [
+              {
+                "d": 13.970701584212152,
+                "h": 25.6,
+                "minY": 12,
+                "w": 13.927278970402623,
+                "x": 29.659095079585597,
+                "z": 2.113211499274411
+              },
+              {
+                "d": 0.3057951794270384,
+                "h": 14.95,
+                "minY": 12,
+                "w": 0.3057951794270366,
+                "x": 21.45739012292745,
+                "z": 5.60065584945093
+              },
+              {
+                "d": 0.3057951794270366,
+                "h": 14.95,
+                "minY": 12,
+                "w": 0.3057951794270366,
+                "x": 25.419001074493902,
+                "z": 8.310939721747099
+              },
+              {
+                "d": 0.3057951794270384,
+                "h": 14.95,
+                "minY": 12,
+                "w": 0.3057951794270366,
+                "x": 29.38061202606036,
+                "z": 11.021223594043269
+              },
+              {
+                "cameraOnly": true,
+                "d": 9.043277612189758,
+                "h": 15.2,
+                "minY": 14.88,
+                "w": 10.972406859398117,
+                "x": 26.1812684135772,
+                "z": 7.196736641619033
+              },
+              {
+                "cameraOnly": true,
+                "d": 16.986873757875806,
+                "h": 28.20999938994646,
+                "minY": 16.25,
+                "w": 16.40691320578156,
+                "x": 28.81043751833957,
+                "z": 3.353690817004914
+              }
+            ],
+            "id": "rumah-karya",
+            "metrics": {
+              "geometries": 47,
+              "materials": 24,
+              "meshes": 61,
+              "missingTextures": [],
+              "textures": 17,
+              "triangles": 24383
+            },
+            "position": [
+              29.237762818435534,
+              12,
+              2.7290711577707083
+            ],
+            "rotation": -0.6,
+            "variant": "commercial"
+          },
+          {
+            "colliders": [
+              {
+                "d": 4.300000000000004,
+                "h": 18.35,
+                "minY": 12,
+                "w": 8.149999999999999,
+                "x": 39.724999999999994,
+                "z": 22
+              },
+              {
+                "d": 0.19000000000000128,
+                "h": 14.85,
+                "minY": 12,
+                "w": 0.19000000000000483,
+                "x": 33.099999999999994,
+                "z": 19.550000000000004
+              },
+              {
+                "d": 0.19000000000000128,
+                "h": 14.85,
+                "minY": 12,
+                "w": 0.18999999999999773,
+                "x": 33.1,
+                "z": 24.450000000000003
+              },
+              {
+                "cameraOnly": true,
+                "d": 5.599999999999998,
+                "h": 15.32,
+                "minY": 14.82,
+                "w": 3.3500000000000014,
+                "x": 34.5,
+                "z": 22
+              },
+              {
+                "cameraOnly": true,
+                "d": 6.1053386637941,
+                "h": 20.180000379681587,
+                "minY": 18.2,
+                "w": 11.766000004196163,
+                "x": 38.58700000209808,
+                "z": 22
+              }
+            ],
+            "id": "kedai-daun",
+            "metrics": {
+              "geometries": 29,
+              "materials": 21,
+              "meshes": 35,
+              "missingTextures": [],
+              "textures": 13,
+              "triangles": 3002
+            },
+            "position": [
+              39.96315,
+              12,
+              22
+            ],
+            "rotation": -1.5707963267948966,
+            "variant": "neighborhood"
+          },
+          {
+            "colliders": [
+              {
+                "d": 8.762790872047344,
+                "h": 18.35,
+                "minY": 12,
+                "w": 8.84229099102392,
+                "x": 32.67215143860072,
+                "z": 28.404767507681804
+              },
+              {
+                "d": 0.26867193204686757,
+                "h": 14.85,
+                "minY": 12,
+                "w": 0.2686719320468711,
+                "x": 26.212735898490827,
+                "z": 31.26292703440295
+              },
+              {
+                "d": 0.2686719320468711,
+                "h": 14.85,
+                "minY": 12,
+                "w": 0.2686719320468711,
+                "x": 29.62659877429194,
+                "z": 34.77797187981061
+              },
+              {
+                "cameraOnly": true,
+                "d": 6.351161585350333,
+                "h": 15.32,
+                "minY": 14.82,
+                "w": 6.304700476857523,
+                "x": 28.92396586365071,
+                "z": 32.045060064020745
+              },
+              {
+                "cameraOnly": true,
+                "d": 12.577153022579296,
+                "h": 20.180000379681587,
+                "minY": 18.2,
+                "w": 12.69404217843594,
+                "x": 31.85580020866214,
+                "z": 29.19761974145713
+              }
+            ],
+            "id": "pustaka-angin",
+            "metrics": {
+              "geometries": 29,
+              "materials": 20,
+              "meshes": 35,
+              "missingTextures": [],
+              "textures": 13,
+              "triangles": 3002
+            },
+            "position": [
+              32.84298979164844,
+              12,
+              28.23884680485078
+            ],
+            "rotation": -0.8,
+            "variant": "neighborhood"
+          }
+        ],
+        "imported": {
+          "commercial": 1,
+          "glazing": 11,
+          "neighborhood": 2
+        },
+        "landmarks": [
+          "Stasiun Antara",
+          "Balai Angin"
+        ],
+        "metrics": {
+          "geometries": 167,
+          "materials": 98,
+          "meshes": 369,
+          "missingTextures": [],
+          "textures": 35,
+          "triangles": 393127
+        },
+        "prototypes": 2,
+        "signs": [
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              12,
+              16.45,
+              53
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              240
+            ],
+            "text": "PELABUHAN AWAN",
+            "world": [
+              6.4,
+              0.75
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              -8,
+              20.65,
+              -4.8
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              189
+            ],
+            "text": "STASIUN ANTARA",
+            "world": [
+              11.4,
+              1.05
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              8,
+              30,
+              -17.56
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              2304
+            ],
+            "text": "01",
+            "world": [
+              1.6,
+              1.8
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              15.5,
+              14.7,
+              25.7
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              177
+            ],
+            "text": "PASAR ANGIN",
+            "world": [
+              7.5,
+              0.65
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              -29,
+              32.7,
+              -28.8
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              177
+            ],
+            "text": "BALAI ANGIN",
+            "world": [
+              7.5,
+              0.65
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              -53.2,
+              23.15,
+              2.8
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              240
+            ],
+            "text": "TERAS LANGIT",
+            "world": [
+              4.7,
+              0.55
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              9,
+              10.96586514330238,
+              36.08
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              313
+            ],
+            "text": "STASIUN ANTARA",
+            "world": [
+              3.4,
+              0.52
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              -18,
+              13.53998496959282,
+              7.08
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              313
+            ],
+            "text": "BUKIT LESTARI",
+            "world": [
+              3.4,
+              0.52
+            ]
+          },
+          {
+            "anisotropy": 8,
+            "mipmaps": true,
+            "position": [
+              26,
+              14,
+              18.08
+            ],
+            "rotation": 0,
+            "size": [
+              2048,
+              313
+            ],
+            "text": "PASAR ANGIN",
+            "world": [
+              3.4,
+              0.52
+            ]
+          }
+        ]
+      },
+      "sourceFiles": [
+        "canopy-tree.glb",
+        "fern.glb",
+        "architecture-library.glb"
+      ],
+      "surfaceTriangles": 13572,
+      "terrain": {
+        "depth": 142.64583333333334,
+        "surfaceMax": 28,
+        "surfaceMin": 7.416465881731774,
+        "undersideMin": -57,
+        "width": 131
+      },
+      "terrainOnly": false,
+      "world": "Transit Kingdom"
+    },
+    "mode": "adventure",
+    "project": "mbr",
+    "ready": "true",
+    "rendererCount": "1",
+    "title": "Work — Arnan Muflihadi",
+    "url": "http://127.0.0.1:4173/portfolio.html?experience=adventure&project=mbr",
+    "worldId": "transit-kingdom-r0"
+  },
+  "navigationNote": "The first Work navigation had a transient module fetch failure. Reload recovered the world; the historical console entry is retained in this record.",
+  "workLogs": [
+    {
+      "level": "error",
+      "message": "TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4173/assets/js/floating-atlas/entry.js?v=56",
+      "timestamp": "2026-11-01T15:54:13.046Z",
+      "url": "http://127.0.0.1:4173/assets/js/living-atlas-controller.js?v=56"
+    }
+  ]
+}

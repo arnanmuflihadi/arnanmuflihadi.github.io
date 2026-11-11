@@ -1,0 +1,12 @@
+{
+  "errors": [],
+  "guild": true,
+  "label": "Pelabuhan Awan / Transit Kingdom",
+  "mode": "adventure",
+  "paused": "false",
+  "props": 42,
+  "rendererCount": "1",
+  "skyport": true,
+  "url": "http://127.0.0.1:4176/index.html?experience=adventure&dev-town=s2f&town-layout=reset-final&town-props=cc0&town-guild=r0c2&town-skyport=r0c3&town-review=1&build=skyport-c3-final",
+  "warnings": []
+}

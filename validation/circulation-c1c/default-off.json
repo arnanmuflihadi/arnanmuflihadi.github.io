@@ -1,0 +1,56 @@
+{
+  "url": "http://127.0.0.1:4173/index.html?terrain-study=c1a5&town-square=c1b&circulation=c1c&town-review=1&experience=adventure&project=mbr&panel=study",
+  "renderer": "1",
+  "scene": "733940a9-a98a-4d92-9dd9-ab234f19d065",
+  "mode": "adventure",
+  "reviewPanels": 0,
+  "glbs": [
+    {
+      "url": "http://127.0.0.1:4173/assets/game/scenery/fern.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/game/scenery/canopy-tree.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/game/characters/urban-explorer/urban-explorer.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/game/phase3/city-resident.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/game/characters/urban-explorer/jump-animations.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ]
+    }
+  ],
+  "studyHeading": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+  "logs": []
+}

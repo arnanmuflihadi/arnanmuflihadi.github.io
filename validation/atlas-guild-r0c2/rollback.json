@@ -1,0 +1,38 @@
+{
+  "guildOff": {
+    "cache": {
+      "cachedFiles": 9,
+      "loadedFiles": 9,
+      "requests": 9
+    },
+    "props": 42,
+    "renderer": "1",
+    "rollback": {
+      "collisionValuesAndOrder": true,
+      "markerGeometry": true,
+      "markerVisibility": true
+    },
+    "scene": "99358205-7197-41f6-ab81-cec5c7dddda5"
+  },
+  "townOff": {
+    "guild": false,
+    "props": false,
+    "renderer": "1",
+    "scene": "99358205-7197-41f6-ab81-cec5c7dddda5",
+    "town": false
+  },
+  "restored": {
+    "cache": {
+      "cachedFiles": 9,
+      "loadedFiles": 9,
+      "requests": 9
+    },
+    "errors": [],
+    "guild": true,
+    "props": 42,
+    "renderer": "1",
+    "scene": "99358205-7197-41f6-ab81-cec5c7dddda5",
+    "town": true,
+    "warnings": []
+  }
+}

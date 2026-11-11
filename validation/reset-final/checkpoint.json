@@ -1,0 +1,7 @@
+{
+  "commit": "ff8b545ebd7c13894bf4af59fc5406ee8e1a6ada",
+  "ref": "refs/heads/codex/reset-final-checkpoint",
+  "parent": "dffaf125c1999615852772093f04255f5ebb48e4",
+  "method": "Separate temporary Git index; current branch, working tree and normal index unchanged",
+  "scope": "Tracked baseline, existing game code/assets/tests and deployed town GLBs; Blender masters/source archives preserved separately by hashes"
+}

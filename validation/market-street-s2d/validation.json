@@ -1,0 +1,259 @@
+{
+  "protected_files": 1353,
+  "changed": [],
+  "glb_bytes": 10007904,
+  "gzip_bytes_not_served": 2005093,
+  "triangles_with_instances": 170709,
+  "unique_meshes": 21,
+  "render_primitives": 107,
+  "gltf_material_definitions": 37,
+  "images": [
+    {
+      "name": "colormap",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 7529
+    },
+    {
+      "name": "Leaves",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 91912
+    },
+    {
+      "name": "Bark_NormalTree_Normal",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 106286
+    },
+    {
+      "name": "Bark_NormalTree",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 98936
+    },
+    {
+      "name": "Leaves_NormalTree_C",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 19634
+    }
+  ],
+  "instancing": [
+    {
+      "node": "MarketStreet36m.0",
+      "count": 7
+    },
+    {
+      "node": "MarketStreet36m.1",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.2",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.3",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.4",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.5",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.6",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.7",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.8",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.9",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.10",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.11",
+      "count": 3
+    },
+    {
+      "node": "MarketStreet36m.12",
+      "count": 20
+    }
+  ],
+  "native": {
+    "file": "market-street-export.blend",
+    "bytes": 6033566,
+    "live_mcp_reopen": "verified"
+  },
+  "renders": [
+    {
+      "file": "01-browser-arrival.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 108699
+    },
+    {
+      "file": "02-browser-elevated.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 76048
+    },
+    {
+      "file": "03-browser-opposite.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 90757
+    },
+    {
+      "file": "04-browser-detail.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 105408
+    },
+    {
+      "file": "05-island-market.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 126614
+    },
+    {
+      "file": "06-island-skyport.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 117995
+    },
+    {
+      "file": "07-island-opposite.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 97772
+    },
+    {
+      "file": "08-island-elevations.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 99741
+    },
+    {
+      "file": "09-island-context.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 70051
+    },
+    {
+      "file": "10-island-support-deficit.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 99990
+    },
+    {
+      "file": "11-third-person.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 150073
+    },
+    {
+      "file": "12-alpha-glass-detail.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 107099
+    },
+    {
+      "file": "13-authored-glass-detail.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 102833
+    },
+    {
+      "file": "14-connector-proposal.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 161061
+    },
+    {
+      "file": "15-skyport-connector-traversal.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 133272
+    },
+    {
+      "file": "16-skyport-deck-connector.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 119225
+    },
+    {
+      "file": "17-foundation-closeup.png",
+      "size": [
+        1265,
+        843
+      ],
+      "bytes": 73357
+    },
+    {
+      "file": "review-page.png",
+      "size": [
+        1265,
+        712
+      ],
+      "bytes": 79569
+    }
+  ],
+  "website": "all protected production bytes unchanged; 27 focused plus portfolio tests recorded separately",
+  "human_approval": "pending; technical proof only"
+}

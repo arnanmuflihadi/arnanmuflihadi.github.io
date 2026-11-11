@@ -1,0 +1,1120 @@
+{
+  "authoredTriangles": 74758,
+  "batches": 125,
+  "buildings": [
+    {
+      "colliders": [
+        {
+          "d": 13.3154454176458,
+          "h": 22.639999999999997,
+          "minY": 0.24,
+          "w": 16.514761803033537,
+          "x": 23,
+          "z": 2.100009
+        },
+        {
+          "cameraOnly": true,
+          "d": 3.1999999999999993,
+          "h": 3.67,
+          "minY": 3.3200000000000003,
+          "w": 7.399999999999999,
+          "x": 23,
+          "z": 9.73
+        },
+        {
+          "cameraOnly": true,
+          "d": 1.8000000000000007,
+          "h": 12.79,
+          "minY": 12.19,
+          "w": 16.6,
+          "x": 23,
+          "z": 9.15
+        },
+        {
+          "cameraOnly": true,
+          "d": 1.8000000000000007,
+          "h": 22.44,
+          "minY": 21.84,
+          "w": 16.6,
+          "x": 23,
+          "z": 9.15
+        },
+        {
+          "cameraOnly": true,
+          "d": 16.0337137088229,
+          "h": 24.02999931365251,
+          "minY": 4.640000000000001,
+          "w": 17.129999428987503,
+          "x": 23.16500009596348,
+          "z": 3.45914314558855
+        }
+      ],
+      "id": "menara",
+      "metrics": {
+        "geometries": 21,
+        "materials": 20,
+        "meshes": 45,
+        "missingTextures": [],
+        "textures": 21,
+        "triangles": 51430
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 0,
+        "x": 23,
+        "y": 0.24,
+        "z": 2.100009
+      },
+      "variant": "office"
+    },
+    {
+      "colliders": [
+        {
+          "d": 10.118686,
+          "h": 13.84,
+          "minY": 0.24,
+          "w": 9.95212,
+          "x": -24,
+          "z": -24.709342999999997
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2200000000000024,
+          "x": -28.799999999999997,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2199999999999989,
+          "x": -24,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2200000000000024,
+          "x": -19.200000000000003,
+          "z": -17.2
+        },
+        {
+          "cameraOnly": true,
+          "d": 3.5,
+          "h": 3.4400000000000004,
+          "minY": 3.12,
+          "w": 10.9,
+          "x": -24,
+          "z": -18.549999999999997
+        },
+        {
+          "cameraOnly": true,
+          "d": 13.124686270141602,
+          "h": 16.44999938994646,
+          "minY": 4.49,
+          "w": 10.899999618530272,
+          "x": -24,
+          "z": -23.2063431350708
+        }
+      ],
+      "id": "kopi",
+      "metrics": {
+        "geometries": 29,
+        "materials": 24,
+        "meshes": 69,
+        "missingTextures": [],
+        "textures": 17,
+        "triangles": 24959
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 0,
+        "x": -24,
+        "y": 0.24,
+        "z": -23.96315
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [
+        {
+          "d": 10.118686,
+          "h": 13.84,
+          "minY": 0.24,
+          "w": 9.95212,
+          "x": -12,
+          "z": -24.709342999999997
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2200000000000024,
+          "x": -16.799999999999997,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2199999999999989,
+          "x": -12,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.22000000000000064,
+          "x": -7.2,
+          "z": -17.2
+        },
+        {
+          "cameraOnly": true,
+          "d": 3.5,
+          "h": 3.4400000000000004,
+          "minY": 3.12,
+          "w": 10.9,
+          "x": -12,
+          "z": -18.549999999999997
+        },
+        {
+          "cameraOnly": true,
+          "d": 13.124686270141602,
+          "h": 16.44999938994646,
+          "minY": 4.49,
+          "w": 10.899999618530272,
+          "x": -12,
+          "z": -23.2063431350708
+        }
+      ],
+      "id": "baca",
+      "metrics": {
+        "geometries": 28,
+        "materials": 26,
+        "meshes": 69,
+        "missingTextures": [],
+        "textures": 17,
+        "triangles": 24479
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 0,
+        "x": -12,
+        "y": 0.24,
+        "z": -23.96315
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [
+        {
+          "d": 10.118686,
+          "h": 13.84,
+          "minY": 0.24,
+          "w": 9.95212,
+          "x": 12,
+          "z": -24.709342999999997
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.22000000000000064,
+          "x": 7.2,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2199999999999989,
+          "x": 12,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2200000000000024,
+          "x": 16.799999999999997,
+          "z": -17.2
+        },
+        {
+          "cameraOnly": true,
+          "d": 3.5,
+          "h": 3.4400000000000004,
+          "minY": 3.12,
+          "w": 10.9,
+          "x": 12,
+          "z": -18.549999999999997
+        },
+        {
+          "cameraOnly": true,
+          "d": 13.124686270141602,
+          "h": 16.44999938994646,
+          "minY": 4.49,
+          "w": 10.899999618530272,
+          "x": 12,
+          "z": -23.2063431350708
+        }
+      ],
+      "id": "karya",
+      "metrics": {
+        "geometries": 29,
+        "materials": 26,
+        "meshes": 69,
+        "missingTextures": [],
+        "textures": 17,
+        "triangles": 24959
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 0,
+        "x": 12,
+        "y": 0.24,
+        "z": -23.96315
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [
+        {
+          "d": 10.118686,
+          "h": 13.84,
+          "minY": 0.24,
+          "w": 9.95212,
+          "x": 24,
+          "z": -24.709342999999997
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2200000000000024,
+          "x": 19.200000000000003,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2199999999999989,
+          "x": 24,
+          "z": -17.2
+        },
+        {
+          "d": 0.2199999999999989,
+          "h": 3.1900000000000004,
+          "minY": 0.24,
+          "w": 0.2200000000000024,
+          "x": 28.799999999999997,
+          "z": -17.2
+        },
+        {
+          "cameraOnly": true,
+          "d": 3.5,
+          "h": 3.4400000000000004,
+          "minY": 3.12,
+          "w": 10.9,
+          "x": 24,
+          "z": -18.549999999999997
+        },
+        {
+          "cameraOnly": true,
+          "d": 13.124686270141602,
+          "h": 16.44999938994646,
+          "minY": 4.49,
+          "w": 10.899999618530272,
+          "x": 24,
+          "z": -23.2063431350708
+        }
+      ],
+      "id": "pasar",
+      "metrics": {
+        "geometries": 29,
+        "materials": 26,
+        "meshes": 69,
+        "missingTextures": [],
+        "textures": 17,
+        "triangles": 24959
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 0,
+        "x": 24,
+        "y": 0.24,
+        "z": -23.96315
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [
+        {
+          "d": 4.300000000000004,
+          "h": 6.59,
+          "minY": 0.24,
+          "w": 8.150000000000002,
+          "x": -23.725,
+          "z": 21
+        },
+        {
+          "d": 0.19000000000000128,
+          "h": 3.09,
+          "minY": 0.24,
+          "w": 0.19000000000000128,
+          "x": -17.1,
+          "z": 23.450000000000003
+        },
+        {
+          "d": 0.19000000000000128,
+          "h": 3.09,
+          "minY": 0.24,
+          "w": 0.18999999999999773,
+          "x": -17.099999999999998,
+          "z": 18.550000000000004
+        },
+        {
+          "cameraOnly": true,
+          "d": 5.599999999999998,
+          "h": 3.5599999999999996,
+          "minY": 3.0599999999999996,
+          "w": 3.3500000000000014,
+          "x": -18.499999999999996,
+          "z": 21
+        },
+        {
+          "cameraOnly": true,
+          "d": 6.1053386637941,
+          "h": 8.420000379681587,
+          "minY": 6.44,
+          "w": 11.766000004196169,
+          "x": -22.58700000209808,
+          "z": 21
+        }
+      ],
+      "id": "jiran",
+      "metrics": {
+        "geometries": 20,
+        "materials": 22,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 13,
+        "triangles": 3050
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -23.96315,
+        "y": 0.24,
+        "z": 21
+      },
+      "variant": "neighborhood"
+    },
+    {
+      "colliders": [
+        {
+          "d": 4.300000000000004,
+          "h": 6.59,
+          "minY": 0.24,
+          "w": 8.150000000000002,
+          "x": -23.725,
+          "z": 28
+        },
+        {
+          "d": 0.19000000000000128,
+          "h": 3.09,
+          "minY": 0.24,
+          "w": 0.19000000000000128,
+          "x": -17.1,
+          "z": 30.450000000000003
+        },
+        {
+          "d": 0.19000000000000128,
+          "h": 3.09,
+          "minY": 0.24,
+          "w": 0.18999999999999773,
+          "x": -17.099999999999998,
+          "z": 25.550000000000004
+        },
+        {
+          "cameraOnly": true,
+          "d": 5.599999999999998,
+          "h": 3.5599999999999996,
+          "minY": 3.0599999999999996,
+          "w": 3.3500000000000014,
+          "x": -18.499999999999996,
+          "z": 28
+        },
+        {
+          "cameraOnly": true,
+          "d": 6.1053386637941,
+          "h": 8.420000379681587,
+          "minY": 6.44,
+          "w": 11.766000004196169,
+          "x": -22.58700000209808,
+          "z": 28
+        }
+      ],
+      "id": "roti",
+      "metrics": {
+        "geometries": 21,
+        "materials": 20,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 13,
+        "triangles": 3290
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -23.96315,
+        "y": 0.24,
+        "z": 28
+      },
+      "variant": "neighborhood"
+    },
+    {
+      "colliders": [
+        {
+          "d": 4.299999999999997,
+          "h": 6.59,
+          "minY": 0.24,
+          "w": 8.150000000000002,
+          "x": -23.725,
+          "z": 35
+        },
+        {
+          "d": 0.18999999999999773,
+          "h": 3.09,
+          "minY": 0.24,
+          "w": 0.19000000000000128,
+          "x": -17.1,
+          "z": 37.45
+        },
+        {
+          "d": 0.19000000000000483,
+          "h": 3.09,
+          "minY": 0.24,
+          "w": 0.18999999999999773,
+          "x": -17.099999999999998,
+          "z": 32.55
+        },
+        {
+          "cameraOnly": true,
+          "d": 5.600000000000001,
+          "h": 3.5599999999999996,
+          "minY": 3.0599999999999996,
+          "w": 3.3500000000000014,
+          "x": -18.499999999999996,
+          "z": 35
+        },
+        {
+          "cameraOnly": true,
+          "d": 6.1053386637941,
+          "h": 8.420000379681587,
+          "minY": 6.44,
+          "w": 11.766000004196169,
+          "x": -22.58700000209808,
+          "z": 35
+        }
+      ],
+      "id": "kebun",
+      "metrics": {
+        "geometries": 21,
+        "materials": 22,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 13,
+        "triangles": 3290
+      },
+      "skyline": false,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -23.96315,
+        "y": 0.24,
+        "z": 35
+      },
+      "variant": "neighborhood"
+    },
+    {
+      "colliders": [],
+      "id": "sky-west",
+      "metrics": {
+        "geometries": 21,
+        "materials": 20,
+        "meshes": 45,
+        "missingTextures": [],
+        "textures": 21,
+        "triangles": 51430
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 0.12,
+        "x": -56.76615704923922,
+        "y": 0.24,
+        "z": -59.35396633418702
+      },
+      "variant": "office"
+    },
+    {
+      "colliders": [],
+      "id": "sky-center",
+      "metrics": {
+        "geometries": 21,
+        "materials": 20,
+        "meshes": 45,
+        "missingTextures": [],
+        "textures": 21,
+        "triangles": 51430
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": -0.16,
+        "x": 9.019635088467314,
+        "y": 0.24,
+        "z": -71.31824572855847
+      },
+      "variant": "office"
+    },
+    {
+      "colliders": [],
+      "id": "sky-east",
+      "metrics": {
+        "geometries": 21,
+        "materials": 20,
+        "meshes": 45,
+        "missingTextures": [],
+        "textures": 21,
+        "triangles": 51430
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": -0.3,
+        "x": 55.89132666295071,
+        "y": 0.24,
+        "z": -53.114144932375474
+      },
+      "variant": "office"
+    },
+    {
+      "colliders": [],
+      "id": "sky-east-low",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": -1.5707963267948966,
+        "x": 61.96315,
+        "y": 0.24,
+        "z": -22
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "west-streetwall-0",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -51.96315,
+        "y": 0.24,
+        "z": -34
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "west-streetwall-1",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -51.96315,
+        "y": 0.24,
+        "z": -19
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "west-streetwall-2",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -51.96315,
+        "y": 0.24,
+        "z": -4
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "west-streetwall-3",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -51.96315,
+        "y": 0.24,
+        "z": 11
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "west-streetwall-4",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 1.5707963267948966,
+        "x": -51.96315,
+        "y": 0.24,
+        "z": 26
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "north-streetwall-0",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 0,
+        "x": -24,
+        "y": 0.24,
+        "z": -50.46315
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "north-streetwall-1",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": 0,
+        "x": 24,
+        "y": 0.24,
+        "z": -50.46315
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "east-streetwall-0",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": -1.5707963267948966,
+        "x": 51.96315,
+        "y": 0.24,
+        "z": 12
+      },
+      "variant": "commercial"
+    },
+    {
+      "colliders": [],
+      "id": "east-streetwall-1",
+      "metrics": {
+        "geometries": 25,
+        "materials": 21,
+        "meshes": 39,
+        "missingTextures": [],
+        "textures": 16,
+        "triangles": 24139
+      },
+      "skyline": true,
+      "transform": {
+        "rotation": -1.5707963267948966,
+        "x": 51.96315,
+        "y": 0.24,
+        "z": 34
+      },
+      "variant": "commercial"
+    }
+  ],
+  "importedInstances": {
+    "aircon": 12,
+    "bollard": 2,
+    "civic": 6,
+    "drain": 8,
+    "entrance": 10,
+    "fern": 187,
+    "glazing": 12,
+    "manhole": 5,
+    "office": 4,
+    "planter": 4,
+    "shop": 17,
+    "tree": 19
+  },
+  "loadedFiles": 4,
+  "missingTextures": [],
+  "propColliders": [
+    {
+      "d": 0.1912823877681813,
+      "h": 0.99,
+      "importedProp": "bollard",
+      "minY": 0.24,
+      "w": 0.1818292794579861,
+      "x": -33,
+      "z": 6.8
+    },
+    {
+      "d": 0.1912823877681813,
+      "h": 0.99,
+      "importedProp": "bollard",
+      "minY": 0.24,
+      "w": 0.18182927945798968,
+      "x": -13,
+      "z": 6.8
+    },
+    {
+      "d": 2.4999999006589295,
+      "h": 0.7300000000000001,
+      "importedProp": "planter",
+      "minY": -0.02,
+      "w": 2.4999999006589286,
+      "x": -9,
+      "z": 0
+    },
+    {
+      "d": 2.4999999006589295,
+      "h": 0.7300000000000001,
+      "importedProp": "planter",
+      "minY": -0.02,
+      "w": 2.4999999006589313,
+      "x": 33,
+      "z": 6
+    },
+    {
+      "d": 2.4999999006589277,
+      "h": 0.7300000000000001,
+      "importedProp": "planter",
+      "minY": -0.02,
+      "w": 2.4999999006589313,
+      "x": -33,
+      "z": 18
+    },
+    {
+      "d": 2.4999999006589277,
+      "h": 1.32,
+      "importedProp": "planter",
+      "minY": 0.57,
+      "w": 2.4999999006589313,
+      "x": 31,
+      "z": 17
+    }
+  ],
+  "prototypes": 3,
+  "requests": 4,
+  "signage": [
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        105
+      ],
+      "title": "MENARA TERAS",
+      "worldSize": [
+        6.64,
+        0.33999999999999997
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "KOPI SORE",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "RUANG BACA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "KARYA KOTA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "PASAR RUPA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        171
+      ],
+      "title": "RUANG JIRAN",
+      "worldSize": [
+        4.79,
+        0.4
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        171
+      ],
+      "title": "ROTI PAGI",
+      "worldSize": [
+        4.79,
+        0.4
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        171
+      ],
+      "title": "KEBUN KECIL",
+      "worldSize": [
+        4.79,
+        0.4
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "TERAS NIAGA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "RUMAH KARYA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "GALERI KOTA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "TERAS NIAGA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "RUMAH KARYA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "TERAS UTARA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "TERAS UTARA",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "RUANG TIMUR",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    },
+    {
+      "anisotropy": 8,
+      "minFilter": 1008,
+      "mipmaps": true,
+      "textureSize": [
+        2048,
+        111
+      ],
+      "title": "RUANG TIMUR",
+      "worldSize": [
+        9.24,
+        0.5
+      ]
+    }
+  ],
+  "textures": 49,
+  "triangles": 684861
+}

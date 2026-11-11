@@ -1,0 +1,5703 @@
+{
+  "before": [
+    {
+      "name": "S2A / foundation",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.05999999865889549,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ground floor",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper floor",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.03500000014901161,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / roof ceiling",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / shop facade",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 712,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / terrace facade",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 596,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear ground wall",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 792,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear upper wall",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 484,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east shop wall",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 540,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east upper wall",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 484,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west shop wall",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 540,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west upper wall",
+      "collection": "S2A / Buildings / Shell",
+      "triangles": 484,
+      "bevels": [
+        {
+          "width": 0.017999999225139618,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west display glass",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.003000000026077032,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west display jamb",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west display jamb.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west display rail",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west display rail.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west display mullion",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / west display mullion.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance glass",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.003000000026077032,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance jamb",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance jamb.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance rail",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance rail.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance mullion",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east display glass",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.003000000026077032,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east display jamb",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east display jamb.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east display rail",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east display rail.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / east display mullion",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / door pull",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / door pull.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing glass",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.003000000026077032,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing jamb",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing jamb.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing rail",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing rail.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper east glazing glass",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.003000000026077032,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper east glazing jamb",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper east glazing jamb.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper east glazing rail",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper east glazing rail.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper east glazing mullion",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda post",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / column stone shoe",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / front knee brace",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda post.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / column stone shoe.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / front knee brace.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony fascia",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.003",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.004",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.005",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.006",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.007",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.008",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.009",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.010",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.011",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda soffit slat.012",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper roof post",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper cantilever brace",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper roof post.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper cantilever brace.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / front roof header",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / screen edge",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / screen edge.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / screen top bottom",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / screen top bottom.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / angled sun screen blade",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 1404,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / Kenney window east rear",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 34,
+      "bevels": []
+    },
+    {
+      "name": "S2A / Kenney window east rear.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 34,
+      "bevels": []
+    },
+    {
+      "name": "S2A / Kenney window east rear.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 34,
+      "bevels": []
+    },
+    {
+      "name": "S2A / Kenney window east rear.003",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 34,
+      "bevels": []
+    },
+    {
+      "name": "S2A / Kenney window east rear.004",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 34,
+      "bevels": []
+    },
+    {
+      "name": "S2A / Kenney window east rear.005",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 34,
+      "bevels": []
+    },
+    {
+      "name": "S2A / side shop glass",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop glass.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.003",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.004",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.005",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom.003",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop glass.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.006",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.007",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.008",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom.004",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom.005",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop glass.003",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.009",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.010",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop mullion.011",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom.006",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side shop transom.007",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear service door",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear lower glazing",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear lower glazing.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / sign backing",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / shop sign",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 832,
+      "bevels": []
+    },
+    {
+      "name": "S2A / lamp bracket",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda light",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / lamp glass",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / lamp bracket.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / veranda light.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / lamp glass.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side window stone sill",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side window stone sill.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side window stone sill.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / side window stone sill.003",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear window stone sill",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear window stone sill.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / door stone threshold",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance head transom",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entrance threshold brass inlay",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper side glazed insert",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / upper side glazed insert.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / upper side glazed insert.002",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / upper side glazed insert.003",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / upper rear glazed insert",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / upper rear glazed insert.001",
+      "collection": "S2A / Buildings / Joinery",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / hip roof structural surface 0",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 880,
+      "bevels": []
+    },
+    {
+      "name": "S2A / hip roof structural surface 1",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 880,
+      "bevels": []
+    },
+    {
+      "name": "S2A / hip roof structural surface 2",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 880,
+      "bevels": []
+    },
+    {
+      "name": "S2A / hip roof structural surface 3",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 880,
+      "bevels": []
+    },
+    {
+      "name": "S2A / laid terracotta tile courses",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 4816,
+      "bevels": []
+    },
+    {
+      "name": "S2A / ridge ventilation louver",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ridge ventilation louver.001",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ridge ventilation louver.002",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ridge ventilation louver.003",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ridge ventilation louver.004",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ridge ventilation louver.005",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / raised ridge rain cap",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 164,
+      "bevels": [
+        {
+          "width": 0.02500000037252903,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / subtle brass ridge crest",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 0",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 660,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 1",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 660,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 2",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 660,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 3",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 660,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.001",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.002",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.003",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.004",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.005",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.006",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.007",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.008",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.009",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.010",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.011",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.012",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.013",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.014",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.015",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.016",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.017",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.018",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.019",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.020",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.021",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.022",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.023",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.024",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.025",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.026",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.027",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.028",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.029",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.030",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.031",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.032",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.033",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.034",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.035",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.036",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.037",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.038",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.039",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.040",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.041",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.042",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.043",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.044",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.045",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.046",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / fitted hip cap.047",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ridge vent support",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / ridge vent support.001",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / ridge vent support.002",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / ridge vent support.003",
+      "collection": "S2A / Buildings / Roof",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / balcony deck edge",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony deck edge.001",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony decking board",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 3348,
+      "bevels": [
+        {
+          "width": 0.00800000037997961,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony rail upright",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony rail upright.001",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony rail upright.002",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony rail upright.003",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony timber handrail",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony thin rail",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony thin rail.001",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / balcony thin rail.002",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return handrail",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return rail",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return rail.001",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return rail.002",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return handrail.001",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return rail.003",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return rail.004",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / return rail.005",
+      "collection": "S2A / Buildings / Terrace",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper interior floor",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear interior sage wall",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / cafe counter",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.03999999910593033,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / counter stone top",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.03999999910593033,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear display shelf",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear display shelf.001",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / rear display shelf.002",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.001",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.002",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.003",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.004",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.005",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.006",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.007",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / coffee jar.008",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / cafe table foot",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / cafe table top",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 380,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / cafe table foot.001",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / cafe table top.001",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 380,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / interior stool",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / interior stool.001",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / interior stool.002",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / interior stool.003",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper room sage back wall",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper timber table leg",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper timber table top",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 284,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper timber table leg.001",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 188,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / upper timber table top.001",
+      "collection": "S2A / Buildings / Interior",
+      "triangles": 284,
+      "bevels": [
+        {
+          "width": 0.009999999776482582,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / ground plane",
+      "collection": "S2A / Streets",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.019999999552965164,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / shop apron",
+      "collection": "S2A / Streets",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.05000000074505806,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / entry threshold ramp",
+      "collection": "S2A / Streets",
+      "triangles": 2,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.001",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.002",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.003",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.004",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.005",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.006",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.007",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.008",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.009",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.010",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.011",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving joint.012",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving cross joint",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving cross joint.001",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving cross joint.002",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / paving cross joint.003",
+      "collection": "S2A / Streets",
+      "triangles": 12,
+      "bevels": []
+    },
+    {
+      "name": "S2A / integrated stone trough",
+      "collection": "S2A / Landscape",
+      "triangles": 220,
+      "bevels": [
+        {
+          "width": 0.02500000037252903,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / integrated stone trough soil",
+      "collection": "S2A / Landscape",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / integrated stone trough.001",
+      "collection": "S2A / Landscape",
+      "triangles": 220,
+      "bevels": [
+        {
+          "width": 0.02500000037252903,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / integrated stone trough soil.001",
+      "collection": "S2A / Landscape",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / integrated stone trough.002",
+      "collection": "S2A / Landscape",
+      "triangles": 220,
+      "bevels": [
+        {
+          "width": 0.02500000037252903,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / integrated stone trough soil.002",
+      "collection": "S2A / Landscape",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / integrated stone trough.003",
+      "collection": "S2A / Landscape",
+      "triangles": 220,
+      "bevels": [
+        {
+          "width": 0.02500000037252903,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / integrated stone trough soil.003",
+      "collection": "S2A / Landscape",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "Fern_1.001",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.002",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.003",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.004",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.005",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.006",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.007",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.008",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.009",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.010",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.011",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "Fern_1.012",
+      "collection": "S2A / Landscape",
+      "triangles": 288,
+      "bevels": []
+    },
+    {
+      "name": "S2A / scale reference leg",
+      "collection": "S2A / Props",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / scale reference leg.001",
+      "collection": "S2A / Props",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / scale reference torso",
+      "collection": "S2A / Props",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.07999999821186066,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / scale reference arm",
+      "collection": "S2A / Props",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / scale reference arm.001",
+      "collection": "S2A / Props",
+      "triangles": 108,
+      "bevels": [
+        {
+          "width": 0.014999999664723873,
+          "segments": 2
+        }
+      ]
+    },
+    {
+      "name": "S2A / reference head / 1.75 m",
+      "collection": "S2A / Props",
+      "triangles": 224,
+      "bevels": []
+    }
+  ],
+  "optimizedEditable": {
+    "objects": [
+      {
+        "object": "S2A / foundation",
+        "component": "Building shell",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / ground floor",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper floor",
+        "component": "Building shell",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / roof ceiling",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / shop facade",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 376
+      },
+      {
+        "object": "S2A / terrace facade",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 324
+      },
+      {
+        "object": "S2A / rear ground wall",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 432
+      },
+      {
+        "object": "S2A / rear upper wall",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 244
+      },
+      {
+        "object": "S2A / east shop wall",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 284
+      },
+      {
+        "object": "S2A / east upper wall",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 244
+      },
+      {
+        "object": "S2A / west shop wall",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 284
+      },
+      {
+        "object": "S2A / west upper wall",
+        "component": "Building shell",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 244
+      },
+      {
+        "object": "S2A / west display glass",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / west display jamb",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / west display jamb.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / west display rail",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / west display rail.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / west display mullion",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / west display mullion.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance glass",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance jamb",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance jamb.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance rail",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance rail.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance mullion",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / east display glass",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / east display jamb",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / east display jamb.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / east display rail",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / east display rail.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / east display mullion",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / door pull",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / door pull.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing glass",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing jamb",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing jamb.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing rail",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing rail.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing mullion",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing mullion.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony sliding glazing mullion.002",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper east glazing glass",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper east glazing jamb",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper east glazing jamb.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper east glazing rail",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper east glazing rail.001",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper east glazing mullion",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda post",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / column stone shoe",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / front knee brace",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda post.001",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / column stone shoe.001",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / front knee brace.001",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony fascia",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.001",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.002",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.003",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.004",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.005",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.006",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.007",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.008",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.009",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.010",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.011",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda soffit slat.012",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper roof post",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper cantilever brace",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper roof post.001",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper cantilever brace.001",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / front roof header",
+        "component": "Timber structures",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / screen edge",
+        "component": "Sun screens",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / screen edge.001",
+        "component": "Sun screens",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / screen top bottom",
+        "component": "Sun screens",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / screen top bottom.001",
+        "component": "Sun screens",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / angled sun screen blade",
+        "component": "Sun screens",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 572
+      },
+      {
+        "object": "S2A / Kenney window east rear",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 34
+      },
+      {
+        "object": "S2A / Kenney window east rear.001",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 34
+      },
+      {
+        "object": "S2A / Kenney window east rear.002",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 34
+      },
+      {
+        "object": "S2A / Kenney window east rear.003",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 34
+      },
+      {
+        "object": "S2A / Kenney window east rear.004",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 34
+      },
+      {
+        "object": "S2A / Kenney window east rear.005",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 34
+      },
+      {
+        "object": "S2A / side shop glass",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.001",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.002",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom.001",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop glass.001",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.003",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.004",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.005",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom.002",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom.003",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop glass.002",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.006",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.007",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.008",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom.004",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom.005",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop glass.003",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.009",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.010",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop mullion.011",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom.006",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side shop transom.007",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear service door",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear lower glazing",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear lower glazing.001",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / sign backing",
+        "component": "Decorative props",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / shop sign",
+        "component": "Decorative props",
+        "changes": [],
+        "optimized_triangles": 832
+      },
+      {
+        "object": "S2A / lamp bracket",
+        "component": "Decorative props",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda light",
+        "component": "Decorative props",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / lamp glass",
+        "component": "Decorative props",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / lamp bracket.001",
+        "component": "Decorative props",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / veranda light.001",
+        "component": "Decorative props",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / lamp glass.001",
+        "component": "Decorative props",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / side window stone sill",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side window stone sill.001",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side window stone sill.002",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / side window stone sill.003",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear window stone sill",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear window stone sill.001",
+        "component": "Windows",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / door stone threshold",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance head transom",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / entrance threshold brass inlay",
+        "component": "Shopfront and doors",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper side glazed insert",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / upper side glazed insert.001",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / upper side glazed insert.002",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / upper side glazed insert.003",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / upper rear glazed insert",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / upper rear glazed insert.001",
+        "component": "Windows",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / hip roof structural surface 0",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 880
+      },
+      {
+        "object": "S2A / hip roof structural surface 1",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 880
+      },
+      {
+        "object": "S2A / hip roof structural surface 2",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 880
+      },
+      {
+        "object": "S2A / hip roof structural surface 3",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 880
+      },
+      {
+        "object": "S2A / laid terracotta tile courses",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 4816
+      },
+      {
+        "object": "S2A / ridge ventilation louver",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / ridge ventilation louver.001",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / ridge ventilation louver.002",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / ridge ventilation louver.003",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / ridge ventilation louver.004",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / ridge ventilation louver.005",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / raised ridge rain cap",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 164
+      },
+      {
+        "object": "S2A / subtle brass ridge crest",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / continuous curved eave fascia 0",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 660
+      },
+      {
+        "object": "S2A / continuous curved eave fascia 1",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 660
+      },
+      {
+        "object": "S2A / continuous curved eave fascia 2",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 660
+      },
+      {
+        "object": "S2A / continuous curved eave fascia 3",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 660
+      },
+      {
+        "object": "S2A / fitted hip cap",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.001",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.002",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.003",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.004",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.005",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.006",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.007",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.008",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.009",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.010",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.011",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.012",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.013",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.014",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.015",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.016",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.017",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.018",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.019",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.020",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.021",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.022",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.023",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.024",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.025",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.026",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.027",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.028",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.029",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.030",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.031",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.032",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.033",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.034",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.035",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.036",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.037",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.038",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.039",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.040",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.041",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.042",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.043",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.044",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.045",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.046",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / fitted hip cap.047",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / ridge vent support",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / ridge vent support.001",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / ridge vent support.002",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / ridge vent support.003",
+        "component": "Roof A",
+        "changes": [],
+        "optimized_triangles": 12
+      },
+      {
+        "object": "S2A / balcony deck edge",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony deck edge.001",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony decking board",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 1364
+      },
+      {
+        "object": "S2A / balcony rail upright",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony rail upright.001",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony rail upright.002",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony rail upright.003",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony timber handrail",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony thin rail",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony thin rail.001",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / balcony thin rail.002",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return handrail",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return rail",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return rail.001",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return rail.002",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return handrail.001",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return rail.003",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return rail.004",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / return rail.005",
+        "component": "Balcony",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper interior floor",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear interior sage wall",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / cafe counter",
+        "component": "Interior",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / counter stone top",
+        "component": "Interior",
+        "changes": [],
+        "optimized_triangles": 108
+      },
+      {
+        "object": "S2A / rear display shelf",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear display shelf.001",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / rear display shelf.002",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / coffee jar",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.001",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.002",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.003",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.004",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.005",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.006",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.007",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / coffee jar.008",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / cafe table foot",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / cafe table top",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 252
+      },
+      {
+        "object": "S2A / cafe table foot.001",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / cafe table top.001",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 252
+      },
+      {
+        "object": "S2A / interior stool",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / interior stool.001",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / interior stool.002",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / interior stool.003",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper room sage back wall",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / upper timber table leg",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / upper timber table top",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 188
+      },
+      {
+        "object": "S2A / upper timber table leg.001",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 124
+      },
+      {
+        "object": "S2A / upper timber table top.001",
+        "component": "Interior",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 188
+      },
+      {
+        "object": "S2A / integrated stone trough",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 92
+      },
+      {
+        "object": "S2A / integrated stone trough soil",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / integrated stone trough.001",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 92
+      },
+      {
+        "object": "S2A / integrated stone trough soil.001",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / integrated stone trough.002",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 92
+      },
+      {
+        "object": "S2A / integrated stone trough soil.002",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "S2A / integrated stone trough.003",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 92
+      },
+      {
+        "object": "S2A / integrated stone trough soil.003",
+        "component": "Planters",
+        "changes": [
+          {
+            "modifier": "Craft edge bevel",
+            "segments_before": 2,
+            "segments_after": 1
+          }
+        ],
+        "optimized_triangles": 44
+      },
+      {
+        "object": "Fern_1.001",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.002",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.003",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.004",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.005",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.006",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.007",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.008",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.009",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.010",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.011",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      },
+      {
+        "object": "Fern_1.012",
+        "component": "Planters",
+        "changes": [],
+        "optimized_triangles": 288
+      }
+    ],
+    "sockets": {
+      "Building shell": [
+        0,
+        0,
+        0
+      ],
+      "Shopfront and doors": [
+        0,
+        -3.55,
+        0.24
+      ],
+      "Windows": [
+        0,
+        0,
+        0
+      ],
+      "Balcony": [
+        0,
+        -2.85,
+        3.5
+      ],
+      "Roof A": [
+        0,
+        0.5,
+        6.45
+      ],
+      "Timber structures": [
+        0,
+        0,
+        0
+      ],
+      "Sun screens": [
+        1.26,
+        -3.14,
+        4.08
+      ],
+      "Planters": [
+        0,
+        0,
+        0
+      ],
+      "Decorative props": [
+        0,
+        -3.55,
+        0
+      ],
+      "Interior": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

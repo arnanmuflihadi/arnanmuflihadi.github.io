@@ -128,7 +128,7 @@
   }
 
   function ambientAllowed() {
-    return userAmbientEnabled && !reduced.matches && !document.hidden;
+    return userAmbientEnabled && !reduced.matches && !document.hidden && document.documentElement.dataset.experience !== "rpg";
   }
 
   function updateAmbientPlayback() {
@@ -918,6 +918,7 @@
       ticker = (time) => lenis.raf(time * 1000);
       gsap.ticker.add(ticker);
       gsap.ticker.lagSmoothing(0);
+      if (document.documentElement.dataset.experience === 'rpg') lenis.stop();
     }
 
     ctx = gsap.context(() => {
@@ -943,6 +944,10 @@
       });
     }
     on(document, 'visibilitychange', updateAmbientPlayback);
+    on(document, 'experience:change', event => {
+      if (event.detail.experience === 'rpg') lenis?.stop(); else lenis?.start();
+      updateAmbientPlayback();
+    });
     updateAmbientPlayback();
     document.documentElement.classList.add('motion-ready');
     requestRefresh(ScrollTrigger);

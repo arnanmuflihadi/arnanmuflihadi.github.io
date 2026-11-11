@@ -1,0 +1,446 @@
+[
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        27,
+        18.799999618530272,
+        60
+      ],
+      "quaternion": [
+        0.06521488289012332,
+        -0.09675950785890348,
+        0.006353691316377859,
+        0.993148653170907
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "1-arrival.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#arrival",
+    "view": "arrival",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        36,
+        21.06428593226841,
+        38
+      ],
+      "quaternion": [
+        0.06975070953450536,
+        -0.04734217296699694,
+        0.003313964662885984,
+        0.996434932555262
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "2-market.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#market",
+    "view": "market",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        35,
+        23.73571488516671,
+        22
+      ],
+      "quaternion": [
+        0.07010670164185223,
+        -0.043248697595309006,
+        0.003042377108125784,
+        0.9965968816340646
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "3-square.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#square",
+    "view": "square",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        33,
+        24.250000381469725,
+        15
+      ],
+      "quaternion": [
+        0.11316917005226727,
+        -0.17441632545635452,
+        0.020183830304180653,
+        0.9779388004155658
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "4-guild.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#guild",
+    "view": "guild",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        18,
+        22.15441345528991,
+        12
+      ],
+      "quaternion": [
+        0.05635785399342572,
+        0.6671456983548308,
+        -0.050736820038544565,
+        0.7410574772258067
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "5-trail.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#trail",
+    "view": "trail",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        125,
+        115,
+        155
+      ],
+      "quaternion": [
+        -0.23159692545805735,
+        0.331366479550536,
+        0.08426437365451625,
+        0.9107461971818884
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "6-aerial.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#aerial",
+    "view": "aerial",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        92,
+        80,
+        110
+      ],
+      "quaternion": [
+        -0.23977530473009445,
+        0.2805429836711139,
+        0.0725981208020377,
+        0.9265705318056
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "7-context.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#context",
+    "view": "context",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        25,
+        136,
+        28
+      ],
+      "quaternion": [
+        -0.7070763017891947,
+        0,
+        0,
+        0.7071372592701616
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "8-plan.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#plan",
+    "view": "plan",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 60,
+      "position": [
+        27,
+        18.799999618530272,
+        60
+      ],
+      "quaternion": [
+        0.09089629882679906,
+        -0.054078418268728314,
+        0.004943316048475933,
+        0.9943786759396978
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "matched-arrival.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#matched-arrival",
+    "view": "matched-arrival",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 60,
+      "position": [
+        38,
+        22.62500059294542,
+        30
+      ],
+      "quaternion": [
+        0.05484596083545849,
+        0.2190410408094441,
+        -0.012333004270902248,
+        0.9740948824559158
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "matched-market.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#matched-market",
+    "view": "matched-market",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 60,
+      "position": [
+        32,
+        23.949999237060545,
+        20
+      ],
+      "quaternion": [
+        0.12196656553041352,
+        0.2647871989399506,
+        -0.033782782911756876,
+        0.9559658046964794
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "matched-square.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#matched-square",
+    "view": "matched-square",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "atmospherePaused": true,
+    "buffer": [
+      1280,
+      658
+    ],
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 53,
+      "position": [
+        -145,
+        5,
+        155
+      ],
+      "quaternion": [
+        -0.04435940320584239,
+        -0.3603381248366482,
+        -0.01715783526871181,
+        0.9316084412591598
+      ]
+    },
+    "canvas": [
+      1280,
+      658
+    ],
+    "file": "side.jpg",
+    "lighting": "Unchanged R0-A3 daylight / exposure 0.96",
+    "quality": "standard",
+    "revision": "R0-B1.5-composition-repair.3",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5-composition-repair-final#side",
+    "view": "side",
+    "viewport": [
+      1280,
+      720
+    ]
+  }
+]

@@ -1,0 +1,416 @@
+{
+  "total_triangles": 170709,
+  "objects": [
+    {
+      "name": "B1 Kopi Awan.001",
+      "triangles": 35876,
+      "slots": 18,
+      "repeat": false
+    },
+    {
+      "name": "B2 Lembaran Shophouse.001",
+      "triangles": 19710,
+      "slots": 21,
+      "repeat": false
+    },
+    {
+      "name": "B3 Rupa Rimba Atelier.001",
+      "triangles": 12012,
+      "slots": 16,
+      "repeat": false
+    },
+    {
+      "name": "B4 Serambi Corner Shop.001",
+      "triangles": 33926,
+      "slots": 18,
+      "repeat": false
+    },
+    {
+      "name": "WalkableStreet",
+      "triangles": 2476,
+      "slots": 6,
+      "repeat": false
+    },
+    {
+      "name": "GradingStudy",
+      "triangles": 3696,
+      "slots": 2,
+      "repeat": false
+    },
+    {
+      "name": "Landscape",
+      "triangles": 4322,
+      "slots": 7,
+      "repeat": false
+    },
+    {
+      "name": "Quaternius shared canopy tree.005",
+      "triangles": 6265,
+      "slots": 2,
+      "repeat": true
+    },
+    {
+      "name": "Quaternius shared canopy tree.006",
+      "triangles": 6265,
+      "slots": 2,
+      "repeat": true
+    },
+    {
+      "name": "Quaternius shared canopy tree.007",
+      "triangles": 6265,
+      "slots": 2,
+      "repeat": true
+    },
+    {
+      "name": "Quaternius shared canopy tree.008",
+      "triangles": 6265,
+      "slots": 2,
+      "repeat": true
+    },
+    {
+      "name": "Quaternius shared canopy tree.009",
+      "triangles": 6265,
+      "slots": 2,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.020",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.021",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.022",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.023",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.024",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.025",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.026",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.027",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.028",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.029",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.030",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.031",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.032",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.033",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.034",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.035",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.036",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.037",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.038",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Shared source fern / street planter.039",
+      "triangles": 288,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original stylized palm trunk.004",
+      "triangles": 112,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.040",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.041",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.042",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.043",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.044",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.045",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.046",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.047",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.048",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Original layered palm frond.049",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.022",
+      "triangles": 112,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.023",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.024",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.025",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.026",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.027",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.028",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.029",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.030",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.031",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.032",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.033",
+      "triangles": 112,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.034",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.035",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.036",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.037",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.038",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.039",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.040",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.041",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.042",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Middle landing shared palm.043",
+      "triangles": 44,
+      "slots": 1,
+      "repeat": true
+    },
+    {
+      "name": "Entrance landscape shared canopy.002",
+      "triangles": 6265,
+      "slots": 2,
+      "repeat": true
+    },
+    {
+      "name": "Entrance landscape shared canopy.003",
+      "triangles": 6265,
+      "slots": 2,
+      "repeat": true
+    },
+    {
+      "name": "StreetFurniture",
+      "triangles": 7420,
+      "slots": 5,
+      "repeat": false
+    }
+  ],
+  "shared_repeat_meshes": 13,
+  "source_scene": "S2C Market Street",
+  "export_scene": "S2D Optimized Export"
+}

@@ -1,0 +1,39 @@
+{
+  "method": "26 sampled wing-flight frames; every third skinned vertex against visible-object collider boxes; hits are evidence of conflict, absence does not establish clearance",
+  "root": {
+    "x": 15.0601402178293,
+    "y": 15.059897932043288,
+    "z": 69.93625724009176,
+    "scale": 3
+  },
+  "seatWorld": [
+    13.993288046216353,
+    17.21989793204329,
+    68.41263443771423
+  ],
+  "seatLocal": [
+    0,
+    0.72,
+    -0.62
+  ],
+  "union": {
+    "min": [
+      9.73695971266622,
+      12.741200263800339,
+      64.67461263678227
+    ],
+    "max": [
+      18.93373728442642,
+      21.789461596702267,
+      72.53933745601492
+    ]
+  },
+  "minimumY": 12.741200263800339,
+  "datum": 15.095,
+  "sampledColliderHits": {
+    "wind standard": 89,
+    "canopy pier": 65
+  },
+  "skyportRoofGuardAndTailSweep": "not proven",
+  "foldedPose": "not present"
+}

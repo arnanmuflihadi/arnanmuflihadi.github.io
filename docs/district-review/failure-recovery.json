@@ -1,0 +1,17 @@
+{
+  "failure": {
+    "failed": "true",
+    "mainInert": false,
+    "mode": "editorial",
+    "status": "\n\n\nAR(N)AN / A LIVING URBAN ATLASJakarta / The Urban AtlasConceptual geography · not a digital twin\nThe live view is unavailable on this device. Every study remains readable below.\n\n01 Transit · 02 Business · 03 Neighbourhood\nEFind a guide or landmarkSpaceJumpControls / pauseQuality StandardEco\n↑←↓→\nOPTIONAL FIELD STORY · FICTIONThe Lost Survey SignalMeet Sari at the south plaza.Your health 100Mosskeeper 96Attack J · comboDodge CGuard Hold K",
+    "studyLinks": 3
+  },
+  "studyStillReadable": true,
+  "recovered": {
+    "buildings": 21,
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "mode": "adventure",
+    "ready": "true"
+  }
+}

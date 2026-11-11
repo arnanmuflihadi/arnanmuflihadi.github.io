@@ -1,0 +1,65 @@
+{
+  "author": "Quaternius",
+  "pages": [
+    "https://quaternius.com/packs/downtowncitymegakit.html",
+    "https://quaternius.com/packs/stylizednaturemegakit.html"
+  ],
+  "models": [
+    {
+      "id": "city-building",
+      "pack": "downtown-city-megakit",
+      "sourceFile": "Exports/glTF (Godot)/Building_Small_1.gltf",
+      "sourceSha256": "3c864724fffd016ca440191bca169d6ba486e14617bb3cafa09ddbac7532f3d7",
+      "outputSha256": "cd672af086420d85c65f265109a3881a1e0c591d045777d213f3a2bd251568cb",
+      "bytes": 2608856,
+      "license": "CC0-1.0",
+      "changes": [
+        "Keep the actual mesh/UVs/normals/material textures",
+        "Downsize texture maps to at most 256px as PNG",
+        "Nonmetallic matte finish; prune and deduplicate"
+      ]
+    },
+    {
+      "id": "city-planter",
+      "pack": "downtown-city-megakit",
+      "sourceFile": "Exports/glTF (Godot)/Prop_Planter_Single.gltf",
+      "sourceSha256": "5ab51700931236c2de45c9c8c5c1206ff312d56f00cedf134bfa462da4ef4f13",
+      "outputSha256": "d89dea7493f75d54be8eaf0c7e8b8706fc18cc8c9aa61976b0327056919ea66b",
+      "bytes": 454776,
+      "license": "CC0-1.0",
+      "changes": [
+        "Keep the actual mesh/UVs/normals/material textures",
+        "Downsize texture maps to at most 256px as PNG",
+        "Nonmetallic matte finish; prune and deduplicate"
+      ]
+    },
+    {
+      "id": "canopy-tree",
+      "pack": "stylized-nature-megakit",
+      "sourceFile": "glTF/CommonTree_1.gltf",
+      "sourceSha256": "b51cdea6545edb51d102dd6c27caafe62aa75e3c328ac8f9039f4e7bfd690bfa",
+      "outputSha256": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "bytes": 719224,
+      "license": "CC0-1.0",
+      "changes": [
+        "Keep the actual mesh/UVs/normals/material textures",
+        "Downsize texture maps to at most 256px as PNG",
+        "Nonmetallic matte finish; prune and deduplicate"
+      ]
+    },
+    {
+      "id": "fern",
+      "pack": "stylized-nature-megakit",
+      "sourceFile": "glTF/Fern_1.gltf",
+      "sourceSha256": "d41915cffe9dbbde1ae88be381eb9c60f7caa2274511436cc78fe4de627468ab",
+      "outputSha256": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "bytes": 104876,
+      "license": "CC0-1.0",
+      "changes": [
+        "Keep the actual mesh/UVs/normals/material textures",
+        "Downsize texture maps to at most 256px as PNG",
+        "Nonmetallic matte finish; prune and deduplicate"
+      ]
+    }
+  ]
+}

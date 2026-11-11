@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "file": "assets/game/scenery/canopy-tree.glb",
+      "bytes": 719224,
+      "sha256": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "current": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/game/scenery/fern.glb",
+      "bytes": 104876,
+      "sha256": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "current": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "unchanged": true
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/urban-explorer.glb",
+      "bytes": 1581480,
+      "sha256": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+      "current": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+      "unchanged": true
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/jump-animations.glb",
+      "bytes": 267260,
+      "sha256": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5",
+      "current": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5",
+      "unchanged": true
+    }
+  ],
+  "totalExistingBundledBytes": 2672840,
+  "newAssetBytes": 0,
+  "planning": {
+    "meshes": 41,
+    "triangles": 11936,
+    "geometries": 31,
+    "materials": 17,
+    "textures": 0,
+    "missingTextures": []
+  },
+  "loaded": {
+    "planningEnvelopes": 11,
+    "commercialEnvelopes": 10,
+    "architectureGLBs": 0,
+    "landscapeTemplates": 2,
+    "character": {
+      "meshes": 15,
+      "triangles": 10202,
+      "height": 1.9
+    }
+  },
+  "note": "Existing file payloads, not measured HTTP transfer. Planning volumes are custom greybox geometry, not imported finished buildings."
+}

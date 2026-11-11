@@ -1,0 +1,10 @@
+{
+  "changedBaselineFiles": [
+    "ASSET_MANIFEST.md",
+    "assets/js/floating-atlas/entry.js",
+    "assets/js/floating-atlas/reconstruction-review.js"
+  ],
+  "unchangedBaselineFiles": 57,
+  "C3SourceAndGLBUnchanged": true,
+  "terrainAndApprovedAssetsUnchanged": true
+}

@@ -1,0 +1,10 @@
+{
+  "state": {
+    "character": "true",
+    "mode": "adventure",
+    "poster": "assets/img/floating-atlas/landscape-detail-poster.webp",
+    "ready": "true",
+    "renderer": "1"
+  },
+  "logs": []
+}

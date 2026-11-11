@@ -1,0 +1,14 @@
+✔ approved masters, GLBs, controller and terrain files remain byte-identical (133.225791ms)
+✔ direct stair and continuous journey/guild routes use the unchanged real controller (0.371458ms)
+✔ before/after restores original furniture geometry, terrain, instances and collision boundaries (642.147ms)
+✔ visible imported stair tops and exact terrain agree with support samplers (711.702167ms)
+✔ jump and landing work on the repaired civic portal without changing movement physics (426.562292ms)
+✔ arrival guard, market edge and fountain stop the original controller on visible support (439.280792ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2496.631959

@@ -1,0 +1,184 @@
+{
+  "counts": [
+    274,
+    783
+  ],
+  "A": [
+    {
+      "centre": [
+        33,
+        18
+      ],
+      "angle": 240,
+      "score": 18.139231484929613,
+      "h0": 18.629902017235043,
+      "grade": 0.08,
+      "meanAdjustment": 1.4222869163694332,
+      "maxUnfilled": 3.3725881637072526,
+      "maxSupport": 3.572588163707252,
+      "treePlotConflicts": 1,
+      "entry": [
+        44.750000000000014,
+        38.351596988934304
+      ],
+      "tie": [
+        27.0,
+        57.0
+      ],
+      "tieDistance": 0.0,
+      "spurDirect": 25.745396381938356,
+      "extraApproachLength": 6.750523588232781,
+      "approachLength": 32.49591997017114,
+      "approachMeanGrade": 0.08,
+      "entryAngle": 73.58608490558757,
+      "template": "linear"
+    },
+    {
+      "centre": [
+        36,
+        21
+      ],
+      "angle": 270,
+      "score": 18.45180862868406,
+      "h0": 18.564310985774338,
+      "grade": 0.08,
+      "meanAdjustment": 1.522563781326592,
+      "maxUnfilled": 3.316484998900089,
+      "maxSupport": 3.51648499890009,
+      "treePlotConflicts": 2,
+      "entry": [
+        36.00000000000001,
+        44.5
+      ],
+      "tie": [
+        25.11111111111111,
+        47.44444444444444
+      ],
+      "tieDistance": 9.853870581253782,
+      "spurDirect": 11.279966946803869,
+      "extraApproachLength": 8.549724208130757,
+      "approachLength": 29.68356173618841,
+      "approachMeanGrade": 0.08,
+      "entryAngle": 74.86863008834871,
+      "template": "linear"
+    },
+    {
+      "centre": [
+        30,
+        18
+      ],
+      "angle": 240,
+      "score": 18.549572226860203,
+      "h0": 18.692381125775704,
+      "grade": 0.08,
+      "meanAdjustment": 1.3991846812907114,
+      "maxUnfilled": 3.5927696133624067,
+      "maxSupport": 3.792769613362406,
+      "treePlotConflicts": 1,
+      "entry": [
+        41.750000000000014,
+        38.351596988934304
+      ],
+      "tie": [
+        26.666666666666668,
+        54.333333333333336
+      ],
+      "tieDistance": 2.6874192494328497,
+      "spurDirect": 21.975505478289453,
+      "extraApproachLength": 8.345925643757763,
+      "approachLength": 33.008850371480065,
+      "approachMeanGrade": 0.08,
+      "entryAngle": 73.3434655721487,
+      "template": "linear"
+    }
+  ],
+  "B": [
+    {
+      "centre": [
+        0,
+        50
+      ],
+      "angle": 180,
+      "score": 14.15580595926288,
+      "h0": 16.394571905112915,
+      "grade": -0.08,
+      "meanAdjustment": 1.6842988896422062,
+      "maxUnfilled": 1.5648606467550525,
+      "maxSupport": 1.7648606467550518,
+      "treePlotConflicts": 7,
+      "entry": [
+        17.5,
+        50.0
+      ],
+      "tie": [
+        27.0,
+        57.0
+      ],
+      "tieDistance": 0.0,
+      "spurDirect": 11.800423721205947,
+      "extraApproachLength": 0.0,
+      "approachLength": 11.800423721205947,
+      "approachMeanGrade": 0.03087545787333212,
+      "entryAngle": 36.384351815835906,
+      "template": "hub"
+    },
+    {
+      "centre": [
+        25,
+        5
+      ],
+      "angle": 225,
+      "score": 17.094652082335898,
+      "h0": 19.700892777543373,
+      "grade": 0.08,
+      "meanAdjustment": 1.2639923547431358,
+      "maxUnfilled": 3.42715855223296,
+      "maxSupport": 3.6271585522329595,
+      "treePlotConflicts": 1,
+      "entry": [
+        41.61700935788387,
+        21.617009357883866
+      ],
+      "tie": [
+        26.0,
+        49.0
+      ],
+      "tieDistance": 8.06225774829855,
+      "spurDirect": 31.52331133923675,
+      "extraApproachLength": 4.654908019398192,
+      "approachLength": 44.24047710693349,
+      "approachMeanGrade": 0.08,
+      "entryAngle": 74.6968854295938,
+      "template": "linear"
+    },
+    {
+      "centre": [
+        0,
+        45
+      ],
+      "angle": 225,
+      "score": 17.128023593245942,
+      "h0": 14.613669577435399,
+      "grade": 0.08,
+      "meanAdjustment": 1.9483113505222898,
+      "maxUnfilled": 1.6930876847046274,
+      "maxSupport": 1.7388854051011329,
+      "treePlotConflicts": 6,
+      "entry": [
+        12.374368670764584,
+        57.37436867076458
+      ],
+      "tie": [
+        27.0,
+        57.0
+      ],
+      "tieDistance": 0.0,
+      "spurDirect": 14.630421855857833,
+      "extraApproachLength": 3.0765636714665803,
+      "approachLength": 17.706985527324413,
+      "approachMeanGrade": 0.08,
+      "entryAngle": 46.46626573547995,
+      "template": "hub"
+    }
+  ]
+}

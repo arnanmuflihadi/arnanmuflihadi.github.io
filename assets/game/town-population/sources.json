@@ -1,0 +1,307 @@
+{
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "date": "2026-11-04",
+  "packs": [
+    {
+      "pack": "furniture",
+      "archive": "source-assets/town-population/kenney_furniture-kit.zip",
+      "archiveBytes": 5130729,
+      "archiveSha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "licenseSha256": "bc0de1a0742cb490f9ed4bae0bd284286ebb27e23149b9917c7d8c0d590b8b29"
+    },
+    {
+      "pack": "food",
+      "archive": "source-assets/town-population/kenney_food-kit.zip",
+      "archiveBytes": 4606270,
+      "archiveSha256": "cdad90853682499b94c9fda2f87678b24bfd8f3264e0ed323f6b6a27fd7c6f6f",
+      "licenseSha256": "32a081c2035dd4db47d850c83244da048165f0e53d71c076b76c1afc0590bc7f"
+    }
+  ],
+  "models": [
+    {
+      "id": "tableRound",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/tableRound.glb",
+      "sourceSha256": "f8daea9124a542a00b7bdacfddac82dc468573d43e44d7b54dd6316e9695754b",
+      "sourceBytes": 6444,
+      "height": 0.76,
+      "dimensions": [
+        0.7621023302957068,
+        0.7599999999999999,
+        0.8799999999999999
+      ],
+      "triangles": 80,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "chair",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/chair.glb",
+      "sourceSha256": "c8a11eec93e89e31250ba91afc1b8d56c3bec7ae86640fd1239f595ff4180883",
+      "sourceBytes": 10756,
+      "height": 0.86,
+      "dimensions": [
+        0.46,
+        0.86,
+        0.46
+      ],
+      "triangles": 170,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "bench",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/bench.glb",
+      "sourceSha256": "ba05a6d23a5a5a44da016757632070e47ff7587ce10e2f6d6d52328b4cf5489b",
+      "sourceBytes": 10756,
+      "height": 0.84,
+      "dimensions": [
+        1.8,
+        0.84,
+        0.9
+      ],
+      "triangles": 170,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "pottedPlant",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/pottedPlant.glb",
+      "sourceSha256": "5b760eda2766f75fda36b2c5df652a1662f82981ef64cd8fa7fe7bcd386b3a15",
+      "sourceBytes": 7576,
+      "height": 1.18,
+      "dimensions": [
+        0.3826047679583428,
+        1.18,
+        0.43565410055816606
+      ],
+      "triangles": 60,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "books",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/books.glb",
+      "sourceSha256": "b8dc56e5d29f6fc1f4727fccb1b9642627fee9942c48060a00034e98df02701c",
+      "sourceBytes": 6864,
+      "height": 0.22,
+      "dimensions": [
+        0.31855390743625644,
+        0.22,
+        0.20009189327759264
+      ],
+      "triangles": 62,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "cardboardBoxOpen",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/cardboardBoxOpen.glb",
+      "sourceSha256": "960da412564774c75e7b32f9af0100895e1edb877fc1e70dd34ee2422a2196d4",
+      "sourceBytes": 5404,
+      "height": 0.45,
+      "dimensions": [
+        0.5955293531676105,
+        0.45,
+        0.34030249093335907
+      ],
+      "triangles": 60,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "kitchenBar",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/kitchenBar.glb",
+      "sourceSha256": "792c3d31e60c8a8d8c7a28cf7d1efe004c5a601adc1b163a8799dde32c1b559d",
+      "sourceBytes": 6004,
+      "height": 1.02,
+      "dimensions": [
+        1.65,
+        1.02,
+        0.8058139149258761
+      ],
+      "triangles": 76,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "plantSmall2",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/plantSmall2.glb",
+      "sourceSha256": "d7c8ff42c66dd4f9238a73570549813d1ca6c5f6f661d7af9cb764c4fce314b9",
+      "sourceBytes": 12996,
+      "height": 0.28,
+      "dimensions": [
+        0.18932145755940422,
+        0.28,
+        0.18932146105650333
+      ],
+      "triangles": 158,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "stoolBar",
+      "pack": "furniture",
+      "source": "source-assets/town-population/furniture/Models/GLTF format/stoolBar.glb",
+      "sourceSha256": "a86167a9f92401a61fec7e509ad089ecc552d0f299743add3aeb919acb24e341",
+      "sourceBytes": 11816,
+      "height": 0.72,
+      "dimensions": [
+        0.43934894189424106,
+        0.72,
+        0.3804873659392205
+      ],
+      "triangles": 176,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/furniture-kit",
+      "licenseFile": "source-assets/town-population/furniture/License.txt"
+    },
+    {
+      "id": "cup-coffee",
+      "pack": "food",
+      "source": "source-assets/town-population/food/Models/GLB format/cup-coffee.glb",
+      "sourceSha256": "d74652ad1821bc5dedf1b2e1deb4e0ca0c498aa73880e7df5b91e5e729af6f81",
+      "sourceBytes": 7872,
+      "height": 0.12,
+      "dimensions": [
+        0.18539129757288825,
+        0.12,
+        0.2456995408632945
+      ],
+      "triangles": 108,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/food-kit",
+      "licenseFile": "source-assets/town-population/food/License.txt"
+    },
+    {
+      "id": "cup-saucer",
+      "pack": "food",
+      "source": "source-assets/town-population/food/Models/GLB format/cup-saucer.glb",
+      "sourceSha256": "0e8ff3b8e938739b0800a17a37f9a61ee5314ed74c6cb609a4defb5bd800ce59",
+      "sourceBytes": 7848,
+      "height": 0.025,
+      "dimensions": [
+        0.23467737563485566,
+        0.024999999999999998,
+        0.23467737563485566
+      ],
+      "triangles": 116,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/food-kit",
+      "licenseFile": "source-assets/town-population/food/License.txt"
+    },
+    {
+      "id": "plate",
+      "pack": "food",
+      "source": "source-assets/town-population/food/Models/GLB format/plate.glb",
+      "sourceSha256": "4c1de567b854264b2a9407ec221d33dfd13c7fc18563ea1f33cb8abe3a3d11be",
+      "sourceBytes": 8480,
+      "height": 0.025,
+      "dimensions": [
+        0.24771499375599929,
+        0.025,
+        0.24771499375599929
+      ],
+      "triangles": 140,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/food-kit",
+      "licenseFile": "source-assets/town-population/food/License.txt"
+    },
+    {
+      "id": "croissant",
+      "pack": "food",
+      "source": "source-assets/town-population/food/Models/GLB format/croissant.glb",
+      "sourceSha256": "f2f8ee64d7850b262a6af2492cd042fa8eb6506cde49d439360ad1a3df48fe9e",
+      "sourceBytes": 14352,
+      "height": 0.09,
+      "dimensions": [
+        0.1608817876531534,
+        0.09,
+        0.2220412648304576
+      ],
+      "triangles": 162,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/food-kit",
+      "licenseFile": "source-assets/town-population/food/License.txt"
+    },
+    {
+      "id": "banana",
+      "pack": "food",
+      "source": "source-assets/town-population/food/Models/GLB format/banana.glb",
+      "sourceSha256": "67c90aa8bef35b8886d6b67c0c4c3249556e28176c893d451b95cd83a156908c",
+      "sourceBytes": 12348,
+      "height": 0.14,
+      "dimensions": [
+        0.09838590307324037,
+        0.14,
+        0.4503666880721392
+      ],
+      "triangles": 104,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/food-kit",
+      "licenseFile": "source-assets/town-population/food/License.txt"
+    },
+    {
+      "id": "bread",
+      "pack": "food",
+      "source": "source-assets/town-population/food/Models/GLB format/bread.glb",
+      "sourceSha256": "9bd9db117db654cf1157439d1257a8fc5915ea77a94fb876a5056522b9e49f46",
+      "sourceBytes": 9468,
+      "height": 0.06,
+      "dimensions": [
+        0.28,
+        0.06,
+        0.23162637566545932
+      ],
+      "triangles": 116,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/food-kit",
+      "licenseFile": "source-assets/town-population/food/License.txt"
+    },
+    {
+      "id": "coconut-half",
+      "pack": "food",
+      "source": "source-assets/town-population/food/Models/GLB format/coconut-half.glb",
+      "sourceSha256": "d72e860192b27e3f3634b388d885a7a07afadb16b4233c783e2b68ef94702684",
+      "sourceBytes": 8308,
+      "height": 0.12,
+      "dimensions": [
+        0.23999997120548766,
+        0.12,
+        0.23999997120548766
+      ],
+      "triangles": 92,
+      "license": "CC0-1.0",
+      "sourceUrl": "https://kenney.nl/assets/food-kit",
+      "licenseFile": "source-assets/town-population/food/License.txt"
+    }
+  ],
+  "output": {
+    "file": "assets/game/town-population/props.glb",
+    "bytes": 117052,
+    "sha256": "f1925550b32c900e62daa7d3d576b79af66f934caa2cdad10452e2aaeadaa912",
+    "materials": 8,
+    "textures": 1
+  },
+  "changes": [
+    "Select 16 actual imported props; exclude pack buildings and interior fixtures",
+    "Ground-centred metric normalization; controlled timber/jade/foliage palette",
+    "Embed food atlas and deduplicate shared resources; no new shaders"
+  ]
+}

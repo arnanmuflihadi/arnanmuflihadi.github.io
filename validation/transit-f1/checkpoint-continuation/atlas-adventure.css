@@ -1,0 +1,144 @@
+/* Adventure field notes: ivory, forest and brass leave the city in focus. */
+body[data-atlas-mode=adventure]{--atlas-header-size:64px;--atlas-ivory:#fff3d5;--atlas-gold:#e3c686;--atlas-forest:#172b24}
+body[data-atlas-mode=adventure] .site-header{height:64px;background:#172b24f5;border-bottom:1px solid #bca67370;box-shadow:none;backdrop-filter:none;color:var(--atlas-ivory)}
+body[data-atlas-mode=adventure] .site-brand{font:500 17px Georgia,serif;letter-spacing:.06em;color:var(--atlas-ivory)}
+body[data-atlas-mode=adventure] .site-nav>a{color:#f4e9cc;font-size:11px;letter-spacing:.08em}
+body[data-atlas-mode=adventure] .site-nav>a:hover{color:var(--atlas-gold)}
+body[data-atlas-mode=adventure] .site-nav>a[aria-current=page]::after{background:var(--atlas-gold)}
+body[data-atlas-mode=adventure] .theme-toggle,body[data-atlas-mode=adventure] .nav__burger{color:var(--atlas-ivory)}
+body[data-atlas-mode=adventure] .atlas-mode-switch{border-color:var(--atlas-gold);border-radius:3px;background:#f5e9cb;color:#172b24!important;font:500 14px Georgia,serif;padding:10px 19px;box-shadow:none}
+body[data-atlas-mode=adventure] .living-world{inset:64px 0 0}
+body[data-atlas-mode=adventure] .living-world>canvas:focus-visible{outline:2px solid #f4d18c;outline-offset:-3px}
+body[data-atlas-mode=adventure] .living-world-caption{left:32px;top:24px;bottom:auto;gap:6px;max-width:350px;border:0;border-left:2px solid var(--atlas-gold);border-radius:0;background:#f5ecd5f5;padding:12px 18px;box-shadow:none;color:#172b24}
+body[data-atlas-mode=adventure] .living-world-caption>span{display:none}
+body[data-atlas-mode=adventure] .living-world-caption strong{font:italic 25px/1.12 Georgia,serif;letter-spacing:0}
+body[data-atlas-mode=adventure] .living-world-caption small{font:400 10px/1.4 var(--font-sans);color:#4b5d4c;letter-spacing:.02em}
+body[data-atlas-mode=adventure] .atlas-story-card{right:28px;top:24px;width:280px;padding:13px 18px;background:#172b24;color:var(--atlas-ivory);border:1px solid #bca67370;border-left:3px solid var(--atlas-gold);border-radius:3px;box-shadow:0 3px 12px #10251c30}
+body[data-atlas-mode=adventure] .atlas-story-card small{color:var(--atlas-gold);font:500 10px/1.4 var(--font-sans);letter-spacing:.02em}
+body[data-atlas-mode=adventure] .atlas-story-card strong{font:500 19px/1.2 Georgia,serif;margin:6px 0}
+body[data-atlas-mode=adventure] .atlas-story-card span{color:#ede6cf;font:400 12px/1.45 var(--font-sans)}
+body[data-atlas-mode=adventure] .living-minimap{right:30px;bottom:110px;width:180px;aspect-ratio:1;padding:5px;background:#172b24;border:2px solid var(--atlas-gold);outline:1px solid #192c24;outline-offset:3px;border-radius:50%;box-shadow:0 3px 14px #10251c60}
+body[data-atlas-mode=adventure] .living-minimap canvas{border-radius:50%;width:100%;height:100%}
+body[data-atlas-mode=adventure] .living-minimap::before{content:'N';position:absolute;top:-12px;left:calc(50% - 12px);width:24px;text-align:center;background:#172b24;color:var(--atlas-gold);font:600 13px/20px Georgia,serif;border-radius:50%;z-index:1}
+body[data-atlas-mode=adventure] .living-minimap p{position:absolute;top:100%;right:0;margin:9px 0 0;width:230px;text-align:right;font:500 9px/1.4 var(--font-sans);color:#fff3d5;background:#172b24;padding:4px 7px;border-radius:2px}
+body[data-atlas-mode=adventure] .living-controls{left:32px;right:28px;bottom:24px;gap:8px;align-items:center;flex-wrap:nowrap}
+body[data-atlas-mode=adventure] .living-controls>button,body[data-atlas-mode=adventure] .living-controls>label{border:1px solid #bca6738c;border-radius:3px;background:#172b24;color:var(--atlas-ivory);font:500 12px/1.3 var(--font-sans);min-height:46px;padding:9px 13px;box-shadow:0 2px 8px #10251c30;display:inline-flex;align-items:center;justify-content:center;gap:10px}
+body[data-atlas-mode=adventure] .living-controls [data-landmark-interact]{max-width:430px;justify-content:flex-start;margin-right:auto;text-align:left;font-size:13px}
+body[data-atlas-mode=adventure] .living-controls [data-landmark-interact]:disabled{color:#d0d7bf;background:#24382d;border-color:#66735b;cursor:not-allowed}
+body[data-atlas-mode=adventure] .living-controls [data-landmark-interact]:disabled kbd{display:none}
+body[data-atlas-mode=adventure] .living-controls kbd{font:600 11px/1 var(--font-sans);color:#172b24;background:#f5df9c;border:1px solid #d9bd78;border-radius:3px;min-width:25px;padding:6px 7px;text-align:center;box-shadow:0 1px 0 #947a44}
+body[data-atlas-mode=adventure] .living-controls select{color:var(--atlas-ivory);background:#172b24;min-height:44px;font:500 12px var(--font-sans);padding:2px;cursor:pointer}
+body[data-atlas-mode=adventure] .living-controls>label{gap:8px;font-size:11px;padding:0 13px}
+body[data-atlas-mode=adventure] .living-touch{left:30px;bottom:125px;gap:5px;grid-template-columns:repeat(3,46px)}
+body[data-atlas-mode=adventure] .living-touch button{width:46px;height:46px;border-radius:50%;background:#172b24;color:var(--atlas-ivory);border:1px solid #d2bd827a;font:400 20px Georgia,serif;box-shadow:0 2px 5px #10251c30}
+body[data-atlas-mode=adventure] .atlas-nameplate{max-width:220px;background:#172b24;color:var(--atlas-ivory);border:1px solid #bca673;border-radius:3px;padding:7px 12px;box-shadow:0 3px 12px #10251c30}
+body[data-atlas-mode=adventure] .atlas-nameplate strong{font:500 17px/1.2 Georgia,serif;color:#fff3d5}
+body[data-atlas-mode=adventure] .atlas-nameplate span{font:400 11px/1.4 var(--font-sans);color:#e5ddc3}
+body[data-atlas-mode=adventure] .atlas-nameplate[data-selected=true]{border-color:#f4d18c;box-shadow:0 0 0 1px #f4d18c}
+body[data-atlas-mode=adventure] .atlas-encounter-health{top:125px;left:32px;width:205px;background:#172b24;color:var(--atlas-ivory);border:1px solid #bca67370;border-radius:3px;padding:14px}
+body[data-atlas-mode=adventure] .atlas-encounter-health label{font:500 11px/1.4 var(--font-sans)}
+body[data-atlas-mode=adventure] .atlas-encounter-health p{color:#f4ce8b;font-size:12px}
+body[data-atlas-mode=adventure] .atlas-encounter-health progress::-webkit-progress-bar{background:#425548}
+body[data-atlas-mode=adventure] .atlas-encounter-health progress::-webkit-progress-value{background:#b1cb8d}
+body[data-atlas-mode=adventure] .atlas-encounter-health label+label progress::-webkit-progress-value{background:#dfaa70}
+body[data-atlas-mode=adventure] .atlas-combat-actions{right:40px;bottom:326px;width:160px;grid-template-columns:repeat(3,1fr)}
+body[data-atlas-mode=adventure] .atlas-combat-actions button{background:#172b24;color:var(--atlas-ivory);border:1px solid #bca673;border-radius:3px;padding:6px;font-size:11px}
+body[data-atlas-mode=adventure] .atlas-combat-actions small{color:#e5ddc3;font-size:9px}
+body[data-atlas-mode=adventure] .atlas-combat-actions [aria-pressed=true]{background:#3f5642;border-color:#f4d18c}
+body[data-atlas-mode=adventure] .experience-panel{background:#f5ecd5;color:#172b24;border-color:#ad9157;font:400 15px/1.65 var(--font-sans)}
+body[data-atlas-mode=adventure] .experience-panel h2{font:500 32px/1.15 Georgia,serif;letter-spacing:-.015em}
+body[data-atlas-mode=adventure] .experience-panel h3{font:500 21px/1.2 Georgia,serif}
+body[data-atlas-mode=adventure] .experience-panel .research-kicker{color:#6e542b;font:500 11px/1.5 var(--font-sans);letter-spacing:.04em}
+body[data-atlas-mode=adventure] .experience-panel :is(.research-method,.research-caveat,figcaption){color:#4b5d4c}
+body[data-atlas-mode=adventure] .experience-panel .research-caveat{border-color:#8a6c37}
+body[data-atlas-mode=adventure] .experience-panel button{color:#172b24;background:#f5ecd5;border:1px solid #8b805f;border-radius:3px;min-height:44px}
+body[data-atlas-mode=adventure] .experience-panel .research-actions a,body[data-atlas-mode=adventure] .experience-panel .research-map-links a{color:#295c4d;text-decoration:underline}
+body[data-atlas-mode=adventure] .experience-panel .scenario-tabs [aria-pressed=true]{background:#172b24;color:#fff3d5}
+body[data-atlas-mode=adventure] .atlas-dialogue{inset:auto 40px 28px;margin:0 auto;width:min(1100px,calc(100% - 80px));height:auto;max-height:calc(100dvh - 110px);padding:28px 32px;overflow:auto;border:1px solid #bca673;border-radius:5px;background:#172b24;color:#fff3d5;box-shadow:0 6px 30px #10251c50}
+body[data-atlas-mode=adventure] .atlas-dialogue[open]{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);column-gap:40px;align-content:start}
+body[data-atlas-mode=adventure] .atlas-dialogue>button:first-child{position:absolute;right:20px;top:12px;background:transparent;color:#fff3d5;border-color:transparent;font-size:11px}
+body[data-atlas-mode=adventure] .atlas-dialogue .research-kicker{grid-column:1;margin:3px 0 9px;color:#e3c686;padding-right:35px}
+body[data-atlas-mode=adventure] .atlas-dialogue h2{grid-column:1;margin:0 0 13px;font:italic 29px/1.15 Georgia,serif;color:#fff3d5}
+body[data-atlas-mode=adventure] .atlas-dialogue>p:not(.research-kicker){grid-column:1;margin:0;font:400 15px/1.7 var(--font-sans);color:#f1e9d4}
+body[data-atlas-mode=adventure] .atlas-dialogue-choices{grid-column:2;grid-row:2/span 3;grid-template-columns:1fr;gap:8px;margin:5px 0 0;align-self:center}
+body[data-atlas-mode=adventure] .atlas-dialogue-choices button{background:#21392d;color:#fff3d5;border:1px solid #8d916e;padding:11px 15px;font:400 14px/1.35 var(--font-sans);min-height:44px}
+body[data-atlas-mode=adventure] .atlas-dialogue-choices button:first-child{background:#354934;border-color:#e3c686}
+body[data-atlas-mode=adventure] :is(.living-controls,.living-touch,.atlas-combat-actions,.atlas-dialogue-choices) button:not(:disabled):hover{background:#3c5140;border-color:#f4d18c;text-decoration:none}
+body[data-atlas-mode=adventure] :is(.living-controls,.living-touch,.atlas-combat-actions,.atlas-dialogue-choices) button:not(:disabled):active{background:#4a6048;box-shadow:inset 0 0 0 1px #f4d18c}
+body[data-atlas-mode=adventure] :is(.living-controls,.living-touch,.atlas-combat-actions,.atlas-dialogue,.atlas-story-card) :focus-visible,body[data-atlas-mode=adventure] .atlas-story-card:focus-visible{outline:3px solid #f4d18c;outline-offset:3px;box-shadow:0 0 0 5px #172b24}
+body[data-atlas-mode=adventure] .experience-panel:not(.atlas-dialogue) :focus-visible{outline:3px solid #295c4d;outline-offset:3px}
+@media(max-width:699px){
+ body[data-atlas-mode=adventure]{--atlas-header-size:60px}
+ body[data-atlas-mode=adventure] .site-header{height:60px;gap:10px;padding-inline:14px}
+ body[data-atlas-mode=adventure] .site-brand{font-size:13px;letter-spacing:.035em;margin-right:auto}
+ body[data-atlas-mode=adventure] .atlas-mode-switch{font-size:12px;padding:9px 11px}
+ body[data-atlas-mode=adventure] .site-nav{background:#172b24;color:#fff3d5}
+ body[data-atlas-mode=adventure] .site-nav>a{font:400 34px/1.3 Georgia,serif;letter-spacing:0}
+ body[data-atlas-mode=adventure] .nav-close{color:#fff3d5}
+ body[data-atlas-mode=adventure] .living-world{inset:60px 0 0}
+ body[data-atlas-mode=adventure] .living-world-caption{left:14px;top:15px;padding:8px 12px;max-width:calc(100% - 28px)}
+ body[data-atlas-mode=adventure] .living-world-caption strong{font-size:20px}
+ body[data-atlas-mode=adventure] .living-world-caption small{font-size:9px}
+ body[data-atlas-mode=adventure] .atlas-story-card{top:100px;left:14px;right:14px;width:auto;padding:10px 13px}
+ body[data-atlas-mode=adventure] .atlas-story-card strong{font-size:16px;margin:4px 0}
+ body[data-atlas-mode=adventure] .atlas-story-card small{font-size:10px}
+ body[data-atlas-mode=adventure] .atlas-story-card span{font-size:11px}
+ body[data-atlas-mode=adventure] .living-minimap{right:20px;bottom:180px;width:132px;padding:4px}
+ body[data-atlas-mode=adventure] .living-minimap p{display:none}
+ body[data-atlas-mode=adventure] .living-controls{left:14px;right:14px;bottom:max(16px,env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:7px}
+ body[data-atlas-mode=adventure] .living-controls>button,body[data-atlas-mode=adventure] .living-controls>label{font-size:11px;min-height:44px;padding:8px;gap:7px}
+ body[data-atlas-mode=adventure] .living-controls [data-landmark-interact]{grid-column:1/-1;font-size:12px;width:auto;max-width:none;justify-content:center;margin:0;min-height:44px}
+ body[data-atlas-mode=adventure] .living-controls>label{grid-column:1/-1;min-height:44px;padding:0 10px;flex-direction:row}
+ body[data-atlas-mode=adventure] .living-controls select{min-height:44px;font-size:11px}
+ body[data-atlas-mode=adventure] .living-touch{left:18px;bottom:190px;grid-template-columns:repeat(3,44px);gap:4px}
+ body[data-atlas-mode=adventure] .living-touch button{width:44px;height:44px}
+ body[data-atlas-mode=adventure] .atlas-nameplate{max-width:170px;padding:5px 8px}
+ body[data-atlas-mode=adventure] .atlas-nameplate strong{font-size:15px}
+ body[data-atlas-mode=adventure] .atlas-nameplate span{font-size:10px}
+ body[data-atlas-mode=adventure] .atlas-encounter-health{top:200px;left:14px;width:155px;padding:10px}
+ body[data-atlas-mode=adventure] .atlas-combat-actions{right:16px;bottom:330px;width:180px}
+ body[data-atlas-mode=adventure] .atlas-combat-actions small{white-space:nowrap}
+ body[data-atlas-mode=adventure] .atlas-dialogue{inset:auto 12px 12px;width:calc(100% - 24px);max-height:calc(100dvh - 84px);padding:24px 20px;border-radius:4px}
+ body[data-atlas-mode=adventure] .atlas-dialogue[open]{grid-template-columns:1fr;gap:0}
+ body[data-atlas-mode=adventure] .atlas-dialogue h2{font-size:25px;margin-top:6px}
+ body[data-atlas-mode=adventure] .atlas-dialogue>p:not(.research-kicker){font-size:14px;line-height:1.65}
+ body[data-atlas-mode=adventure] .atlas-dialogue .research-kicker{font-size:10px;padding-right:70px;margin-top:7px}
+ body[data-atlas-mode=adventure] .atlas-dialogue>button:first-child{right:9px;top:7px;font-size:10px;padding:6px}
+ body[data-atlas-mode=adventure] .atlas-dialogue-choices{grid-column:1;grid-row:auto;margin-top:18px}
+ body[data-atlas-mode=adventure] .atlas-dialogue-choices button{font-size:13px}
+}
+@media(max-height:680px) and (max-width:699px){
+ body[data-atlas-mode=adventure] .atlas-story-card{top:94px}
+ body[data-atlas-mode=adventure] .atlas-story-card span{display:none}
+ body[data-atlas-mode=adventure] .living-world-caption small{display:none}
+ body[data-atlas-mode=adventure] .living-minimap{display:none}
+ body[data-atlas-mode=adventure] .atlas-encounter-health{top:170px;left:auto;right:14px;width:145px}
+ body[data-atlas-mode=adventure] .atlas-combat-actions{bottom:181px;right:14px}
+}
+@media(max-height:500px) and (orientation:landscape){
+ body[data-atlas-mode=adventure] .living-world-caption{top:12px;left:18px;max-width:42%;padding:8px 12px}
+ body[data-atlas-mode=adventure] .living-world-caption strong{font-size:19px}
+ body[data-atlas-mode=adventure] .living-world-caption small,body[data-atlas-mode=adventure] .living-minimap{display:none}
+ body[data-atlas-mode=adventure] .atlas-story-card{top:12px;right:18px;left:auto;width:40%;padding:8px 12px}
+ body[data-atlas-mode=adventure] .atlas-story-card strong{font-size:16px;margin:3px 0}
+ body[data-atlas-mode=adventure] .atlas-story-card span{display:none}
+ body[data-atlas-mode=adventure] .living-controls{left:18px;right:18px;bottom:12px}
+ body[data-atlas-mode=adventure] .living-touch{bottom:75px;left:18px;gap:3px}
+ body[data-atlas-mode=adventure] .atlas-encounter-health{top:90px;left:auto;right:18px;width:170px;padding:9px}
+ body[data-atlas-mode=adventure] .atlas-encounter-health label{margin-bottom:7px;font-size:10px}
+ body[data-atlas-mode=adventure] .atlas-combat-actions{left:calc(50% - 90px);right:auto;bottom:75px;width:180px}
+ body[data-atlas-mode=adventure] .atlas-dialogue{inset:auto 18px 12px;width:calc(100% - 36px);padding:18px 24px;max-height:calc(100dvh - 80px)}
+}
+
+/* Field note progress stays compact alongside the existing dialogue choices. */
+body[data-atlas-mode=adventure] .atlas-journal-objectives{grid-column:1;list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px;font:400 13px/1.4 var(--font-sans);color:#d4ddcf}
+body[data-atlas-mode=adventure] .atlas-journal-objectives li{border-left:2px solid #839183;padding:4px 0 4px 10px}
+body[data-atlas-mode=adventure] .atlas-journal-objectives li[data-state=active]{border-color:#e3c686;color:#fff3d5;font-weight:600}
+body[data-atlas-mode=adventure] .atlas-journal-objectives li[data-state=complete]{border-color:#97c19b;color:#c8dfc7}
+@media (max-width: 700px){
+ body[data-atlas-mode=adventure] .atlas-journal-objectives{font-size:12px;margin-top:10px}
+}
+@media(min-width:700px){
+ body[data-atlas-mode=adventure] .atlas-dialogue.atlas-research-dialogue{width:min(880px,calc(100% - 64px));inset:auto 32px 22px;padding:22px 26px}
+ body[data-atlas-mode=adventure] .atlas-dialogue.atlas-research-dialogue[open]{column-gap:26px}
+}

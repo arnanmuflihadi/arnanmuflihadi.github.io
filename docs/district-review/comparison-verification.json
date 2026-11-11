@@ -1,0 +1,95 @@
+{
+  "pairs": [
+    "spawn",
+    "avenue",
+    "station",
+    "commercial",
+    "neighborhood",
+    "park",
+    "walking",
+    "aerial"
+  ],
+  "width": 1280,
+  "height": 720,
+  "canvas": [
+    1280,
+    656
+  ],
+  "fov": 50,
+  "maxCameraDelta": 0,
+  "identicalCameraWithinTolerance": true,
+  "afterSceneIds": [
+    "b61f0476-e045-42a8-a04c-c36d6d5e6694"
+  ],
+  "lighting": "Original before lighting versus intentionally updated Phase 2 daylight; camera and scale preserved",
+  "extraViews": [
+    "after-garden.jpg",
+    "after-walking-live.jpg"
+  ],
+  "dimensions": {
+    "before-spawn.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-spawn.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "before-avenue.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-avenue.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "before-station.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-station.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "before-commercial.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-commercial.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "before-neighborhood.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-neighborhood.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "before-park.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-park.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "before-walking.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-walking.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "before-aerial.jpg": {
+      "width": 1280,
+      "height": 720
+    },
+    "after-aerial.jpg": {
+      "width": 1280,
+      "height": 720
+    }
+  }
+}

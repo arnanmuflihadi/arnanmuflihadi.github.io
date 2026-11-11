@@ -1,0 +1,16 @@
+{
+  "circulation-interfaces.glb": {
+    "bytes": 471680,
+    "triangles": 7924,
+    "meshes": 17,
+    "materials": 17,
+    "textures": 0
+  },
+  "circulation-square.glb": {
+    "bytes": 1037056,
+    "triangles": 17670,
+    "meshes": 14,
+    "materials": 12,
+    "textures": 0
+  }
+}

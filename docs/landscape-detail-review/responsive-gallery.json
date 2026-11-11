@@ -1,0 +1,35 @@
+{
+  "nav": [
+    {
+      "height": 72.390625,
+      "text": "Walk build 73"
+    },
+    {
+      "height": 72.390625,
+      "text": "Changed files and checks"
+    },
+    {
+      "height": 72.390625,
+      "text": "Asset provenance"
+    },
+    {
+      "height": 72.390625,
+      "text": "Read the MBR study"
+    }
+  ],
+  "pair": [
+    {
+      "top": 1063.2734375,
+      "width": 358
+    },
+    {
+      "top": 1315.046875,
+      "width": 358
+    }
+  ],
+  "viewport": [
+    390,
+    844
+  ],
+  "width": 390
+}

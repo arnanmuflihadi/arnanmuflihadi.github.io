@@ -1,0 +1,10 @@
+{
+  "checkpointFiles": 3462,
+  "unchanged": 3458,
+  "changed": [
+    "assets/js/floating-atlas/town-integration.js",
+    "assets/js/floating-atlas/town-square.js",
+    "assets/js/floating-atlas/town-review.js",
+    "assets/js/floating-atlas/entry.js"
+  ]
+}

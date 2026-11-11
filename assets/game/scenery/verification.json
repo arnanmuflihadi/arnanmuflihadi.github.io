@@ -1,0 +1,669 @@
+{
+  "verifiedOn": "2026-11-01",
+  "method": "Official creator itch.io free Standard downloads; exact glTF hashes, archive dependencies and included CC0 notices checked",
+  "archives": {
+    "downtown-city-megakit": {
+      "archiveFilename": "Downtown City MegaKit[Standard].zip",
+      "archiveSha256": "5b1a945576d54cdbb4ccc9c3d52711e6d530da74c74c586407ecc28b165335da",
+      "archiveBytes": 234753092,
+      "licenseFile": "License_Standard.txt",
+      "licenseSha256": "afac5819301671301c41e90402d26e4ade5e459ad58fdf77f142147410862f1f",
+      "licenseMatchesRetained": true,
+      "selected": [
+        {
+          "id": "shop",
+          "file": "Exports/glTF (Godot)/Building_Small_1.gltf",
+          "sha256": "3c864724fffd016ca440191bca169d6ba486e14617bb3cafa09ddbac7532f3d7",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Building_Small_1.bin",
+              "bytes": 1556100,
+              "sha256": "a5fb691fe7ab0d93d5d47eef51af576f2d65bd78103c92c9e714215b26d679a2"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_Normal.png",
+              "bytes": 7273659,
+              "sha256": "147f14d7f665d2598d0d796bd02a227f6b8b0fbc790c3e0737b1b90128101c93"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_BaseColor.png",
+              "bytes": 1732063,
+              "sha256": "ea85bfc02c4c807265a85f7ab50656f7eaa19f6567301d362d78c1d06da161ab"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_ORM.png",
+              "bytes": 2346959,
+              "sha256": "dfba8a1da5ca7dcff1b707a051e82717e93013c2ad36c93b7a41b0f331414b70"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_Normal.png",
+              "bytes": 4104873,
+              "sha256": "95fa43093067956fa6e206408f3e2f2302c18c7453b75a02f6e29fe57e2cd041"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_BaseColor.png",
+              "bytes": 4421593,
+              "sha256": "c3334902f8315783477eec63e2d462f8cefedf9c55b41ef452d8374b5603f08e"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_ORM.png",
+              "bytes": 2538116,
+              "sha256": "52449f201ad3cf606a2eb2972702b10051c369cdc67b6fadd109502b4735d7fb"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_Normal.png",
+              "bytes": 4815924,
+              "sha256": "93f95a96c32b27820c590301f00f5ba1d23d4054046d92bf6d58adbf23007419"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_BaseColor.png",
+              "bytes": 1488628,
+              "sha256": "adae656323f15cd2c3f1a6453685cb1ca104b700dc114076137cb3a4c253d3d0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_ORM.png",
+              "bytes": 1857257,
+              "sha256": "c4d35f684d20c47f199bea2fbe098d60a000fa7d1489df0f00a4c3c1ace4fcb7"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_lit_interior_2.png",
+              "bytes": 316427,
+              "sha256": "83c3f1b2ad84b65aab88d5744e6997730a04140e41d230e2cecfe9bfb2ae0559"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_lit_interior_1.png",
+              "bytes": 395226,
+              "sha256": "d20aa9f249a506eb145d76e264e59667cec4bef66c07e4baace6583a28cc3be4"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_Normal.png",
+              "bytes": 4416770,
+              "sha256": "e4de917d2506bff4b17d44380a136336cf16e5ea828edfdb8981f4f27e30a86a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_BaseColor.png",
+              "bytes": 1341594,
+              "sha256": "697276f680b34d6321e6b06da208a0fc3516db372d4a7de543fc2c33e895f482"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_ORM.png",
+              "bytes": 896797,
+              "sha256": "be17636c061a7c6c4f4bf23c3887a3f894da0e88394e233926e816c735a49244"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_dark_interior.png",
+              "bytes": 325090,
+              "sha256": "59e5c77292953d93c3cd239c2f06d4e80e393761195da66d886d3887ad59f1dc"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_Asphalt_BaseColor.png",
+              "bytes": 988093,
+              "sha256": "a37ca932c4287a67d9cf7f78997b5cc4b026ca7319a4c8454132d076307ca5cf"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_Normal.png",
+              "bytes": 1382828,
+              "sha256": "52ba88ccfd35f072a51d11c31cdfb6e6ea8cde641ab4521115994d2c3216b451"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_BaseColor.png",
+              "bytes": 1095714,
+              "sha256": "a01f57e2976d3af21a59f1ae18e12be84d2acae7ba3e93d184d2874224f737c0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_ORM.png",
+              "bytes": 567860,
+              "sha256": "95008e79cdba191b525afce2a95452fe28934efd5546d35919c24ea6cbcc0c22"
+            }
+          ]
+        },
+        {
+          "id": "mixed",
+          "file": "Exports/glTF (Godot)/Building_Medium_2_001.gltf",
+          "sha256": "423f4b3e709ef5633eac4a94a8a1ce25750aa42fe34e3b983d7aac39846f9a1c",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Building_Medium_2_001.bin",
+              "bytes": 2443288,
+              "sha256": "8a8bd4462ff5f784e0ea7fbe753b009713f4017192c9d82b467f445eae88a35d"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_Normal.png",
+              "bytes": 1382828,
+              "sha256": "52ba88ccfd35f072a51d11c31cdfb6e6ea8cde641ab4521115994d2c3216b451"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_BaseColor.png",
+              "bytes": 1095714,
+              "sha256": "a01f57e2976d3af21a59f1ae18e12be84d2acae7ba3e93d184d2874224f737c0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_ORM.png",
+              "bytes": 567860,
+              "sha256": "95008e79cdba191b525afce2a95452fe28934efd5546d35919c24ea6cbcc0c22"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_Normal.png",
+              "bytes": 4104873,
+              "sha256": "95fa43093067956fa6e206408f3e2f2302c18c7453b75a02f6e29fe57e2cd041"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_BaseColor.png",
+              "bytes": 4421593,
+              "sha256": "c3334902f8315783477eec63e2d462f8cefedf9c55b41ef452d8374b5603f08e"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_ORM.png",
+              "bytes": 2538116,
+              "sha256": "52449f201ad3cf606a2eb2972702b10051c369cdc67b6fadd109502b4735d7fb"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_lit_interior_1.png",
+              "bytes": 395226,
+              "sha256": "d20aa9f249a506eb145d76e264e59667cec4bef66c07e4baace6583a28cc3be4"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_lit_interior_2.png",
+              "bytes": 316427,
+              "sha256": "83c3f1b2ad84b65aab88d5744e6997730a04140e41d230e2cecfe9bfb2ae0559"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_dark_interior.png",
+              "bytes": 325090,
+              "sha256": "59e5c77292953d93c3cd239c2f06d4e80e393761195da66d886d3887ad59f1dc"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_Normal.png",
+              "bytes": 7273659,
+              "sha256": "147f14d7f665d2598d0d796bd02a227f6b8b0fbc790c3e0737b1b90128101c93"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_BaseColor.png",
+              "bytes": 1732063,
+              "sha256": "ea85bfc02c4c807265a85f7ab50656f7eaa19f6567301d362d78c1d06da161ab"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_ORM.png",
+              "bytes": 2346959,
+              "sha256": "dfba8a1da5ca7dcff1b707a051e82717e93013c2ad36c93b7a41b0f331414b70"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_Normal.png",
+              "bytes": 4416770,
+              "sha256": "e4de917d2506bff4b17d44380a136336cf16e5ea828edfdb8981f4f27e30a86a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_Asphalt_BaseColor.png",
+              "bytes": 988093,
+              "sha256": "a37ca932c4287a67d9cf7f78997b5cc4b026ca7319a4c8454132d076307ca5cf"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_ORM.png",
+              "bytes": 896797,
+              "sha256": "be17636c061a7c6c4f4bf23c3887a3f894da0e88394e233926e816c735a49244"
+            }
+          ]
+        },
+        {
+          "id": "office",
+          "file": "Exports/glTF (Godot)/Building_Large_2.gltf",
+          "sha256": "903209b63ad4e151190dce32ccab47a2c0dc256c09d999835984a0459ef2bd91",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Building_Large_2.bin",
+              "bytes": 3345228,
+              "sha256": "e25636464da7b96a346f89314e498099ce33d3b0e9b1f8d9cba3eee94b63fac3"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_Normal.png",
+              "bytes": 1382828,
+              "sha256": "52ba88ccfd35f072a51d11c31cdfb6e6ea8cde641ab4521115994d2c3216b451"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_BaseColor.png",
+              "bytes": 1095714,
+              "sha256": "a01f57e2976d3af21a59f1ae18e12be84d2acae7ba3e93d184d2874224f737c0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MarbleFloor_ORM.png",
+              "bytes": 567860,
+              "sha256": "95008e79cdba191b525afce2a95452fe28934efd5546d35919c24ea6cbcc0c22"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_Normal.png",
+              "bytes": 4104873,
+              "sha256": "95fa43093067956fa6e206408f3e2f2302c18c7453b75a02f6e29fe57e2cd041"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_BaseColor.png",
+              "bytes": 4421593,
+              "sha256": "c3334902f8315783477eec63e2d462f8cefedf9c55b41ef452d8374b5603f08e"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_ORM.png",
+              "bytes": 2538116,
+              "sha256": "52449f201ad3cf606a2eb2972702b10051c369cdc67b6fadd109502b4735d7fb"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_Normal.png",
+              "bytes": 4815924,
+              "sha256": "93f95a96c32b27820c590301f00f5ba1d23d4054046d92bf6d58adbf23007419"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_BaseColor.png",
+              "bytes": 1488628,
+              "sha256": "adae656323f15cd2c3f1a6453685cb1ca104b700dc114076137cb3a4c253d3d0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_ORM.png",
+              "bytes": 1857257,
+              "sha256": "c4d35f684d20c47f199bea2fbe098d60a000fa7d1489df0f00a4c3c1ace4fcb7"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_Normal.png",
+              "bytes": 7273659,
+              "sha256": "147f14d7f665d2598d0d796bd02a227f6b8b0fbc790c3e0737b1b90128101c93"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_BaseColor.png",
+              "bytes": 1732063,
+              "sha256": "ea85bfc02c4c807265a85f7ab50656f7eaa19f6567301d362d78c1d06da161ab"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_ORM.png",
+              "bytes": 2346959,
+              "sha256": "dfba8a1da5ca7dcff1b707a051e82717e93013c2ad36c93b7a41b0f331414b70"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_lit_interior_2.png",
+              "bytes": 316427,
+              "sha256": "83c3f1b2ad84b65aab88d5744e6997730a04140e41d230e2cecfe9bfb2ae0559"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_lit_interior_1.png",
+              "bytes": 395226,
+              "sha256": "d20aa9f249a506eb145d76e264e59667cec4bef66c07e4baace6583a28cc3be4"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_dark_interior.png",
+              "bytes": 325090,
+              "sha256": "59e5c77292953d93c3cd239c2f06d4e80e393761195da66d886d3887ad59f1dc"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_Normal.png",
+              "bytes": 4416770,
+              "sha256": "e4de917d2506bff4b17d44380a136336cf16e5ea828edfdb8981f4f27e30a86a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_Asphalt_BaseColor.png",
+              "bytes": 988093,
+              "sha256": "a37ca932c4287a67d9cf7f78997b5cc4b026ca7319a4c8454132d076307ca5cf"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Concrete_ORM.png",
+              "bytes": 896797,
+              "sha256": "be17636c061a7c6c4f4bf23c3887a3f894da0e88394e233926e816c735a49244"
+            }
+          ]
+        },
+        {
+          "id": "entrance",
+          "file": "Exports/glTF (Godot)/Metal_FirstFloor_Window.gltf",
+          "sha256": "4e9029f004d6e0031222be220b3494241a88e837b40fe3b6bb1d96b1a55f43e7",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Metal_FirstFloor_Window.bin",
+              "bytes": 12840,
+              "sha256": "9bf54a1a568d6c2f2c6965eda5c1830e7376e84c62aff6a4e0e3df4dc0c6572a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_Normal.png",
+              "bytes": 4104873,
+              "sha256": "95fa43093067956fa6e206408f3e2f2302c18c7453b75a02f6e29fe57e2cd041"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_BaseColor.png",
+              "bytes": 4421593,
+              "sha256": "c3334902f8315783477eec63e2d462f8cefedf9c55b41ef452d8374b5603f08e"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_ORM.png",
+              "bytes": 2538116,
+              "sha256": "52449f201ad3cf606a2eb2972702b10051c369cdc67b6fadd109502b4735d7fb"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_Normal.png",
+              "bytes": 4815924,
+              "sha256": "93f95a96c32b27820c590301f00f5ba1d23d4054046d92bf6d58adbf23007419"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_BaseColor.png",
+              "bytes": 1488628,
+              "sha256": "adae656323f15cd2c3f1a6453685cb1ca104b700dc114076137cb3a4c253d3d0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_ORM.png",
+              "bytes": 1857257,
+              "sha256": "c4d35f684d20c47f199bea2fbe098d60a000fa7d1489df0f00a4c3c1ace4fcb7"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_Normal.png",
+              "bytes": 7273659,
+              "sha256": "147f14d7f665d2598d0d796bd02a227f6b8b0fbc790c3e0737b1b90128101c93"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_BaseColor.png",
+              "bytes": 1732063,
+              "sha256": "ea85bfc02c4c807265a85f7ab50656f7eaa19f6567301d362d78c1d06da161ab"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_ORM.png",
+              "bytes": 2346959,
+              "sha256": "dfba8a1da5ca7dcff1b707a051e82717e93013c2ad36c93b7a41b0f331414b70"
+            }
+          ]
+        },
+        {
+          "id": "glazing",
+          "file": "Exports/glTF (Godot)/Metal_FullWindow.gltf",
+          "sha256": "0ca31d1e8ddebbfd8910a50ee68608841fa8b59b1f91a41df71ea03e5a1054b0",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Metal_FullWindow.bin",
+              "bytes": 16028,
+              "sha256": "5986f859976c39141d3fc99f4ea0956ec89ce67df2c657e02b12cbc2870055b3"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_Normal.png",
+              "bytes": 4815924,
+              "sha256": "93f95a96c32b27820c590301f00f5ba1d23d4054046d92bf6d58adbf23007419"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_BaseColor.png",
+              "bytes": 1488628,
+              "sha256": "adae656323f15cd2c3f1a6453685cb1ca104b700dc114076137cb3a4c253d3d0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_ORM.png",
+              "bytes": 1857257,
+              "sha256": "c4d35f684d20c47f199bea2fbe098d60a000fa7d1489df0f00a4c3c1ace4fcb7"
+            }
+          ]
+        },
+        {
+          "id": "civic",
+          "file": "Exports/glTF (Godot)/Trim_FirstFloor_Window_001.gltf",
+          "sha256": "d3e80aa99e89533fe2af979a45be9004684926176bbeb79860c45cc574cb9506",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Trim_FirstFloor_Window_001.bin",
+              "bytes": 11712,
+              "sha256": "f399e311565967fda33f8dd010831b71fcc5f143a39ef4d9851d5aae40d25649"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_Normal.png",
+              "bytes": 4104873,
+              "sha256": "95fa43093067956fa6e206408f3e2f2302c18c7453b75a02f6e29fe57e2cd041"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_BaseColor.png",
+              "bytes": 4421593,
+              "sha256": "c3334902f8315783477eec63e2d462f8cefedf9c55b41ef452d8374b5603f08e"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Trim_ORM.png",
+              "bytes": 2538116,
+              "sha256": "52449f201ad3cf606a2eb2972702b10051c369cdc67b6fadd109502b4735d7fb"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_Normal.png",
+              "bytes": 7273659,
+              "sha256": "147f14d7f665d2598d0d796bd02a227f6b8b0fbc790c3e0737b1b90128101c93"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_BaseColor.png",
+              "bytes": 1732063,
+              "sha256": "ea85bfc02c4c807265a85f7ab50656f7eaa19f6567301d362d78c1d06da161ab"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_RedBrick_ORM.png",
+              "bytes": 2346959,
+              "sha256": "dfba8a1da5ca7dcff1b707a051e82717e93013c2ad36c93b7a41b0f331414b70"
+            }
+          ]
+        },
+        {
+          "id": "aircon",
+          "file": "Exports/glTF (Godot)/Prop_ACUnit.gltf",
+          "sha256": "f81fae2b49804312d23cc5c56fdf36f6bec89f342df9d135c1565ed31a7e968d",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Prop_ACUnit.bin",
+              "bytes": 6256,
+              "sha256": "71c8dcc458ec8fa31ca7c3f391b1b95dc17864c6bb5c1addbdde899849c3324a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_Normal.png",
+              "bytes": 7172215,
+              "sha256": "c1aa6b307d47386b63e775ba88d82992dd0aaf34f1e4c2b7824002e3cc0a795a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_BaseColor.png",
+              "bytes": 4776648,
+              "sha256": "528cbe672c62384aa3bac703f574b60509bd69b4d492291cb2915022a12a449c"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_ORM.png",
+              "bytes": 4548795,
+              "sha256": "c65b673f871e6b4b2fa61fd110286a096d05d9a311e71ca71804cea46811885d"
+            }
+          ]
+        },
+        {
+          "id": "bollard",
+          "file": "Exports/glTF (Godot)/Prop_Bollard.gltf",
+          "sha256": "4a05291a05873e4043c6354c7cae969c0726fd9b4590625a24ee3bcf940a1c9a",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Prop_Bollard.bin",
+              "bytes": 10140,
+              "sha256": "53b7227fade437ae5066359170e88fbcb537f9e96773a6c1ad0fb2bcc0f92125"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_Normal.png",
+              "bytes": 4815924,
+              "sha256": "93f95a96c32b27820c590301f00f5ba1d23d4054046d92bf6d58adbf23007419"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_BaseColor.png",
+              "bytes": 1488628,
+              "sha256": "adae656323f15cd2c3f1a6453685cb1ca104b700dc114076137cb3a4c253d3d0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_ORM.png",
+              "bytes": 1857257,
+              "sha256": "c4d35f684d20c47f199bea2fbe098d60a000fa7d1489df0f00a4c3c1ace4fcb7"
+            }
+          ]
+        },
+        {
+          "id": "paving",
+          "file": "Exports/glTF (Godot)/Sidewalk_NoCurb_3m.gltf",
+          "sha256": "c32ac81ec8485b1b0b03186ac8e43573266dfcfd8c39dde1b97e8522ef61546b",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Sidewalk_NoCurb_3m.bin",
+              "bytes": 2572,
+              "sha256": "a9d21b06fbef9f1a588759d5401bc32bc9ffd4e8dcd9fdff34c87a2f87b442a1"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_Normal.png",
+              "bytes": 4815924,
+              "sha256": "93f95a96c32b27820c590301f00f5ba1d23d4054046d92bf6d58adbf23007419"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_BaseColor.png",
+              "bytes": 1488628,
+              "sha256": "adae656323f15cd2c3f1a6453685cb1ca104b700dc114076137cb3a4c253d3d0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_ORM.png",
+              "bytes": 1857257,
+              "sha256": "c4d35f684d20c47f199bea2fbe098d60a000fa7d1489df0f00a4c3c1ace4fcb7"
+            }
+          ]
+        },
+        {
+          "id": "drain",
+          "file": "Exports/glTF (Godot)/Prop_Drain.gltf",
+          "sha256": "b81de6bf5cac90f6b62cd739218f4ee0a82cc930226af2060e9616ec7a5ac75f",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Prop_Drain.bin",
+              "bytes": 700,
+              "sha256": "a5ba2a9331e2ac60f1083d05d9707373f49052362509720943d2dd978b0845bb"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_Normal.png",
+              "bytes": 7172215,
+              "sha256": "c1aa6b307d47386b63e775ba88d82992dd0aaf34f1e4c2b7824002e3cc0a795a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_BaseColor.png",
+              "bytes": 4776648,
+              "sha256": "528cbe672c62384aa3bac703f574b60509bd69b4d492291cb2915022a12a449c"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_ORM.png",
+              "bytes": 4548795,
+              "sha256": "c65b673f871e6b4b2fa61fd110286a096d05d9a311e71ca71804cea46811885d"
+            }
+          ]
+        },
+        {
+          "id": "manhole",
+          "file": "Exports/glTF (Godot)/Prop_ManholeCover.gltf",
+          "sha256": "c8519276b3628a217ec7ae0198e598868279046e329f9f6d16b3eec3e0aa2fc9",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Prop_ManholeCover.bin",
+              "bytes": 4548,
+              "sha256": "de8edeb728cac5469eea1e6e3fed6fc0f4afe875d7c416ec14dc03886650daa7"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_Normal.png",
+              "bytes": 7172215,
+              "sha256": "c1aa6b307d47386b63e775ba88d82992dd0aaf34f1e4c2b7824002e3cc0a795a"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_BaseColor.png",
+              "bytes": 4776648,
+              "sha256": "528cbe672c62384aa3bac703f574b60509bd69b4d492291cb2915022a12a449c"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Ornaments_ORM.png",
+              "bytes": 4548795,
+              "sha256": "c65b673f871e6b4b2fa61fd110286a096d05d9a311e71ca71804cea46811885d"
+            }
+          ]
+        },
+        {
+          "id": "city-planter",
+          "file": "Exports/glTF (Godot)/Prop_Planter_Single.gltf",
+          "sha256": "5ab51700931236c2de45c9c8c5c1206ff312d56f00cedf134bfa462da4ef4f13",
+          "dependencies": [
+            {
+              "file": "Exports/glTF (Godot)/Prop_Planter_Single.bin",
+              "bytes": 9428,
+              "sha256": "9350eb1b2bf17f057c8d57b9a59de8dc0c4c0bf8ec3580bba13fc7d0f9016e91"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_Normal.png",
+              "bytes": 4815924,
+              "sha256": "93f95a96c32b27820c590301f00f5ba1d23d4054046d92bf6d58adbf23007419"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_BaseColor.png",
+              "bytes": 1488628,
+              "sha256": "adae656323f15cd2c3f1a6453685cb1ca104b700dc114076137cb3a4c253d3d0"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_MetalConcrete_ORM.png",
+              "bytes": 1857257,
+              "sha256": "c4d35f684d20c47f199bea2fbe098d60a000fa7d1489df0f00a4c3c1ace4fcb7"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Dirt_Normal.png",
+              "bytes": 9650819,
+              "sha256": "88958149742c2ebf8447079edd80ac1133f7b72a5fce0c118206b2f742a350ea"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Dirt_BaseColor.png",
+              "bytes": 2003269,
+              "sha256": "bcb7b1d7bb9801aae25720f495af76306d11cce7654f52763e3cb6b273845302"
+            },
+            {
+              "file": "Exports/glTF (Godot)/T_Dirt_ORM.png",
+              "bytes": 1373373,
+              "sha256": "a2803d1ce2d6ccfdd0896de05a96e3c6aec898000c5897e1669c000faf2b2060"
+            }
+          ]
+        }
+      ]
+    },
+    "stylized-nature-megakit": {
+      "archiveFilename": "Stylized Nature MegaKit[Standard].zip",
+      "archiveSha256": "298f6732b872e4cf7b30e6e7abf9641c7f6dc6b326df37ac089533ed7e3d58c9",
+      "archiveBytes": 104088529,
+      "licenseFile": "License_Standard.txt",
+      "licenseSha256": "120710e542c3ebaf83856c4eb55b4a1e680593b39302eba7fdc5d942dfe78c58",
+      "licenseMatchesRetained": true,
+      "selected": [
+        {
+          "id": "canopy-tree",
+          "file": "glTF/CommonTree_1.gltf",
+          "sha256": "b51cdea6545edb51d102dd6c27caafe62aa75e3c328ac8f9039f4e7bfd690bfa",
+          "dependencies": [
+            {
+              "file": "glTF/CommonTree_1.bin",
+              "bytes": 491576,
+              "sha256": "9dd689e84e1aa2f5b08db8def591254d582783c73737af54ba0d89b3e549c3ae"
+            },
+            {
+              "file": "glTF/Bark_NormalTree_Normal.png",
+              "bytes": 4384496,
+              "sha256": "852f6155404b8c39e100e41e26970e02a6a5c81b482d3726618dab28e3ad03a2"
+            },
+            {
+              "file": "glTF/Bark_NormalTree.png",
+              "bytes": 3894788,
+              "sha256": "f36e94fdd73255347325b998e02a0b2575fdf714b0315bfe5e8ff34bc8e13603"
+            },
+            {
+              "file": "glTF/Leaves_NormalTree_C.png",
+              "bytes": 158796,
+              "sha256": "998612bdf0b76a22f5f54d65cd7a457815d2842d89653fa4348a4ebb42933ad3"
+            }
+          ]
+        },
+        {
+          "id": "fern",
+          "file": "glTF/Fern_1.gltf",
+          "sha256": "d41915cffe9dbbde1ae88be381eb9c60f7caa2274511436cc78fe4de627468ab",
+          "dependencies": [
+            {
+              "file": "glTF/Fern_1.bin",
+              "bytes": 11448,
+              "sha256": "5e92b87a27f81a69fe15347a533df3c77d567b48298dceeef43168ccb7c22853"
+            },
+            {
+              "file": "glTF/Leaves.png",
+              "bytes": 2586432,
+              "sha256": "23248cebe28a24e78add32db3c2ee2f4d7b9219e9d2467279722f0197a7b6bd5"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

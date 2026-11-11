@@ -1,0 +1,18 @@
+{
+  "editorial": {
+    "mode": "editorial",
+    "renderer": "1"
+  },
+  "sixProjects": [
+    "project-transit.html",
+    "project-pangan.html",
+    "project-alphaearth-food.html",
+    "project-mbr.html",
+    "project-cbd.html",
+    "project-bandung-cafe.html"
+  ],
+  "mbr": {
+    "title": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+    "url": "http://127.0.0.1:4175/portfolio.html?project=mbr&panel=study"
+  }
+}

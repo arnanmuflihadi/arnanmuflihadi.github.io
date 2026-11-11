@@ -1,0 +1,202 @@
+{
+  "aerial": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 43,
+      "position": [
+        110,
+        82,
+        135
+      ],
+      "quaternion": [
+        -0.2120744149535645,
+        0.3266314256820759,
+        0.07546137421389727,
+        0.917955301352276
+      ]
+    },
+    "player": [
+      12,
+      10.015,
+      47
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Transit Kingdom / Full island",
+    "worldId": "transit-kingdom-r0"
+  },
+  "underside": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 49,
+      "position": [
+        -113,
+        -13,
+        132
+      ],
+      "quaternion": [
+        0.010974774064148547,
+        -0.3460297584014822,
+        0.0040479624071762185,
+        0.9381506140461684
+      ]
+    },
+    "player": [
+      12,
+      10.015,
+      47
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Geology / Floating underside",
+    "worldId": "transit-kingdom-r0"
+  },
+  "arrival": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 55,
+      "position": [
+        27,
+        21,
+        61
+      ],
+      "quaternion": [
+        -0.01962316208032935,
+        0.2355633443252179,
+        0.0047573729113291295,
+        0.9716492215420494
+      ]
+    },
+    "player": [
+      12,
+      10.015,
+      47
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Arrival / Pelabuhan Awan",
+    "worldId": "transit-kingdom-r0"
+  },
+  "station": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 53,
+      "position": [
+        10,
+        23,
+        14
+      ],
+      "quaternion": [
+        -0.015086528284261382,
+        0.29813033199872346,
+        0.004712676568743646,
+        0.9543943066082372
+      ]
+    },
+    "player": [
+      -8,
+      15.9859561339526,
+      3
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Transit / Stasiun Antara",
+    "worldId": "transit-kingdom-r0"
+  },
+  "merchant": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 58,
+      "position": [
+        22,
+        16,
+        38
+      ],
+      "quaternion": [
+        0,
+        -0.20106587226819733,
+        0,
+        0.979577722801529
+      ]
+    },
+    "player": [
+      24,
+      12,
+      25
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Merchant quarter / Pasar Angin",
+    "worldId": "transit-kingdom-r0"
+  },
+  "route": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 55,
+      "position": [
+        -14,
+        25,
+        12
+      ],
+      "quaternion": [
+        0.0419450016925663,
+        0.25468926035518236,
+        -0.011058378516942684,
+        0.9660495379416716
+      ]
+    },
+    "player": [
+      -21,
+      17.003281280944684,
+      3
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Highland path",
+    "worldId": "transit-kingdom-r0"
+  },
+  "overlook": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 57,
+      "position": [
+        -62,
+        32,
+        13
+      ],
+      "quaternion": [
+        -0.10557593315231342,
+        -0.6936454856606481,
+        -0.10388682718936829,
+        0.7049235346462397
+      ]
+    },
+    "player": [
+      -49,
+      22.015,
+      -2
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Overlook / Teras Langit",
+    "worldId": "transit-kingdom-r0"
+  },
+  "exploration": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 60,
+      "position": [
+        17,
+        17,
+        44
+      ],
+      "quaternion": [
+        -0.1246888484861594,
+        0.1289012990599458,
+        0.01633968482056118,
+        0.9836514427701606
+      ]
+    },
+    "player": [
+      15,
+      10.456881663516068,
+      36
+    ],
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "view": "Third-person exploration",
+    "worldId": "transit-kingdom-r0"
+  }
+}

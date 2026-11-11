@@ -1,0 +1,1572 @@
+{
+  "scene": "S2-A Tropical Storefront",
+  "objects": 303,
+  "mesh_objects": 295,
+  "evaluated_triangles_including_reference": 52894,
+  "building_evaluated_triangles": 46940,
+  "building_bounds": {
+    "min": [
+      -4.37000036239624,
+      -4.720000267028809,
+      0
+    ],
+    "max": [
+      4.37000036239624,
+      5.720000743865967,
+      8.812006950378418
+    ]
+  },
+  "material_count": 19,
+  "images": [
+    {
+      "name": "Leaves.001",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "colormap",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "has_data": true
+    }
+  ],
+  "cameras": [
+    {
+      "name": "S2A / Street 1.65m",
+      "location": [
+        10,
+        -19,
+        1.649999976158142
+      ],
+      "rotation_euler": [
+        1.6656146049499512,
+        -3.1400197997299983e-9,
+        0.4955516755580902
+      ],
+      "lens_mm": 37,
+      "fov_radians": 0.9055569767951965
+    },
+    {
+      "name": "S2A / Elevated three quarter",
+      "location": [
+        13,
+        -17,
+        11
+      ],
+      "rotation_euler": [
+        1.2496005296707153,
+        -3.180357310839099e-8,
+        0.6444253921508789
+      ],
+      "lens_mm": 45,
+      "fov_radians": 0.7610127329826355
+    },
+    {
+      "name": "S2A / Facade roof detail",
+      "location": [
+        8,
+        -12,
+        8.899999618530273
+      ],
+      "rotation_euler": [
+        1.3080124855041504,
+        -4.457667657220554e-8,
+        0.7103947401046753
+      ],
+      "lens_mm": 44,
+      "fov_radians": 0.7766374349594116
+    }
+  ],
+  "render_engine": "CYCLES",
+  "samples": 64,
+  "negative_scale_objects": [],
+  "objects_by_geometry": [
+    {
+      "name": "S2A / foundation",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / ground floor",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / upper floor",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / roof ceiling",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / shop facade",
+      "triangles": 712,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / terrace facade",
+      "triangles": 596,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / rear ground wall",
+      "triangles": 792,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / rear upper wall",
+      "triangles": 484,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / east shop wall",
+      "triangles": 540,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / east upper wall",
+      "triangles": 484,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / west shop wall",
+      "triangles": 540,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / west upper wall",
+      "triangles": 484,
+      "collection": "S2A / Buildings / Shell"
+    },
+    {
+      "name": "S2A / west display glass",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / west display jamb",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / west display jamb.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / west display rail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / west display rail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / west display mullion",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / west display mullion.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance glass",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance jamb",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance jamb.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance rail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance rail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance mullion",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / east display glass",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / east display jamb",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / east display jamb.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / east display rail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / east display rail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / east display mullion",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / door pull",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / door pull.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing glass",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing jamb",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing jamb.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing rail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing rail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper east glazing glass",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper east glazing jamb",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper east glazing jamb.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper east glazing rail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper east glazing rail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper east glazing mullion",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda post",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / column stone shoe",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / front knee brace",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda post.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / column stone shoe.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / front knee brace.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / balcony fascia",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.004",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.005",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.006",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.007",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.008",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.009",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.010",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.011",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda soffit slat.012",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper roof post",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper cantilever brace",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper roof post.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper cantilever brace.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / front roof header",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / screen edge",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / screen edge.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / screen top bottom",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / screen top bottom.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / angled sun screen blade",
+      "triangles": 1404,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / Kenney window east rear",
+      "triangles": 34,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / Kenney window east rear.001",
+      "triangles": 34,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / Kenney window east rear.002",
+      "triangles": 34,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / Kenney window east rear.003",
+      "triangles": 34,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / Kenney window east rear.004",
+      "triangles": 34,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / Kenney window east rear.005",
+      "triangles": 34,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop glass",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop glass.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.004",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.005",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop glass.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.006",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.007",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.008",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom.004",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom.005",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop glass.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.009",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.010",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop mullion.011",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom.006",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side shop transom.007",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / rear service door",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / rear lower glazing",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / rear lower glazing.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / sign backing",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / shop sign",
+      "triangles": 832,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / lamp bracket",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda light",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / lamp glass",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / lamp bracket.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / veranda light.001",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / lamp glass.001",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side window stone sill",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side window stone sill.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side window stone sill.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / side window stone sill.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / rear window stone sill",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / rear window stone sill.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / door stone threshold",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance head transom",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / entrance threshold brass inlay",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper side glazed insert",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper side glazed insert.001",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper side glazed insert.002",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper side glazed insert.003",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper rear glazed insert",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / upper rear glazed insert.001",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Joinery"
+    },
+    {
+      "name": "S2A / hip roof structural surface 0",
+      "triangles": 880,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / hip roof structural surface 1",
+      "triangles": 880,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / hip roof structural surface 2",
+      "triangles": 880,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / hip roof structural surface 3",
+      "triangles": 880,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / laid terracotta tile courses",
+      "triangles": 4816,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge ventilation louver",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge ventilation louver.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge ventilation louver.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge ventilation louver.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge ventilation louver.004",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge ventilation louver.005",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / raised ridge rain cap",
+      "triangles": 164,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / subtle brass ridge crest",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 0",
+      "triangles": 660,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 1",
+      "triangles": 660,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 2",
+      "triangles": 660,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 3",
+      "triangles": 660,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.004",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.005",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.006",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.007",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.008",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.009",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.010",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.011",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.012",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.013",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.014",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.015",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.016",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.017",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.018",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.019",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.020",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.021",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.022",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.023",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.024",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.025",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.026",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.027",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.028",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.029",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.030",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.031",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.032",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.033",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.034",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.035",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.036",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.037",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.038",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.039",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.040",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.041",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.042",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.043",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.044",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.045",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.046",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / fitted hip cap.047",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge vent support",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge vent support.001",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge vent support.002",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / ridge vent support.003",
+      "triangles": 12,
+      "collection": "S2A / Buildings / Roof"
+    },
+    {
+      "name": "S2A / balcony deck edge",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony deck edge.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony decking board",
+      "triangles": 3348,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony rail upright",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony rail upright.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony rail upright.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony rail upright.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony timber handrail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony thin rail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony thin rail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / balcony thin rail.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return handrail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return rail",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return rail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return rail.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return handrail.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return rail.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return rail.004",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / return rail.005",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Terrace"
+    },
+    {
+      "name": "S2A / upper interior floor",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / rear interior sage wall",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / cafe counter",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / counter stone top",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / rear display shelf",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / rear display shelf.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / rear display shelf.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.001",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.002",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.003",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.004",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.005",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.006",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.007",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / coffee jar.008",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / cafe table foot",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / cafe table top",
+      "triangles": 380,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / cafe table foot.001",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / cafe table top.001",
+      "triangles": 380,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / interior stool",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / interior stool.001",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / interior stool.002",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / interior stool.003",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / upper room sage back wall",
+      "triangles": 108,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / upper timber table leg",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / upper timber table top",
+      "triangles": 284,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / upper timber table leg.001",
+      "triangles": 188,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / upper timber table top.001",
+      "triangles": 284,
+      "collection": "S2A / Buildings / Interior"
+    },
+    {
+      "name": "S2A / ground plane",
+      "triangles": 108,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / shop apron",
+      "triangles": 108,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / entry threshold ramp",
+      "triangles": 2,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.001",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.002",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.003",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.004",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.005",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.006",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.007",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.008",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.009",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.010",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.011",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving joint.012",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving cross joint",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving cross joint.001",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving cross joint.002",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / paving cross joint.003",
+      "triangles": 12,
+      "collection": "S2A / Streets"
+    },
+    {
+      "name": "S2A / integrated stone trough",
+      "triangles": 220,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / integrated stone trough soil",
+      "triangles": 108,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / integrated stone trough.001",
+      "triangles": 220,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / integrated stone trough soil.001",
+      "triangles": 108,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / integrated stone trough.002",
+      "triangles": 220,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / integrated stone trough soil.002",
+      "triangles": 108,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / integrated stone trough.003",
+      "triangles": 220,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / integrated stone trough soil.003",
+      "triangles": 108,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.001",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.002",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.003",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.004",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.005",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.006",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.007",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.008",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.009",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.010",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.011",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "Fern_1.012",
+      "triangles": 288,
+      "collection": "S2A / Landscape"
+    },
+    {
+      "name": "S2A / scale reference leg",
+      "triangles": 108,
+      "collection": "S2A / Props"
+    },
+    {
+      "name": "S2A / scale reference leg.001",
+      "triangles": 108,
+      "collection": "S2A / Props"
+    },
+    {
+      "name": "S2A / scale reference torso",
+      "triangles": 108,
+      "collection": "S2A / Props"
+    },
+    {
+      "name": "S2A / scale reference arm",
+      "triangles": 108,
+      "collection": "S2A / Props"
+    },
+    {
+      "name": "S2A / scale reference arm.001",
+      "triangles": 108,
+      "collection": "S2A / Props"
+    },
+    {
+      "name": "S2A / reference head / 1.75 m",
+      "triangles": 224,
+      "collection": "S2A / Props"
+    }
+  ]
+}

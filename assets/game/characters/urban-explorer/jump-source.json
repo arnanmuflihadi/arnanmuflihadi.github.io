@@ -1,0 +1,40 @@
+{
+  "author": "Quaternius",
+  "source": "https://quaternius.com/packs/universalanimationlibrary.html",
+  "edition": "Universal Animation Library Standard, in-place Unreal-Godot GLB",
+  "license": "CC0-1.0",
+  "sourceSha256": "69591853d817488edaa8fd9bf8fc1d821eaeaf789f8627b3cd23b41c4ed67997",
+  "targetSha256": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+  "outputSha256": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5",
+  "bytes": 267260,
+  "clips": [
+    {
+      "sourceName": "Jump_Start",
+      "name": "JumpStart",
+      "duration": 1.3333333730697632,
+      "samples": 42,
+      "bones": 58
+    },
+    {
+      "sourceName": "Jump_Loop",
+      "name": "JumpAir",
+      "duration": 2.5,
+      "samples": 76,
+      "bones": 58
+    },
+    {
+      "sourceName": "Jump_Land",
+      "name": "JumpLand",
+      "duration": 1.2666666507720947,
+      "samples": 39,
+      "bones": 58
+    }
+  ],
+  "retarget": [
+    "World-space rotational deltas from inverse-bind rest poses, converted into each destination parent space",
+    "Preserve original target bone lengths and scales",
+    "Reconstruct legacy sibling Foot targets from their original calf-relative offsets",
+    "Keep pelvis vertical pose movement; strip horizontal and root displacement so physics owns travel",
+    "Bake 30 Hz; emit animation channels only, without the library mannequin, meshes or textures"
+  ]
+}

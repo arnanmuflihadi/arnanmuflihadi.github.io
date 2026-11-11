@@ -1,0 +1,9 @@
+6e34f4ab04160d307e82248260822ed875bfc1d119c42f7293342fc0d5aa3740  validation/transit-e1b/baseline/tests/transit-quest.test.mjs
+72432f3ef47616a9ef5d172ba633ddc38f7f507c9c5b901cdadfa12309d39e91  validation/transit-e1b/baseline/assets/js/floating-atlas/transit-quest.js
+415885507d3d29ee60c15db45a21da30712d8ec76e942689209bd27b32998cbc  validation/transit-e1b/baseline/assets/js/floating-atlas/entry.js
+aeebfa01bd4082070f5cac8bc3bc580283816664f548e9d3c8fc2d79edef5e4c  validation/transit-e1b/baseline/assets/js/floating-atlas/minimap.js
+9509503f48672a1d4a715344a7607e8ad951e74181d22d7646861372be37a078  validation/transit-e1b/baseline/assets/js/living-atlas-state.js
+4d4afa6246c63b6626378290cdcd844bf31f47c11dd3529ef7bc3d218ca05484  validation/transit-e1b/baseline/assets/js/project-panel.js
+49416747dda6e6b51e1a181a2e11010e5ba91ef89d7ec31e61c2a94ac41504da  validation/transit-e1b/baseline/assets/js/adventure-ui.js
+41bde8765af97caa717b21a09245960584a0c67f8fe3e39483119ee357536569  validation/transit-e1b/baseline/assets/js/living-atlas-controller.js
+777c40e5b25f10f767e3e21079933cda3bdcb49ce6220be424638ee167b68bc0  validation/transit-e1b/baseline/SHA256SUMS

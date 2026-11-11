@@ -1,0 +1,40 @@
+{
+  "hasTownReview": false,
+  "mode": "adventure",
+  "panel": "Close studyUrban morphology / jakartaA Satellite Proxy for Low-Income Communities in DKI JakartaA morphology-based proxy, complementary to official measures; not a household income estimate.Satellite embeddings · XGBoost · Temporal harmonizationResearch findingThe study models visible urban morphology as a proxy, complementary to official measures.This is not a household income estimate. The fictional landscape does not identify low-income residents or depict measured deprivation.Read complete case study →This realm is not constructed yet. The complete research remains available.",
+  "project": "mbr",
+  "ready": "true",
+  "renderers": "1",
+  "transfer": [
+    {
+      "durationMs": 8.199999988079071,
+      "encodedBytes": 719224,
+      "file": "canopy-tree.glb",
+      "transferBytes": 719524
+    },
+    {
+      "durationMs": 6.899999976158142,
+      "encodedBytes": 104876,
+      "file": "fern.glb",
+      "transferBytes": 105176
+    },
+    {
+      "durationMs": 7.100000023841858,
+      "encodedBytes": 1581480,
+      "file": "urban-explorer.glb",
+      "transferBytes": 1581780
+    },
+    {
+      "durationMs": 6.199999988079071,
+      "encodedBytes": 1186388,
+      "file": "city-resident.glb",
+      "transferBytes": 1186688
+    },
+    {
+      "durationMs": 3.699999988079071,
+      "encodedBytes": 267260,
+      "file": "jump-animations.glb",
+      "transferBytes": 267560
+    }
+  ]
+}

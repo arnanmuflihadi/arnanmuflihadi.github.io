@@ -1,0 +1,117 @@
+{
+  "buildingSamples": [
+    {
+      "id": "B1 Kopi Awan",
+      "gameCenter": [
+        27.699999809265137,
+        20.04285713672638,
+        34
+      ],
+      "bodyFootprint": [
+        8.55,
+        7.2
+      ],
+      "naturalGround": [
+        14.092585655739502,
+        17.35884224943937
+      ],
+      "sampleCount": 270,
+      "unsafeSamples": 0,
+      "sourceStreet": 20.04285714285714,
+      "proposedFloorDelta": -6.130761676104157e-9,
+      "proposedGroundSupportBelowFloor": [
+        2.6840148872870095,
+        5.950271480986878
+      ]
+    },
+    {
+      "id": "B2 Lembaran Shophouse",
+      "gameCenter": [
+        44.30000019073486,
+        20.234285678863525,
+        32.80000019073486
+      ],
+      "bodyFootprint": [
+        7.951500061154366,
+        5.903999948501587
+      ],
+      "naturalGround": [
+        15.923813588298959,
+        20.02599775710129
+      ],
+      "sampleCount": 192,
+      "unsafeSamples": 0,
+      "sourceStreet": 20.234285681588307,
+      "proposedFloorDelta": -2.7247821776654746e-9,
+      "proposedGroundSupportBelowFloor": [
+        0.20828792176223487,
+        4.310472090564566
+      ]
+    },
+    {
+      "id": "B3 Rupa Rimba Atelier",
+      "gameCenter": [
+        27.699999809265137,
+        21.959999885559082,
+        22.200000762939453
+      ],
+      "bodyFootprint": [
+        7.951500061154366,
+        7.992000102996826
+      ],
+      "naturalGround": [
+        14.577012222813972,
+        21.38976795290851
+      ],
+      "sampleCount": 256,
+      "unsafeSamples": 0,
+      "sourceStreet": 22.05142844063895,
+      "proposedFloorDelta": -0.0914285550798688,
+      "proposedGroundSupportBelowFloor": [
+        0.5702319326505716,
+        7.38298766274511
+      ]
+    },
+    {
+      "id": "B4 Serambi Corner Shop",
+      "gameCenter": [
+        44.30000019073486,
+        21.959999885559082,
+        21.399999618530273
+      ],
+      "bodyFootprint": [
+        8.207999816536905,
+        7.992000102996826
+      ],
+      "naturalGround": [
+        15.60611622537049,
+        21.026113364774464
+      ],
+      "sampleCount": 272,
+      "unsafeSamples": 0,
+      "sourceStreet": 22.18857149396624,
+      "proposedFloorDelta": -0.22857160840715807,
+      "proposedGroundSupportBelowFloor": [
+        0.9338865207846183,
+        6.3538836601885915
+      ]
+    }
+  ],
+  "maxLocalStreetAdjustment": 0.7948571428572437,
+  "worldMapping": "game [36+u,18.6+h,44-v]",
+  "productionTerrainModified": false,
+  "guildReservation": [
+    40,
+    25.2,
+    -4
+  ],
+  "guildLocalReference": [
+    4,
+    48
+  ],
+  "squareLocalReference": [
+    0,
+    34
+  ],
+  "note": "Proposed local art grading and retaining support, not production placement approval"
+}

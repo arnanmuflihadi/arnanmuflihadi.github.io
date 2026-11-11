@@ -1,0 +1,29 @@
+{
+  "before": {
+    "grounded": "true",
+    "jumps": "0",
+    "landings": "0",
+    "x": "27.000",
+    "y": "16.030",
+    "z": "57.000"
+  },
+  "afterInput": {
+    "grounded": "false",
+    "jumps": "1",
+    "landings": "0",
+    "x": "27.000",
+    "y": "17.288",
+    "z": "55.624"
+  },
+  "scope": "Existing natural terrain only. No proposed stairs, paving or support traversal.",
+  "afterLanding": {
+    "grounded": "true",
+    "jumps": "1",
+    "landings": "1",
+    "x": "27.000",
+    "y": "16.135",
+    "z": "55.624"
+  },
+  "walkDistance": 1.3759999999999977,
+  "pass": true
+}

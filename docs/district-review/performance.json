@@ -1,0 +1,154 @@
+{
+  "method": "Real requestAnimationFrame intervals in integrated playable district; first 60 frames excluded; rolling 600 samples. Moving subset requires actual displacement. CPU submission is not GPU time. No showcase extrapolation.",
+  "limitations": "One local Mac/Chromium 156 session, refresh-rate limited. Phone sizes are desktop viewport emulations, not mobile hardware benchmarks. Camera, culling and quality affect geometry and calls.",
+  "walking": {
+    "drawCalls": 263,
+    "drawingBuffer": [
+      1280,
+      723
+    ],
+    "meanFrameMs": 8.333166666666656,
+    "meanRenderSubmissionMs": 1.6328333332575855,
+    "measuredFps": 120.0024000480011,
+    "medianFrameMs": 8.300000000017462,
+    "metric": "Actual requestAnimationFrame intervals after 60-frame warmup; walking samples require measured displacement; submission time is CPU only",
+    "mode": "adventure",
+    "p95FrameMs": 8.60000000000582,
+    "pixelRatio": 1,
+    "samples": 600,
+    "shadows": true,
+    "triangles": 683722,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      723
+    ],
+    "walking": {
+      "meanFrameMs": 8.33699999999998,
+      "measuredFps": 119.9472232217827,
+      "medianFrameMs": 8.30000000000291,
+      "p95FrameMs": 8.400000000008731,
+      "samples": 600
+    }
+  },
+  "workStandard": {
+    "drawCalls": 162,
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "meanFrameMs": 8.335833333333333,
+    "meanRenderSubmissionMs": 1.338166666602095,
+    "measuredFps": 119.96401079676096,
+    "medianFrameMs": 8.300000000001091,
+    "metric": "Actual requestAnimationFrame intervals after 60-frame warmup; walking samples require measured displacement; submission time is CPU only",
+    "mode": "adventure",
+    "p95FrameMs": 9.199999999999818,
+    "pixelRatio": 1,
+    "samples": 600,
+    "shadows": true,
+    "triangles": 639827,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      656
+    ],
+    "walking": {
+      "meanFrameMs": 0,
+      "measuredFps": 0,
+      "medianFrameMs": 0,
+      "p95FrameMs": 0,
+      "samples": 0
+    }
+  },
+  "workEco": {
+    "drawCalls": 162,
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "meanFrameMs": 8.335,
+    "meanRenderSubmissionMs": 0.9483333333147068,
+    "measuredFps": 119.97600479904018,
+    "medianFrameMs": 8.30000000000291,
+    "metric": "Actual requestAnimationFrame intervals after 60-frame warmup; walking samples require measured displacement; submission time is CPU only",
+    "mode": "adventure",
+    "p95FrameMs": 9.299999999995634,
+    "pixelRatio": 1,
+    "samples": 600,
+    "shadows": false,
+    "triangles": 639827,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      656
+    ],
+    "walking": {
+      "meanFrameMs": 0,
+      "measuredFps": 0,
+      "medianFrameMs": 0,
+      "p95FrameMs": 0,
+      "samples": 0
+    }
+  },
+  "phoneViewportEco": {
+    "drawCalls": 144,
+    "drawingBuffer": [
+      390,
+      784
+    ],
+    "meanFrameMs": 8.335833333333333,
+    "meanRenderSubmissionMs": 0.9709999999714396,
+    "measuredFps": 119.96401079676096,
+    "medianFrameMs": 8.30000000000291,
+    "metric": "Actual requestAnimationFrame intervals after 60-frame warmup; walking samples require measured displacement; submission time is CPU only",
+    "mode": "adventure",
+    "p95FrameMs": 8.400000000001455,
+    "pixelRatio": 1,
+    "samples": 600,
+    "shadows": false,
+    "triangles": 615567,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      784
+    ],
+    "walking": {
+      "meanFrameMs": 0,
+      "measuredFps": 0,
+      "medianFrameMs": 0,
+      "p95FrameMs": 0,
+      "samples": 0
+    }
+  },
+  "naturalViewport": {
+    "drawCalls": 239,
+    "drawingBuffer": [
+      794,
+      822
+    ],
+    "meanFrameMs": 8.335833333333333,
+    "meanRenderSubmissionMs": 1.2374999999192853,
+    "measuredFps": 119.96401079676096,
+    "medianFrameMs": 8.30000000000291,
+    "metric": "Actual requestAnimationFrame intervals after 60-frame warmup; walking samples require measured displacement; submission time is CPU only",
+    "mode": "adventure",
+    "p95FrameMs": 8.5,
+    "pixelRatio": 1.15,
+    "samples": 600,
+    "shadows": false,
+    "triangles": 670672,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": [
+      691,
+      715
+    ],
+    "walking": {
+      "meanFrameMs": 0,
+      "measuredFps": 0,
+      "medianFrameMs": 0,
+      "p95FrameMs": 0,
+      "samples": 0
+    }
+  }
+}

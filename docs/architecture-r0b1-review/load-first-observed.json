@@ -1,0 +1,174 @@
+{
+  "inventory": {
+    "architecture": {
+      "geometries": 97,
+      "materials": 25,
+      "meshes": 97,
+      "missingTextures": [],
+      "textures": 13,
+      "triangles": 78632
+    },
+    "eyeHeight": 1.65,
+    "glassMaterials": 1,
+    "library": {
+      "cachedFiles": 2,
+      "loadedFiles": 2,
+      "requests": 2
+    },
+    "production": "Dedicated page; landscape-only production unchanged",
+    "prototypeCount": 4,
+    "rawSourceInspection": {
+      "geometries": 11,
+      "materials": 3,
+      "meshes": 11,
+      "missingTextures": [],
+      "textures": 2,
+      "triangles": 804
+    },
+    "referenceHeight": 1.9,
+    "sites": [
+      {
+        "d": 10.8,
+        "entranceWorld": [
+          35.13,
+          22.3,
+          9.6
+        ],
+        "entry": [
+          4.13,
+          0.25,
+          5.6
+        ],
+        "entryGround": 21.984167736253664,
+        "groundRange": [
+          19.64443592971286,
+          22
+        ],
+        "id": "commercial",
+        "model": "RuangNiaga",
+        "voids": 0,
+        "w": 14.9,
+        "x": 31,
+        "y": 22.05,
+        "z": 4
+      },
+      {
+        "d": 12.5,
+        "entranceWorld": [
+          38,
+          32.5,
+          -23.5
+        ],
+        "entry": [
+          0,
+          0.3,
+          6.5
+        ],
+        "entryGround": 31.49052104541143,
+        "groundRange": [
+          29.741002066899345,
+          32.13044742303887
+        ],
+        "id": "research",
+        "model": "AtlasResearchCentre",
+        "voids": 0,
+        "w": 13.5,
+        "x": 38,
+        "y": 32.2,
+        "z": -30
+      },
+      {
+        "d": 16.6,
+        "entranceWorld": [
+          -13.7,
+          21.65,
+          15.5
+        ],
+        "entry": [
+          -8.7,
+          0,
+          10.5
+        ],
+        "entryGround": 21.78294842778689,
+        "groundRange": [
+          15.907234942534933,
+          23.526923076923076
+        ],
+        "id": "station",
+        "model": "StasiunAntara",
+        "voids": 0,
+        "w": 25,
+        "x": -5,
+        "y": 21.65,
+        "z": 5
+      },
+      {
+        "d": 22,
+        "entranceWorld": [
+          27.7,
+          16.68,
+          56.8
+        ],
+        "entry": [
+          -2.3,
+          0.28,
+          -8.2
+        ],
+        "entryGround": 16.026115729247604,
+        "groundRange": [
+          13.756885700740783,
+          16.313280473332554
+        ],
+        "id": "skyport",
+        "model": "PelabuhanAwan",
+        "voids": 0,
+        "w": 22.5,
+        "x": 30,
+        "y": 16.4,
+        "z": 65
+      }
+    ],
+    "sourceInstances": 67,
+    "sourceTypesUsed": 6
+  },
+  "loadedMs": 503.3,
+  "ready": "true",
+  "transfers": [
+    {
+      "bytes": 719224,
+      "durationMs": 3.299999997019768,
+      "file": "canopy-tree.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 104876,
+      "durationMs": 2.5,
+      "file": "fern.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 6045540,
+      "durationMs": 97.70000000298025,
+      "file": "transit-kingdom.glb?v=b1-final",
+      "transfer": 6045840
+    },
+    {
+      "bytes": 1581480,
+      "durationMs": 4,
+      "file": "urban-explorer.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 267260,
+      "durationMs": 2,
+      "file": "jump-animations.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 76360,
+      "durationMs": 2.299999997019768,
+      "file": "components.glb",
+      "transfer": 300
+    }
+  ]
+}

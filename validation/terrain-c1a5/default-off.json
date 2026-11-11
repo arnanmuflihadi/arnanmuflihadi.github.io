@@ -1,0 +1,39 @@
+{
+  "assets": [
+    {
+      "durationMs": 5.300000011920929,
+      "encodedBytes": 719224,
+      "file": "canopy-tree.glb",
+      "transferBytes": 719524
+    },
+    {
+      "durationMs": 3.899999976158142,
+      "encodedBytes": 104876,
+      "file": "fern.glb",
+      "transferBytes": 105176
+    },
+    {
+      "durationMs": 5.5,
+      "encodedBytes": 1581480,
+      "file": "urban-explorer.glb",
+      "transferBytes": 1581780
+    },
+    {
+      "durationMs": 4.4000000059604645,
+      "encodedBytes": 1186388,
+      "file": "city-resident.glb",
+      "transferBytes": 1186688
+    },
+    {
+      "durationMs": 6.0999999940395355,
+      "encodedBytes": 267260,
+      "file": "jump-animations.glb",
+      "transferBytes": 267560
+    }
+  ],
+  "mode": "adventure",
+  "rendererCount": "1",
+  "sceneId": "d2422e1e-ba8a-4eab-b4ee-69fc9a842bf2",
+  "terrainStudy": "not mounted",
+  "townReviewPresent": false
+}

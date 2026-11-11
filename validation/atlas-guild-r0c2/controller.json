@@ -1,0 +1,271 @@
+{
+  "rows": [
+    {
+      "name": "civic approach",
+      "hz": 20,
+      "success": true,
+      "distance": 42.15168039528616,
+      "seconds": 20.45,
+      "peak": 0,
+      "maxRise": 0.17833394885063392,
+      "minCamera": 10.12040013448362,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.759665952253978,
+        16.049999992847443,
+        37.34230502912786
+      ],
+      "interaction": {
+        "kind": "research",
+        "projectId": "transit",
+        "label": "Explore Transit Research"
+      }
+    },
+    {
+      "name": "reverse",
+      "hz": 20,
+      "success": true,
+      "distance": 42.152356000079585,
+      "seconds": 20.45,
+      "peak": 0,
+      "maxRise": 3.552713678800501e-15,
+      "minCamera": 2.51089151324985,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        15.013339715009895,
+        15.040976432078214,
+        69.86941919578776
+      ],
+      "interaction": null
+    },
+    {
+      "name": "civic approach",
+      "hz": 60,
+      "success": true,
+      "distance": 42.133196666474255,
+      "seconds": 20.266666666666666,
+      "peak": 0,
+      "maxRise": 0.17833394885063214,
+      "minCamera": 10.165403830750142,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.764412580420388,
+        16.049999992847447,
+        37.337332221120846
+      ],
+      "interaction": {
+        "kind": "research",
+        "projectId": "transit",
+        "label": "Explore Transit Research"
+      }
+    },
+    {
+      "name": "reverse",
+      "hz": 60,
+      "success": true,
+      "distance": 42.133281881186385,
+      "seconds": 20.266666666666666,
+      "peak": 0,
+      "maxRise": 3.552713678800501e-15,
+      "minCamera": 2.51089151324985,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        14.9975307167862,
+        15.041340745545785,
+        69.84684159753614
+      ],
+      "interaction": null
+    },
+    {
+      "name": "entrance jump",
+      "hz": 60,
+      "success": true,
+      "distance": 2.3275822813392963,
+      "seconds": 1.1833333333333333,
+      "peak": 0.8628666579246342,
+      "maxRise": 0.17833394885063214,
+      "minCamera": 11.244647424869063,
+      "jumps": 1,
+      "landings": 1,
+      "end": [
+        -7.784022495579379,
+        16.049999992847443,
+        37.311411795244666
+      ],
+      "interaction": {
+        "kind": "research",
+        "projectId": "transit",
+        "label": "Explore Transit Research"
+      }
+    },
+    {
+      "name": "solid wall",
+      "hz": 60,
+      "success": true,
+      "distance": 1.9754055536399575,
+      "seconds": 3.033333333333333,
+      "peak": 0,
+      "maxRise": 0.0002761736523115843,
+      "minCamera": 11.497813236430265,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -6.23906686493757,
+        15.525767555596897,
+        36.05961377777832
+      ],
+      "interaction": null
+    },
+    {
+      "name": "portal column",
+      "hz": 60,
+      "success": true,
+      "distance": 1.6753319385648842,
+      "seconds": 2.8833333333333333,
+      "peak": 0,
+      "maxRise": 0.001328917303045074,
+      "minCamera": 3.7644549015966287,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -5.268728627265033,
+        15.555774277976326,
+        35.73604741742752
+      ],
+      "interaction": null
+    }
+  ],
+  "profile": [
+    {
+      "v": 28.25,
+      "height": 15.514999389648438
+    },
+    {
+      "v": 28.45,
+      "height": 15.69333333849907
+    },
+    {
+      "v": 28.75,
+      "height": 15.871666680574418
+    },
+    {
+      "v": 29.05,
+      "height": 16.049999992847447
+    },
+    {
+      "v": 29.5,
+      "height": 16.049999992847443
+    },
+    {
+      "v": 29.9,
+      "height": 16.049999992847443
+    }
+  ],
+  "geometry": {
+    "enabled": true,
+    "rollback": null,
+    "site": {
+      "u": 0,
+      "v": 32,
+      "datum": 15.48,
+      "floor": 16.05,
+      "entranceV": 30.311157024793392,
+      "doorWidth": 2.392,
+      "doorHeight": 2.7,
+      "reservation": [
+        10,
+        8
+      ]
+    },
+    "colliderCount": 7,
+    "assets": {
+      "meshes": 16,
+      "triangles": 14697,
+      "geometries": 16,
+      "materials": 16,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "bounds": {
+      "min": [
+        -14.86378810244114,
+        15.40000000178814,
+        29.713412075592423
+      ],
+      "max": [
+        -2.981695398596832,
+        24.79447982788086,
+        41.01549873764942
+      ]
+    },
+    "removedReservationPostTriangles": 0,
+    "vegetationMoves": 0,
+    "researchActivations": 0,
+    "cache": {
+      "requests": 7,
+      "cachedFiles": 7,
+      "loadedFiles": 7
+    },
+    "sourceLocalBounds": {
+      "min": [
+        -4.574999809265137,
+        -0.07999999821186066,
+        -3.63700008392334
+      ],
+      "max": [
+        4.949999809265137,
+        9.31447982788086,
+        3.700000047683716
+      ]
+    },
+    "worldFit": [
+      {
+        "min": [
+          -14.86378810244114,
+          15.40000000178814,
+          29.713412075592423
+        ],
+        "max": [
+          -2.981695398596832,
+          24.79447982788086,
+          41.01549873764942
+        ]
+      }
+    ]
+  },
+  "siteSurvey": {
+    "footprintWidth": 9.524999618530273,
+    "footprintDepth": 7.337000131607056,
+    "height": 8.744479827880859,
+    "terrainMin": 15.479987949572584,
+    "terrainMax": 15.971233526290952,
+    "supportMin": 0.07876647370904877,
+    "supportMax": 0.5700120504274171
+  },
+  "sightlines": [
+    {
+      "name": "square entrance",
+      "clear": true,
+      "firstHit": "Guild_delivery_3__C1__oiled_timber"
+    },
+    {
+      "name": "market landmark",
+      "clear": true,
+      "firstHit": "Guild_delivery_2__S2A__cut_timber_edges"
+    }
+  ],
+  "nearbyTrees": [],
+  "propsUnchanged": true,
+  "forestAndAllExistingInstancesUnchanged": true,
+  "terrainUnchanged": true,
+  "rollbackExact": true,
+  "changedCheckpointFiles": [
+    "assets/js/floating-atlas/reconstruction-review.js",
+    "assets/js/floating-atlas/entry.js",
+    "assets/js/living-atlas-controller.js"
+  ]
+}

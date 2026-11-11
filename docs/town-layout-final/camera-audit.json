@@ -1,0 +1,11 @@
+{
+  "before": {
+    "samples": 3340,
+    "intersections": 12
+  },
+  "after": {
+    "samples": 6149,
+    "intersections": 0
+  },
+  "method": "Recorded native camera-to-player rays against actual planning meshes; every eighth rAF, origin at capsule +1.25 m, near .03 m, far shortened .08 m. Excludes existing foliage."
+}

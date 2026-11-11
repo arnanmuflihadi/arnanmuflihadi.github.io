@@ -1,0 +1,81 @@
+{
+  "syntax": [
+    {
+      "file": "assets/js/floating-atlas/atmosphere.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/collision.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/entry.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/guide.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/minimap.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/nature.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/plan.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/presentation.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/scene.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/support.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/terrain.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/world-manager.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/living-atlas-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/experience-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/project-panel.js",
+      "status": 0
+    },
+    {
+      "file": "tests/landscape-r0a.test.mjs",
+      "status": 0
+    },
+    {
+      "file": "tests/floating-atlas.test.mjs",
+      "status": 0
+    }
+  ],
+  "missingGalleryLinks": [],
+  "primarySceneIds": [
+    "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859"
+  ],
+  "allPrimaryViewsSameScene": true,
+  "originalGlbsUnchanged": true,
+  "activeSceneArchitectureInstances": 0,
+  "legacySnapshot": "assets/js/floating-atlas-legacy-r0/",
+  "diffCheck": 0
+}

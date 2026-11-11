@@ -1,0 +1,22 @@
+{
+  "checked_files": 1260,
+  "changed": [],
+  "source_checks": [
+    {
+      "path": "source-assets/r0b1/kenney_modular-buildings.zip",
+      "matches_manifest": true
+    },
+    {
+      "path": "source-assets/r0b1/modular-buildings/License.txt",
+      "matches_manifest": true
+    },
+    {
+      "path": "source-assets/r0b1/kenney_building-kit.zip",
+      "matches_manifest": true
+    },
+    {
+      "path": "source-assets/r0b1/building-kit/License.txt",
+      "matches_manifest": true
+    }
+  ]
+}

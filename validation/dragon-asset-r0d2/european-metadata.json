@@ -1,0 +1,1427 @@
+{
+  "source": "validation/dragon-asset-r0d2/acquired/european-dragon-1k.glb",
+  "file_bytes": 8997240,
+  "sha256": "4a5946b55700e4c2819b36a443ad97e5b196de21bc50d5b14762e2294b1afb0e",
+  "asset": {
+    "extras": {
+      "author": "Nonexistent 101 (https://sketchfab.com/Nonexistent101)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/european-dragon-82f393a2e6c048ad80c171ce3b3a7b87",
+      "title": "European Dragon"
+    },
+    "generator": "Sketchfab-13.83.0",
+    "version": "2.0"
+  },
+  "meshes": [
+    {
+      "name": "Dragon_Low Poly Bake_0",
+      "primitives": [
+        {
+          "mode": 4,
+          "vertices": 21050,
+          "index_count": 115014,
+          "triangles_if_triangle_list": 38338,
+          "material": 0,
+          "attributes": [
+            "JOINTS_0",
+            "NORMAL",
+            "POSITION",
+            "TANGENT",
+            "TEXCOORD_0",
+            "TEXCOORD_1",
+            "TEXCOORD_2",
+            "WEIGHTS_0"
+          ],
+          "weights": [
+            {
+              "attribute": "WEIGHTS_0",
+              "vertices": 21050,
+              "zero_weight_vertices": 0,
+              "component_type": 5126,
+              "normalized": false,
+              "nonzero_influences_histogram": {
+                "1": 4480,
+                "2": 7473,
+                "3": 3210,
+                "4": 5887
+              }
+            }
+          ],
+          "morph_targets": 0
+        }
+      ],
+      "morph_target_names": null
+    },
+    {
+      "name": "Teeth Bottom_Material.002_0",
+      "primitives": [
+        {
+          "mode": 4,
+          "vertices": 1133,
+          "index_count": 3360,
+          "triangles_if_triangle_list": 1120,
+          "material": 1,
+          "attributes": [
+            "JOINTS_0",
+            "NORMAL",
+            "POSITION",
+            "TEXCOORD_0",
+            "WEIGHTS_0"
+          ],
+          "weights": [
+            {
+              "attribute": "WEIGHTS_0",
+              "vertices": 1133,
+              "zero_weight_vertices": 0,
+              "component_type": 5126,
+              "normalized": false,
+              "nonzero_influences_histogram": {
+                "1": 245,
+                "2": 556,
+                "3": 166,
+                "4": 166
+              }
+            }
+          ],
+          "morph_targets": 0
+        }
+      ],
+      "morph_target_names": null
+    },
+    {
+      "name": "Teeth Top_Material.003_0",
+      "primitives": [
+        {
+          "mode": 4,
+          "vertices": 929,
+          "index_count": 2880,
+          "triangles_if_triangle_list": 960,
+          "material": 2,
+          "attributes": [
+            "JOINTS_0",
+            "NORMAL",
+            "POSITION",
+            "TEXCOORD_0",
+            "WEIGHTS_0"
+          ],
+          "weights": [
+            {
+              "attribute": "WEIGHTS_0",
+              "vertices": 929,
+              "zero_weight_vertices": 0,
+              "component_type": 5126,
+              "normalized": false,
+              "nonzero_influences_histogram": {
+                "1": 458,
+                "2": 162,
+                "3": 308,
+                "4": 1
+              }
+            }
+          ],
+          "morph_targets": 0
+        }
+      ],
+      "morph_target_names": null
+    },
+    {
+      "name": "Eye Right_Material.001_0",
+      "primitives": [
+        {
+          "mode": 4,
+          "vertices": 514,
+          "index_count": 2880,
+          "triangles_if_triangle_list": 960,
+          "material": 3,
+          "attributes": [
+            "JOINTS_0",
+            "NORMAL",
+            "POSITION",
+            "TEXCOORD_0",
+            "WEIGHTS_0"
+          ],
+          "weights": [
+            {
+              "attribute": "WEIGHTS_0",
+              "vertices": 514,
+              "zero_weight_vertices": 0,
+              "component_type": 5126,
+              "normalized": false,
+              "nonzero_influences_histogram": {
+                "2": 514
+              }
+            }
+          ],
+          "morph_targets": 0
+        }
+      ],
+      "morph_target_names": null
+    },
+    {
+      "name": "Eye Left_Material.001_0",
+      "primitives": [
+        {
+          "mode": 4,
+          "vertices": 514,
+          "index_count": 2880,
+          "triangles_if_triangle_list": 960,
+          "material": 3,
+          "attributes": [
+            "JOINTS_0",
+            "NORMAL",
+            "POSITION",
+            "TEXCOORD_0",
+            "WEIGHTS_0"
+          ],
+          "weights": [
+            {
+              "attribute": "WEIGHTS_0",
+              "vertices": 514,
+              "zero_weight_vertices": 0,
+              "component_type": 5126,
+              "normalized": false,
+              "nonzero_influences_histogram": {
+                "2": 514
+              }
+            }
+          ],
+          "morph_targets": 0
+        }
+      ],
+      "morph_target_names": null
+    }
+  ],
+  "skins": [
+    {
+      "joint_count": 169,
+      "skeleton_node": 7,
+      "joints": [
+        [
+          7,
+          "_rootJoint",
+          6
+        ],
+        [
+          10,
+          "DEF-Spine_02",
+          7
+        ],
+        [
+          11,
+          "DEF-Spine.001_03",
+          10
+        ],
+        [
+          12,
+          "DEF-Spine.002_04",
+          11
+        ],
+        [
+          13,
+          "DEF-Spine.003_05",
+          12
+        ],
+        [
+          14,
+          "DEF-Spine.004_06",
+          13
+        ],
+        [
+          15,
+          "DEF-Spine.005_07",
+          14
+        ],
+        [
+          16,
+          "DEF-neck_08",
+          15
+        ],
+        [
+          17,
+          "DEF-neck.001_09",
+          16
+        ],
+        [
+          18,
+          "DEF-neck.002_010",
+          17
+        ],
+        [
+          19,
+          "DEF-neck.003_011",
+          18
+        ],
+        [
+          20,
+          "DEF-neck.004_012",
+          19
+        ],
+        [
+          21,
+          "DEF-Teeth_Top_013",
+          20
+        ],
+        [
+          22,
+          "DEF-Bone_014",
+          20
+        ],
+        [
+          23,
+          "DEF-Bone.002_015",
+          22
+        ],
+        [
+          24,
+          "DEF-Teeth_Bottom_016",
+          23
+        ],
+        [
+          25,
+          "DEF-eye_master.L_017",
+          20
+        ],
+        [
+          26,
+          "DEF-lid1.B.L_018",
+          20
+        ],
+        [
+          27,
+          "DEF-lid2.B.L_019",
+          20
+        ],
+        [
+          28,
+          "DEF-lid3.B.L_020",
+          20
+        ],
+        [
+          29,
+          "DEF-lid4.B.L_021",
+          20
+        ],
+        [
+          30,
+          "DEF-lid1.T.L_022",
+          20
+        ],
+        [
+          31,
+          "DEF-lid2.T.L_023",
+          20
+        ],
+        [
+          32,
+          "DEF-lid3.T.L_024",
+          20
+        ],
+        [
+          33,
+          "DEF-lid4.T.L_025",
+          20
+        ],
+        [
+          34,
+          "DEF-eye.L_026",
+          20
+        ],
+        [
+          35,
+          "DEF-eye_iris.L_027",
+          20
+        ],
+        [
+          36,
+          "DEF-eye_master.R_028",
+          20
+        ],
+        [
+          37,
+          "DEF-lid1.B.R_029",
+          20
+        ],
+        [
+          38,
+          "DEF-lid2.B.R_030",
+          20
+        ],
+        [
+          39,
+          "DEF-lid3.B.R_031",
+          20
+        ],
+        [
+          40,
+          "DEF-lid4.B.R_032",
+          20
+        ],
+        [
+          41,
+          "DEF-lid1.T.R_033",
+          20
+        ],
+        [
+          42,
+          "DEF-lid2.T.R_034",
+          20
+        ],
+        [
+          43,
+          "DEF-lid3.T.R_035",
+          20
+        ],
+        [
+          44,
+          "DEF-lid4.T.R_036",
+          20
+        ],
+        [
+          45,
+          "DEF-eye.R_037",
+          20
+        ],
+        [
+          46,
+          "DEF-eye_iris.R_038",
+          20
+        ],
+        [
+          47,
+          "DEF-collar.L_039",
+          14
+        ],
+        [
+          48,
+          "DEF-upper_arm.L_040",
+          47
+        ],
+        [
+          49,
+          "DEF-upper_arm.L.001_041",
+          48
+        ],
+        [
+          50,
+          "DEF-forearm.L_042",
+          49
+        ],
+        [
+          51,
+          "DEF-forearm.L.001_043",
+          50
+        ],
+        [
+          52,
+          "DEF-forearm.L.002_044",
+          51
+        ],
+        [
+          53,
+          "DEF-Finger_4.L_045",
+          52
+        ],
+        [
+          54,
+          "DEF-Finger_4.001.L_046",
+          53
+        ],
+        [
+          55,
+          "DEF-palm.003.L_047",
+          52
+        ],
+        [
+          56,
+          "DEF-Finger_3.L_048",
+          52
+        ],
+        [
+          57,
+          "DEF-Finger_3.001.L_049",
+          56
+        ],
+        [
+          58,
+          "DEF-Finger_3.002.L_050",
+          57
+        ],
+        [
+          59,
+          "DEF-palm.02.L_051",
+          52
+        ],
+        [
+          60,
+          "DEF-Finger_2.L_052",
+          52
+        ],
+        [
+          61,
+          "DEF-Finger_2.001.L_053",
+          60
+        ],
+        [
+          62,
+          "DEF-Finger_2.002.L_054",
+          61
+        ],
+        [
+          63,
+          "DEF-palm.01.L_055",
+          52
+        ],
+        [
+          64,
+          "DEF-Finger_1.L_056",
+          52
+        ],
+        [
+          65,
+          "DEF-Finger_1.001.L_057",
+          64
+        ],
+        [
+          66,
+          "DEF-Finger_1.002.L_058",
+          65
+        ],
+        [
+          67,
+          "DEF-palm.L_059",
+          52
+        ],
+        [
+          68,
+          "DEF-collar.R_060",
+          14
+        ],
+        [
+          69,
+          "DEF-upper_arm.R_061",
+          68
+        ],
+        [
+          70,
+          "DEF-upper_arm.R.001_062",
+          69
+        ],
+        [
+          71,
+          "DEF-forearm.R_063",
+          70
+        ],
+        [
+          72,
+          "DEF-forearm.R.001_064",
+          71
+        ],
+        [
+          73,
+          "DEF-forearm.R.002_065",
+          72
+        ],
+        [
+          74,
+          "DEF-Finger_4.R_066",
+          73
+        ],
+        [
+          75,
+          "DEF-Finger_4.001.R_067",
+          74
+        ],
+        [
+          76,
+          "DEF-palm.003.R_068",
+          73
+        ],
+        [
+          77,
+          "DEF-Finger_3.R_069",
+          73
+        ],
+        [
+          78,
+          "DEF-Finger_3.001.R_070",
+          77
+        ],
+        [
+          79,
+          "DEF-Finger_3.002.R_071",
+          78
+        ],
+        [
+          80,
+          "DEF-palm.02.R_072",
+          73
+        ],
+        [
+          81,
+          "DEF-Finger_2.R_073",
+          73
+        ],
+        [
+          82,
+          "DEF-Finger_2.001.R_074",
+          81
+        ],
+        [
+          83,
+          "DEF-Finger_2.002.R_075",
+          82
+        ],
+        [
+          84,
+          "DEF-palm.01.R_076",
+          73
+        ],
+        [
+          85,
+          "DEF-Finger_1.R_077",
+          73
+        ],
+        [
+          86,
+          "DEF-Finger_1.001.R_078",
+          85
+        ],
+        [
+          87,
+          "DEF-Finger_1.002.R_079",
+          86
+        ],
+        [
+          88,
+          "DEF-palm.R_080",
+          73
+        ],
+        [
+          89,
+          "DEF-Wing_Back_Support.L_00",
+          14
+        ],
+        [
+          90,
+          "DEF-Shoulder_Blade.L_01",
+          89
+        ],
+        [
+          91,
+          "DEF-Wing_Base.L_081",
+          90
+        ],
+        [
+          92,
+          "DEF-Wing_Fold_1.L_082",
+          91
+        ],
+        [
+          93,
+          "DEF-Wing_Fold_2.L_083",
+          92
+        ],
+        [
+          94,
+          "DEF-Wing_Fold_2.02.L_084",
+          93
+        ],
+        [
+          95,
+          "DEF-Wing_Fold_2.03.L_085",
+          94
+        ],
+        [
+          96,
+          "DEF-Wing_Fold_3.L_086",
+          95
+        ],
+        [
+          97,
+          "DEF-Wing_Fold_3.02.L_087",
+          96
+        ],
+        [
+          98,
+          "DEF-Wing_Fold_3.03.L_088",
+          97
+        ],
+        [
+          99,
+          "DEF-Wing_Fold_4.L_089",
+          95
+        ],
+        [
+          100,
+          "DEF-Wing_Fold_4.02.L_090",
+          99
+        ],
+        [
+          101,
+          "DEF-Wing_Fold_4.03.L_091",
+          100
+        ],
+        [
+          102,
+          "DEF-Wing_Fold_Mini.L_092",
+          92
+        ],
+        [
+          103,
+          "DEF-Wing_Fold_Mini.02.L_093",
+          102
+        ],
+        [
+          104,
+          "DEF-Wing_Fold_Mini.03.L_094",
+          103
+        ],
+        [
+          105,
+          "DEF-Wing_Back_Support.R_095",
+          14
+        ],
+        [
+          106,
+          "DEF-Shoulder_Blade.R_096",
+          105
+        ],
+        [
+          107,
+          "DEF-Wing_Base.R_097",
+          106
+        ],
+        [
+          108,
+          "DEF-Wing_Fold_1.R_098",
+          107
+        ],
+        [
+          109,
+          "DEF-Wing_Fold_2.R_099",
+          108
+        ],
+        [
+          110,
+          "DEF-Wing_Fold_2.02.R_0100",
+          109
+        ],
+        [
+          111,
+          "DEF-Wing_Fold_2.03.R_0101",
+          110
+        ],
+        [
+          112,
+          "DEF-Wing_Fold_3.R_0102",
+          111
+        ],
+        [
+          113,
+          "DEF-Wing_Fold_3.02.R_0103",
+          112
+        ],
+        [
+          114,
+          "DEF-Wing_Fold_3.03.R_0104",
+          113
+        ],
+        [
+          115,
+          "DEF-Wing_Fold_4.R_0105",
+          111
+        ],
+        [
+          116,
+          "DEF-Wing_Fold_4.02.R_0106",
+          115
+        ],
+        [
+          117,
+          "DEF-Wing_Fold_4.03.R_0107",
+          116
+        ],
+        [
+          118,
+          "DEF-Wing_Fold_Mini.R_0108",
+          108
+        ],
+        [
+          119,
+          "DEF-Wing_Fold_Mini.02.R_0109",
+          118
+        ],
+        [
+          120,
+          "DEF-Wing_Fold_Mini.03.R_0110",
+          119
+        ],
+        [
+          121,
+          "DEF-Hip.L_0111",
+          10
+        ],
+        [
+          122,
+          "DEF-thigh.L_0112",
+          10
+        ],
+        [
+          123,
+          "DEF-thigh.L.001_0113",
+          122
+        ],
+        [
+          124,
+          "DEF-shin.L_0114",
+          123
+        ],
+        [
+          125,
+          "DEF-shin.L.001_0115",
+          124
+        ],
+        [
+          126,
+          "DEF-foot.L_0116",
+          125
+        ],
+        [
+          127,
+          "DEF-foot.L.001_0117",
+          126
+        ],
+        [
+          128,
+          "DEF-toe.L_0118",
+          127
+        ],
+        [
+          129,
+          "DEF-Finger_3.L.001_0119",
+          128
+        ],
+        [
+          130,
+          "DEF-Finger_3.001.L.001_0120",
+          129
+        ],
+        [
+          131,
+          "DEF-palm.02.L.001_0121",
+          128
+        ],
+        [
+          132,
+          "DEF-Finger_2.L.001_0122",
+          128
+        ],
+        [
+          133,
+          "DEF-Finger_2.001.L.001_0123",
+          132
+        ],
+        [
+          134,
+          "DEF-palm.01.L.001_0124",
+          128
+        ],
+        [
+          135,
+          "DEF-Finger_1.L.001_0125",
+          128
+        ],
+        [
+          136,
+          "DEF-Finger_1.001.L.001_0126",
+          135
+        ],
+        [
+          137,
+          "DEF-palm.L.001_0127",
+          128
+        ],
+        [
+          138,
+          "DEF-Finger_2.L.002_0128",
+          128
+        ],
+        [
+          139,
+          "DEF-Finger_2.001.L.002_0129",
+          138
+        ],
+        [
+          140,
+          "DEF-palm.01.L.002_0130",
+          128
+        ],
+        [
+          141,
+          "DEF-Hip.R_0131",
+          10
+        ],
+        [
+          142,
+          "DEF-thigh.R_0132",
+          10
+        ],
+        [
+          143,
+          "DEF-thigh.R.001_0133",
+          142
+        ],
+        [
+          144,
+          "DEF-shin.R_0134",
+          143
+        ],
+        [
+          145,
+          "DEF-shin.R.001_0135",
+          144
+        ],
+        [
+          146,
+          "DEF-foot.R_0136",
+          145
+        ],
+        [
+          147,
+          "DEF-foot.R.001_0137",
+          146
+        ],
+        [
+          148,
+          "DEF-toe.R_0138",
+          147
+        ],
+        [
+          149,
+          "DEF-Finger_3.R.001_0139",
+          148
+        ],
+        [
+          150,
+          "DEF-Finger_3.001.R.001_0140",
+          149
+        ],
+        [
+          151,
+          "DEF-palm.02.R.001_0141",
+          148
+        ],
+        [
+          152,
+          "DEF-Finger_2.R.001_0142",
+          148
+        ],
+        [
+          153,
+          "DEF-Finger_2.001.R.001_0143",
+          152
+        ],
+        [
+          154,
+          "DEF-palm.01.R.001_0144",
+          148
+        ],
+        [
+          155,
+          "DEF-Finger_1.R.001_0145",
+          148
+        ],
+        [
+          156,
+          "DEF-Finger_1.001.R.001_0146",
+          155
+        ],
+        [
+          157,
+          "DEF-palm.R.001_0147",
+          148
+        ],
+        [
+          158,
+          "DEF-Finger_2.R.002_0148",
+          148
+        ],
+        [
+          159,
+          "DEF-Finger_2.001.R.002_0149",
+          158
+        ],
+        [
+          160,
+          "DEF-palm.01.R.002_0150",
+          148
+        ],
+        [
+          161,
+          "DEF-tail_0151",
+          10
+        ],
+        [
+          162,
+          "DEF-tail.001_0152",
+          161
+        ],
+        [
+          163,
+          "DEF-tail.002_0153",
+          162
+        ],
+        [
+          164,
+          "DEF-tail.003_0154",
+          163
+        ],
+        [
+          165,
+          "DEF-tail.004_0155",
+          164
+        ],
+        [
+          166,
+          "DEF-tail.005_0156",
+          165
+        ],
+        [
+          167,
+          "DEF-tail.006_0157",
+          166
+        ],
+        [
+          168,
+          "DEF-tail.007_0158",
+          167
+        ],
+        [
+          169,
+          "DEF-tail.008_0159",
+          168
+        ],
+        [
+          170,
+          "DEF-tail.009_0160",
+          169
+        ],
+        [
+          171,
+          "DEF-tail.010_0161",
+          170
+        ],
+        [
+          172,
+          "DEF-tail.011_0162",
+          171
+        ],
+        [
+          173,
+          "DEF-tail.012_0163",
+          172
+        ],
+        [
+          174,
+          "DEF-tail.013_0164",
+          173
+        ],
+        [
+          175,
+          "DEF-tail.014_0165",
+          174
+        ],
+        [
+          176,
+          "DEF-tail.015_0166",
+          175
+        ],
+        [
+          177,
+          "DEF-tail.016_0167",
+          176
+        ]
+      ],
+      "joint_columns": [
+        "node",
+        "name",
+        "parent_node"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Low_Poly_Bake",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material.002",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material.003",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0
+      }
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "name": null,
+      "mimeType": "image/png",
+      "embedded_bytes": 709949,
+      "uri": null,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 1,
+      "name": null,
+      "mimeType": "image/png",
+      "embedded_bytes": 283162,
+      "uri": null,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 2,
+      "name": null,
+      "mimeType": "image/png",
+      "embedded_bytes": 807894,
+      "uri": null,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 3,
+      "name": null,
+      "mimeType": "image/png",
+      "embedded_bytes": 442156,
+      "uri": null,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 4,
+      "name": null,
+      "mimeType": "image/png",
+      "embedded_bytes": 317307,
+      "uri": null,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 5,
+      "name": null,
+      "mimeType": "image/png",
+      "embedded_bytes": 218901,
+      "uri": null,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "name": "Fly",
+      "duration_seconds": 3.2916667461395264,
+      "channel_count": 501,
+      "target_paths": {
+        "translation": 168,
+        "scale": 165,
+        "rotation": 168
+      },
+      "max_endpoint_component_delta": 0.21641557663679123,
+      "interpolations": [
+        "LINEAR"
+      ],
+      "target_node_count": 168,
+      "max_delta_channel": {
+        "node": 102,
+        "name": "DEF-Wing_Fold_Mini.L_092",
+        "path": "rotation",
+        "endpoint_max_component_delta": 0.21641557663679123
+      }
+    },
+    {
+      "name": "Walk",
+      "duration_seconds": 0.625,
+      "channel_count": 501,
+      "target_paths": {
+        "translation": 168,
+        "scale": 165,
+        "rotation": 168
+      },
+      "max_endpoint_component_delta": 0.11994393169879913,
+      "interpolations": [
+        "LINEAR"
+      ],
+      "target_node_count": 168,
+      "max_delta_channel": {
+        "node": 155,
+        "name": "DEF-Finger_1.R.001_0145",
+        "path": "rotation",
+        "endpoint_max_component_delta": 0.11994393169879913
+      }
+    },
+    {
+      "name": "Run",
+      "duration_seconds": 0.625,
+      "channel_count": 503,
+      "target_paths": {
+        "translation": 168,
+        "scale": 167,
+        "rotation": 168
+      },
+      "max_endpoint_component_delta": 0.08038049470633268,
+      "interpolations": [
+        "LINEAR"
+      ],
+      "target_node_count": 168,
+      "max_delta_channel": {
+        "node": 128,
+        "name": "DEF-toe.L_0118",
+        "path": "rotation",
+        "endpoint_max_component_delta": 0.08038049470633268
+      }
+    },
+    {
+      "name": "Idle Stand",
+      "duration_seconds": 6.625,
+      "channel_count": 503,
+      "target_paths": {
+        "translation": 168,
+        "scale": 167,
+        "rotation": 168
+      },
+      "max_endpoint_component_delta": 5.0067901611328125e-06,
+      "interpolations": [
+        "LINEAR"
+      ],
+      "target_node_count": 168,
+      "max_delta_channel": {
+        "node": 101,
+        "name": "DEF-Wing_Fold_4.03.L_091",
+        "path": "translation",
+        "endpoint_max_component_delta": 5.0067901611328125e-06
+      }
+    },
+    {
+      "name": "Idle Sit",
+      "duration_seconds": 2.4583332538604736,
+      "channel_count": 501,
+      "target_paths": {
+        "translation": 167,
+        "scale": 166,
+        "rotation": 168
+      },
+      "max_endpoint_component_delta": 4.291534423828125e-06,
+      "interpolations": [
+        "LINEAR"
+      ],
+      "target_node_count": 168,
+      "max_delta_channel": {
+        "node": 100,
+        "name": "DEF-Wing_Fold_4.02.L_090",
+        "path": "translation",
+        "endpoint_max_component_delta": 4.291534423828125e-06
+      }
+    }
+  ],
+  "endpoint_interpretation": "Raw local channel first and last component differences only; quaternion sign equivalence and visual motion continuity not evaluated. glTF animation data does not encode an automatic loop setting.",
+  "three_mixer_check": {
+    "method": "D1B GLTFLoader approach with textures and material properties stripped; LoopOnce sampled at start, midpoint and end; finite bone world matrices checked. This is not visual or loop-quality validation.",
+    "results": [
+      {
+        "name": "Fly",
+        "duration": 3.2916667461395264,
+        "tracks": 501,
+        "samples": [
+          {
+            "fraction": 0,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 0.5,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 1,
+            "bones": 169,
+            "finite": true
+          }
+        ]
+      },
+      {
+        "name": "Walk",
+        "duration": 0.625,
+        "tracks": 501,
+        "samples": [
+          {
+            "fraction": 0,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 0.5,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 1,
+            "bones": 169,
+            "finite": true
+          }
+        ]
+      },
+      {
+        "name": "Run",
+        "duration": 0.625,
+        "tracks": 503,
+        "samples": [
+          {
+            "fraction": 0,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 0.5,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 1,
+            "bones": 169,
+            "finite": true
+          }
+        ]
+      },
+      {
+        "name": "Idle Stand",
+        "duration": 6.625,
+        "tracks": 503,
+        "samples": [
+          {
+            "fraction": 0,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 0.5,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 1,
+            "bones": 169,
+            "finite": true
+          }
+        ]
+      },
+      {
+        "name": "Idle Sit",
+        "duration": 2.4583332538604736,
+        "tracks": 501,
+        "samples": [
+          {
+            "fraction": 0,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 0.5,
+            "bones": 169,
+            "finite": true
+          },
+          {
+            "fraction": 1,
+            "bones": 169,
+            "finite": true
+          }
+        ]
+      }
+    ]
+  },
+  "creator_attribution": {
+    "embedded_author": "Nonexistent 101",
+    "embedded_profile": "https://sketchfab.com/Nonexistent101",
+    "observed_listing_name": "ReginaCachoa",
+    "identity_link_status": "Current ReginaCachoa profile explicitly links Twitter Nonexistent_101, Instagram nonexistent_101_3dart, and linktr.ee/Nonexistent_101; supports the alias connection. Preserve both current listing and embedded names.",
+    "profile_evidence": "evidence/european-creator-profile.png"
+  }
+}

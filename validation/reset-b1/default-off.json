@@ -1,0 +1,17 @@
+{
+  "architectureInstances": 0,
+  "glbFiles": [
+    "canopy-tree.glb",
+    "fern.glb",
+    "urban-explorer.glb",
+    "city-resident.glb",
+    "jump-animations.glb"
+  ],
+  "mode": "adventure",
+  "ready": "true",
+  "rendererCount": "1",
+  "resetReady": null,
+  "sceneId": "55da05b2-edcf-469d-a777-a5c0d292192a",
+  "previewControls": 0,
+  "researchTitle": "A Satellite Proxy for Low-Income Communities in DKI Jakarta"
+}

@@ -1,0 +1,1315 @@
+{
+  "state": "loaded",
+  "mode": "island",
+  "view": "skyport",
+  "glassMode": "authored transmission",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "quality": {
+    "buffer": [
+      1800,
+      1200
+    ],
+    "dpr": 1,
+    "antialias": true,
+    "shadows": "PCFSoft 2048",
+    "toneMapping": "ACES",
+    "exposure": 1,
+    "transmission": "preserved; one Kopi Awan material",
+    "islandLighting": "unchanged R0-A3",
+    "studioLighting": "hemisphere 1.5; sun 2.3; fill .6; gradient environment 256x128"
+  },
+  "camera": {
+    "position": [
+      27,
+      18.799999999999997,
+      60
+    ],
+    "quaternion": [
+      0.07001136347513456,
+      -0.14045546452785387,
+      0.009957364483272339,
+      0.9875583640277492
+    ],
+    "fov": 49.550281137663845,
+    "sourceBlender": {
+      "p": [
+        -9,
+        -16,
+        0.19999999999999707
+      ],
+      "t": [
+        0,
+        15,
+        4.8
+      ],
+      "lens": 26
+    },
+    "eyeHeight": 1.65
+  },
+  "asset": {
+    "meshes": 107,
+    "triangles": 170709,
+    "geometries": 107,
+    "materials": 59,
+    "textures": [
+      {
+        "name": "colormap",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "Leaves",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Bark_NormalTree",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Bark_NormalTree_Normal",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Leaves_NormalTree_C",
+        "width": 256,
+        "height": 256
+      }
+    ],
+    "missingTextures": [],
+    "cacheReused": true,
+    "bytes": 10007904,
+    "bounds": {
+      "min": [
+        -18,
+        -3.8631129264831543,
+        -40
+      ],
+      "max": [
+        18,
+        11.9320068359375,
+        10
+      ]
+    },
+    "instancedMeshes": [
+      {
+        "name": "tree002",
+        "count": 7
+      },
+      {
+        "name": "tree002_1",
+        "count": 7
+      },
+      {
+        "name": "MarketStreet36m1",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m2",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m3",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m4",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m5",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m6",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m7",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m8",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m9",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m10",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m11",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m12",
+        "count": 20
+      }
+    ],
+    "glass": [
+      {
+        "name": "S2A / soft blue green glass",
+        "alpha": 1,
+        "transparent": false,
+        "transmission": 0.9599999785423279
+      },
+      {
+        "name": "S2C / shared low-cost teal glazing",
+        "alpha": 0.6200000047683716,
+        "transparent": true,
+        "transmission": 0
+      },
+      {
+        "name": "S2C / shared low-cost teal glazing",
+        "alpha": 0.6200000047683716,
+        "transparent": true,
+        "transmission": 0
+      }
+    ],
+    "geometryArrayBufferBytes": 9637842,
+    "buildings": [
+      {
+        "id": "B1 Kopi Awan",
+        "meshes": 18,
+        "triangles": 35876,
+        "geometries": 18,
+        "materials": 18,
+        "textures": 2,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            -14.020001411437988,
+            1.2028571367263794,
+            -14.369999885559082
+          ],
+          "max": [
+            -3.039966583251953,
+            10.014863967895508,
+            -5.629999160766602
+          ]
+        }
+      },
+      {
+        "id": "B2 Lembaran Shophouse",
+        "meshes": 21,
+        "triangles": 19710,
+        "geometries": 21,
+        "materials": 21,
+        "textures": 2,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            3.408168077468872,
+            1.3942856788635254,
+            -14.930998802185059
+          ],
+          "max": [
+            13.83349895477295,
+            10.50428581237793,
+            -7.468998908996582
+          ]
+        }
+      },
+      {
+        "id": "B3 Rupa Rimba Atelier",
+        "meshes": 16,
+        "triangles": 12012,
+        "geometries": 16,
+        "materials": 16,
+        "textures": 0,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            -13.833500862121582,
+            3.119999647140503,
+            -26.85049819946289
+          ],
+          "max": [
+            -3.696500539779663,
+            9.130000114440918,
+            -16.74949836730957
+          ]
+        }
+      },
+      {
+        "id": "B4 Serambi Corner Shop",
+        "meshes": 18,
+        "triangles": 33926,
+        "geometries": 18,
+        "materials": 18,
+        "textures": 2,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            3.2503671646118164,
+            3.119999885559082,
+            -27.733749389648438
+          ],
+          "max": [
+            13.791200637817383,
+            11.9320068359375,
+            -17.749300003051758
+          ]
+        }
+      }
+    ]
+  },
+  "loaderCache": {
+    "requests": 1,
+    "cachedFiles": 1,
+    "loadedFiles": 1
+  },
+  "frameAllPasses": {
+    "calls": 464,
+    "triangles": 4025965,
+    "geometries": 202,
+    "textures": 16
+  },
+  "measuredDrawPasses": {
+    "method": "observed WebGL draw functions grouped by actual bound framebuffer; no quality changes",
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "calls": 146,
+        "instancedCalls": 42
+      },
+      {
+        "target": "offscreen 1",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "calls": 155,
+        "instancedCalls": 39
+      },
+      {
+        "target": "main canvas",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "calls": 163,
+        "instancedCalls": 41
+      }
+    ],
+    "totalCalls": 464
+  },
+  "sceneGeometry": {
+    "meshes": 213,
+    "triangles": 1446363,
+    "geometries": 204,
+    "materials": 115,
+    "textures": 9,
+    "missingTextures": []
+  },
+  "terrain": {
+    "plots": [
+      {
+        "id": "B1",
+        "x": 27.7,
+        "z": 34,
+        "w": 8.55,
+        "d": 7.2,
+        "floor": 20.042857142857,
+        "samples": 270,
+        "ground": [
+          14.092585668467434,
+          17.358842328539165
+        ],
+        "supportGap": [
+          2.684014814317834,
+          5.950271474389565
+        ],
+        "worst": [
+          23.424999999999997,
+          14.092585668467434,
+          30.9
+        ],
+        "unsafe": 0
+      },
+      {
+        "id": "B2",
+        "x": 44.3,
+        "z": 32.8,
+        "w": 7.9515,
+        "d": 5.904,
+        "floor": 20.234285714286,
+        "samples": 192,
+        "ground": [
+          15.923813605434134,
+          20.025997832674356
+        ],
+        "supportGap": [
+          0.2082878816116427,
+          4.310472108851865
+        ],
+        "worst": [
+          47.82425,
+          15.923813605434134,
+          31.848
+        ],
+        "unsafe": 0
+      },
+      {
+        "id": "B3",
+        "x": 27.7,
+        "z": 22.2,
+        "w": 7.9515,
+        "d": 7.992,
+        "floor": 21.96,
+        "samples": 256,
+        "ground": [
+          14.577012299062753,
+          21.389768308998416
+        ],
+        "supportGap": [
+          0.5702316910015846,
+          7.382987700937248
+        ],
+        "worst": [
+          26.724249999999998,
+          14.577012299062753,
+          25.704
+        ],
+        "unsafe": 0
+      },
+      {
+        "id": "B4",
+        "x": 44.3,
+        "z": 21.4,
+        "w": 8.208,
+        "d": 7.992,
+        "floor": 21.96,
+        "samples": 272,
+        "ground": [
+          15.606116247189068,
+          21.02611337051162
+        ],
+        "supportGap": [
+          0.9338866294883807,
+          6.353883752810933
+        ],
+        "worst": [
+          47.196,
+          15.606116247189068,
+          17.404
+        ],
+        "unsafe": 0
+      }
+    ],
+    "connections": [
+      {
+        "x": 27,
+        "z": 60,
+        "proposedY": 17.15,
+        "terrainY": 15.999527175574778,
+        "gap": 1.1504728244252203,
+        "safe": true
+      },
+      {
+        "x": 30,
+        "z": 52,
+        "proposedY": 17.4,
+        "terrainY": 16.34242016274731,
+        "gap": 1.057579837252689,
+        "safe": true
+      },
+      {
+        "x": 36,
+        "z": 44,
+        "proposedY": 18.6,
+        "terrainY": 17.62759893765958,
+        "gap": 0.9724010623404205,
+        "safe": true
+      },
+      {
+        "x": 36,
+        "z": 8,
+        "proposedY": 22.6,
+        "terrainY": 21.722873484807863,
+        "gap": 0.8771265151921384,
+        "safe": true
+      },
+      {
+        "x": 36,
+        "z": 0,
+        "proposedY": 22.6,
+        "terrainY": 20.734745326008817,
+        "gap": 1.8652546739911848,
+        "safe": true
+      },
+      {
+        "x": 40,
+        "z": -4,
+        "proposedY": 25.2,
+        "terrainY": 22.005901810906586,
+        "gap": 3.1940981890934133,
+        "safe": true
+      }
+    ],
+    "existingVegetationCollidersInPlots": 0,
+    "clashingColliders": [],
+    "terrainUntouched": true,
+    "studyGradingHidden": true,
+    "connectorProposal": {
+      "points": [
+        [
+          27,
+          60,
+          17.15
+        ],
+        [
+          30,
+          52,
+          17.412
+        ]
+      ],
+      "width": 3,
+      "length": 8.54400374531753,
+      "rise": 0.26200000000000045,
+      "longitudinalGrade": 0.030664780565386265,
+      "centreGroundClearance": [
+        1.0661636937382042,
+        1.242232041214649
+      ],
+      "unsafe": 0,
+      "blockedSamples": 0,
+      "downstream": "existing 10 m S2-C arrival path rises 1.2 m; then existing stair street",
+      "status": "isolated connector from provisional skyport deck Y=17.15 (not natural ground); not a built skyport or step-free whole-street claim; rails/supports required"
+    }
+  },
+  "traversal": [
+    {
+      "name": "connector proposal",
+      "mode": "island",
+      "glassMode": "authored transmission",
+      "success": true,
+      "reason": "target reached",
+      "start": [
+        27,
+        17.149999618530273,
+        60
+      ],
+      "end": [
+        35.999861220175,
+        22.613999938964845,
+        9.18250332449884
+      ],
+      "target": [
+        36,
+        9
+      ],
+      "frames": 2098,
+      "simulatedSeconds": 25.470700000000164,
+      "walkedMetres": 53.33164397653736,
+      "maxSupportJump": 1.07509445763489,
+      "maxSupportUp": 1.07509445763489,
+      "maxSupportDown": 1.0717853154562924,
+      "maxAirborneHeight": 1.0692587529562907,
+      "jumps": 0,
+      "landings": 1,
+      "minCameraDistance": 12.849192548447917,
+      "minMeasuredOverheadClearance": "no overhead hit within 30 m",
+      "trace": [
+        {
+          "frame": 30,
+          "position": [
+            27.234706382650177,
+            17.170497390458653,
+            59.37411631293288
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.170497390458653
+        },
+        {
+          "frame": 60,
+          "position": [
+            27.512926850912482,
+            17.19479540758053,
+            58.63219506423336
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.19479540758053
+        },
+        {
+          "frame": 90,
+          "position": [
+            27.79960950674903,
+            17.219832458677338,
+            57.86770798200255
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.219832458677338
+        },
+        {
+          "frame": 120,
+          "position": [
+            28.119107243418473,
+            17.247735371516505,
+            57.015714017550714
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.247735371516505
+        },
+        {
+          "frame": 150,
+          "position": [
+            28.446863419910013,
+            17.27635952428978,
+            56.14169754690659
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.27635952428978
+        },
+        {
+          "frame": 180,
+          "position": [
+            28.795044447057712,
+            17.30676745441795,
+            55.21321480784605
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.30676745441795
+        },
+        {
+          "frame": 210,
+          "position": [
+            29.12272688768567,
+            17.33538516756697,
+            54.33939496617151
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.33538516756697
+        },
+        {
+          "frame": 240,
+          "position": [
+            29.438242901062594,
+            17.362940341861446,
+            53.49801893049974
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.362940341861446
+        },
+        {
+          "frame": 270,
+          "position": [
+            29.716743481227265,
+            17.387262822186344,
+            52.75535071672729
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.387262822186344
+        },
+        {
+          "frame": 300,
+          "position": [
+            30.0074358707035,
+            17.411104206547286,
+            52.03401007781783
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.411104206547286
+        },
+        {
+          "frame": 330,
+          "position": [
+            30.46918239059155,
+            17.50352155669417,
+            51.38985612349349
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.50352155669417
+        },
+        {
+          "frame": 360,
+          "position": [
+            30.90243873279827,
+            17.59038452944104,
+            50.81076985630086
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.59038452944104
+        },
+        {
+          "frame": 390,
+          "position": [
+            31.321967314880556,
+            17.67446370059195,
+            50.25024195953463
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.67446370059195
+        },
+        {
+          "frame": 420,
+          "position": [
+            31.755339013390465,
+            17.76131680395002,
+            49.671221178447944
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.76131680395002
+        },
+        {
+          "frame": 450,
+          "position": [
+            32.18178987105147,
+            17.84678292615943,
+            49.10144725656334
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.84678292615943
+        },
+        {
+          "frame": 480,
+          "position": [
+            32.6222082843557,
+            17.935048285365305,
+            48.51301151561786
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 17.935048285365305
+        },
+        {
+          "frame": 510,
+          "position": [
+            33.09056180845025,
+            18.02891217735138,
+            47.88725213624893
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.02891217735138
+        },
+        {
+          "frame": 540,
+          "position": [
+            33.54519944481611,
+            18.12002724736552,
+            47.279818327098
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.12002724736552
+        },
+        {
+          "frame": 570,
+          "position": [
+            34.026388019812785,
+            18.216463460431616,
+            46.636910248993026
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.216463460431616
+        },
+        {
+          "frame": 600,
+          "position": [
+            34.53765088074677,
+            18.318926948895786,
+            45.953820416006494
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.318926948895786
+        },
+        {
+          "frame": 630,
+          "position": [
+            35.06892132102818,
+            18.425400183813018,
+            45.24399878793136
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.425400183813018
+        },
+        {
+          "frame": 660,
+          "position": [
+            35.64209442748999,
+            18.540271243702776,
+            44.478191702217934
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.540271243702776
+        },
+        {
+          "frame": 690,
+          "position": [
+            35.97089594421993,
+            18.649862234585115,
+            43.62137764807985
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.649862234585115
+        },
+        {
+          "frame": 720,
+          "position": [
+            35.974410936253534,
+            18.747778848765137,
+            42.64221151711703
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.747778848765137
+        },
+        {
+          "frame": 750,
+          "position": [
+            35.975020922265664,
+            18.827116616552328,
+            41.84883386416126
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.827116616552328
+        },
+        {
+          "frame": 780,
+          "position": [
+            35.97558882650097,
+            18.90179257530521,
+            41.102074095696096
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.90179257530521
+        },
+        {
+          "frame": 810,
+          "position": [
+            35.97615620166252,
+            18.976405553908354,
+            40.355944311571555
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 18.976405553908354
+        },
+        {
+          "frame": 840,
+          "position": [
+            35.97667982156519,
+            19.01200000047684,
+            39.66735451065949
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 19.01200000047684
+        },
+        {
+          "frame": 870,
+          "position": [
+            35.97721206466329,
+            19.3596190571785,
+            38.96742471302461
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 19.3596190571785
+        },
+        {
+          "frame": 900,
+          "position": [
+            35.97777129518516,
+            19.707238054275514,
+            38.23200492565059
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 19.707238054275514
+        },
+        {
+          "frame": 930,
+          "position": [
+            35.97830337859429,
+            20.054857110977174,
+            37.532285127954935
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977174
+        },
+        {
+          "frame": 960,
+          "position": [
+            35.97884456427064,
+            20.054857110977174,
+            36.82059533372007
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977174
+        },
+        {
+          "frame": 990,
+          "position": [
+            35.97940347541466,
+            20.054857110977174,
+            36.08559554622463
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977174
+        },
+        {
+          "frame": 1020,
+          "position": [
+            35.98003217060724,
+            20.054857110977174,
+            35.25882578526193
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977174
+        },
+        {
+          "frame": 1050,
+          "position": [
+            35.98069871206872,
+            20.054857110977174,
+            34.382286038688804
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977174
+        },
+        {
+          "frame": 1080,
+          "position": [
+            35.98136413570793,
+            20.054857110977174,
+            33.50721629169064
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977174
+        },
+        {
+          "frame": 1110,
+          "position": [
+            35.98207379317194,
+            20.054857110977174,
+            32.573976561510705
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977174
+        },
+        {
+          "frame": 1140,
+          "position": [
+            35.98281906126029,
+            20.042857146263124,
+            31.59390684487036
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.042857146263124
+        },
+        {
+          "frame": 1170,
+          "position": [
+            35.98352744121311,
+            20.05485711097717,
+            30.662347114204707
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.05485711097717
+        },
+        {
+          "frame": 1200,
+          "position": [
+            35.9842208104095,
+            20.054857110977178,
+            29.750527377831794
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.054857110977178
+        },
+        {
+          "frame": 1230,
+          "position": [
+            35.98485062342437,
+            20.403428530693056,
+            28.922287617294092
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.403428530693056
+        },
+        {
+          "frame": 1260,
+          "position": [
+            35.98545392808211,
+            20.751999950408937,
+            28.12890784667758
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 20.751999950408937
+        },
+        {
+          "frame": 1290,
+          "position": [
+            35.986083581408096,
+            21.274857139587404,
+            27.300878086079162
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.274857139587404
+        },
+        {
+          "frame": 1320,
+          "position": [
+            35.98674038184676,
+            21.623428678512575,
+            26.437148335802384
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.623428678512575
+        },
+        {
+          "frame": 1350,
+          "position": [
+            35.98745003931078,
+            21.971999979019166,
+            25.503908605622463
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.971999979019166
+        },
+        {
+          "frame": 1380,
+          "position": [
+            35.9881673618419,
+            21.971999979019166,
+            24.5605888783569
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.971999979019166
+        },
+        {
+          "frame": 1410,
+          "position": [
+            35.98893913828732,
+            21.971999979019166,
+            23.54565917179533
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.971999979019166
+        },
+        {
+          "frame": 1440,
+          "position": [
+            35.98971235193285,
+            21.971999979019166,
+            22.528839465780212
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.971999979019166
+        },
+        {
+          "frame": 1470,
+          "position": [
+            35.99051079642431,
+            21.971999979019166,
+            21.47883976935816
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.971999979019166
+        },
+        {
+          "frame": 1500,
+          "position": [
+            35.99127378998036,
+            21.971999979019166,
+            20.47546005945724
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.971999979019166
+        },
+        {
+          "frame": 1530,
+          "position": [
+            35.99202768126922,
+            21.97199997901917,
+            19.484050346095547
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.97199997901917
+        },
+        {
+          "frame": 1560,
+          "position": [
+            35.992746281311526,
+            21.959999895095827,
+            18.5390506193157
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.959999895095827
+        },
+        {
+          "frame": 1590,
+          "position": [
+            35.99348276651046,
+            21.959999895095823,
+            17.57053089933599
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.959999895095823
+        },
+        {
+          "frame": 1620,
+          "position": [
+            35.993908497113345,
+            21.959999895095827,
+            17.01067106120375
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.959999895095827
+        },
+        {
+          "frame": 1650,
+          "position": [
+            35.994316661937376,
+            21.959999895095827,
+            16.47391121639279
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.959999895095827
+        },
+        {
+          "frame": 1680,
+          "position": [
+            35.994742392540225,
+            21.959999895095827,
+            15.914051378260561
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 21.959999895095827
+        },
+        {
+          "frame": 1710,
+          "position": [
+            35.99517722541027,
+            22.119999980926515,
+            15.342221543589117
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.119999980926515
+        },
+        {
+          "frame": 1740,
+          "position": [
+            35.99555888187721,
+            22.280000066757204,
+            14.840321688699381
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.280000066757204
+        },
+        {
+          "frame": 1770,
+          "position": [
+            35.995931116699126,
+            22.439999914169313,
+            14.350811830227421
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.439999914169313
+        },
+        {
+          "frame": 1800,
+          "position": [
+            35.996286105120035,
+            22.613999938964845,
+            13.883981965198181
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 1830,
+          "position": [
+            35.99664093385205,
+            22.613999938964845,
+            13.417362100108223
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 1860,
+          "position": [
+            35.99699576258406,
+            22.613999938964845,
+            12.950742235018273
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 1890,
+          "position": [
+            35.9973493138049,
+            22.613999938964845,
+            12.485802369442588
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 1920,
+          "position": [
+            35.99769695653647,
+            22.613999938964845,
+            12.02863250162043
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 1950,
+          "position": [
+            35.99805146589067,
+            22.613999938964845,
+            11.562432636409044
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 1980,
+          "position": [
+            35.99841523720098,
+            22.613999938964845,
+            11.084052774719162
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 2010,
+          "position": [
+            35.99876128304358,
+            22.61399993896485,
+            10.628982906289847
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.61399993896485
+        },
+        {
+          "frame": 2040,
+          "position": [
+            35.999133837243285,
+            22.613999938964845,
+            10.139053047939324
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        },
+        {
+          "frame": 2070,
+          "position": [
+            35.999506391443,
+            22.613999938964845,
+            9.649123189588797
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 22.613999938964845
+        }
+      ],
+      "controller": {
+        "gravity": 16.5,
+        "launchSpeed": 6.2,
+        "launchDelay": 0.13,
+        "takeoffDuration": 0.23,
+        "landingDuration": 0.22,
+        "maxStep": 0.42,
+        "height": 1.9,
+        "walkSpeed": 2.1,
+        "runSpeed": 4.6,
+        "walkClipSpeed": 1.2,
+        "runClipSpeed": 2.695
+      },
+      "proposal": true,
+      "collision": "existing slide/blocked; building footprint proxies and original island tree colliders",
+      "support": "upward triangles of exported WalkableStreet; actual terrain in island mode; proposal ribbon included only when explicitly enabled"
+    }
+  ],
+  "performance": null,
+  "activeWalk": null,
+  "elevationReferences": false,
+  "errors": []
+}

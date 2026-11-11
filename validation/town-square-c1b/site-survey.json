@@ -1,0 +1,80 @@
+{
+  "courtGap": {
+    "min": 0.18091653352318815,
+    "max": 1.9839197523486796,
+    "median": 0.4773264616899162
+  },
+  "trail": {
+    "samples": 1253,
+    "minGap": 0.01253191772940454,
+    "maxGap": 0.13990232621681997,
+    "buriedSamples": 0
+  },
+  "square": {
+    "enabled": true,
+    "metrics": {
+      "meshes": 14,
+      "triangles": 19310,
+      "geometries": 14,
+      "materials": 12,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "clearances": [
+      {
+        "kind": "Living landscape / fern",
+        "instance": 267,
+        "from": [
+          25.019826889038086,
+          21.243316650390625,
+          8.219988822937012
+        ],
+        "to": [
+          17,
+          18.474083426132246,
+          4.8
+        ]
+      },
+      {
+        "kind": "groundcover",
+        "instance": 15,
+        "from": [
+          25,
+          21.176729202270508,
+          8.946150779724121
+        ],
+        "to": [
+          17,
+          19.165664443113158,
+          7
+        ]
+      },
+      {
+        "kind": "groundcover",
+        "instance": 15,
+        "from": [
+          25.450000762939453,
+          21.244525909423828,
+          9.096150398254395
+        ],
+        "to": [
+          17,
+          20.340424901147475,
+          9.2
+        ]
+      }
+    ],
+    "colliders": 252,
+    "floorY": 21.8,
+    "bronze": [
+      {
+        "name": "C1 / weathered bronze",
+        "metalness": 0.28,
+        "roughness": 0.42,
+        "emissiveIntensity": 0.14
+      }
+    ],
+    "grassGeometryCopies": 0
+  },
+  "scene": "adcf8b7f-0942-4cca-b8c9-9c696a3a4196"
+}

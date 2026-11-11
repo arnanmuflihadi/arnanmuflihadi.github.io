@@ -1,0 +1,35 @@
+{
+  "phase": "S2-A",
+  "components": [
+    {
+      "path": "source-assets/r0b1/modular-buildings/Models/GLB format/window-brown-detailed.glb",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/modular-buildings",
+      "license": "CC0-1.0",
+      "bytes": 4324,
+      "sha256": "84d1aec5f074a08609eb46b2f064b19c5c8949a19fbe2ec7915665376111b6f2"
+    },
+    {
+      "path": "source-assets/r0b1/modular-buildings/License.txt",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/modular-buildings",
+      "license": "CC0-1.0",
+      "bytes": 720,
+      "sha256": "84002607f647b608c2861d8413bd9136a36d4063d74bf1af79347e3a012abeb5"
+    },
+    {
+      "path": "assets/game/scenery/fern.glb",
+      "creator": "Quaternius",
+      "source": "https://quaternius.com/packs/stylizednaturemegakit.html",
+      "license": "CC0-1.0",
+      "bytes": 104876,
+      "sha256": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88"
+    },
+    {
+      "path": "assets/game/scenery/stylized-nature-megakit-LICENSE.txt",
+      "bytes": 852,
+      "sha256": "120710e542c3ebaf83856c4eb55b4a1e680593b39302eba7fdc5d942dfe78c58"
+    }
+  ],
+  "new_downloads": 0
+}

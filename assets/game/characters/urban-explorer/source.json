@@ -1,0 +1,27 @@
+{
+  "source": "https://quaternius.com/packs/ultimatemodularcharacters.html",
+  "sourceFile": "Individual Characters/glTF/Adventurer.gltf",
+  "sourceDownload": "https://drive.google.com/uc?export=download&id=1fzSq1Rr037f7QkfXPWEAzmbLMNx-FpPA",
+  "author": "Quaternius",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "sourceSha256": "21f7a61afb6bd6cef6961490c367594e3c2fc01ec1f041662131172ce763063e",
+  "outputSha256": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+  "changes": [
+    "Keep matching Idle_Neutral, Walk and Run; rename idle to Idle",
+    "Remove horizontal Root translation to produce in-place locomotion",
+    "Recolor clothing, boots, hair and backpack; preserve skin, geometry, bind poses and weights",
+    "Set nonmetallic rough materials; deduplicate and prune unused animation data"
+  ],
+  "animations": [
+    "Idle",
+    "Run",
+    "Walk"
+  ],
+  "skins": [
+    {
+      "name": "CharacterArmature",
+      "joints": 62
+    }
+  ]
+}

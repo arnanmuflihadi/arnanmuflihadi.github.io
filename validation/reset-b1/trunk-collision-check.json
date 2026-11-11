@@ -1,0 +1,341 @@
+{
+  "B0": {
+    "actualColliderIntersections": [
+      {
+        "tree": 3,
+        "height": 12.400412706379866,
+        "plotHits": [
+          "B3"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B3"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 8,
+        "height": 13.36444170052208,
+        "plotHits": [
+          "B3"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B3"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 11,
+        "height": 13.822806718863742,
+        "plotHits": [
+          "B3"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B3"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 13,
+        "height": 13.932437428283036,
+        "plotHits": [
+          "guild"
+        ],
+        "publicHits": [
+          "square",
+          "guildfore"
+        ],
+        "modelEnvelopeHits": [],
+        "arrival": false
+      },
+      {
+        "tree": 16,
+        "height": 11.186961376085213,
+        "plotHits": [
+          "B3"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B3"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 48,
+        "height": 8.06303453734867,
+        "plotHits": [
+          "guild"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [],
+        "arrival": false
+      },
+      {
+        "tree": 53,
+        "height": 9.249192767406965,
+        "plotHits": [
+          "guild"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [],
+        "arrival": false
+      },
+      {
+        "tree": 54,
+        "height": 5.789388702745484,
+        "plotHits": [
+          "B2"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B2"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 55,
+        "height": 6.300333142710249,
+        "plotHits": [
+          "B2"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B2"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 57,
+        "height": 7.173531577084885,
+        "plotHits": [
+          "B2"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B2"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 58,
+        "height": 7.251867459063828,
+        "plotHits": [],
+        "publicHits": [],
+        "modelEnvelopeHits": [],
+        "arrival": true
+      },
+      {
+        "tree": 60,
+        "height": 6.91399314834085,
+        "plotHits": [],
+        "publicHits": [
+          "market"
+        ],
+        "modelEnvelopeHits": [
+          "B1"
+        ],
+        "arrival": false
+      }
+    ],
+    "plotIds": [
+      3,
+      8,
+      11,
+      13,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57
+    ],
+    "programmeIds": [
+      3,
+      8,
+      11,
+      13,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57,
+      60
+    ],
+    "totalIncludingModelOverhangs": [
+      3,
+      8,
+      11,
+      13,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57,
+      58,
+      60
+    ],
+    "tallIds": [
+      3,
+      8,
+      11,
+      13,
+      16
+    ]
+  },
+  "B1": {
+    "actualColliderIntersections": [
+      {
+        "tree": 3,
+        "height": 12.400412706379866,
+        "plotHits": [],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B3"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 8,
+        "height": 13.36444170052208,
+        "plotHits": [
+          "B3"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B3"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 13,
+        "height": 13.932437428283036,
+        "plotHits": [],
+        "publicHits": [
+          "square"
+        ],
+        "modelEnvelopeHits": [],
+        "arrival": false
+      },
+      {
+        "tree": 16,
+        "height": 11.186961376085213,
+        "plotHits": [
+          "B3"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B3"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 48,
+        "height": 8.06303453734867,
+        "plotHits": [
+          "guild"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [],
+        "arrival": false
+      },
+      {
+        "tree": 53,
+        "height": 9.249192767406965,
+        "plotHits": [
+          "guild"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [],
+        "arrival": false
+      },
+      {
+        "tree": 54,
+        "height": 5.789388702745484,
+        "plotHits": [
+          "B2"
+        ],
+        "publicHits": [
+          "market"
+        ],
+        "modelEnvelopeHits": [
+          "B2"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 55,
+        "height": 6.300333142710249,
+        "plotHits": [],
+        "publicHits": [
+          "market"
+        ],
+        "modelEnvelopeHits": [
+          "B2"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 57,
+        "height": 7.173531577084885,
+        "plotHits": [
+          "B2"
+        ],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B2"
+        ],
+        "arrival": false
+      },
+      {
+        "tree": 60,
+        "height": 6.91399314834085,
+        "plotHits": [],
+        "publicHits": [],
+        "modelEnvelopeHits": [
+          "B1"
+        ],
+        "arrival": false
+      }
+    ],
+    "plotIds": [
+      8,
+      16,
+      48,
+      53,
+      54,
+      57
+    ],
+    "programmeIds": [
+      8,
+      13,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57
+    ],
+    "totalIncludingModelOverhangs": [
+      3,
+      8,
+      13,
+      16,
+      48,
+      53,
+      54,
+      55,
+      57,
+      60
+    ],
+    "tallIds": [
+      3,
+      8,
+      13,
+      16
+    ]
+  }
+}

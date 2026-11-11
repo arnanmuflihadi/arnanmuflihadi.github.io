@@ -1,0 +1,400 @@
+{
+  "phase": "S2-F",
+  "status": "technical integration validated; human visual review pending",
+  "source_glb_bytes": 11084692,
+  "measured_network_transfer_bytes": 11085892,
+  "measured_encoded_bytes": 11084692,
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "viewport": [
+      1354,
+      1130
+    ],
+    "drawingBuffer": [
+      1354,
+      1130
+    ],
+    "dpr": 1,
+    "exposure": 0.96,
+    "shadows": true,
+    "shadowType": 2,
+    "antialias": true,
+    "near": 0.12,
+    "far": 1600,
+    "glass": "unchanged authored transmission"
+  },
+  "benchmarks": [
+    {
+      "enabled": true,
+      "frames": 1144,
+      "medianMs": 11.099999999976717,
+      "p95Ms": 16.70000000001164,
+      "renderCpuMedianMs": 3.5,
+      "renderCpuP95Ms": 4.799999982118607,
+      "drawCallRange": [
+        280,
+        575
+      ],
+      "triangleRange": [
+        2587052,
+        4142913
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": false,
+      "frames": 2138,
+      "medianMs": 5.5,
+      "p95Ms": 6.599999999976717,
+      "renderCpuMedianMs": 0.5999999940395355,
+      "renderCpuP95Ms": 0.7000000178813934,
+      "drawCallRange": [
+        135,
+        144
+      ],
+      "triangleRange": [
+        2332150,
+        2359134
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    }
+  ],
+  "traversal": [
+    {
+      "name": "main",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 5033,
+      "seconds": 33.12230000000045,
+      "distanceMetres": 69.49457977012239,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        36.00000000000056,
+        20.760121574194187,
+        0.12328536484810014
+      ],
+      "maxFootRise": 0.174285888671875,
+      "maxFootDrop": 0.16902422904968262,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5693144170668791,
+      "frameTiming": {
+        "medianMs": 5.599999999998545,
+        "p95Ms": 11.19999999999709
+      },
+      "allPassDraws": [
+        249,
+        589
+      ],
+      "allPassTriangles": [
+        2501946,
+        4152177
+      ]
+    },
+    {
+      "name": "ramp",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 1459,
+      "seconds": 8.105399999999896,
+      "distanceMetres": 16.816659871359178,
+      "start": [
+        36,
+        22.613999938964845,
+        10
+      ],
+      "end": [
+        35.87776999286249,
+        20.778216064135492,
+        0.028138236810480496
+      ],
+      "maxFootRise": 7.105427357601002e-15,
+      "maxFootDrop": 0.09943811898003219,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5703779276631735,
+      "frameTiming": {
+        "medianMs": 5.5,
+        "p95Ms": 6.5
+      },
+      "allPassDraws": [
+        257,
+        341
+      ],
+      "allPassTriangles": [
+        2491797,
+        2673806
+      ]
+    },
+    {
+      "name": "return",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 4232,
+      "seconds": 33.122800000000254,
+      "distanceMetres": 69.50388895546504,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        24.072752273030353,
+        14.982902166149877,
+        65.89939051874228
+      ],
+      "maxFootRise": 0.16902422904968262,
+      "maxFootDrop": 0.17428588867187855,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.575488565874154,
+      "frameTiming": {
+        "medianMs": 5.7000000000116415,
+        "p95Ms": 11.39999999999418
+      },
+      "allPassDraws": [
+        247,
+        563
+      ],
+      "allPassTriangles": [
+        2458091,
+        4124449
+      ]
+    },
+    {
+      "name": "ramp return",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 1255,
+      "seconds": 8.10539999999993,
+      "distanceMetres": 16.82984271815697,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        35.88358190946102,
+        22.613999938964845,
+        9.962905704598912
+      ],
+      "maxFootRise": 0.10061892406924144,
+      "maxFootDrop": 7.105427357601002e-15,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5699207290224595,
+      "frameTiming": {
+        "medianMs": 5.600000000005821,
+        "p95Ms": 11.10000000000582
+      },
+      "allPassDraws": [
+        264,
+        559
+      ],
+      "allPassTriangles": [
+        2537960,
+        4112593
+      ]
+    },
+    {
+      "name": "jump",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 786,
+      "seconds": 8.588599999999929,
+      "distanceMetres": 17.88524460933997,
+      "start": [
+        36,
+        19.883047676086427,
+        38
+      ],
+      "end": [
+        36,
+        21.974000072479246,
+        20.11475539066003
+      ],
+      "maxFootRise": 0.17428588867187145,
+      "maxFootDrop": 0.07248022749978134,
+      "maxAirHeight": 1.1648482800000046,
+      "supportEvents": [],
+      "jumps": 1,
+      "landings": 1,
+      "minCameraDistance": 11.272359662939033,
+      "frameTiming": {
+        "medianMs": 11.099999999976717,
+        "p95Ms": 12.200000000011642
+      },
+      "allPassDraws": [
+        565,
+        571
+      ],
+      "allPassTriangles": [
+        4105009,
+        4143153
+      ]
+    },
+    {
+      "name": "edge",
+      "success": true,
+      "reason": "guard stopped lateral walk",
+      "frames": 476,
+      "seconds": 4.283299999999998,
+      "distanceMetres": 4.643306430550993,
+      "start": [
+        36,
+        19.361619031429292,
+        39
+      ],
+      "end": [
+        40.64330643055099,
+        19.3596190571785,
+        39
+      ],
+      "maxFootRise": 0.012000024318695068,
+      "maxFootDrop": 0.012000024318695068,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 11.497917098754526,
+      "frameTiming": {
+        "medianMs": 11,
+        "p95Ms": 11.299999999988358
+      },
+      "allPassDraws": [
+        511,
+        515
+      ],
+      "allPassTriangles": [
+        3981513,
+        3992217
+      ]
+    }
+  ],
+  "asset_inventory": {
+    "market": {
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    },
+    "interfaces": {
+      "meshes": 6,
+      "triangles": 8404,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "foundations": {
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "support": {
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    }
+  },
+  "cache": {
+    "requests": 6,
+    "cachedFiles": 6,
+    "loadedFiles": 6
+  },
+  "errors": [],
+  "warnings": [],
+  "render_passes_on": {
+    "view": "market",
+    "enabled": true,
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "draws": 183
+      },
+      {
+        "target": "offscreen 1",
+        "viewport": [
+          0,
+          0,
+          1354,
+          1130
+        ],
+        "draws": 188
+      },
+      {
+        "target": "canvas",
+        "viewport": [
+          0,
+          0,
+          1354,
+          1130
+        ],
+        "draws": 198
+      }
+    ]
+  },
+  "render_passes_off": {
+    "view": "market",
+    "enabled": false,
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "draws": 65
+      },
+      {
+        "target": "canvas",
+        "viewport": [
+          0,
+          0,
+          1354,
+          1130
+        ],
+        "draws": 76
+      }
+    ]
+  },
+  "regression": {
+    "focused_pass": 52,
+    "asset_navigation_pass": 28,
+    "environment_pass": 2,
+    "total_pass": 82,
+    "fail": 0,
+    "static_audit": "58 inherited findings; audited source files unchanged"
+  }
+}

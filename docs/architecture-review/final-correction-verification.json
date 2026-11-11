@@ -1,0 +1,288 @@
+{
+  "phase": "1.5 focused final visual correction",
+  "date": "2026-11-01",
+  "reviewStatus": {
+    "previousVisualReview": "not approved",
+    "currentVisualApproval": "pending human review",
+    "score": null,
+    "phase2Started": false
+  },
+  "scopedTests": {
+    "command": "node --test tests/architecture-design-system.test.mjs tests/asset-foundation.test.mjs tests/atlas-character.test.mjs",
+    "passed": 16,
+    "failed": 0,
+    "durationMs": 691.822542,
+    "assertionsModified": false,
+    "output": "docs/architecture-review/final-scoped-tests.txt"
+  },
+  "preservedSourceLibrary": {
+    "path": "assets/game/scenery/architecture-library.glb",
+    "sha256": "776f529b5b779085bce3bb4c22e9ab150f35a422f433a509747419dd524c87e2"
+  },
+  "retainedLicenses": [
+    {
+      "path": "assets/game/scenery/downtown-city-megakit-LICENSE.txt",
+      "sha256": "afac5819301671301c41e90402d26e4ade5e459ad58fdf77f142147410862f1f",
+      "matchesVerifiedArchiveNotice": true
+    },
+    {
+      "path": "assets/game/scenery/stylized-nature-megakit-LICENSE.txt",
+      "sha256": "120710e542c3ebaf83856c4eb55b4a1e680593b39302eba7fdc5d942dfe78c58",
+      "matchesVerifiedArchiveNotice": true
+    }
+  ],
+  "sourceArchiveVerification": "assets/game/scenery/verification.json",
+  "sourceArchivesModified": false,
+  "generator": {
+    "path": "assets/js/urban-atlas/architecture-design-system.js",
+    "sha256": "17d18deb5e304380493ba962bbf80e61e0ae2bc5073ec2223161ceb285ef7b72"
+  },
+  "collisionComparison": {
+    "reference": "docs/architecture-review/pre-correction-colliders.json",
+    "tolerance": 1e-12,
+    "variants": [
+      {
+        "variant": "office",
+        "bodies": 5,
+        "maxDelta": 0,
+        "clearanceAbovePorch": 3.06
+      },
+      {
+        "variant": "commercial",
+        "bodies": 6,
+        "maxDelta": 0,
+        "clearanceAbovePorch": 2.86
+      },
+      {
+        "variant": "neighborhood",
+        "bodies": 5,
+        "maxDelta": 0,
+        "clearanceAbovePorch": 2.8
+      }
+    ]
+  },
+  "captures": [
+    {
+      "view": "office-entrance",
+      "path": "assets/img/architecture-review/final-office-entrance.jpg",
+      "bytes": 71799,
+      "camera": {
+        "aspect": 1.7777777777777777,
+        "eyeHeight": 1.65,
+        "fov": 40,
+        "position": [
+          -10.8,
+          1.81,
+          10.8
+        ],
+        "quaternion": [
+          -0.007352336616081678,
+          0.1260818850167514,
+          0.0009344796313703398,
+          0.9919921512616544
+        ]
+      }
+    },
+    {
+      "view": "commercial-arcade",
+      "path": "assets/img/architecture-review/final-commercial-arcade.jpg",
+      "bytes": 66754,
+      "camera": {
+        "aspect": 1.7777777777777777,
+        "eyeHeight": 1.65,
+        "fov": 40,
+        "position": [
+          6.6,
+          1.81,
+          11
+        ],
+        "quaternion": [
+          -0.007472652160880691,
+          0.12331268512802264,
+          0.0009285864285203824,
+          0.9923392962507552
+        ]
+      }
+    },
+    {
+      "view": "neighborhood-frontage",
+      "path": "assets/img/architecture-review/final-neighborhood-frontage.jpg",
+      "bytes": 76206,
+      "camera": {
+        "aspect": 1.7777777777777777,
+        "eyeHeight": 1.65,
+        "fov": 40,
+        "position": [
+          16.2,
+          1.81,
+          12
+        ],
+        "quaternion": [
+          0.06768895652498313,
+          0.09495489170877867,
+          -0.006471686334835663,
+          0.9931565289425008
+        ]
+      }
+    },
+    {
+      "view": "sidewalk-interface",
+      "path": "assets/img/architecture-review/final-sidewalk-interface.jpg",
+      "bytes": 44623,
+      "camera": {
+        "aspect": 1.7777777777777777,
+        "eyeHeight": 1.65,
+        "fov": 40,
+        "position": [
+          0.4,
+          1.81,
+          7.8
+        ],
+        "quaternion": [
+          -0.09205480450462784,
+          -0.04196163196829803,
+          -0.003882719906174313,
+          0.994861829047784
+        ]
+      }
+    },
+    {
+      "view": "pedestrian-composition",
+      "path": "assets/img/architecture-review/final-pedestrian-composition.jpg",
+      "bytes": 93935,
+      "camera": {
+        "aspect": 1.7777777777777777,
+        "eyeHeight": 1.65,
+        "fov": 40,
+        "position": [
+          4,
+          1.81,
+          43
+        ],
+        "quaternion": [
+          0.0969037213317536,
+          0.07931382032712568,
+          -0.007747019224072323,
+          0.9920982664989976
+        ]
+      }
+    }
+  ],
+  "lighting": {
+    "exposure": 1,
+    "fogFar": 200,
+    "fogNear": 90,
+    "hemisphere": 2.05,
+    "id": "neutral-stylized-daytime",
+    "normalBias": 0.012,
+    "postprocessing": false,
+    "shadowMap": 2048,
+    "sun": 2.15
+  },
+  "architecture": {
+    "triangles": 78449,
+    "importedTriangles": 71321,
+    "authoredTriangles": 7128,
+    "authoredVisibleInstances": 359,
+    "meshBatches": 108,
+    "referencedTextures": 32,
+    "missingTextures": [],
+    "cachedGLBs": 4,
+    "prototypeCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "counts": {
+      "aircon": 3,
+      "fern": 24,
+      "office": 1,
+      "shop": 2
+    }
+  },
+  "resources": {
+    "architectureTriangles": -564,
+    "authoredTriangles": 538,
+    "meshBatches": 16,
+    "instancedDetailBatches": 1,
+    "sidewalkJointTriangles": 252,
+    "sidewalkJointBatches": 1,
+    "proceduralTextureBaseBytes": 44032,
+    "proceduralTextureBaseByteIncrease": 35840,
+    "newShadowMaps": 0,
+    "newLights": 0,
+    "postprocessing": false,
+    "continuousAnimationLoop": false,
+    "glbPayloadBytes": 6659124,
+    "galleryJpegBytes": 879663,
+    "newFiveCaptureBytes": 353317,
+    "frameRateBenchmarkPerformed": false,
+    "foundationSupportTriangles": 36,
+    "foundationSupportBatches": 1
+  },
+  "pedestrianInspection": {
+    "office": "Old source pediment and opaque entrance overlaps cleared on enhanced instance; double doors and transom visible",
+    "commercial": "Stoop fragments cleared locally; two tenant door/display bays and clean central pier",
+    "neighborhood": "Separate entrance leaf; brown timber, sage plaster and fired-clay roof remain distinct",
+    "sidewalk": "20 mm porch rise; columns grounded; separated paver/support surfaces and no self-shadow striping",
+    "composition": "All three complete silhouettes visible; neutral shared daylight; no obvious clipping or floating parts in the five captures",
+    "humanVisualApproval": false
+  },
+  "geometryAttributeValidation": {
+    "method": "Decoded BufferAttribute component getters, including quantized/interleaved source attributes; source-derived and authored meshes",
+    "variants": [
+      {
+        "id": "office",
+        "meshes": 45,
+        "triangles": 51430,
+        "nonfiniteComponents": 0,
+        "emptyIndices": 0,
+        "nonpositiveTransformDeterminants": 0
+      },
+      {
+        "id": "commercial",
+        "meshes": 39,
+        "triangles": 24139,
+        "nonfiniteComponents": 0,
+        "emptyIndices": 0,
+        "nonpositiveTransformDeterminants": 0
+      },
+      {
+        "id": "neighborhood",
+        "meshes": 24,
+        "triangles": 2880,
+        "nonfiniteComponents": 0,
+        "emptyIndices": 0,
+        "nonpositiveTransformDeterminants": 0
+      }
+    ]
+  },
+  "browserChecks": "docs/architecture-review/final-browser-checks.json",
+  "groundAlignment": {
+    "foundationInstances": 3,
+    "foundationTop": 0.16,
+    "sidewalkTop": 0.16,
+    "terrainTop": 0
+  },
+  "modules": {
+    "showcase": {
+      "path": "assets/js/urban-atlas/architecture-showcase.js",
+      "sha256": "bc9477326f02f38535725389dfb068ad1fa23d9ed56d193b4d3e854c847cc2fe"
+    },
+    "daylight": {
+      "path": "assets/js/urban-atlas/showcase-daylight.js",
+      "sha256": "cac9ed6117b8a062f4edd518ea999512ce40087114bb45ed26b3d444da7f48e7"
+    }
+  },
+  "finalChecks": {
+    "sourceAndGeneratorHashMatch": true,
+    "calibratedCaptureChecks": true,
+    "whitespaceCheck": {
+      "files": 7,
+      "issues": 0
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "dimensions": {
+    "width": 131,
+    "depth": 142.64583333333334,
+    "surfaceMin": 7.416465881731774,
+    "surfaceMax": 28,
+    "undersideMin": -57
+  },
+  "assets": [
+    {
+      "file": "assets/game/scenery/architecture-library.glb",
+      "bytes": 5380248,
+      "sha256": "776f529b5b779085bce3bb4c22e9ab150f35a422f433a509747419dd524c87e2"
+    },
+    {
+      "file": "assets/game/scenery/canopy-tree.glb",
+      "bytes": 719224,
+      "sha256": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b"
+    },
+    {
+      "file": "assets/game/scenery/fern.glb",
+      "bytes": 104876,
+      "sha256": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88"
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/urban-explorer.glb",
+      "bytes": 1581480,
+      "sha256": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1"
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/jump-animations.glb",
+      "bytes": 267260,
+      "sha256": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5"
+    },
+    {
+      "file": "assets/game/phase3/city-resident.glb",
+      "bytes": 1186388,
+      "sha256": "8a53aaf80ca07e16e215f96a999d0d9909d307b5c1805b2f863e967f06245e05"
+    }
+  ],
+  "totalGlbBytes": 9239476,
+  "routeLengths": [
+    {
+      "id": "arrival",
+      "lengthMetres": 32.01298040607513
+    },
+    {
+      "id": "city",
+      "lengthMetres": 51.31929808841627
+    },
+    {
+      "id": "highlands",
+      "lengthMetres": 54.18857158103297
+    },
+    {
+      "id": "overlook",
+      "lengthMetres": 43.087551069594056
+    },
+    {
+      "id": "return",
+      "lengthMetres": 31.66031755977622
+    },
+    {
+      "id": "market-east",
+      "lengthMetres": 11.85176252669931
+    },
+    {
+      "id": "market-north",
+      "lengthMetres": 11.297702123774947
+    },
+    {
+      "id": "market-south",
+      "lengthMetres": 23.63657250649893
+    }
+  ],
+  "walkingSpeed": 2.1,
+  "runningSpeed": 4.6
+}

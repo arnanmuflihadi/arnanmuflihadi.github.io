@@ -1,0 +1,786 @@
+{
+  "state": "loaded",
+  "phase": "S2-E isolated design; not production",
+  "option": "H",
+  "view": "skyport",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "buffer": [
+      1800,
+      1200
+    ],
+    "dpr": 1,
+    "antialias": true,
+    "shadows": "PCFSoft 2048",
+    "toneMapping": "ACES",
+    "exposure": 1,
+    "glass": "unchanged authored transmission",
+    "lighting": "same R0-A3 lights and S2-D gradient environment",
+    "near": 0.12,
+    "far": 1000
+  },
+  "camera": {
+    "position": [
+      36,
+      28.458377568266016,
+      31.834170245461145
+    ],
+    "quaternion": [
+      -0.1779983211762273,
+      0,
+      0,
+      0.9840307910113608
+    ],
+    "fov": 60,
+    "mode": "third-person",
+    "blenderLocal": null
+  },
+  "assets": {
+    "collision": {
+      "bytes": 6164,
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "common": {
+      "bytes": 527172,
+      "meshes": 6,
+      "triangles": 8404,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "H": {
+      "bytes": 543452,
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "street": {
+      "bytes": 10007904,
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    }
+  },
+  "loaderCache": {
+    "requests": 4,
+    "cachedFiles": 4,
+    "loadedFiles": 4
+  },
+  "frameAllPasses": {
+    "calls": 539,
+    "triangles": 4108977,
+    "geometries": 209,
+    "textures": 16
+  },
+  "lastFixedPassSample": {
+    "option": "H",
+    "view": "skyport",
+    "characterVisible": false,
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "draws": 158
+      },
+      {
+        "target": "offscreen 1",
+        "viewport": [
+          0,
+          0,
+          192,
+          128
+        ],
+        "draws": 9
+      },
+      {
+        "target": "offscreen 2",
+        "viewport": [
+          0,
+          128,
+          96,
+          64
+        ],
+        "draws": 8
+      },
+      {
+        "target": "offscreen 3",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "draws": 166
+      },
+      {
+        "target": "canvas",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "draws": 176
+      }
+    ],
+    "calls": 517
+  },
+  "sceneInventory": {
+    "meshes": 217,
+    "triangles": 1483701,
+    "geometries": 208,
+    "materials": 122,
+    "textures": 10,
+    "missingTextures": []
+  },
+  "traversal": [
+    {
+      "name": "edge",
+      "option": "H",
+      "success": true,
+      "reason": "guard stopped lateral walk",
+      "start": [
+        36,
+        19.361619031429292,
+        39
+      ],
+      "end": [
+        40.64985821178874,
+        19.3596190571785,
+        39
+      ],
+      "seconds": 4.284399999999994,
+      "frames": 449,
+      "walkedMetres": 4.6498582117887395,
+      "maxFootRise": 0.012000024318695068,
+      "maxFootDrop": 0.012000024318695068,
+      "maxAirborneHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 13.241364166890138,
+      "trace": [
+        {
+          "position": [
+            36.534387538302745,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            37.150051128172265,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            37.73358963716505,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            38.32662824803939,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            38.9116882127557,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            39.49485821181501,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.0643782117895,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64985821178874,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64985821178874,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64985821178874,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64985821178874,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64985821178874,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64985821178874,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64985821178874,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "support": "actual source triangles plus exact exported support references and visible interface meshes",
+      "collision": "existing controller with terrain, building proxies, height-filtered original obstacles and geometry-matched guard proxies"
+    },
+    {
+      "name": "jump",
+      "option": "H",
+      "success": true,
+      "reason": "route endpoint reached",
+      "start": [
+        36,
+        19.883047676086427,
+        38
+      ],
+      "end": [
+        36,
+        21.97400007247925,
+        20.111598600172698
+      ],
+      "seconds": 8.588799999999996,
+      "frames": 671,
+      "walkedMetres": 17.888401399827302,
+      "maxFootRise": 0.174285888671875,
+      "maxFootDrop": 0.09687472000001662,
+      "maxAirborneHeight": 1.1638606575000239,
+      "supportEvents": [],
+      "jumps": 1,
+      "landings": 1,
+      "minCameraDistance": 13.095764492459592,
+      "trace": [
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            37.37674520203234
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.05685708522797,
+            36.619895959612606
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.17851171522798,
+            35.709768309966606
+          ],
+          "grounded": false,
+          "phase": "airborne"
+        },
+        {
+          "position": [
+            36,
+            20.47998536522802,
+            34.928148588282276
+          ],
+          "grounded": false,
+          "phase": "airborne"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            33.95941860013841
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            33.108288600172486
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            32.30335860017268
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            31.5099786001727
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            30.68173860017271
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            29.888358600172705
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.231142854690553,
+            29.060538600172706
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.75400004386902,
+            28.20814860017272
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.10257134437561,
+            27.438288600172704
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.451142883300783,
+            26.668428600172696
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            25.874418600172714
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            25.093218600172708
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            24.2882886001727
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            23.518218600172702
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            22.713288600172692
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            21.943218600172703
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            21.17335860017268
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            20.391738600172687
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "support": "actual source triangles plus exact exported support references and visible interface meshes",
+      "collision": "existing controller with terrain, building proxies, height-filtered original obstacles and geometry-matched guard proxies"
+    }
+  ],
+  "seamResults": {
+    "method": "existing production controller; fixed-step simulations, not performance timings",
+    "option": "H",
+    "tests": [
+      {
+        "route": "main",
+        "hz": 20,
+        "success": true,
+        "frames": 662,
+        "simulatedSeconds": 33.1,
+        "maxFootRise": 0.174285888671875,
+        "maxFootDrop": 0.16902422904968262,
+        "airborneFrames": 0,
+        "end": [
+          35.999999999999986,
+          20.7604072468364,
+          0.12982381253302133
+        ]
+      },
+      {
+        "route": "return",
+        "hz": 20,
+        "success": true,
+        "frames": 662,
+        "simulatedSeconds": 33.1,
+        "maxFootRise": 0.16902422904968262,
+        "maxFootDrop": 0.174285888671875,
+        "airborneFrames": 0,
+        "end": [
+          24.068600881074808,
+          14.981575101975514,
+          65.90446825500332
+        ]
+      },
+      {
+        "route": "ramp",
+        "hz": 20,
+        "success": true,
+        "frames": 162,
+        "simulatedSeconds": 8.1,
+        "maxFootRise": 3.552713678800501e-15,
+        "maxFootDrop": 0.10825957851892198,
+        "airborneFrames": 0,
+        "end": [
+          35.91557002446696,
+          20.770933538666675,
+          0.018956744214721814
+        ]
+      },
+      {
+        "route": "ramp return",
+        "hz": 20,
+        "success": true,
+        "frames": 162,
+        "simulatedSeconds": 8.1,
+        "maxFootRise": 0.10319849806483816,
+        "maxFootDrop": 3.552713678800501e-15,
+        "airborneFrames": 0,
+        "end": [
+          35.92318137043847,
+          22.613999938964845,
+          9.975592802656454
+        ]
+      },
+      {
+        "route": "main",
+        "hz": 30,
+        "success": true,
+        "frames": 994,
+        "simulatedSeconds": 33.13333333333333,
+        "maxFootRise": 0.174285888671875,
+        "maxFootDrop": 0.16902422904968262,
+        "airborneFrames": 0,
+        "end": [
+          36.000000000000156,
+          20.75775614940089,
+          0.06914575193256207
+        ]
+      },
+      {
+        "route": "return",
+        "hz": 30,
+        "success": true,
+        "frames": 994,
+        "simulatedSeconds": 33.13333333333333,
+        "maxFootRise": 0.16902422904968262,
+        "maxFootDrop": 0.174285888671875,
+        "airborneFrames": 0,
+        "end": [
+          24.042663187230723,
+          14.976712322235109,
+          65.94102207221655
+        ]
+      },
+      {
+        "route": "ramp",
+        "hz": 30,
+        "success": true,
+        "frames": 243,
+        "simulatedSeconds": 8.1,
+        "maxFootRise": 3.552713678800501e-15,
+        "maxFootDrop": 0.10334747696590796,
+        "airborneFrames": 0,
+        "end": [
+          35.91751599259944,
+          20.770599404122102,
+          0.01941731149458956
+        ]
+      },
+      {
+        "route": "ramp return",
+        "hz": 30,
+        "success": true,
+        "frames": 243,
+        "simulatedSeconds": 8.1,
+        "maxFootRise": 0.10663342188467695,
+        "maxFootDrop": 3.552713678800501e-15,
+        "airborneFrames": 0,
+        "end": [
+          35.90455828663965,
+          22.613999938964845,
+          9.969536042152258
+        ]
+      },
+      {
+        "route": "main",
+        "hz": 60,
+        "success": true,
+        "frames": 1987,
+        "simulatedSeconds": 33.11666666666667,
+        "maxFootRise": 0.17428588867187855,
+        "maxFootDrop": 0.16902422904968262,
+        "airborneFrames": 0,
+        "end": [
+          36.000000000000036,
+          20.7599675680383,
+          0.1197604869086523
+        ]
+      },
+      {
+        "route": "return",
+        "hz": 60,
+        "success": true,
+        "frames": 1987,
+        "simulatedSeconds": 33.11666666666667,
+        "maxFootRise": 0.16902422904968262,
+        "maxFootDrop": 0.174285888671875,
+        "airborneFrames": 0,
+        "end": [
+          24.072329109859307,
+          14.982740389210115,
+          65.90001316035533
+        ]
+      },
+      {
+        "route": "ramp",
+        "hz": 60,
+        "success": true,
+        "frames": 486,
+        "simulatedSeconds": 8.1,
+        "maxFootRise": 3.552713678800501e-15,
+        "maxFootDrop": 0.10214226169199137,
+        "airborneFrames": 0,
+        "end": [
+          35.904261150069026,
+          20.773144005135805,
+          0.022429342768597003
+        ]
+      },
+      {
+        "route": "ramp return",
+        "hz": 60,
+        "success": true,
+        "frames": 486,
+        "simulatedSeconds": 8.1,
+        "maxFootRise": 0.10350911365720705,
+        "maxFootDrop": 7.105427357601002e-15,
+        "airborneFrames": 0,
+        "end": [
+          35.89762725597229,
+          22.613999938964845,
+          9.966512834383913
+        ]
+      }
+    ]
+  },
+  "performance": null,
+  "activeWalk": null,
+  "proposal": {
+    "naturalArrival": [
+      24,
+      66
+    ],
+    "provisionalLanding": [
+      27,
+      17.15,
+      60
+    ],
+    "squareGround": [
+      36,
+      20.754745326,
+      0
+    ],
+    "unbuilt": "full skyport, Town Square, Guild",
+    "contactCount": 148,
+    "landscapeAlignment": [
+      {
+        "u": -14.199999809265137,
+        "v": 10.199999809265137,
+        "before_h": -0.02817666344344616,
+        "after_h": -3.323211669921875,
+        "delta_h": -3.295035006478429,
+        "source": "standalone showcase canopy; original GLB unchanged"
+      },
+      {
+        "u": 14.399999618530273,
+        "v": 16.200000762939453,
+        "before_h": -0.1416047066450119,
+        "after_h": -3.0278167724609375,
+        "delta_h": -2.8862120658159256,
+        "source": "standalone showcase canopy; original GLB unchanged"
+      },
+      {
+        "u": -14.600000381469727,
+        "v": 25.399999618530273,
+        "before_h": 1.2928659915924072,
+        "after_h": -0.7455978393554688,
+        "delta_h": -2.038463830947876,
+        "source": "standalone showcase canopy; original GLB unchanged"
+      },
+      {
+        "u": 13.5,
+        "v": 28,
+        "before_h": 2.1928634643554688,
+        "after_h": -3.0584564208984375,
+        "delta_h": -5.251319885253906,
+        "source": "standalone showcase canopy; original GLB unchanged"
+      }
+    ],
+    "arrivalRiser": 0.16717597374549256,
+    "squareRiser": 0.16902408114346593
+  },
+  "errors": []
+}

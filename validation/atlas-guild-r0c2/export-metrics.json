@@ -1,0 +1,15 @@
+{
+  "input": "validation/atlas-guild-r0c2/atlas-guild.glb",
+  "output": "assets/game/atlas-guild/atlas-guild.glb",
+  "rawBytes": 1734020,
+  "bytes": 1527656,
+  "sha256": "6e189d7ef30221fa93457f497dda42e805081be4a42c3a5a219be08d0ceb090d",
+  "triangles": 14697,
+  "materials": 16,
+  "textures": 0,
+  "changes": [
+    "Index identical vertices with all normals and other attributes preserved",
+    "Deduplicate identical resources; no decimation or silhouette changes",
+    "Retain actual walkable extras and material identities"
+  ]
+}

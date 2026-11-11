@@ -1,0 +1,259 @@
+{
+  "phase": "R0-C1B development integration; owner visual approval pending",
+  "export": {
+    "bytes": 1513244,
+    "triangles": 19310,
+    "meshes": 14,
+    "materials": 12,
+    "textures": 0
+  },
+  "matchedBrowserPairs": [
+    {
+      "view": "01-market-arrival",
+      "cameraMatch": true,
+      "settingsMatch": true,
+      "sameScene": true,
+      "oneRenderer": true,
+      "squareStates": [
+        false,
+        true
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "view": "02-square-interior",
+      "cameraMatch": true,
+      "settingsMatch": true,
+      "sameScene": true,
+      "oneRenderer": true,
+      "squareStates": [
+        false,
+        true
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "view": "03-elevated-town",
+      "cameraMatch": true,
+      "settingsMatch": true,
+      "sameScene": true,
+      "oneRenderer": true,
+      "squareStates": [
+        false,
+        true
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "view": "04-square-foundations",
+      "cameraMatch": true,
+      "settingsMatch": true,
+      "sameScene": true,
+      "oneRenderer": true,
+      "squareStates": [
+        false,
+        true
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "view": "05-full-island",
+      "cameraMatch": true,
+      "settingsMatch": true,
+      "sameScene": true,
+      "oneRenderer": true,
+      "squareStates": [
+        false,
+        true
+      ],
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "liveChecks": [
+    {
+      "name": "courtyard return",
+      "success": true,
+      "distanceMetres": 25.30472323299418,
+      "seconds": 12.288699999999976,
+      "maxAirHeight": 0,
+      "minCameraDistance": 1.583886844616042
+    },
+    {
+      "name": "courtyard",
+      "success": true,
+      "distanceMetres": 25.32654979714428,
+      "seconds": 12.299899999999857,
+      "maxAirHeight": 0,
+      "minCameraDistance": 1.5639660264391282
+    },
+    {
+      "name": "ridge",
+      "success": true,
+      "distanceMetres": 38.26542417759884,
+      "seconds": 18.277599999999886,
+      "maxAirHeight": 0,
+      "minCameraDistance": 3.068718421656303
+    },
+    {
+      "name": "ridge return",
+      "success": true,
+      "distanceMetres": 38.31163919364325,
+      "seconds": 18.283699999999968,
+      "maxAirHeight": 0,
+      "minCameraDistance": 2.354431113260485
+    },
+    {
+      "name": "forecourt",
+      "success": true,
+      "distanceMetres": 24.895463098950138,
+      "seconds": 11.916699999999977,
+      "maxAirHeight": 0,
+      "minCameraDistance": 11.406481431267292
+    },
+    {
+      "name": "forecourt return",
+      "success": true,
+      "distanceMetres": 24.90842502621468,
+      "seconds": 11.922199999999798,
+      "maxAirHeight": 0,
+      "minCameraDistance": 11.497929068270953
+    },
+    {
+      "name": "basin",
+      "success": true,
+      "distanceMetres": 0.2561248138205663,
+      "seconds": 2.1887999999999908,
+      "maxAirHeight": 0,
+      "minCameraDistance": 11.490408939532522
+    },
+    {
+      "name": "squareEdge",
+      "success": true,
+      "distanceMetres": 1.4684863730250974,
+      "seconds": 2.7722000000000184,
+      "maxAirHeight": 0,
+      "minCameraDistance": 11.49038323496544
+    }
+  ],
+  "fixedStepRuns": 18,
+  "scopedRegression": "16 pass / 0 fail; see regression.log",
+  "height": {
+    "squareRaySamples": 1048,
+    "maxSquareError": 0.00029663095080323387,
+    "maxGroundError": 1.7763568394002505e-14
+  },
+  "performanceRuns": [
+    {
+      "squareEnabled": false,
+      "squareComparison": true,
+      "enabled": true,
+      "terrainAdjusted": true,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 1199,
+      "medianMs": 11.099999999991269,
+      "p95Ms": 16.60000000000582,
+      "renderCpuMedianMs": 1.300000011920929,
+      "renderCpuP95Ms": 1.7000000178813934,
+      "drawCallRange": [
+        312,
+        385
+      ],
+      "triangleRange": [
+        2631080,
+        2730982
+      ],
+      "method": "same 12-second market-to-fountain camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "squareEnabled": true,
+      "squareComparison": true,
+      "enabled": true,
+      "terrainAdjusted": true,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 1157,
+      "medianMs": 11.10000000000582,
+      "p95Ms": 16.60000000000582,
+      "renderCpuMedianMs": 1.4000000059604645,
+      "renderCpuP95Ms": 1.7000000178813934,
+      "drawCallRange": [
+        340,
+        413
+      ],
+      "triangleRange": [
+        2669028,
+        2768930
+      ],
+      "method": "same 12-second market-to-fountain camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "squareEnabled": true,
+      "squareComparison": true,
+      "enabled": true,
+      "terrainAdjusted": true,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 1035,
+      "medianMs": 11.10000000000582,
+      "p95Ms": 16.79999999998836,
+      "renderCpuMedianMs": 1.5,
+      "renderCpuP95Ms": 1.9000000059604645,
+      "drawCallRange": [
+        340,
+        413
+      ],
+      "triangleRange": [
+        2669028,
+        2768930
+      ],
+      "method": "same 12-second market-to-fountain camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "squareEnabled": false,
+      "squareComparison": true,
+      "enabled": true,
+      "terrainAdjusted": true,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 1073,
+      "medianMs": 11.10000000000582,
+      "p95Ms": 16.70000000001164,
+      "renderCpuMedianMs": 1.300000011920929,
+      "renderCpuP95Ms": 1.5999999940395355,
+      "drawCallRange": [
+        312,
+        385
+      ],
+      "triangleRange": [
+        2631080,
+        2730982
+      ],
+      "method": "same 12-second market-to-fountain camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    }
+  ],
+  "oneSceneAcrossRollback": true,
+  "defaultOff": true,
+  "workStudyLinks": 6,
+  "warnings": [],
+  "errors": [],
+  "sourcePreservation": {
+    "checkpoint_files": 3350,
+    "unchanged": 3347,
+    "changed": [
+      "assets/js/floating-atlas/town-integration.js",
+      "assets/js/floating-atlas/town-review.js",
+      "assets/js/floating-atlas/entry.js"
+    ],
+    "missing": [],
+    "asset_license_files_unchanged": 233,
+    "only_expected_changes": true
+  },
+  "approval": "Pending human review before R0-C2",
+  "deployed": false
+}

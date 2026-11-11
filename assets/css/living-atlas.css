@@ -1,0 +1,133 @@
+/* Shared editorial/adventure composition. One canvas sits behind semantic HTML. */
+.atlas-mode-switch{font:500 11px/1.2 var(--font-mono);background:var(--ink);color:var(--paper)!important;border:1px solid var(--ink);border-radius:24px;padding:11px 17px;letter-spacing:0;cursor:pointer;white-space:nowrap;text-transform:none}
+.atlas-mode-switch:disabled{opacity:.55;cursor:not-allowed}.atlas-mode-switch:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+body[data-living-atlas]{background:var(--paper);--atlas-header-size:72px}body[data-living-atlas] .site-header{z-index:150}
+body[data-living-atlas] main{position:relative;z-index:2;overflow:visible!important;background:transparent}
+.living-world{position:fixed;inset:var(--atlas-header-size) 0 0;z-index:0;isolation:isolate;overflow:hidden;background:#bed1bf}
+.living-world>canvas,.living-world-poster{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover}
+.living-world>canvas{opacity:0;touch-action:none;outline-offset:-5px}.living-world[data-world-ready=true]>canvas{opacity:1}.living-world[data-world-ready=true]>.living-world-poster{display:none}
+.living-world::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 94%,transparent) 22%,color-mix(in srgb,var(--paper) 65%,transparent) 38%,transparent 67%)}
+.living-world-caption{position:absolute;left:var(--gutter);bottom:24px;z-index:1;display:flex;flex-direction:column;gap:6px;color:var(--ink);pointer-events:none}
+.living-world-caption>span{font:500 9px var(--font-mono);letter-spacing:.1em}.living-world-caption strong{font:500 13px var(--font-sans)}.living-world-caption small{font:400 9px var(--font-mono);color:var(--muted)}
+.living-world-status{position:absolute;z-index:4;bottom:24px;right:24px;max-width:320px;margin:0;padding:12px 16px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:400 12px/1.5 var(--font-sans);border-radius:5px}
+body[data-living-atlas] .spatial-hero,body[data-living-atlas] .portfolio-hero{min-height:calc(100svh - 72px);padding:0 var(--gutter);margin:0;max-width:none;display:flex;justify-content:center;align-items:flex-start;flex-direction:column;background:transparent;position:relative}
+body[data-living-atlas] .spatial-hero__copy{padding:46px 0 94px;max-width:530px;display:flex;gap:0}
+body[data-living-atlas] .spatial-hero h1,body[data-living-atlas] .portfolio-hero h1{font:700 clamp(3rem,5.6vw,5.6rem)/.98 var(--font-display);letter-spacing:-.045em;max-width:10.5ch;color:var(--ink);margin:20px 0 26px}
+body[data-living-atlas] .spatial-hero__lede,body[data-living-atlas] .portfolio-hero__lede{font-size:16px;line-height:1.65;max-width:370px;color:var(--ink-soft)}
+body[data-living-atlas] .portfolio-hero{padding-block:60px 100px}body[data-living-atlas] .portfolio-hero h1{max-width:10ch}.portfolio-hero::before,.portfolio-hero::after{display:none!important}
+body[data-living-atlas] .study-atlas,body[data-living-atlas] .page-map-controls,body[data-living-atlas] .work-rail__stage,body[data-living-atlas] .expertise-marquee{display:none!important}
+.living-arrival-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:28px}.living-arrival-actions>button,.living-chapter-tools button{font:500 12px/1.3 var(--font-sans);border:1px solid var(--ink);padding:13px 18px;border-radius:4px;background:var(--ink);color:var(--paper);cursor:pointer}
+.living-arrival-actions>button>span{margin-left:18px}.living-arrival-actions>a{font:500 12px var(--font-sans);color:var(--ink);border-bottom:1px solid var(--line);padding:8px 0}
+.living-arrival-note{font:400 10px/1.7 var(--font-mono);color:var(--muted);margin-top:20px;max-width:330px}
+.living-studies{position:relative;padding:0!important;max-width:none!important;margin:0!important;width:100%!important}
+.living-studies .work-rail,.living-studies .atlas-list,.living-studies-inner{display:contents!important}
+.living-studies-heading{padding:55px var(--gutter);max-width:500px;background:var(--paper);border-top:1px solid var(--line);position:relative;z-index:2}
+.living-studies-heading h2{font:600 35px/1.12 var(--font-display);margin:18px 0;color:var(--ink)}.living-studies-heading>p:last-child{font:400 14px/1.6 var(--font-sans);color:var(--muted)}
+.living-chapter{min-height:100svh;padding:52px var(--gutter) 90px;display:flex;align-items:center;position:relative;scroll-margin-top:90px}
+.living-chapter-board{width:min(420px,42vw);padding:26px 28px;background:color-mix(in srgb,var(--paper) 97%,transparent);border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 8px 35px #1b3b2410}
+.living-chapter[data-current-project] .living-chapter-board{border-top-color:var(--accent)}
+.living-project-link{display:flex;flex-direction:column;gap:17px;color:var(--ink);text-decoration:none;position:relative}
+.living-project-link .atlas-row__index{display:none}.living-project-link .eyebrow{font:500 10px var(--font-mono);letter-spacing:.08em;color:var(--accent);margin:0 0 13px}
+.living-project-link h2,.living-project-link h3{font:650 clamp(24px,2.7vw,36px)/1.1 var(--font-display);letter-spacing:-.035em;margin:0 0 16px;color:var(--ink)}
+.living-project-link div>p:last-child{font:400 14px/1.5 var(--font-sans);color:var(--ink-soft);margin:0}
+.living-project-link picture,.living-project-link>img{display:block;width:100%;height:145px;margin:0;object-fit:contain;background:var(--surface)}
+.living-project-link picture img{width:100%;height:100%;object-fit:contain}.living-project-link .atlas-row__arrow{position:absolute;bottom:0;right:0;background:var(--paper);width:28px;height:28px;padding:4px}
+.living-chapter-tools{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:20px}.living-chapter-tools button{font-size:11px;padding:10px 13px}
+.living-chapter-tools button+button{background:transparent;color:var(--ink);border-color:var(--line)}.living-chapter-tools>span{font:400 9px/1.5 var(--font-mono);color:var(--muted)}
+body[data-living-atlas] .home-work-link{margin:0;padding:35px var(--gutter);display:block;background:var(--paper);max-width:none}
+body[data-living-atlas] main>.about-bridge,body[data-living-atlas] main>.contact-cta,body[data-living-atlas] main>.other-practice,body[data-living-atlas] main>.route-coda,body[data-living-atlas] .site-footer{background:var(--paper);position:relative;z-index:2}
+body[data-living-atlas] .site-footer{margin-top:0}.world-outside-story .living-world{visibility:hidden}
+body[data-atlas-mode=adventure] main,body[data-atlas-mode=adventure]>.site-footer{visibility:hidden!important;pointer-events:none}
+body[data-atlas-mode=adventure] .site-header{position:fixed;inset:0 0 auto;width:100%;box-sizing:border-box}
+body[data-atlas-mode=adventure] .living-world{z-index:10;visibility:visible;inset:var(--atlas-header-size) 0 0}
+body[data-atlas-mode=adventure] .living-world::after{display:none}
+body[data-atlas-mode=adventure] .living-world-caption{color:#263f39;background:#f8efd8e8;padding:10px 14px;border-radius:4px;top:18px;bottom:auto;gap:4px}
+body[data-atlas-mode=adventure] .living-world-caption small{color:#53624e}
+.living-adventure-hud{position:absolute;inset:0;pointer-events:none;z-index:3}.living-adventure-hud>*{pointer-events:auto}
+.living-minimap{position:absolute;right:24px;bottom:104px;width:165px;padding:8px;background:#f6ecd7;border:1px solid #b2bda6;border-radius:7px;box-shadow:0 6px 22px #26452e20}
+.living-minimap canvas{width:100%;height:auto;display:block}.living-minimap p{font:400 8px/1.6 var(--font-mono);color:#334d3d;margin:7px 0 0}
+.living-controls{position:absolute;bottom:24px;left:var(--gutter);right:24px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.living-controls button,.living-controls label{font:500 12px/1.3 var(--font-sans);border:1px solid #bbc5ac;border-radius:4px;background:#f8efd8;color:#304b3d;padding:12px 15px;cursor:pointer}
+.living-controls button:first-child{background:#294e42;color:#fff1d7;border-color:#294e42;margin-right:auto}.living-controls button:disabled{background:#f8efd8;color:#53624e;border-color:#68715b;cursor:not-allowed}.living-controls label{font-size:10px}.living-controls select{font:inherit;border:0;background:transparent;color:inherit}
+.living-touch{position:absolute;left:22px;bottom:132px;display:none;grid-template-columns:repeat(3,44px);gap:5px;touch-action:none}.living-touch button{width:44px;height:44px;border:1px solid #aabda6;border-radius:7px;background:#f8efd8de;color:#345443;touch-action:none;user-select:none;font-size:17px}
+.living-touch button:first-child{grid-column:2}.living-touch button:nth-child(2){grid-column:1;grid-row:2}.living-touch button:nth-child(3){grid-column:2;grid-row:2}.living-touch button:nth-child(4){grid-column:3;grid-row:2}
+.atlas-motion-choice{display:flex;gap:12px;align-items:center;padding:16px 0}.atlas-motion-choice input{width:18px;height:18px;accent-color:var(--accent)}
+.living-controls :focus-visible,.living-touch :focus-visible,.living-chapter :focus-visible,.living-arrival-actions :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(pointer:coarse){.living-touch{display:grid}}
+@media(max-width:699px){
+ body[data-living-atlas]{--atlas-header-size:64px}
+ .atlas-mode-switch{font-size:10px;padding:10px 13px}body[data-living-atlas] .site-nav{gap:20px}
+ .living-world::after{background:linear-gradient(180deg,color-mix(in srgb,var(--paper) 96%,transparent) 0%,color-mix(in srgb,var(--paper) 85%,transparent) 33%,transparent 70%)}
+ body[data-living-atlas] .spatial-hero,body[data-living-atlas] .portfolio-hero{justify-content:flex-start;padding-top:32px;min-height:calc(100svh - 72px)}
+ body[data-living-atlas] .spatial-hero__copy{padding:20px 0 100px;max-width:100%}
+ body[data-living-atlas] .spatial-hero h1,body[data-living-atlas] .portfolio-hero h1{font-size:48px;max-width:10ch;margin:15px 0 20px}
+ body[data-living-atlas] .spatial-hero__lede,body[data-living-atlas] .portfolio-hero__lede{font-size:13px;max-width:340px;line-height:1.55}
+ .living-arrival-actions{margin-top:19px;gap:16px}.living-arrival-actions>button{padding:12px 14px}.living-arrival-actions>a{font-size:11px}.living-arrival-note{font-size:9px;margin-top:14px}
+ .living-world-caption{bottom:16px;max-width:230px}.living-world-caption>span{font-size:7px}.living-world-caption strong{font-size:11px}.living-world-caption small{font-size:8px}
+ .living-chapter{padding:40px var(--gutter) 220px;align-items:flex-start;min-height:110svh}
+ .living-chapter-board{width:100%;padding:20px;background:color-mix(in srgb,var(--paper) 97%,transparent)}.living-project-link h2,.living-project-link h3{font-size:26px}.living-project-link picture,.living-project-link>img{height:110px}
+ .living-project-link{gap:12px}.living-project-link div>p:last-child{font-size:12px}.living-chapter-tools{margin-top:15px}
+ .living-minimap{right:14px;bottom:146px;width:112px}.living-minimap p{font-size:7px}.living-controls{left:14px;right:14px;bottom:16px;gap:7px}.living-controls button{font-size:11px;padding:10px 12px}.living-controls button:first-child{width:100%;margin-right:0}.living-controls label{padding:10px;font-size:9px}.living-touch{display:grid;left:14px;bottom:154px}
+ body[data-atlas-mode=adventure] .living-world-caption{left:14px;top:14px;padding:9px 12px;max-width:240px}
+ .living-world-status{left:14px;right:14px;bottom:85px;max-width:none;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.living-world>canvas{transition:none}.living-chapter{scroll-behavior:auto}}
+/* Phase 3: story and encounter controls stay inside adventure presentation. */
+.atlas-story-card{position:absolute;top:18px;right:24px;width:250px;padding:14px 17px;text-align:left;border:1px solid #bac3a7;border-left:3px solid #b48e48;background:#f8efd8f2;color:#2b4c3c;border-radius:5px;cursor:pointer;box-shadow:0 4px 18px #26452e15}
+.atlas-story-card small,.atlas-story-card strong,.atlas-story-card span{display:block}.atlas-story-card small{font:500 8px/1.5 var(--font-mono);letter-spacing:.06em;color:#725e39}.atlas-story-card strong{font:600 14px/1.3 var(--font-sans);margin:7px 0}.atlas-story-card span{font:400 11px/1.5 var(--font-sans)}.atlas-story-card[data-phase=complete]{border-left-color:#617e5c}
+.atlas-encounter-health{position:absolute;top:104px;left:var(--gutter);width:200px;padding:13px 16px;border:1px solid #bac3a7;border-radius:5px;background:#f8efd8ed;color:#2e4e3e}
+.atlas-encounter-health label{display:block;font:500 10px var(--font-mono);margin-bottom:13px}.atlas-encounter-health label>span{float:right}.atlas-encounter-health progress{display:block;width:100%;height:7px;margin-top:7px;accent-color:#65805b;border:0}.atlas-encounter-health label+label progress{accent-color:#b37f4e}.atlas-encounter-health p{font:500 11px var(--font-sans);margin:0;color:#835c35}
+.atlas-combat-actions{position:absolute;right:24px;bottom:312px;display:grid;gap:6px;width:112px}.atlas-combat-actions button{min-height:44px;border:1px solid #afbaa0;border-radius:5px;color:#2d4c3e;background:#f8efd8ee;font:600 12px var(--font-sans);cursor:pointer;touch-action:none;user-select:none}.atlas-combat-actions small{font:400 8px var(--font-mono);display:block;margin-top:4px;color:#6b745b}.atlas-combat-actions button[aria-pressed=true]{background:#315347;color:#fff0ce}.atlas-combat-actions button[aria-pressed=true] small{color:#e9dec1}
+.atlas-dialogue{width:min(470px,100%)}.atlas-dialogue-choices{display:grid;gap:12px;margin-top:28px}.atlas-dialogue-choices button{text-align:left;min-height:44px}.atlas-dialogue-choices button:first-child{background:var(--ink);color:var(--paper);border-color:var(--ink)}.atlas-dialogue-choices button:disabled{opacity:.6;cursor:wait}
+.atlas-story-card:focus-visible,.atlas-combat-actions :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:699px){
+ .atlas-story-card{left:14px;right:14px;top:89px;width:auto;padding:10px 12px}.atlas-story-card strong{font-size:12px;margin:3px 0}.atlas-story-card span{font-size:10px;line-height:1.4}.atlas-story-card small{font-size:7px}
+ .atlas-encounter-health{left:14px;top:195px;width:150px;padding:10px 12px}.atlas-encounter-health label{font-size:9px;margin-bottom:10px}.atlas-encounter-health p{font-size:10px}
+ .atlas-combat-actions{right:14px;bottom:296px;width:112px}.atlas-combat-actions button{font-size:11px}.atlas-combat-actions small{font-size:7px}
+}
+.atlas-encounter-health progress::-webkit-progress-bar{background:#dce0c8;border-radius:5px}.atlas-encounter-health progress::-webkit-progress-value{background:#65805b;border-radius:5px}.atlas-encounter-health label+label progress::-webkit-progress-value{background:#b37f4e}.atlas-encounter-health progress::-moz-progress-bar{background:#65805b}.atlas-encounter-health label+label progress::-moz-progress-bar{background:#b37f4e}
+
+/* Names belong to nearby, visible actors rather than a permanent label cloud. */
+.atlas-nameplates{position:absolute;inset:0;pointer-events:none;z-index:3;overflow:hidden}
+.atlas-nameplate{position:absolute;left:0;top:0;max-width:208px;padding:7px 12px;background:#1b342e;color:#fff4d8;border:1px solid #f7eabc;border-radius:6px;text-align:center;box-shadow:0 3px 12px #12261e30;line-height:1.3}
+.atlas-nameplate strong{display:block;font:600 14px var(--font-sans,sans-serif)}
+.atlas-nameplate span{display:block;font:12px var(--font-sans,sans-serif);color:#e0dfc7}
+.atlas-nameplate[data-selected=true]{border-color:#e7c982;box-shadow:0 0 0 2px #d9b35a30}
+.atlas-dialogue-choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.atlas-dialogue-choices button{text-align:left;min-height:48px}
+@media(max-width:699px){.atlas-dialogue-choices{grid-template-columns:1fr}.atlas-nameplate{max-width:180px;padding:5px 9px}.atlas-nameplate span{font-size:11px}}
+
+.atlas-mode-switch,.living-controls>button,.living-controls>label,.living-controls select,.living-chapter-tools button,.living-arrival-actions>button,.living-arrival-actions>a,.experience-panel button{min-height:44px;min-width:44px}
+.living-arrival-actions>a,.research-actions a,.research-map-links a{display:inline-flex;align-items:center;min-height:44px}
+.living-arrival-actions>.atlas-ambient-toggle{background:var(--paper);color:var(--ink);border-color:var(--muted)}
+body[data-atlas-mode=adventure] .living-world-caption,.atlas-story-card,.atlas-encounter-health,.atlas-combat-actions button,.living-touch button{background:#f8efd8}
+.living-controls button,.living-controls label,.living-touch button,.atlas-story-card,.atlas-encounter-health,.atlas-combat-actions button{border-color:#68715b}
+.living-controls>label{display:inline-flex;align-items:center;gap:5px;padding:0 10px}
+.living-controls select{min-width:0;max-width:100%}
+.atlas-motion-choice{cursor:pointer;min-height:44px}
+.atlas-combat-actions small{color:#58634d}
+.atlas-story-card small{font-size:10px;letter-spacing:.025em}
+.atlas-story-card span{font-size:12px}
+.experience-panel button{border-color:var(--muted)}
+:is(.living-controls,.living-touch,.living-arrival-actions,.living-chapter-tools,.atlas-combat-actions,.experience-panel) button:not(:disabled):hover{text-decoration:underline;text-underline-offset:3px}
+:is(.living-controls,.living-touch,.living-arrival-actions,.living-chapter-tools,.atlas-combat-actions,.experience-panel) button:not(:disabled):active{box-shadow:inset 0 0 0 2px currentColor}
+.living-controls :focus-visible,.living-touch :focus-visible,.atlas-combat-actions :focus-visible,.atlas-story-card:focus-visible{outline:3px solid #1b342e;outline-offset:3px;box-shadow:0 0 0 6px #fff4d8}
+.experience-panel :focus-visible,.living-arrival-actions :focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+@media(max-width:699px){
+ .living-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;bottom:max(16px,env(safe-area-inset-bottom))}
+ .living-controls>button:first-child{grid-column:1/-1}
+ .living-controls>button{padding:8px 6px}
+ .living-controls>label{padding:0 5px;gap:2px}
+ .atlas-story-card strong{font-size:13px}
+ .atlas-story-card span{font-size:11px}
+}
+@media(max-width:380px){.living-controls>label{flex-direction:column;gap:0;align-items:stretch}.living-controls select{font-size:10px}}
+@media(max-height:640px) and (max-width:950px){
+ .atlas-story-card{top:14px;left:auto;right:14px;width:42%;padding:8px 10px}
+ .atlas-story-card span,.living-minimap{display:none}
+ body[data-atlas-mode=adventure] .living-world-caption{max-width:44%}
+ .living-world-caption small{display:none}
+ .atlas-combat-actions{bottom:125px;grid-template-columns:repeat(3,1fr);width:145px}
+ .atlas-encounter-health{top:112px;left:auto;right:14px;width:145px}
+}
+@media(max-height:640px) and (max-width:950px) and (orientation:landscape){.atlas-combat-actions{left:calc(50% - 110px);right:auto;width:220px}.atlas-encounter-health{top:84px}}

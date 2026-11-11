@@ -1,0 +1,192 @@
+{
+  "url": "http://127.0.0.1:4174/index.html?experience=adventure&reset-layout=b1&build=reset-b1",
+  "acceptedTerrainContext": true,
+  "angle": 235,
+  "buffer": [
+    1440,
+    836
+  ],
+  "build": "reset-b1-final",
+  "camera": {
+    "aspect": 1.722488038277512,
+    "fov": 60,
+    "position": [
+      8.750799417967789,
+      15.61865844389921,
+      60.925584752912854
+    ],
+    "quaternion": [
+      0.007580108702601599,
+      0.30069630154000443,
+      -0.0023899990935013285,
+      0.9536868270541186
+    ]
+  },
+  "centre": [
+    -1,
+    47
+  ],
+  "collisionCount": 178,
+  "detailedBuildingGLBLoads": 0,
+  "dpr": 1,
+  "entry": [
+    9.324375854318834,
+    13.94865844389921,
+    61.74473679720185
+  ],
+  "errors": [],
+  "eyeHeightMetres": 1.65,
+  "followDistanceMetres": 9.5,
+  "frameMedian": 5.599999999999909,
+  "frames": 300,
+  "hiddenTrees": 0,
+  "history": [
+    {
+      "layout": "B0",
+      "rendererCount": "1",
+      "scene": "a3756971-4f37-429d-b200-eb1517e4f41f"
+    }
+  ],
+  "layout": "B0",
+  "legacyPointPlotConflicts": [
+    3,
+    8,
+    11,
+    16,
+    48,
+    53,
+    54,
+    55,
+    57
+  ],
+  "liveTreeCount": 134,
+  "newCollisions": 0,
+  "phase": "R0-RESET-B1",
+  "plotConflicts": [
+    3,
+    8,
+    11,
+    13,
+    16,
+    48,
+    53,
+    54,
+    55,
+    57
+  ],
+  "render": {
+    "calls": 188,
+    "geometries": 146,
+    "textures": 39,
+    "triangles": 2338200
+  },
+  "rendererCount": "1",
+  "resourceFiles": [
+    "canopy-tree.glb",
+    "fern.glb",
+    "urban-explorer.glb",
+    "city-resident.glb",
+    "jump-animations.glb"
+  ],
+  "sceneId": "a3756971-4f37-429d-b200-eb1517e4f41f",
+  "shadows": true,
+  "sightlines": {
+    "arrivalToFountain": {
+      "distance": 33.12228916922804,
+      "firstTreeMesh": "Living landscape / canopy",
+      "from": [
+        27,
+        18.8,
+        60
+      ],
+      "massingHit": "Planning mass / B2",
+      "massingOccluded": true,
+      "to": [
+        -2.433941090877616,
+        16.72865844389921,
+        44.95211988927752
+      ],
+      "treeHitDistance": 14.074596114834016,
+      "vegetationOccluded": true
+    },
+    "marketToFountain": {
+      "distance": 19.512203873473645,
+      "firstTreeMesh": null,
+      "from": [
+        8.750799417967789,
+        15.61865844389921,
+        60.925584752912854
+      ],
+      "massingHit": null,
+      "massingOccluded": false,
+      "to": [
+        -2.433941090877616,
+        14.92865844389921,
+        44.95211988927752
+      ],
+      "treeHitDistance": null,
+      "vegetationOccluded": false
+    },
+    "squareToGuildEntrance": {
+      "distance": 7.981227975693965,
+      "firstTreeMesh": null,
+      "from": [
+        -4.645651610457893,
+        15.87865844389921,
+        46.500776267425344
+      ],
+      "massingHit": null,
+      "massingOccluded": false,
+      "to": [
+        -6.735764363510464,
+        15.47865844389921,
+        38.80847955711008
+      ],
+      "treeHitDistance": null,
+      "vegetationOccluded": false
+    },
+    "squareToGuildUpperReserve": {
+      "distance": 14.850589213899896,
+      "firstTreeMesh": null,
+      "from": [
+        -4.645651610457893,
+        15.87865844389921,
+        46.500776267425344
+      ],
+      "massingHit": null,
+      "massingOccluded": false,
+      "to": [
+        -9.03007010891465,
+        24.878658443899212,
+        35.53187137995412
+      ],
+      "treeHitDistance": null,
+      "vegetationOccluded": false
+    }
+  },
+  "sourceTreeCount": 134,
+  "tallTreesTotal": 53,
+  "terrainChangedForB": false,
+  "terrainCheckMaxError": 0,
+  "terrainCheckSamples": 90,
+  "toneMapping": "ACES .96 unchanged",
+  "treeConflicts": [
+    3,
+    8,
+    11,
+    13,
+    16,
+    48,
+    53,
+    54,
+    55,
+    57,
+    58,
+    60
+  ],
+  "view": "market",
+  "viewport": [
+    1440,
+    836
+  ]
+}

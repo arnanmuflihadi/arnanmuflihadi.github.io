@@ -1,0 +1,44 @@
+[
+  {
+    "view": "network",
+    "matchedCamera": true,
+    "matchedSettings": true,
+    "trianglesDelta": -7028,
+    "drawCallsDelta": 22
+  },
+  {
+    "view": "trailTown",
+    "matchedCamera": true,
+    "matchedSettings": true,
+    "trianglesDelta": -6932,
+    "drawCallsDelta": 22
+  },
+  {
+    "view": "marketTown",
+    "matchedCamera": true,
+    "matchedSettings": true,
+    "trianglesDelta": -7542,
+    "drawCallsDelta": 13
+  },
+  {
+    "view": "directGate",
+    "matchedCamera": true,
+    "matchedSettings": true,
+    "trianglesDelta": -8342,
+    "drawCallsDelta": 12
+  },
+  {
+    "view": "courtBack",
+    "matchedCamera": true,
+    "matchedSettings": true,
+    "trianglesDelta": -7052,
+    "drawCallsDelta": 20
+  },
+  {
+    "view": "circulationOblique",
+    "matchedCamera": true,
+    "matchedSettings": true,
+    "trianglesDelta": -6844,
+    "drawCallsDelta": 22
+  }
+]

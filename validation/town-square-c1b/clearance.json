@@ -1,0 +1,166 @@
+{
+  "method": "0.025 m cross-sections perpendicular to the actual shifted deck route; 0.34 m capsule radius; current vertical collision filtering; equivalent body clear width adds 0.68 m",
+  "minimumPhysicalClearWidth": 1.9300000000000006,
+  "rows": [
+    {
+      "x": 26.895867875145175,
+      "z": 3.68,
+      "y": 21.846,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 2.0250000000000004,
+      "physicalClearWidth": 2.7050000000000005
+    },
+    {
+      "x": 27.15276978005532,
+      "z": 3.36,
+      "y": 21.892,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.9250000000000007,
+      "physicalClearWidth": 2.605000000000001
+    },
+    {
+      "x": 27.383593836280696,
+      "z": 3.04,
+      "y": 21.938000000000002,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 2.1750000000000003,
+      "physicalClearWidth": 2.8550000000000004
+    },
+    {
+      "x": 27.59981576848936,
+      "z": 2.7199999999999998,
+      "y": 21.984,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.975000000000001,
+      "physicalClearWidth": 2.655000000000001
+    },
+    {
+      "x": 27.81149890446714,
+      "z": 2.4,
+      "y": 22.03,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 2.2,
+      "physicalClearWidth": 2.8800000000000003
+    },
+    {
+      "x": 27.980594799551188,
+      "z": 1.9555555555555555,
+      "y": 22.076666666666668,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.975000000000001,
+      "physicalClearWidth": 2.655000000000001
+    },
+    {
+      "x": 28.17606969789904,
+      "z": 1.511111111111111,
+      "y": 22.123333333333335,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 2.0500000000000007,
+      "physicalClearWidth": 2.730000000000001
+    },
+    {
+      "x": 28.411325517157582,
+      "z": 1.0666666666666667,
+      "y": 22.17,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.7750000000000008,
+      "physicalClearWidth": 2.455000000000001
+    },
+    {
+      "x": 28.694508520994532,
+      "z": 0.6222222222222222,
+      "y": 22.21666666666667,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.825000000000001,
+      "physicalClearWidth": 2.5050000000000012
+    },
+    {
+      "x": 29.02850931909844,
+      "z": 0.1777777777777776,
+      "y": 22.263333333333332,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.3500000000000005,
+      "physicalClearWidth": 2.0300000000000007
+    },
+    {
+      "x": 29.410962867178668,
+      "z": -0.2666666666666666,
+      "y": 22.31,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.5500000000000007,
+      "physicalClearWidth": 2.230000000000001
+    },
+    {
+      "x": 29.834248466965423,
+      "z": -0.7111111111111112,
+      "y": 22.356666666666666,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.3500000000000005,
+      "physicalClearWidth": 2.0300000000000007
+    },
+    {
+      "x": 30.285489766209736,
+      "z": -1.1555555555555554,
+      "y": 22.403333333333332,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.2500000000000004,
+      "physicalClearWidth": 1.9300000000000006
+    },
+    {
+      "x": 30.746554758683445,
+      "z": -1.6,
+      "y": 22.45,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.4250000000000007,
+      "physicalClearWidth": 2.105000000000001
+    },
+    {
+      "x": 31.2560091255085,
+      "z": -1.6285714285714286,
+      "y": 22.46142857142857,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.6250000000000009,
+      "physicalClearWidth": 2.305000000000001
+    },
+    {
+      "x": 31.765402283237655,
+      "z": -1.6571428571428573,
+      "y": 22.47285714285714,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.7750000000000008,
+      "physicalClearWidth": 2.455000000000001
+    },
+    {
+      "x": 32.27472718568147,
+      "z": -1.6857142857142857,
+      "y": 22.484285714285715,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.800000000000001,
+      "physicalClearWidth": 2.480000000000001
+    },
+    {
+      "x": 32.83798252266757,
+      "z": -1.7142857142857144,
+      "y": 22.495714285714286,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.800000000000001,
+      "physicalClearWidth": 2.480000000000001
+    },
+    {
+      "x": 33.39657179557667,
+      "z": -1.7428571428571429,
+      "y": 22.507142857142856,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.2500000000000004,
+      "physicalClearWidth": 1.9300000000000006
+    },
+    {
+      "x": 33.95055513825015,
+      "z": -1.7714285714285716,
+      "y": 22.518571428571427,
+      "centerBlocked": false,
+      "capsuleCenterWidth": 1.6750000000000007,
+      "physicalClearWidth": 2.355000000000001
+    }
+  ]
+}

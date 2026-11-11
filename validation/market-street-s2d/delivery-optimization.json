@@ -1,0 +1,10 @@
+{
+  "mcp_export_bytes": 10007884,
+  "delivery_bytes": 10007904,
+  "geometry_changed": false,
+  "foliage_alpha_mask": [
+    "Leaves.001"
+  ],
+  "alpha_cutoff": 0.4,
+  "glass_transmission_preserved": true
+}

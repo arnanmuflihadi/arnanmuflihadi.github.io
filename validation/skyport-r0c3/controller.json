@@ -1,0 +1,260 @@
+{
+  "rows": [
+    {
+      "name": "arrival to Guild",
+      "hz": 20,
+      "success": true,
+      "distance": 42.15168039528616,
+      "seconds": 20.45,
+      "peak": 0,
+      "minCamera": 3.2248853232220784,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.759665952253978,
+        16.049999992847443,
+        37.34230502912786
+      ],
+      "localEnd": [
+        0.0022320812587279804,
+        29.78830568632677
+      ],
+      "interaction": {
+        "kind": "research",
+        "projectId": "transit",
+        "label": "Explore Transit Research"
+      }
+    },
+    {
+      "name": "Guild to arrival",
+      "hz": 20,
+      "success": true,
+      "distance": 42.152356000079585,
+      "seconds": 20.45,
+      "peak": 0,
+      "minCamera": 2.51089151324985,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        15.013339715009895,
+        15.040976432078214,
+        69.86941919578776
+      ],
+      "localEnd": [
+        -2.93701063469598e-10,
+        -9.918405813745503
+      ],
+      "interaction": null
+    },
+    {
+      "name": "arrival to Guild",
+      "hz": 60,
+      "success": true,
+      "distance": 42.133196666474255,
+      "seconds": 20.266666666666666,
+      "peak": 0,
+      "minCamera": 3.1407393811307807,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.764412580420388,
+        16.049999992847447,
+        37.337332221120846
+      ],
+      "localEnd": [
+        0.0011961565880520553,
+        29.795101726239942
+      ],
+      "interaction": {
+        "kind": "research",
+        "projectId": "transit",
+        "label": "Explore Transit Research"
+      }
+    },
+    {
+      "name": "Guild to arrival",
+      "hz": 60,
+      "success": true,
+      "distance": 42.133281881186385,
+      "seconds": 20.266666666666666,
+      "peak": 0,
+      "minCamera": 2.51089151324985,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        14.9975307167862,
+        15.041340745545785,
+        69.84684159753614
+      ],
+      "localEnd": [
+        4.839725065153289e-9,
+        -9.89084365911913
+      ],
+      "interaction": null
+    },
+    {
+      "name": "under canopy",
+      "hz": 60,
+      "success": true,
+      "distance": 10.880330087902859,
+      "seconds": 5.25,
+      "peak": 0,
+      "minCamera": 3.140739381130776,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        8.819439259686877,
+        15.25260662899639,
+        61.02361260604705
+      ],
+      "localEnd": [
+        8.881784197001252e-15,
+        0.8803300879029283
+      ],
+      "interaction": null
+    },
+    {
+      "name": "under canopy jump",
+      "hz": 60,
+      "success": true,
+      "distance": 2.9001425352315646,
+      "seconds": 1.45,
+      "peak": 1.1484846317472641,
+      "minCamera": 2.0376384165303416,
+      "jumps": 1,
+      "landings": 1,
+      "end": [
+        10.528804615805855,
+        15.193002702376589,
+        63.46483933218241
+      ],
+      "localEnd": [
+        1.7763568394002505e-15,
+        -2.099857464768432
+      ],
+      "interaction": null
+    },
+    {
+      "name": "canopy column",
+      "hz": 60,
+      "success": true,
+      "distance": 1.680454795628871,
+      "seconds": 2.9,
+      "peak": 0,
+      "minCamera": 11.4973285355582,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        15.635210677385011,
+        15.108267469326753,
+        65.0614692840078
+      ],
+      "localEnd": [
+        3.2671336463729137,
+        -6.336654345141188
+      ],
+      "interaction": null
+    },
+    {
+      "name": "left guard",
+      "hz": 60,
+      "success": true,
+      "distance": 2.8240004109693024,
+      "seconds": 3.433333333333333,
+      "peak": 0,
+      "minCamera": 1.5831183133239524,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        9.137060533551923,
+        15.121757452477421,
+        71.62201793184595
+      ],
+      "localEnd": [
+        -5.818815441979446,
+        -7.9835553793013645
+      ],
+      "interaction": null
+    },
+    {
+      "name": "right guard",
+      "hz": 60,
+      "success": true,
+      "distance": 1.7409587057094915,
+      "seconds": 3.033333333333333,
+      "peak": 0,
+      "minCamera": 1.5835413821161572,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        19.263936791082934,
+        15.020049317899609,
+        67.90528478880721
+      ],
+      "localEnd": [
+        4.608466497690717,
+        -10.747523422267191
+      ],
+      "interaction": null
+    }
+  ],
+  "metrics": {
+    "enabled": true,
+    "site": {
+      "u": 0,
+      "v": -7,
+      "datum": 15.095,
+      "diameter": 13,
+      "rotation": 35,
+      "extension": 0,
+      "vegetationMoves": 0
+    },
+    "assets": {
+      "meshes": 8,
+      "triangles": 14600,
+      "geometries": 8,
+      "materials": 8,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "colliderCount": 153,
+    "cache": {
+      "requests": 7,
+      "cachedFiles": 7,
+      "loadedFiles": 7
+    },
+    "travel": "Future boarding reservation only; no active travel interaction",
+    "terrainEdits": 0,
+    "vegetationMoves": 0,
+    "foundationContacts": [
+      {
+        "u": -3.3,
+        "v": -5.75,
+        "minGap": -0.007239317526028799,
+        "maxGap": 0.002360976738286169
+      },
+      {
+        "u": -3.3,
+        "v": -2.6,
+        "minGap": -0.0064695886018331095,
+        "maxGap": 0.00313064372104499
+      },
+      {
+        "u": 3.3,
+        "v": -5.75,
+        "minGap": -0.0072386535973993915,
+        "maxGap": 0.002360802306307974
+      },
+      {
+        "u": 3.3,
+        "v": -2.6,
+        "minGap": -0.006468898544731871,
+        "maxGap": 0.0031307604825965285
+      }
+    ],
+    "minimumPortalClearWidth": 6.12,
+    "fasciaClearance": 2.5947998755522796
+  },
+  "rollbackExact": true,
+  "approvedTerrainAndInstancesUnchanged": true
+}

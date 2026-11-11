@@ -1,0 +1,198 @@
+[
+  {
+    "file": "01-aerial.jpg",
+    "evidence": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 43,
+        "position": [
+          135,
+          105,
+          175
+        ],
+        "quaternion": [
+          -0.2202942828905621,
+          0.3170536165695787,
+          0.07597356414999419,
+          0.9193342431870088
+        ]
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+      "view": "R0-A / Full floating landscape",
+      "worldId": "transit-landscape-r0a"
+    }
+  },
+  {
+    "file": "02-profile.jpg",
+    "evidence": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 53,
+        "position": [
+          -145,
+          5,
+          155
+        ],
+        "quaternion": [
+          -0.04435940320584239,
+          -0.3603381248366482,
+          -0.01715783526871181,
+          0.9316084412591598
+        ]
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+      "view": "Layered geology / Side profile",
+      "worldId": "transit-landscape-r0a"
+    }
+  },
+  {
+    "file": "03-cliff.jpg",
+    "evidence": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 57,
+        "position": [
+          -104,
+          -15,
+          57
+        ],
+        "quaternion": [
+          0.18708627796918223,
+          -0.4003520864856685,
+          0.08386265241064024,
+          0.8931315619621008
+        ]
+      },
+      "player": [
+        -80,
+        32.00989313338486,
+        5
+      ],
+      "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+      "view": "Low-angle cloudbreak cliffs",
+      "worldId": "transit-landscape-r0a"
+    }
+  },
+  {
+    "file": "04-spawn.jpg",
+    "evidence": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 60,
+        "position": [
+          29,
+          19.2,
+          65
+        ],
+        "quaternion": [
+          0.04426730583945253,
+          0.16361863201934598,
+          -0.007349504889471804,
+          0.9855025792293564
+        ]
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+      "view": "Third-person arrival meadow",
+      "worldId": "transit-landscape-r0a"
+    }
+  },
+  {
+    "file": "05-trail.jpg",
+    "evidence": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 60,
+        "position": [
+          -26,
+          34,
+          9
+        ],
+        "quaternion": [
+          -0.23234977947756752,
+          0.15178611202463704,
+          0.036736449502681935,
+          0.9600130152508906
+        ]
+      },
+      "player": [
+        -29,
+        27,
+        -0.25
+      ],
+      "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+      "view": "Ridge switchback / Walking trail",
+      "worldId": "transit-landscape-r0a"
+    }
+  },
+  {
+    "file": "06-overlook.jpg",
+    "evidence": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 60,
+        "position": [
+          -96,
+          48,
+          23
+        ],
+        "quaternion": [
+          -0.1526149884425127,
+          -0.6904409209358116,
+          -0.15261498844251267,
+          0.6904409209358117
+        ]
+      },
+      "player": [
+        -80,
+        32.00989313338486,
+        5
+      ],
+      "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+      "view": "Cloudbreak overlook",
+      "worldId": "transit-landscape-r0a"
+    }
+  },
+  {
+    "file": "comparison-aerial.jpg",
+    "evidence": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 43,
+        "position": [
+          110,
+          82,
+          135
+        ],
+        "quaternion": [
+          -0.2120744149535645,
+          0.3266314256820759,
+          0.07546137421389727,
+          0.917955301352276
+        ]
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+      "view": "R0-A / Matched pre-correction camera",
+      "worldId": "transit-landscape-r0a"
+    }
+  }
+]

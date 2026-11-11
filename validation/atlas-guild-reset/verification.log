@@ -1,0 +1,121 @@
+{
+  "sightlines": [
+    {
+      "name": "Market to observation lantern",
+      "clear": true,
+      "firstHit": "Guild_delivery_4__C1__oiled_timber",
+      "origin": [
+        7.603646545265695,
+        16.945000084797798,
+        59.28728066433487
+      ],
+      "target": [
+        -8.089574758647686,
+        26.3,
+        35.65462518285334
+      ]
+    },
+    {
+      "name": "Telaga Awan to entrance",
+      "clear": true,
+      "firstHit": "Guild_delivery_4__C1__oiled_timber",
+      "origin": [
+        -2.7200492876581297,
+        17.164999389648436,
+        49.425166066071924
+      ],
+      "target": [
+        -8.06072593148138,
+        17.4,
+        36.916238334802514
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "name": "approach",
+      "hz": 20,
+      "success": true,
+      "maxRise": 0.17833394885063392,
+      "jumps": 0,
+      "landings": 0
+    },
+    {
+      "name": "return",
+      "hz": 20,
+      "success": true,
+      "maxRise": 3.552713678800501e-15,
+      "jumps": 0,
+      "landings": 0
+    },
+    {
+      "name": "approach",
+      "hz": 60,
+      "success": true,
+      "maxRise": 0.17833394885063214,
+      "jumps": 0,
+      "landings": 0
+    },
+    {
+      "name": "return",
+      "hz": 60,
+      "success": true,
+      "maxRise": 3.552713678800501e-15,
+      "jumps": 0,
+      "landings": 0
+    },
+    {
+      "name": "entrance jump",
+      "hz": 60,
+      "success": true,
+      "maxRise": 0.17833394885063214,
+      "jumps": 1,
+      "landings": 1
+    }
+  ],
+  "stairs": [
+    {
+      "v": 28.2,
+      "height": 15.514999389648438
+    },
+    {
+      "v": 28.45,
+      "height": 15.69333333849907
+    },
+    {
+      "v": 28.75,
+      "height": 15.871666680574418
+    },
+    {
+      "v": 29.05,
+      "height": 16.049999992847447
+    },
+    {
+      "v": 29.5,
+      "height": 16.049999992847443
+    },
+    {
+      "v": 29.9,
+      "height": 16.049999992847443
+    }
+  ],
+  "localBounds": {
+    "min": [
+      -4.5709381103515625,
+      -0.07999999821186066,
+      -3.632939577102661
+    ],
+    "max": [
+      4.9237494468688965,
+      13.295000076293945,
+      3.700000047683716
+    ]
+  },
+  "roofWidth": 9.494687557220459,
+  "fullDepth": 7.332939624786377,
+  "heightAboveDatum": 13.295000076293945,
+  "glbBytes": 1390828,
+  "sourcePrototypeUnchanged": true,
+  "frozenSettlementFilesVerified": 66,
+  "checkpoint": "ebdd7964aa1e981c4642b52307c18927e9b1c503"
+}

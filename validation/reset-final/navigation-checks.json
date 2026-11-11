@@ -1,0 +1,94 @@
+{
+  "defaultNoTownRequests": true,
+  "mbr": true,
+  "defaultEvidence": {
+    "mode": "adventure",
+    "project": "mbr",
+    "ready": "true",
+    "renderer": "1",
+    "resources": [
+      {
+        "durationMs": 2.4000000059604645,
+        "encodedBytes": 719224,
+        "file": "canopy-tree.glb",
+        "transferBytes": 0
+      },
+      {
+        "durationMs": 1.5999999940395355,
+        "encodedBytes": 104876,
+        "file": "fern.glb",
+        "transferBytes": 0
+      },
+      {
+        "durationMs": 4.800000011920929,
+        "encodedBytes": 1581480,
+        "file": "urban-explorer.glb",
+        "transferBytes": 0
+      },
+      {
+        "durationMs": 3.899999976158142,
+        "encodedBytes": 1186388,
+        "file": "city-resident.glb",
+        "transferBytes": 0
+      },
+      {
+        "durationMs": 2.800000011920929,
+        "encodedBytes": 267260,
+        "file": "jump-animations.glb",
+        "transferBytes": 0
+      }
+    ]
+  },
+  "editorialEvidence": {
+    "mainVisible": true,
+    "mode": "editorial",
+    "renderer": "1"
+  },
+  "studyLinks": [
+    {
+      "href": "project-transit.html",
+      "title": "01NETWORK ACCESSTransit accessibility in DKI JakartaWho can actually reach the city?"
+    },
+    {
+      "href": "project-pangan.html",
+      "title": "02FOOD SYSTEMSCritical roads for rice in West JavaWhich roads keep West Java’s rice moving?"
+    },
+    {
+      "href": "project-alphaearth-food.html",
+      "title": "03EARTH OBSERVATIONHistorical paddy screening in West JavaWhere does the historical signal justify closer inspection?"
+    },
+    {
+      "href": "project-mbr.html",
+      "title": "04URBAN MORPHOLOGYSatellite proxy for low-income communitiesWhat can satellite morphology reveal—and what can’t it replace?"
+    },
+    {
+      "href": "project-cbd.html",
+      "title": "05SPATIAL CLUSTERINGMapping Indonesia’s business centersWhere do commercial centers emerge from 91,940 POIs?"
+    },
+    {
+      "href": "project-bandung-cafe.html",
+      "title": "06SITE SCREENINGChoosing where to visit for a café in BandungWhich neighbourhoods deserve a site visit, and what can the data not say?"
+    }
+  ],
+  "sixStudies": true,
+  "editorialAdventure": true,
+  "oldTownEvidence": {
+    "circulation": {
+      "changes": {
+        "meshes": 11,
+        "relocatedTreeComponents": 2,
+        "removedTriangles": 1390,
+        "scope": "Selected furniture and planter-bed triangles plus one town planter tree; original building meshes unchanged"
+      },
+      "enabled": true,
+      "plan": null
+    },
+    "enabled": "true",
+    "errors": [],
+    "newReview": false,
+    "ready": "true",
+    "renderer": "1",
+    "scene": "29473404-511e-43b2-b58e-acc235c82479"
+  },
+  "oldTownAvailable": true
+}

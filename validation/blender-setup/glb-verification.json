@@ -1,0 +1,23 @@
+{
+  "loader": "Existing Three.js GLTFLoader",
+  "meshes": 9,
+  "bytes": 14124,
+  "bounds": {
+    "min": [
+      -6,
+      -0.20000000298023224,
+      -6
+    ],
+    "max": [
+      6,
+      3.300000101327896,
+      6
+    ],
+    "size": [
+      12,
+      3.5000001043081284,
+      12
+    ]
+  },
+  "mcpUsed": false
+}

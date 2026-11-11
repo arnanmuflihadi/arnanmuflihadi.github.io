@@ -1,0 +1,18 @@
+model,instances,triangles_per_model,source_file,source_url,license,height_m
+tableRound,3,80,source-assets/town-population/furniture/Models/GLTF format/tableRound.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,0.76
+chair,6,170,source-assets/town-population/furniture/Models/GLTF format/chair.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,0.86
+bench,1,170,source-assets/town-population/furniture/Models/GLTF format/bench.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,0.84
+pottedPlant,8,60,source-assets/town-population/furniture/Models/GLTF format/pottedPlant.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,1.18
+books,2,62,source-assets/town-population/furniture/Models/GLTF format/books.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,0.22
+cardboardBoxOpen,2,60,source-assets/town-population/furniture/Models/GLTF format/cardboardBoxOpen.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,0.45
+kitchenBar,1,76,source-assets/town-population/furniture/Models/GLTF format/kitchenBar.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,1.02
+plantSmall2,1,158,source-assets/town-population/furniture/Models/GLTF format/plantSmall2.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,0.28
+stoolBar,1,176,source-assets/town-population/furniture/Models/GLTF format/stoolBar.glb,https://kenney.nl/assets/furniture-kit,CC0-1.0,0.72
+cup-coffee,3,108,source-assets/town-population/food/Models/GLB format/cup-coffee.glb,https://kenney.nl/assets/food-kit,CC0-1.0,0.12
+cup-saucer,3,116,source-assets/town-population/food/Models/GLB format/cup-saucer.glb,https://kenney.nl/assets/food-kit,CC0-1.0,0.025
+plate,3,140,source-assets/town-population/food/Models/GLB format/plate.glb,https://kenney.nl/assets/food-kit,CC0-1.0,0.025
+croissant,2,162,source-assets/town-population/food/Models/GLB format/croissant.glb,https://kenney.nl/assets/food-kit,CC0-1.0,0.09
+banana,1,104,source-assets/town-population/food/Models/GLB format/banana.glb,https://kenney.nl/assets/food-kit,CC0-1.0,0.14
+bread,1,116,source-assets/town-population/food/Models/GLB format/bread.glb,https://kenney.nl/assets/food-kit,CC0-1.0,0.06
+coconut-half,1,92,source-assets/town-population/food/Models/GLB format/coconut-half.glb,https://kenney.nl/assets/food-kit,CC0-1.0,0.12
+fern,3,288,assets/game/scenery/fern.glb,https://quaternius.com/packs/stylizednaturemegakit.html,CC0-1.0,existing scale x .65-.83

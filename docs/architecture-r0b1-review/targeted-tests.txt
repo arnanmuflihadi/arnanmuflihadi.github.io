@@ -1,0 +1,21 @@
+✔ collision inspection uses one valid batch supported by the existing browser renderer (0.994541ms)
+✔ R0-B1 uses two actual new CC0 archives with matching bundled licenses and exact component hashes (2.593292ms)
+✔ new architecture is self-contained, bounded below 10 MB, and carries original 1024px functional wayfinding (4.189166ms)
+✔ four complete distinct prototypes retain real imported geometry and correct metric proportions (116.589333ms)
+✔ all baked positions, indices, normals and UVs are finite with positive transforms (115.403083ms)
+✔ prototype clones share buffers/materials while retaining independent placement and source data (93.139541ms)
+✔ new asset cache deduplicates concurrency, evicts errors and releases every shared resource once (90.668458ms)
+✔ pending load disposed before completion releases its late-arriving mesh (91.297875ms)
+✔ measured sites stay on the exact island without modifying terrain and keep distinct architectural envelopes (2.555542ms)
+✔ reversible island preview restores every vegetation matrix/count, grass resource, obstacles and source terrain (359.289792ms)
+✔ rendered floor triangles support walking without snapping a player onto overhead platforms or roofs (349.317834ms)
+✔ review supplies reproducible full, pedestrian, rear, material and island cameras with fixed human eye height (0.120209ms)
+✔ ordinary editorial/adventure production cannot import R0-B1 architecture assets (0.442459ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1373.932333

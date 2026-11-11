@@ -1,0 +1,14 @@
+{
+  "cache": {
+    "cachedFiles": 8,
+    "loadedFiles": 8,
+    "requests": 8
+  },
+  "errors": [],
+  "guild": null,
+  "guildRequests": [],
+  "props": 42,
+  "renderer": "1",
+  "types": 17,
+  "warnings": []
+}

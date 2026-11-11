@@ -1,0 +1,39 @@
+{
+  "performance": {
+    "buffer": [
+      1280,
+      658
+    ],
+    "drawCalls": 107,
+    "meanFrameMs": 33.33316666666667,
+    "meanRenderSubmissionMs": 1.421999999905626,
+    "measuredFps": 30.00015000075,
+    "memory": {
+      "geometries": 205,
+      "programs": 35,
+      "textures": 21
+    },
+    "metric": "Actual rAF after 60 frame warmup; walking requires real displacement; CPU submission only",
+    "p95FrameMs": 33.89999999999418,
+    "preview": true,
+    "quality": "eco",
+    "samples": 600,
+    "triangles": 1120576,
+    "viewport": [
+      1280,
+      658
+    ],
+    "walking": {
+      "meanFrameMs": 33.33366666666667,
+      "measuredFps": 29.999700002999965,
+      "p95FrameMs": 33.89999999999418,
+      "samples": 600
+    }
+  },
+  "player": [
+    26,
+    16.958950402370647,
+    41.793066919094706
+  ],
+  "protocol": "12 s forward, 10 s backward; original walk speed; yaw 0; same spawn"
+}

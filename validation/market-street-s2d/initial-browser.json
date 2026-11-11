@@ -1,0 +1,608 @@
+{
+  "state": "loaded",
+  "mode": "studio",
+  "view": "arrival",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "quality": {
+    "buffer": [
+      1800,
+      1200
+    ],
+    "dpr": 1,
+    "antialias": true,
+    "shadows": "PCFSoft 2048",
+    "toneMapping": "ACES",
+    "exposure": 1,
+    "transmission": "preserved; one Kopi Awan material",
+    "islandLighting": "unchanged R0-A3",
+    "studioLighting": "hemisphere 1.5; sun 2.3; fill .6; gradient environment 256x128"
+  },
+  "camera": {
+    "position": [
+      0,
+      3.092857142857,
+      -6.65
+    ],
+    "quaternion": [
+      0.07847998694507716,
+      0,
+      0,
+      0.9969156893384218
+    ],
+    "fov": 53.13010235415598,
+    "sourceBlender": {
+      "p": [
+        0,
+        6.65,
+        3.092857142857
+      ],
+      "t": [
+        0,
+        25,
+        6
+      ],
+      "lens": 24
+    }
+  },
+  "asset": {
+    "meshes": 107,
+    "triangles": 170709,
+    "geometries": 107,
+    "materials": 59,
+    "textures": [
+      {
+        "name": "colormap",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "Leaves",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Bark_NormalTree",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Bark_NormalTree_Normal",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Leaves_NormalTree_C",
+        "width": 256,
+        "height": 256
+      }
+    ],
+    "missingTextures": [],
+    "bytes": 10007884,
+    "bounds": {
+      "min": [
+        -18,
+        -3.8631129264831543,
+        -40
+      ],
+      "max": [
+        18,
+        11.9320068359375,
+        10
+      ]
+    },
+    "instancedMeshes": [
+      {
+        "name": "tree002",
+        "count": 7
+      },
+      {
+        "name": "tree002_1",
+        "count": 7
+      },
+      {
+        "name": "MarketStreet36m1",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m2",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m3",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m4",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m5",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m6",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m7",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m8",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m9",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m10",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m11",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m12",
+        "count": 20
+      }
+    ],
+    "glass": [
+      {
+        "name": "S2A / soft blue green glass",
+        "alpha": 1,
+        "transparent": false,
+        "transmission": 0.9599999785423279
+      },
+      {
+        "name": "Leaves.001",
+        "alpha": 1,
+        "transparent": true,
+        "transmission": 0
+      },
+      {
+        "name": "S2C / shared low-cost teal glazing",
+        "alpha": 0.6200000047683716,
+        "transparent": true,
+        "transmission": 0
+      },
+      {
+        "name": "S2C / shared low-cost teal glazing",
+        "alpha": 0.6200000047683716,
+        "transparent": true,
+        "transmission": 0
+      },
+      {
+        "name": "Leaves.001",
+        "alpha": 1,
+        "transparent": true,
+        "transmission": 0
+      }
+    ]
+  },
+  "loaderCache": {
+    "requests": 1,
+    "cachedFiles": 1,
+    "loadedFiles": 1
+  },
+  "frameAllPasses": {
+    "calls": 321,
+    "triangles": 512127,
+    "geometries": 131,
+    "textures": 11
+  },
+  "sceneGeometry": {
+    "meshes": 122,
+    "triangles": 180911,
+    "geometries": 122,
+    "materials": 69,
+    "textures": 5,
+    "missingTextures": []
+  },
+  "traversal": [
+    {
+      "name": "step-free proposal",
+      "mode": "studio",
+      "success": true,
+      "reason": "target reached",
+      "start": [
+        0,
+        0.1361111111111111,
+        -1
+      ],
+      "end": [
+        0,
+        0,
+        -34.80533008790294
+      ],
+      "target": [
+        0,
+        -35
+      ],
+      "frames": 970,
+      "simulatedSeconds": 16.166666666666668,
+      "walkedMetres": 33.80533008790294,
+      "maxSupportJump": 0.1361111111111111,
+      "minCameraDistance": 1.5427652965696752,
+      "trace": [
+        {
+          "frame": 30,
+          "position": [
+            0,
+            0,
+            -1.9055475903190016
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 60,
+          "position": [
+            0,
+            0,
+            -2.9553304149047674
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 90,
+          "position": [
+            0,
+            0,
+            -4.005330088394738
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 120,
+          "position": [
+            0,
+            0,
+            -5.055330087903849
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 150,
+          "position": [
+            0,
+            0,
+            -6.105330087903112
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 180,
+          "position": [
+            0,
+            0,
+            -7.155330087903116
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 210,
+          "position": [
+            0,
+            0,
+            -8.20533008790312
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 240,
+          "position": [
+            0,
+            0,
+            -9.255330087903124
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 270,
+          "position": [
+            0,
+            0,
+            -10.305330087903128
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 300,
+          "position": [
+            0,
+            0,
+            -11.355330087903132
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 330,
+          "position": [
+            0,
+            0,
+            -12.405330087903137
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 360,
+          "position": [
+            0,
+            0,
+            -13.45533008790314
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 390,
+          "position": [
+            0,
+            0,
+            -14.505330087903145
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 420,
+          "position": [
+            0,
+            0,
+            -15.55533008790315
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 450,
+          "position": [
+            0,
+            0,
+            -16.605330087903152
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 480,
+          "position": [
+            0,
+            0,
+            -17.655330087903156
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 510,
+          "position": [
+            0,
+            0,
+            -18.70533008790316
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 540,
+          "position": [
+            0,
+            0,
+            -19.755330087903165
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 570,
+          "position": [
+            0,
+            0,
+            -20.80533008790317
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 600,
+          "position": [
+            0,
+            0,
+            -21.855330087903173
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 630,
+          "position": [
+            0,
+            0,
+            -22.905330087903177
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 660,
+          "position": [
+            0,
+            0,
+            -23.95533008790318
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 690,
+          "position": [
+            0,
+            0,
+            -25.005330087903186
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 720,
+          "position": [
+            0,
+            0,
+            -26.05533008790319
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 750,
+          "position": [
+            0,
+            0,
+            -27.105330087903194
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 780,
+          "position": [
+            0,
+            0,
+            -28.1553300879032
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 810,
+          "position": [
+            0,
+            0,
+            -29.205330087903203
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 840,
+          "position": [
+            0,
+            0,
+            -30.255330087903207
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 870,
+          "position": [
+            0,
+            0,
+            -31.30533008790321
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 900,
+          "position": [
+            0,
+            0,
+            -32.35533008790318
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 930,
+          "position": [
+            0,
+            0,
+            -33.405330087903074
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        },
+        {
+          "frame": 960,
+          "position": [
+            0,
+            0,
+            -34.45533008790297
+          ],
+          "grounded": true,
+          "phase": "grounded",
+          "support": 0
+        }
+      ],
+      "controller": {
+        "gravity": 16.5,
+        "launchSpeed": 6.2,
+        "launchDelay": 0.13,
+        "takeoffDuration": 0.23,
+        "landingDuration": 0.22,
+        "maxStep": 0.42,
+        "height": 1.9,
+        "walkSpeed": 2.1,
+        "runSpeed": 4.6,
+        "walkClipSpeed": 1.2,
+        "runClipSpeed": 2.695
+      },
+      "proposal": true,
+      "collision": "existing slide/blocked; building footprint proxies and original island tree colliders",
+      "support": "upward triangles of exported WalkableStreet; actual terrain in island mode"
+    }
+  ],
+  "performance": null,
+  "activeWalk": null,
+  "elevationReferences": false,
+  "errors": []
+}

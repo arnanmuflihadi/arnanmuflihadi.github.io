@@ -1,0 +1,61 @@
+{
+  "height": 775,
+  "mode": "adventure",
+  "performance": {
+    "drawCalls": 239,
+    "drawingBuffer": [
+      794,
+      822
+    ],
+    "meanFrameMs": 8.335833333333333,
+    "meanRenderSubmissionMs": 1.2374999999192853,
+    "measuredFps": 119.96401079676096,
+    "medianFrameMs": 8.30000000000291,
+    "metric": "Actual requestAnimationFrame intervals after 60-frame warmup; walking samples require measured displacement; submission time is CPU only",
+    "mode": "adventure",
+    "p95FrameMs": 8.5,
+    "pixelRatio": 1.15,
+    "samples": 600,
+    "shadows": false,
+    "triangles": 670672,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": [
+      691,
+      715
+    ],
+    "walking": {
+      "meanFrameMs": 0,
+      "measuredFps": 0,
+      "medianFrameMs": 0,
+      "p95FrameMs": 0,
+      "samples": 0
+    }
+  },
+  "rendererCount": "1",
+  "review": {
+    "camera": {
+      "aspect": 0.9664335664335664,
+      "fov": 50,
+      "position": [
+        -4,
+        5.6,
+        36
+      ],
+      "quaternion": [
+        -0.04538538707228349,
+        -0.0881478762561529,
+        -0.00402046729733652,
+        0.9950647990932748
+      ]
+    },
+    "player": [
+      0,
+      0.24,
+      28
+    ],
+    "sceneId": "bc75989d-e457-4bcb-95bb-724e097a64ad",
+    "view": "Arrival plaza"
+  },
+  "width": 691,
+  "logs": []
+}

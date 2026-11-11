@@ -1,0 +1,54 @@
+{
+  "phase": "R0-D2",
+  "decision": "NO SUITABLE VERIFIED ASSET",
+  "listingsInspected": 7,
+  "detailedFinalists": 3,
+  "productionChanges": false,
+  "purchase": false,
+  "newAuthoredAnimations": false,
+  "stanExperimentsRepeated": false,
+  "restrictedModelFilesInRepository": false,
+  "BlenderWorkspaceRestored": true,
+  "weightedScores": "not assigned because essential gates did not all pass",
+  "sourceChecks": {
+    "validation/dragon-mount-d1b/dragon-jade-source-faithful.glb": "4c9e49cb54d56a68b242cd94e383842204a046f7e65ea8759f1139acc6ce9dbe",
+    "validation/stylized-dragon-review/stylized-dragon-stan-original.glb": "427e832bb466b7eba096ffc056b9cac6897edc7c4b3fa182003c2deec3c5ac57"
+  },
+  "images": {
+    "dragon-pack-listing.png": {
+      "bytes": 67032,
+      "dimensions": [
+        65536,
+        4292542531
+      ]
+    },
+    "candidate-comparison.png": {
+      "bytes": 97937,
+      "dimensions": [
+        65536,
+        4292542531
+      ]
+    },
+    "european-creator-profile.png": {
+      "bytes": 73734,
+      "dimensions": [
+        65536,
+        4292542531
+      ]
+    },
+    "european-idle-stand.png": {
+      "bytes": 762319,
+      "dimensions": [
+        1000,
+        700
+      ]
+    },
+    "ashwing-lite-idle.png": {
+      "bytes": 745602,
+      "dimensions": [
+        1000,
+        700
+      ]
+    }
+  }
+}

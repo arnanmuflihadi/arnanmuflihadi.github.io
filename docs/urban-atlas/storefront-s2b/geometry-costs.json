@@ -1,0 +1,158 @@
+{
+  "components": {
+    "Building shell": {
+      "before": 5064,
+      "after": 2736,
+      "objects": 12
+    },
+    "Shopfront and doors": {
+      "before": 4212,
+      "after": 1716,
+      "objects": 39
+    },
+    "Timber structures": {
+      "before": 2592,
+      "after": 1056,
+      "objects": 24
+    },
+    "Balcony": {
+      "before": 5400,
+      "after": 2200,
+      "objects": 20
+    },
+    "Sun screens": {
+      "before": 1836,
+      "after": 748,
+      "objects": 5
+    },
+    "Windows": {
+      "before": 3732,
+      "after": 1684,
+      "objects": 44
+    },
+    "Decorative props": {
+      "before": 1908,
+      "after": 1460,
+      "objects": 8
+    },
+    "Roof A": {
+      "before": 17128,
+      "after": 17128,
+      "objects": 69
+    },
+    "Interior": {
+      "before": 5068,
+      "after": 3148,
+      "objects": 29
+    },
+    "Planters": {
+      "before": 4768,
+      "after": 4000,
+      "objects": 20
+    }
+  },
+  "exports": [
+    {
+      "file": "kopi-awan-lod1.glb",
+      "bytes": 803596,
+      "triangles": 11938,
+      "primitives": 42,
+      "module_meshes": 10,
+      "component_triangles": {
+        "Balcony": 600,
+        "Building shell": 818,
+        "Decorative props": 1108,
+        "Interior": 1548,
+        "Planters": 3872,
+        "Roof A": 2372,
+        "Shopfront and doors": 468,
+        "Sun screens": 204,
+        "Timber structures": 288,
+        "Windows": 660
+      },
+      "materials": 18,
+      "embedded_images": [
+        {
+          "size": [
+            256,
+            256
+          ],
+          "mime": "image/png"
+        },
+        {
+          "size": [
+            512,
+            512
+          ],
+          "mime": "image/png"
+        }
+      ],
+      "extensions": [
+        "KHR_materials_transmission",
+        "KHR_materials_ior"
+      ],
+      "sha256": "ef2c21a5f16d2cb5bdb10206e5813775859fe6163b7ad18f489bb178134b9c28"
+    },
+    {
+      "file": "kopi-awan-optimized.glb",
+      "bytes": 2477572,
+      "triangles": 35876,
+      "primitives": 46,
+      "module_meshes": 10,
+      "component_triangles": {
+        "Balcony": 2200,
+        "Building shell": 2736,
+        "Decorative props": 1460,
+        "Interior": 3148,
+        "Planters": 4000,
+        "Roof A": 17128,
+        "Shopfront and doors": 1716,
+        "Sun screens": 748,
+        "Timber structures": 1056,
+        "Windows": 1684
+      },
+      "materials": 18,
+      "embedded_images": [
+        {
+          "size": [
+            256,
+            256
+          ],
+          "mime": "image/png"
+        },
+        {
+          "size": [
+            512,
+            512
+          ],
+          "mime": "image/png"
+        }
+      ],
+      "extensions": [
+        "KHR_materials_transmission",
+        "KHR_materials_ior"
+      ],
+      "sha256": "43aed5cfd940017b0d244f04063c2ee78a0f2ad30a2667756e9992c22e786a47"
+    },
+    {
+      "file": "kopi-awan-roof-b.glb",
+      "bytes": 155004,
+      "triangles": 3456,
+      "primitives": 6,
+      "module_meshes": 1,
+      "component_triangles": {
+        "Roof B": 3456
+      },
+      "materials": 6,
+      "embedded_images": [],
+      "extensions": [],
+      "sha256": "be00df014ab719f169d62e87457bc226a252c0a3c44c168ae13075b5fa19054c"
+    }
+  ],
+  "preservation": {
+    "checked_files": 1261,
+    "changed": [],
+    "approved_s2a_sha256": "183d24bd056b8269812d7afa30b47a0a2a742718cbd64b660d936ce6a421b93c"
+  },
+  "checks": "GLB headers, active scene only, embedded images, triangle modes/counts, normals, unit node scales, decoded image dimensions, SHA256 preservation"
+}

@@ -1,0 +1,31 @@
+/Users/arnanmuflihadi/Documents/ChatGPT/Gaming portofolio/validation/blender-setup/create_validation.py:21: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+16:44:18 | INFO: Starting glTF 2.0 export
+16:44:18 | INFO: Extracting primitive: Cube.004
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.001
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.009
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.002
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.006
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.005
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.003
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.007
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Extracting primitive: Cube.008
+16:44:18 | INFO: Primitives created: 1
+16:44:18 | INFO: Finished glTF 2.0 export in 0.01106882095336914 s
+00:02.490  render           | Saved: '/Users/arnanmuflihadi/Documents/ChatGPT/Gaming portofolio/validation/blender-setup/validation-render.png'
+
+Info: Saved as "validation.blend"
+OFFLINE_VALIDATION_SAVED; MCP_NOT_TESTED
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

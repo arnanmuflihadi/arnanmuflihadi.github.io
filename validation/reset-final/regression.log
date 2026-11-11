@@ -1,0 +1,43 @@
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (4.9575ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (64.943208ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (19.871083ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (23.944042ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (29.783916ms)
+✔ approved masters, GLBs, controller and terrain files remain byte-identical (184.77175ms)
+✔ direct stair and continuous journey/guild routes use the unchanged real controller (0.748084ms)
+✔ before/after restores original furniture geometry, terrain, instances and collision boundaries (1148.144459ms)
+✔ visible imported stair tops and exact terrain agree with support samplers (927.583917ms)
+✔ jump and landing work on the repaired civic portal without changing movement physics (577.8065ms)
+✔ arrival guard, market edge and fountain stop the original controller on visible support (577.145375ms)
+✔ registry contains six unique, existing research routes (4.500625ms)
+✔ URL roundtrip preserves hosting path, hash, unrelated parameters and project context (1.697ms)
+✔ invalid deep links and saved mission values are sanitized (0.153542ms)
+✔ collision prevents tunnelling, permits wall sliding and bounds the district (0.741667ms)
+✔ both landmark focus positions are safe and reachable from the spawn (15.467375ms)
+✔ player controls move, sprint, turn, animate and stop against real collision data (2.828542ms)
+✔ camera pulls ahead of a building behind the player (4.824834ms)
+✔ waterfall is a closed volume joined to the stream, with depth and a lower cloud termination (7.460792ms)
+✔ fall stays visible outside the cliff, trail accents clear paths, and new water motion is reducible (525.714291ms)
+✔ R0-A rendered terrain support is exact and the chiseled underside is watertight (2160.888333ms)
+✔ R0-A active graph has no rejected architecture, uses two scenery GLBs, and disposes every observed resource (323.183792ms)
+✔ R0-A every ridge and valley route is reachable using unchanged locomotion with final nature colliders (299.913584ms)
+✔ R0-A character jumps, lands, falls and recovers; camera clears natural elevation at all areas (343.041125ms)
+✔ town requires exact local development flag and is off on every public/default route (2.501583ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (156.213375ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (1084.299542ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (901.654667ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (625.981125ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (570.134542ms)
+✔ C1B retains approved sources and exports real normalized optimized geometry (1275.719833ms)
+✔ square OFF restores accepted C1A5 terrain and instances; town OFF restores original island (574.484667ms)
+✔ real stair and deck tops match mesh rays and exact accepted ground sampler (2507.984333ms)
+✔ unchanged controller crosses the constructed stairs and courtyard in both directions (0.480959ms)
+✔ fountain and guards block movement; explorer jumps and lands on the court (452.028125ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5063.278084

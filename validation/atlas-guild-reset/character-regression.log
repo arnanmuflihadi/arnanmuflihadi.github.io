@@ -1,0 +1,13 @@
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (4.036584ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (30.779334ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (35.686792ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (20.21475ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (20.808375ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 291.838083

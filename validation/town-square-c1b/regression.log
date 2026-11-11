@@ -1,0 +1,24 @@
+✔ town requires exact local development flag and is off on every public/default route (1.479167ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (129.940333ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (3790.401167ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (2861.916792ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (2354.113584ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (2335.226416ms)
+✔ C1B retains approved sources and exports real normalized optimized geometry (3992.448042ms)
+✔ square OFF restores accepted C1A5 terrain and instances; town OFF restores original island (2385.316292ms)
+✔ real stair and deck tops match mesh rays and exact accepted ground sampler (8835.463208ms)
+✔ unchanged controller crosses the constructed stairs and courtyard in both directions (0.778ms)
+✔ fountain and guards block movement; explorer jumps and lands on the court (1313.199375ms)
+✔ local terrain geometry, exact sampler, normals and floor caps agree (6981.515458ms)
+✔ terrain flag restores exact surface, vegetation, obstacles and sampler; cached geometry survives LOD (1925.087833ms)
+✔ actual unchanged controller traverses implemented approaches, reservation ground and highland in both directions (2033.6135ms)
+✔ jump lands on the modified surface without changing movement physics (1870.426417ms)
+✔ existing camera clearance samples the same adjusted ground and restores the original (2051.254375ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16826.709333

@@ -1,0 +1,195 @@
+{
+  "phase": "S2-F actual game, local opt-in, owner review pending",
+  "ready": true,
+  "townEnabled": true,
+  "sceneId": "0ff3456d-a565-4165-8901-c89f3b987ca7",
+  "rendererCount": "1",
+  "view": "third-person",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "viewport": [
+      1354,
+      1130
+    ],
+    "drawingBuffer": [
+      1354,
+      1130
+    ],
+    "dpr": 1,
+    "exposure": 0.96,
+    "shadows": true,
+    "shadowType": 2,
+    "antialias": true,
+    "near": 0.12,
+    "far": 1600,
+    "glass": "unchanged authored transmission"
+  },
+  "camera": {
+    "position": [
+      36.0000026809008,
+      28.789708921306044,
+      30.97293961810666
+    ],
+    "quaternion": [
+      -0.22958342057603529,
+      9.336944505275797e-8,
+      2.2024369791477503e-8,
+      0.9732889874012746
+    ],
+    "fov": 60,
+    "aspect": 1.1982300884955752
+  },
+  "player": [
+    36.00000086977664,
+    21.97400007247925,
+    21.53330336379532
+  ],
+  "actorVisible": true,
+  "activeWalk": {
+    "name": "main",
+    "seconds": 22.927700000000282,
+    "target": 7
+  },
+  "benchmark": null,
+  "assets": {
+    "market": {
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    },
+    "interfaces": {
+      "meshes": 6,
+      "triangles": 8404,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "foundations": {
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "support": {
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    }
+  },
+  "cache": {
+    "requests": 6,
+    "cachedFiles": 6,
+    "loadedFiles": 6
+  },
+  "network": [
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+      "transferBytes": 10008204,
+      "encodedBytes": 10007904,
+      "decodedBytes": 10007904,
+      "durationMs": 11.400000005960464
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+      "transferBytes": 6464,
+      "encodedBytes": 6164,
+      "decodedBytes": 6164,
+      "durationMs": 1.7999999821186066
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+      "transferBytes": 527472,
+      "encodedBytes": 527172,
+      "decodedBytes": 527172,
+      "durationMs": 2.0999999940395355
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+      "transferBytes": 543752,
+      "encodedBytes": 543452,
+      "decodedBytes": 543452,
+      "durationMs": 2.199999988079071
+    }
+  ],
+  "frameAllPasses": {
+    "frame": 5257,
+    "calls": 567,
+    "triangles": 4124897,
+    "points": 0,
+    "lines": 0
+  },
+  "resources": {
+    "geometries": 233,
+    "textures": 23,
+    "programs": 62,
+    "heap": 74602355
+  },
+  "inventory": {
+    "meshes": 227,
+    "triangles": 1489477,
+    "geometries": 218,
+    "materials": 131,
+    "textures": 10,
+    "missingTextures": []
+  },
+  "traversal": [],
+  "benchmarks": [],
+  "switches": [],
+  "passSample": null,
+  "errors": [],
+  "warnings": [],
+  "capture": {
+    "dataset": {
+      "animationTime": "1.0579320189785295",
+      "cameraY": "28.790",
+      "characterReady": "true",
+      "districtAssets": "{\"world\":\"Transit Kingdom / Landscape\",\"revision\":\"R0A3.73\",\"terrainOnly\":true,\"architectureInstances\":0,\"reservations\":{\"skyport\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":9,\"constructed\":false},\"station\":{\"x\":-5,\"z\":5,\"y\":21,\"radius\":8,\"constructed\":false},\"settlement\":{\"x\":32,\"z\":12,\"y\":22,\"radius\":11,\"constructed\":false},\"overlook\":{\"x\":-80,\"z\":5,\"y\":32,\"radius\":5,\"constructed\":false,\"natural\":true},\"dragon\":{\"x\":27,\"z\":57,\"y\":16,\"radius\":6.5,\"constructed\":false}},\"imported\":{\"tree\":134,\"fern\":678,\"hangingFern\":24},\"terrain\":{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85},\"geology\":{\"clusters\":7,\"rockPieces\":28,\"sharedRockGeometries\":3},\"waterfall\":{\"source\":[-72,10.399999999999999,38],\"termination\":[-81.6,-67.6,45.2],\"widthAtLip\":3.6,\"fallHeight\":78,\"volumeTriangles\":1032,\"bankRocks\":11,\"mistCards\":9},\"growthForms\":{\"spreading\":33,\"emergent\":22,\"windswept\":24,\"tiered\":22,\"umbrella\":33},\"landscapeZones\":{\"forest\":107,\"meadow\":24,\"ridge\":3},\"palms\":10,\"shrubs\":131,\"vegetationBatches\":16,\"derivedTreeGeometries\":10,\"trailDetails\":{\"clusters\":18,\"floweringPlants\":18,\"broadleafPlants\":18,\"smallStones\":18,\"points\":[{\"x\":26.88549845398838,\"z\":43.85114374057807,\"route\":\"arrival\",\"pathClearance\":1.7733760383387576},{\"x\":16.305612968870673,\"z\":41.694387031129324,\"route\":\"arrival\",\"pathClearance\":2.2604386817052715},{\"x\":17.02701741873651,\"z\":30.770275760721994,\"route\":\"arrival\",\"pathClearance\":1.9363706626347283},{\"x\":7.777323562979605,\"z\":26.03181091957434,\"route\":\"arrival\",\"pathClearance\":2.2104710754007098},{\"x\":11.589080609749377,\"z\":16.293513850179014,\"route\":\"arrival\",\"pathClearance\":2.2461823115969315},{\"x\":-1.6096061165508817,\"z\":12.32056672820597,\"route\":\"arrival\",\"pathClearance\":1.5861549558409023},{\"x\":-38.215984809526965,\"z\":-6.771646030301023,\"route\":\"ridge\",\"pathClearance\":1.919282673229463},{\"x\":-33.911535656420924,\"z\":-25.311925040505354,\"route\":\"ridge\",\"pathClearance\":1.6436544109426883},{\"x\":-43.762810820937894,\"z\":-43.02004053167934,\"route\":\"ridge\",\"pathClearance\":1.7067511216504514},{\"x\":-46.525659273098086,\"z\":-42.020527418478466,\"route\":\"overlook\",\"pathClearance\":1.9187022160185743},{\"x\":-56.89802228907635,\"z\":-21.672805943753694,\"route\":\"overlook\",\"pathClearance\":1.9603762592188998},{\"x\":-69.51553352434686,\"z\":0.9689329513062832,\"route\":\"overlook\",\"pathClearance\":2.069367949879959},{\"x\":-73.75411335003807,\"z\":5.381170025057099,\"route\":\"return\",\"pathClearance\":1.7474419187929007},{\"x\":-49.71795848108171,\"z\":8.699649041699825,\"route\":\"return\",\"pathClearance\":1.919282673229461},{\"x\":1.1883201604947544,\"z\":5.99906267372028,\"route\":\"clearing\",\"pathClearance\":1.8231660558580192},{\"x\":25,\"z\":8.946150659847262,\"route\":\"clearing\",\"pathClearance\":1.5538493401527376},{\"x\":38.98897237207715,\"z\":16.00735175194857,\"route\":\"meadow\",\"pathClearance\":2.2922977161564635},{\"x\":37.99617014283051,\"z\":42.18414887497669,\"route\":\"meadow\",\"pathClearance\":2.0168315739603706}]},\"grassBlades\":28063,\"detail\":{\"grassChunks\":31,\"activeGrassChunks\":31,\"nearGrassChunks\":31,\"farGrassChunks\":0,\"eco\":false},\"files\":{\"requests\":2,\"cachedFiles\":2,\"loadedFiles\":2},\"geometry\":{\"meshes\":82,\"triangles\":1335218,\"geometries\":73,\"materials\":40,\"textures\":4,\"missingTextures\":[]},\"surfaceTriangles\":26416,\"sourceFiles\":[\"canopy-tree.glb\",\"fern.glb\"],\"cloudCount\":34,\"settlement\":null}",
+      "explorerLoadMs": "798.40",
+      "firstWorldFrameMs": "922.20",
+      "grounded": "true",
+      "initialWorldLoadMs": "214.50",
+      "interactionMode": "adventure",
+      "islandDimensions": "{\"width\":177.6201171875,\"depth\":183,\"surfaceMin\":10.28,\"surfaceMax\":49,\"undersideMin\":-85}",
+      "jumpCount": "0",
+      "jumpPhase": "grounded",
+      "landingCount": "0",
+      "lenisPrevent": "",
+      "livingWorld": "",
+      "locomotion": "Walk",
+      "mode": "adventure",
+      "npcCount": "1",
+      "npcReady": "true",
+      "paused": "false",
+      "performanceEvidence": "{\"samples\":600,\"meanFrameMs\":11.499833333333335,\"p95FrameMs\":16.69999999999709,\"measuredFps\":86.95778199684052,\"walking\":{\"samples\":600,\"meanFrameMs\":11.499833333333335,\"p95FrameMs\":16.69999999999709,\"measuredFps\":86.95778199684052},\"meanRenderSubmissionMs\":2.783499999543031,\"drawCalls\":567,\"triangles\":4124897,\"memory\":{\"geometries\":233,\"textures\":23,\"programs\":62},\"viewport\":[1354,1130],\"drawingBuffer\":[1354,1130],\"pixelRatio\":1,\"shadows\":true,\"detail\":{\"grassChunks\":31,\"activeGrassChunks\":31,\"nearGrassChunks\":19,\"farGrassChunks\":12,\"eco\":false},\"mode\":\"adventure\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\",\"metric\":\"Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only\"}",
+      "playerX": "36.000",
+      "playerY": "21.974",
+      "playerZ": "19.678",
+      "reducedMotion": "false",
+      "rendererCount": "1",
+      "reviewEvidence": "{\"view\":\"live\",\"camera\":{\"position\":[36.00000232507579,28.7897541957349,29.11836872880113],\"quaternion\":[-0.22957355569752896,9.336966521284958e-8,2.2023422712088764e-8,0.9732913143167282],\"fov\":60,\"aspect\":1.1982300884955752},\"player\":[36.0000005138425,21.97400007247925,19.678163363795374],\"sceneId\":\"0ff3456d-a565-4165-8901-c89f3b987ca7\",\"worldId\":\"transit-landscape-r0a\"}",
+      "sceneId": "0ff3456d-a565-4165-8901-c89f3b987ca7",
+      "sceneryReady": "true",
+      "selectedProject": "",
+      "totalReadyMs": "1017.50",
+      "townEnabled": "true",
+      "townReviewReady": "true",
+      "transferEvidence": "[{\"file\":\"canopy-tree.glb\",\"transferBytes\":719524,\"encodedBytes\":719224,\"durationMs\":5.9000000059604645},{\"file\":\"fern.glb\",\"transferBytes\":105176,\"encodedBytes\":104876,\"durationMs\":4.300000011920929},{\"file\":\"market-street-optimized.glb\",\"transferBytes\":10008204,\"encodedBytes\":10007904,\"durationMs\":11.400000005960464},{\"file\":\"support-reference.glb\",\"transferBytes\":6464,\"encodedBytes\":6164,\"durationMs\":1.7999999821186066},{\"file\":\"common-interface.glb\",\"transferBytes\":527472,\"encodedBytes\":527172,\"durationMs\":2.0999999940395355},{\"file\":\"foundation-hybrid.glb\",\"transferBytes\":543752,\"encodedBytes\":543452,\"durationMs\":2.199999988079071},{\"file\":\"city-resident.glb\",\"transferBytes\":1186688,\"encodedBytes\":1186388,\"durationMs\":4.9000000059604645},{\"file\":\"urban-explorer.glb\",\"transferBytes\":1581780,\"encodedBytes\":1581480,\"durationMs\":5.300000011920929},{\"file\":\"jump-animations.glb\",\"transferBytes\":267560,\"encodedBytes\":267260,\"durationMs\":2}]",
+      "verticalVelocity": "0",
+      "worldId": "transit-landscape-r0a",
+      "worldReady": "true"
+    },
+    "url": "http://127.0.0.1:4173/index.html?experience=adventure&dev-town=s2f&town-review=1"
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "source_bytes": 11407532,
+  "roundtrip_bytes": 11419788,
+  "source_clips": [
+    {
+      "name": "bite",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "fly_loop",
+      "duration": 0.800000011920929
+    },
+    {
+      "name": "idle_loop",
+      "duration": 3
+    },
+    {
+      "name": "roar",
+      "duration": 2
+    },
+    {
+      "name": "takeoff",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "walk_loop",
+      "duration": 1.0666667222976685
+    }
+  ],
+  "roundtrip_clips": [
+    {
+      "name": "walk_loop",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "takeoff",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "roar",
+      "duration": 2
+    },
+    {
+      "name": "idle_loop",
+      "duration": 3
+    },
+    {
+      "name": "fly_loop",
+      "duration": 0.800000011920929
+    },
+    {
+      "name": "bite",
+      "duration": 1.2000000476837158
+    }
+  ],
+  "source_morphs": [
+    {
+      "fold_corrective_L": 0,
+      "fold_corrective_R": 1
+    }
+  ],
+  "roundtrip_morphs": [
+    {
+      "fold_corrective_L": 0,
+      "fold_corrective_R": 1
+    }
+  ],
+  "bones": {
+    "source": 61,
+    "roundtrip": 61,
+    "only_source": [],
+    "only_roundtrip": [],
+    "parent_differences": []
+  },
+  "geometry": {
+    "same_index_positions_agree": false,
+    "max_rest_component_delta": null,
+    "source_vertex_counts": [
+      9152
+    ],
+    "roundtrip_vertex_counts": [
+      9215
+    ],
+    "note": "Matching rest coordinates do not prove order for duplicate vertices; mismatched counts or positions preclude vertex comparison."
+  },
+  "clips": [
+    {
+      "name": "bite",
+      "duration_delta": 0,
+      "samples": [
+        {
+          "fraction": 0,
+          "max_bone_world_distance": 0.000004742950804716839,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 0.5,
+          "max_bone_world_distance": 0.0000061916351189316895,
+          "max_bone_name": "strut_d_02_R",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 1,
+          "max_bone_world_distance": 0.000004742950804716839,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fly_loop",
+      "duration_delta": 0,
+      "samples": [
+        {
+          "fraction": 0,
+          "max_bone_world_distance": 0.000003864570114543315,
+          "max_bone_name": "thumb_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            0,
+            0
+          ],
+          "roundtrip_morphs": [
+            0,
+            0
+          ]
+        },
+        {
+          "fraction": 0.5,
+          "max_bone_world_distance": 0.000003469007584993294,
+          "max_bone_name": "strut_c_02_R",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            0,
+            0
+          ],
+          "roundtrip_morphs": [
+            0,
+            0
+          ]
+        },
+        {
+          "fraction": 1,
+          "max_bone_world_distance": 0.000003864570114543315,
+          "max_bone_name": "thumb_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            0,
+            0
+          ],
+          "roundtrip_morphs": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "idle_loop",
+      "duration_delta": 0,
+      "samples": [
+        {
+          "fraction": 0,
+          "max_bone_world_distance": 0.0000051766964129240046,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 0.5,
+          "max_bone_world_distance": 0.0000051766964129240046,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 1,
+          "max_bone_world_distance": 0.0000051766964129240046,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "roar",
+      "duration_delta": 0,
+      "samples": [
+        {
+          "fraction": 0,
+          "max_bone_world_distance": 0.000004742950804716839,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 0.5,
+          "max_bone_world_distance": 0.0000033109064599045352,
+          "max_bone_name": "finger_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            0,
+            0
+          ],
+          "roundtrip_morphs": [
+            0,
+            0
+          ]
+        },
+        {
+          "fraction": 1,
+          "max_bone_world_distance": 0.000004742950804716839,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_delta": 0,
+      "samples": [
+        {
+          "fraction": 0,
+          "max_bone_world_distance": 0.000004742950804716839,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 0.5,
+          "max_bone_world_distance": 0.00000516605119741924,
+          "max_bone_name": "tail_10",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            0,
+            0
+          ],
+          "roundtrip_morphs": [
+            0,
+            0
+          ]
+        },
+        {
+          "fraction": 1,
+          "max_bone_world_distance": 0.000004927396437294842,
+          "max_bone_name": "strut_d_01_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            0,
+            0
+          ],
+          "roundtrip_morphs": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "walk_loop",
+      "duration_delta": 0,
+      "samples": [
+        {
+          "fraction": 0,
+          "max_bone_world_distance": 0.000005071568521081202,
+          "max_bone_name": "strut_d_02_R",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 0.5,
+          "max_bone_world_distance": 0.000005681099653307592,
+          "max_bone_name": "strut_d_02_L",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        },
+        {
+          "fraction": 1,
+          "max_bone_world_distance": 0.000005071568521081202,
+          "max_bone_name": "strut_d_02_R",
+          "max_sampled_vertex_world_distance": null,
+          "source_morphs": [
+            1,
+            1
+          ],
+          "roundtrip_morphs": [
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "method": "Three GLTFLoader with textures stripped; LoopOnce at normalized 0, 0.5 and 1; world positions matched by bone name. Every 97th vertex only when same-index rest coordinates agree."
+}

@@ -1,0 +1,20 @@
+{
+  "A": {
+    "cache": {
+      "cachedFiles": 7,
+      "loadedFiles": 7,
+      "requests": 7
+    },
+    "errors": [],
+    "glass": "A"
+  },
+  "B": {
+    "cache": {
+      "cachedFiles": 7,
+      "loadedFiles": 7,
+      "requests": 7
+    },
+    "errors": [],
+    "glass": "B"
+  }
+}

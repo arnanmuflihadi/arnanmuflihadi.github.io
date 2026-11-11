@@ -1,0 +1,21 @@
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (2.916209ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (22.908959ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (20.982958ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (12.790791ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (13.929375ms)
+✔ prop population requires all three local development opt-ins (0.938917ms)
+✔ curated props preserve the civic axis and the four door desire lines (0.105042ms)
+✔ town requires exact local development flag and is off on every public/default route (0.827625ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (120.299292ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (630.885958ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (550.537375ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (392.824ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (440.324791ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1531.96375

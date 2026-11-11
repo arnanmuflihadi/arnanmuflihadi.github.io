@@ -1,0 +1,32 @@
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (4.732834ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (43.69275ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (39.715667ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (22.718959ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (22.424625ms)
+✔ Guild is opt-in on local populated-town development only (3.590417ms)
+✔ Guild delivery has real indexed geometry, visible walkable surfaces, and no transmission pass (3.421ms)
+✔ editorial, adventure and study routes roundtrip under a Pages project path (3.617625ms)
+✔ stored positions cannot replace route context or introduce an invalid player transform (0.2175ms)
+✔ all research has a finite cinematic composition and only constructed landmarks permit walking (0.156584ms)
+✔ camera interpolation clamps endpoints and keeps independent source compositions intact (0.158375ms)
+✔ three shared landmark spawns are reachable, interactable and protected by actual district collision (98.900083ms)
+✔ imported scenery matches provenance and contains real self-contained glTF meshes and textures (4.876708ms)
+✔ Home and Work preserve semantic research and use one living scene host with a static fallback (0.613917ms)
+✔ Skyport requires explicit local accepted-town and Guild flags (2.117416ms)
+✔ Skyport GLB contains indexed real geometry without textures or transmission (0.972667ms)
+✔ prop population requires all three local development opt-ins (1.809167ms)
+✔ curated props preserve the civic axis and the four door desire lines (0.183584ms)
+✔ town requires exact local development flag and is off on every public/default route (1.217ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (152.442458ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (1591.140917ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (1172.496541ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (1243.66175ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (1358.972583ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4014.980291

@@ -1,0 +1,11 @@
+{
+  "compared": 3102,
+  "changed": [
+    "assets/js/floating-atlas/entry.js",
+    "assets/js/living-atlas-controller.js",
+    "tests/architecture-r0b1.test.mjs",
+    "tests/town-layout.test.mjs"
+  ],
+  "missing": [],
+  "approved_assets_changed": []
+}

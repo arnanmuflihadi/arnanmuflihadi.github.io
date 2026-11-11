@@ -1,0 +1,169 @@
+✔ three enhanced variants retain genuine imported meshes without changing cached source buffers or baseline materials (323.302542ms)
+✔ office glass is physically recessed while the uniform source scale and source footprint remain unchanged (116.382833ms)
+✔ all three frontages support character clearance and exported collision remains valid after translation and rotation (166.231875ms)
+✔ instanced architectural geometry is counted per visible instance (0.143541ms)
+✔ enhancement prototypes are cached while instances retain independent transforms and collision data (103.866416ms)
+✔ the enhancement record binds the unchanged source GLB and current generator to their verified digests (3.107208ms)
+✔ captured original and enhanced pairs use identical camera tuples and retain all requested views without a fabricated human score (2.410875ms)
+✔ all foundation delivery files match provenance and embed real geometry and textures (15.884959ms)
+✔ real building and shop preserve proportions, share mesh buffers, and align their collision bounds after rotation (193.510708ms)
+✔ the real showcase has ten model types, aligned supports and passable paving beside solid imported buildings (120.961709ms)
+✔ concurrent requests share a promise; failed loads can retry without caching a broken asset (0.513208ms)
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (6.708458ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (59.012208ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (33.020208ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (13.99325ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (15.409792ms)
+✔ quest requires a complete ordered story and never changes the research registry (0.752208ms)
+✔ one attack hits once, queued input chains a second authored punch, and walls/direction prevent hits (0.687959ms)
+✔ telegraphed enemy swings apply damage once; forward guard and timed dodge reduce or avoid it (1.033875ms)
+✔ dodge has a cooldown, defeat emits once, reset restores both actors, and leaving leashes the enemy (1.104083ms)
+✖ NPC routes and quest approaches use the actual reachable collision layout (68.388333ms)
+✔ real NPC clones have independent skeletons and animation while sharing geometry (41.350625ms)
+✔ Phase 3 assets match hashes, carry real rigs and authored actions, and have no external buffers (6.754917ms)
+✔ deformed roll and defeat geometry stay above paving without moving the physics root (184.817541ms)
+✔ jump follows gravity, has a consistent apex across frame rates, and lands once (11.896917ms)
+✔ walk/run jumps retain directional movement; airborne jump requests cannot add launches (3.375084ms)
+✖ steps and the real station ramp support jumping, while walls and low ceilings remain solid (11.711709ms)
+✔ support drops cause a fall; unsafe positions recover and mode handoff settles vertical state (0.314958ms)
+✔ retargeted authored jump clips animate the original rig without stretching bones or moving physics (190.671167ms)
+✔ every fictional guide has a verified project, distinct identity, behavior, and research choices (0.366166ms)
+✔ selected imported architecture is self-contained, quantized, hash verified and within budget (5.054ms)
+✔ an approaching resident cannot trap a player inside its collision footprint (0.182125ms)
+✔ the pavilion floor and approach ramp support walking and a full jump (0.647708ms)
+✔ keyboard controls isolate dialogue, reject repeated jumps, and operate focused walking buttons (0.752667ms)
+✔ carriageways contain no trees, planters, shop steps or static obstacles (56.671334ms)
+✖ north sidewalk and curb ramps form a continuous walkable research approach (36.575791ms)
+✖ rendered shared paving matches support height and never bridges the carriageway (25.625292ms)
+✔ registry contains six unique, existing research routes (4.197583ms)
+✔ URL roundtrip preserves hosting path, hash, unrelated parameters and project context (2.684125ms)
+✔ invalid deep links and saved mission values are sanitized (0.196792ms)
+✔ collision prevents tunnelling, permits wall sliding and bounds the district (4.012208ms)
+✔ both landmark focus positions are safe and reachable from the spawn (21.498917ms)
+✔ player controls move, sprint, turn, animate and stop against real collision data (4.343709ms)
+✔ camera pulls ahead of a building behind the player (1.237041ms)
+✔ editorial, adventure and study routes roundtrip under a Pages project path (2.13975ms)
+✔ stored positions cannot replace route context or introduce an invalid player transform (0.135334ms)
+✔ all research has a finite cinematic composition and only constructed landmarks permit walking (0.098208ms)
+✔ camera interpolation clamps endpoints and keeps independent source compositions intact (0.109916ms)
+✔ three shared landmark spawns are reachable, interactable and protected by actual district collision (88.533375ms)
+✔ imported scenery matches provenance and contains real self-contained glTF meshes and textures (5.390125ms)
+✔ Home and Work preserve semantic research and use one living scene host with a static fallback (1.358292ms)
+✔ bounded substep movement cannot tunnel through a major building (1.368125ms)
+✔ camera swept line detects walls and passes above low furniture (0.127083ms)
+✔ camera recovers behind a player near a wall without NaN or wall penetration (2.785125ms)
+✔ imported character walks, runs, damps and stops against obstacles (71.737792ms)
+✔ scene core stays independent of portfolio DOM and legacy missions; art-review route remains noindex (1.050708ms)
+✔ unobstructed camera stays outside the character at every review viewpoint (0.628292ms)
+✔ vaulted roof has outward upper and lower surface normals (0.82025ms)
+✔ actual authored district has safe viewpoints and walkable routes between them (40.974666ms)
+✖ feet follow paving and the rising station access ramp (0.803291ms)
+ℹ tests 60
+ℹ suites 0
+ℹ pass 55
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 865.663208
+
+✖ failing tests:
+
+test at tests/atlas-phase3.test.mjs:48:1
+✖ NPC routes and quest approaches use the actual reachable collision layout (68.388333ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  -0.02 !== 0.365
+  
+      at TestContext.<anonymous> (file:///Users/arnanmuflihadi/Documents/ChatGPT/Gaming%20portofolio/tests/atlas-phase3.test.mjs:57:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: -0.02,
+    expected: 0.365,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-repair.test.mjs:32:1
+✖ steps and the real station ramp support jumping, while walls and low ceilings remain solid (11.711709ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(root.position.y>.5)
+  
+      at TestContext.<anonymous> (file:///Users/arnanmuflihadi/Documents/ChatGPT/Gaming%20portofolio/tests/atlas-repair.test.mjs:35:133)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/atlas-streets.test.mjs:18:1
+✖ north sidewalk and curb ramps form a continuous walkable research approach (36.575791ms)
+  AssertionError [ERR_ASSERTION]: north footway crosses the full block
+      at TestContext.<anonymous> (file:///Users/arnanmuflihadi/Documents/ChatGPT/Gaming%20portofolio/tests/atlas-streets.test.mjs:20:82)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/atlas-streets.test.mjs:29:1
+✖ rendered shared paving matches support height and never bridges the carriageway (25.625292ms)
+  AssertionError [ERR_ASSERTION]: 15,-24: rendered 0.14000000596046447, support -0.02
+      at TestContext.<anonymous> (file:///Users/arnanmuflihadi/Documents/ChatGPT/Gaming%20portofolio/tests/atlas-streets.test.mjs:32:199)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/urban-atlas.test.mjs:69:1
+✖ feet follow paving and the rising station access ramp (0.803291ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0.52 !== 0.24
+  
+      at TestContext.<anonymous> (file:///Users/arnanmuflihadi/Documents/ChatGPT/Gaming%20portofolio/tests/urban-atlas.test.mjs:71:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0.52,
+    expected: 0.24,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

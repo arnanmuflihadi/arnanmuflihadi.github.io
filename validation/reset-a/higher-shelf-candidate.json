@@ -1,0 +1,485 @@
+{
+  "selected": {
+    "centre": [
+      0,
+      49
+    ],
+    "angle": 170,
+    "score": 18.116072302730817,
+    "h0": 16.719334674738263,
+    "grade": -0.08,
+    "meanAdjustment": 2.0212067399637417,
+    "maxUnfilled": 1.946256786251423,
+    "maxSupport": 1.9493139725050241,
+    "treePlotConflicts": 7,
+    "entry": [
+      17.726539554219745,
+      45.87433280199525
+    ],
+    "tie": [
+      27.0,
+      57.0
+    ],
+    "tieDistance": 0.0,
+    "spurDirect": 14.483699086911802,
+    "extraApproachLength": 0.0,
+    "approachLength": 14.483699086911802,
+    "approachMeanGrade": 0.047578056612597154,
+    "entryAngle": 60.18813480974201,
+    "template": "hub"
+  },
+  "measured": {
+    "centre": [
+      0,
+      49
+    ],
+    "angle": 170,
+    "score": 18.116072302730817,
+    "h0": 16.961983532074793,
+    "grade": -0.08,
+    "meanAdjustment": 2.0212067399637417,
+    "maxUnfilled": 1.946256786251423,
+    "maxSupport": 1.9493139725050241,
+    "treePlotConflicts": 7,
+    "entry": [
+      17.726539554219745,
+      45.87433280199525
+    ],
+    "tie": [
+      27.0,
+      57.0
+    ],
+    "tieDistance": 0.0,
+    "spurDirect": 14.483699086911802,
+    "extraApproachLength": 0.0,
+    "approachLength": 14.483699086911802,
+    "approachMeanGrade": 0.047578056612597154,
+    "entryAngle": 60.18813480974201,
+    "template": "hub",
+    "denseFloorLift": 0.24264885733652974,
+    "program": [
+      {
+        "id": "B1",
+        "name": "Kopi Awan",
+        "u": -8.3,
+        "v": 6,
+        "w": 8.55,
+        "d": 7.2,
+        "kind": "building",
+        "offset": 0.15,
+        "polygon": [
+          [
+            17.546626781152092,
+            58.675045922524404
+          ],
+          [
+            16.06193486209984,
+            50.25493963427002
+          ],
+          [
+            8.971319040411942,
+            51.50520651347192
+          ],
+          [
+            10.456010959464194,
+            59.9253128017263
+          ]
+        ],
+        "floor": 16.63198353207479,
+        "groundMin": 12.983946455068068,
+        "groundMax": 15.542821209289748,
+        "naturalGapMin": 1.089162322785043,
+        "naturalGapMax": 3.648037077006723,
+        "supportAfterBoundedGradingMin": 0.1999999999999993,
+        "supportAfterBoundedGradingMax": 2.148037077006723
+      },
+      {
+        "id": "B2",
+        "name": "Lembaran",
+        "u": 8.3,
+        "v": 6,
+        "w": 7.9515,
+        "d": 5.904,
+        "kind": "building",
+        "offset": 0.15,
+        "polygon": [
+          [
+            13.97394739076231,
+            42.14505752156102
+          ],
+          [
+            12.593183906043715,
+            34.31435867348445
+          ],
+          [
+            6.778878932259639,
+            35.339577514430005
+          ],
+          [
+            8.159642416978235,
+            43.17027636250658
+          ]
+        ],
+        "floor": 16.63198353207479,
+        "groundMin": 12.906071931253692,
+        "groundMax": 17.931983532074792,
+        "naturalGapMin": -1.3000000000000007,
+        "naturalGapMax": 3.7259116008210995,
+        "supportAfterBoundedGradingMin": 0.1999999999999993,
+        "supportAfterBoundedGradingMax": 2.2259116008210995
+      },
+      {
+        "id": "B3",
+        "name": "Rupa Rimba",
+        "u": -11.4,
+        "v": 20,
+        "w": 7.9515,
+        "d": 7.992,
+        "kind": "building",
+        "offset": 0.15,
+        "polygon": [
+          [
+            4.635647242774669,
+            63.79555604575427
+          ],
+          [
+            3.2548837580560734,
+            55.96485719767769
+          ],
+          [
+            -4.61569980401749,
+            57.3526534335918
+          ],
+          [
+            -3.2349363192988942,
+            65.18335228166838
+          ]
+        ],
+        "floor": 15.991983532074793,
+        "groundMin": 13.326709458546322,
+        "groundMax": 14.471962422687577,
+        "naturalGapMin": 1.5200211093872156,
+        "naturalGapMax": 2.6652740735284706,
+        "supportAfterBoundedGradingMin": 0.1999999999999993,
+        "supportAfterBoundedGradingMax": 1.1652740735284706
+      },
+      {
+        "id": "B4",
+        "name": "Serambi",
+        "u": 11.4,
+        "v": 20,
+        "w": 8.208,
+        "d": 7.992,
+        "kind": "building",
+        "offset": 0.15,
+        "polygon": [
+          [
+            0.6987391707544426,
+            41.468240871399736
+          ],
+          [
+            -0.7265650715357213,
+            33.38493883467553
+          ],
+          [
+            -8.597148633609285,
+            34.77273507058964
+          ],
+          [
+            -7.171844391319121,
+            42.856037107313846
+          ]
+        ],
+        "floor": 15.991983532074793,
+        "groundMin": 12.495133335867614,
+        "groundMax": 13.53077467085994,
+        "naturalGapMin": 2.4612088612148533,
+        "naturalGapMax": 3.4968501962071787,
+        "supportAfterBoundedGradingMin": 0.9612088612148533,
+        "supportAfterBoundedGradingMax": 1.9968501962071787
+      },
+      {
+        "id": "market",
+        "name": "Market promenade",
+        "u": 0,
+        "v": 7,
+        "w": 6,
+        "d": 14,
+        "kind": "public",
+        "offset": 0,
+        "polygon": [
+          [
+            18.247484087220535,
+            48.82875606103188
+          ],
+          [
+            17.205595021218954,
+            42.919909542958635
+          ],
+          [
+            3.4182864790480414,
+            45.350984030295656
+          ],
+          [
+            4.460175545049623,
+            51.2598305483689
+          ]
+        ],
+        "floor": 16.40017487164534,
+        "groundMin": 12.764745171116806,
+        "groundMax": 16.130167337600255,
+        "naturalGapMin": 0.8145058638512666,
+        "naturalGapMax": 3.7009801636481345,
+        "supportAfterBoundedGradingMin": 0.0,
+        "supportAfterBoundedGradingMax": 2.2009801636481345
+      },
+      {
+        "id": "square",
+        "name": "Telaga Awan",
+        "u": 0,
+        "v": 20.5,
+        "w": 14,
+        "d": 13,
+        "kind": "public",
+        "offset": 0,
+        "polygon": [
+          [
+            5.154768255717344,
+            55.19906156041773
+          ],
+          [
+            2.72369376838032,
+            41.41175301824683
+          ],
+          [
+            -10.078807020778385,
+            43.66917932791692
+          ],
+          [
+            -7.64773253344136,
+            57.45648787008783
+          ]
+        ],
+        "floor": 15.841983532074792,
+        "groundMin": 12.99930681146558,
+        "groundMax": 14.633036803983481,
+        "naturalGapMin": 1.2089467280913109,
+        "naturalGapMax": 2.8426767206092123,
+        "supportAfterBoundedGradingMin": 0.0,
+        "supportAfterBoundedGradingMax": 1.3426767206092123
+      },
+      {
+        "id": "guildfore",
+        "name": "Guild approach",
+        "u": 0,
+        "v": 27.5,
+        "w": 6,
+        "d": 1,
+        "kind": "public",
+        "offset": 0,
+        "polygon": [
+          [
+            -8.342325244109082,
+            53.517256858039
+          ],
+          [
+            -9.384214310110663,
+            47.60841033996575
+          ],
+          [
+            -10.36902206312287,
+            47.78205851763268
+          ],
+          [
+            -9.32713299712129,
+            53.690905035705924
+          ]
+        ],
+        "floor": 15.841983532074792,
+        "groundMin": 13.796792155970316,
+        "groundMax": 14.378364250925321,
+        "naturalGapMin": 1.4636192811494713,
+        "naturalGapMax": 2.0451913761044764,
+        "supportAfterBoundedGradingMin": 0.0,
+        "supportAfterBoundedGradingMax": 0.5451913761044764
+      },
+      {
+        "id": "guild",
+        "name": "Guild reservation",
+        "u": 0,
+        "v": 32,
+        "w": 10,
+        "d": 8,
+        "kind": "reserve",
+        "offset": 0.15,
+        "polygon": [
+          [
+            -8.979836641787427,
+            55.66052054173034
+          ],
+          [
+            -10.716318418456732,
+            45.81244301160826
+          ],
+          [
+            -18.594780442554395,
+            47.20162843294371
+          ],
+          [
+            -16.858298665885094,
+            57.04970596306579
+          ]
+        ],
+        "floor": 15.991983532074793,
+        "groundMin": 13.795170665417043,
+        "groundMax": 15.218592040701765,
+        "naturalGapMin": 0.7733914913730278,
+        "naturalGapMax": 2.1968128666577496,
+        "supportAfterBoundedGradingMin": 0.1999999999999993,
+        "supportAfterBoundedGradingMax": 0.6968128666577496
+      }
+    ],
+    "hull": [
+      [
+        -16.858298665885094,
+        57.04970596306579
+      ],
+      [
+        -18.594780442554395,
+        47.20162843294371
+      ],
+      [
+        -8.597148633609285,
+        34.77273507058964
+      ],
+      [
+        -0.7265650715357213,
+        33.38493883467553
+      ],
+      [
+        12.593183906043715,
+        34.31435867348445
+      ],
+      [
+        17.205595021218954,
+        42.919909542958635
+      ],
+      [
+        18.247484087220535,
+        48.82875606103188
+      ],
+      [
+        17.546626781152092,
+        58.675045922524404
+      ],
+      [
+        4.635647242774669,
+        63.79555604575427
+      ],
+      [
+        -3.2349363192988942,
+        65.18335228166838
+      ]
+    ],
+    "areaHardProgramme": 588.25,
+    "areaContiguousEnvelope": 904.1996865000001,
+    "rawTerrainEnvelopeRange": [
+      12.495133335867614,
+      17.931983532074792
+    ],
+    "rawProgrammeElevationRange": [
+      12.495133335867614,
+      17.931983532074792
+    ],
+    "rawSlopePercentiles": [
+      6.6701493523983215,
+      11.29970223134577,
+      35.096734129463684,
+      106.67478859385116
+    ],
+    "rawProgrammeLowSlopeArea": 334.5,
+    "largestContiguousLowSlopePatch": 465.0,
+    "requiredCutEstimateM3": 3.928802175377969,
+    "requiredFillEstimateM3": 1336.8237370285965,
+    "boundedCutEstimateM3": 3.928802175377969,
+    "boundedFillEstimateM3": 848.078433906996,
+    "beyondGradeBudgetArea": 490.5,
+    "naturalSupportDepthRange": [
+      -1.3000000000000007,
+      3.7259116008210995
+    ],
+    "supportAfterBoundedGradingRange": [
+      0.0,
+      2.2259116008210995
+    ],
+    "raisedBoundaryProxyM": 248.0,
+    "primaryCoreRoute": [
+      [
+        17.726539554219745,
+        45.87433280199525
+      ],
+      [
+        4.92403876506104,
+        48.131759111665346
+      ],
+      [
+        -0.023553796805392213,
+        51.745805021966426
+      ],
+      [
+        -3.9627848088542246,
+        52.440397732634146
+      ],
+      [
+        -7.878462024097664,
+        50.38918542133544
+      ],
+      [
+        -9.84807753012208,
+        50.7364817766693
+      ]
+    ],
+    "primaryCoreLength": 29.547396693876223,
+    "primaryTurnsDegrees": [
+      26.146841235580894,
+      26.146841235580908,
+      37.64762064010762,
+      37.64762064010763
+    ],
+    "arrivalApproachMinimumLength": 14.483699086911804,
+    "arrivalExtraLengthAllowance": 0.0,
+    "totalPrimaryMinimumLength": 44.03109578078803,
+    "treePlotConflictIds": [
+      3,
+      8,
+      11,
+      16,
+      54,
+      55,
+      56
+    ],
+    "treePublicConflictIds": [
+      8,
+      16,
+      55,
+      57
+    ],
+    "treeAllConflictIds": [
+      3,
+      8,
+      11,
+      16,
+      54,
+      55,
+      56,
+      57
+    ],
+    "camera": {
+      "clearPromenade": 6,
+      "squareWidth": 14,
+      "followDistance": 9.5,
+      "fullOrbitGuaranteed": false
+    },
+    "method": "0.5 m samples from accepted game sampler; cut/fill volumes are raster estimates; floors are flat per building; public grade capped at 8%; plaza and Guild apron share one level; grading cap +/-1.5 m"
+  }
+}

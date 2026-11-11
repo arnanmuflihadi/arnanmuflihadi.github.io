@@ -1,0 +1,123 @@
+{
+  "standard": {
+    "samples": 600,
+    "meanFrameMs": 8.333333333333334,
+    "p95FrameMs": 8.5,
+    "measuredFps": 119.99999999999999,
+    "walking": {
+      "samples": 600,
+      "meanFrameMs": 8.334499999999995,
+      "p95FrameMs": 8.5,
+      "measuredFps": 119.98320235167084
+    },
+    "meanRenderSubmissionMs": 0.7318333331743876,
+    "drawCalls": 86,
+    "triangles": 1237358,
+    "memory": {
+      "geometries": 113,
+      "textures": 16,
+      "programs": 20
+    },
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "pixelRatio": 1,
+    "shadows": true,
+    "detail": {
+      "grassChunks": 31,
+      "activeGrassChunks": 31,
+      "nearGrassChunks": 16,
+      "farGrassChunks": 15,
+      "eco": false
+    },
+    "mode": "adventure",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "metric": "Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only"
+  },
+  "forestStandard": {
+    "samples": 600,
+    "meanFrameMs": 8.333333333333334,
+    "p95FrameMs": 8.400000000008731,
+    "measuredFps": 119.99999999999999,
+    "walking": {
+      "samples": 600,
+      "meanFrameMs": 8.33549999999998,
+      "p95FrameMs": 8.400000000008731,
+      "measuredFps": 119.96880810989171
+    },
+    "meanRenderSubmissionMs": 0.5365000000223518,
+    "drawCalls": 77,
+    "triangles": 1201034,
+    "memory": {
+      "geometries": 113,
+      "textures": 16,
+      "programs": 20
+    },
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "pixelRatio": 1,
+    "shadows": true,
+    "detail": {
+      "grassChunks": 31,
+      "activeGrassChunks": 31,
+      "nearGrassChunks": 17,
+      "farGrassChunks": 14,
+      "eco": false
+    },
+    "mode": "adventure",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "metric": "Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only"
+  },
+  "eco": {
+    "samples": 600,
+    "meanFrameMs": 8.333333333333334,
+    "p95FrameMs": 8.5,
+    "measuredFps": 119.99999999999999,
+    "walking": {
+      "samples": 600,
+      "meanFrameMs": 8.331666666666667,
+      "p95FrameMs": 8.400000000023283,
+      "measuredFps": 120.02400480096018
+    },
+    "meanRenderSubmissionMs": 0.4560000002632538,
+    "drawCalls": 85,
+    "triangles": 1169094,
+    "memory": {
+      "geometries": 113,
+      "textures": 16,
+      "programs": 20
+    },
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "pixelRatio": 1,
+    "shadows": false,
+    "detail": {
+      "grassChunks": 31,
+      "activeGrassChunks": 29,
+      "nearGrassChunks": 6,
+      "farGrassChunks": 23,
+      "eco": true
+    },
+    "mode": "adventure",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "metric": "Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only"
+  },
+  "limits": "Local Mac / Chromium 156, actual native keyboard movement, cache warm. No physical-phone, GPU-time or cold-network claim."
+}

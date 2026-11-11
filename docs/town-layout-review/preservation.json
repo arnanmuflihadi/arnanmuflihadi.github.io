@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "file": "assets/js/floating-atlas/terrain.js",
+      "sha256": "fec820e8abe3e67db97e839734117c240201ea6b6a38788b1453d0d0461699f6",
+      "currentSha256": "fec820e8abe3e67db97e839734117c240201ea6b6a38788b1453d0d0461699f6",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/plan.js",
+      "sha256": "dd51cdbe6e3e828349d929a46be82801d3347cbe4028071f5bd6589a522ac397",
+      "currentSha256": "dd51cdbe6e3e828349d929a46be82801d3347cbe4028071f5bd6589a522ac397",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/atmosphere.js",
+      "sha256": "7232adf5754c9014289edeff0b6374449750d15c6c3b22fb4c15a0e4b285050b",
+      "currentSha256": "7232adf5754c9014289edeff0b6374449750d15c6c3b22fb4c15a0e4b285050b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/nature.js",
+      "sha256": "87017e330e3589559264c6e955f17ccea671816ef15b5197c617ebf098bc2082",
+      "currentSha256": "87017e330e3589559264c6e955f17ccea671816ef15b5197c617ebf098bc2082",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/scene.js",
+      "sha256": "689cbaacc77a768888a6c05f0af8b993af8a5bd4181a93298ccff97bc43cd725",
+      "currentSha256": "689cbaacc77a768888a6c05f0af8b993af8a5bd4181a93298ccff97bc43cd725",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/entry.js",
+      "sha256": "6387b6435d6361eaaffc023d3c4f30cda14e1782180e529c7db4614b5cac987c",
+      "currentSha256": "6387b6435d6361eaaffc023d3c4f30cda14e1782180e529c7db4614b5cac987c",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/experience-controller.js",
+      "sha256": "8c5e95df57e0e75e23818823a62b1496e6c5153384c4f57b01700fd0038b9375",
+      "currentSha256": "8c5e95df57e0e75e23818823a62b1496e6c5153384c4f57b01700fd0038b9375",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/living-atlas-controller.js",
+      "sha256": "d59c458c5cdc5bef828b7adca6a748ed48e328b9eb364e4892164fc2f361000c",
+      "currentSha256": "d59c458c5cdc5bef828b7adca6a748ed48e328b9eb364e4892164fc2f361000c",
+      "unchanged": true
+    }
+  ],
+  "sourceArchives": [
+    {
+      "archive": "source-assets/r0b1/kenney_modular-buildings.zip",
+      "unchanged": true,
+      "license": "CC0-1.0",
+      "licenseUnchanged": true
+    },
+    {
+      "archive": "source-assets/r0b1/kenney_building-kit.zip",
+      "unchanged": true,
+      "license": "CC0-1.0",
+      "licenseUnchanged": true
+    }
+  ],
+  "newImportedAssets": 0,
+  "newGLBBytes": 0,
+  "production": "Unmodified R0-A3. Dedicated town-layout-r0b15.html only."
+}

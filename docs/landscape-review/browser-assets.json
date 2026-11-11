@@ -1,0 +1,125 @@
+{
+  "revision": "R0A.63",
+  "assets": {
+    "world": "Transit Kingdom / Landscape",
+    "revision": "R0A.63",
+    "terrainOnly": true,
+    "architectureInstances": 0,
+    "reservations": {
+      "skyport": {
+        "x": 27,
+        "z": 57,
+        "y": 16,
+        "radius": 9,
+        "constructed": false
+      },
+      "station": {
+        "x": -5,
+        "z": 5,
+        "y": 21,
+        "radius": 8,
+        "constructed": false
+      },
+      "settlement": {
+        "x": 32,
+        "z": 12,
+        "y": 22,
+        "radius": 11,
+        "constructed": false
+      },
+      "overlook": {
+        "x": -80,
+        "z": 5,
+        "y": 32,
+        "radius": 5,
+        "constructed": false,
+        "natural": true
+      },
+      "dragon": {
+        "x": 27,
+        "z": 57,
+        "y": 16,
+        "radius": 6.5,
+        "constructed": false
+      }
+    },
+    "imported": {
+      "tree": 145,
+      "fern": 710,
+      "hangingFern": 42
+    },
+    "terrain": {
+      "width": 177.6201171875,
+      "depth": 183,
+      "surfaceMin": 10.28,
+      "surfaceMax": 49,
+      "undersideMin": -85
+    },
+    "vegetationBatches": 12,
+    "palms": 10,
+    "grassBlades": 27444,
+    "files": {
+      "requests": 2,
+      "cachedFiles": 2,
+      "loadedFiles": 2
+    },
+    "geometry": {
+      "meshes": 40,
+      "triangles": 1276069,
+      "geometries": 23,
+      "materials": 36,
+      "textures": 4,
+      "missingTextures": []
+    },
+    "surfaceTriangles": 26416,
+    "sourceFiles": [
+      "canopy-tree.glb",
+      "fern.glb"
+    ],
+    "cloudCount": 40,
+    "settlement": null
+  },
+  "worldId": "transit-landscape-r0a",
+  "sceneId": "7e2dfdc8-3f24-46d2-88d6-8ec9528c6859",
+  "rendererCount": "1",
+  "characterReady": "true",
+  "npcReady": "true",
+  "load": {
+    "worldMs": 97,
+    "firstFrameMs": 198.5,
+    "explorerMs": 141.4,
+    "readyMs": 243.9
+  },
+  "transfers": [
+    {
+      "file": "fern.glb",
+      "transferBytes": 0,
+      "encodedBytes": 104876,
+      "durationMs": 1.3999999985098839
+    },
+    {
+      "file": "canopy-tree.glb",
+      "transferBytes": 0,
+      "encodedBytes": 719224,
+      "durationMs": 2.399999998509884
+    },
+    {
+      "file": "urban-explorer.glb",
+      "transferBytes": 0,
+      "encodedBytes": 1581480,
+      "durationMs": 3.6999999955296516
+    },
+    {
+      "file": "city-resident.glb",
+      "transferBytes": 0,
+      "encodedBytes": 1186388,
+      "durationMs": 3.5
+    },
+    {
+      "file": "jump-animations.glb",
+      "transferBytes": 0,
+      "encodedBytes": 267260,
+      "durationMs": 6.200000002980232
+    }
+  ]
+}

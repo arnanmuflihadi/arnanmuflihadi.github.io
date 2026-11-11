@@ -1,0 +1,194 @@
+[
+  {
+    "view": "commercial",
+    "before": "pass-a-commercial-before.jpg",
+    "after": "final-commercial.jpg",
+    "camera": {
+      "label": "Ruang Niaga / full perspective",
+      "position": [
+        55,
+        36,
+        30
+      ],
+      "target": [
+        31,
+        27.1,
+        4
+      ],
+      "fov": 48
+    },
+    "note": "Silhouette and facade: side openings, terrace guard and coherent massing",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "research",
+    "before": "pass-a-research-before.jpg",
+    "after": "final-research.jpg",
+    "camera": {
+      "label": "Atlas / full perspective",
+      "position": [
+        63,
+        52,
+        -4
+      ],
+      "target": [
+        38,
+        41,
+        -30
+      ],
+      "fov": 48
+    },
+    "note": "Continuous recessed facade and purposeful shading",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "commercial-eye",
+    "before": "pass-a-commercial-eye-before.jpg",
+    "after": "final-commercial-eye.jpg",
+    "camera": {
+      "label": "Ruang Niaga / pedestrian entrance",
+      "position": [
+        34.7,
+        23.95,
+        9
+      ],
+      "target": [
+        29.9,
+        23.95,
+        6.45
+      ],
+      "fov": 55,
+      "eye": 1.65
+    },
+    "note": "Legible original wayfinding and real shopfront glazing",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "station",
+    "before": "pass-b-station-before.jpg",
+    "after": "final-station.jpg",
+    "camera": {
+      "label": "Antara / full exterior",
+      "position": [
+        23,
+        40,
+        36
+      ],
+      "target": [
+        -5,
+        27.8,
+        6
+      ],
+      "fov": 48
+    },
+    "note": "Connected switchback landings, support posts and guarded lift exit",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "skyport-eye",
+    "before": "pass-b-skyport-eye-before.jpg",
+    "after": "final-skyport-eye.jpg",
+    "camera": {
+      "label": "Awan / boarding and landing approach",
+      "position": [
+        31.4,
+        18.33,
+        68
+      ],
+      "target": [
+        28.5,
+        18.33,
+        63
+      ],
+      "fov": 55,
+      "eye": 1.65
+    },
+    "note": "Open boarding path, correct door glazing and perimeter opening",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "research-eye",
+    "before": "pass-b-research-eye-before.jpg",
+    "after": "final-research-eye.jpg",
+    "camera": {
+      "label": "Atlas / public entrance",
+      "position": [
+        38,
+        34.15,
+        -22.7
+      ],
+      "target": [
+        38,
+        34.15,
+        -25.6
+      ],
+      "fov": 55,
+      "eye": 1.65
+    },
+    "note": "Clear public entrance, opened door leaves and visitor lobby",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "commercial-rear",
+    "before": "pass-c-commercial-rear-before.jpg",
+    "after": "final-commercial-rear.jpg",
+    "camera": {
+      "label": "Ruang Niaga / rear and west",
+      "position": [
+        9,
+        33,
+        -20
+      ],
+      "target": [
+        31,
+        27,
+        4
+      ],
+      "fov": 48
+    },
+    "note": "Opaque mineral walls restored; transparent classification limited to real glass",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "skyport-rear",
+    "before": "pass-c-skyport-rear-before.jpg",
+    "after": "final-skyport-rear.jpg",
+    "camera": {
+      "label": "Awan / terminal rear and wing",
+      "position": [
+        5,
+        32,
+        40
+      ],
+      "target": [
+        29,
+        20.5,
+        62
+      ],
+      "fov": 48
+    },
+    "note": "Solid structural columns and observation stair",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  },
+  {
+    "view": "materials",
+    "before": "pass-c-materials-before.jpg",
+    "after": "final-materials.jpg",
+    "camera": {
+      "label": "Facade / materials and recesses",
+      "position": [
+        35.5,
+        27.2,
+        12.2
+      ],
+      "target": [
+        31,
+        27,
+        7.72
+      ],
+      "fov": 48
+    },
+    "note": "Continuous backing walls close the gaps between imported window modules",
+    "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+  }
+]

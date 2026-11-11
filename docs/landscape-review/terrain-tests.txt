@@ -1,0 +1,12 @@
+✔ R0-A rendered terrain support is exact and the chiseled underside is watertight (1572.563625ms)
+✔ R0-A active graph has no rejected architecture, uses two scenery GLBs, and disposes every observed resource (160.528333ms)
+✔ R0-A every ridge and valley route is reachable using unchanged locomotion with final nature colliders (149.04875ms)
+✔ R0-A character jumps, lands, falls and recovers; camera clears natural elevation at all areas (188.140541ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2211.619042

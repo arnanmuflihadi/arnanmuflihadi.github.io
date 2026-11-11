@@ -1,0 +1,23 @@
+{
+  "tests": {
+    "passed": 102,
+    "failed": 0,
+    "skipped": 0
+  },
+  "navigation": {
+    "complete": 6,
+    "requiredJourneys": 6,
+    "zeroBlockedTime": true,
+    "zeroGroundedSupportError": true,
+    "jumps": 1,
+    "landings": 1,
+    "input": "Native keyboard; route-bearing assistance, plus unassisted turn/strafe check"
+  },
+  "staticAudit": {
+    "findings": 58,
+    "identicalToR0A3": true
+  },
+  "humanApproval": "pending",
+  "production": "Unchanged R0-A3",
+  "nextPhase": "R0-B2 not started"
+}

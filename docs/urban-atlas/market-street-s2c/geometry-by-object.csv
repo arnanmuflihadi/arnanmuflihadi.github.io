@@ -1,0 +1,929 @@
+name,category,triangles,material_slots
+BuildingshellModule.002,B1 Kopi Awan,2736,4
+ShopfrontanddoorsModule.002,B1 Kopi Awan,1716,6
+WindowsModule.002,B1 Kopi Awan,1684,4
+BalconyModule.002,B1 Kopi Awan,2200,3
+RoofAModule.003,B1 Kopi Awan,17128,7
+TimberstructuresModule.002,B1 Kopi Awan,1056,3
+SunscreensModule.002,B1 Kopi Awan,748,2
+PlantersModule.002,B1 Kopi Awan,4000,3
+DecorativepropsModule.002,B1 Kopi Awan,1460,4
+InteriorModule.002,B1 Kopi Awan,3148,10
+S2A / foundation.001,B2 Lembaran Shophouse,108,1
+S2A / ground floor.001,B2 Lembaran Shophouse,44,1
+S2A / upper floor.001,B2 Lembaran Shophouse,108,1
+S2A / roof ceiling.001,B2 Lembaran Shophouse,44,1
+S2A / shop facade.001,B2 Lembaran Shophouse,376,1
+S2A / rear ground wall.001,B2 Lembaran Shophouse,432,1
+S2A / rear upper wall.001,B2 Lembaran Shophouse,244,1
+S2A / east shop wall.001,B2 Lembaran Shophouse,284,1
+S2A / east upper wall.001,B2 Lembaran Shophouse,244,1
+S2A / west shop wall.001,B2 Lembaran Shophouse,284,1
+S2A / west upper wall.001,B2 Lembaran Shophouse,244,1
+S2A / west display glass.001,B2 Lembaran Shophouse,44,1
+S2A / west display jamb.002,B2 Lembaran Shophouse,44,1
+S2A / west display jamb.003,B2 Lembaran Shophouse,44,1
+S2A / west display rail.002,B2 Lembaran Shophouse,44,1
+S2A / west display rail.003,B2 Lembaran Shophouse,44,1
+S2A / west display mullion.002,B2 Lembaran Shophouse,44,1
+S2A / west display mullion.003,B2 Lembaran Shophouse,44,1
+S2A / entrance glass.001,B2 Lembaran Shophouse,44,1
+S2A / entrance jamb.002,B2 Lembaran Shophouse,44,1
+S2A / entrance jamb.003,B2 Lembaran Shophouse,44,1
+S2A / entrance rail.002,B2 Lembaran Shophouse,44,1
+S2A / entrance rail.003,B2 Lembaran Shophouse,44,1
+S2A / entrance mullion.001,B2 Lembaran Shophouse,44,1
+S2A / east display glass.001,B2 Lembaran Shophouse,44,1
+S2A / east display jamb.002,B2 Lembaran Shophouse,44,1
+S2A / east display jamb.003,B2 Lembaran Shophouse,44,1
+S2A / east display rail.002,B2 Lembaran Shophouse,44,1
+S2A / east display rail.003,B2 Lembaran Shophouse,44,1
+S2A / east display mullion.001,B2 Lembaran Shophouse,44,1
+S2A / door pull.002,B2 Lembaran Shophouse,44,1
+S2A / door pull.003,B2 Lembaran Shophouse,44,1
+S2A / rear service door.001,B2 Lembaran Shophouse,44,1
+S2A / door stone threshold.001,B2 Lembaran Shophouse,44,1
+S2A / entrance head transom.001,B2 Lembaran Shophouse,44,1
+S2A / entrance threshold brass inlay.001,B2 Lembaran Shophouse,44,1
+S2A / Kenney window east rear.006,B2 Lembaran Shophouse,34,1
+S2A / Kenney window east rear.007,B2 Lembaran Shophouse,34,1
+S2A / Kenney window east rear.008,B2 Lembaran Shophouse,34,1
+S2A / Kenney window east rear.009,B2 Lembaran Shophouse,34,1
+S2A / Kenney window east rear.010,B2 Lembaran Shophouse,34,1
+S2A / Kenney window east rear.011,B2 Lembaran Shophouse,34,1
+S2A / side shop glass.004,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.012,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.013,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.014,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.008,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.009,B2 Lembaran Shophouse,44,1
+S2A / side shop glass.005,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.015,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.016,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.017,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.010,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.011,B2 Lembaran Shophouse,44,1
+S2A / side shop glass.006,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.018,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.019,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.020,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.012,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.013,B2 Lembaran Shophouse,44,1
+S2A / side shop glass.007,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.021,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.022,B2 Lembaran Shophouse,44,1
+S2A / side shop mullion.023,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.014,B2 Lembaran Shophouse,44,1
+S2A / side shop transom.015,B2 Lembaran Shophouse,44,1
+S2A / rear lower glazing.002,B2 Lembaran Shophouse,44,1
+S2A / rear lower glazing.003,B2 Lembaran Shophouse,44,1
+S2A / side window stone sill.004,B2 Lembaran Shophouse,44,1
+S2A / side window stone sill.005,B2 Lembaran Shophouse,44,1
+S2A / side window stone sill.006,B2 Lembaran Shophouse,44,1
+S2A / side window stone sill.007,B2 Lembaran Shophouse,44,1
+S2A / rear window stone sill.002,B2 Lembaran Shophouse,44,1
+S2A / rear window stone sill.003,B2 Lembaran Shophouse,44,1
+S2A / upper side glazed insert.004,B2 Lembaran Shophouse,12,1
+S2A / upper side glazed insert.005,B2 Lembaran Shophouse,12,1
+S2A / upper side glazed insert.006,B2 Lembaran Shophouse,12,1
+S2A / upper side glazed insert.007,B2 Lembaran Shophouse,12,1
+S2A / upper rear glazed insert.002,B2 Lembaran Shophouse,12,1
+S2A / upper rear glazed insert.003,B2 Lembaran Shophouse,12,1
+S2A / balcony fascia.001,B2 Lembaran Shophouse,44,1
+S2A / balcony deck edge.002,B2 Lembaran Shophouse,44,1
+S2A / balcony deck edge.003,B2 Lembaran Shophouse,44,1
+S2A / balcony decking board.001,B2 Lembaran Shophouse,1364,1
+S2A / balcony rail upright.004,B2 Lembaran Shophouse,44,1
+S2A / balcony rail upright.005,B2 Lembaran Shophouse,44,1
+S2A / balcony rail upright.006,B2 Lembaran Shophouse,44,1
+S2A / balcony rail upright.007,B2 Lembaran Shophouse,44,1
+S2A / balcony timber handrail.001,B2 Lembaran Shophouse,44,1
+S2A / balcony thin rail.003,B2 Lembaran Shophouse,44,1
+S2A / balcony thin rail.004,B2 Lembaran Shophouse,44,1
+S2A / balcony thin rail.005,B2 Lembaran Shophouse,44,1
+S2A / return handrail.002,B2 Lembaran Shophouse,44,1
+S2A / return rail.006,B2 Lembaran Shophouse,44,1
+S2A / return rail.007,B2 Lembaran Shophouse,44,1
+S2A / return rail.008,B2 Lembaran Shophouse,44,1
+S2A / return handrail.003,B2 Lembaran Shophouse,44,1
+S2A / return rail.009,B2 Lembaran Shophouse,44,1
+S2A / return rail.010,B2 Lembaran Shophouse,44,1
+S2A / return rail.011,B2 Lembaran Shophouse,44,1
+S2A / veranda post.002,B2 Lembaran Shophouse,44,1
+S2A / column stone shoe.002,B2 Lembaran Shophouse,44,1
+S2A / front knee brace.002,B2 Lembaran Shophouse,44,1
+S2A / veranda post.003,B2 Lembaran Shophouse,44,1
+S2A / column stone shoe.003,B2 Lembaran Shophouse,44,1
+S2A / front knee brace.003,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.013,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.014,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.015,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.016,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.017,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.018,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.019,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.020,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.021,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.022,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.023,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.024,B2 Lembaran Shophouse,44,1
+S2A / veranda soffit slat.025,B2 Lembaran Shophouse,44,1
+S2A / upper roof post.002,B2 Lembaran Shophouse,44,1
+S2A / upper cantilever brace.002,B2 Lembaran Shophouse,44,1
+S2A / upper roof post.003,B2 Lembaran Shophouse,44,1
+S2A / upper cantilever brace.003,B2 Lembaran Shophouse,44,1
+S2A / front roof header.001,B2 Lembaran Shophouse,44,1
+S2A / integrated stone trough.004,B2 Lembaran Shophouse,92,1
+S2A / integrated stone trough soil.004,B2 Lembaran Shophouse,44,1
+S2A / integrated stone trough.005,B2 Lembaran Shophouse,92,1
+S2A / integrated stone trough soil.005,B2 Lembaran Shophouse,44,1
+S2A / integrated stone trough.006,B2 Lembaran Shophouse,92,1
+S2A / integrated stone trough soil.006,B2 Lembaran Shophouse,44,1
+S2A / integrated stone trough.007,B2 Lembaran Shophouse,92,1
+S2A / integrated stone trough soil.007,B2 Lembaran Shophouse,44,1
+Fern_1.013,B2 Lembaran Shophouse,288,1
+Fern_1.014,B2 Lembaran Shophouse,288,1
+Fern_1.015,B2 Lembaran Shophouse,288,1
+Fern_1.016,B2 Lembaran Shophouse,288,1
+Fern_1.017,B2 Lembaran Shophouse,288,1
+Fern_1.018,B2 Lembaran Shophouse,288,1
+Fern_1.019,B2 Lembaran Shophouse,288,1
+Fern_1.020,B2 Lembaran Shophouse,288,1
+Fern_1.021,B2 Lembaran Shophouse,288,1
+Fern_1.022,B2 Lembaran Shophouse,288,1
+Fern_1.023,B2 Lembaran Shophouse,288,1
+Fern_1.024,B2 Lembaran Shophouse,288,1
+Reused editable roof B assembly,B2 Lembaran Shophouse,3456,6
+B2 three-bay upper facade,B2 Lembaran Shophouse,328,1
+B2 timber window pane,B2 Lembaran Shophouse,2,1
+B2 timber window jamb,B2 Lembaran Shophouse,12,1
+B2 timber window jamb.001,B2 Lembaran Shophouse,12,1
+B2 timber window sill/head,B2 Lembaran Shophouse,12,1
+B2 timber window sill/head.001,B2 Lembaran Shophouse,12,1
+B2 sill shade,B2 Lembaran Shophouse,12,1
+B2 timber window pane.001,B2 Lembaran Shophouse,2,1
+B2 timber window jamb.002,B2 Lembaran Shophouse,12,1
+B2 timber window jamb.003,B2 Lembaran Shophouse,12,1
+B2 timber window sill/head.002,B2 Lembaran Shophouse,12,1
+B2 timber window sill/head.003,B2 Lembaran Shophouse,12,1
+B2 sill shade.001,B2 Lembaran Shophouse,12,1
+B2 timber window pane.002,B2 Lembaran Shophouse,2,1
+B2 timber window jamb.004,B2 Lembaran Shophouse,12,1
+B2 timber window jamb.005,B2 Lembaran Shophouse,12,1
+B2 timber window sill/head.004,B2 Lembaran Shophouse,12,1
+B2 timber window sill/head.005,B2 Lembaran Shophouse,12,1
+B2 sill shade.002,B2 Lembaran Shophouse,12,1
+B2 compact louver,B2 Lembaran Shophouse,44,1
+B2 compact louver.001,B2 Lembaran Shophouse,44,1
+B2 compact louver.002,B2 Lembaran Shophouse,44,1
+B2 compact louver.003,B2 Lembaran Shophouse,44,1
+B2 compact louver.004,B2 Lembaran Shophouse,44,1
+B2 compact louver.005,B2 Lembaran Shophouse,44,1
+B2 compact louver.006,B2 Lembaran Shophouse,44,1
+B2 compact louver.007,B2 Lembaran Shophouse,44,1
+B2 compact louver.008,B2 Lembaran Shophouse,44,1
+Lembaran shop sign,B2 Lembaran Shophouse,44,1
+Lembaran letters,B2 Lembaran Shophouse,1048,1
+Bookshop display ledge,B2 Lembaran Shophouse,44,1
+Bookshop display ledge.001,B2 Lembaran Shophouse,44,1
+Bookshop display ledge.002,B2 Lembaran Shophouse,44,1
+Book display volume,B2 Lembaran Shophouse,44,1
+Book display volume.001,B2 Lembaran Shophouse,44,1
+Book display volume.002,B2 Lembaran Shophouse,44,1
+Book display volume.003,B2 Lembaran Shophouse,44,1
+Book display volume.004,B2 Lembaran Shophouse,44,1
+Book display volume.005,B2 Lembaran Shophouse,44,1
+Book display volume.006,B2 Lembaran Shophouse,44,1
+Book display volume.007,B2 Lembaran Shophouse,44,1
+Book display volume.008,B2 Lembaran Shophouse,44,1
+Book display volume.009,B2 Lembaran Shophouse,44,1
+Book display volume.010,B2 Lembaran Shophouse,44,1
+Book display volume.011,B2 Lembaran Shophouse,44,1
+Bookshop sign bracket,B2 Lembaran Shophouse,12,1
+Bookshop hanging blade,B2 Lembaran Shophouse,44,1
+Bookshop blade letters,B2 Lembaran Shophouse,1084,1
+S2A / foundation.002,B3 Rupa Rimba Atelier,108,1
+S2A / ground floor.002,B3 Rupa Rimba Atelier,44,1
+S2A / shop facade.002,B3 Rupa Rimba Atelier,376,1
+S2A / rear ground wall.002,B3 Rupa Rimba Atelier,432,1
+S2A / east shop wall.002,B3 Rupa Rimba Atelier,284,1
+S2A / west shop wall.002,B3 Rupa Rimba Atelier,284,1
+S2A / west display jamb.004,B3 Rupa Rimba Atelier,44,1
+S2A / west display jamb.005,B3 Rupa Rimba Atelier,44,1
+S2A / west display rail.004,B3 Rupa Rimba Atelier,44,1
+S2A / west display rail.005,B3 Rupa Rimba Atelier,44,1
+S2A / west display mullion.004,B3 Rupa Rimba Atelier,44,1
+S2A / west display mullion.005,B3 Rupa Rimba Atelier,44,1
+S2A / entrance jamb.004,B3 Rupa Rimba Atelier,44,1
+S2A / entrance jamb.005,B3 Rupa Rimba Atelier,44,1
+S2A / entrance rail.004,B3 Rupa Rimba Atelier,44,1
+S2A / entrance rail.005,B3 Rupa Rimba Atelier,44,1
+S2A / entrance mullion.002,B3 Rupa Rimba Atelier,44,1
+S2A / east display jamb.004,B3 Rupa Rimba Atelier,44,1
+S2A / east display jamb.005,B3 Rupa Rimba Atelier,44,1
+S2A / east display rail.004,B3 Rupa Rimba Atelier,44,1
+S2A / east display rail.005,B3 Rupa Rimba Atelier,44,1
+S2A / east display mullion.002,B3 Rupa Rimba Atelier,44,1
+S2A / door pull.004,B3 Rupa Rimba Atelier,44,1
+S2A / door pull.005,B3 Rupa Rimba Atelier,44,1
+S2A / rear service door.002,B3 Rupa Rimba Atelier,44,1
+S2A / door stone threshold.002,B3 Rupa Rimba Atelier,44,1
+S2A / entrance head transom.002,B3 Rupa Rimba Atelier,44,1
+S2A / entrance threshold brass inlay.002,B3 Rupa Rimba Atelier,44,1
+S2A / side shop glass.008,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.024,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.025,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.026,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.016,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.017,B3 Rupa Rimba Atelier,44,1
+S2A / side shop glass.009,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.027,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.028,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.029,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.018,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.019,B3 Rupa Rimba Atelier,44,1
+S2A / side shop glass.010,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.030,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.031,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.032,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.020,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.021,B3 Rupa Rimba Atelier,44,1
+S2A / side shop glass.011,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.033,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.034,B3 Rupa Rimba Atelier,44,1
+S2A / side shop mullion.035,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.022,B3 Rupa Rimba Atelier,44,1
+S2A / side shop transom.023,B3 Rupa Rimba Atelier,44,1
+S2A / rear lower glazing.004,B3 Rupa Rimba Atelier,44,1
+S2A / rear lower glazing.005,B3 Rupa Rimba Atelier,44,1
+S2A / veranda post.004,B3 Rupa Rimba Atelier,44,1
+S2A / column stone shoe.004,B3 Rupa Rimba Atelier,44,1
+S2A / front knee brace.004,B3 Rupa Rimba Atelier,44,1
+S2A / veranda post.005,B3 Rupa Rimba Atelier,44,1
+S2A / column stone shoe.005,B3 Rupa Rimba Atelier,44,1
+S2A / front knee brace.005,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.026,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.027,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.028,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.029,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.030,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.031,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.032,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.033,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.034,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.035,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.036,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.037,B3 Rupa Rimba Atelier,44,1
+S2A / veranda soffit slat.038,B3 Rupa Rimba Atelier,44,1
+Atelier reused canopy slab,B3 Rupa Rimba Atelier,108,1
+Reused editable roof B assembly.001,B3 Rupa Rimba Atelier,3456,6
+Atelier canopy header,B3 Rupa Rimba Atelier,12,1
+Atelier canopy header.001,B3 Rupa Rimba Atelier,12,1
+Atelier ventilated attic blade,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.001,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.002,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.003,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.004,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.005,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.006,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.007,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.008,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.009,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.010,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.011,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.012,B3 Rupa Rimba Atelier,44,1
+Atelier ventilated attic blade.013,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.001,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.002,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.003,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.004,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.005,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.006,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.007,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.008,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.009,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.010,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.011,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.012,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.013,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.014,B3 Rupa Rimba Atelier,44,1
+Atelier side terrace screen.015,B3 Rupa Rimba Atelier,44,1
+Atelier shop sign,B3 Rupa Rimba Atelier,44,1
+Atelier lettering,B3 Rupa Rimba Atelier,1868,1
+Artisan display counter,B3 Rupa Rimba Atelier,44,1
+Artisan pottery,B3 Rupa Rimba Atelier,96,1
+Artisan pottery.001,B3 Rupa Rimba Atelier,96,1
+Artisan pottery.002,B3 Rupa Rimba Atelier,96,1
+Artisan pottery.003,B3 Rupa Rimba Atelier,96,1
+Artisan pottery.004,B3 Rupa Rimba Atelier,96,1
+Artisan pottery.005,B3 Rupa Rimba Atelier,96,1
+Artisan pottery.006,B3 Rupa Rimba Atelier,96,1
+S2A / foundation.003,B4 Serambi Corner Shop,108,1
+S2A / ground floor.003,B4 Serambi Corner Shop,44,1
+S2A / upper floor.002,B4 Serambi Corner Shop,108,1
+S2A / roof ceiling.002,B4 Serambi Corner Shop,44,1
+S2A / terrace facade.001,B4 Serambi Corner Shop,324,1
+S2A / rear ground wall.003,B4 Serambi Corner Shop,432,1
+S2A / rear upper wall.002,B4 Serambi Corner Shop,244,1
+S2A / east shop wall.003,B4 Serambi Corner Shop,284,1
+S2A / east upper wall.002,B4 Serambi Corner Shop,244,1
+S2A / west upper wall.002,B4 Serambi Corner Shop,244,1
+S2A / entrance glass.002,B4 Serambi Corner Shop,44,1
+S2A / entrance jamb.006,B4 Serambi Corner Shop,44,1
+S2A / entrance jamb.007,B4 Serambi Corner Shop,44,1
+S2A / entrance rail.006,B4 Serambi Corner Shop,44,1
+S2A / entrance rail.007,B4 Serambi Corner Shop,44,1
+S2A / entrance mullion.003,B4 Serambi Corner Shop,44,1
+S2A / east display glass.002,B4 Serambi Corner Shop,44,1
+S2A / east display jamb.006,B4 Serambi Corner Shop,44,1
+S2A / east display jamb.007,B4 Serambi Corner Shop,44,1
+S2A / east display rail.006,B4 Serambi Corner Shop,44,1
+S2A / east display rail.007,B4 Serambi Corner Shop,44,1
+S2A / east display mullion.003,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing glass.001,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing jamb.002,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing jamb.003,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing rail.002,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing rail.003,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing mullion.003,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing mullion.004,B4 Serambi Corner Shop,44,1
+S2A / balcony sliding glazing mullion.005,B4 Serambi Corner Shop,44,1
+S2A / upper east glazing glass.001,B4 Serambi Corner Shop,44,1
+S2A / upper east glazing jamb.002,B4 Serambi Corner Shop,44,1
+S2A / upper east glazing jamb.003,B4 Serambi Corner Shop,44,1
+S2A / upper east glazing rail.002,B4 Serambi Corner Shop,44,1
+S2A / upper east glazing rail.003,B4 Serambi Corner Shop,44,1
+S2A / upper east glazing mullion.001,B4 Serambi Corner Shop,44,1
+S2A / rear service door.003,B4 Serambi Corner Shop,44,1
+S2A / door stone threshold.003,B4 Serambi Corner Shop,44,1
+S2A / entrance head transom.003,B4 Serambi Corner Shop,44,1
+S2A / entrance threshold brass inlay.003,B4 Serambi Corner Shop,44,1
+S2A / Kenney window east rear.012,B4 Serambi Corner Shop,34,1
+S2A / Kenney window east rear.013,B4 Serambi Corner Shop,34,1
+S2A / Kenney window east rear.014,B4 Serambi Corner Shop,34,1
+S2A / Kenney window east rear.015,B4 Serambi Corner Shop,34,1
+S2A / Kenney window east rear.016,B4 Serambi Corner Shop,34,1
+S2A / Kenney window east rear.017,B4 Serambi Corner Shop,34,1
+S2A / side shop glass.012,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.036,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.037,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.038,B4 Serambi Corner Shop,44,1
+S2A / side shop transom.024,B4 Serambi Corner Shop,44,1
+S2A / side shop transom.025,B4 Serambi Corner Shop,44,1
+S2A / side shop glass.014,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.042,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.043,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.044,B4 Serambi Corner Shop,44,1
+S2A / side shop transom.028,B4 Serambi Corner Shop,44,1
+S2A / side shop transom.029,B4 Serambi Corner Shop,44,1
+S2A / side shop glass.015,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.045,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.046,B4 Serambi Corner Shop,44,1
+S2A / side shop mullion.047,B4 Serambi Corner Shop,44,1
+S2A / side shop transom.030,B4 Serambi Corner Shop,44,1
+S2A / side shop transom.031,B4 Serambi Corner Shop,44,1
+S2A / rear lower glazing.006,B4 Serambi Corner Shop,44,1
+S2A / rear lower glazing.007,B4 Serambi Corner Shop,44,1
+S2A / side window stone sill.012,B4 Serambi Corner Shop,44,1
+S2A / side window stone sill.013,B4 Serambi Corner Shop,44,1
+S2A / side window stone sill.014,B4 Serambi Corner Shop,44,1
+S2A / side window stone sill.015,B4 Serambi Corner Shop,44,1
+S2A / rear window stone sill.006,B4 Serambi Corner Shop,44,1
+S2A / rear window stone sill.007,B4 Serambi Corner Shop,44,1
+S2A / upper side glazed insert.008,B4 Serambi Corner Shop,12,1
+S2A / upper side glazed insert.009,B4 Serambi Corner Shop,12,1
+S2A / upper side glazed insert.010,B4 Serambi Corner Shop,12,1
+S2A / upper side glazed insert.011,B4 Serambi Corner Shop,12,1
+S2A / upper rear glazed insert.004,B4 Serambi Corner Shop,12,1
+S2A / upper rear glazed insert.005,B4 Serambi Corner Shop,12,1
+S2A / balcony fascia.002,B4 Serambi Corner Shop,44,1
+S2A / balcony deck edge.004,B4 Serambi Corner Shop,44,1
+S2A / balcony deck edge.005,B4 Serambi Corner Shop,44,1
+S2A / balcony decking board.002,B4 Serambi Corner Shop,1364,1
+S2A / balcony rail upright.008,B4 Serambi Corner Shop,44,1
+S2A / balcony rail upright.009,B4 Serambi Corner Shop,44,1
+S2A / balcony rail upright.010,B4 Serambi Corner Shop,44,1
+S2A / balcony rail upright.011,B4 Serambi Corner Shop,44,1
+S2A / balcony timber handrail.002,B4 Serambi Corner Shop,44,1
+S2A / balcony thin rail.006,B4 Serambi Corner Shop,44,1
+S2A / balcony thin rail.007,B4 Serambi Corner Shop,44,1
+S2A / balcony thin rail.008,B4 Serambi Corner Shop,44,1
+S2A / return handrail.004,B4 Serambi Corner Shop,44,1
+S2A / return rail.012,B4 Serambi Corner Shop,44,1
+S2A / return rail.013,B4 Serambi Corner Shop,44,1
+S2A / return rail.014,B4 Serambi Corner Shop,44,1
+S2A / return handrail.005,B4 Serambi Corner Shop,44,1
+S2A / return rail.015,B4 Serambi Corner Shop,44,1
+S2A / return rail.016,B4 Serambi Corner Shop,44,1
+S2A / return rail.017,B4 Serambi Corner Shop,44,1
+S2A / hip roof structural surface 0.001,B4 Serambi Corner Shop,880,1
+S2A / hip roof structural surface 1.001,B4 Serambi Corner Shop,880,1
+S2A / hip roof structural surface 2.001,B4 Serambi Corner Shop,880,1
+S2A / hip roof structural surface 3.001,B4 Serambi Corner Shop,880,1
+S2A / laid terracotta tile courses.001,B4 Serambi Corner Shop,4816,5
+S2A / ridge ventilation louver.006,B4 Serambi Corner Shop,108,1
+S2A / ridge ventilation louver.007,B4 Serambi Corner Shop,108,1
+S2A / ridge ventilation louver.008,B4 Serambi Corner Shop,108,1
+S2A / ridge ventilation louver.009,B4 Serambi Corner Shop,108,1
+S2A / ridge ventilation louver.010,B4 Serambi Corner Shop,108,1
+S2A / ridge ventilation louver.011,B4 Serambi Corner Shop,108,1
+S2A / raised ridge rain cap.001,B4 Serambi Corner Shop,164,1
+S2A / subtle brass ridge crest.001,B4 Serambi Corner Shop,108,1
+S2A / continuous curved eave fascia 0.001,B4 Serambi Corner Shop,660,1
+S2A / continuous curved eave fascia 1.001,B4 Serambi Corner Shop,660,1
+S2A / continuous curved eave fascia 2.001,B4 Serambi Corner Shop,660,1
+S2A / continuous curved eave fascia 3.001,B4 Serambi Corner Shop,660,1
+S2A / fitted hip cap.048,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.049,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.050,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.051,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.052,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.053,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.054,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.055,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.056,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.057,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.058,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.059,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.060,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.061,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.062,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.063,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.064,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.065,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.066,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.067,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.068,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.069,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.070,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.071,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.072,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.073,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.074,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.075,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.076,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.077,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.078,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.079,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.080,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.081,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.082,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.083,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.084,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.085,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.086,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.087,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.088,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.089,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.090,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.091,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.092,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.093,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.094,B4 Serambi Corner Shop,108,1
+S2A / fitted hip cap.095,B4 Serambi Corner Shop,108,1
+S2A / ridge vent support.004,B4 Serambi Corner Shop,12,1
+S2A / ridge vent support.005,B4 Serambi Corner Shop,12,1
+S2A / ridge vent support.006,B4 Serambi Corner Shop,12,1
+S2A / ridge vent support.007,B4 Serambi Corner Shop,12,1
+S2A / veranda post.006,B4 Serambi Corner Shop,44,1
+S2A / column stone shoe.006,B4 Serambi Corner Shop,44,1
+S2A / front knee brace.006,B4 Serambi Corner Shop,44,1
+S2A / veranda post.007,B4 Serambi Corner Shop,44,1
+S2A / column stone shoe.007,B4 Serambi Corner Shop,44,1
+S2A / front knee brace.007,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.039,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.040,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.041,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.042,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.043,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.044,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.045,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.046,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.047,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.048,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.049,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.050,B4 Serambi Corner Shop,44,1
+S2A / veranda soffit slat.051,B4 Serambi Corner Shop,44,1
+S2A / upper roof post.004,B4 Serambi Corner Shop,44,1
+S2A / upper cantilever brace.004,B4 Serambi Corner Shop,44,1
+S2A / upper roof post.005,B4 Serambi Corner Shop,44,1
+S2A / upper cantilever brace.005,B4 Serambi Corner Shop,44,1
+S2A / front roof header.002,B4 Serambi Corner Shop,44,1
+S2A / screen edge.002,B4 Serambi Corner Shop,44,1
+S2A / screen edge.003,B4 Serambi Corner Shop,44,1
+S2A / screen top bottom.002,B4 Serambi Corner Shop,44,1
+S2A / screen top bottom.003,B4 Serambi Corner Shop,44,1
+S2A / angled sun screen blade.001,B4 Serambi Corner Shop,572,1
+S2A / integrated stone trough.008,B4 Serambi Corner Shop,92,1
+S2A / integrated stone trough soil.008,B4 Serambi Corner Shop,44,1
+S2A / integrated stone trough.009,B4 Serambi Corner Shop,92,1
+S2A / integrated stone trough soil.009,B4 Serambi Corner Shop,44,1
+S2A / integrated stone trough.010,B4 Serambi Corner Shop,92,1
+S2A / integrated stone trough soil.010,B4 Serambi Corner Shop,44,1
+S2A / integrated stone trough.011,B4 Serambi Corner Shop,92,1
+S2A / integrated stone trough soil.011,B4 Serambi Corner Shop,44,1
+Fern_1.025,B4 Serambi Corner Shop,288,1
+Fern_1.026,B4 Serambi Corner Shop,288,1
+Fern_1.027,B4 Serambi Corner Shop,288,1
+Fern_1.028,B4 Serambi Corner Shop,288,1
+Fern_1.029,B4 Serambi Corner Shop,288,1
+Fern_1.030,B4 Serambi Corner Shop,288,1
+Fern_1.031,B4 Serambi Corner Shop,288,1
+Fern_1.032,B4 Serambi Corner Shop,288,1
+Fern_1.033,B4 Serambi Corner Shop,288,1
+Fern_1.034,B4 Serambi Corner Shop,288,1
+Fern_1.035,B4 Serambi Corner Shop,288,1
+Fern_1.036,B4 Serambi Corner Shop,288,1
+Corner front wall,B4 Serambi Corner Shop,376,1
+Corner square return wall,B4 Serambi Corner Shop,324,1
+Corner front display pane,B4 Serambi Corner Shop,2,1
+Corner front display jamb,B4 Serambi Corner Shop,12,1
+Corner front display jamb.001,B4 Serambi Corner Shop,12,1
+Corner front display sill/head,B4 Serambi Corner Shop,12,1
+Corner front display sill/head.001,B4 Serambi Corner Shop,12,1
+Chamfered corner entrance pane,B4 Serambi Corner Shop,2,1
+Chamfered corner entrance jamb,B4 Serambi Corner Shop,12,1
+Chamfered corner entrance jamb.001,B4 Serambi Corner Shop,12,1
+Chamfered corner entrance sill/head,B4 Serambi Corner Shop,12,1
+Chamfered corner entrance sill/head.001,B4 Serambi Corner Shop,12,1
+Corner entrance pull,B4 Serambi Corner Shop,12,1
+Corner lintel,B4 Serambi Corner Shop,12,1
+Square-facing balcony deck,B4 Serambi Corner Shop,44,1
+Corner balcony upright,B4 Serambi Corner Shop,12,1
+Corner balcony upright.001,B4 Serambi Corner Shop,12,1
+Corner balcony upright.002,B4 Serambi Corner Shop,12,1
+Corner balcony return handrail,B4 Serambi Corner Shop,12,1
+Corner return rail,B4 Serambi Corner Shop,12,1
+Corner return rail.001,B4 Serambi Corner Shop,12,1
+Corner return rail.002,B4 Serambi Corner Shop,12,1
+Corner street sign,B4 Serambi Corner Shop,44,1
+Corner letters,B4 Serambi Corner Shop,1444,1
+Corner return sign,B4 Serambi Corner Shop,44,1
+Square-facing letters,B4 Serambi Corner Shop,1444,1
+Fitted square-facing corner window pane,B4 Serambi Corner Shop,2,1
+Fitted square-facing corner window jamb,B4 Serambi Corner Shop,12,1
+Fitted square-facing corner window jamb.001,B4 Serambi Corner Shop,12,1
+Fitted square-facing corner window sill/head,B4 Serambi Corner Shop,12,1
+Fitted square-facing corner window sill/head.001,B4 Serambi Corner Shop,12,1
+Continuous stepped market paving,Public realm,372,1
+Laid pedestrian pavers,Public realm,1568,4
+Square opening / gathering apron,Public realm,44,1
+Square paving joint,Public realm,12,1
+Square paving joint.001,Public realm,12,1
+Square paving joint.002,Public realm,12,1
+Square paving joint.003,Public realm,12,1
+Square paving joint.004,Public realm,12,1
+Square paving joint.005,Public realm,12,1
+Square paving joint.006,Public realm,12,1
+Square paving joint.007,Public realm,12,1
+Square paving joint.008,Public realm,12,1
+Square paving joint.009,Public realm,12,1
+Square paving joint.010,Public realm,12,1
+Square paving joint.011,Public realm,12,1
+Square paving joint.012,Public realm,12,1
+Square paving joint.013,Public realm,12,1
+Square paving joint.014,Public realm,12,1
+Square cross joint,Public realm,12,1
+Square cross joint.001,Public realm,12,1
+Square cross joint.002,Public realm,12,1
+Square cross joint.003,Public realm,12,1
+Square cross joint.004,Public realm,12,1
+Continuous frontage terrace,Public realm,44,1
+Continuous frontage terrace.001,Public realm,44,1
+Continuous frontage terrace.002,Public realm,44,1
+Continuous frontage terrace.003,Public realm,44,1
+Lembaran threshold landing,Public realm,44,1
+Arrival garden-path connection,Public realm,32,1
+Measured terrain / local art grading proposal,Public realm,3024,2
+Terrace stone return,Public realm,44,1
+Terrace stone return.001,Public realm,44,1
+Terrace stone return.002,Public realm,44,1
+Terrace stone return.003,Public realm,44,1
+Terrace stone return.004,Public realm,44,1
+Terrace stone return.005,Public realm,44,1
+Terrace stone return.006,Public realm,44,1
+Terrace stone return.007,Public realm,44,1
+Quaternius shared canopy tree,Public realm,6265,2
+Quaternius shared canopy tree.001,Public realm,6265,2
+Quaternius shared canopy tree.002,Public realm,6265,2
+Quaternius shared canopy tree.003,Public realm,6265,2
+Quaternius shared canopy tree.004,Public realm,6265,2
+Square focal tree bed,Public realm,44,1
+Square focal tree bed soil,Public realm,44,1
+Street fern trough,Public realm,44,1
+Street fern trough soil,Public realm,44,1
+Shared source fern / street planter,Public realm,288,1
+Shared source fern / street planter.001,Public realm,288,1
+Street fern trough.001,Public realm,44,1
+Street fern trough soil.001,Public realm,44,1
+Shared source fern / street planter.002,Public realm,288,1
+Shared source fern / street planter.003,Public realm,288,1
+Street fern trough.002,Public realm,44,1
+Street fern trough soil.002,Public realm,44,1
+Shared source fern / street planter.004,Public realm,288,1
+Shared source fern / street planter.005,Public realm,288,1
+Street fern trough.003,Public realm,44,1
+Street fern trough soil.003,Public realm,44,1
+Shared source fern / street planter.006,Public realm,288,1
+Shared source fern / street planter.007,Public realm,288,1
+Street fern trough.004,Public realm,44,1
+Street fern trough soil.004,Public realm,44,1
+Shared source fern / street planter.008,Public realm,288,1
+Shared source fern / street planter.009,Public realm,288,1
+Street fern trough.005,Public realm,44,1
+Street fern trough soil.005,Public realm,44,1
+Shared source fern / street planter.010,Public realm,288,1
+Shared source fern / street planter.011,Public realm,288,1
+Street fern trough.006,Public realm,44,1
+Street fern trough soil.006,Public realm,44,1
+Shared source fern / street planter.012,Public realm,288,1
+Shared source fern / street planter.013,Public realm,288,1
+Street fern trough.007,Public realm,44,1
+Street fern trough soil.007,Public realm,44,1
+Shared source fern / street planter.014,Public realm,288,1
+Shared source fern / street planter.015,Public realm,288,1
+Street fern trough.008,Public realm,44,1
+Street fern trough soil.008,Public realm,44,1
+Shared source fern / street planter.016,Public realm,288,1
+Shared source fern / street planter.017,Public realm,288,1
+Street fern trough.009,Public realm,44,1
+Street fern trough soil.009,Public realm,44,1
+Shared source fern / street planter.018,Public realm,288,1
+Shared source fern / street planter.019,Public realm,288,1
+Original stylized palm trunk,Public realm,112,1
+Original layered palm frond,Public realm,44,1
+Original layered palm frond.001,Public realm,44,1
+Original layered palm frond.002,Public realm,44,1
+Original layered palm frond.003,Public realm,44,1
+Original layered palm frond.004,Public realm,44,1
+Original layered palm frond.005,Public realm,44,1
+Original layered palm frond.006,Public realm,44,1
+Original layered palm frond.007,Public realm,44,1
+Original layered palm frond.008,Public realm,44,1
+Original layered palm frond.009,Public realm,44,1
+Original stylized palm trunk.001,Public realm,112,1
+Original layered palm frond.010,Public realm,44,1
+Original layered palm frond.011,Public realm,44,1
+Original layered palm frond.012,Public realm,44,1
+Original layered palm frond.013,Public realm,44,1
+Original layered palm frond.014,Public realm,44,1
+Original layered palm frond.015,Public realm,44,1
+Original layered palm frond.016,Public realm,44,1
+Original layered palm frond.017,Public realm,44,1
+Original layered palm frond.018,Public realm,44,1
+Original layered palm frond.019,Public realm,44,1
+Original stylized palm trunk.002,Public realm,112,1
+Original layered palm frond.020,Public realm,44,1
+Original layered palm frond.021,Public realm,44,1
+Original layered palm frond.022,Public realm,44,1
+Original layered palm frond.023,Public realm,44,1
+Original layered palm frond.024,Public realm,44,1
+Original layered palm frond.025,Public realm,44,1
+Original layered palm frond.026,Public realm,44,1
+Original layered palm frond.027,Public realm,44,1
+Original layered palm frond.028,Public realm,44,1
+Original layered palm frond.029,Public realm,44,1
+Original stylized palm trunk.003,Public realm,112,1
+Original layered palm frond.030,Public realm,44,1
+Original layered palm frond.031,Public realm,44,1
+Original layered palm frond.032,Public realm,44,1
+Original layered palm frond.033,Public realm,44,1
+Original layered palm frond.034,Public realm,44,1
+Original layered palm frond.035,Public realm,44,1
+Original layered palm frond.036,Public realm,44,1
+Original layered palm frond.037,Public realm,44,1
+Original layered palm frond.038,Public realm,44,1
+Original layered palm frond.039,Public realm,44,1
+Broadleaf garden clump,Public realm,2,1
+Broadleaf garden clump.001,Public realm,2,1
+Broadleaf garden clump.002,Public realm,2,1
+Broadleaf garden clump.003,Public realm,2,1
+Broadleaf garden clump.004,Public realm,2,1
+Broadleaf garden clump.005,Public realm,2,1
+Broadleaf garden clump.006,Public realm,2,1
+Ginger flower stem,Public realm,12,1
+Ginger flower head,Public realm,44,1
+Ginger flower stem.001,Public realm,12,1
+Ginger flower head.001,Public realm,44,1
+Broadleaf garden clump.007,Public realm,2,1
+Broadleaf garden clump.008,Public realm,2,1
+Broadleaf garden clump.009,Public realm,2,1
+Broadleaf garden clump.010,Public realm,2,1
+Broadleaf garden clump.011,Public realm,2,1
+Broadleaf garden clump.012,Public realm,2,1
+Broadleaf garden clump.013,Public realm,2,1
+Ginger flower stem.002,Public realm,12,1
+Ginger flower head.002,Public realm,44,1
+Ginger flower stem.003,Public realm,12,1
+Ginger flower head.003,Public realm,44,1
+Broadleaf garden clump.014,Public realm,2,1
+Broadleaf garden clump.015,Public realm,2,1
+Broadleaf garden clump.016,Public realm,2,1
+Broadleaf garden clump.017,Public realm,2,1
+Broadleaf garden clump.018,Public realm,2,1
+Broadleaf garden clump.019,Public realm,2,1
+Broadleaf garden clump.020,Public realm,2,1
+Ginger flower stem.004,Public realm,12,1
+Ginger flower head.004,Public realm,44,1
+Ginger flower stem.005,Public realm,12,1
+Ginger flower head.005,Public realm,44,1
+Broadleaf garden clump.021,Public realm,2,1
+Broadleaf garden clump.022,Public realm,2,1
+Broadleaf garden clump.023,Public realm,2,1
+Broadleaf garden clump.024,Public realm,2,1
+Broadleaf garden clump.025,Public realm,2,1
+Broadleaf garden clump.026,Public realm,2,1
+Broadleaf garden clump.027,Public realm,2,1
+Ginger flower stem.006,Public realm,12,1
+Ginger flower head.006,Public realm,44,1
+Ginger flower stem.007,Public realm,12,1
+Ginger flower head.007,Public realm,44,1
+Broadleaf garden clump.028,Public realm,2,1
+Broadleaf garden clump.029,Public realm,2,1
+Broadleaf garden clump.030,Public realm,2,1
+Broadleaf garden clump.031,Public realm,2,1
+Broadleaf garden clump.032,Public realm,2,1
+Broadleaf garden clump.033,Public realm,2,1
+Broadleaf garden clump.034,Public realm,2,1
+Ginger flower stem.008,Public realm,12,1
+Ginger flower head.008,Public realm,44,1
+Ginger flower stem.009,Public realm,12,1
+Ginger flower head.009,Public realm,44,1
+Broadleaf garden clump.035,Public realm,2,1
+Broadleaf garden clump.036,Public realm,2,1
+Broadleaf garden clump.037,Public realm,2,1
+Broadleaf garden clump.038,Public realm,2,1
+Broadleaf garden clump.039,Public realm,2,1
+Broadleaf garden clump.040,Public realm,2,1
+Broadleaf garden clump.041,Public realm,2,1
+Ginger flower stem.010,Public realm,12,1
+Ginger flower head.010,Public realm,44,1
+Ginger flower stem.011,Public realm,12,1
+Ginger flower head.011,Public realm,44,1
+Broadleaf garden clump.042,Public realm,2,1
+Broadleaf garden clump.043,Public realm,2,1
+Broadleaf garden clump.044,Public realm,2,1
+Broadleaf garden clump.045,Public realm,2,1
+Broadleaf garden clump.046,Public realm,2,1
+Broadleaf garden clump.047,Public realm,2,1
+Broadleaf garden clump.048,Public realm,2,1
+Ginger flower stem.012,Public realm,12,1
+Ginger flower head.012,Public realm,44,1
+Ginger flower stem.013,Public realm,12,1
+Ginger flower head.013,Public realm,44,1
+Continuous street retaining skirt,Public realm,144,1
+Continuous street retaining skirt.001,Public realm,144,1
+Middle landing shared palm,Public realm,112,1
+Middle landing shared palm.001,Public realm,44,1
+Middle landing shared palm.002,Public realm,44,1
+Middle landing shared palm.003,Public realm,44,1
+Middle landing shared palm.004,Public realm,44,1
+Middle landing shared palm.005,Public realm,44,1
+Middle landing shared palm.006,Public realm,44,1
+Middle landing shared palm.007,Public realm,44,1
+Middle landing shared palm.008,Public realm,44,1
+Middle landing shared palm.009,Public realm,44,1
+Middle landing shared palm.010,Public realm,44,1
+Middle landing shared palm.011,Public realm,112,1
+Middle landing shared palm.012,Public realm,44,1
+Middle landing shared palm.013,Public realm,44,1
+Middle landing shared palm.014,Public realm,44,1
+Middle landing shared palm.015,Public realm,44,1
+Middle landing shared palm.016,Public realm,44,1
+Middle landing shared palm.017,Public realm,44,1
+Middle landing shared palm.018,Public realm,44,1
+Middle landing shared palm.019,Public realm,44,1
+Middle landing shared palm.020,Public realm,44,1
+Middle landing shared palm.021,Public realm,44,1
+Middle landing planted retaining pocket,Public realm,44,1
+Middle landing palm soil,Public realm,44,1
+Middle landing planted retaining pocket.001,Public realm,44,1
+Middle landing palm soil.001,Public realm,44,1
+Measured entrance landscape connection,Public realm,576,1
+Entrance landscape shared canopy,Public realm,6265,2
+Entrance landscape shared canopy.001,Public realm,6265,2
+Outdoor cafe table top,Public realm,92,1
+Cafe table stem,Public realm,12,1
+Cafe table foot,Public realm,12,1
+Cafe table foot.001,Public realm,12,1
+Cafe table foot.002,Public realm,12,1
+Cafe table foot.003,Public realm,12,1
+Outdoor cafe table top.001,Public realm,92,1
+Cafe table stem.001,Public realm,12,1
+Cafe table foot.004,Public realm,12,1
+Cafe table foot.005,Public realm,12,1
+Cafe table foot.006,Public realm,12,1
+Cafe table foot.007,Public realm,12,1
+Outdoor cafe table top.002,Public realm,92,1
+Cafe table stem.002,Public realm,12,1
+Cafe table foot.008,Public realm,12,1
+Cafe table foot.009,Public realm,12,1
+Cafe table foot.010,Public realm,12,1
+Cafe table foot.011,Public realm,12,1
+Pedestrian lamp post,Public realm,12,1
+Lamp rain cap,Public realm,44,1
+Lamp diffuser,Public realm,44,1
+Pedestrian lamp post.001,Public realm,12,1
+Lamp rain cap.001,Public realm,44,1
+Lamp diffuser.001,Public realm,44,1
+Pedestrian lamp post.002,Public realm,12,1
+Lamp rain cap.002,Public realm,44,1
+Lamp diffuser.002,Public realm,44,1
+Town square wayfinding,Public realm,44,1
+Wayfinding square,Public realm,852,1
+Atlas wayfinding,Public realm,44,1
+Wayfinding guild,Public realm,1192,1
+Pedestrian lamp post.003,Public realm,12,1
+Lamp rain cap.003,Public realm,44,1
+Lamp diffuser.003,Public realm,44,1
+Square direction marker post,Public realm,12,1
+Square direction marker,Public realm,44,1
+Square direction heading,Public realm,852,1
+Guild direction marker,Public realm,44,1
+Guild direction heading,Public realm,1192,1
+Bench timber seat,Public realm,44,1
+Bench timber seat.001,Public realm,44,1
+Bench timber seat.002,Public realm,44,1
+Bench timber back,Public realm,44,1
+Bench timber back.001,Public realm,44,1
+Bench frame,Public realm,12,1
+Bench back frame,Public realm,12,1
+Bench frame.001,Public realm,12,1
+Bench back frame.001,Public realm,12,1
+Bench timber seat.003,Public realm,44,1
+Bench timber seat.004,Public realm,44,1
+Bench timber seat.005,Public realm,44,1
+Bench timber back.002,Public realm,44,1
+Bench timber back.003,Public realm,44,1
+Bench frame.002,Public realm,12,1
+Bench back frame.002,Public realm,12,1
+Bench frame.003,Public realm,12,1
+Bench back frame.003,Public realm,12,1
+Chair leg,Public realm,12,1
+Chair leg.001,Public realm,12,1
+Chair leg.002,Public realm,12,1
+Chair leg.003,Public realm,12,1
+Chair slat,Public realm,44,1
+Chair slat.001,Public realm,44,1
+Chair slat.002,Public realm,44,1
+Chair back upright,Public realm,12,1
+Chair back upright.001,Public realm,12,1
+Chair back slat,Public realm,44,1
+Chair back slat.001,Public realm,44,1
+Chair leg.004,Public realm,12,1
+Chair leg.005,Public realm,12,1
+Chair leg.006,Public realm,12,1
+Chair leg.007,Public realm,12,1
+Chair slat.003,Public realm,44,1
+Chair slat.004,Public realm,44,1
+Chair slat.005,Public realm,44,1
+Chair back upright.002,Public realm,12,1
+Chair back upright.003,Public realm,12,1
+Chair back slat.002,Public realm,44,1
+Chair back slat.003,Public realm,44,1
+Chair leg.008,Public realm,12,1
+Chair leg.009,Public realm,12,1
+Chair leg.010,Public realm,12,1
+Chair leg.011,Public realm,12,1
+Chair slat.006,Public realm,44,1
+Chair slat.007,Public realm,44,1
+Chair slat.008,Public realm,44,1
+Chair back upright.004,Public realm,12,1
+Chair back upright.005,Public realm,12,1
+Chair back slat.004,Public realm,44,1
+Chair back slat.005,Public realm,44,1
+Chair leg.012,Public realm,12,1
+Chair leg.013,Public realm,12,1
+Chair leg.014,Public realm,12,1
+Chair leg.015,Public realm,12,1
+Chair slat.009,Public realm,44,1
+Chair slat.010,Public realm,44,1
+Chair slat.011,Public realm,44,1
+Chair back upright.006,Public realm,12,1
+Chair back upright.007,Public realm,12,1
+Chair back slat.006,Public realm,44,1
+Chair back slat.007,Public realm,44,1
+Chair leg.016,Public realm,12,1
+Chair leg.017,Public realm,12,1
+Chair leg.018,Public realm,12,1
+Chair leg.019,Public realm,12,1
+Chair slat.012,Public realm,44,1
+Chair slat.013,Public realm,44,1
+Chair slat.014,Public realm,44,1
+Chair back upright.008,Public realm,12,1
+Chair back upright.009,Public realm,12,1
+Chair back slat.008,Public realm,44,1
+Chair back slat.009,Public realm,44,1
+Chair leg.020,Public realm,12,1
+Chair leg.021,Public realm,12,1
+Chair leg.022,Public realm,12,1
+Chair leg.023,Public realm,12,1
+Chair slat.015,Public realm,44,1
+Chair slat.016,Public realm,44,1
+Chair slat.017,Public realm,44,1
+Chair back upright.010,Public realm,12,1
+Chair back upright.011,Public realm,12,1
+Chair back slat.010,Public realm,44,1
+Chair back slat.011,Public realm,44,1
+Continuous planted arrival embankment,Public realm,96,1

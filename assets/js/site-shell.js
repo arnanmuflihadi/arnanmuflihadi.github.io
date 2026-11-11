@@ -76,6 +76,10 @@
       element.inert = false;
       element.removeAttribute('aria-hidden');
     }
+    if (document.documentElement.dataset.experience === 'rpg' && element.matches('main, .site-footer, .cs-pager, .skip-link')) {
+      element.inert = true;
+      element.setAttribute('aria-hidden', 'true');
+    }
   };
 
   const lockScroll = () => {
@@ -119,7 +123,7 @@
     body.style.right = state.bodyRight;
     body.style.width = state.bodyWidth;
     body.style.overscrollBehavior = state.bodyOverscroll;
-    window.scrollTo(0, state.y);
+    window.scrollTo({ top: state.y, left: 0, behavior: 'instant' });
   };
 
   const menuFocusable = () => {

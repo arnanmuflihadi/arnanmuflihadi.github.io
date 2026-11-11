@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-02",
+  "referenceRecord": "references.md",
+  "assets": [
+    {
+      "file": "assets/game/scenery/architecture-library.glb",
+      "bytes": 5380248,
+      "sha256": "776f529b5b779085bce3bb4c22e9ab150f35a422f433a509747419dd524c87e2",
+      "sha256Now": "776f529b5b779085bce3bb4c22e9ab150f35a422f433a509747419dd524c87e2",
+      "active": false,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/scenery/architecture-source.json",
+      "licenseFile": "assets/game/scenery/downtown-city-megakit-LICENSE.txt"
+    },
+    {
+      "file": "assets/game/scenery/canopy-tree.glb",
+      "bytes": 719224,
+      "sha256": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "sha256Now": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/scenery/source.json",
+      "licenseFile": "assets/game/scenery/stylized-nature-megakit-LICENSE.txt"
+    },
+    {
+      "file": "assets/game/scenery/fern.glb",
+      "bytes": 104876,
+      "sha256": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "sha256Now": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/scenery/source.json",
+      "licenseFile": "assets/game/scenery/stylized-nature-megakit-LICENSE.txt"
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/urban-explorer.glb",
+      "bytes": 1581480,
+      "sha256": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+      "sha256Now": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/characters/urban-explorer/source.json",
+      "licenseFile": "assets/game/characters/urban-explorer/CC0-Quaternius.txt"
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/jump-animations.glb",
+      "bytes": 267260,
+      "sha256": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5",
+      "sha256Now": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/characters/urban-explorer/jump-source.json",
+      "licenseFile": "assets/game/characters/urban-explorer/jump-LICENSE.txt"
+    },
+    {
+      "file": "assets/game/phase3/city-resident.glb",
+      "bytes": 1186388,
+      "sha256": "8a53aaf80ca07e16e215f96a999d0d9909d307b5c1805b2f863e967f06245e05",
+      "sha256Now": "8a53aaf80ca07e16e215f96a999d0d9909d307b5c1805b2f863e967f06245e05",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/phase3/source.json",
+      "licenseFile": "assets/game/phase3/CC0-Characters.txt"
+    }
+  ],
+  "activeGlbBytes": 3859228,
+  "sceneryBytes": 824100,
+  "poster": {
+    "file": "assets/img/floating-atlas/landscape-poster.webp",
+    "bytes": 47340,
+    "width": 1265,
+    "height": 648,
+    "source": "Actual live WebGL canvas export, not QA screenshot"
+  },
+  "reservations": {
+    "skyport": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 9,
+      "constructed": false,
+      "actualSupportY": 16.030228493031395
+    },
+    "station": {
+      "x": -5,
+      "z": 5,
+      "y": 21,
+      "radius": 8,
+      "constructed": false,
+      "actualSupportY": 21.011082915457717
+    },
+    "settlement": {
+      "x": 32,
+      "z": 12,
+      "y": 22,
+      "radius": 11,
+      "constructed": false,
+      "actualSupportY": 21.977113841199532
+    },
+    "overlook": {
+      "x": -80,
+      "z": 5,
+      "y": 32,
+      "radius": 5,
+      "constructed": false,
+      "natural": true,
+      "actualSupportY": 32.00989313338486
+    },
+    "dragon": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 6.5,
+      "constructed": false,
+      "actualSupportY": 16.030228493031395
+    }
+  }
+}

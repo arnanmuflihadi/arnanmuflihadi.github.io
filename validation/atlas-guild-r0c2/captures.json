@@ -1,0 +1,358 @@
+[
+  {
+    "file": "04-game-market-before.png",
+    "view": "market",
+    "on": false,
+    "camera": {
+      "position": [
+        7.603646545265695,
+        16.945000084797798,
+        59.28728066433487
+      ],
+      "quaternion": [
+        0.0038900620369105667,
+        0.30070329807823504,
+        -0.0012265318489020143,
+        0.9537090172384053
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "04-game-market-after.png",
+    "view": "market",
+    "on": true,
+    "camera": {
+      "position": [
+        7.603646545265695,
+        16.945000084797798,
+        59.28728066433487
+      ],
+      "quaternion": [
+        0.0038900620369105667,
+        0.30070329807823504,
+        -0.0012265318489020143,
+        0.9537090172384053
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "05-game-square-before.png",
+    "view": "guildsquare",
+    "on": false,
+    "camera": {
+      "position": [
+        -2.7200492876581297,
+        17.164999389648436,
+        49.425166066071924
+      ],
+      "quaternion": [
+        0.09885341587098448,
+        0.21046578052331041,
+        -0.02139677416656273,
+        0.9723550459860929
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "05-game-square-after.png",
+    "view": "guildsquare",
+    "on": true,
+    "camera": {
+      "position": [
+        -2.7200492876581297,
+        17.164999389648436,
+        49.425166066071924
+      ],
+      "quaternion": [
+        0.09885341587098448,
+        0.21046578052331041,
+        -0.02139677416656273,
+        0.9723550459860929
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "06-game-entrance-before.png",
+    "view": "guildentry",
+    "on": false,
+    "camera": {
+      "position": [
+        -7.996782496739004,
+        17.164999389648436,
+        43.10962280834792
+      ],
+      "quaternion": [
+        0.11086355630371075,
+        0.013530349924267956,
+        -0.0015094683862428568,
+        0.9937423826222829
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "06-game-entrance-after.png",
+    "view": "guildentry",
+    "on": true,
+    "camera": {
+      "position": [
+        -7.996782496739004,
+        17.164999389648436,
+        43.10962280834792
+      ],
+      "quaternion": [
+        0.11086355630371075,
+        0.013530349924267956,
+        -0.0015094683862428568,
+        0.9937423826222829
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "07-game-town-before.png",
+    "view": "guildtown",
+    "on": false,
+    "camera": {
+      "position": [
+        -8.532118679088669,
+        40,
+        81.572636408063
+      ],
+      "quaternion": [
+        -0.264289674618024,
+        -0.09343744315947963,
+        -0.025735248483947742,
+        0.9595614149660183
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "07-game-town-after.png",
+    "view": "guildtown",
+    "on": true,
+    "camera": {
+      "position": [
+        -8.532118679088669,
+        40,
+        81.572636408063
+      ],
+      "quaternion": [
+        -0.264289674618024,
+        -0.09343744315947963,
+        -0.025735248483947742,
+        0.9595614149660183
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "08-game-island-before.png",
+    "view": "island",
+    "on": false,
+    "camera": {
+      "position": [
+        143,
+        121,
+        194
+      ],
+      "quaternion": [
+        -0.19827553929456282,
+        0.327381355607055,
+        0.07046707494521927,
+        0.9211637475861728
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  },
+  {
+    "file": "08-game-island-after.png",
+    "view": "island",
+    "on": true,
+    "camera": {
+      "position": [
+        143,
+        121,
+        194
+      ],
+      "quaternion": [
+        -0.19827553929456282,
+        0.327381355607055,
+        0.07046707494521927,
+        0.9211637475861728
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+import{writeFileSync}from'node:fs';
+import * as T from'../../assets/js/vendor/three-atlas.module.js?v=16';
+import{createPlayerController}from'../../assets/js/urban-atlas/player-controller.js?v=50';
+import{fixture}from'./fixture.mjs';import{squareRoutes}from'./routes.mjs';
+const f=await fixture(),rows=[];
+for(const hz of[20,60,180])for(const[name,r]of Object.entries(squareRoutes))for(const reverse of[false,true]){const route=reverse?[...r].reverse():r,root=new T.Group();root.position.set(route[0][0],f.town.heightAt(...route[0]),route[0][1]);const c=createPlayerController(root,f.town.movementOptions(()=>root.position.y)),input={keys:new Set(['w']),touch:new Set(),yaw:0};let target=1,frames=0,stall=0,air=0,up=0,down=0,distance=0;while(target<route.length&&frames<hz*100){const t=route[target],dx=t[0]-root.position.x,dz=t[1]-root.position.z;if(Math.hypot(dx,dz)<.13){target++;continue;}input.yaw=Math.atan2(-dx,-dz);const old=root.position.clone(),m=c.update(1/hz,input,f.world.obstacles),d=old.distanceTo(root.position);up=Math.max(up,root.position.y-old.y);down=Math.max(down,old.y-root.position.y);distance+=d;air+=!m.grounded;stall=d<.00001?stall+1:0;frames++;if(stall>hz*2)break;}rows.push({name,reverse,hz,success:target===route.length,frames,seconds:frames/hz,distance,air,up,down,target,end:root.position.toArray()});}
+writeFileSync(new URL('controller-routes.json',import.meta.url),JSON.stringify(rows,null,2));console.log(JSON.stringify(rows,null,2));f.dispose();

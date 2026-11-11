@@ -1,0 +1,36 @@
+{
+  "phase": "R0-B1",
+  "identity": "Transit Kingdom — Tropical Sky Metropolis",
+  "direction": "Contemporary Indonesian tropical modernism with restrained original sky-infrastructure expression",
+  "reviewStatus": "human artistic approval pending",
+  "units": "metres",
+  "referenceCharacterHeight": 1.9,
+  "pedestrianCameraHeightAboveSupport": 1.65,
+  "bay": 3.6,
+  "floorToFloor": 3.2,
+  "doorLeaf": {"width": 1.2, "height": 2.4},
+  "minimumPedestrianWidth": 2.4,
+  "minimumCanopyClearance": 2.9,
+  "palette": {
+    "concrete": "#e1dfce",
+    "plaster": "#cfc4a6",
+    "terracotta": "#b3664c",
+    "forest": "#355e51",
+    "sage": "#8b9d87",
+    "bronze": "#685640",
+    "timber": "#986b44",
+    "glass": "#5d9394",
+    "stone": "#65716b"
+  },
+  "systems": ["Recessed imported window frames and modeled glazing/interior depth", "Shaded 3.6 m structural bays", "Continuous beveled mineral floor plates", "Timber soffits and bronze fins", "Integrated planter edges and accessible entries", "Expressive folded/shell roofs with visible structural ribs"],
+  "prototypes": [
+    {"id":"commercial","name":"Ruang Niaga","design":"Three-storey terracotta and mineral shop building with a shaded arcade, a recessed corner entrance and planted upper terraces","targetWidth":14.4,"targetDepth":9.6,"targetHeight":12.4,"site":{"x":31,"z":4,"entranceDirection":"south","reason":"Move north of the reserved eastern clearing to retain the existing cross-trail","adaptation":"Stepped stone base and short entrance stair/ramp; preserve terrain"}},
+    {"id":"research","name":"Atlas Research Centre","design":"Four-storey stepped sage research pavilion with a glazed observation atrium, vertical shading and open rooftop instrument terrace","targetWidth":12.2,"targetDepth":10.8,"targetHeight":19.2,"site":{"x":38,"z":-30,"entranceDirection":"south","reason":"Eastern shoulder varies about 1.8 m across the initial envelope, without existing trail overlap; avoids occupying the Crown Ridge trail/viewpoint","adaptation":"Piers and local entrance landing; a new uphill access route is conditional future work"}},
+    {"id":"station","name":"Stasiun Antara","design":"Open elevated passenger platform with a split butterfly roof, branching structural supports, visible rail bed and legible stair/elevator entrance","targetWidth":22,"targetDepth":17,"targetHeight":13.4,"site":{"x":-5,"z":5,"entranceDirection":"southwest","reason":"Keep the reserved valley station location; a viaduct leaves the trail junction open below","adaptation":"Variable-length foundation piers across the measured 6 m ground range, an elevated platform and separate stair/elevator core"}},
+    {"id":"skyport","name":"Pelabuhan Awan","design":"Cloud-facing terminal with an asymmetrical ribbed wing roof, protected boarding lounge and a circular landing apron","targetWidth":23,"targetDepth":21,"targetHeight":10.8,"site":{"x":30,"z":65,"entranceDirection":"north","reason":"Shift south of the arrival reservation to face the open cloudscape and connect back to the existing approach","adaptation":"Raised continuous deck on piers over roughly 2.3 m of terrain change, with northern approach ramp"}}
+  ],
+  "sourceDecision": "Use individual Kenney Modular Buildings 2.1 and Building Kit 1.0 components after raw 3D inspection. Do not use their sample buildings or any rejected Jakarta prototype.",
+  "siteRecord": "docs/architecture-r0b1-review/site-candidates.json",
+  "productionIsolation": "Dedicated review page only. Home/Work and all approved landscape source files remain unchanged.",
+  "stop": "Owner review before R0-B2"
+}
