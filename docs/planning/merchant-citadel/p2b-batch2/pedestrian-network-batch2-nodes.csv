@@ -1,0 +1,33 @@
+id,x,n,label,support_y_m,standable,clearance_to_solid_m,nearest_solid,new_or_moved
+N01,0,0,Arrival court,0.01,True,9.781,B04:wall,False
+N02,0,5,Gateway centre lane,0.01,True,5.94,B04:wall,False
+N03,0,20,Simpang Timbangan (street junction),0.01,True,4.225,B04:wall,False
+N04,0,37.5,Bazaar south entrance,0.01,True,4.449,dressing:prop,False
+N05,0,45.5,"Bazaar, south of the market cross",0.01,True,2.16,M01:wall,False
+N29,2.9,49,Cross-passage east of the cross (centre of the 3.85 m gap to the awning-row posts),0.01,True,1.56,M01:wall,False
+N30,-2.9,49,Cross-passage west of the cross (centre of the 3.85 m gap to the awning-row posts),0.01,True,1.56,M01:wall,False
+N27,0,52.5,"Bazaar, north of the market cross",0.01,True,2.16,M01:wall,False
+N06,0,59.4,Foot of the terrace stairs,0.01,True,4.576,R02:post,False
+N07,0,67,Civic terrace centre (+1.0 m),1.01,True,6.532,TERRACE:balustrade,False
+N08,0,75,"Exchange Hall podium, top of stairs (+2.0 m)",2.01,True,3.625,B01:post,False
+N35,-9,4,Arrival court west exit,0.01,True,4.46,B04:wall,False
+N09,-16,4,Artisan lane south,0.01,True,5.32,B04:wall,False
+N10,-16,20,Artisan lane at the cross street,0.01,True,2.506,dressing:prop,False
+N11,-16,38.5,Bazaar south-west,0.01,True,3.626,dressing:post,False
+N36,9,4,Arrival court east exit,0.01,True,5.66,B07:wall,False
+N12,16,4,Warehouse lane south,0,True,6.368,B07:wall,False
+N13,16,20,Warehouse lane at the cross street,0,True,3.38,dressing:post,False
+N14,16,38.5,Bazaar south-east,0.01,True,2.789,dressing:prop,False
+N18,-13,42.5,Market Hall West south entrance (centre of the 4 m open front),0.01,True,2.816,B02:prop,True
+N31,-13,49,Market Hall West interior (centre of the aisle),0.01,True,2.025,B02:counter,True
+N19,13,42.5,Market Hall East south entrance (centre of the 4 m opening between the closed bays),0.01,True,2.073,B03:wall,True
+N32,13,49,Market Hall East interior (centre of the aisle),0.01,True,2.025,B03:counter,True
+N38,-19.2,41,"Market west side lane, south",0.01,True,1.16,E03:post,False
+N23,-19.2,58.6,Bazaar north-west,0.01,True,2.995,B02:post,False
+N39,19.2,41,"Market east side lane, south",0.01,True,2.96,B14:wall,False
+N24,19.2,58.6,Bazaar north-east (tea lane entrance),0.01,True,2.953,B03:wall,False
+N41,26,58,Tea lane,0.01,True,3.126,dressing:post,False
+N16,36,57,Lookout terrace,0.01,True,2.414,dressing:prop,False
+N17,36.16,62.24,Tea house veranda (centre of the gap between the first two porch posts),0.01,True,0.409,B17:post,False
+N21,-9.5,68,Terrace west (benches),1.01,True,1.785,dressing:bench,False
+N22,9.5,68,Terrace east (benches),1.01,True,1.785,dressing:bench,False

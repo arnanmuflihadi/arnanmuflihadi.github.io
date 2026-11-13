@@ -1,0 +1,801 @@
+{
+ "when": "2026-11-13T04:26:40.168Z",
+ "note": "frame_complete = render() + 1x1 read-back (GPU completion, not vsync-limited); 1280x720, DPR 1, shadows on; shared desktop machine, see load in README",
+ "cases": [
+  {
+   "label": "street: arrival court (gameplay camera) [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 3.2,
+    "p95": 3.6
+   },
+   "frame_complete_ms": {
+    "p50": 9.5,
+    "p95": 10,
+    "max": 15.3
+   },
+   "implied_fps_p50": 105.263,
+   "calls": 644,
+   "triangles": 1034979,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "street: arrival court (gameplay camera) [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.9,
+    "p95": 3.2
+   },
+   "frame_complete_ms": {
+    "p50": 8.6,
+    "p95": 9.2,
+    "max": 13.5
+   },
+   "implied_fps_p50": 116.279,
+   "calls": 609,
+   "triangles": 828029,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "street: arrival court (gameplay camera) [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.6,
+    "p95": 3
+   },
+   "frame_complete_ms": {
+    "p50": 8.3,
+    "p95": 11.2,
+    "max": 13.1
+   },
+   "implied_fps_p50": 120.482,
+   "calls": 539,
+   "triangles": 1002693,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "street: arrival court (gameplay camera) [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.3,
+    "p95": 2.5
+   },
+   "frame_complete_ms": {
+    "p50": 6.4,
+    "p95": 7,
+    "max": 10.5
+   },
+   "implied_fps_p50": 156.25,
+   "calls": 430,
+   "triangles": 690150,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "street: Exchange Hall forecourt [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.5,
+    "p95": 2.8
+   },
+   "frame_complete_ms": {
+    "p50": 6.9,
+    "p95": 7.6,
+    "max": 10.3
+   },
+   "implied_fps_p50": 144.928,
+   "calls": 294,
+   "triangles": 523092,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "street: Exchange Hall forecourt [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.2,
+    "p95": 2.5
+   },
+   "frame_complete_ms": {
+    "p50": 5.9,
+    "p95": 6.7,
+    "max": 8.9
+   },
+   "implied_fps_p50": 169.492,
+   "calls": 254,
+   "triangles": 273316,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "street: Exchange Hall forecourt [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 1.9,
+    "p95": 2.1
+   },
+   "frame_complete_ms": {
+    "p50": 5.5,
+    "p95": 6.5,
+    "max": 8.3
+   },
+   "implied_fps_p50": 181.818,
+   "calls": 171,
+   "triangles": 486952,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "street: Exchange Hall forecourt [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 1.5,
+    "p95": 1.8
+   },
+   "frame_complete_ms": {
+    "p50": 4.3,
+    "p95": 5.3,
+    "max": 6.8
+   },
+   "implied_fps_p50": 232.558,
+   "calls": 78,
+   "triangles": 139287,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Caravan Green meadow (gameplay camera, animals around) [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.3,
+    "p95": 2.7
+   },
+   "frame_complete_ms": {
+    "p50": 6,
+    "p95": 7.4,
+    "max": 9.4
+   },
+   "implied_fps_p50": 166.667,
+   "calls": 255,
+   "triangles": 516519,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Caravan Green meadow (gameplay camera, animals around) [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2,
+    "p95": 2.2
+   },
+   "frame_complete_ms": {
+    "p50": 5.5,
+    "p95": 6.6,
+    "max": 8.7
+   },
+   "implied_fps_p50": 181.818,
+   "calls": 200,
+   "triangles": 167995,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Caravan Green meadow (gameplay camera, animals around) [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 1.7,
+    "p95": 2
+   },
+   "frame_complete_ms": {
+    "p50": 5,
+    "p95": 6,
+    "max": 7.4
+   },
+   "implied_fps_p50": 200,
+   "calls": 144,
+   "triangles": 482543,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Caravan Green meadow (gameplay camera, animals around) [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 1.3,
+    "p95": 1.6
+   },
+   "frame_complete_ms": {
+    "p50": 3.3,
+    "p95": 4.2,
+    "max": 5
+   },
+   "implied_fps_p50": 303.03,
+   "calls": 39,
+   "triangles": 37777,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Counting Crag bench (gameplay camera) [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 3.1,
+    "p95": 3.5
+   },
+   "frame_complete_ms": {
+    "p50": 11.7,
+    "p95": 12.8,
+    "max": 19.9
+   },
+   "implied_fps_p50": 85.47,
+   "calls": 649,
+   "triangles": 1291010,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Counting Crag bench (gameplay camera) [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.8,
+    "p95": 3.2
+   },
+   "frame_complete_ms": {
+    "p50": 8.3,
+    "p95": 9.4,
+    "max": 13.2
+   },
+   "implied_fps_p50": 120.482,
+   "calls": 595,
+   "triangles": 821831,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Counting Crag bench (gameplay camera) [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.7,
+    "p95": 2.9
+   },
+   "frame_complete_ms": {
+    "p50": 8.4,
+    "p95": 9,
+    "max": 13.5
+   },
+   "implied_fps_p50": 119.048,
+   "calls": 545,
+   "triangles": 1260758,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "Counting Crag bench (gameplay camera) [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.3,
+    "p95": 2.6
+   },
+   "frame_complete_ms": {
+    "p50": 6.1,
+    "p95": 7.3,
+    "max": 9.9
+   },
+   "implied_fps_p50": 163.934,
+   "calls": 426,
+   "triangles": 685522,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "tea terraces promenade (gameplay camera) [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.3,
+    "p95": 2.7
+   },
+   "frame_complete_ms": {
+    "p50": 6.3,
+    "p95": 7.3,
+    "max": 9.6
+   },
+   "implied_fps_p50": 158.73,
+   "calls": 268,
+   "triangles": 625549,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "tea terraces promenade (gameplay camera) [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2,
+    "p95": 2.2
+   },
+   "frame_complete_ms": {
+    "p50": 5.6,
+    "p95": 6.5,
+    "max": 9.5
+   },
+   "implied_fps_p50": 178.571,
+   "calls": 223,
+   "triangles": 159138,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "tea terraces promenade (gameplay camera) [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 1.8,
+    "p95": 2
+   },
+   "frame_complete_ms": {
+    "p50": 5.1,
+    "p95": 5.6,
+    "max": 8
+   },
+   "implied_fps_p50": 196.078,
+   "calls": 147,
+   "triangles": 589567,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "tea terraces promenade (gameplay camera) [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 1.3,
+    "p95": 1.6
+   },
+   "frame_complete_ms": {
+    "p50": 3.3,
+    "p95": 3.9,
+    "max": 4.6
+   },
+   "implied_fps_p50": 303.03,
+   "calls": 33,
+   "triangles": 21946,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "aerial: whole island [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.7,
+    "p95": 3.4
+   },
+   "frame_complete_ms": {
+    "p50": 7.2,
+    "p95": 9.2,
+    "max": 10.9
+   },
+   "implied_fps_p50": 138.889,
+   "calls": 530,
+   "triangles": 989930,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "aerial: whole island [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.4,
+    "p95": 2.6
+   },
+   "frame_complete_ms": {
+    "p50": 6.5,
+    "p95": 7,
+    "max": 10.2
+   },
+   "implied_fps_p50": 153.846,
+   "calls": 511,
+   "triangles": 798007,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "aerial: whole island [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.7,
+    "p95": 3
+   },
+   "frame_complete_ms": {
+    "p50": 7.1,
+    "p95": 7.9,
+    "max": 11.1
+   },
+   "implied_fps_p50": 140.845,
+   "calls": 530,
+   "triangles": 989930,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "aerial: whole island [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.2,
+    "p95": 2.5
+   },
+   "frame_complete_ms": {
+    "p50": 5.6,
+    "p95": 6.1,
+    "max": 8.5
+   },
+   "implied_fps_p50": 178.571,
+   "calls": 431,
+   "triangles": 690384,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: south-west approach [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.7,
+    "p95": 2.9
+   },
+   "frame_complete_ms": {
+    "p50": 6.4,
+    "p95": 7.4,
+    "max": 9.6
+   },
+   "implied_fps_p50": 156.25,
+   "calls": 517,
+   "triangles": 872631,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: south-west approach [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.5,
+    "p95": 3
+   },
+   "frame_complete_ms": {
+    "p50": 6.2,
+    "p95": 7.9,
+    "max": 8.9
+   },
+   "implied_fps_p50": 161.29,
+   "calls": 511,
+   "triangles": 798007,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: south-west approach [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.7,
+    "p95": 3
+   },
+   "frame_complete_ms": {
+    "p50": 6.5,
+    "p95": 7.3,
+    "max": 9.9
+   },
+   "implied_fps_p50": 153.846,
+   "calls": 517,
+   "triangles": 872631,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: south-west approach [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.2,
+    "p95": 2.5
+   },
+   "frame_complete_ms": {
+    "p50": 5.6,
+    "p95": 6.4,
+    "max": 8.9
+   },
+   "implied_fps_p50": 178.571,
+   "calls": 431,
+   "triangles": 690384,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: east approach [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.8,
+    "p95": 3.5
+   },
+   "frame_complete_ms": {
+    "p50": 7.4,
+    "p95": 9.4,
+    "max": 11.2
+   },
+   "implied_fps_p50": 135.135,
+   "calls": 530,
+   "triangles": 980743,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: east approach [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.4,
+    "p95": 2.7
+   },
+   "frame_complete_ms": {
+    "p50": 6.3,
+    "p95": 7.4,
+    "max": 10.6
+   },
+   "implied_fps_p50": 158.73,
+   "calls": 511,
+   "triangles": 798007,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: east approach [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.7,
+    "p95": 3
+   },
+   "frame_complete_ms": {
+    "p50": 7.3,
+    "p95": 7.9,
+    "max": 11.6
+   },
+   "implied_fps_p50": 136.986,
+   "calls": 530,
+   "triangles": 980743,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "flight: east approach [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.2,
+    "p95": 2.5
+   },
+   "frame_complete_ms": {
+    "p50": 5.6,
+    "p95": 6.1,
+    "max": 8.9
+   },
+   "implied_fps_p50": 178.571,
+   "calls": 431,
+   "triangles": 690384,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "town with vegetation (low aerial) [all on]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 3,
+    "p95": 3.3
+   },
+   "frame_complete_ms": {
+    "p50": 8.8,
+    "p95": 9.4,
+    "max": 13.6
+   },
+   "implied_fps_p50": 113.636,
+   "calls": 610,
+   "triangles": 1029174,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "town with vegetation (low aerial) [flora hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.8,
+    "p95": 3.2
+   },
+   "frame_complete_ms": {
+    "p50": 7.9,
+    "p95": 8.4,
+    "max": 12.3
+   },
+   "implied_fps_p50": 126.582,
+   "calls": 582,
+   "triangles": 817709,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "town with vegetation (low aerial) [wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.7,
+    "p95": 3
+   },
+   "frame_complete_ms": {
+    "p50": 7.9,
+    "p95": 8.5,
+    "max": 12.4
+   },
+   "implied_fps_p50": 126.582,
+   "calls": 534,
+   "triangles": 1008602,
+   "geometries": 512,
+   "textures": 222
+  },
+  {
+   "label": "town with vegetation (low aerial) [island + flora + wildlife hidden]",
+   "w": 1280,
+   "h": 720,
+   "shadows": true,
+   "frames": 120,
+   "cpu_submit_ms": {
+    "p50": 2.3,
+    "p95": 2.5
+   },
+   "frame_complete_ms": {
+    "p50": 6,
+    "p95": 6.6,
+    "max": 9.1
+   },
+   "implied_fps_p50": 166.667,
+   "calls": 431,
+   "triangles": 690384,
+   "geometries": 512,
+   "textures": 222
+  }
+ ],
+ "cpu": {
+  "frames": 600,
+  "step_ms_per_frame": 0.338,
+  "wildlife_update_ms_per_frame": 0.188,
+  "wildlife_agents": 65,
+  "simulated_last_frame": 36,
+  "mixers_last_frame": 31,
+  "visible_last_frame": 59,
+  "flora_rebucket_ms_each": 0.046,
+  "flora_instances_drawn": 464,
+  "flora_l0": 390,
+  "flora_l1": 74,
+  "flora_triangles_now": 346992
+ },
+ "memory": {
+  "flora_textures": 12,
+  "flora_texture_mb_estimate": 34.955,
+  "renderer_textures": 222,
+  "renderer_geometries": 512,
+  "load_ms": {
+   "island_glb": 12.7,
+   "flora_glb": 48,
+   "wildlife": 30
+  },
+  "files_bytes": [
+   [
+    "assets-p3b2/flora.glb",
+    10891984
+   ],
+   [
+    "models/merchant-citadel-p3b-island.glb",
+    3232932
+   ],
+   [
+    "data/island-flora.json",
+    79180
+   ]
+  ]
+ }
+}

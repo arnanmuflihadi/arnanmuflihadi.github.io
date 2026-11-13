@@ -1,0 +1,7 @@
+{
+  "purpose": "Control for the merged-vs-unmerged pixel comparison in merge-integrity.json: does the test detect a real index-precision corruption?",
+  "method": "Largest merged mesh (scene-wide merge, MERGED_scene_ALL_MI_WoodTrim, 117,608 vertices) re-created with a 16-bit index (what an Uint16 index attribute would do to indices above 65,535), rendered at 640x360 in p5-east-aerial, shadows off, compared with the unmerged render.",
+  "merged_vs_unmerged": {"mean_abs_diff_0_255": 0.01, "share_pixels_diff_over_24": 0},
+  "corrupted_16bit_index_vs_unmerged": {"mean_abs_diff_0_255": 1.288, "share_pixels_diff_over_24": 0.0218},
+  "reading": "the corruption is detected (2.2% of pixels differ by more than 24/255, mean 1.3); the real merge differs by 0.01 on average and has no pixel over 24. All 1,706 merged meshes of the six modes use 32-bit indices."
+}

@@ -1,0 +1,25 @@
+{
+  "what": "Scripted real-keyboard session: a Playwright-driven Chromium page (1280x720, fade on) with the game's unmodified controller and camera. Key events W (hold), Q and R (camera turn) are sent as real keydown/keyup events; a small closed loop reads the character position and yaw and decides which key to press. NOT a human playtest.",
+  "url": "http://127.0.0.1:4180/merchant-citadel-p2a/index.html (default merge cell30, default low-prop camera rule 1.25 m)",
+  "waypoints_reached": "16 of 16 within 0.8 m, none stuck, none timed out",
+  "route": [
+    {"label": "cross lane east", "target": [16, 4.5], "end": [15.22, 4.6], "err_m": 0.78, "seconds": 7.9, "min_camera_m": 12.35, "min_alpha": 1},
+    {"label": "B13 gable doors", "target": [16, 12], "end": [16.06, 11.24], "err_m": 0.77, "seconds": 3.8, "min_camera_m": 3.11, "min_alpha": 0.89},
+    {"label": "lane at the cross street", "target": [16, 20], "end": [16.09, 19.32], "err_m": 0.69, "seconds": 3.9, "min_camera_m": 13.05, "min_alpha": 1},
+    {"label": "court centre", "target": [25, 20], "end": [24.24, 20.07], "err_m": 0.76, "seconds": 4.5, "min_camera_m": 5.09, "min_alpha": 1},
+    {"label": "loading bays", "target": [28.6, 19.0], "end": [27.88, 19.27], "err_m": 0.77, "seconds": 1.8, "min_camera_m": 13.05, "min_alpha": 1},
+    {"label": "tally loggia", "target": [23.5, 21.3], "end": [24.2, 21.13], "err_m": 0.72, "seconds": 3.5, "min_camera_m": 3.03, "min_alpha": 0.84},
+    {"label": "court east opening", "target": [32.5, 20], "end": [31.77, 20.12], "err_m": 0.74, "seconds": 5.5, "min_camera_m": 0.5, "min_alpha": 0.15, "note": "run BEFORE the low-prop camera rule (flag off): 0.2 s at 0.5 m while turning past the wagon; see below"},
+    {"label": "path behind E04", "target": [33, 30], "end": [33.03, 29.22], "err_m": 0.78, "seconds": 5, "min_camera_m": 4.87, "min_alpha": 1},
+    {"label": "path behind east shops", "target": [33, 41], "end": [33.1, 40.39], "err_m": 0.62, "seconds": 5.3, "min_camera_m": 12.84, "min_alpha": 1},
+    {"label": "path bend", "target": [32.6, 46.8], "end": [32.75, 46.08], "err_m": 0.74, "seconds": 2.7, "min_camera_m": 13.08, "min_alpha": 1},
+    {"label": "gate", "target": [31, 50], "end": [31.37, 49.38], "err_m": 0.72, "seconds": 1.7, "min_camera_m": 13.04, "min_alpha": 1},
+    {"label": "E05 east door", "target": [31.3, 54.5], "end": [31.2, 53.85], "err_m": 0.66, "seconds": 2.1, "min_camera_m": 12.92, "min_alpha": 1},
+    {"label": "lookout terrace", "target": [36, 57], "end": [35.33, 56.7], "err_m": 0.73, "seconds": 2.7, "min_camera_m": 2.95, "min_alpha": 0.82},
+    {"label": "tea lane in front of E05", "target": [26, 59], "end": [26.72, 58.97], "err_m": 0.72, "seconds": 5.5, "min_camera_m": 6.39, "min_alpha": 1},
+    {"label": "bazaar NE corner", "target": [19.2, 58.6], "end": [19.87, 58.73], "err_m": 0.68, "seconds": 3.3, "min_camera_m": 12.92, "min_alpha": 1},
+    {"label": "east market lane by E05 side door", "target": [19.7, 54.5], "end": [19.6, 55.13], "err_m": 0.64, "seconds": 2.3, "min_camera_m": 12.81, "min_alpha": 1}
+  ],
+  "found": "At the court east opening the camera was pulled to its 0.5 m minimum for 0.2 s (character opacity 0.42 -> 0.18) when the character, turning to head east, stood 0.25 m from the AABB corner of the wagon (the preview's camera proxy of an oriented 2.9 x 2.0 m box, 1.2 m high): the head-height camera ray (1.25 m, radius 0.28 m) starts inside that box. Cause: low floor props are camera obstacles. Correction: floor props with a top at or below 1.25 m are no longer camera obstacles (still solid for the body); measured effect in 04. The session was not repeated with the rule on (the autopilot suites were).",
+  "screenshots": "visuals/camera/shot-real-keys-b4-*.jpg"
+}

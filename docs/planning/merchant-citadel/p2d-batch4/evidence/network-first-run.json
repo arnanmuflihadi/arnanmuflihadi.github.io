@@ -1,0 +1,2340 @@
+{
+ "nodes": {
+  "N01": {
+   "x": 0,
+   "n": 0,
+   "label": "Arrival court",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 6.276,
+   "nearest": "dressing:prop",
+   "support_y": 0.01
+  },
+  "N02": {
+   "x": 0,
+   "n": 5,
+   "label": "Gateway centre lane",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 5.94,
+   "nearest": "B04:wall",
+   "support_y": 0.01
+  },
+  "N03": {
+   "x": 0,
+   "n": 20,
+   "label": "Simpang Timbangan (street junction)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 4.225,
+   "nearest": "B04:wall",
+   "support_y": 0.01
+  },
+  "N04": {
+   "x": 0,
+   "n": 37.5,
+   "label": "Bazaar south entrance",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 4.449,
+   "nearest": "dressing:prop",
+   "support_y": 0.01
+  },
+  "N05": {
+   "x": 0,
+   "n": 45.5,
+   "label": "Bazaar, south of the market cross",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.16,
+   "nearest": "M01:wall",
+   "support_y": 0.01
+  },
+  "N29": {
+   "x": 2.9,
+   "n": 49,
+   "label": "Cross-passage east of the cross (centre of the 3.85 m gap to the awning-row posts)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.56,
+   "nearest": "M01:wall",
+   "support_y": 0.01
+  },
+  "N30": {
+   "x": -2.9,
+   "n": 49,
+   "label": "Cross-passage west of the cross (centre of the 3.85 m gap to the awning-row posts)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.56,
+   "nearest": "M01:wall",
+   "support_y": 0.01
+  },
+  "N27": {
+   "x": 0,
+   "n": 52.5,
+   "label": "Bazaar, north of the market cross",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.16,
+   "nearest": "M01:wall",
+   "support_y": 0.01
+  },
+  "N06": {
+   "x": 0,
+   "n": 59.4,
+   "label": "Foot of the terrace stairs",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 4.576,
+   "nearest": "R02:post",
+   "support_y": 0.01
+  },
+  "N07": {
+   "x": 0,
+   "n": 67,
+   "label": "Civic terrace centre (+1.0 m)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 6.532,
+   "nearest": "TERRACE:balustrade",
+   "support_y": 1.01
+  },
+  "N08": {
+   "x": 0,
+   "n": 75,
+   "label": "Exchange Hall podium, top of stairs (+2.0 m)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 3.625,
+   "nearest": "B01:post",
+   "support_y": 2.01
+  },
+  "N35": {
+   "x": -9,
+   "n": 4,
+   "label": "Arrival court west exit",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.483,
+   "nearest": "E01:prop",
+   "support_y": 0.01
+  },
+  "N09": {
+   "x": -16,
+   "n": 4,
+   "label": "Artisan lane south",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.796,
+   "nearest": "E01:wall",
+   "support_y": 0.01
+  },
+  "N10": {
+   "x": -16,
+   "n": 20,
+   "label": "Artisan lane at the cross street",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.253,
+   "nearest": "B11:prop",
+   "support_y": 0.01
+  },
+  "N11": {
+   "x": -16,
+   "n": 38.5,
+   "label": "Bazaar south-west",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 3.626,
+   "nearest": "dressing:post",
+   "support_y": 0.01
+  },
+  "N36": {
+   "x": 9,
+   "n": 4,
+   "label": "Arrival court east exit",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.739,
+   "nearest": "E02:prop",
+   "support_y": 0.01
+  },
+  "N12": {
+   "x": 16,
+   "n": 4,
+   "label": "Warehouse lane south",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.488,
+   "nearest": "E02:wall",
+   "support_y": 0
+  },
+  "N13": {
+   "x": 16,
+   "n": 20,
+   "label": "Warehouse lane at the cross street",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.661,
+   "nearest": "B13:prop",
+   "support_y": 0
+  },
+  "N14": {
+   "x": 16,
+   "n": 38.5,
+   "label": "Bazaar south-east",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.789,
+   "nearest": "dressing:prop",
+   "support_y": 0.01
+  },
+  "N18": {
+   "x": -13,
+   "n": 42.5,
+   "label": "Market Hall West south entrance (centre of the 4 m open front)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.816,
+   "nearest": "B02:prop",
+   "support_y": 0.01
+  },
+  "N31": {
+   "x": -13,
+   "n": 49,
+   "label": "Market Hall West interior (centre of the aisle)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.025,
+   "nearest": "B02:counter",
+   "support_y": 0.01
+  },
+  "N19": {
+   "x": 13,
+   "n": 42.5,
+   "label": "Market Hall East south entrance (centre of the 4 m opening between the closed bays)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.073,
+   "nearest": "B03:wall",
+   "support_y": 0.01
+  },
+  "N32": {
+   "x": 13,
+   "n": 49,
+   "label": "Market Hall East interior (centre of the aisle)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.025,
+   "nearest": "B03:counter",
+   "support_y": 0.01
+  },
+  "N38": {
+   "x": -19.2,
+   "n": 41,
+   "label": "Market west side lane, south",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.16,
+   "nearest": "E03:post",
+   "support_y": 0.01
+  },
+  "N23": {
+   "x": -19.2,
+   "n": 58.6,
+   "label": "Bazaar north-west",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.995,
+   "nearest": "B02:post",
+   "support_y": 0.01
+  },
+  "N39": {
+   "x": 19.2,
+   "n": 41,
+   "label": "Market east side lane, south",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.96,
+   "nearest": "B14:wall",
+   "support_y": 0.01
+  },
+  "N24": {
+   "x": 19.2,
+   "n": 58.6,
+   "label": "Bazaar north-east (tea lane entrance)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.923,
+   "nearest": "dressing:prop",
+   "support_y": 0.01
+  },
+  "N41": {
+   "x": 26,
+   "n": 59,
+   "label": "Tea lane in front of E05's gallery (north of the gallery posts)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 0.935,
+   "nearest": "dressing:prop",
+   "support_y": 0.01
+  },
+  "N16": {
+   "x": 36,
+   "n": 57,
+   "label": "Lookout terrace",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.31,
+   "nearest": "dressing:prop",
+   "support_y": 0.01
+  },
+  "N17": {
+   "x": 36.16,
+   "n": 62.24,
+   "label": "Tea house veranda (centre of the gap between the first two porch posts)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 0.409,
+   "nearest": "B17:post",
+   "support_y": 0.01
+  },
+  "N20": {
+   "x": 0,
+   "n": -16,
+   "label": "Future transport reservation",
+   "in_slice": false,
+   "standable": true,
+   "clearance_m": 9.652,
+   "nearest": "dressing:prop",
+   "support_y": 0
+  },
+  "N33": {
+   "x": 25,
+   "n": 20,
+   "label": "Service court (Pelataran Gudang)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.029,
+   "nearest": "B13:post",
+   "support_y": 0
+  },
+  "N40": {
+   "x": -20.1,
+   "n": 35.4,
+   "label": "Artisan workyard (east of the well, north of the joiner's drying shed)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.31,
+   "nearest": "dressing:prop",
+   "support_y": 0.01
+  },
+  "N21": {
+   "x": -9.5,
+   "n": 68,
+   "label": "Terrace west (benches)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.785,
+   "nearest": "dressing:bench",
+   "support_y": 1.01
+  },
+  "N22": {
+   "x": 9.5,
+   "n": 68,
+   "label": "Terrace east (benches)",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.785,
+   "nearest": "dressing:bench",
+   "support_y": 1.01
+  },
+  "N42": {
+   "x": -16.3,
+   "n": 10.9,
+   "label": "Smithy (B10) front, lane centre of the free span",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.293,
+   "nearest": "B10:prop",
+   "support_y": 0.01
+  },
+  "N43": {
+   "x": -16,
+   "n": 19.8,
+   "label": "Potter's shop (B11) front, closing the cross street",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.376,
+   "nearest": "B11:prop",
+   "support_y": 0.01
+  },
+  "N44": {
+   "x": -15.7,
+   "n": 29.7,
+   "label": "Joiner (B12) front, lane centre of the free span",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.382,
+   "nearest": "B12:prop",
+   "support_y": 0.01
+  },
+  "N45": {
+   "x": -6.1,
+   "n": 2,
+   "label": "Outfitter (E01) front, arrival court west",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.333,
+   "nearest": "E01:prop",
+   "support_y": 0.01
+  },
+  "N46": {
+   "x": 5.8,
+   "n": 2.5,
+   "label": "Carrier's office (E02) front, arrival court east",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.341,
+   "nearest": "E02:prop",
+   "support_y": 0.01
+  },
+  "N47": {
+   "x": 16,
+   "n": 12,
+   "label": "Warehouse (B13) lane gable doors, lane centre",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 2.16,
+   "nearest": "B13:wall",
+   "support_y": 0
+  },
+  "N48": {
+   "x": 28.5,
+   "n": 19.4,
+   "label": "Warehouse (B13) loading bays, court side, beyond the canopy",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.01,
+   "nearest": "B13:prop",
+   "support_y": 0
+  },
+  "N49": {
+   "x": 23.5,
+   "n": 21.3,
+   "label": "Counting house (E04) tally loggia, court side",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 0.98,
+   "nearest": "E04:post",
+   "support_y": 0
+  },
+  "N50": {
+   "x": 16,
+   "n": 29,
+   "label": "Counting house (E04) lane door, lane centre",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.918,
+   "nearest": "dressing:prop",
+   "support_y": 0
+  },
+  "N51": {
+   "x": 33,
+   "n": 20,
+   "label": "Tea porters' path, south end at the court's east opening",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.843,
+   "nearest": "dressing:prop",
+   "support_y": 0
+  },
+  "N52": {
+   "x": 33,
+   "n": 30,
+   "label": "Tea porters' path behind the counting house",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.535,
+   "nearest": "dressing:prop",
+   "support_y": 0
+  },
+  "N53": {
+   "x": 33,
+   "n": 41,
+   "label": "Tea porters' path behind the east shops",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.29,
+   "nearest": "dressing:prop",
+   "support_y": 0
+  },
+  "N54": {
+   "x": 31,
+   "n": 50,
+   "label": "Tea porters' path, bend before the gate into the lookout terrace",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.301,
+   "nearest": "dressing:prop",
+   "support_y": 0
+  },
+  "N58": {
+   "x": 19.7,
+   "n": 54.5,
+   "label": "E05 west (bazaar-side) door, east market lane",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 1.46,
+   "nearest": "E05:wall",
+   "support_y": 0.01
+  },
+  "N59": {
+   "x": 31.3,
+   "n": 54.5,
+   "label": "E05 east (porters') door, west end of the lookout terrace, reached through the gate at x 30-32",
+   "in_slice": true,
+   "standable": true,
+   "clearance_m": 0.719,
+   "nearest": "E05:prop",
+   "support_y": 0.01
+  }
+ },
+ "edges": [
+  {
+   "a": "N01",
+   "b": "N02",
+   "kind": "primary",
+   "length_m": 5,
+   "results": [
+    {
+     "dir": "N01>N02",
+     "seconds": 2.25,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 6.271,
+     "min_side_with": "B04:wall",
+     "end_error_m": 0.42
+    },
+    {
+     "dir": "N02>N01",
+     "seconds": 2.25,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 6.004,
+     "min_side_with": "B04:wall",
+     "end_error_m": 0.42
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N02",
+   "b": "N03",
+   "kind": "primary",
+   "length_m": 15,
+   "results": [
+    {
+     "dir": "N02>N03",
+     "seconds": 7,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 3.66,
+     "min_side_with": "B04:wall",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N03>N02",
+     "seconds": 7,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 3.66,
+     "min_side_with": "B04:wall",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N03",
+   "b": "N04",
+   "kind": "primary",
+   "length_m": 17.5,
+   "results": [
+    {
+     "dir": "N03>N04",
+     "seconds": 8.2,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 3.615,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N04>N03",
+     "seconds": 8.2,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 3.616,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N04",
+   "b": "N05",
+   "kind": "primary",
+   "length_m": 8,
+   "results": [
+    {
+     "dir": "N04>N05",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.745,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N05>N04",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.265,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N05",
+   "b": "N29",
+   "kind": "primary",
+   "length_m": 4.545,
+   "results": [
+    {
+     "dir": "N05>N29",
+     "seconds": 2.6,
+     "stuck": 0,
+     "min_camera_m": 9.998,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.301,
+     "min_side_with": "R03:post",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N29>N05",
+     "seconds": 2.583,
+     "stuck": 0,
+     "min_camera_m": 7.074,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.56,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.438
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N29",
+   "b": "N27",
+   "kind": "primary",
+   "length_m": 4.545,
+   "results": [
+    {
+     "dir": "N29>N27",
+     "seconds": 2.583,
+     "stuck": 0,
+     "min_camera_m": 7.075,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.56,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.438
+    },
+    {
+     "dir": "N27>N29",
+     "seconds": 2.6,
+     "stuck": 0,
+     "min_camera_m": 10.769,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.301,
+     "min_side_with": "R04:post",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N05",
+   "b": "N30",
+   "kind": "primary",
+   "length_m": 4.545,
+   "results": [
+    {
+     "dir": "N05>N30",
+     "seconds": 2.6,
+     "stuck": 0,
+     "min_camera_m": 11.31,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.301,
+     "min_side_with": "R01:post",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N30>N05",
+     "seconds": 2.583,
+     "stuck": 0,
+     "min_camera_m": 7.074,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.56,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.438
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N30",
+   "b": "N27",
+   "kind": "primary",
+   "length_m": 4.545,
+   "results": [
+    {
+     "dir": "N30>N27",
+     "seconds": 2.583,
+     "stuck": 0,
+     "min_camera_m": 7.075,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.56,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.438
+    },
+    {
+     "dir": "N27>N30",
+     "seconds": 2.6,
+     "stuck": 0,
+     "min_camera_m": 10.769,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.301,
+     "min_side_with": "R02:post",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N27",
+   "b": "N06",
+   "kind": "primary",
+   "length_m": 6.9,
+   "results": [
+    {
+     "dir": "N27>N06",
+     "seconds": 3.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.265,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N06>N27",
+     "seconds": 3.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.695,
+     "min_side_with": "M01:wall",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N06",
+   "b": "N07",
+   "kind": "primary",
+   "length_m": 7.6,
+   "results": [
+    {
+     "dir": "N06>N07",
+     "seconds": 3.483,
+     "stuck": 0,
+     "min_camera_m": 12.948,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 4.594,
+     "min_side_with": "R02:post",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N07>N06",
+     "seconds": 3.483,
+     "stuck": 0,
+     "min_camera_m": 10.603,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 4.709,
+     "min_side_with": "R02:post",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N07",
+   "b": "N08",
+   "kind": "primary, stairs",
+   "length_m": 8,
+   "results": [
+    {
+     "dir": "N07>N08",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.949,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 4.078,
+     "min_side_with": "B01:post",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N08>N07",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 2.974,
+     "share_below_3m": 0.056,
+     "min_side_clearance_m": 3.704,
+     "min_side_with": "B01:post",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N01",
+   "b": "N35",
+   "kind": "secondary",
+   "length_m": 9.849,
+   "results": [
+    {
+     "dir": "N01>N35",
+     "seconds": 4.55,
+     "stuck": 0,
+     "min_camera_m": 10.758,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.123,
+     "min_side_with": "E01:prop",
+     "end_error_m": 0.439
+    },
+    {
+     "dir": "N35>N01",
+     "seconds": 4.55,
+     "stuck": 0,
+     "min_camera_m": 10.193,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.121,
+     "min_side_with": "E01:prop",
+     "end_error_m": 0.439
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N35",
+   "b": "N09",
+   "kind": "secondary",
+   "length_m": 7,
+   "results": [
+    {
+     "dir": "N35>N09",
+     "seconds": 3.2,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.311,
+     "min_side_with": "E01:wall",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N09>N35",
+     "seconds": 3.2,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.312,
+     "min_side_with": "E01:wall",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N09",
+   "b": "N10",
+   "kind": "secondary",
+   "length_m": 16,
+   "results": [
+    {
+     "dir": "N09>N10",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.361,
+     "min_side_with": "B10:prop",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N10>N09",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.361,
+     "min_side_with": "B10:prop",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N10",
+   "b": "N11",
+   "kind": "secondary",
+   "length_m": 18.5,
+   "results": [
+    {
+     "dir": "N10>N11",
+     "seconds": 8.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.198,
+     "min_side_with": "B12:prop",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N11>N10",
+     "seconds": 8.667,
+     "stuck": 0,
+     "min_camera_m": 6.363,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.194,
+     "min_side_with": "B12:prop",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N11",
+   "b": "N04",
+   "kind": "secondary",
+   "length_m": 16.031,
+   "results": [
+    {
+     "dir": "N11>N04",
+     "seconds": 7.5,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.072,
+     "min_side_with": "B06:wall",
+     "end_error_m": 0.426
+    },
+    {
+     "dir": "N04>N11",
+     "seconds": 7.5,
+     "stuck": 0,
+     "min_camera_m": 8.608,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.07,
+     "min_side_with": "B06:wall",
+     "end_error_m": 0.426
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N10",
+   "b": "N03",
+   "kind": "secondary",
+   "length_m": 16,
+   "results": [
+    {
+     "dir": "N10>N03",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 2.047,
+     "share_below_3m": 0.122,
+     "min_side_clearance_m": 1.34,
+     "min_side_with": "B11:prop",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N03>N10",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.66,
+     "min_side_with": "B05:wall",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N01",
+   "b": "N36",
+   "kind": "service",
+   "length_m": 9.849,
+   "results": [
+    {
+     "dir": "N01>N36",
+     "seconds": 4.55,
+     "stuck": 0,
+     "min_camera_m": 12.155,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.175,
+     "min_side_with": "E02:prop",
+     "end_error_m": 0.439
+    },
+    {
+     "dir": "N36>N01",
+     "seconds": 4.55,
+     "stuck": 0,
+     "min_camera_m": 10.521,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.177,
+     "min_side_with": "E02:prop",
+     "end_error_m": 0.439
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N36",
+   "b": "N12",
+   "kind": "service",
+   "length_m": 7,
+   "results": [
+    {
+     "dir": "N36>N12",
+     "seconds": 3.2,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.66,
+     "min_side_with": "E02:wall",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N12>N36",
+     "seconds": 3.2,
+     "stuck": 0,
+     "min_camera_m": 12.975,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.66,
+     "min_side_with": "E02:wall",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N12",
+   "b": "N13",
+   "kind": "service",
+   "length_m": 16,
+   "results": [
+    {
+     "dir": "N12>N13",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.897,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N13>N12",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.898,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N13",
+   "b": "N14",
+   "kind": "service",
+   "length_m": 18.5,
+   "results": [
+    {
+     "dir": "N13>N14",
+     "seconds": 8.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.685,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N14>N13",
+     "seconds": 8.667,
+     "stuck": 0,
+     "min_camera_m": 6.363,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.685,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N14",
+   "b": "N04",
+   "kind": "service",
+   "length_m": 16.031,
+   "results": [
+    {
+     "dir": "N14>N04",
+     "seconds": 7.5,
+     "stuck": 0,
+     "min_camera_m": 6.252,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.874,
+     "min_side_with": "B09:wall",
+     "end_error_m": 0.426
+    },
+    {
+     "dir": "N04>N14",
+     "seconds": 7.5,
+     "stuck": 0,
+     "min_camera_m": 4.571,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.871,
+     "min_side_with": "B09:wall",
+     "end_error_m": 0.426
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N03",
+   "b": "N13",
+   "kind": "service",
+   "length_m": 16,
+   "results": [
+    {
+     "dir": "N03>N13",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.66,
+     "min_side_with": "B08:wall",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N13>N03",
+     "seconds": 7.483,
+     "stuck": 0,
+     "min_camera_m": 12.975,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.66,
+     "min_side_with": "B08:wall",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N11",
+   "b": "N18",
+   "kind": "market",
+   "length_m": 5,
+   "results": [
+    {
+     "dir": "N11>N18",
+     "seconds": 2.25,
+     "stuck": 0,
+     "min_camera_m": 6.437,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.892,
+     "min_side_with": "B02:prop",
+     "end_error_m": 0.42
+    },
+    {
+     "dir": "N18>N11",
+     "seconds": 2.25,
+     "stuck": 0,
+     "min_camera_m": 5.401,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.825,
+     "min_side_with": "B02:prop",
+     "end_error_m": 0.42
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N18",
+   "b": "N31",
+   "kind": "market",
+   "length_m": 6.5,
+   "results": [
+    {
+     "dir": "N18>N31",
+     "seconds": 2.95,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.71,
+     "min_side_with": "B02:counter",
+     "end_error_m": 0.45
+    },
+    {
+     "dir": "N31>N18",
+     "seconds": 2.95,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.71,
+     "min_side_with": "B02:counter",
+     "end_error_m": 0.45
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N31",
+   "b": "N30",
+   "kind": "market",
+   "length_m": 10.1,
+   "results": [
+    {
+     "dir": "N31>N30",
+     "seconds": 4.667,
+     "stuck": 0,
+     "min_camera_m": 4.142,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.84,
+     "min_side_with": "B02:counter",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N30>N31",
+     "seconds": 4.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.84,
+     "min_side_with": "B02:counter",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N14",
+   "b": "N19",
+   "kind": "market",
+   "length_m": 5,
+   "results": [
+    {
+     "dir": "N14>N19",
+     "seconds": 2.25,
+     "stuck": 0,
+     "min_camera_m": 8.483,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.104,
+     "min_side_with": "B03:wall",
+     "end_error_m": 0.42
+    },
+    {
+     "dir": "N19>N14",
+     "seconds": 2.25,
+     "stuck": 0,
+     "min_camera_m": 5.401,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.07,
+     "min_side_with": "B03:wall",
+     "end_error_m": 0.42
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N19",
+   "b": "N32",
+   "kind": "market",
+   "length_m": 6.5,
+   "results": [
+    {
+     "dir": "N19>N32",
+     "seconds": 2.95,
+     "stuck": 0,
+     "min_camera_m": 6.072,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.659,
+     "min_side_with": "B03:prop",
+     "end_error_m": 0.45
+    },
+    {
+     "dir": "N32>N19",
+     "seconds": 2.95,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.66,
+     "min_side_with": "B03:wall",
+     "end_error_m": 0.45
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N32",
+   "b": "N29",
+   "kind": "market",
+   "length_m": 10.1,
+   "results": [
+    {
+     "dir": "N32>N29",
+     "seconds": 4.667,
+     "stuck": 0,
+     "min_camera_m": 3.778,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.84,
+     "min_side_with": "B03:counter",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N29>N32",
+     "seconds": 4.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.84,
+     "min_side_with": "B03:counter",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N11",
+   "b": "N38",
+   "kind": "secondary",
+   "length_m": 4.061,
+   "results": [
+    {
+     "dir": "N11>N38",
+     "seconds": 1.8,
+     "stuck": 0,
+     "min_camera_m": 5.846,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.585,
+     "min_side_with": "E03:post",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N38>N11",
+     "seconds": 1.8,
+     "stuck": 0,
+     "min_camera_m": 3.435,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.265,
+     "min_side_with": "E03:post",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N38",
+   "b": "N23",
+   "kind": "secondary",
+   "length_m": 17.6,
+   "results": [
+    {
+     "dir": "N38>N23",
+     "seconds": 8.25,
+     "stuck": 0,
+     "min_camera_m": 9.433,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.86,
+     "min_side_with": "E03:post",
+     "end_error_m": 0.42
+    },
+    {
+     "dir": "N23>N38",
+     "seconds": 8.25,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.86,
+     "min_side_with": "E03:post",
+     "end_error_m": 0.42
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N14",
+   "b": "N39",
+   "kind": "secondary",
+   "length_m": 4.061,
+   "results": [
+    {
+     "dir": "N14>N39",
+     "seconds": 1.8,
+     "stuck": 0,
+     "min_camera_m": 3.646,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.769,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N39>N14",
+     "seconds": 1.8,
+     "stuck": 0,
+     "min_camera_m": 3.433,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 2.768,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N39",
+   "b": "N24",
+   "kind": "secondary",
+   "length_m": 17.6,
+   "results": [
+    {
+     "dir": "N39>N24",
+     "seconds": 8.25,
+     "stuck": 0,
+     "min_camera_m": 8.608,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.71,
+     "min_side_with": "B03:wall",
+     "end_error_m": 0.42
+    },
+    {
+     "dir": "N24>N39",
+     "seconds": 8.25,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.71,
+     "min_side_with": "B03:wall",
+     "end_error_m": 0.42
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N24",
+   "b": "N41",
+   "kind": "scenic",
+   "length_m": 6.812,
+   "results": [
+    {
+     "dir": "N24>N41",
+     "seconds": 3.1,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.847,
+     "min_side_with": "E05:prop",
+     "end_error_m": 0.447
+    },
+    {
+     "dir": "N41>N24",
+     "seconds": 3.1,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.846,
+     "min_side_with": "E05:prop",
+     "end_error_m": 0.447
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N41",
+   "b": "N16",
+   "kind": "scenic",
+   "length_m": 10.198,
+   "results": [
+    {
+     "dir": "N41>N16",
+     "seconds": 4.717,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.523,
+     "min_side_with": "E05:post",
+     "end_error_m": 0.438
+    },
+    {
+     "dir": "N16>N41",
+     "seconds": 4.717,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.524,
+     "min_side_with": "E05:post",
+     "end_error_m": 0.438
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N16",
+   "b": "N17",
+   "kind": "scenic",
+   "length_m": 5.242,
+   "results": [
+    {
+     "dir": "N16>N17",
+     "seconds": 2.367,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.309,
+     "min_side_with": "B17:post",
+     "end_error_m": 0.417
+    },
+    {
+     "dir": "N17>N16",
+     "seconds": 2.367,
+     "stuck": 0,
+     "min_camera_m": 1.504,
+     "share_below_3m": 0.478,
+     "min_side_clearance_m": 0.3,
+     "min_side_with": "B17:post",
+     "end_error_m": 0.417
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N13",
+   "b": "N33",
+   "kind": "service",
+   "length_m": 9,
+   "results": [
+    {
+     "dir": "N13>N33",
+     "seconds": 4.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.997,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N33>N13",
+     "seconds": 4.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.996,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N11",
+   "b": "N40",
+   "kind": "secondary",
+   "length_m": 5.14,
+   "results": [
+    {
+     "dir": "N11>N40",
+     "seconds": 2.317,
+     "stuck": 0,
+     "min_camera_m": 8.633,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.474,
+     "min_side_with": "B12:post",
+     "end_error_m": 0.42
+    },
+    {
+     "dir": "N40>N11",
+     "seconds": 2.317,
+     "stuck": 0,
+     "min_camera_m": 3.004,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.357,
+     "min_side_with": "B12:post",
+     "end_error_m": 0.42
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N23",
+   "b": "N06",
+   "kind": "secondary",
+   "length_m": 19.217,
+   "results": [
+    {
+     "dir": "N23>N06",
+     "seconds": 9.083,
+     "stuck": 0,
+     "min_camera_m": 2.776,
+     "share_below_3m": 0.067,
+     "min_side_clearance_m": 1.007,
+     "min_side_with": "R02:post",
+     "end_error_m": 0.439
+    },
+    {
+     "dir": "N06>N23",
+     "seconds": 9.083,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.033,
+     "min_side_with": "R02:post",
+     "end_error_m": 0.439
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N24",
+   "b": "N06",
+   "kind": "secondary",
+   "length_m": 19.217,
+   "results": [
+    {
+     "dir": "N24>N06",
+     "seconds": 9.083,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.007,
+     "min_side_with": "R04:post",
+     "end_error_m": 0.439
+    },
+    {
+     "dir": "N06>N24",
+     "seconds": 9.083,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.033,
+     "min_side_with": "R04:post",
+     "end_error_m": 0.439
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N07",
+   "b": "N21",
+   "kind": "secondary",
+   "length_m": 9.552,
+   "results": [
+    {
+     "dir": "N07>N21",
+     "seconds": 4.417,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.833,
+     "min_side_with": "dressing:bench",
+     "end_error_m": 0.422
+    },
+    {
+     "dir": "N21>N07",
+     "seconds": 4.417,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.796,
+     "min_side_with": "dressing:bench",
+     "end_error_m": 0.422
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N07",
+   "b": "N22",
+   "kind": "secondary",
+   "length_m": 9.552,
+   "results": [
+    {
+     "dir": "N07>N22",
+     "seconds": 4.417,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.833,
+     "min_side_with": "dressing:bench",
+     "end_error_m": 0.422
+    },
+    {
+     "dir": "N22>N07",
+     "seconds": 4.417,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.796,
+     "min_side_with": "dressing:bench",
+     "end_error_m": 0.422
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N09",
+   "b": "N42",
+   "kind": "district",
+   "length_m": 6.907,
+   "results": [
+    {
+     "dir": "N09>N42",
+     "seconds": 3.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.381,
+     "min_side_with": "B10:prop",
+     "end_error_m": 0.436
+    },
+    {
+     "dir": "N42>N09",
+     "seconds": 3.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.38,
+     "min_side_with": "B10:prop",
+     "end_error_m": 0.436
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N42",
+   "b": "N10",
+   "kind": "district",
+   "length_m": 9.105,
+   "results": [
+    {
+     "dir": "N42>N10",
+     "seconds": 4.2,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.137,
+     "min_side_with": "B10:prop",
+     "end_error_m": 0.429
+    },
+    {
+     "dir": "N10>N42",
+     "seconds": 4.2,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.138,
+     "min_side_with": "B10:prop",
+     "end_error_m": 0.429
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N10",
+   "b": "N43",
+   "kind": "district",
+   "length_m": 0.2,
+   "results": [
+    {
+     "dir": "N10>N43",
+     "seconds": 0,
+     "stuck": 0,
+     "min_camera_m": null,
+     "share_below_3m": null,
+     "min_side_clearance_m": 99,
+     "min_side_with": null,
+     "end_error_m": 0.2
+    },
+    {
+     "dir": "N43>N10",
+     "seconds": 0,
+     "stuck": 0,
+     "min_camera_m": null,
+     "share_below_3m": null,
+     "min_side_clearance_m": 99,
+     "min_side_with": null,
+     "end_error_m": 0.2
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N10",
+   "b": "N44",
+   "kind": "district",
+   "length_m": 9.705,
+   "results": [
+    {
+     "dir": "N10>N44",
+     "seconds": 4.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.406,
+     "min_side_with": "B12:prop",
+     "end_error_m": 0.434
+    },
+    {
+     "dir": "N44>N10",
+     "seconds": 4.483,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.4,
+     "min_side_with": "B12:prop",
+     "end_error_m": 0.434
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N44",
+   "b": "N11",
+   "kind": "district",
+   "length_m": 8.805,
+   "results": [
+    {
+     "dir": "N44>N11",
+     "seconds": 4.05,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.644,
+     "min_side_with": "B12:prop",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N11>N44",
+     "seconds": 4.05,
+     "stuck": 0,
+     "min_camera_m": 5.124,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.641,
+     "min_side_with": "B12:prop",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N01",
+   "b": "N45",
+   "kind": "district",
+   "length_m": 6.42,
+   "results": [
+    {
+     "dir": "N01>N45",
+     "seconds": 2.917,
+     "stuck": 0,
+     "min_camera_m": 10.337,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.725,
+     "min_side_with": "E01:prop",
+     "end_error_m": 0.439
+    },
+    {
+     "dir": "N45>N01",
+     "seconds": 2.917,
+     "stuck": 0,
+     "min_camera_m": 2.864,
+     "share_below_3m": 0.172,
+     "min_side_clearance_m": 1.416,
+     "min_side_with": "E01:prop",
+     "end_error_m": 0.439
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N01",
+   "b": "N46",
+   "kind": "district",
+   "length_m": 6.316,
+   "results": [
+    {
+     "dir": "N01>N46",
+     "seconds": 2.867,
+     "stuck": 0,
+     "min_camera_m": 12.094,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.705,
+     "min_side_with": "E02:prop",
+     "end_error_m": 0.441
+    },
+    {
+     "dir": "N46>N01",
+     "seconds": 2.867,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.398,
+     "min_side_with": "E02:prop",
+     "end_error_m": 0.441
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N12",
+   "b": "N47",
+   "kind": "district",
+   "length_m": 8,
+   "results": [
+    {
+     "dir": "N12>N47",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.081,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N47>N12",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.081,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N47",
+   "b": "N13",
+   "kind": "district",
+   "length_m": 8,
+   "results": [
+    {
+     "dir": "N47>N13",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.898,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N13>N47",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.898,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N13",
+   "b": "N50",
+   "kind": "district",
+   "length_m": 9,
+   "results": [
+    {
+     "dir": "N13>N50",
+     "seconds": 4.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.685,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.43
+    },
+    {
+     "dir": "N50>N13",
+     "seconds": 4.15,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.685,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.43
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N50",
+   "b": "N14",
+   "kind": "district",
+   "length_m": 9.5,
+   "results": [
+    {
+     "dir": "N50>N14",
+     "seconds": 4.383,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.685,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.44
+    },
+    {
+     "dir": "N14>N50",
+     "seconds": 4.383,
+     "stuck": 0,
+     "min_camera_m": 6.363,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.685,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.44
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N33",
+   "b": "N48",
+   "kind": "district",
+   "length_m": 3.551,
+   "results": [
+    {
+     "dir": "N33>N48",
+     "seconds": 1.55,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.862,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.44
+    },
+    {
+     "dir": "N48>N33",
+     "seconds": 1.55,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.862,
+     "min_side_with": "B13:prop",
+     "end_error_m": 0.44
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N33",
+   "b": "N49",
+   "kind": "district",
+   "length_m": 1.985,
+   "results": [
+    {
+     "dir": "N33>N49",
+     "seconds": 0.8,
+     "stuck": 0,
+     "min_camera_m": 2.849,
+     "share_below_3m": 0.5,
+     "min_side_clearance_m": 1.423,
+     "min_side_with": "E04:post",
+     "end_error_m": 0.449
+    },
+    {
+     "dir": "N49>N33",
+     "seconds": 0.8,
+     "stuck": 0,
+     "min_camera_m": 3.918,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.083,
+     "min_side_with": "E04:post",
+     "end_error_m": 0.449
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N33",
+   "b": "N51",
+   "kind": "district",
+   "length_m": 8,
+   "results": [
+    {
+     "dir": "N33>N51",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.852,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.445
+    },
+    {
+     "dir": "N51>N33",
+     "seconds": 3.667,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.847,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.445
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N51",
+   "b": "N52",
+   "kind": "porters",
+   "length_m": 10,
+   "results": [
+    {
+     "dir": "N51>N52",
+     "seconds": 4.617,
+     "stuck": 0,
+     "min_camera_m": 8.631,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.86,
+     "min_side_with": "dressing:post",
+     "end_error_m": 0.45
+    },
+    {
+     "dir": "N52>N51",
+     "seconds": 4.617,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.86,
+     "min_side_with": "dressing:post",
+     "end_error_m": 0.45
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N52",
+   "b": "N53",
+   "kind": "porters",
+   "length_m": 11,
+   "results": [
+    {
+     "dir": "N52>N53",
+     "seconds": 5.1,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.86,
+     "min_side_with": "dressing:post",
+     "end_error_m": 0.435
+    },
+    {
+     "dir": "N53>N52",
+     "seconds": 5.1,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.86,
+     "min_side_with": "dressing:post",
+     "end_error_m": 0.435
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N53",
+   "b": "N54",
+   "kind": "porters",
+   "length_m": 9.22,
+   "results": [
+    {
+     "dir": "N53>N54",
+     "seconds": 4.333,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.129,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.422
+    },
+    {
+     "dir": "N54>N53",
+     "seconds": 4.333,
+     "stuck": 0,
+     "min_camera_m": 2.844,
+     "share_below_3m": 0.07,
+     "min_side_clearance_m": 0.161,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.422
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N54",
+   "b": "N59",
+   "kind": "porters",
+   "length_m": 4.51,
+   "results": [
+    {
+     "dir": "N54>N59",
+     "seconds": 2.017,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.286,
+     "min_side_with": "E05:prop",
+     "end_error_m": 0.42
+    },
+    {
+     "dir": "N59>N54",
+     "seconds": 2.017,
+     "stuck": 0,
+     "min_camera_m": 8.938,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.288,
+     "min_side_with": "E05:prop",
+     "end_error_m": 0.42
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N39",
+   "b": "N58",
+   "kind": "district",
+   "length_m": 13.509,
+   "results": [
+    {
+     "dir": "N39>N58",
+     "seconds": 6.3,
+     "stuck": 0,
+     "min_camera_m": 8.608,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.476,
+     "min_side_with": "E05:wall",
+     "end_error_m": 0.424
+    },
+    {
+     "dir": "N58>N39",
+     "seconds": 6.3,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.464,
+     "min_side_with": "E05:wall",
+     "end_error_m": 0.424
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N58",
+   "b": "N24",
+   "kind": "district",
+   "length_m": 4.13,
+   "results": [
+    {
+     "dir": "N58>N24",
+     "seconds": 1.833,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.473,
+     "min_side_with": "E05:wall",
+     "end_error_m": 0.425
+    },
+    {
+     "dir": "N24>N58",
+     "seconds": 1.833,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 1.52,
+     "min_side_with": "E05:wall",
+     "end_error_m": 0.425
+    }
+   ],
+   "pass": true
+  },
+  {
+   "a": "N16",
+   "b": "N59",
+   "kind": "district",
+   "length_m": 5.324,
+   "results": [
+    {
+     "dir": "N16>N59",
+     "seconds": 2.4,
+     "stuck": 0,
+     "min_camera_m": 12.979,
+     "share_below_3m": 0,
+     "min_side_clearance_m": 0.769,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.428
+    },
+    {
+     "dir": "N59>N16",
+     "seconds": 2.4,
+     "stuck": 0,
+     "min_camera_m": 2.943,
+     "share_below_3m": 0.083,
+     "min_side_clearance_m": 0.765,
+     "min_side_with": "dressing:prop",
+     "end_error_m": 0.428
+    }
+   ],
+   "pass": true
+  }
+ ],
+ "summary": {
+  "nodes_in_slice": 49,
+  "not_standable": [],
+  "edges_tested": 63,
+  "edges_failed": [],
+  "min_node_clearance_m": 0.409
+ }
+}

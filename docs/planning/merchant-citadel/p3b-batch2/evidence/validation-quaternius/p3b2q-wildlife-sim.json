@@ -1,0 +1,101 @@
+{
+ "simulated_seconds": 600,
+ "dt": 0.05,
+ "wall_ms": 4655,
+ "violations": {
+  "not_walkable": 0,
+  "blocked": 0,
+  "keepout": 0,
+  "step": 0,
+  "slope": 0,
+  "ground_err": 0,
+  "outside_habitat": 0
+ },
+ "max_height_step_between_samples_m": 0.089,
+ "distance_walked_m": {
+  "Chick": 104.188,
+  "Cat": 60.017,
+  "Pug": 61.991,
+  "Pig": 61.082,
+  "Sheep": 93.196,
+  "Lamb": 157.537,
+  "Llama": 98.472,
+  "Horse": 85.024,
+  "Cow": 41.732,
+  "RedFox": 121.29,
+  "Dog": 116.891
+ },
+ "state_share": {
+  "Chick": {
+   "REST": 0.248,
+   "WANDER": 0.384,
+   "IDLE": 0.276,
+   "LOOK_AROUND": 0.092
+  },
+  "Cat": {
+   "REST": 0.664,
+   "LOOK_AROUND": 0.093,
+   "WANDER": 0.142,
+   "IDLE": 0.101
+  },
+  "Pug": {
+   "REST": 0.708,
+   "WANDER": 0.115,
+   "IDLE": 0.08,
+   "LOOK_AROUND": 0.097
+  },
+  "Pig": {
+   "GRAZE": 0.424,
+   "REST": 0.279,
+   "WANDER": 0.169,
+   "IDLE": 0.103,
+   "LOOK_AROUND": 0.026
+  },
+  "Sheep": {
+   "REST": 0.216,
+   "WANDER": 0.257,
+   "IDLE": 0.093,
+   "GRAZE": 0.401,
+   "LOOK_AROUND": 0.034
+  },
+  "Lamb": {
+   "IDLE": 0.148,
+   "GRAZE": 0.301,
+   "WANDER": 0.32,
+   "LOOK_AROUND": 0.092,
+   "REST": 0.139
+  },
+  "Llama": {
+   "REST": 0.464,
+   "LOOK_AROUND": 0.171,
+   "IDLE": 0.083,
+   "WANDER": 0.282
+  },
+  "Horse": {
+   "GRAZE": 0.414,
+   "WANDER": 0.23,
+   "LOOK_AROUND": 0.108,
+   "IDLE": 0.072,
+   "REST": 0.176
+  },
+  "Cow": {
+   "REST": 0.391,
+   "GRAZE": 0.418,
+   "LOOK_AROUND": 0.033,
+   "WANDER": 0.115,
+   "IDLE": 0.044
+  },
+  "RedFox": {
+   "WANDER": 0.33,
+   "LOOK_AROUND": 0.165,
+   "IDLE": 0.119,
+   "REST": 0.387
+  },
+  "Dog": {
+   "REST": 0.552,
+   "LOOK_AROUND": 0.094,
+   "WANDER": 0.229,
+   "IDLE": 0.126
+  }
+ }
+}

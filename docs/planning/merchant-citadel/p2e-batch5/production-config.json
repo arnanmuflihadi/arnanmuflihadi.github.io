@@ -1,0 +1,38 @@
+{
+ "revision": "P2-B batch 5",
+ "date": "2026-11-13",
+ "status": "isolated preview only; not integrated into the game; nothing committed or deployed; awaiting human review",
+ "buildings": {"total": 24, "real": 24, "surrogates": 0, "placed_instances": 66, "kit_nodes": 54,
+  "added_this_batch": ["B15 (A11a, Merchant Assay Office, terrace west)", "B16 (A11c, Cartographer / chart maker, terrace east)"],
+  "top_heights_m": {"B01 Exchange Hall tower": 26.79, "B15 / B16 / B04 tower houses": 15.79}},
+ "glb": {
+  "file": "merchant-citadel-p2a/models/merchant-citadel-p2a-kit.glb",
+  "bytes": 46517600, "gzip_bytes": 14519495, "sha256_prefix": "9288a67693af",
+  "nodes": 54, "primitives": 602, "triangles_unique": 588064, "vertices": 875529,
+  "materials_in_glb": 115, "materials_in_browser": 98, "images": 79, "textures_in_browser": 79,
+  "textures_gpu_estimate_mb_with_mips": 97.975,
+  "structural_inspection": "header, chunk lengths, accessor bounds, indices, finite positions: no problem found (evidence/glb-structural-inspection.json)",
+  "variants_not_default": {
+   "quant": {"bytes": 29795412, "gzip": 11878324, "max_position_error_mm": 1.95},
+   "webp": {"bytes": 44834784, "gzip": 12887998},
+   "quant_webp": {"bytes": 28112616, "gzip": 10254786}},
+  "previous_kit_batch4": {"bytes": 40849756, "kept_in": "merchant-citadel-p2a/baseline-batch4/models/"}},
+ "merge": {"default": "cell30", "switches": "?merge=none|district|cell20|cell30|cell45|cell60|scene ?qmerge=1 ?dequant=1 ?glb= ?lowprops=<m> ?scenefile= ?shot= ?names= ?autotest=<name>&tag=<tag>",
+  "note": "?town24=1 no longer adds surrogates; all 24 buildings are real (SURROGATES is empty)"},
+ "draw_cost_deterministic_24_buildings": {
+  "mean_calls_per_view_22_views": {"none": 424.5, "district": 202.9, "cell45": 213.5, "cell30": 252.3, "cell20": 329.3, "scene": 118.5},
+  "mean_submitted_triangles_per_view": {"none": 392750, "district": 490553, "cell45": 508625, "cell30": 451770, "cell20": 413644, "scene": 672678},
+  "worst_view_calls_unmerged": 800, "worst_view_triangles_unmerged": 687384,
+  "source": "evidence/merge-cells-b5-24.json (counts do not depend on machine load)"},
+ "frame_times": "NOT VALID FOR CONCLUSIONS: every measurement of this batch ran on a machine loaded by other processes; the same configuration varied 7 to 22 ms between repetitions; see 04",
+ "camera_proxies": {"roof_bands": 6, "low_prop_camera_rule_m": 1.25, "posts_in_camera_list": 0,
+  "terrace_edge_walls": "x = -13.95 and +13.95, n 62-74, h 1.0, body only",
+  "forecourt_rail": "MV-Balcony_Cross_Straight x {-4,-2,0,2,4} at n 76.2 plus side returns at x +-5.0; body and camera proxies (h 3.1, minY 2.0); closes the Exchange Hall doors to the player (reversible)"},
+ "network": {"nodes_in_slice": 51, "edges_tested": 65, "edges_failed": 0, "min_node_clearance_m": 0.409,
+  "nodes_added_batch5": ["N60 (-19.0, 60.8) assay office door", "N61 (19.0, 60.8) chart maker door"],
+  "edges_added": ["N23-N60", "N24-N61"], "min_camera_over_all_edges_m": 1.504},
+ "tests": {"suite_seconds": 274, "district_routes": "45 of 45", "solids": "271 of 271", "platform": "7 of 7 with explicit criteria", "real_keyboard_waypoints": "17 of 17 (scripted, not human)"},
+ "production_code_untouched": "SHA-256 of player-controller.js, camera.js, character.js, input.js, floating-atlas/collision.js, vendor three: evidence/production-code-sha256.txt",
+ "performance_reference": "Apple M4 Pro, 1280x720, Claude desktop in-app Chromium 156, one machine, shared load",
+ "not_measured": ["any GPU other than the M4 Pro", "phones, integrated GPUs, older laptops", "battery and thermal state", "frame times on a quiet machine this batch", "KTX2, Meshopt, Draco (no decoders in the vendored three build)", "real human play"]
+}

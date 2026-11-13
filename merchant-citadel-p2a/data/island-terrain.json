@@ -1,0 +1,85 @@
+{
+ "version": "p3b-batch1",
+ "frame": "x east, n north (three z = -n), metres",
+ "x0": -90.0,
+ "n0": -89.0,
+ "cell": 0.5,
+ "nx": 443,
+ "nn": 468,
+ "unit_m": 0.01,
+ "dtype": "int16 little-endian row-major (n rows, x columns)",
+ "nosup_sentinel": -32768,
+ "nosup_height_m": -80.0,
+ "interpolation": "bilinear on the 0.5 m grid; missing corners replaced by the mean of the valid ones; heights over the town paving come from the 0.2 m town grid (max of both)",
+ "masks": "island-mask.bin uint8, nearest cell: bit2 = the town grid authored a surface (walkable by the town rules); bit0 walkable (supported, >= 1.2 m inside the rim, slope <= 0.90); bit1 comfortable (slope <= 0.60, >= 2.5 m inside the rim)",
+ "max_slope": 0.9,
+ "comfort_slope": 0.6,
+ "rim_margin": 1.2,
+ "extents": {
+  "main": {
+   "x": [
+    -81.61605864061893,
+    97.3319853284527
+   ],
+   "n": [
+    -80.613430458312,
+    136.2471204105276
+   ],
+   "rim_m": 690.0475705072682
+  },
+  "stack": {
+   "x": [
+    100.27281667054723,
+    122.57529995160534
+   ],
+   "n": [
+    32.785528706699864,
+    55.96950406458143
+   ],
+   "rim_m": 82.09899670731446
+  },
+  "all": {
+   "x": [
+    -81.61605864061893,
+    122.57529995160534
+   ],
+   "n": [
+    -80.613430458312,
+    136.2471204105276
+   ]
+  }
+ },
+ "derived_bounds": {
+  "max_abs_extent_m": 136.2471204105276,
+  "controller_bounds_m": 147.0,
+  "note": "the controller's bounds are symmetric about the origin: ceil(max |x|, |z| over all geometry) + 10 m"
+ },
+ "grid_x": [
+  -90.0,
+  131.0
+ ],
+ "grid_n": [
+  -89.0,
+  144.5
+ ],
+ "height_range_m": [
+  -8.705315432117052,
+  23.580000000000002
+ ],
+ "minY_recommended": -30.0,
+ "maxY_recommended": 80.0,
+ "bridge": {
+  "name": "Tea Stack bridge",
+  "width": 2.4,
+  "a": [
+   93.0,
+   46.0
+  ],
+  "b": [
+   101.4,
+   45.55
+  ],
+  "za": -8.4,
+  "zb": -5.357
+ }
+}

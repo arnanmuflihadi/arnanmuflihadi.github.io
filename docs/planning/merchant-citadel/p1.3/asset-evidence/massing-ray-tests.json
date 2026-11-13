@@ -1,0 +1,2354 @@
+{
+ "P12": {
+  "hall_visibility": {
+   "N01": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N02": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N03": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N04": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N05": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N27": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N06": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N07": {
+    "tower seal": false,
+    "porch gable": true
+   },
+   "N10": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N13": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N11": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N14": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N23": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N24": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N16": {
+    "tower seal": false,
+    "porch gable": false
+   }
+  },
+  "camera": [
+   {
+    "travel": "N01->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N01",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N04",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N04",
+    "type": "primary",
+    "clear_pct": 70,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N05->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N30",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N30->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N30->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N30",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N06",
+    "type": "primary",
+    "clear_pct": 70,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N06->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N07",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N07->N06",
+    "type": "primary",
+    "clear_pct": 67,
+    "min_dist": 10.9
+   },
+   {
+    "travel": "N07->N08",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N01->N09",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N09->N01",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N09->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N09",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N11",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N04",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N11",
+    "type": "secondary",
+    "clear_pct": 62,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N11->N18",
+    "type": "market",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N18->N11",
+    "type": "market",
+    "clear_pct": 30,
+    "min_dist": 2.4
+   },
+   {
+    "travel": "N18->N31",
+    "type": "market",
+    "clear_pct": 43,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N30->N31",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N01->N12",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N12->N01",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N12->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N12",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N14",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N04",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N14",
+    "type": "service",
+    "clear_pct": 95,
+    "min_dist": 5.0
+   },
+   {
+    "travel": "N14->N19",
+    "type": "market",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N19->N14",
+    "type": "market",
+    "clear_pct": 30,
+    "min_dist": 2.4
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N29->N32",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N14->N15",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N15->N14",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N15->N16",
+    "type": "scenic",
+    "clear_pct": 67,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N16->N15",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N16->N17",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N17->N16",
+    "type": "scenic",
+    "clear_pct": 0,
+    "min_dist": 0.9
+   },
+   {
+    "travel": "N11->N23",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N23->N11",
+    "type": "secondary",
+    "clear_pct": 62,
+    "min_dist": 4.9
+   },
+   {
+    "travel": "N23->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N23",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N21",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 5.9
+   },
+   {
+    "travel": "N21->N25",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 3.2
+   },
+   {
+    "travel": "N25->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N21->N07",
+    "type": "secondary",
+    "clear_pct": 33,
+    "min_dist": 1.1
+   },
+   {
+    "travel": "N07->N21",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N15->N24",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N24->N15",
+    "type": "secondary",
+    "clear_pct": 22,
+    "min_dist": 6.0
+   },
+   {
+    "travel": "N24->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N24",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N22",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 5.9
+   },
+   {
+    "travel": "N22->N26",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 3.2
+   },
+   {
+    "travel": "N26->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N22->N07",
+    "type": "secondary",
+    "clear_pct": 22,
+    "min_dist": 1.1
+   },
+   {
+    "travel": "N07->N22",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   }
+  ]
+ },
+ "A": {
+  "hall_visibility": {
+   "N01": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N02": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N03": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N04": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N05": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N27": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N06": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N07": {
+    "tower seal": false,
+    "porch gable": true
+   },
+   "N10": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N13": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N11": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N14": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N23": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N24": {
+    "tower seal": false,
+    "porch gable": true
+   },
+   "N16": {
+    "tower seal": false,
+    "porch gable": false
+   }
+  },
+  "camera": [
+   {
+    "travel": "N01->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N01",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N04",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N04",
+    "type": "primary",
+    "clear_pct": 67,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N05->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N30",
+    "type": "primary",
+    "clear_pct": 80,
+    "min_dist": 11.6
+   },
+   {
+    "travel": "N30->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N30->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N30",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N06",
+    "type": "primary",
+    "clear_pct": 70,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N06->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N07",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N07->N06",
+    "type": "primary",
+    "clear_pct": 67,
+    "min_dist": 10.9
+   },
+   {
+    "travel": "N07->N08",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N01->N35",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N35->N01",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N35->N09",
+    "type": "secondary",
+    "clear_pct": 75,
+    "min_dist": 5.6
+   },
+   {
+    "travel": "N09->N35",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N09->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N09",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N11",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N04",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N11",
+    "type": "secondary",
+    "clear_pct": 62,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N10->N03",
+    "type": "secondary",
+    "clear_pct": 62,
+    "min_dist": 2.7
+   },
+   {
+    "travel": "N03->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N01->N36",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N36->N01",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N36->N12",
+    "type": "service",
+    "clear_pct": 75,
+    "min_dist": 5.6
+   },
+   {
+    "travel": "N12->N36",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N12->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N12",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N14",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N04",
+    "type": "service",
+    "clear_pct": 90,
+    "min_dist": 3.0
+   },
+   {
+    "travel": "N04->N14",
+    "type": "service",
+    "clear_pct": 90,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N03->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N03",
+    "type": "service",
+    "clear_pct": 52,
+    "min_dist": 2.7
+   },
+   {
+    "travel": "N11->N18",
+    "type": "market",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N18->N11",
+    "type": "market",
+    "clear_pct": 44,
+    "min_dist": 2.6
+   },
+   {
+    "travel": "N18->N31",
+    "type": "market",
+    "clear_pct": 43,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N30->N31",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N14->N19",
+    "type": "market",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N19->N14",
+    "type": "market",
+    "clear_pct": 44,
+    "min_dist": 2.6
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N29->N32",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N11->N38",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N38->N11",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N38->N23",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N23->N38",
+    "type": "secondary",
+    "clear_pct": 56,
+    "min_dist": 4.9
+   },
+   {
+    "travel": "N23->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N23",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N21",
+    "type": "secondary",
+    "clear_pct": 33,
+    "min_dist": 5.4
+   },
+   {
+    "travel": "N21->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N21->N07",
+    "type": "secondary",
+    "clear_pct": 23,
+    "min_dist": 2.2
+   },
+   {
+    "travel": "N07->N21",
+    "type": "secondary",
+    "clear_pct": 92,
+    "min_dist": 12.7
+   },
+   {
+    "travel": "N14->N39",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N39->N14",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N39->N24",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N24->N39",
+    "type": "secondary",
+    "clear_pct": 61,
+    "min_dist": 6.0
+   },
+   {
+    "travel": "N24->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N24",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N22",
+    "type": "secondary",
+    "clear_pct": 33,
+    "min_dist": 5.4
+   },
+   {
+    "travel": "N22->N26",
+    "type": "secondary",
+    "clear_pct": 67,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N26->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N22->N07",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 2.2
+   },
+   {
+    "travel": "N07->N22",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N24->N41",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N41->N24",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N41->N16",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N16->N41",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N16->N17",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N17->N16",
+    "type": "scenic",
+    "clear_pct": 0,
+    "min_dist": 1.9
+   }
+  ]
+ },
+ "B": {
+  "hall_visibility": {
+   "N01": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N02": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N03": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N04": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N05": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N27": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N06": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N07": {
+    "tower seal": false,
+    "porch gable": true
+   },
+   "N10": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N13": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N11": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N14": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N23": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N24": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N16": {
+    "tower seal": false,
+    "porch gable": false
+   }
+  },
+  "camera": [
+   {
+    "travel": "N01->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N01",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N04",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N04",
+    "type": "primary",
+    "clear_pct": 67,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N05->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N30",
+    "type": "primary",
+    "clear_pct": 80,
+    "min_dist": 11.6
+   },
+   {
+    "travel": "N30->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N30->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N30",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N06",
+    "type": "primary",
+    "clear_pct": 70,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N06->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N07",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N07->N06",
+    "type": "primary",
+    "clear_pct": 67,
+    "min_dist": 10.9
+   },
+   {
+    "travel": "N07->N08",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N01->N35",
+    "type": "secondary",
+    "clear_pct": 90,
+    "min_dist": 11.5
+   },
+   {
+    "travel": "N35->N01",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N35->N09",
+    "type": "secondary",
+    "clear_pct": 62,
+    "min_dist": 5.6
+   },
+   {
+    "travel": "N09->N35",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N09->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N09",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N11",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N10",
+    "type": "secondary",
+    "clear_pct": 84,
+    "min_dist": 5.5
+   },
+   {
+    "travel": "N11->N04",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N11",
+    "type": "secondary",
+    "clear_pct": 53,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N10->N03",
+    "type": "secondary",
+    "clear_pct": 53,
+    "min_dist": 2.7
+   },
+   {
+    "travel": "N03->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N01->N36",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N36->N01",
+    "type": "service",
+    "clear_pct": 80,
+    "min_dist": 10.9
+   },
+   {
+    "travel": "N36->N12",
+    "type": "service",
+    "clear_pct": 62,
+    "min_dist": 5.6
+   },
+   {
+    "travel": "N12->N36",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N12->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N12",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N14",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N13",
+    "type": "service",
+    "clear_pct": 84,
+    "min_dist": 5.5
+   },
+   {
+    "travel": "N14->N04",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N14",
+    "type": "service",
+    "clear_pct": 94,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N03->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N03",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N18",
+    "type": "market",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N18->N11",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N18->N31",
+    "type": "market",
+    "clear_pct": 43,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N30->N31",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N14->N19",
+    "type": "market",
+    "clear_pct": 50,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N19->N14",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N29->N32",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N11->N38",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 6.0
+   },
+   {
+    "travel": "N38->N11",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N38->N23",
+    "type": "secondary",
+    "clear_pct": 94,
+    "min_dist": 11.7
+   },
+   {
+    "travel": "N23->N38",
+    "type": "secondary",
+    "clear_pct": 56,
+    "min_dist": 4.9
+   },
+   {
+    "travel": "N23->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N23",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N21",
+    "type": "secondary",
+    "clear_pct": 33,
+    "min_dist": 5.4
+   },
+   {
+    "travel": "N21->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N21->N07",
+    "type": "secondary",
+    "clear_pct": 23,
+    "min_dist": 2.2
+   },
+   {
+    "travel": "N07->N21",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N39",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 4.0
+   },
+   {
+    "travel": "N39->N14",
+    "type": "secondary",
+    "clear_pct": 20,
+    "min_dist": 3.0
+   },
+   {
+    "travel": "N39->N24",
+    "type": "secondary",
+    "clear_pct": 83,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N24->N39",
+    "type": "secondary",
+    "clear_pct": 56,
+    "min_dist": 4.9
+   },
+   {
+    "travel": "N24->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N24",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N22",
+    "type": "secondary",
+    "clear_pct": 33,
+    "min_dist": 5.4
+   },
+   {
+    "travel": "N22->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N22->N07",
+    "type": "secondary",
+    "clear_pct": 15,
+    "min_dist": 2.2
+   },
+   {
+    "travel": "N07->N22",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N24->N41",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N41->N24",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N41->N16",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N16->N41",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N16->N17",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N17->N16",
+    "type": "scenic",
+    "clear_pct": 0,
+    "min_dist": 1.9
+   },
+   {
+    "travel": "N13->N33",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N33->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N40",
+    "type": "secondary",
+    "clear_pct": 71,
+    "min_dist": 8.3
+   },
+   {
+    "travel": "N40->N11",
+    "type": "secondary",
+    "clear_pct": 29,
+    "min_dist": 2.3
+   }
+  ]
+ },
+ "C": {
+  "hall_visibility": {
+   "N01": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N02": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N03": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N04": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N05": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N27": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N06": {
+    "tower seal": true,
+    "porch gable": true
+   },
+   "N07": {
+    "tower seal": false,
+    "porch gable": true
+   },
+   "N10": {
+    "tower seal": true,
+    "porch gable": false
+   },
+   "N13": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N11": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N14": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N23": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N24": {
+    "tower seal": false,
+    "porch gable": false
+   },
+   "N16": {
+    "tower seal": false,
+    "porch gable": false
+   }
+  },
+  "camera": [
+   {
+    "travel": "N01->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N01",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N02->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N02",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N03->N04",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N03",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N04",
+    "type": "primary",
+    "clear_pct": 67,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N05->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N29->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N29",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N05->N30",
+    "type": "primary",
+    "clear_pct": 80,
+    "min_dist": 11.6
+   },
+   {
+    "travel": "N30->N05",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N30->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N30",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N27->N06",
+    "type": "primary",
+    "clear_pct": 70,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N06->N27",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N07",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N07->N06",
+    "type": "primary",
+    "clear_pct": 67,
+    "min_dist": 10.9
+   },
+   {
+    "travel": "N07->N08",
+    "type": "primary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N01->N35",
+    "type": "secondary",
+    "clear_pct": 90,
+    "min_dist": 11.5
+   },
+   {
+    "travel": "N35->N01",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N35->N09",
+    "type": "secondary",
+    "clear_pct": 62,
+    "min_dist": 5.6
+   },
+   {
+    "travel": "N09->N35",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N09->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N09",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N10->N11",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N10",
+    "type": "secondary",
+    "clear_pct": 84,
+    "min_dist": 5.5
+   },
+   {
+    "travel": "N11->N04",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N11",
+    "type": "secondary",
+    "clear_pct": 53,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N10->N03",
+    "type": "secondary",
+    "clear_pct": 53,
+    "min_dist": 2.7
+   },
+   {
+    "travel": "N03->N10",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N01->N36",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N36->N01",
+    "type": "service",
+    "clear_pct": 80,
+    "min_dist": 10.9
+   },
+   {
+    "travel": "N36->N12",
+    "type": "service",
+    "clear_pct": 62,
+    "min_dist": 5.6
+   },
+   {
+    "travel": "N12->N36",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N12->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N12",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N14",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N13",
+    "type": "service",
+    "clear_pct": 84,
+    "min_dist": 5.5
+   },
+   {
+    "travel": "N14->N04",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N04->N14",
+    "type": "service",
+    "clear_pct": 94,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N03->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N13->N03",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N18",
+    "type": "market",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N18->N11",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N18->N31",
+    "type": "market",
+    "clear_pct": 43,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N30->N31",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N14->N19",
+    "type": "market",
+    "clear_pct": 50,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N19->N14",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N29->N32",
+    "type": "market",
+    "clear_pct": 40,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N11->N38",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 6.0
+   },
+   {
+    "travel": "N38->N11",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 3.6
+   },
+   {
+    "travel": "N38->N23",
+    "type": "secondary",
+    "clear_pct": 94,
+    "min_dist": 11.7
+   },
+   {
+    "travel": "N23->N38",
+    "type": "secondary",
+    "clear_pct": 56,
+    "min_dist": 4.9
+   },
+   {
+    "travel": "N23->N25",
+    "type": "secondary",
+    "clear_pct": 30,
+    "min_dist": 3.0
+   },
+   {
+    "travel": "N25->N23",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N21",
+    "type": "secondary",
+    "clear_pct": 33,
+    "min_dist": 5.4
+   },
+   {
+    "travel": "N21->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N25->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N25",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N21->N07",
+    "type": "secondary",
+    "clear_pct": 23,
+    "min_dist": 2.2
+   },
+   {
+    "travel": "N07->N21",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N14->N39",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 4.0
+   },
+   {
+    "travel": "N39->N14",
+    "type": "secondary",
+    "clear_pct": 20,
+    "min_dist": 3.0
+   },
+   {
+    "travel": "N39->N24",
+    "type": "secondary",
+    "clear_pct": 83,
+    "min_dist": 9.6
+   },
+   {
+    "travel": "N24->N39",
+    "type": "secondary",
+    "clear_pct": 56,
+    "min_dist": 4.9
+   },
+   {
+    "travel": "N24->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N24",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N22",
+    "type": "secondary",
+    "clear_pct": 33,
+    "min_dist": 5.4
+   },
+   {
+    "travel": "N22->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N26->N06",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N06->N26",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N22->N07",
+    "type": "secondary",
+    "clear_pct": 15,
+    "min_dist": 2.2
+   },
+   {
+    "travel": "N07->N22",
+    "type": "secondary",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N24->N41",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N41->N24",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N41->N16",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N16->N41",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N16->N17",
+    "type": "scenic",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N17->N16",
+    "type": "scenic",
+    "clear_pct": 0,
+    "min_dist": 1.9
+   },
+   {
+    "travel": "N13->N33",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N33->N13",
+    "type": "service",
+    "clear_pct": 100,
+    "min_dist": null
+   },
+   {
+    "travel": "N11->N40",
+    "type": "secondary",
+    "clear_pct": 71,
+    "min_dist": 8.3
+   },
+   {
+    "travel": "N40->N11",
+    "type": "secondary",
+    "clear_pct": 29,
+    "min_dist": 2.3
+   }
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "hall-walk": {
+  "frames": 62,
+  "seconds": 31.3,
+  "min_alpha": 1,
+  "min_camera_m": 4.071,
+  "share_faded": 0,
+  "max_step": 0
+ },
+ "porch-steps": {
+  "frames": 36,
+  "seconds": 18.333,
+  "min_alpha": 0.14,
+  "min_camera_m": 0.97,
+  "share_faded": 0.178,
+  "max_step": 0.182
+ },
+ "tea-veranda": {
+  "frames": 11,
+  "seconds": 5.833,
+  "min_alpha": 0.245,
+  "min_camera_m": 1.547,
+  "share_faded": 0.3,
+  "max_step": 0.097
+ },
+ "lane-walk": {
+  "frames": 32,
+  "seconds": 16.3,
+  "min_alpha": 0.999,
+  "min_camera_m": 12.927,
+  "share_faded": 0,
+  "max_step": 0.001
+ },
+ "vista-and-turn": {
+  "frames": 43,
+  "seconds": 21.8,
+  "min_alpha": 0.787,
+  "min_camera_m": 2.796,
+  "share_faded": 0.076,
+  "max_step": 0.034
+ },
+ "workyard-turn": {
+  "frames": 20,
+  "seconds": 10.05,
+  "min_alpha": 0.768,
+  "min_camera_m": 2.817,
+  "share_faded": 0.211,
+  "max_step": 0.019
+ }
+}

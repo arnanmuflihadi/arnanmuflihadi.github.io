@@ -1,0 +1,265 @@
+{
+ "meshes": {
+  "DRESSING_D1": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "DRESSING_D2": {
+   "k": 9,
+   "position_step_mm": 1.953,
+   "max_position_error_mm": 0.9766
+  },
+  "DRESSING_D3": {
+   "k": 9,
+   "position_step_mm": 1.953,
+   "max_position_error_mm": 0.9766
+  },
+  "DRESSING_D5": {
+   "k": 8,
+   "position_step_mm": 3.906,
+   "max_position_error_mm": 1.9531
+  },
+  "DRESSING_D6": {
+   "k": 9,
+   "position_step_mm": 1.953,
+   "max_position_error_mm": 0.9766
+  },
+  "DRESSING_D7": {
+   "k": 9,
+   "position_step_mm": 1.953,
+   "max_position_error_mm": 0.9766
+  },
+  "DRESSING_D8": {
+   "k": 9,
+   "position_step_mm": 1.953,
+   "max_position_error_mm": 0.9766
+  },
+  "SIGN_CUS-Sign_Coin_burgundy_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Coin_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Crate_burgundy_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Crate_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Cup_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Hammer_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Jar_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0608
+  },
+  "SIGN_CUS-Sign_Leaf_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Loaf_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0581
+  },
+  "SIGN_CUS-Sign_Scroll_burgundy_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_CUS-Sign_Scroll_wood_x1p4": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0576
+  },
+  "SIGN_FP-Banner_1_at_blue": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0609
+  },
+  "SIGN_FP-Banner_1_at_burgundy": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0609
+  },
+  "TILE_brick": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0102
+  },
+  "TILE_cobble": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0102
+  },
+  "TILE_red": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0102
+  },
+  "A01_main": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A01_porch": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A01_tower": {
+   "k": 10,
+   "position_step_mm": 0.977,
+   "max_position_error_mm": 0.4883
+  },
+  "A01_wing_e": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A01_wing_w": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A02c": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A02p": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A03": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A03b": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A03cC": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A03cT": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A04": {
+   "k": 12,
+   "position_step_mm": 0.244,
+   "max_position_error_mm": 0.1221
+  },
+  "A04b": {
+   "k": 12,
+   "position_step_mm": 0.244,
+   "max_position_error_mm": 0.1221
+  },
+  "A04bO": {
+   "k": 12,
+   "position_step_mm": 0.244,
+   "max_position_error_mm": 0.1221
+  },
+  "A04bP": {
+   "k": 12,
+   "position_step_mm": 0.244,
+   "max_position_error_mm": 0.1221
+  },
+  "A05c": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A06j": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A06s": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A07w": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A08": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A09": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "A10c": {
+   "k": 12,
+   "position_step_mm": 0.244,
+   "max_position_error_mm": 0.1221
+  },
+  "A10p": {
+   "k": 12,
+   "position_step_mm": 0.244,
+   "max_position_error_mm": 0.1221
+  },
+  "A11": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2441
+  },
+  "ARCH": {
+   "k": 13,
+   "position_step_mm": 0.122,
+   "max_position_error_mm": 0.0567
+  },
+  "CROSS": {
+   "k": 12,
+   "position_step_mm": 0.244,
+   "max_position_error_mm": 0.1221
+  },
+  "PODIUM": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2409
+  },
+  "TERRACE": {
+   "k": 11,
+   "position_step_mm": 0.488,
+   "max_position_error_mm": 0.2422
+  }
+ },
+ "float_uv_primitives": 221,
+ "primitives": 551,
+ "in_bytes": 40849756,
+ "out_bytes": 26374688,
+ "saved_pct": 35.43,
+ "max_position_error_mm": 1.9531
+}

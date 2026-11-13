@@ -1,0 +1,13 @@
+asset_id,class,source,licence,triangles_each,instances_in_p1_4,status
+CUS-Awning_blue,CUSTOM geometry (authored in citadel_lib.py),authored for this project,n/a (custom),48,23,ASSEMBLED_IN_P1.4_BLOCKOUT
+CUS-Awning_burgundy,CUSTOM geometry (authored in citadel_lib.py),authored for this project,n/a (custom),48,14,ASSEMBLED_IN_P1.4_BLOCKOUT
+CUS-Bunting_10,CUSTOM geometry (authored in citadel_lib.py),authored for this project,n/a (custom),42,1,ASSEMBLED_IN_P1.4_BLOCKOUT
+CUS-Bunting_18,CUSTOM geometry (authored in citadel_lib.py),authored for this project,n/a (custom),75,2,ASSEMBLED_IN_P1.4_BLOCKOUT
+CUS-PavingSeal,CUSTOM geometry (authored in citadel_lib.py),authored for this project,n/a (custom),266,2,ASSEMBLED_IN_P1.4_BLOCKOUT
+MV-Balcony_Cross_Straight,downloaded model first used in P1.4,Quaternius Medieval Village MegaKit [Standard],CC0 1.0,132,8,ASSEMBLED_IN_P1.4_BLOCKOUT
+MV-Roof_RoundTiles_8x10,downloaded model first used in P1.4,Quaternius Medieval Village MegaKit [Standard],CC0 1.0,4480,1,ASSEMBLED_IN_P1.4_BLOCKOUT
+ALE-Streetlamp01,"downloaded model, examined",Alefran - Medieval Stylized Assets pack (free),custom licence: commercial use allowed; modification for personal use only; no redistribution,950,0,NOT ADOPTED (licence unsuitable for a public web build)
+ALE-Market03,"downloaded model, examined",Alefran - Medieval Stylized Assets pack (free),custom licence: commercial use allowed; modification for personal use only; no redistribution,1078,0,NOT ADOPTED (licence unsuitable for a public web build)
+ALE-Sign01,"downloaded model, examined",Alefran - Medieval Stylized Assets pack (free),custom licence: commercial use allowed; modification for personal use only; no redistribution,224,0,NOT ADOPTED (licence unsuitable for a public web build)
+ALE-Brazier,"downloaded model, examined",Alefran - Medieval Stylized Assets pack (free),custom licence: commercial use allowed; modification for personal use only; no redistribution,642,0,NOT ADOPTED (licence unsuitable for a public web build)
+ALE-Bench01,"downloaded model, examined",Alefran - Medieval Stylized Assets pack (free),custom licence: commercial use allowed; modification for personal use only; no redistribution,124,0,NOT ADOPTED (licence unsuitable for a public web build)

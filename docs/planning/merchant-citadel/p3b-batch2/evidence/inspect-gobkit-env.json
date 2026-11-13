@@ -1,0 +1,1027 @@
+[
+ {
+  "file": "Bush001.glb",
+  "bytes": 16328,
+  "triangles": 48,
+  "bounds_min": [
+   -143.149,
+   -0.0,
+   -143.149
+  ],
+  "bounds_size": [
+   286.297,
+   139.592,
+   286.297
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Bush002.glb",
+  "bytes": 16500,
+  "triangles": 48,
+  "bounds_min": [
+   -156.934,
+   -0.0,
+   -164.121
+  ],
+  "bounds_size": [
+   337.916,
+   165.595,
+   319.865
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Cliff001.glb",
+  "bytes": 15756,
+  "triangles": 16,
+  "bounds_min": [
+   -297.719,
+   -0.0,
+   -323.089
+  ],
+  "bounds_size": [
+   618.678,
+   695.336,
+   513.998
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Cliff002.glb",
+  "bytes": 15752,
+  "triangles": 16,
+  "bounds_min": [
+   -291.711,
+   -0.433,
+   -311.256
+  ],
+  "bounds_size": [
+   632.002,
+   447.884,
+   554.414
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Cliff003.glb",
+  "bytes": 15788,
+  "triangles": 16,
+  "bounds_min": [
+   -225.357,
+   -0.0,
+   -256.06
+  ],
+  "bounds_size": [
+   513.9,
+   998.169,
+   410.931
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Cloud001.glb",
+  "bytes": 16384,
+  "triangles": 48,
+  "bounds_min": [
+   -299.862,
+   -178.687,
+   -197.958
+  ],
+  "bounds_size": [
+   577.299,
+   342.588,
+   404.866
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Cloud002.glb",
+  "bytes": 16456,
+  "triangles": 48,
+  "bounds_min": [
+   -204.008,
+   -108.781,
+   -96.033
+  ],
+  "bounds_size": [
+   514.984,
+   234.951,
+   322.942
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Cloud003.glb",
+  "bytes": 16396,
+  "triangles": 48,
+  "bounds_min": [
+   -193.237,
+   -217.678,
+   -197.958
+  ],
+  "bounds_size": [
+   500.535,
+   408.596,
+   405.094
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Grass001.glb",
+  "bytes": 14928,
+  "triangles": 3,
+  "bounds_min": [
+   -73.545,
+   -0.001,
+   -20.231
+  ],
+  "bounds_size": [
+   112.47,
+   384.287,
+   25.17
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Grass002.glb",
+  "bytes": 14908,
+  "triangles": 3,
+  "bounds_min": [
+   -25.882,
+   -0.001,
+   0.0
+  ],
+  "bounds_size": [
+   58.751,
+   268.734,
+   40.912
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Grass003.glb",
+  "bytes": 14908,
+  "triangles": 3,
+  "bounds_min": [
+   -63.12,
+   -0.001,
+   0.0
+  ],
+  "bounds_size": [
+   113.017,
+   348.72,
+   66.401
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hill001.glb",
+  "bytes": 15512,
+  "triangles": 18,
+  "bounds_min": [
+   -347.173,
+   0.0,
+   -301.703
+  ],
+  "bounds_size": [
+   707.66,
+   92.772,
+   603.406
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hill002.glb",
+  "bytes": 15512,
+  "triangles": 18,
+  "bounds_min": [
+   -264.971,
+   0.0,
+   -361.133
+  ],
+  "bounds_size": [
+   646.202,
+   88.467,
+   595.624
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hill003.glb",
+  "bytes": 15572,
+  "triangles": 18,
+  "bounds_min": [
+   -340.816,
+   0.0,
+   -307.404
+  ],
+  "bounds_size": [
+   565.97,
+   104.064,
+   763.762
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "HillSand001.glb",
+  "bytes": 15940,
+  "triangles": 30,
+  "bounds_min": [
+   -336.92,
+   0.0,
+   -324.041
+  ],
+  "bounds_size": [
+   724.098,
+   487.744,
+   648.083
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "HillSand002.glb",
+  "bytes": 15956,
+  "triangles": 30,
+  "bounds_min": [
+   -395.347,
+   0.0,
+   -349.339
+  ],
+  "bounds_size": [
+   782.525,
+   273.694,
+   801.823
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "HillSand003.glb",
+  "bytes": 15924,
+  "triangles": 30,
+  "bounds_min": [
+   -342.542,
+   0.0,
+   -423.368
+  ],
+  "bounds_size": [
+   729.719,
+   187.851,
+   747.409
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Mountain001.glb",
+  "bytes": 15940,
+  "triangles": 30,
+  "bounds_min": [
+   -409.044,
+   0.0,
+   -393.408
+  ],
+  "bounds_size": [
+   879.105,
+   592.155,
+   786.817
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Mountain002.glb",
+  "bytes": 15956,
+  "triangles": 30,
+  "bounds_min": [
+   -479.978,
+   0.0,
+   -424.122
+  ],
+  "bounds_size": [
+   950.039,
+   332.284,
+   973.468
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Mountain003.glb",
+  "bytes": 15928,
+  "triangles": 30,
+  "bounds_min": [
+   -415.869,
+   0.0,
+   -513.997
+  ],
+  "bounds_size": [
+   885.929,
+   228.064,
+   907.406
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "MountainFar001.glb",
+  "bytes": 15256,
+  "triangles": 7,
+  "bounds_min": [
+   -265.209,
+   0.0,
+   -443.923
+  ],
+  "bounds_size": [
+   795.627,
+   735.608,
+   887.847
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "MountainFar002.glb",
+  "bytes": 15276,
+  "triangles": 7,
+  "bounds_min": [
+   -341.648,
+   0.0,
+   -478.58
+  ],
+  "bounds_size": [
+   872.066,
+   471.229,
+   1098.465
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "MountainFar003.glb",
+  "bytes": 15272,
+  "triangles": 7,
+  "bounds_min": [
+   -333.061,
+   0.0,
+   -671.547
+  ],
+  "bounds_size": [
+   947.203,
+   308.399,
+   1185.542
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Reed001.glb",
+  "bytes": 16016,
+  "triangles": 20,
+  "bounds_min": [
+   -55.817,
+   0.0,
+   -37.696
+  ],
+  "bounds_size": [
+   93.512,
+   407.575,
+   93.241
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Reed002.glb",
+  "bytes": 16020,
+  "triangles": 20,
+  "bounds_min": [
+   -35.062,
+   0.0,
+   -24.076
+  ],
+  "bounds_size": [
+   58.74,
+   476.839,
+   58.967
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Rock001.glb",
+  "bytes": 15756,
+  "triangles": 16,
+  "bounds_min": [
+   -166.396,
+   0.0,
+   -248.791
+  ],
+  "bounds_size": [
+   405.17,
+   212.944,
+   468.13
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Rock002.glb",
+  "bytes": 15792,
+  "triangles": 16,
+  "bounds_min": [
+   -112.111,
+   0.0,
+   -113.985
+  ],
+  "bounds_size": [
+   303.348,
+   218.861,
+   306.028
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Rock003.glb",
+  "bytes": 15760,
+  "triangles": 16,
+  "bounds_min": [
+   -275.909,
+   0.0,
+   -169.658
+  ],
+  "bounds_size": [
+   480.352,
+   205.125,
+   411.254
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Stalactite001.glb",
+  "bytes": 15896,
+  "triangles": 13,
+  "bounds_min": [
+   -65.874,
+   705.012,
+   -90.073
+  ],
+  "bounds_size": [
+   161.434,
+   591.95,
+   180.146
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Stalactite002.glb",
+  "bytes": 15916,
+  "triangles": 13,
+  "bounds_min": [
+   -50.165,
+   705.012,
+   -56.764
+  ],
+  "bounds_size": [
+   119.375,
+   591.95,
+   144.617
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Stalactite003.glb",
+  "bytes": 15976,
+  "triangles": 13,
+  "bounds_min": [
+   -58.499,
+   765.335,
+   -68.396
+  ],
+  "bounds_size": [
+   142.968,
+   531.627,
+   173.199
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeHigh001.glb",
+  "bytes": 16268,
+  "triangles": 34,
+  "bounds_min": [
+   -114.657,
+   0.0,
+   -101.452
+  ],
+  "bounds_size": [
+   227.827,
+   849.111,
+   204.967
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeHigh002.glb",
+  "bytes": 16264,
+  "triangles": 34,
+  "bounds_min": [
+   -102.383,
+   0.0,
+   -90.409
+  ],
+  "bounds_size": [
+   203.278,
+   790.011,
+   182.881
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeHigh003.glb",
+  "bytes": 16268,
+  "triangles": 34,
+  "bounds_min": [
+   -127.238,
+   0.0,
+   -121.419
+  ],
+  "bounds_size": [
+   264.081,
+   800.641,
+   249.472
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeLow001.glb",
+  "bytes": 16260,
+  "triangles": 34,
+  "bounds_min": [
+   -84.539,
+   0.0,
+   -75.66
+  ],
+  "bounds_size": [
+   160.938,
+   432.275,
+   152.035
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeLow002.glb",
+  "bytes": 16260,
+  "triangles": 34,
+  "bounds_min": [
+   -133.658,
+   0.0,
+   -104.503
+  ],
+  "bounds_size": [
+   247.696,
+   466.593,
+   205.856
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeLow003.glb",
+  "bytes": 16268,
+  "triangles": 34,
+  "bounds_min": [
+   -117.485,
+   0.0,
+   -107.782
+  ],
+  "bounds_size": [
+   237.621,
+   400.114,
+   219.124
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeLow004.glb",
+  "bytes": 16264,
+  "triangles": 34,
+  "bounds_min": [
+   -117.485,
+   0.0,
+   -106.945
+  ],
+  "bounds_size": [
+   237.621,
+   578.801,
+   218.287
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeMed001.glb",
+  "bytes": 17052,
+  "triangles": 52,
+  "bounds_min": [
+   -242.458,
+   0.0,
+   -221.749
+  ],
+  "bounds_size": [
+   487.566,
+   596.262,
+   447.895
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeMed002.glb",
+  "bytes": 17056,
+  "triangles": 52,
+  "bounds_min": [
+   -233.448,
+   0.0,
+   -224.022
+  ],
+  "bounds_size": [
+   460.981,
+   744.777,
+   451.051
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "TreeMed003.glb",
+  "bytes": 17848,
+  "triangles": 70,
+  "bounds_min": [
+   -287.944,
+   0.0,
+   -277.344
+  ],
+  "bounds_size": [
+   569.974,
+   1008.282,
+   557.695
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Gobkit",
+  "extensions": []
+ }
+]

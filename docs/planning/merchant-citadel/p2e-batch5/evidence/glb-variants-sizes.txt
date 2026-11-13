@@ -1,0 +1,7 @@
+{'float_uv_primitives': 241, 'primitives': 602, 'in_bytes': 46517600, 'out_bytes': 29795412, 'saved_pct': 35.95, 'max_position_error_mm': 1.9531}
+in 46517600 out 44834784 images 79
+in 29795412 out 28112616 images 79
+merchant-citadel-p2a-kit-quant-webp.glb raw=28112616 gz=10254786 sha=8944258bcc39
+merchant-citadel-p2a-kit-quant.glb raw=29795412 gz=11878324 sha=fb3e492eb2bd
+merchant-citadel-p2a-kit-webp.glb raw=44834784 gz=12887998 sha=6bc7395a08c1
+merchant-citadel-p2a-kit.glb raw=46517600 gz=14519495 sha=9288a67693af

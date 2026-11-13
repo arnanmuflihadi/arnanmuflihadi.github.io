@@ -1,0 +1,1119 @@
+[
+ {
+  "file": "Bird.glb",
+  "bytes": 31032,
+  "triangles": 158,
+  "bounds_min": [
+   -1.605,
+   -0.951,
+   -4.205
+  ],
+  "bounds_size": [
+   3.205,
+   2.612,
+   6.109
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   11
+  ],
+  "bones": 11,
+  "animations": [
+   {
+    "name": "ArmatureAction",
+    "seconds": 0.666,
+    "channels": 30
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008",
+   "Bone.009",
+   "neutral_bone"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Cat.glb",
+  "bytes": 141072,
+  "triangles": 807,
+  "bounds_min": [
+   -2.441,
+   -0.007,
+   -0.712
+  ],
+  "bounds_size": [
+   5.675,
+   4.43,
+   1.424
+  ],
+  "meshes": 1,
+  "materials": 3,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Idle",
+    "seconds": 1.667,
+    "channels": 72
+   },
+   {
+    "name": "Walking",
+    "seconds": 1.667,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.014",
+   "Bone.015",
+   "Bone.016",
+   "Bone.017",
+   "Bone.018",
+   "Bone.019",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008",
+   "Bone.009",
+   "Bone.010",
+   "Bone.011",
+   "Bone.012",
+   "Bone.013",
+   "IKBackLeft",
+   "IKBackRight",
+   "IKFrontLeft",
+   "IKFrontRight"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Chick.glb",
+  "bytes": 52336,
+  "triangles": 250,
+  "bounds_min": [
+   -2.215,
+   -1.887,
+   -1.333
+  ],
+  "bounds_size": [
+   4.243,
+   4.767,
+   2.665
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   10
+  ],
+  "bones": 10,
+  "animations": [
+   {
+    "name": "ArmatureAction.002",
+    "seconds": 2.917,
+    "channels": 30
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.009",
+   "Bone.003",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Cow.glb",
+  "bytes": 338096,
+  "triangles": 796,
+  "bounds_min": [
+   -1.125,
+   -0.068,
+   -3.776
+  ],
+  "bounds_size": [
+   2.25,
+   5.148,
+   9.172
+  ],
+  "meshes": 1,
+  "materials": 3,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   28
+  ],
+  "bones": 28,
+  "animations": [
+   {
+    "name": "Death",
+    "seconds": 1.25,
+    "channels": 84
+   },
+   {
+    "name": "Idle",
+    "seconds": 6.25,
+    "channels": 84
+   },
+   {
+    "name": "Jump",
+    "seconds": 1.708,
+    "channels": 84
+   },
+   {
+    "name": "Run",
+    "seconds": 1.417,
+    "channels": 84
+   },
+   {
+    "name": "Walk",
+    "seconds": 3.333,
+    "channels": 84
+   },
+   {
+    "name": "WalkSlow",
+    "seconds": 2.083,
+    "channels": 84
+   }
+  ],
+  "bone_names": [
+   "root",
+   "BackFoot.L",
+   "BackFoot.R",
+   "Body",
+   "Back",
+   "Tail1",
+   "Tail2",
+   "Tail3",
+   "Tail4",
+   "BackLeg.L",
+   "BackUpLeg.L",
+   "BackLowLeg.L",
+   "BackLeg.R",
+   "BackUpLeg.R",
+   "BackLowLeg.R",
+   "FrontLeg.L",
+   "FrontUpLeg.L",
+   "FrontLowLeg.L",
+   "FrontLeg.R",
+   "FrontUpLeg.R",
+   "FrontLowLeg.R",
+   "Hips",
+   "Torso",
+   "Shoulders",
+   "Neck",
+   "Head",
+   "FrontFoot.L",
+   "FrontFoot.R"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Dog.glb",
+  "bytes": 121952,
+  "triangles": 602,
+  "bounds_min": [
+   -3.211,
+   -0.064,
+   -1.398
+  ],
+  "bounds_size": [
+   6.909,
+   4.383,
+   2.126
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Idle",
+    "seconds": 1.667,
+    "channels": 75
+   },
+   {
+    "name": "Walking",
+    "seconds": 1.667,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.014",
+   "Bone.015",
+   "Bone.016",
+   "Bone.017",
+   "Bone.018",
+   "Bone.019",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008",
+   "Bone.009",
+   "Bone.010",
+   "Bone.011",
+   "Bone.012",
+   "Bone.013",
+   "IKBackLeft",
+   "IKBackRight",
+   "IKFrontLeft",
+   "IKFrontRight"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Eagle.glb",
+  "bytes": 199032,
+  "triangles": 1532,
+  "bounds_min": [
+   -6.27,
+   -1.039,
+   -1.469
+  ],
+  "bounds_size": [
+   12.541,
+   1.523,
+   5.195
+  ],
+  "meshes": 1,
+  "materials": 4,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Flying",
+    "seconds": 1.25,
+    "channels": 72
+   },
+   {
+    "name": "Idle",
+    "seconds": 1.667,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008",
+   "Bone.009",
+   "Bone.010",
+   "Bone.011",
+   "Bone.012",
+   "Bone.013",
+   "Bone.014",
+   "Bone.015",
+   "Bone.016",
+   "Bone.017",
+   "Bone.018",
+   "Bone.019",
+   "Bone.020",
+   "Bone.021",
+   "Bone.022",
+   "Bone.023"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Fish.glb",
+  "bytes": 52976,
+  "triangles": 304,
+  "bounds_min": [
+   -0.972,
+   -0.665,
+   -3.321
+  ],
+  "bounds_size": [
+   1.882,
+   2.034,
+   5.424
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   7
+  ],
+  "bones": 7,
+  "animations": [
+   {
+    "name": "ArmatureAction",
+    "seconds": 0.667,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Horse.glb",
+  "bytes": 308156,
+  "triangles": 690,
+  "bounds_min": [
+   -1.285,
+   0.018,
+   -4.118
+  ],
+  "bounds_size": [
+   2.57,
+   6.905,
+   9.235
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   28
+  ],
+  "bones": 28,
+  "animations": [
+   {
+    "name": "Death",
+    "seconds": 1.083,
+    "channels": 84
+   },
+   {
+    "name": "Idle",
+    "seconds": 6.25,
+    "channels": 84
+   },
+   {
+    "name": "Jump",
+    "seconds": 1.5,
+    "channels": 84
+   },
+   {
+    "name": "Run",
+    "seconds": 0.833,
+    "channels": 84
+   },
+   {
+    "name": "Walk",
+    "seconds": 2.667,
+    "channels": 84
+   },
+   {
+    "name": "WalkSlow",
+    "seconds": 2,
+    "channels": 84
+   }
+  ],
+  "bone_names": [
+   "root",
+   "BackFoot.L",
+   "BackFoot.R",
+   "Body",
+   "Back",
+   "Tail1",
+   "Tail2",
+   "Tail3",
+   "Tail4",
+   "BackLeg.L",
+   "BackUpLeg.L",
+   "BackLowLeg.L",
+   "BackLeg.R",
+   "BackUpLeg.R",
+   "BackLowLeg.R",
+   "FrontLeg.L",
+   "FrontUpLeg.L",
+   "FrontLowLeg.L",
+   "FrontLeg.R",
+   "FrontUpLeg.R",
+   "FrontLowLeg.R",
+   "Hips",
+   "Torso",
+   "Shoulders",
+   "Neck",
+   "Head",
+   "FrontFoot.L",
+   "FrontFoot.R"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Llama.glb",
+  "bytes": 275168,
+  "triangles": 662,
+  "bounds_min": [
+   -0.788,
+   -0.013,
+   -2.026
+  ],
+  "bounds_size": [
+   1.576,
+   5.853,
+   4.912
+  ],
+  "meshes": 1,
+  "materials": 3,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Death",
+    "seconds": 1.083,
+    "channels": 72
+   },
+   {
+    "name": "Idle",
+    "seconds": 6.25,
+    "channels": 72
+   },
+   {
+    "name": "Jump",
+    "seconds": 1.125,
+    "channels": 72
+   },
+   {
+    "name": "Run",
+    "seconds": 0.833,
+    "channels": 72
+   },
+   {
+    "name": "Walk",
+    "seconds": 2.667,
+    "channels": 72
+   },
+   {
+    "name": "WalkSlow",
+    "seconds": 2,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "root",
+   "BackFoot.L",
+   "BackFoot.R",
+   "Body",
+   "Back",
+   "BackLeg.L",
+   "BackUpLeg.L",
+   "BackLowLeg.L",
+   "BackLeg.R",
+   "BackUpLeg.R",
+   "BackLowLeg.R",
+   "FrontLeg.L",
+   "FrontUpLeg.L",
+   "FrontLowLeg.L",
+   "FrontLeg.R",
+   "FrontUpLeg.R",
+   "FrontLowLeg.R",
+   "Hips",
+   "Torso",
+   "Shoulders",
+   "Neck",
+   "Head",
+   "FrontFoot.L",
+   "FrontFoot.R"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Pig.glb",
+  "bytes": 269940,
+  "triangles": 562,
+  "bounds_min": [
+   -1.656,
+   -0.002,
+   -4.586
+  ],
+  "bounds_size": [
+   3.311,
+   4.59,
+   9.784
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Death",
+    "seconds": 1.083,
+    "channels": 72
+   },
+   {
+    "name": "Idle",
+    "seconds": 6.25,
+    "channels": 72
+   },
+   {
+    "name": "Jump",
+    "seconds": 1.5,
+    "channels": 72
+   },
+   {
+    "name": "Run",
+    "seconds": 0.917,
+    "channels": 72
+   },
+   {
+    "name": "Walk",
+    "seconds": 2.667,
+    "channels": 72
+   },
+   {
+    "name": "WalkSlow",
+    "seconds": 2,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "root",
+   "BackFoot.L",
+   "BackFoot.R",
+   "Body",
+   "Back",
+   "BackLeg.L",
+   "BackUpLeg.L",
+   "BackLowLeg.L",
+   "BackLeg.R",
+   "BackUpLeg.R",
+   "BackLowLeg.R",
+   "FrontLeg.L",
+   "FrontUpLeg.L",
+   "FrontLowLeg.L",
+   "FrontLeg.R",
+   "FrontUpLeg.R",
+   "FrontLowLeg.R",
+   "Hips",
+   "Torso",
+   "Shoulders",
+   "Neck",
+   "Head",
+   "FrontFoot.L",
+   "FrontFoot.R"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Piranha.glb",
+  "bytes": 141904,
+  "triangles": 1388,
+  "bounds_min": [
+   -1.222,
+   -2.497,
+   -5.938
+  ],
+  "bounds_size": [
+   2.444,
+   5.051,
+   8.941
+  ],
+  "meshes": 1,
+  "materials": 4,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   9
+  ],
+  "bones": 9,
+  "animations": [
+   {
+    "name": "Bite",
+    "seconds": 1.667,
+    "channels": 27
+   },
+   {
+    "name": "Swimming",
+    "seconds": 1.667,
+    "channels": 27
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.004",
+   "Bone.007",
+   "Bone.008",
+   "Bone.005",
+   "Bone.006"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Pug.glb",
+  "bytes": 275496,
+  "triangles": 644,
+  "bounds_min": [
+   -0.727,
+   -0.017,
+   -1.473
+  ],
+  "bounds_size": [
+   1.454,
+   2.659,
+   3.509
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Death",
+    "seconds": 1.083,
+    "channels": 72
+   },
+   {
+    "name": "Idle",
+    "seconds": 6.25,
+    "channels": 72
+   },
+   {
+    "name": "Jump",
+    "seconds": 1.5,
+    "channels": 72
+   },
+   {
+    "name": "Run",
+    "seconds": 0.833,
+    "channels": 72
+   },
+   {
+    "name": "Walk",
+    "seconds": 2.667,
+    "channels": 72
+   },
+   {
+    "name": "WalkSlow",
+    "seconds": 2,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "root",
+   "BackFoot.L",
+   "BackFoot.R",
+   "Body",
+   "Back",
+   "BackLeg.L",
+   "BackUpLeg.L",
+   "BackLowLeg.L",
+   "BackLeg.R",
+   "BackUpLeg.R",
+   "BackLowLeg.R",
+   "FrontLeg.L",
+   "FrontUpLeg.L",
+   "FrontLowLeg.L",
+   "FrontLeg.R",
+   "FrontUpLeg.R",
+   "FrontLowLeg.R",
+   "Hips",
+   "Torso",
+   "Shoulders",
+   "Neck",
+   "Head",
+   "FrontFoot.L",
+   "FrontFoot.R"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "RedFox.glb",
+  "bytes": 70988,
+  "triangles": 490,
+  "bounds_min": [
+   -0.789,
+   -1.642,
+   -1.605
+  ],
+  "bounds_size": [
+   1.554,
+   2.313,
+   5.263
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   17
+  ],
+  "bones": 17,
+  "animations": [
+   {
+    "name": "ArmatureAction",
+    "seconds": 1.066,
+    "channels": 51
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.010",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008",
+   "Bone.009",
+   "Bone.011",
+   "Bone.012",
+   "Bone.013",
+   "Bone.014",
+   "Bone.015",
+   "Bone.016"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Sheep.glb",
+  "bytes": 268932,
+  "triangles": 612,
+  "bounds_min": [
+   -1.111,
+   -0.01,
+   -2.409
+  ],
+  "bounds_size": [
+   2.221,
+   4.36,
+   5.919
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Death",
+    "seconds": 1.083,
+    "channels": 72
+   },
+   {
+    "name": "Idle",
+    "seconds": 6.25,
+    "channels": 72
+   },
+   {
+    "name": "Jump",
+    "seconds": 1.125,
+    "channels": 72
+   },
+   {
+    "name": "Run",
+    "seconds": 0.833,
+    "channels": 72
+   },
+   {
+    "name": "Walk",
+    "seconds": 2.667,
+    "channels": 72
+   },
+   {
+    "name": "WalkSlow",
+    "seconds": 2,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "root",
+   "BackFoot.L",
+   "BackFoot.R",
+   "Body",
+   "Back",
+   "BackLeg.L",
+   "BackUpLeg.L",
+   "BackLowLeg.L",
+   "BackLeg.R",
+   "BackUpLeg.R",
+   "BackLowLeg.R",
+   "FrontLeg.L",
+   "FrontUpLeg.L",
+   "FrontLowLeg.L",
+   "FrontLeg.R",
+   "FrontUpLeg.R",
+   "FrontLowLeg.R",
+   "Hips",
+   "Torso",
+   "Shoulders",
+   "Neck",
+   "Head",
+   "FrontFoot.L",
+   "FrontFoot.R"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Whale.glb",
+  "bytes": 103644,
+  "triangles": 954,
+  "bounds_min": [
+   -2.955,
+   -0.436,
+   -6.587
+  ],
+  "bounds_size": [
+   3.301,
+   2.939,
+   9.302
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   9
+  ],
+  "bones": 9,
+  "animations": [
+   {
+    "name": "ArmatureAction",
+    "seconds": 1.76,
+    "channels": 27
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.002",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008",
+   "Bone.009",
+   "Bone.003",
+   "Bone.004"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Wolf.glb",
+  "bytes": 124792,
+  "triangles": 622,
+  "bounds_min": [
+   -5.56,
+   -0.015,
+   -1.468
+  ],
+  "bounds_size": [
+   9.979,
+   5.301,
+   2.209
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   24
+  ],
+  "bones": 24,
+  "animations": [
+   {
+    "name": "Idle",
+    "seconds": 1.667,
+    "channels": 72
+   },
+   {
+    "name": "Walking",
+    "seconds": 1.667,
+    "channels": 72
+   }
+  ],
+  "bone_names": [
+   "Bone",
+   "Bone.001",
+   "Bone.002",
+   "Bone.003",
+   "Bone.014",
+   "Bone.015",
+   "Bone.016",
+   "Bone.017",
+   "Bone.018",
+   "Bone.019",
+   "Bone.004",
+   "Bone.005",
+   "Bone.006",
+   "Bone.007",
+   "Bone.008",
+   "Bone.009",
+   "Bone.010",
+   "Bone.011",
+   "Bone.012",
+   "Bone.013",
+   "IKBackLeft",
+   "IKBackRight",
+   "IKFrontLeft",
+   "IKFrontRight"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ },
+ {
+  "file": "Zebra.glb",
+  "bytes": 370852,
+  "triangles": 1354,
+  "bounds_min": [
+   -1.285,
+   -0.044,
+   -4.164
+  ],
+  "bounds_size": [
+   2.57,
+   7.072,
+   9.235
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 0,
+  "images": 0,
+  "skins": [
+   28
+  ],
+  "bones": 28,
+  "animations": [
+   {
+    "name": "Death",
+    "seconds": 1.083,
+    "channels": 84
+   },
+   {
+    "name": "Idle",
+    "seconds": 6.25,
+    "channels": 84
+   },
+   {
+    "name": "Jump",
+    "seconds": 1.5,
+    "channels": 84
+   },
+   {
+    "name": "Run",
+    "seconds": 0.833,
+    "channels": 84
+   },
+   {
+    "name": "Walk",
+    "seconds": 2.667,
+    "channels": 84
+   },
+   {
+    "name": "WalkSlow",
+    "seconds": 2,
+    "channels": 84
+   }
+  ],
+  "bone_names": [
+   "root",
+   "BackFoot.L",
+   "BackFoot.R",
+   "Body",
+   "Back",
+   "Tail1",
+   "Tail2",
+   "Tail3",
+   "Tail4",
+   "BackLeg.L",
+   "BackUpLeg.L",
+   "BackLowLeg.L",
+   "BackLeg.R",
+   "BackUpLeg.R",
+   "BackLowLeg.R",
+   "FrontLeg.L",
+   "FrontUpLeg.L",
+   "FrontLowLeg.L",
+   "FrontLeg.R",
+   "FrontUpLeg.R",
+   "FrontLowLeg.R",
+   "Hips",
+   "Torso",
+   "Shoulders",
+   "Neck",
+   "Head",
+   "FrontFoot.L",
+   "FrontFoot.R"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensions": []
+ }
+]

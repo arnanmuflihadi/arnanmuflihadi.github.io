@@ -1,0 +1,35 @@
+a,b,kind,via,length_m,walk_s_ab,walk_s_ba,min_side_clearance_m,narrowest_against,min_camera_m,stuck_ab,stuck_ba,pass
+N01,N02,primary,[],5,2.25,2.25,6.004,B04:wall,12.979,0,0,True
+N02,N03,primary,[],15,7,7,3.66,B04:wall,12.979,0,0,True
+N03,N04,primary,[],17.5,8.2,8.2,3.615,dressing:prop,12.979,0,0,True
+N04,N05,primary,[],8,3.667,3.667,2.265,M01:wall,12.979,0,0,True
+N05,N29,primary,"[[2.9, 46.4]]",4.545,2.6,2.583,1.301,R03:post,9.998,0,0,True
+N29,N27,primary,"[[2.9, 51.6]]",4.545,2.583,2.6,1.301,R04:post,12.085,0,0,True
+N05,N30,primary,"[[-2.9, 46.4]]",4.545,2.6,2.583,1.301,R01:post,11.31,0,0,True
+N30,N27,primary,"[[-2.9, 51.6]]",4.545,2.583,2.6,1.301,R02:post,12.836,0,0,True
+N27,N06,primary,[],6.9,3.15,3.15,2.265,M01:wall,12.979,0,0,True
+N06,N07,primary,[],7.6,3.483,3.483,4.594,R02:post,10.603,0,0,True
+N07,N08,"primary, stairs",[],8,3.667,3.667,3.704,B01:post,2.974,0,0,True
+N01,N35,secondary,[],9.849,4.55,4.55,4.503,B04:wall,12.979,0,0,True
+N35,N09,secondary,[],7,3.2,3.2,4.46,B04:wall,12.979,0,0,True
+N09,N10,secondary,[],16,7.483,7.483,2.581,dressing:prop,12.979,0,0,True
+N10,N11,secondary,[],18.5,8.667,8.667,1.685,dressing:prop,12.979,0,0,True
+N11,N04,secondary,[],16.031,7.5,7.5,1.07,B06:wall,8.608,0,0,True
+N10,N03,secondary,[],16,7.483,7.483,1.66,dressing:prop,12.979,0,0,True
+N01,N36,service,[],9.849,4.55,4.55,5.703,B07:wall,12.979,0,0,True
+N36,N12,service,[],7,3.2,3.2,5.66,B07:wall,12.975,0,0,True
+N12,N13,service,[],16,7.483,7.483,2.26,dressing:post,12.979,0,0,True
+N13,N14,service,[],18.5,8.667,8.667,1.685,dressing:prop,12.979,0,0,True
+N14,N04,service,[],16.031,7.5,7.5,0.871,B09:wall,4.571,0,0,True
+N03,N13,service,[],16,7.483,7.483,1.66,B08:wall,12.975,0,0,True
+N11,N38,secondary,[],4.061,1.8,1.8,1.265,E03:post,3.435,0,0,True
+N38,N23,secondary,[],17.6,8.25,8.25,0.86,E03:post,12.979,0,0,True
+N14,N39,secondary,[],4.061,1.8,1.8,3.315,B09:wall,3.646,0,0,True
+N39,N24,secondary,[],17.6,8.25,8.25,6.774,TERRACE:balustrade,12.979,0,0,True
+N24,N41,scenic,[],6.826,3.117,3.117,3.192,dressing:post,12.979,0,0,True
+N41,N16,scenic,[],10.05,4.65,4.65,1.547,dressing:prop,12.979,0,0,True
+N16,N17,scenic,[],5.242,2.367,2.367,0.3,B17:post,1.504,0,0,True
+N23,N06,secondary,"[[-7.5, 60.3]]",19.217,9.083,9.083,1.007,R02:post,12.979,0,0,True
+N24,N06,secondary,"[[7.5, 60.3]]",19.217,9.083,9.083,1.007,R04:post,12.979,0,0,True
+N07,N21,secondary,[],9.552,4.417,4.417,1.796,dressing:bench,12.979,0,0,True
+N07,N22,secondary,[],9.552,4.417,4.417,1.796,dressing:bench,12.979,0,0,True

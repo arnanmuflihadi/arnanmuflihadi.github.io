@@ -1,0 +1,1091 @@
+{
+ "ground": [
+  {
+   "sp": "BrahmaChicken",
+   "hid": "A_settlement",
+   "at": [
+    -28.277,
+    12.26
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 3.48,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "BrahmaChicken",
+   "hid": "A_settlement",
+   "at": [
+    -27.764,
+    13.577
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 2.967,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "SebrightBantam",
+   "hid": "A_settlement",
+   "at": [
+    -31.364,
+    17.572
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 6.739,
+   "nearest": "P3B:gap-closure",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "SebrightBantam",
+   "hid": "A_settlement",
+   "at": [
+    -25.936,
+    12.486
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 1.139,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Rooster",
+   "hid": "A_settlement",
+   "at": [
+    -33.366,
+    17.528
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 8.732,
+   "nearest": "P3B:gap-closure",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Chick",
+   "hid": "A_settlement",
+   "at": [
+    -28.367,
+    11.264
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 3.57,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Chick",
+   "hid": "A_settlement",
+   "at": [
+    -31.623,
+    16.372
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 6.973,
+   "nearest": "P3B:gap-closure",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Corgi",
+   "hid": "A_settlement",
+   "at": [
+    -26.571,
+    18.053
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 2.19,
+   "nearest": "P3B:gap-closure",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -66.3,
+    8.276
+   ],
+   "walkable": true,
+   "slope": 0.025,
+   "solid_m": 5.553,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -66.055,
+    8.585
+   ],
+   "walkable": true,
+   "slope": 0.03,
+   "solid_m": 5.606,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -46.985,
+    1.768
+   ],
+   "walkable": true,
+   "slope": 0.003,
+   "solid_m": 4.548,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -38.199,
+    37.191
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 8.196,
+   "nearest": "E03",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Lamb",
+   "hid": "B_caravan_green",
+   "at": [
+    -63.154,
+    7.5
+   ],
+   "walkable": true,
+   "slope": 0.02,
+   "solid_m": 4.354,
+   "nearest": "P3B:wagon",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Lamb",
+   "hid": "B_caravan_green",
+   "at": [
+    -67.555,
+    12.271
+   ],
+   "walkable": true,
+   "slope": 0.05,
+   "solid_m": 3.437,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "MerinoRam",
+   "hid": "B_caravan_green",
+   "at": [
+    -60.28,
+    11.612
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 3.356,
+   "nearest": "P3B:wagon",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Doe",
+   "hid": "B_caravan_green",
+   "at": [
+    -41.813,
+    5.851
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 11.062,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Doe",
+   "hid": "B_caravan_green",
+   "at": [
+    -65.535,
+    9.918
+   ],
+   "walkable": true,
+   "slope": 0.039,
+   "solid_m": 5.607,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hare",
+   "hid": "B_caravan_green",
+   "at": [
+    -59.648,
+    5.164
+   ],
+   "walkable": true,
+   "slope": 0.002,
+   "solid_m": 1.499,
+   "nearest": "P3B:wagon",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hare",
+   "hid": "B_caravan_green",
+   "at": [
+    -69.847,
+    22.536
+   ],
+   "walkable": true,
+   "slope": 0.031,
+   "solid_m": 2.468,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hare",
+   "hid": "B_caravan_green",
+   "at": [
+    -54.005,
+    38.978
+   ],
+   "walkable": true,
+   "slope": 0.01,
+   "solid_m": 1.662,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hare",
+   "hid": "B_caravan_green",
+   "at": [
+    -50.739,
+    33.36
+   ],
+   "walkable": true,
+   "slope": 0.023,
+   "solid_m": 3.808,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Quail",
+   "hid": "B_caravan_green",
+   "at": [
+    -69.141,
+    12.71
+   ],
+   "walkable": true,
+   "slope": 0.027,
+   "solid_m": 1.987,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Quail",
+   "hid": "B_caravan_green",
+   "at": [
+    -50.069,
+    1.946
+   ],
+   "walkable": true,
+   "slope": 0.011,
+   "solid_m": 3.752,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Quail",
+   "hid": "B_caravan_green",
+   "at": [
+    -56.29,
+    32.9
+   ],
+   "walkable": true,
+   "slope": 0.051,
+   "solid_m": 0.934,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Goat",
+   "hid": "C_counting_crag",
+   "at": [
+    45.725,
+    91.487
+   ],
+   "walkable": true,
+   "slope": 0.491,
+   "solid_m": 2.265,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Goat",
+   "hid": "C_counting_crag",
+   "at": [
+    47.293,
+    79.232
+   ],
+   "walkable": true,
+   "slope": 0.265,
+   "solid_m": 10.603,
+   "nearest": "B17",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Goat",
+   "hid": "C_counting_crag",
+   "at": [
+    48.297,
+    95.89
+   ],
+   "walkable": true,
+   "slope": 0.303,
+   "solid_m": 2.51,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Marmot",
+   "hid": "C_counting_crag",
+   "at": [
+    36.704,
+    94.764
+   ],
+   "walkable": true,
+   "slope": 0.006,
+   "solid_m": 4.016,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Marmot",
+   "hid": "C_counting_crag",
+   "at": [
+    49.808,
+    85.753
+   ],
+   "walkable": true,
+   "slope": 0.5,
+   "solid_m": 5.047,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Marmot",
+   "hid": "C_counting_crag",
+   "at": [
+    30.885,
+    89.948
+   ],
+   "walkable": true,
+   "slope": 0.012,
+   "solid_m": 2.967,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Fox",
+   "hid": "C_counting_crag",
+   "at": [
+    35.922,
+    89.679
+   ],
+   "walkable": true,
+   "slope": 0.016,
+   "solid_m": 5.174,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hedgehog",
+   "hid": "D_tea_terraces",
+   "at": [
+    55.843,
+    62.04
+   ],
+   "walkable": true,
+   "slope": 0.308,
+   "solid_m": 13.718,
+   "nearest": "dressing",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hedgehog",
+   "hid": "D_tea_terraces",
+   "at": [
+    68.251,
+    30.658
+   ],
+   "walkable": true,
+   "slope": 0.02,
+   "solid_m": 28.331,
+   "nearest": "P3B:bridge-rail",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hedgehog",
+   "hid": "D_tea_terraces",
+   "at": [
+    76.416,
+    58.667
+   ],
+   "walkable": true,
+   "slope": 0.049,
+   "solid_m": 2.45,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hare",
+   "hid": "D_tea_terraces",
+   "at": [
+    71.582,
+    37.45
+   ],
+   "walkable": true,
+   "slope": 0.026,
+   "solid_m": 22.505,
+   "nearest": "P3B:bridge-rail",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Hare",
+   "hid": "D_tea_terraces",
+   "at": [
+    63.436,
+    49.366
+   ],
+   "walkable": true,
+   "slope": 0.5,
+   "solid_m": 16.926,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Squirrel",
+   "hid": "D_tea_terraces",
+   "at": [
+    74.471,
+    32.668
+   ],
+   "walkable": true,
+   "slope": 0.015,
+   "solid_m": 21.963,
+   "nearest": "P3B:bridge-rail",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Squirrel",
+   "hid": "D_tea_terraces",
+   "at": [
+    65.457,
+    27.194
+   ],
+   "walkable": true,
+   "slope": 0.016,
+   "solid_m": 30.332,
+   "nearest": "dressing",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Duck",
+   "hid": "E_cloudfall",
+   "at": [
+    62.031,
+    64.61
+   ],
+   "walkable": true,
+   "slope": 0.027,
+   "solid_m": 13.857,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Duck",
+   "hid": "E_cloudfall",
+   "at": [
+    65.519,
+    74.546
+   ],
+   "walkable": true,
+   "slope": 0.01,
+   "solid_m": 16.198,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  }
+ ],
+ "summary": {
+  "ground_agents": 40,
+  "not_walkable": 0,
+  "blocked": 0,
+  "in_keepout": 0,
+  "max_slope": 0.5,
+  "min_solid_clearance_m": 0.934,
+  "max_ground_error_m": 0,
+  "by_habitat": {
+   "A_settlement": 8,
+   "B_caravan_green": 16,
+   "C_counting_crag": 7,
+   "D_tea_terraces": 7,
+   "E_cloudfall": 2
+  },
+  "birds": 25,
+  "birds_in_keepout": 0,
+  "butterflies": 18
+ },
+ "birds": [
+  {
+   "sp": "Pigeon",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    6.599,
+    13.174,
+    10.89,
+    "B07"
+   ],
+   "keepout": false,
+   "y": 10.89
+  },
+  {
+   "sp": "Pigeon",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    6.824,
+    25.75,
+    6.73,
+    "B08"
+   ],
+   "keepout": false,
+   "y": 6.73
+  },
+  {
+   "sp": "Pigeon",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    12.619,
+    48.193,
+    9,
+    "B03"
+   ],
+   "keepout": false,
+   "y": 9
+  },
+  {
+   "sp": "Pigeon",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    24.885,
+    40.326,
+    6.73,
+    "B14"
+   ],
+   "keepout": false,
+   "y": 6.73
+  },
+  {
+   "sp": "Pigeon",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    14.789,
+    63.84,
+    15.8,
+    "B16"
+   ],
+   "keepout": false,
+   "y": 15.8
+  },
+  {
+   "sp": "Pigeon",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    26.022,
+    47.149,
+    6.73,
+    "E06"
+   ],
+   "keepout": false,
+   "y": 6.73
+  },
+  {
+   "sp": "Budgie",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    9.099,
+    33.395,
+    10.89,
+    "B09"
+   ],
+   "keepout": false,
+   "y": 10.89
+  },
+  {
+   "sp": "Budgie",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    25.013,
+    12.282,
+    12,
+    "B13"
+   ],
+   "keepout": false,
+   "y": 12
+  },
+  {
+   "sp": "Eagle",
+   "hid": "C_counting_crag",
+   "state": "CIRCLE",
+   "perch": null,
+   "keepout": false,
+   "y": 35.55
+  },
+  {
+   "sp": "Eagle",
+   "hid": "C_counting_crag",
+   "state": "CIRCLE",
+   "perch": null,
+   "keepout": false,
+   "y": 39.495
+  },
+  {
+   "sp": "Puffin",
+   "hid": "C_counting_crag",
+   "state": "PERCHED",
+   "perch": [
+    "rock",
+    63.81,
+    116.02,
+    15.09,
+    null
+   ],
+   "keepout": false,
+   "y": 15.09
+  },
+  {
+   "sp": "Puffin",
+   "hid": "C_counting_crag",
+   "state": "PERCHED",
+   "perch": [
+    "rock",
+    31.41,
+    121.84,
+    18.79,
+    null
+   ],
+   "keepout": false,
+   "y": 18.79
+  },
+  {
+   "sp": "Hoopoe",
+   "hid": "D_tea_terraces",
+   "state": "PERCHED",
+   "perch": [
+    "rock",
+    65.01,
+    93.95,
+    4.48,
+    null
+   ],
+   "keepout": false,
+   "y": 4.48
+  },
+  {
+   "sp": "Hoopoe",
+   "hid": "D_tea_terraces",
+   "state": "PERCHED",
+   "perch": [
+    "tree",
+    74.62,
+    93.25,
+    4.09,
+    null
+   ],
+   "keepout": false,
+   "y": 4.09
+  },
+  {
+   "sp": "Kingfisher",
+   "hid": "E_cloudfall",
+   "state": "PERCHED",
+   "perch": [
+    "rock",
+    81.99,
+    93.01,
+    4.38,
+    null
+   ],
+   "keepout": false,
+   "y": 4.38
+  },
+  {
+   "sp": "Kingfisher",
+   "hid": "E_cloudfall",
+   "state": "PERCHED",
+   "perch": [
+    "rock",
+    65.68,
+    95.31,
+    4.32,
+    null
+   ],
+   "keepout": false,
+   "y": 4.32
+  },
+  {
+   "sp": "Hummingbird",
+   "hid": "E_cloudfall",
+   "state": "CIRCLE",
+   "perch": null,
+   "keepout": false,
+   "y": 3.357
+  },
+  {
+   "sp": "Hummingbird",
+   "hid": "E_cloudfall",
+   "state": "CIRCLE",
+   "perch": null,
+   "keepout": false,
+   "y": 3.288
+  },
+  {
+   "sp": "Budgie",
+   "hid": "F_tea_lookout_stack",
+   "state": "PERCHED",
+   "perch": [
+    "prop",
+    111,
+    45,
+    -0.02,
+    "pavilion roof"
+   ],
+   "keepout": false,
+   "y": -0.02
+  },
+  {
+   "sp": "Seagull",
+   "hid": "F_tea_lookout_stack",
+   "state": "PERCHED",
+   "perch": [
+    "prop",
+    111,
+    45,
+    -0.02,
+    "pavilion roof"
+   ],
+   "keepout": false,
+   "y": -0.02
+  },
+  {
+   "sp": "Seagull",
+   "hid": "G_sky_quay",
+   "state": "CIRCLE",
+   "perch": null,
+   "keepout": false,
+   "y": 13.213
+  },
+  {
+   "sp": "Seagull",
+   "hid": "G_sky_quay",
+   "state": "FLY",
+   "perch": [
+    "prop",
+    34.5,
+    -47,
+    2.4,
+    "crane jib"
+   ],
+   "keepout": false,
+   "y": 12.474
+  },
+  {
+   "sp": "Seagull",
+   "hid": "G_sky_quay",
+   "state": "PERCHED",
+   "perch": [
+    "prop",
+    -9.2,
+    -39.5,
+    0.95,
+    "lamp w2"
+   ],
+   "keepout": false,
+   "y": 0.95
+  },
+  {
+   "sp": "Pigeon",
+   "hid": "G_sky_quay",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    -14.933,
+    63.943,
+    15.8,
+    "B15"
+   ],
+   "keepout": false,
+   "y": 15.8
+  },
+  {
+   "sp": "Pigeon",
+   "hid": "G_sky_quay",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    -13.35,
+    52.192,
+    9,
+    "B02"
+   ],
+   "keepout": false,
+   "y": 9
+  }
+ ],
+ "butterflies": [
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -48.915,
+    19.044
+   ],
+   "above_ground_m": 0.394
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -40.58,
+    7.713
+   ],
+   "above_ground_m": 0.485
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -40.16,
+    4.976
+   ],
+   "above_ground_m": 0.693
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -46.631,
+    6.628
+   ],
+   "above_ground_m": 0.419
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -50.904,
+    31.271
+   ],
+   "above_ground_m": 0.712
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -41.07,
+    6.014
+   ],
+   "above_ground_m": 0.329
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    70.95,
+    31.495
+   ],
+   "above_ground_m": 0.777
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    68.474,
+    46.464
+   ],
+   "above_ground_m": 0.25
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    83.326,
+    37.094
+   ],
+   "above_ground_m": 0.317
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    75.757,
+    53.39
+   ],
+   "above_ground_m": 0.25
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    75.917,
+    26.844
+   ],
+   "above_ground_m": 0.34
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    57.459,
+    40.283
+   ],
+   "above_ground_m": 3.7
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    69.193,
+    65.621
+   ],
+   "above_ground_m": 0.25
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    81.855,
+    70.671
+   ],
+   "above_ground_m": 0.643
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    79.825,
+    63.776
+   ],
+   "above_ground_m": 0.318
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    75.569,
+    61.301
+   ],
+   "above_ground_m": 0.676
+  },
+  {
+   "hid": "F_tea_lookout_stack",
+   "at": [
+    -5.902,
+    25.259
+   ],
+   "above_ground_m": 0.531
+  },
+  {
+   "hid": "F_tea_lookout_stack",
+   "at": [
+    23.577,
+    80.352
+   ],
+   "above_ground_m": 3.822
+  }
+ ]
+}

@@ -1,0 +1,238 @@
+[
+ {
+  "id": "CUS-Awning_burgundy",
+  "source_file": null,
+  "dimensions_m": [
+   2.0,
+   1.53,
+   0.92
+  ],
+  "triangles": 48,
+  "materials": [
+   "CUS_cloth_burgundy",
+   "CUS_cloth_cream",
+   "CUS_sign_timber"
+  ]
+ },
+ {
+  "id": "CUS-Awning_blue",
+  "source_file": null,
+  "dimensions_m": [
+   2.0,
+   1.53,
+   0.92
+  ],
+  "triangles": 48,
+  "materials": [
+   "CUS_cloth_blue",
+   "CUS_cloth_cream",
+   "CUS_sign_timber"
+  ]
+ },
+ {
+  "id": "CUS-Bunting_10",
+  "source_file": null,
+  "dimensions_m": [
+   10.0,
+   0.0,
+   0.99
+  ],
+  "triangles": 42,
+  "materials": [
+   "CUS_cloth_blue",
+   "CUS_cloth_burgundy",
+   "CUS_cloth_cream",
+   "CUS_cloth_gold",
+   "CUS_sign_iron"
+  ]
+ },
+ {
+  "id": "CUS-PavingSeal",
+  "source_file": null,
+  "dimensions_m": [
+   3.2,
+   3.2,
+   0.03
+  ],
+  "triangles": 266,
+  "materials": [
+   "CUS_pave_burgundy",
+   "CUS_pave_gold"
+  ]
+ },
+ {
+  "id": "CUS-Sign_Cup_wood",
+  "source_file": null,
+  "dimensions_m": [
+   0.09,
+   0.95,
+   0.56
+  ],
+  "triangles": 116,
+  "materials": [
+   "CUS_sign_field_wood",
+   "CUS_sign_iron",
+   "CUS_sign_paint",
+   "CUS_sign_timber"
+  ]
+ },
+ {
+  "id": "CUS-Seal_NiagaAwan",
+  "source_file": null,
+  "dimensions_m": [
+   1.0,
+   0.13,
+   1.0
+  ],
+  "triangles": 440,
+  "materials": [
+   "CUS_guild_blue",
+   "CUS_guild_burgundy",
+   "CUS_guild_gold"
+  ]
+ },
+ {
+  "id": "MV-Roof_RoundTiles_8x10",
+  "source_file": null,
+  "dimensions_m": [
+   9.95,
+   11.86,
+   6.78
+  ],
+  "triangles": 4480,
+  "materials": [
+   "MI_RoundTiles",
+   "MI_WoodTrim"
+  ]
+ },
+ {
+  "id": "MV-Roof_RoundTiles_4x8",
+  "source_file": null,
+  "dimensions_m": [
+   5.51,
+   9.68,
+   4.23
+  ],
+  "triangles": 3116,
+  "materials": [
+   "MI_RoundTiles",
+   "MI_WoodTrim"
+  ]
+ },
+ {
+  "id": "MV-Balcony_Cross_Straight",
+  "source_file": null,
+  "dimensions_m": [
+   2.0,
+   0.21,
+   1.23
+  ],
+  "triangles": 132,
+  "materials": [
+   "MI_WoodTrim"
+  ]
+ },
+ {
+  "id": "MV-Overhang_Plaster_Short",
+  "source_file": null,
+  "dimensions_m": [
+   2.0,
+   1.32,
+   3.12
+  ],
+  "triangles": 222,
+  "materials": [
+   "MI_Plaster",
+   "MI_WoodTrim"
+  ]
+ },
+ {
+  "id": "MV-Wall_Arch",
+  "source_file": null,
+  "dimensions_m": [
+   2.0,
+   0.06,
+   3.0
+  ],
+  "triangles": 196,
+  "materials": [
+   "MI_WoodTrim"
+  ]
+ },
+ {
+  "id": "ALE-Streetlamp01",
+  "source_file": "Streetlamp01.gltf",
+  "dimensions_m": [
+   1.47,
+   2.18,
+   4.02
+  ],
+  "triangles": 950,
+  "materials": [
+   "Emission_Yellow",
+   "Metal01",
+   "Metal02",
+   "Rope",
+   "StoneBrick1",
+   "WoodDetails",
+   "WoodPlank03"
+  ]
+ },
+ {
+  "id": "ALE-Market03",
+  "source_file": "Market03.gltf",
+  "dimensions_m": [
+   5.77,
+   5.89,
+   4.09
+  ],
+  "triangles": 1078,
+  "materials": [
+   "Metal02",
+   "WoodDetails",
+   "WoodPlank04"
+  ]
+ },
+ {
+  "id": "ALE-Sign01",
+  "source_file": "Sign01.gltf",
+  "dimensions_m": [
+   0.75,
+   0.23,
+   1.36
+  ],
+  "triangles": 224,
+  "materials": [
+   "Metal02",
+   "WoodPlank03"
+  ]
+ },
+ {
+  "id": "ALE-Brazier",
+  "source_file": "Brazier.gltf",
+  "dimensions_m": [
+   1.2,
+   0.96,
+   0.62
+  ],
+  "triangles": 642,
+  "materials": [
+   "Ember",
+   "Metal02",
+   "Wood_Burn"
+  ]
+ },
+ {
+  "id": "ALE-Bench01",
+  "source_file": "Bench01.gltf",
+  "dimensions_m": [
+   2.38,
+   0.64,
+   0.44
+  ],
+  "triangles": 124,
+  "materials": [
+   "WoodPlank03"
+  ]
+ }
+]

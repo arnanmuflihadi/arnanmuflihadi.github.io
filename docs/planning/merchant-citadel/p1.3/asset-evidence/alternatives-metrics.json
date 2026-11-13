@@ -1,0 +1,935 @@
+{
+ "P12": {
+  "title": "P1.2 baseline (approved positions)",
+  "buildings": 17,
+  "new_buildings": 0,
+  "moved_or_changed": 0,
+  "kept_in_place": 17,
+  "archetypes_used": {
+   "A01": 1,
+   "A02": 2,
+   "A03": 3,
+   "A03b": 1,
+   "A04": 2,
+   "A04b": 2,
+   "A05": 2,
+   "A06": 2,
+   "A07": 1,
+   "A08": 1
+  },
+  "archetype_count": 10,
+  "stalls": 12,
+  "envelope": [
+   -28.5,
+   46,
+   -8,
+   90
+  ],
+  "envelope_size": [
+   74.5,
+   98
+  ],
+  "support_zone": [
+   94.5,
+   134
+  ],
+  "footprint_area_m2": 1344,
+  "coverage_pct": 18.4,
+  "nodes": 31,
+  "edges": 39,
+  "loops": 9,
+  "network_m": 437.4,
+  "primary_route_m": 76.8,
+  "enclosure_lines": {
+   "Merchant street, west side": [
+    26.0,
+    77,
+    77
+   ],
+   "Merchant street, east side": [
+    26.0,
+    69,
+    69
+   ],
+   "Artisan lane, outer side": [
+    30.0,
+    60,
+    60
+   ],
+   "Artisan lane, inner side": [
+    30.0,
+    0,
+    0
+   ],
+   "Warehouse lane, outer side": [
+    30.0,
+    40,
+    40
+   ],
+   "Warehouse lane, inner side": [
+    30.0,
+    0,
+    0
+   ],
+   "Bazaar, west edge": [
+    26.0,
+    0,
+    0
+   ],
+   "Bazaar, east edge": [
+    26.0,
+    0,
+    0
+   ],
+   "Bazaar, south edge": [
+    44.0,
+    32,
+    0
+   ],
+   "Bazaar, north edge": [
+    44.0,
+    18,
+    0
+   ],
+   "Arrival court, west edge": [
+    16.0,
+    0,
+    0
+   ],
+   "Arrival court, east edge": [
+    16.0,
+    0,
+    0
+   ],
+   "Civic court, west edge": [
+    12.0,
+    67,
+    67
+   ],
+   "Civic court, east edge": [
+    12.0,
+    50,
+    50
+   ]
+  },
+  "enclosure_groups_wall_active_pct": {
+   "Merchant street": [
+    73,
+    73
+   ],
+   "Artisan lane": [
+    30,
+    30
+   ],
+   "Warehouse lane": [
+    20,
+    20
+   ],
+   "Bazaar perimeter": [
+    16,
+    0
+   ],
+   "Arrival court sides": [
+    0,
+    0
+   ],
+   "Civic court sides": [
+    58,
+    58
+   ]
+  },
+  "overall_wall_pct": 28,
+  "overall_active_pct": 22,
+  "triangles_buildings": 481441,
+  "triangles_estimate_unoptimised": 847312,
+  "triangles_estimate_after_substitutions": 474949,
+  "collision_proxies_buildings": 51,
+  "camera_directions": 76,
+  "camera_fully_clear": 50,
+  "camera_secondary_mean_clear_pct": 69,
+  "camera_worst": [
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N17->N16",
+    "type": "scenic",
+    "clear_pct": 0,
+    "min_dist": 0.9
+   },
+   {
+    "travel": "N25->N21",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 5.9
+   }
+  ],
+  "hall_tower_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N27",
+   "N06",
+   "N23",
+   "N24"
+  ],
+  "hall_porch_visible_from": [
+   "N01",
+   "N02",
+   "N27",
+   "N06",
+   "N07",
+   "N23",
+   "N24"
+  ],
+  "hall_points_tested": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N27",
+   "N06",
+   "N07",
+   "N10",
+   "N13",
+   "N11",
+   "N14",
+   "N23",
+   "N24",
+   "N16"
+  ]
+ },
+ "A": {
+  "title": "A - Refined existing layout",
+  "buildings": 18,
+  "new_buildings": 1,
+  "moved_or_changed": 9,
+  "kept_in_place": 8,
+  "archetypes_used": {
+   "A01": 1,
+   "A02": 2,
+   "A03": 3,
+   "A03b": 1,
+   "A04": 2,
+   "A04b": 3,
+   "A05": 2,
+   "A06": 2,
+   "A07": 1,
+   "A08": 1
+  },
+  "archetype_count": 10,
+  "stalls": 12,
+  "envelope": [
+   -28.5,
+   42,
+   -8,
+   90
+  ],
+  "envelope_size": [
+   70.5,
+   98
+  ],
+  "support_zone": [
+   90.5,
+   134
+  ],
+  "footprint_area_m2": 1368,
+  "coverage_pct": 19.8,
+  "nodes": 35,
+  "edges": 45,
+  "loops": 11,
+  "network_m": 463.6,
+  "primary_route_m": 76.8,
+  "enclosure_lines": {
+   "Merchant street, west side": [
+    26.0,
+    75,
+    75
+   ],
+   "Merchant street, east side": [
+    26.0,
+    67,
+    67
+   ],
+   "Artisan lane, outer side": [
+    30.0,
+    60,
+    60
+   ],
+   "Artisan lane, inner side": [
+    30.0,
+    0,
+    0
+   ],
+   "Warehouse lane, outer side": [
+    30.0,
+    27,
+    27
+   ],
+   "Warehouse lane, inner side": [
+    30.0,
+    0,
+    0
+   ],
+   "Bazaar, west edge": [
+    26.0,
+    0,
+    0
+   ],
+   "Bazaar, east edge": [
+    26.0,
+    15,
+    15
+   ],
+   "Bazaar, south edge": [
+    44.0,
+    32,
+    0
+   ],
+   "Bazaar, north edge": [
+    44.0,
+    36,
+    18
+   ],
+   "Arrival court, west edge": [
+    16.0,
+    38,
+    38
+   ],
+   "Arrival court, east edge": [
+    16.0,
+    0,
+    0
+   ],
+   "Civic court, west edge": [
+    12.0,
+    83,
+    67
+   ],
+   "Civic court, east edge": [
+    12.0,
+    67,
+    50
+   ]
+  },
+  "enclosure_groups_wall_active_pct": {
+   "Merchant street": [
+    71,
+    71
+   ],
+   "Artisan lane": [
+    30,
+    30
+   ],
+   "Warehouse lane": [
+    14,
+    14
+   ],
+   "Bazaar perimeter": [
+    24,
+    8
+   ],
+   "Arrival court sides": [
+    19,
+    19
+   ],
+   "Civic court sides": [
+    75,
+    58
+   ]
+  },
+  "overall_wall_pct": 33,
+  "overall_active_pct": 26,
+  "triangles_buildings": 489575,
+  "triangles_estimate_unoptimised": 855446,
+  "triangles_estimate_after_substitutions": 480861,
+  "collision_proxies_buildings": 52,
+  "camera_directions": 88,
+  "camera_fully_clear": 57,
+  "camera_secondary_mean_clear_pct": 77,
+  "camera_worst": [
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N22->N07",
+    "type": "secondary",
+    "clear_pct": 0,
+    "min_dist": 2.2
+   },
+   {
+    "travel": "N17->N16",
+    "type": "scenic",
+    "clear_pct": 0,
+    "min_dist": 1.9
+   }
+  ],
+  "hall_tower_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N27",
+   "N06"
+  ],
+  "hall_porch_visible_from": [
+   "N01",
+   "N02",
+   "N27",
+   "N06",
+   "N07",
+   "N24"
+  ],
+  "hall_points_tested": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N27",
+   "N06",
+   "N07",
+   "N10",
+   "N13",
+   "N11",
+   "N14",
+   "N23",
+   "N24",
+   "N16"
+  ]
+ },
+ "B": {
+  "title": "B - Compact Merchant Citadel",
+  "buildings": 22,
+  "new_buildings": 5,
+  "moved_or_changed": 13,
+  "kept_in_place": 4,
+  "archetypes_used": {
+   "A01": 1,
+   "A02": 2,
+   "A03": 2,
+   "A03b": 2,
+   "A03c": 1,
+   "A04": 2,
+   "A04b": 4,
+   "A05": 4,
+   "A06": 2,
+   "A07": 1,
+   "A08": 1
+  },
+  "archetype_count": 11,
+  "stalls": 12,
+  "envelope": [
+   -28.5,
+   42,
+   -8,
+   90
+  ],
+  "envelope_size": [
+   70.5,
+   98
+  ],
+  "support_zone": [
+   90.5,
+   134
+  ],
+  "footprint_area_m2": 1552,
+  "coverage_pct": 22.5,
+  "nodes": 37,
+  "edges": 47,
+  "loops": 11,
+  "network_m": 452.7,
+  "primary_route_m": 76.8,
+  "enclosure_lines": {
+   "Merchant street, west side": [
+    26.0,
+    75,
+    75
+   ],
+   "Merchant street, east side": [
+    26.0,
+    67,
+    67
+   ],
+   "Artisan lane, outer side": [
+    30.0,
+    60,
+    60
+   ],
+   "Artisan lane, inner side": [
+    30.0,
+    65,
+    0
+   ],
+   "Warehouse lane, outer side": [
+    30.0,
+    53,
+    53
+   ],
+   "Warehouse lane, inner side": [
+    30.0,
+    38,
+    0
+   ],
+   "Bazaar, west edge": [
+    26.0,
+    31,
+    31
+   ],
+   "Bazaar, east edge": [
+    26.0,
+    31,
+    15
+   ],
+   "Bazaar, south edge": [
+    44.0,
+    48,
+    0
+   ],
+   "Bazaar, north edge": [
+    44.0,
+    36,
+    36
+   ],
+   "Arrival court, west edge": [
+    16.0,
+    38,
+    38
+   ],
+   "Arrival court, east edge": [
+    16.0,
+    50,
+    50
+   ],
+   "Civic court, west edge": [
+    12.0,
+    83,
+    67
+   ],
+   "Civic court, east edge": [
+    12.0,
+    83,
+    67
+   ]
+  },
+  "enclosure_groups_wall_active_pct": {
+   "Merchant street": [
+    71,
+    71
+   ],
+   "Artisan lane": [
+    62,
+    30
+   ],
+   "Warehouse lane": [
+    46,
+    26
+   ],
+   "Bazaar perimeter": [
+    38,
+    20
+   ],
+   "Arrival court sides": [
+    44,
+    44
+   ],
+   "Civic court sides": [
+    83,
+    67
+   ]
+  },
+  "overall_wall_pct": 51,
+  "overall_active_pct": 35,
+  "triangles_buildings": 588881,
+  "triangles_estimate_unoptimised": 954752,
+  "triangles_estimate_after_substitutions": 539065,
+  "collision_proxies_buildings": 56,
+  "camera_directions": 92,
+  "camera_fully_clear": 52,
+  "camera_secondary_mean_clear_pct": 69,
+  "camera_worst": [
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N18->N11",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N14",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   }
+  ],
+  "hall_tower_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N27",
+   "N06",
+   "N10"
+  ],
+  "hall_porch_visible_from": [
+   "N01",
+   "N02",
+   "N27",
+   "N06",
+   "N07"
+  ],
+  "hall_points_tested": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N27",
+   "N06",
+   "N07",
+   "N10",
+   "N13",
+   "N11",
+   "N14",
+   "N23",
+   "N24",
+   "N16"
+  ]
+ },
+ "C": {
+  "title": "C - Expanded Trading Quarter",
+  "buildings": 24,
+  "new_buildings": 7,
+  "moved_or_changed": 13,
+  "kept_in_place": 4,
+  "archetypes_used": {
+   "A01": 1,
+   "A02": 2,
+   "A03": 2,
+   "A03b": 2,
+   "A03c": 1,
+   "A04": 3,
+   "A04b": 5,
+   "A05": 4,
+   "A06": 2,
+   "A07": 1,
+   "A08": 1
+  },
+  "archetype_count": 11,
+  "stalls": 12,
+  "envelope": [
+   -28.5,
+   42,
+   -8,
+   90
+  ],
+  "envelope_size": [
+   70.5,
+   98
+  ],
+  "support_zone": [
+   90.5,
+   134
+  ],
+  "footprint_area_m2": 1600,
+  "coverage_pct": 23.2,
+  "nodes": 37,
+  "edges": 47,
+  "loops": 11,
+  "network_m": 452.7,
+  "primary_route_m": 76.8,
+  "enclosure_lines": {
+   "Merchant street, west side": [
+    26.0,
+    75,
+    75
+   ],
+   "Merchant street, east side": [
+    26.0,
+    67,
+    67
+   ],
+   "Artisan lane, outer side": [
+    30.0,
+    60,
+    60
+   ],
+   "Artisan lane, inner side": [
+    30.0,
+    65,
+    0
+   ],
+   "Warehouse lane, outer side": [
+    30.0,
+    53,
+    53
+   ],
+   "Warehouse lane, inner side": [
+    30.0,
+    38,
+    0
+   ],
+   "Bazaar, west edge": [
+    26.0,
+    54,
+    54
+   ],
+   "Bazaar, east edge": [
+    26.0,
+    46,
+    31
+   ],
+   "Bazaar, south edge": [
+    44.0,
+    48,
+    0
+   ],
+   "Bazaar, north edge": [
+    44.0,
+    36,
+    36
+   ],
+   "Arrival court, west edge": [
+    16.0,
+    38,
+    38
+   ],
+   "Arrival court, east edge": [
+    16.0,
+    50,
+    50
+   ],
+   "Civic court, west edge": [
+    12.0,
+    83,
+    67
+   ],
+   "Civic court, east edge": [
+    12.0,
+    83,
+    67
+   ]
+  },
+  "enclosure_groups_wall_active_pct": {
+   "Merchant street": [
+    71,
+    71
+   ],
+   "Artisan lane": [
+    62,
+    30
+   ],
+   "Warehouse lane": [
+    46,
+    26
+   ],
+   "Bazaar perimeter": [
+    45,
+    27
+   ],
+   "Arrival court sides": [
+    44,
+    44
+   ],
+   "Civic court sides": [
+    83,
+    67
+   ]
+  },
+  "overall_wall_pct": 54,
+  "overall_active_pct": 38,
+  "triangles_buildings": 605215,
+  "triangles_estimate_unoptimised": 971086,
+  "triangles_estimate_after_substitutions": 550955,
+  "collision_proxies_buildings": 58,
+  "camera_directions": 92,
+  "camera_fully_clear": 51,
+  "camera_secondary_mean_clear_pct": 68,
+  "camera_worst": [
+   {
+    "travel": "N08->N07",
+    "type": "primary",
+    "clear_pct": 0,
+    "min_dist": 4.8
+   },
+   {
+    "travel": "N18->N11",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N18",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N31->N30",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N14",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N19->N32",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N19",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   },
+   {
+    "travel": "N32->N29",
+    "type": "market",
+    "clear_pct": 0,
+    "min_dist": 2.3
+   }
+  ],
+  "hall_tower_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N27",
+   "N06",
+   "N10"
+  ],
+  "hall_porch_visible_from": [
+   "N01",
+   "N02",
+   "N27",
+   "N06",
+   "N07"
+  ],
+  "hall_points_tested": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N27",
+   "N06",
+   "N07",
+   "N10",
+   "N13",
+   "N11",
+   "N14",
+   "N23",
+   "N24",
+   "N16"
+  ]
+ }
+}

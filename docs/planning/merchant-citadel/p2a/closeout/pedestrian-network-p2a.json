@@ -1,0 +1,952 @@
+{
+ "revision": "P2-A closeout",
+ "source": "P1.4 layout D, corrected",
+ "method": "every edge walked in both directions with the unmodified controller (60 Hz autopilot, W held, 2.1 m/s), body radius 0.34 m, camera in the closeout default mode",
+ "summary": {
+  "nodes_in_slice": 28,
+  "not_standable": [],
+  "edges_tested": 34,
+  "edges_failed": [],
+  "min_node_clearance_m": 0.409
+ },
+ "corrections": {
+  "adjust": {
+   "B04": [
+    0.0,
+    -1.2
+   ]
+  },
+  "N17": [
+   36.16,
+   62.24
+  ],
+  "N29": [
+   2.9,
+   49
+  ],
+  "N30": [
+   -2.9,
+   49
+  ]
+ },
+ "nodes": [
+  {
+   "id": "N01",
+   "x": 0,
+   "n": 0,
+   "label": "Arrival court",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 9.781,
+   "nearest_solid": "B04:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N02",
+   "x": 0,
+   "n": 5,
+   "label": "Gateway centre lane",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 5.94,
+   "nearest_solid": "B04:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N03",
+   "x": 0,
+   "n": 20,
+   "label": "Simpang Timbangan (street junction)",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 4.225,
+   "nearest_solid": "B04:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N04",
+   "x": 0,
+   "n": 37.5,
+   "label": "Bazaar south entrance",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 4.449,
+   "nearest_solid": "dressing:prop",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N05",
+   "x": 0,
+   "n": 45.5,
+   "label": "Bazaar, south of the market cross",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 2.16,
+   "nearest_solid": "M01:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N29",
+   "x": 2.9,
+   "n": 49,
+   "label": "Cross-passage east of the cross (centre of the 3.85 m gap to the awning-row posts)",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 1.56,
+   "nearest_solid": "M01:wall",
+   "changed_from_p1_4": true
+  },
+  {
+   "id": "N30",
+   "x": -2.9,
+   "n": 49,
+   "label": "Cross-passage west of the cross (centre of the 3.85 m gap to the awning-row posts)",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 1.56,
+   "nearest_solid": "M01:wall",
+   "changed_from_p1_4": true
+  },
+  {
+   "id": "N27",
+   "x": 0,
+   "n": 52.5,
+   "label": "Bazaar, north of the market cross",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 2.16,
+   "nearest_solid": "M01:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N06",
+   "x": 0,
+   "n": 59.4,
+   "label": "Foot of the terrace stairs",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 4.576,
+   "nearest_solid": "R02:post",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N07",
+   "x": 0,
+   "n": 67,
+   "label": "Civic terrace centre (+1.0 m)",
+   "support_y_m": 1.01,
+   "standable": true,
+   "clearance_to_solid_m": 6.532,
+   "nearest_solid": "TERRACE:balustrade",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N08",
+   "x": 0,
+   "n": 75,
+   "label": "Exchange Hall podium, top of stairs (+2.0 m)",
+   "support_y_m": 2.01,
+   "standable": true,
+   "clearance_to_solid_m": 3.625,
+   "nearest_solid": "B01:post",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N35",
+   "x": -9,
+   "n": 4,
+   "label": "Arrival court west exit",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 4.46,
+   "nearest_solid": "B04:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N09",
+   "x": -16,
+   "n": 4,
+   "label": "Artisan lane south",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 5.32,
+   "nearest_solid": "B04:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N10",
+   "x": -16,
+   "n": 20,
+   "label": "Artisan lane at the cross street",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 2.506,
+   "nearest_solid": "dressing:prop",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N11",
+   "x": -16,
+   "n": 38.5,
+   "label": "Bazaar south-west",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 3.626,
+   "nearest_solid": "dressing:post",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N36",
+   "x": 9,
+   "n": 4,
+   "label": "Arrival court east exit",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 5.66,
+   "nearest_solid": "B07:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N12",
+   "x": 16,
+   "n": 4,
+   "label": "Warehouse lane south",
+   "support_y_m": 0,
+   "standable": true,
+   "clearance_to_solid_m": 6.368,
+   "nearest_solid": "B07:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N13",
+   "x": 16,
+   "n": 20,
+   "label": "Warehouse lane at the cross street",
+   "support_y_m": 0,
+   "standable": true,
+   "clearance_to_solid_m": 3.38,
+   "nearest_solid": "dressing:post",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N14",
+   "x": 16,
+   "n": 38.5,
+   "label": "Bazaar south-east",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 3.211,
+   "nearest_solid": "B09:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N38",
+   "x": -19.2,
+   "n": 41,
+   "label": "Market west side lane, south",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 1.16,
+   "nearest_solid": "E03:post",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N23",
+   "x": -19.2,
+   "n": 58.6,
+   "label": "Bazaar north-west",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 6.703,
+   "nearest_solid": "TERRACE:balustrade",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N39",
+   "x": 19.2,
+   "n": 41,
+   "label": "Market east side lane, south",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 7.263,
+   "nearest_solid": "B09:wall",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N24",
+   "x": 19.2,
+   "n": 58.6,
+   "label": "Bazaar north-east (tea lane entrance)",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 6.703,
+   "nearest_solid": "TERRACE:balustrade",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N41",
+   "x": 26,
+   "n": 58,
+   "label": "Tea lane",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 3.126,
+   "nearest_solid": "dressing:post",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N16",
+   "x": 36,
+   "n": 57,
+   "label": "Lookout terrace",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 2.414,
+   "nearest_solid": "dressing:prop",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N17",
+   "x": 36.16,
+   "n": 62.24,
+   "label": "Tea house veranda (centre of the gap between the first two porch posts)",
+   "support_y_m": 0.01,
+   "standable": true,
+   "clearance_to_solid_m": 0.409,
+   "nearest_solid": "B17:post",
+   "changed_from_p1_4": true
+  },
+  {
+   "id": "N21",
+   "x": -9.5,
+   "n": 68,
+   "label": "Terrace west (benches)",
+   "support_y_m": 1.01,
+   "standable": true,
+   "clearance_to_solid_m": 1.785,
+   "nearest_solid": "dressing:bench",
+   "changed_from_p1_4": false
+  },
+  {
+   "id": "N22",
+   "x": 9.5,
+   "n": 68,
+   "label": "Terrace east (benches)",
+   "support_y_m": 1.01,
+   "standable": true,
+   "clearance_to_solid_m": 1.785,
+   "nearest_solid": "dressing:bench",
+   "changed_from_p1_4": false
+  }
+ ],
+ "edges": [
+  {
+   "a": "N01",
+   "b": "N02",
+   "kind": "primary",
+   "via": [],
+   "length_m": 5,
+   "walk_seconds_ab": 2.25,
+   "walk_seconds_ba": 2.25,
+   "min_side_clearance_m": 6.004,
+   "narrowest_against": "B04:wall",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N02",
+   "b": "N03",
+   "kind": "primary",
+   "via": [],
+   "length_m": 15,
+   "walk_seconds_ab": 7,
+   "walk_seconds_ba": 7,
+   "min_side_clearance_m": 3.66,
+   "narrowest_against": "B04:wall",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N03",
+   "b": "N04",
+   "kind": "primary",
+   "via": [],
+   "length_m": 17.5,
+   "walk_seconds_ab": 8.2,
+   "walk_seconds_ba": 8.2,
+   "min_side_clearance_m": 3.615,
+   "narrowest_against": "dressing:prop",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N04",
+   "b": "N05",
+   "kind": "primary",
+   "via": [],
+   "length_m": 8,
+   "walk_seconds_ab": 3.667,
+   "walk_seconds_ba": 3.667,
+   "min_side_clearance_m": 2.265,
+   "narrowest_against": "M01:wall",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N05",
+   "b": "N29",
+   "kind": "primary",
+   "via": [
+    [
+     2.9,
+     46.4
+    ]
+   ],
+   "length_m": 4.545,
+   "walk_seconds_ab": 2.6,
+   "walk_seconds_ba": 2.583,
+   "min_side_clearance_m": 1.301,
+   "narrowest_against": "R03:post",
+   "min_camera_m": 9.998,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N29",
+   "b": "N27",
+   "kind": "primary",
+   "via": [
+    [
+     2.9,
+     51.6
+    ]
+   ],
+   "length_m": 4.545,
+   "walk_seconds_ab": 2.583,
+   "walk_seconds_ba": 2.6,
+   "min_side_clearance_m": 1.301,
+   "narrowest_against": "R04:post",
+   "min_camera_m": 12.085,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N05",
+   "b": "N30",
+   "kind": "primary",
+   "via": [
+    [
+     -2.9,
+     46.4
+    ]
+   ],
+   "length_m": 4.545,
+   "walk_seconds_ab": 2.6,
+   "walk_seconds_ba": 2.583,
+   "min_side_clearance_m": 1.301,
+   "narrowest_against": "R01:post",
+   "min_camera_m": 11.31,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N30",
+   "b": "N27",
+   "kind": "primary",
+   "via": [
+    [
+     -2.9,
+     51.6
+    ]
+   ],
+   "length_m": 4.545,
+   "walk_seconds_ab": 2.583,
+   "walk_seconds_ba": 2.6,
+   "min_side_clearance_m": 1.301,
+   "narrowest_against": "R02:post",
+   "min_camera_m": 12.836,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N27",
+   "b": "N06",
+   "kind": "primary",
+   "via": [],
+   "length_m": 6.9,
+   "walk_seconds_ab": 3.15,
+   "walk_seconds_ba": 3.15,
+   "min_side_clearance_m": 2.265,
+   "narrowest_against": "M01:wall",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N06",
+   "b": "N07",
+   "kind": "primary",
+   "via": [],
+   "length_m": 7.6,
+   "walk_seconds_ab": 3.483,
+   "walk_seconds_ba": 3.483,
+   "min_side_clearance_m": 4.594,
+   "narrowest_against": "R02:post",
+   "min_camera_m": 10.603,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N07",
+   "b": "N08",
+   "kind": "primary, stairs",
+   "via": [],
+   "length_m": 8,
+   "walk_seconds_ab": 3.667,
+   "walk_seconds_ba": 3.667,
+   "min_side_clearance_m": 3.704,
+   "narrowest_against": "B01:post",
+   "min_camera_m": 2.974,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N01",
+   "b": "N35",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 9.849,
+   "walk_seconds_ab": 4.55,
+   "walk_seconds_ba": 4.55,
+   "min_side_clearance_m": 4.503,
+   "narrowest_against": "B04:wall",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N35",
+   "b": "N09",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 7,
+   "walk_seconds_ab": 3.2,
+   "walk_seconds_ba": 3.2,
+   "min_side_clearance_m": 4.46,
+   "narrowest_against": "B04:wall",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N09",
+   "b": "N10",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 16,
+   "walk_seconds_ab": 7.483,
+   "walk_seconds_ba": 7.483,
+   "min_side_clearance_m": 2.581,
+   "narrowest_against": "dressing:prop",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N10",
+   "b": "N11",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 18.5,
+   "walk_seconds_ab": 8.667,
+   "walk_seconds_ba": 8.667,
+   "min_side_clearance_m": 1.685,
+   "narrowest_against": "dressing:prop",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N11",
+   "b": "N04",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 16.031,
+   "walk_seconds_ab": 7.5,
+   "walk_seconds_ba": 7.5,
+   "min_side_clearance_m": 1.07,
+   "narrowest_against": "B06:wall",
+   "min_camera_m": 8.608,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N10",
+   "b": "N03",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 16,
+   "walk_seconds_ab": 7.483,
+   "walk_seconds_ba": 7.483,
+   "min_side_clearance_m": 1.66,
+   "narrowest_against": "dressing:prop",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N01",
+   "b": "N36",
+   "kind": "service",
+   "via": [],
+   "length_m": 9.849,
+   "walk_seconds_ab": 4.55,
+   "walk_seconds_ba": 4.55,
+   "min_side_clearance_m": 5.703,
+   "narrowest_against": "B07:wall",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N36",
+   "b": "N12",
+   "kind": "service",
+   "via": [],
+   "length_m": 7,
+   "walk_seconds_ab": 3.2,
+   "walk_seconds_ba": 3.2,
+   "min_side_clearance_m": 5.66,
+   "narrowest_against": "B07:wall",
+   "min_camera_m": 12.975,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N12",
+   "b": "N13",
+   "kind": "service",
+   "via": [],
+   "length_m": 16,
+   "walk_seconds_ab": 7.483,
+   "walk_seconds_ba": 7.483,
+   "min_side_clearance_m": 2.26,
+   "narrowest_against": "dressing:post",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N13",
+   "b": "N14",
+   "kind": "service",
+   "via": [],
+   "length_m": 18.5,
+   "walk_seconds_ab": 8.667,
+   "walk_seconds_ba": 8.667,
+   "min_side_clearance_m": 1.685,
+   "narrowest_against": "dressing:prop",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N14",
+   "b": "N04",
+   "kind": "service",
+   "via": [],
+   "length_m": 16.031,
+   "walk_seconds_ab": 7.5,
+   "walk_seconds_ba": 7.5,
+   "min_side_clearance_m": 0.871,
+   "narrowest_against": "B09:wall",
+   "min_camera_m": 4.571,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N03",
+   "b": "N13",
+   "kind": "service",
+   "via": [],
+   "length_m": 16,
+   "walk_seconds_ab": 7.483,
+   "walk_seconds_ba": 7.483,
+   "min_side_clearance_m": 1.66,
+   "narrowest_against": "B08:wall",
+   "min_camera_m": 12.975,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N11",
+   "b": "N38",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 4.061,
+   "walk_seconds_ab": 1.8,
+   "walk_seconds_ba": 1.8,
+   "min_side_clearance_m": 1.265,
+   "narrowest_against": "E03:post",
+   "min_camera_m": 3.435,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N38",
+   "b": "N23",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 17.6,
+   "walk_seconds_ab": 8.25,
+   "walk_seconds_ba": 8.25,
+   "min_side_clearance_m": 0.86,
+   "narrowest_against": "E03:post",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N14",
+   "b": "N39",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 4.061,
+   "walk_seconds_ab": 1.8,
+   "walk_seconds_ba": 1.8,
+   "min_side_clearance_m": 3.315,
+   "narrowest_against": "B09:wall",
+   "min_camera_m": 3.646,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N39",
+   "b": "N24",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 17.6,
+   "walk_seconds_ab": 8.25,
+   "walk_seconds_ba": 8.25,
+   "min_side_clearance_m": 6.774,
+   "narrowest_against": "TERRACE:balustrade",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N24",
+   "b": "N41",
+   "kind": "scenic",
+   "via": [],
+   "length_m": 6.826,
+   "walk_seconds_ab": 3.117,
+   "walk_seconds_ba": 3.117,
+   "min_side_clearance_m": 3.192,
+   "narrowest_against": "dressing:post",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N41",
+   "b": "N16",
+   "kind": "scenic",
+   "via": [],
+   "length_m": 10.05,
+   "walk_seconds_ab": 4.65,
+   "walk_seconds_ba": 4.65,
+   "min_side_clearance_m": 1.547,
+   "narrowest_against": "dressing:prop",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N16",
+   "b": "N17",
+   "kind": "scenic",
+   "via": [],
+   "length_m": 5.242,
+   "walk_seconds_ab": 2.367,
+   "walk_seconds_ba": 2.367,
+   "min_side_clearance_m": 0.3,
+   "narrowest_against": "B17:post",
+   "min_camera_m": 1.504,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N23",
+   "b": "N06",
+   "kind": "secondary",
+   "via": [
+    [
+     -7.5,
+     60.3
+    ]
+   ],
+   "length_m": 19.217,
+   "walk_seconds_ab": 9.083,
+   "walk_seconds_ba": 9.083,
+   "min_side_clearance_m": 1.007,
+   "narrowest_against": "R02:post",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N24",
+   "b": "N06",
+   "kind": "secondary",
+   "via": [
+    [
+     7.5,
+     60.3
+    ]
+   ],
+   "length_m": 19.217,
+   "walk_seconds_ab": 9.083,
+   "walk_seconds_ba": 9.083,
+   "min_side_clearance_m": 1.007,
+   "narrowest_against": "R04:post",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N07",
+   "b": "N21",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 9.552,
+   "walk_seconds_ab": 4.417,
+   "walk_seconds_ba": 4.417,
+   "min_side_clearance_m": 1.796,
+   "narrowest_against": "dressing:bench",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  },
+  {
+   "a": "N07",
+   "b": "N22",
+   "kind": "secondary",
+   "via": [],
+   "length_m": 9.552,
+   "walk_seconds_ab": 4.417,
+   "walk_seconds_ba": 4.417,
+   "min_side_clearance_m": 1.796,
+   "narrowest_against": "dressing:bench",
+   "min_camera_m": 12.979,
+   "stuck_ab_ba": [
+    0,
+    0
+   ],
+   "pass": true
+  }
+ ]
+}

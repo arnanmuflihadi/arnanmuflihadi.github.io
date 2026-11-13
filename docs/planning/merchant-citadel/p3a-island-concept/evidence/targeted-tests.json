@@ -1,0 +1,938 @@
+{
+ "forecourt_variants": {
+  "V0 rail closed (batch 5)": {
+   "to_door_79_3": {
+    "reached": false,
+    "min_cam": 2.96,
+    "min_alpha": 0.83,
+    "lt3": 0.003,
+    "lt1_5": 0,
+    "a09": 0.029,
+    "worst": [
+     -1.54,
+     73.67,
+     1.82,
+     2.96,
+     0.834
+    ]
+   },
+   "to_75_6": {
+    "min_cam": 2.95,
+    "min_alpha": 0.83,
+    "lt3": 0.005
+   },
+   "to_77_5": {
+    "reached": false,
+    "min_cam": 2.96,
+    "min_alpha": 0.83,
+    "lt3": 0.003,
+    "worst": [
+     -1.54,
+     73.67,
+     1.82,
+     2.96,
+     0.834
+    ]
+   }
+  },
+  "V1 no rail (batch 4)": {
+   "to_door_79_3": {
+    "reached": true,
+    "min_cam": 0.78,
+    "min_alpha": 0.14,
+    "lt3": 0.182,
+    "lt1_5": 0.152,
+    "a09": 0.228,
+    "worst": [
+     0.95,
+     79.66,
+     2.01,
+     0.78,
+     0.14
+    ]
+   },
+   "to_75_6": {
+    "min_cam": 1.65,
+    "min_alpha": 0.314,
+    "lt3": 0.042
+   },
+   "to_77_5": {
+    "reached": true,
+    "min_cam": 0.97,
+    "min_alpha": 0.14,
+    "lt3": 0.118,
+    "worst": [
+     0.64,
+     78.03,
+     2.01,
+     0.97,
+     0.183
+    ]
+   }
+  },
+  "V2 rail, 2 m centre gate": {
+   "to_door_79_3": {
+    "reached": true,
+    "min_cam": 0.78,
+    "min_alpha": 0.14,
+    "lt3": 0.188,
+    "lt1_5": 0.16,
+    "a09": 0.234,
+    "worst": [
+     0.95,
+     79.66,
+     2.01,
+     0.78,
+     0.14
+    ]
+   },
+   "to_75_6": {
+    "min_cam": 1.63,
+    "min_alpha": 0.307,
+    "lt3": 0.046
+   },
+   "to_77_5": {
+    "reached": true,
+    "min_cam": 0.94,
+    "min_alpha": 0.14,
+    "lt3": 0.157,
+    "worst": [
+     0.8,
+     76.69,
+     2.01,
+     0.94,
+     0.14
+    ]
+   }
+  },
+  "V3 rail, 2 m gate, porch roof camera-transparent": {
+   "to_door_79_3": {
+    "reached": true,
+    "min_cam": 1.74,
+    "min_alpha": 0.415,
+    "lt3": 0.027,
+    "lt1_5": 0,
+    "a09": 0.072,
+    "worst": [
+     1.39,
+     79.49,
+     2.01,
+     1.74,
+     0.504
+    ]
+   },
+   "to_75_6": {
+    "min_cam": 4.56,
+    "min_alpha": 1,
+    "lt3": 0
+   },
+   "to_77_5": {
+    "reached": true,
+    "min_cam": 2.89,
+    "min_alpha": 0.796,
+    "lt3": 0.022,
+    "worst": [
+     1.66,
+     76.83,
+     2.01,
+     2.89,
+     0.799
+    ]
+   }
+  },
+  "V4 no rail, porch roof camera-transparent": {
+   "to_door_79_3": {
+    "reached": true,
+    "min_cam": 1.74,
+    "min_alpha": 0.415,
+    "lt3": 0.027,
+    "lt1_5": 0,
+    "a09": 0.069,
+    "worst": [
+     1.39,
+     79.49,
+     2.01,
+     1.74,
+     0.504
+    ]
+   },
+   "to_75_6": {
+    "min_cam": 4.56,
+    "min_alpha": 1,
+    "lt3": 0
+   },
+   "to_77_5": {
+    "reached": true,
+    "min_cam": 2.89,
+    "min_alpha": 0.796,
+    "lt3": 0.023,
+    "worst": [
+     1.66,
+     76.83,
+     2.01,
+     2.89,
+     0.799
+    ]
+   }
+  },
+  "V5 no forecourt rail, chain across porch mouth n 78.0": {
+   "to_door_79_3": {
+    "reached": false,
+    "min_cam": 0.78,
+    "min_alpha": 0.14,
+    "lt3": 0.05,
+    "lt1_5": 0.037,
+    "a09": 0.097,
+    "worst": [
+     1.15,
+     77.51,
+     2.01,
+     0.78,
+     0.143
+    ]
+   },
+   "to_75_6": {
+    "min_cam": 1.65,
+    "min_alpha": 0.314,
+    "lt3": 0.042
+   },
+   "to_77_5": {
+    "reached": true,
+    "min_cam": 0.78,
+    "min_alpha": 0.14,
+    "lt3": 0.088,
+    "worst": [
+     1.15,
+     77.51,
+     2.01,
+     0.78,
+     0.143
+    ]
+   }
+  },
+  "V6 chain at porch mouth + porch roof camera-transparent": {
+   "to_door_79_3": {
+    "reached": false,
+    "min_cam": 2.89,
+    "min_alpha": 0.796,
+    "lt3": 0.01,
+    "lt1_5": 0,
+    "a09": 0.019,
+    "worst": [
+     1.73,
+     76.74,
+     2.01,
+     2.89,
+     0.801
+    ]
+   },
+   "to_75_6": {
+    "min_cam": 4.56,
+    "min_alpha": 1,
+    "lt3": 0
+   },
+   "to_77_5": {
+    "reached": true,
+    "min_cam": 2.89,
+    "min_alpha": 0.796,
+    "lt3": 0.018,
+    "worst": [
+     1.73,
+     76.74,
+     2.01,
+     2.89,
+     0.801
+    ]
+   }
+  }
+ },
+ "forecourt_spins_and_gaps": {
+  "V7_axis": {
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "min_cam": 1.74,
+   "min_alpha": 0.415,
+   "lt3": 0.027,
+   "a09": 0.069,
+   "worst": [
+    1.39,
+    79.49,
+    2.01,
+    1.74,
+    0.504
+   ]
+  },
+  "V7_diag": {
+   "reached": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "min_cam": 5,
+   "min_alpha": 1,
+   "lt3": 0,
+   "a09": 0,
+   "worst": [
+    -9,
+    70,
+    1.01,
+    5,
+    1
+   ]
+  },
+  "V7_spin_door": {
+   "at": [
+    0,
+    79.2
+   ],
+   "y": 2.01,
+   "min_cam": 2.87,
+   "median": 12.87,
+   "share_lt3": 0.13,
+   "min_alpha": 0.78,
+   "d": "12.92 12.92 12.92 12.92 12.92 12.92 12.92 3.03 4 3.82 3.49 2.98 2.87 2.98 3.49 3.89 3.92 3.1 11.85 12.87 12.92 12.92 12.92 12.92"
+  },
+  "V7_spin_mouth": {
+   "at": [
+    0,
+    77.4
+   ],
+   "y": 2.01,
+   "min_cam": 2.79,
+   "median": 12.9,
+   "share_lt3": 0.21,
+   "min_alpha": 0.75,
+   "d": "12.92 12.92 12.92 12.92 12.92 12.92 12.92 8.55 4.91 3.39 2.79 2.82 2.85 2.82 2.79 3.33 4.76 8.21 12.55 12.9 12.92 12.92 12.92 12.92"
+  },
+  "V7_spin_fore": {
+   "at": [
+    0,
+    75.4
+   ],
+   "y": 2.01,
+   "min_cam": 4.55,
+   "median": 12.92,
+   "share_lt3": 0,
+   "min_alpha": 1,
+   "d": "12.92 12.92 12.92 12.92 12.92 12.92 12.92 12.92 8.55 6.56 5.3 4.72 4.55 4.71 5.25 6.43 8.37 12.54 12.9 12.92 12.92 12.92 12.92 12.92"
+  },
+  "V1_spin_door": {
+   "at": [
+    0,
+    79.2
+   ],
+   "y": 2.01,
+   "min_cam": 0.77,
+   "median": 0.94,
+   "share_lt3": 1,
+   "min_alpha": 0.14,
+   "d": "0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.78 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.78 0.91 0.94 0.94 0.94 0.94 0.94 0.94"
+  },
+  "V1_spin_mouth": {
+   "at": [
+    0,
+    77.4
+   ],
+   "y": 2.01,
+   "min_cam": 0.94,
+   "median": 0.94,
+   "share_lt3": 0.63,
+   "min_alpha": 0.14,
+   "d": "12.92 12.92 12.92 12.92 12.92 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 0.94 11.9 12.87 12.92 12.92"
+  },
+  "V1_spin_fore": {
+   "at": [
+    0,
+    75.4
+   ],
+   "y": 2.01,
+   "min_cam": 2.17,
+   "median": 12.92,
+   "share_lt3": 0.29,
+   "min_alpha": 0.51,
+   "d": "12.92 12.92 12.92 12.92 12.92 12.92 12.92 12.92 2.8 3.1 2.54 2.39 2.17 2.39 2.54 3.1 2.8 11.85 12.87 12.92 12.92 12.92 12.92 12.92"
+  },
+  "V0_spin_fore": {
+   "at": [
+    0,
+    75.4
+   ],
+   "y": 2.01,
+   "min_cam": 2.17,
+   "median": 12.92,
+   "share_lt3": 0.29,
+   "min_alpha": 0.51,
+   "d": "12.92 12.92 12.92 12.92 12.92 12.92 12.92 12.92 2.8 3.1 2.54 2.39 2.17 2.39 2.54 3.1 2.8 11.85 12.87 12.92 12.92 12.92 12.92 12.92"
+  },
+  "gap_B10_B11": {
+   "reached": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "min_cam": 2.8,
+   "min_alpha": 0.752,
+   "end": [
+    -27.58,
+    0,
+    -15.8
+   ]
+  },
+  "gap_B11_B12": {
+   "reached": [
+    false,
+    false,
+    false
+   ],
+   "min_cam": 5.01,
+   "end": [
+    -17.12,
+    0.01,
+    -24.5
+   ]
+  }
+ },
+ "roof_rules": {
+  "counts": {
+   "roof_bands": 200,
+   "below3_2": 20,
+   "below4_3": 39,
+   "eave": 49,
+   "srcs_below3_2": [
+    "B06",
+    "B08",
+    "B14",
+    "E06",
+    "E07",
+    "B10",
+    "B11",
+    "B12",
+    "E01",
+    "E04"
+   ]
+  },
+  "current": {
+   "B10 S eave": [
+    0.84,
+    0.46,
+    0.14
+   ],
+   "B10 NE lane": [
+    1.62,
+    0.29,
+    0.25
+   ],
+   "B12 SE lane": [
+    1.77,
+    0.29,
+    0.3
+   ],
+   "B12 E lane": [
+    2.18,
+    0.29,
+    0.51
+   ],
+   "E01 W": [
+    1.39,
+    0.46,
+    0.17
+   ],
+   "E01 E": [
+    1.38,
+    0.46,
+    0.17
+   ],
+   "B15 SW": [
+    1.42,
+    0.46,
+    0.19
+   ],
+   "E04 E path": [
+    1.47,
+    0.42,
+    0.21
+   ],
+   "path gate": [
+    1.95,
+    0.29,
+    0.35
+   ],
+   "tea veranda": [
+    1.49,
+    0.38,
+    0.22
+   ],
+   "east court bays": [
+    3.21,
+    0,
+    0.87
+   ],
+   "hall steps foot": [
+    2.8,
+    0.21,
+    0.75
+   ]
+  },
+  "A: roof bands starting below 3.2 m transparent": {
+   "B10 S eave": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "B10 NE lane": [
+    2.79,
+    0.17,
+    0.75
+   ],
+   "B12 SE lane": [
+    2.8,
+    0.17,
+    0.75
+   ],
+   "B12 E lane": [
+    2.93,
+    0.21,
+    0.8
+   ],
+   "E01 W": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "E01 E": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "B15 SW": [
+    2.72,
+    0.25,
+    0.69
+   ],
+   "E04 E path": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "path gate": [
+    2.83,
+    0.13,
+    0.77
+   ],
+   "tea veranda": [
+    1.49,
+    0.38,
+    0.22
+   ],
+   "east court bays": [
+    3.21,
+    0,
+    0.87
+   ],
+   "hall steps foot": [
+    2.8,
+    0.21,
+    0.75
+   ]
+  },
+  "B: eave band of every roof transparent": {
+   "B10 S eave": [
+    2.32,
+    0.29,
+    0.54
+   ],
+   "B10 NE lane": [
+    2.41,
+    0.17,
+    0.57
+   ],
+   "B12 SE lane": [
+    2.41,
+    0.17,
+    0.57
+   ],
+   "B12 E lane": [
+    2.36,
+    0.29,
+    0.54
+   ],
+   "E01 W": [
+    2.45,
+    0.29,
+    0.59
+   ],
+   "E01 E": [
+    2.45,
+    0.25,
+    0.58
+   ],
+   "B15 SW": [
+    2.09,
+    0.33,
+    0.46
+   ],
+   "E04 E path": [
+    2.55,
+    0.13,
+    0.64
+   ],
+   "path gate": [
+    2.48,
+    0.21,
+    0.59
+   ],
+   "tea veranda": [
+    1.49,
+    0.38,
+    0.22
+   ],
+   "east court bays": [
+    3.21,
+    0,
+    0.87
+   ],
+   "hall steps foot": [
+    3.97,
+    0,
+    1
+   ]
+  },
+  "C: roof bands starting below 4.3 m transparent": {
+   "B10 S eave": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "B10 NE lane": [
+    2.79,
+    0.17,
+    0.75
+   ],
+   "B12 SE lane": [
+    2.8,
+    0.17,
+    0.75
+   ],
+   "B12 E lane": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "E01 W": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "E01 E": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "B15 SW": [
+    2.94,
+    0.04,
+    0.81
+   ],
+   "E04 E path": [
+    2.93,
+    0.08,
+    0.8
+   ],
+   "path gate": [
+    2.83,
+    0.13,
+    0.77
+   ],
+   "tea veranda": [
+    1.49,
+    0.38,
+    0.22
+   ],
+   "east court bays": [
+    3.21,
+    0,
+    0.87
+   ],
+   "hall steps foot": [
+    3.97,
+    0,
+    1
+   ]
+  },
+  "gap_closed": {
+   "reached": [
+    false,
+    false
+   ],
+   "end": [
+    -17.54,
+    0.01,
+    -15.83
+   ]
+  },
+  "lane_with_gap_closed": {
+   "reached": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "min_cam": 12.93
+  }
+ },
+ "ruleC_with_open_rail": {
+  "door": {
+   "at": [
+    0,
+    79.2
+   ],
+   "y": 2.01,
+   "min_cam": 1.73,
+   "median": 3.97,
+   "share_lt3": 0.46,
+   "min_alpha": 0.32,
+   "d": "12.92 12.92 12.92 12.92 3.97 3.97 12.2 2.29 1.74 1.73 1.73 1.73 1.73 1.73 1.73 1.73 1.74 2.07 11.83 3.97 3.97 11.98 12.87 12.92"
+  },
+  "fore": {
+   "at": [
+    0,
+    75.4
+   ],
+   "y": 2.01,
+   "min_cam": 3.97,
+   "median": 12.92,
+   "share_lt3": 0,
+   "min_alpha": 1,
+   "d": "12.92 12.92 12.92 12.92 12.92 12.92 12.92 12.92 3.97 3.97 3.97 3.97 3.97 3.97 3.97 3.97 3.97 12.04 12.88 12.92 12.92 12.92 12.92 12.92"
+  },
+  "gate": {
+   "at": [
+    0,
+    76.3
+   ],
+   "y": 2.01,
+   "min_cam": 3.55,
+   "median": 12.89,
+   "share_lt3": 0,
+   "min_alpha": 1,
+   "d": "12.92 12.92 12.92 12.92 12.92 12.92 12.92 3.97 3.97 3.97 3.97 3.68 3.55 3.67 3.94 3.97 3.97 3.97 12.2 12.89 12.92 12.92 12.92 12.92"
+  },
+  "axis": {
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "min_cam": 1.26,
+   "min_alpha": 0.189,
+   "lt3": 0.091,
+   "a09": 0.111
+  },
+  "shotC": 74810,
+  "shot0": 16534
+ },
+ "note": "P3-A targeted tests, live obstacle overrides in the isolated preview; scene.json unchanged; scripted, not human",
+ "recommended_set_vs_current": {
+  "definition": "roof bands starting below 3.2 m camera-transparent (20 of 200 bands) + the six Exchange Hall porch-roof bands camera-transparent + rail centre three bays open (6 m) + B10-B11 gap closed at both mouths",
+  "spots_min_camera_m__share_below_3m__min_opacity": {
+   "recommended": {
+    "hall door": [
+     2.87,
+     0.13,
+     0.78
+    ],
+    "porch mouth": [
+     2.79,
+     0.21,
+     0.75
+    ],
+    "forecourt": [
+     4.55,
+     0,
+     1
+    ],
+    "hall steps foot": [
+     5.56,
+     0,
+     1
+    ],
+    "B10 S eave": [
+     2.93,
+     0.08,
+     0.8
+    ],
+    "B10 NE lane": [
+     2.79,
+     0.17,
+     0.75
+    ],
+    "B12 SE lane": [
+     2.8,
+     0.17,
+     0.75
+    ],
+    "E01 W": [
+     2.93,
+     0.08,
+     0.8
+    ],
+    "E01 E": [
+     2.93,
+     0.08,
+     0.8
+    ],
+    "B15 SW": [
+     2.72,
+     0.25,
+     0.69
+    ],
+    "E04 E path": [
+     2.93,
+     0.08,
+     0.8
+    ],
+    "path gate": [
+     2.83,
+     0.13,
+     0.77
+    ],
+    "tea veranda": [
+     1.49,
+     0.38,
+     0.22
+    ],
+    "B15 door": [
+     2.79,
+     0.17,
+     0.75
+    ],
+    "B16 door": [
+     2.8,
+     0.17,
+     0.75
+    ],
+    "axis_walk_to_door": {
+     "reached_door": true,
+     "min_cam": 1.74,
+     "min_alpha": 0.415,
+     "lt3": 0.027,
+     "a09": 0.069
+    },
+    "lane_walk": {
+     "min_cam": 12.93,
+     "min_alpha": 1
+    },
+    "porters_path": {
+     "reached": true,
+     "min_cam": 2.94,
+     "min_alpha": 0.813
+    }
+   },
+   "current": {
+    "hall door": [
+     0.77,
+     1,
+     0.14
+    ],
+    "porch mouth": [
+     0.94,
+     0.63,
+     0.14
+    ],
+    "forecourt": [
+     2.17,
+     0.29,
+     0.51
+    ],
+    "hall steps foot": [
+     2.8,
+     0.21,
+     0.75
+    ],
+    "B10 S eave": [
+     0.84,
+     0.46,
+     0.14
+    ],
+    "B10 NE lane": [
+     1.62,
+     0.29,
+     0.25
+    ],
+    "B12 SE lane": [
+     1.77,
+     0.29,
+     0.3
+    ],
+    "E01 W": [
+     1.39,
+     0.46,
+     0.17
+    ],
+    "E01 E": [
+     1.38,
+     0.46,
+     0.17
+    ],
+    "B15 SW": [
+     1.42,
+     0.46,
+     0.19
+    ],
+    "E04 E path": [
+     1.47,
+     0.42,
+     0.21
+    ],
+    "path gate": [
+     1.95,
+     0.29,
+     0.35
+    ],
+    "tea veranda": [
+     1.49,
+     0.38,
+     0.22
+    ],
+    "B15 door": [
+     2.79,
+     0.21,
+     0.75
+    ],
+    "B16 door": [
+     2.8,
+     0.17,
+     0.75
+    ],
+    "axis_walk_to_door": {
+     "reached_door": false,
+     "min_cam": 2.96,
+     "min_alpha": 0.83,
+     "lt3": 0.003,
+     "a09": 0.029
+    },
+    "lane_walk": {
+     "min_cam": 12.93,
+     "min_alpha": 1
+    },
+    "porters_path": {
+     "reached": true,
+     "min_cam": 2.94,
+     "min_alpha": 0.813
+    }
+   }
+  }
+ }
+}

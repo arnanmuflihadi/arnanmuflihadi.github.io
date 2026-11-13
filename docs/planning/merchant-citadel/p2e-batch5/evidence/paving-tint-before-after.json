@@ -1,0 +1,78 @@
+{
+ "method": "mean colour of a fixed ground region of the browser screenshot, same camera; blue-minus-red in 0-255",
+ "regions": "fractions (x0,y0,x1,y1) of the frame",
+ "results": {
+  "p5-lane-east": {
+   "batch4": [
+    [
+     92.0,
+     109.0,
+     111.0
+    ],
+    18.7
+   ],
+   "batch5": [
+    [
+     93.0,
+     109.0,
+     108.0
+    ],
+    14.9
+   ]
+  },
+  "p5-court-from-lane": {
+   "batch4": [
+    [
+     104.0,
+     111.0,
+     119.0
+    ],
+    15.9
+   ],
+   "batch5": [
+    [
+     104.0,
+     111.0,
+     116.0
+    ],
+    12.4
+   ]
+  },
+  "p5-quarter-gameplay": {
+   "batch4": [
+    [
+     98.0,
+     99.0,
+     96.0
+    ],
+    -1.8
+   ],
+   "batch5": [
+    [
+     98.0,
+     99.0,
+     94.0
+    ],
+    -4.3
+   ]
+  },
+  "p5-tea-lane-east": {
+   "batch4": [
+    [
+     84.0,
+     108.0,
+     108.0
+    ],
+    23.7
+   ],
+   "batch5": [
+    [
+     85.0,
+     108.0,
+     106.0
+    ],
+    21.2
+   ]
+  }
+ }
+}

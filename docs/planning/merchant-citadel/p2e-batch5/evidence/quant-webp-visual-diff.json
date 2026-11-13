@@ -1,0 +1,146 @@
+{
+ "qdq": {
+  "c01-terrace-aerial": {
+   "psnr_db": 52.98,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.049
+  },
+  "c02-assay-office": {
+   "psnr_db": 46.39,
+   "share_px_over_24": 0.0007,
+   "mean_abs": 0.171
+  },
+  "c03-chart-maker": {
+   "psnr_db": 41.22,
+   "share_px_over_24": 0.0023,
+   "mean_abs": 0.244
+  },
+  "c04-terrace-from-hall": {
+   "psnr_db": 35.69,
+   "share_px_over_24": 0.0064,
+   "mean_abs": 1.317
+  },
+  "t01-town-aerial": {
+   "psnr_db": 51.33,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.046
+  },
+  "t02-southern-arrival": {
+   "psnr_db": 53.45,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.049
+  },
+  "t03-merchant-street": {
+   "psnr_db": 44.88,
+   "share_px_over_24": 0.0007,
+   "mean_abs": 0.144
+  },
+  "t04-central-bazaar": {
+   "psnr_db": 49.88,
+   "share_px_over_24": 0.0003,
+   "mean_abs": 0.089
+  },
+  "t05-artisan-lane": {
+   "psnr_db": 49.78,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.136
+  },
+  "t06-warehouse-district": {
+   "psnr_db": 51.54,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.108
+  },
+  "t07-tea-route": {
+   "psnr_db": 48.0,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.223
+  },
+  "t08-civic-terrace": {
+   "psnr_db": 47.7,
+   "share_px_over_24": 0.0005,
+   "mean_abs": 0.152
+  },
+  "t09-exchange-hall-approach": {
+   "psnr_db": 51.57,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.079
+  },
+  "t10-lookout-to-terrace": {
+   "psnr_db": 51.34,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.085
+  }
+ },
+ "qwdq": {
+  "c01-terrace-aerial": {
+   "psnr_db": 50.25,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.26
+  },
+  "c02-assay-office": {
+   "psnr_db": 44.4,
+   "share_px_over_24": 0.0007,
+   "mean_abs": 0.653
+  },
+  "c03-chart-maker": {
+   "psnr_db": 40.36,
+   "share_px_over_24": 0.0024,
+   "mean_abs": 0.723
+  },
+  "c04-terrace-from-hall": {
+   "psnr_db": 35.42,
+   "share_px_over_24": 0.0064,
+   "mean_abs": 1.622
+  },
+  "t01-town-aerial": {
+   "psnr_db": 50.64,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.119
+  },
+  "t02-southern-arrival": {
+   "psnr_db": 49.15,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.432
+  },
+  "t03-merchant-street": {
+   "psnr_db": 43.64,
+   "share_px_over_24": 0.0007,
+   "mean_abs": 0.58
+  },
+  "t04-central-bazaar": {
+   "psnr_db": 47.02,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.495
+  },
+  "t05-artisan-lane": {
+   "psnr_db": 46.25,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.653
+  },
+  "t06-warehouse-district": {
+   "psnr_db": 47.53,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.541
+  },
+  "t07-tea-route": {
+   "psnr_db": 44.4,
+   "share_px_over_24": 0.0008,
+   "mean_abs": 0.634
+  },
+  "t08-civic-terrace": {
+   "psnr_db": 46.4,
+   "share_px_over_24": 0.0005,
+   "mean_abs": 0.41
+  },
+  "t09-exchange-hall-approach": {
+   "psnr_db": 48.99,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.346
+  },
+  "t10-lookout-to-terrace": {
+   "psnr_db": 47.55,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.475
+  }
+ }
+}

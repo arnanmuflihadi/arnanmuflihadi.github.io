@@ -1,0 +1,2627 @@
+[
+ {
+  "file": "BlackSheep.glb",
+  "bytes": 107816,
+  "triangles": 840,
+  "bounds_min": [
+   -0.026,
+   -0.021,
+   -0.0
+  ],
+  "bounds_size": [
+   0.052,
+   0.049,
+   0.041
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "BrahmaChicken.glb",
+  "bytes": 97740,
+  "triangles": 684,
+  "bounds_min": [
+   -0.018,
+   -0.022,
+   -0.0
+  ],
+  "bounds_size": [
+   0.036,
+   0.046,
+   0.044
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "vwsc22",
+   "ax7yw5",
+   "ckahzh",
+   "ew7dbn",
+   "pfe7cj",
+   "u7edgz",
+   "tmezcf",
+   "rmafvb",
+   "fwyvjn",
+   "pr9jtw",
+   "x9umkz",
+   "cz3sy8",
+   "utjkjd",
+   "v5x8w4",
+   "pxd8jf",
+   "h5fu2e"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Budgie.glb",
+  "bytes": 102072,
+  "triangles": 830,
+  "bounds_min": [
+   -0.019,
+   -0.025,
+   -0.0
+  ],
+  "bounds_size": [
+   0.038,
+   0.057,
+   0.039
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "f7sgah",
+   "jmw839",
+   "h7m535",
+   "pp46nx",
+   "jbgh6c",
+   "pvx77c",
+   "g9c8j2",
+   "nw3de7",
+   "ba6zg5",
+   "a7gqya",
+   "t5h2tg",
+   "j2ch2q",
+   "k9dhgs",
+   "b6dbzf",
+   "e3fxvs",
+   "g8jf2x"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Chick.glb",
+  "bytes": 90108,
+  "triangles": 316,
+  "bounds_min": [
+   -0.018,
+   -0.019,
+   -0.0
+  ],
+  "bounds_size": [
+   0.036,
+   0.041,
+   0.043
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Corgi.glb",
+  "bytes": 106928,
+  "triangles": 508,
+  "bounds_min": [
+   -173.205,
+   -241.185,
+   -4.752
+  ],
+  "bounds_size": [
+   346.41,
+   441.355,
+   404.373
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 42
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 48
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 48
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 48
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Spine",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye",
+   "Hips"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Doe.glb",
+  "bytes": 94748,
+  "triangles": 450,
+  "bounds_min": [
+   -0.024,
+   -0.025,
+   -0.0
+  ],
+  "bounds_size": [
+   0.048,
+   0.045,
+   0.038
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Duck.glb",
+  "bytes": 103516,
+  "triangles": 508,
+  "bounds_min": [
+   -181.996,
+   -250.136,
+   -1.055
+  ],
+  "bounds_size": [
+   363.991,
+   468.678,
+   436.575
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 42
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 48
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 48
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 48
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Spine",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye",
+   "Hips"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Eagle.glb",
+  "bytes": 90572,
+  "triangles": 440,
+  "bounds_min": [
+   -0.025,
+   -0.024,
+   -0.0
+  ],
+  "bounds_size": [
+   0.05,
+   0.048,
+   0.038
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Eland.glb",
+  "bytes": 101220,
+  "triangles": 784,
+  "bounds_min": [
+   -0.02,
+   -0.022,
+   -0.0
+  ],
+  "bounds_size": [
+   0.04,
+   0.044,
+   0.053
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "vwsc22",
+   "ax7yw5",
+   "ckahzh",
+   "ew7dbn",
+   "pfe7cj",
+   "u7edgz",
+   "tmezcf",
+   "rmafvb",
+   "fwyvjn",
+   "pr9jtw",
+   "x9umkz",
+   "cz3sy8",
+   "utjkjd",
+   "v5x8w4",
+   "pxd8jf",
+   "h5fu2e"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Fox.glb",
+  "bytes": 95328,
+  "triangles": 450,
+  "bounds_min": [
+   -0.017,
+   -0.027,
+   -0.0
+  ],
+  "bounds_size": [
+   0.035,
+   0.059,
+   0.045
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Frigatebird.glb",
+  "bytes": 87732,
+  "triangles": 404,
+  "bounds_min": [
+   -0.022,
+   -0.031,
+   -0.0
+  ],
+  "bounds_size": [
+   0.044,
+   0.058,
+   0.037
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "wef58k",
+   "tr4vzr",
+   "j9bk3u",
+   "hshfym",
+   "wwmnjw",
+   "hneaqz",
+   "s25qwr",
+   "tgq4c8",
+   "ah24qp",
+   "ndbsgw",
+   "h23aqd",
+   "xeafbn",
+   "nmt3f9",
+   "hew3up",
+   "kqchfw",
+   "sqf5hp"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Goat.glb",
+  "bytes": 166040,
+  "triangles": 396,
+  "bounds_min": [
+   -2.303,
+   -0.048,
+   -2.32
+  ],
+  "bounds_size": [
+   4.606,
+   4.586,
+   5.026
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Goldenpheasant.glb",
+  "bytes": 97412,
+  "triangles": 682,
+  "bounds_min": [
+   -0.018,
+   -0.02,
+   -0.0
+  ],
+  "bounds_size": [
+   0.037,
+   0.048,
+   0.049
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "wef58k",
+   "tr4vzr",
+   "j9bk3u",
+   "hshfym",
+   "wwmnjw",
+   "hneaqz",
+   "s25qwr",
+   "tgq4c8",
+   "ah24qp",
+   "ndbsgw",
+   "h23aqd",
+   "xeafbn",
+   "nmt3f9",
+   "hew3up",
+   "kqchfw",
+   "sqf5hp"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Goose.glb",
+  "bytes": 92020,
+  "triangles": 384,
+  "bounds_min": [
+   -0.018,
+   -0.022,
+   -0.0
+  ],
+  "bounds_size": [
+   0.036,
+   0.044,
+   0.037
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hare.glb",
+  "bytes": 99840,
+  "triangles": 596,
+  "bounds_min": [
+   -0.017,
+   -0.02,
+   -0.0
+  ],
+  "bounds_size": [
+   0.035,
+   0.042,
+   0.054
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "HawkMoth.glb",
+  "bytes": 391744,
+  "triangles": 866,
+  "bounds_min": [
+   -0.056,
+   -0.05,
+   -0.0
+  ],
+  "bounds_size": [
+   0.112,
+   0.104,
+   0.042
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "groom",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "alert",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "run",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "crawl",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "jump",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "fly",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sting",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "eat",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "threat",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "hit",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "perch",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "buzz",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sing",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "carry",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dart",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sway",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "curl",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "pounce",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "flip",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hedgehog.glb",
+  "bytes": 102784,
+  "triangles": 660,
+  "bounds_min": [
+   -0.022,
+   -0.024,
+   -0.0
+  ],
+  "bounds_size": [
+   0.043,
+   0.051,
+   0.045
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hoopoe.glb",
+  "bytes": 101004,
+  "triangles": 598,
+  "bounds_min": [
+   -0.019,
+   -0.026,
+   -0.0
+  ],
+  "bounds_size": [
+   0.037,
+   0.054,
+   0.054
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hoverfly.glb",
+  "bytes": 370000,
+  "triangles": 772,
+  "bounds_min": [
+   -0.051,
+   -0.032,
+   -0.0
+  ],
+  "bounds_size": [
+   0.102,
+   0.085,
+   0.044
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "groom",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "alert",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "run",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "crawl",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "jump",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "fly",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sting",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "eat",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "threat",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "hit",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "perch",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "buzz",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sing",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "carry",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dart",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sway",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "curl",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "pounce",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "flip",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Hummingbird.glb",
+  "bytes": 83752,
+  "triangles": 256,
+  "bounds_min": [
+   -0.023,
+   -0.033,
+   0.002
+  ],
+  "bounds_size": [
+   0.046,
+   0.055,
+   0.036
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Kingfisher.glb",
+  "bytes": 89316,
+  "triangles": 436,
+  "bounds_min": [
+   -0.018,
+   -0.031,
+   -0.0
+  ],
+  "bounds_size": [
+   0.037,
+   0.054,
+   0.039
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "vwsc22",
+   "ax7yw5",
+   "ckahzh",
+   "ew7dbn",
+   "pfe7cj",
+   "u7edgz",
+   "tmezcf",
+   "rmafvb",
+   "fwyvjn",
+   "pr9jtw",
+   "x9umkz",
+   "cz3sy8",
+   "utjkjd",
+   "v5x8w4",
+   "pxd8jf",
+   "h5fu2e"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Lamb.glb",
+  "bytes": 105240,
+  "triangles": 760,
+  "bounds_min": [
+   -0.021,
+   -0.021,
+   -0.0
+  ],
+  "bounds_size": [
+   0.042,
+   0.05,
+   0.041
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Marmot.glb",
+  "bytes": 165892,
+  "triangles": 370,
+  "bounds_min": [
+   -1.747,
+   -0.048,
+   -2.367
+  ],
+  "bounds_size": [
+   3.493,
+   3.504,
+   4.459
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "MerinoRam.glb",
+  "bytes": 103060,
+  "triangles": 856,
+  "bounds_min": [
+   -0.024,
+   -0.02,
+   -0.0
+  ],
+  "bounds_size": [
+   0.048,
+   0.043,
+   0.042
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "f7sgah",
+   "jmw839",
+   "h7m535",
+   "pp46nx",
+   "jbgh6c",
+   "pvx77c",
+   "g9c8j2",
+   "nw3de7",
+   "ba6zg5",
+   "a7gqya",
+   "t5h2tg",
+   "j2ch2q",
+   "k9dhgs",
+   "b6dbzf",
+   "e3fxvs",
+   "g8jf2x"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Mouflon.glb",
+  "bytes": 96376,
+  "triangles": 652,
+  "bounds_min": [
+   -0.017,
+   -0.022,
+   -0.0
+  ],
+  "bounds_size": [
+   0.035,
+   0.043,
+   0.048
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "f7sgah",
+   "jmw839",
+   "h7m535",
+   "pp46nx",
+   "jbgh6c",
+   "pvx77c",
+   "g9c8j2",
+   "nw3de7",
+   "ba6zg5",
+   "a7gqya",
+   "t5h2tg",
+   "j2ch2q",
+   "k9dhgs",
+   "b6dbzf",
+   "e3fxvs",
+   "g8jf2x"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Owl.glb",
+  "bytes": 156676,
+  "triangles": 310,
+  "bounds_min": [
+   -1.889,
+   0.001,
+   -1.984
+  ],
+  "bounds_size": [
+   3.779,
+   3.653,
+   3.907
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Pigeon.glb",
+  "bytes": 92768,
+  "triangles": 554,
+  "bounds_min": [
+   -0.019,
+   -0.02,
+   -0.0
+  ],
+  "bounds_size": [
+   0.037,
+   0.046,
+   0.037
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "wef58k",
+   "tr4vzr",
+   "j9bk3u",
+   "hshfym",
+   "wwmnjw",
+   "hneaqz",
+   "s25qwr",
+   "tgq4c8",
+   "ah24qp",
+   "ndbsgw",
+   "h23aqd",
+   "xeafbn",
+   "nmt3f9",
+   "hew3up",
+   "kqchfw",
+   "sqf5hp"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Puffin.glb",
+  "bytes": 90848,
+  "triangles": 494,
+  "bounds_min": [
+   -0.02,
+   -0.029,
+   -0.0
+  ],
+  "bounds_size": [
+   0.04,
+   0.055,
+   0.041
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "wef58k",
+   "tr4vzr",
+   "j9bk3u",
+   "hshfym",
+   "wwmnjw",
+   "hneaqz",
+   "s25qwr",
+   "tgq4c8",
+   "ah24qp",
+   "ndbsgw",
+   "h23aqd",
+   "xeafbn",
+   "nmt3f9",
+   "hew3up",
+   "kqchfw",
+   "sqf5hp"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Quail.glb",
+  "bytes": 96504,
+  "triangles": 508,
+  "bounds_min": [
+   -0.019,
+   -0.028,
+   -0.0
+  ],
+  "bounds_size": [
+   0.038,
+   0.05,
+   0.045
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Rooster.glb",
+  "bytes": 94792,
+  "triangles": 580,
+  "bounds_min": [
+   -0.018,
+   -0.021,
+   -0.0
+  ],
+  "bounds_size": [
+   0.037,
+   0.051,
+   0.045
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Seagull.glb",
+  "bytes": 90708,
+  "triangles": 330,
+  "bounds_min": [
+   -0.023,
+   -0.025,
+   -0.0
+  ],
+  "bounds_size": [
+   0.047,
+   0.055,
+   0.038
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "SebrightBantam.glb",
+  "bytes": 95628,
+  "triangles": 644,
+  "bounds_min": [
+   -0.022,
+   -0.021,
+   -0.0
+  ],
+  "bounds_size": [
+   0.043,
+   0.042,
+   0.045
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "f7sgah",
+   "jmw839",
+   "h7m535",
+   "pp46nx",
+   "jbgh6c",
+   "pvx77c",
+   "g9c8j2",
+   "nw3de7",
+   "ba6zg5",
+   "a7gqya",
+   "t5h2tg",
+   "j2ch2q",
+   "k9dhgs",
+   "b6dbzf",
+   "e3fxvs",
+   "g8jf2x"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Sheep.glb",
+  "bytes": 107420,
+  "triangles": 828,
+  "bounds_min": [
+   -0.02,
+   -0.022,
+   -0.0
+  ],
+  "bounds_size": [
+   0.041,
+   0.051,
+   0.039
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "SkullDeer.glb",
+  "bytes": 98396,
+  "triangles": 684,
+  "bounds_min": [
+   -0.02,
+   -0.024,
+   -0.0
+  ],
+  "bounds_size": [
+   0.039,
+   0.049,
+   0.041
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "f7sgah",
+   "jmw839",
+   "h7m535",
+   "pp46nx",
+   "jbgh6c",
+   "pvx77c",
+   "g9c8j2",
+   "nw3de7",
+   "ba6zg5",
+   "a7gqya",
+   "t5h2tg",
+   "j2ch2q",
+   "k9dhgs",
+   "b6dbzf",
+   "e3fxvs",
+   "g8jf2x"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Squirrel.glb",
+  "bytes": 99416,
+  "triangles": 584,
+  "bounds_min": [
+   -0.017,
+   -0.02,
+   -0.0
+  ],
+  "bounds_size": [
+   0.035,
+   0.051,
+   0.049
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ },
+ {
+  "file": "Swallowtail.glb",
+  "bytes": 390184,
+  "triangles": 798,
+  "bounds_min": [
+   -0.078,
+   -0.04,
+   -0.0
+  ],
+  "bounds_size": [
+   0.157,
+   0.109,
+   0.049
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [
+   16
+  ],
+  "bones": 16,
+  "animations": [
+   {
+    "name": "idle",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "attack",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dead",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "walk",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "groom",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "alert",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "run",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "crawl",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "jump",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "fly",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sting",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "eat",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "threat",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "hit",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "perch",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "buzz",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sing",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "carry",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "dart",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "sway",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "curl",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "pounce",
+    "seconds": 1.208,
+    "channels": 21
+   },
+   {
+    "name": "flip",
+    "seconds": 1.208,
+    "channels": 21
+   }
+  ],
+  "bone_names": [
+   "Root",
+   "Hips",
+   "LeftLegB",
+   "LeftLegF",
+   "RightLegB",
+   "RightLegF",
+   "Spine",
+   "Tail",
+   "Mouth",
+   "RightEar",
+   "LeftEar",
+   "Head",
+   "RightHand",
+   "LeftHand",
+   "RightEye",
+   "LeftEye"
+  ],
+  "generator": "Gobkit",
+  "extensions": []
+ }
+]

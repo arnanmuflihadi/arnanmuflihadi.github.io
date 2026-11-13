@@ -1,0 +1,1680 @@
+{
+ "meta": {
+  "town24": false,
+  "placed": 62,
+  "world_geometry_mb": 35.454,
+  "load_ms": 109.5,
+  "prewarm_ms": 766.8000000715256,
+  "kit_nodes": 51,
+  "reps": 3,
+  "modes": [
+   "none",
+   "cell30"
+  ],
+  "views": [
+   "p4-town-aerial",
+   "p3-bazaar-aerial",
+   "p4-district-aerial",
+   "p4-lane-north",
+   "p3-aisle-eye",
+   "p3-west-interior",
+   "p4-gate-back",
+   "p3-axis-to-hall",
+   "p3-gameplay",
+   "p2b-hall-aerial",
+   "p5-east-aerial",
+   "p5-lane-east",
+   "p5-court-from-lane",
+   "p5-quarter-gameplay",
+   "p5-route-aerial"
+  ],
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Claude/5.1231.2 Chrome/156.0.8078.75 Safari/537.36",
+  "device_pixel_ratio": 1,
+  "hardware_concurrency": 12,
+  "hardSync": "readPixels 1x1"
+ },
+ "summary": {
+  "none no-shadows": {
+   "cpu_submit_ms": 2.522,
+   "walk_ms": 9.042,
+   "walk_p95_ms": 11.5,
+   "walk_p50_ms": 9.1,
+   "walk_p99_ms": 12.3,
+   "walk_max_ms": 12.8,
+   "synced_p50_ms": 8.4,
+   "synced_p95_ms": 10.4,
+   "synced_p99_ms": 12.2,
+   "synced_ms": 8.438,
+   "synced_range": [
+    8.339,
+    9.014
+   ],
+   "mean_view_ms": 7.027,
+   "mean_view_calls": 438.333,
+   "mean_view_triangles": 380512,
+   "worst_view_ms": 9.3,
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb_median": 145.954,
+   "gl_geometries": 917,
+   "gl_textures": 84,
+   "programs": 74,
+   "per_view": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 9.3
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 7.9
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 9
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 7.3
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 5.7
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 5.3
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 4.7
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 6
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 7.8
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 4.9
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 8.4
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 8.5
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 4.1
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 8.5
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 8
+    }
+   }
+  },
+  "none shadows": {
+   "cpu_submit_ms": 3.382,
+   "walk_ms": 12.906,
+   "walk_p95_ms": 16.7,
+   "walk_p50_ms": 12.7,
+   "walk_p99_ms": 20,
+   "walk_max_ms": 20.2,
+   "synced_p50_ms": 12.5,
+   "synced_p95_ms": 16.7,
+   "synced_p99_ms": 18.9,
+   "synced_ms": 12.897,
+   "synced_range": [
+    12.642,
+    12.973
+   ],
+   "mean_view_ms": 10.66,
+   "mean_view_calls": 438.333,
+   "mean_view_triangles": 380512,
+   "worst_view_ms": 13.8,
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb_median": 143.523,
+   "gl_geometries": 917,
+   "gl_textures": 84,
+   "programs": 76,
+   "per_view": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 12.4
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 11.9
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 13.8
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 10.9
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 9.3
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 8.2
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 8
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 10.3
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 11.8
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 8.1
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 13.4
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 11.3
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 8.3
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 10.9
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 11.3
+    }
+   }
+  },
+  "cell30 no-shadows": {
+   "cpu_submit_ms": 1.578,
+   "walk_ms": 7.548,
+   "walk_p95_ms": 10.1,
+   "walk_p50_ms": 7.5,
+   "walk_p99_ms": 10.3,
+   "walk_max_ms": 10.9,
+   "synced_p50_ms": 7.6,
+   "synced_p95_ms": 10.1,
+   "synced_p99_ms": 12.7,
+   "synced_ms": 7.568,
+   "synced_range": [
+    7.541,
+    7.722
+   ],
+   "mean_view_ms": 6.18,
+   "mean_view_calls": 258.733,
+   "mean_view_triangles": 448230,
+   "worst_view_ms": 8.5,
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb_median": 136.592,
+   "gl_geometries": 917,
+   "gl_textures": 84,
+   "programs": 76,
+   "per_view": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 7.2
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 7.8
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 8.5
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 6.8
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 5.4
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 4.4
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 3.8
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 5.9
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 6.1
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 5
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 7.5
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 7.3
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 3.7
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 6.5
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 6.8
+    }
+   }
+  },
+  "cell30 shadows": {
+   "cpu_submit_ms": 2.053,
+   "walk_ms": 11.12,
+   "walk_p95_ms": 13.7,
+   "walk_p50_ms": 11,
+   "walk_p99_ms": 16.9,
+   "walk_max_ms": 16.9,
+   "synced_p50_ms": 10.9,
+   "synced_p95_ms": 14.8,
+   "synced_p99_ms": 16.4,
+   "synced_ms": 11.184,
+   "synced_range": [
+    10.991,
+    11.506
+   ],
+   "mean_view_ms": 9.953,
+   "mean_view_calls": 258.733,
+   "mean_view_triangles": 448230,
+   "worst_view_ms": 13.6,
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb_median": 144.637,
+   "gl_geometries": 917,
+   "gl_textures": 84,
+   "programs": 76,
+   "per_view": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 10.9
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 12.7
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 13.6
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 9.3
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 8.7
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 7.1
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 8
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 9
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 10.3
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 8
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 11.5
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 10.1
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 8
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 11.4
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 10.7
+    }
+   }
+  }
+ },
+ "rows": [
+  {
+   "rep": 0,
+   "merged": "none",
+   "shadows": false,
+   "cpu_ms": 2.674,
+   "walk_ms": 9.468,
+   "walk_p95_ms": 11.9,
+   "walk_p50_ms": 9.1,
+   "walk_p99_ms": 20.6,
+   "walk_max_ms": 25.1,
+   "synced_p50_ms": 9.1,
+   "synced_p95_ms": 11.6,
+   "synced_p99_ms": 13,
+   "synced_ms": 9.014,
+   "first_render_ms": 24.5,
+   "programs": 74,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 9.2
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 8.3
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 9.6
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 8.3
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 5.2
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 5.3
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 4.7
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 6.4
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 7.8
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 4.9
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 8.4
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 8.5
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 4.6
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 9.2
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 8
+    }
+   },
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb": 251.389,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 0,
+   "merged": "none",
+   "shadows": true,
+   "cpu_ms": 3.429,
+   "walk_ms": 12.906,
+   "walk_p95_ms": 16.4,
+   "walk_p50_ms": 12.7,
+   "walk_p99_ms": 20.3,
+   "walk_max_ms": 20.5,
+   "synced_p50_ms": 12.7,
+   "synced_p95_ms": 17.8,
+   "synced_p99_ms": 19,
+   "synced_ms": 12.973,
+   "first_render_ms": 18.5,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 12.4
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 14.2
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 16.7
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 10.9
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 10
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 9.9
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 9.9
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 10.4
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 12.5
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 8.9
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 14.4
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 11.3
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 8.2
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 11.4
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 14
+    }
+   },
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb": 123.018,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 0,
+   "merged": "cell30",
+   "shadows": false,
+   "cpu_ms": 1.578,
+   "walk_ms": 7.905,
+   "walk_p95_ms": 10.2,
+   "walk_p50_ms": 7.7,
+   "walk_p99_ms": 11,
+   "walk_max_ms": 11.4,
+   "synced_p50_ms": 7.6,
+   "synced_p95_ms": 10.2,
+   "synced_p99_ms": 12.7,
+   "synced_ms": 7.568,
+   "first_render_ms": 13.8,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 6.4
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 8.3
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 8.5
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 6.8
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 4.8
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 4.6
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 3.8
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 5.4
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 6.1
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 5
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 6.9
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 6.7
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 3.7
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 6.5
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 7.2
+    }
+   },
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb": 136.592,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 0,
+   "merged": "cell30",
+   "shadows": true,
+   "cpu_ms": 2.053,
+   "walk_ms": 11.12,
+   "walk_p95_ms": 13.7,
+   "walk_p50_ms": 11,
+   "walk_p99_ms": 16.2,
+   "walk_max_ms": 16.4,
+   "synced_p50_ms": 11.3,
+   "synced_p95_ms": 14.7,
+   "synced_p99_ms": 16.3,
+   "synced_ms": 11.506,
+   "first_render_ms": 11.7,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 10.1
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 11.1
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 14.3
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 9.4
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 8.7
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 8.7
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 8.9
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 10.3
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 10.3
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 8.7
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 11.5
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 10.3
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 7.2
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 11.4
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 10.5
+    }
+   },
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb": 126.008,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 1,
+   "merged": "none",
+   "shadows": false,
+   "cpu_ms": 2.522,
+   "walk_ms": 8.59,
+   "walk_p95_ms": 10.8,
+   "walk_p50_ms": 8.5,
+   "walk_p99_ms": 11.5,
+   "walk_max_ms": 11.7,
+   "synced_p50_ms": 8.4,
+   "synced_p95_ms": 10.4,
+   "synced_p99_ms": 12.2,
+   "synced_ms": 8.438,
+   "first_render_ms": 13.6,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 9.3
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 7.9
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 8.9
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 7.3
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 5.7
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 5.2
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 3.4
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 5.8
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 8.4
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 4.6
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 8.6
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 8.7
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 4.1
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 8.5
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 8
+    }
+   },
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb": 145.954,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 1,
+   "merged": "none",
+   "shadows": true,
+   "cpu_ms": 3.303,
+   "walk_ms": 13.933,
+   "walk_p95_ms": 18.2,
+   "walk_p50_ms": 13.6,
+   "walk_p99_ms": 20,
+   "walk_max_ms": 20.2,
+   "synced_p50_ms": 12.5,
+   "synced_p95_ms": 16.7,
+   "synced_p99_ms": 18.9,
+   "synced_ms": 12.897,
+   "first_render_ms": 14.5,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 12.6
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 11.9
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 12.9
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 9.7
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 9.3
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 8.2
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 8
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 10.3
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 11.8
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 8.1
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 13.4
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 12.1
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 8.3
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 10.9
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 11.3
+    }
+   },
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb": 149.903,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 1,
+   "merged": "cell30",
+   "shadows": false,
+   "cpu_ms": 1.573,
+   "walk_ms": 7.489,
+   "walk_p95_ms": 10.1,
+   "walk_p50_ms": 7.4,
+   "walk_p99_ms": 10.3,
+   "walk_max_ms": 10.9,
+   "synced_p50_ms": 7.5,
+   "synced_p95_ms": 10.1,
+   "synced_p99_ms": 11,
+   "synced_ms": 7.541,
+   "first_render_ms": 12,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 8
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 6.9
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 8.2
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 6
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 6
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 4.4
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 4
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 6
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 5.6
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 4.8
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 7.5
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 7.3
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 3.5
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 8.3
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 6.5
+    }
+   },
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb": 131.074,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 1,
+   "merged": "cell30",
+   "shadows": true,
+   "cpu_ms": 2.033,
+   "walk_ms": 10.86,
+   "walk_p95_ms": 13.6,
+   "walk_p50_ms": 10.7,
+   "walk_p99_ms": 16.9,
+   "walk_max_ms": 16.9,
+   "synced_p50_ms": 10.6,
+   "synced_p95_ms": 14.8,
+   "synced_p99_ms": 16.4,
+   "synced_ms": 10.991,
+   "first_render_ms": 15,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 11.9
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 13.5
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 13.6
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 9.3
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 8.8
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 7.1
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 8
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 9
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 9.9
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 7.9
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 11
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 10.1
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 8.5
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 11.5
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 10.7
+    }
+   },
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb": 151.186,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 2,
+   "merged": "none",
+   "shadows": false,
+   "cpu_ms": 2.504,
+   "walk_ms": 9.042,
+   "walk_p95_ms": 11.5,
+   "walk_p50_ms": 9.1,
+   "walk_p99_ms": 12.3,
+   "walk_max_ms": 12.8,
+   "synced_p50_ms": 8.4,
+   "synced_p95_ms": 10.1,
+   "synced_p99_ms": 12.2,
+   "synced_ms": 8.339,
+   "first_render_ms": 12.7,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 9.9
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 7.3
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 9
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 7
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 6
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 6.1
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 4.7
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 6
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 7.2
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 4.9
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 7.2
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 8.2
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 3.4
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 7.5
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 8.8
+    }
+   },
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb": 139.579,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 2,
+   "merged": "none",
+   "shadows": true,
+   "cpu_ms": 3.382,
+   "walk_ms": 12.752,
+   "walk_p95_ms": 16.7,
+   "walk_p50_ms": 12.5,
+   "walk_p99_ms": 17.9,
+   "walk_max_ms": 18.5,
+   "synced_p50_ms": 12.4,
+   "synced_p95_ms": 16.5,
+   "synced_p99_ms": 17.2,
+   "synced_ms": 12.642,
+   "first_render_ms": 16.9,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 743,
+     "triangles": 612974,
+     "ms": 11.3
+    },
+    "p3-bazaar-aerial": {
+     "calls": 485,
+     "triangles": 403574,
+     "ms": 11.9
+    },
+    "p4-district-aerial": {
+     "calls": 740,
+     "triangles": 609718,
+     "ms": 13.8
+    },
+    "p4-lane-north": {
+     "calls": 609,
+     "triangles": 496091,
+     "ms": 11.7
+    },
+    "p3-aisle-eye": {
+     "calls": 286,
+     "triangles": 296195,
+     "ms": 9.3
+    },
+    "p3-west-interior": {
+     "calls": 179,
+     "triangles": 161796,
+     "ms": 7.4
+    },
+    "p4-gate-back": {
+     "calls": 100,
+     "triangles": 104206,
+     "ms": 6.9
+    },
+    "p3-axis-to-hall": {
+     "calls": 378,
+     "triangles": 341671,
+     "ms": 9.1
+    },
+    "p3-gameplay": {
+     "calls": 451,
+     "triangles": 385644,
+     "ms": 10.7
+    },
+    "p2b-hall-aerial": {
+     "calls": 217,
+     "triangles": 218117,
+     "ms": 8.1
+    },
+    "p5-east-aerial": {
+     "calls": 563,
+     "triangles": 487051,
+     "ms": 11.5
+    },
+    "p5-lane-east": {
+     "calls": 596,
+     "triangles": 509413,
+     "ms": 9.5
+    },
+    "p5-court-from-lane": {
+     "calls": 83,
+     "triangles": 102666,
+     "ms": 8.8
+    },
+    "p5-quarter-gameplay": {
+     "calls": 596,
+     "triangles": 507651,
+     "ms": 9.5
+    },
+    "p5-route-aerial": {
+     "calls": 549,
+     "triangles": 470917,
+     "ms": 11.1
+    }
+   },
+   "resident_geometry_mb": 35.454,
+   "meshes": 679,
+   "build_ms": 0,
+   "heap_mb": 143.523,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 2,
+   "merged": "cell30",
+   "shadows": false,
+   "cpu_ms": 1.588,
+   "walk_ms": 7.548,
+   "walk_p95_ms": 10,
+   "walk_p50_ms": 7.5,
+   "walk_p99_ms": 10.2,
+   "walk_max_ms": 10.3,
+   "synced_p50_ms": 7.6,
+   "synced_p95_ms": 10,
+   "synced_p99_ms": 13.8,
+   "synced_ms": 7.722,
+   "first_render_ms": 10.6,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 7.2
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 7.8
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 9.2
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 7
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 5.4
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 4.4
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 3.7
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 5.9
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 6.3
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 5.7
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 7.5
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 8.4
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 4.1
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 6.2
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 6.8
+    }
+   },
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb": 156.237,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  },
+  {
+   "rep": 2,
+   "merged": "cell30",
+   "shadows": true,
+   "cpu_ms": 2.063,
+   "walk_ms": 12.165,
+   "walk_p95_ms": 16.1,
+   "walk_p50_ms": 12.1,
+   "walk_p99_ms": 17.2,
+   "walk_max_ms": 17.6,
+   "synced_p50_ms": 10.9,
+   "synced_p95_ms": 15,
+   "synced_p99_ms": 17.1,
+   "synced_ms": 11.184,
+   "first_render_ms": 14.7,
+   "programs": 76,
+   "views": {
+    "p4-town-aerial": {
+     "calls": 395,
+     "triangles": 612974,
+     "ms": 10.9
+    },
+    "p3-bazaar-aerial": {
+     "calls": 275,
+     "triangles": 529483,
+     "ms": 12.7
+    },
+    "p4-district-aerial": {
+     "calls": 394,
+     "triangles": 612740,
+     "ms": 12.4
+    },
+    "p4-lane-north": {
+     "calls": 327,
+     "triangles": 544058,
+     "ms": 8.7
+    },
+    "p3-aisle-eye": {
+     "calls": 191,
+     "triangles": 347268,
+     "ms": 8.3
+    },
+    "p3-west-interior": {
+     "calls": 141,
+     "triangles": 277079,
+     "ms": 6.7
+    },
+    "p4-gate-back": {
+     "calls": 95,
+     "triangles": 173590,
+     "ms": 7.3
+    },
+    "p3-axis-to-hall": {
+     "calls": 220,
+     "triangles": 366944,
+     "ms": 8.1
+    },
+    "p3-gameplay": {
+     "calls": 275,
+     "triangles": 492011,
+     "ms": 10.3
+    },
+    "p2b-hall-aerial": {
+     "calls": 171,
+     "triangles": 338463,
+     "ms": 8
+    },
+    "p5-east-aerial": {
+     "calls": 308,
+     "triangles": 535393,
+     "ms": 11.5
+    },
+    "p5-lane-east": {
+     "calls": 339,
+     "triangles": 575046,
+     "ms": 10
+    },
+    "p5-court-from-lane": {
+     "calls": 98,
+     "triangles": 188999,
+     "ms": 8
+    },
+    "p5-quarter-gameplay": {
+     "calls": 337,
+     "triangles": 576619,
+     "ms": 9.9
+    },
+    "p5-route-aerial": {
+     "calls": 315,
+     "triangles": 552782,
+     "ms": 10.7
+    }
+   },
+   "resident_geometry_mb": 45.307,
+   "meshes": 343,
+   "build_ms": 125.8,
+   "heap_mb": 144.637,
+   "gl_memory": {
+    "geometries": 917,
+    "textures": 84
+   }
+  }
+ ]
+}

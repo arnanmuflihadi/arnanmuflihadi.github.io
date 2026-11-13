@@ -1,0 +1,34 @@
+{
+ "concept": "B",
+ "name": "Fractured Trading Isle",
+ "triangles": {
+  "P3A_landmass_main": 109824,
+  "P3A_landmass_B-quay": 105216,
+  "P3A_landmass_B-stack": 111358,
+  "P3A_landmass_B-slab": 103680,
+  "P3A_hanging_rock": 348,
+  "P3A_trees": 2132,
+  "P3A_path_0": 104,
+  "P3A_path_1": 84,
+  "P3A_path_2": 68,
+  "P3A_path_3": 86,
+  "P3A_bridge": 24,
+  "P3A_clouds": 14720
+ },
+ "hanging_rocks": 46,
+ "trees": 58,
+ "total_triangles": 447644,
+ "extent_x": [
+  -68.26929661049023,
+  67.65529106310997
+ ],
+ "extent_n": [
+  -25.72905121196345,
+  118.04734443295098
+ ],
+ "top_area_m2": 15658.139860764699,
+ "depth_m": [
+  22.000000062606006,
+  81.999999937394
+ ]
+}

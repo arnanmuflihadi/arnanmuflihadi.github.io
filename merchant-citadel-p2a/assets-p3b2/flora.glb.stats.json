@@ -1,0 +1,109 @@
+{
+ "Bush_Common": {
+  "l0_tris": 900
+ },
+ "Bush_Common_Flowers": {
+  "l0_tris": 1368
+ },
+ "Clover_1": {
+  "l0_tris": 379
+ },
+ "CommonTree_1": {
+  "l0_tris": 6265,
+  "l1_tris": 2067
+ },
+ "CommonTree_3": {
+  "l0_tris": 3505,
+  "l1_tris": 1156
+ },
+ "CommonTree_4": {
+  "l0_tris": 4066,
+  "l1_tris": 1341
+ },
+ "DeadTree_3": {
+  "l0_tris": 5802,
+  "l1_tris": 1914
+ },
+ "Fern_1": {
+  "l0_tris": 288
+ },
+ "Flower_3_Group": {
+  "l0_tris": 755
+ },
+ "Flower_3_Single": {
+  "l0_tris": 285
+ },
+ "Flower_4_Group": {
+  "l0_tris": 1690
+ },
+ "Flower_4_Single": {
+  "l0_tris": 642
+ },
+ "Grass_Common_Short": {
+  "l0_tris": 155
+ },
+ "Grass_Common_Tall": {
+  "l0_tris": 326
+ },
+ "Grass_Wispy_Tall": {
+  "l0_tris": 622
+ },
+ "Mushroom_Common": {
+  "l0_tris": 880
+ },
+ "Pebble_Round_1": {
+  "l0_tris": 136
+ },
+ "Pebble_Round_3": {
+  "l0_tris": 128
+ },
+ "Pebble_Square_1": {
+  "l0_tris": 104
+ },
+ "Pebble_Square_3": {
+  "l0_tris": 52
+ },
+ "Pine_1": {
+  "l0_tris": 3947,
+  "l1_tris": 1302
+ },
+ "Pine_5": {
+  "l0_tris": 1646,
+  "l1_tris": 543
+ },
+ "Plant_1_Big": {
+  "l0_tris": 360
+ },
+ "Plant_7_Big": {
+  "l0_tris": 112
+ },
+ "RockPath_Round_Small_1": {
+  "l0_tris": 998
+ },
+ "RockPath_Round_Small_2": {
+  "l0_tris": 1126
+ },
+ "RockPath_Round_Wide": {
+  "l0_tris": 3500
+ },
+ "RockPath_Square_Small_1": {
+  "l0_tris": 783
+ },
+ "RockPath_Square_Wide": {
+  "l0_tris": 2256
+ },
+ "Rock_Medium_1": {
+  "l0_tris": 342
+ },
+ "Rock_Medium_2": {
+  "l0_tris": 244
+ },
+ "Rock_Medium_3": {
+  "l0_tris": 522
+ },
+ "TwistedTree_2": {
+  "l0_tris": 9134,
+  "l1_tris": 1826
+ },
+ "_glb_bytes": 10891984
+}

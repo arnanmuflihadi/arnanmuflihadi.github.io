@@ -1,0 +1,371 @@
+{
+ "edge_walks": [
+  {
+   "start": [
+    -50,
+    18
+   ],
+   "bearing": 180,
+   "end": [
+    -78.203,
+    18
+   ],
+   "y": 0.32,
+   "support": 0.32,
+   "min_y": -0.33,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 28.203,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    -50,
+    18
+   ],
+   "bearing": 225,
+   "end": [
+    -67.72,
+    0.28
+   ],
+   "y": 0.48,
+   "support": 0.48,
+   "min_y": -0.072,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 25.06,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    5,
+    -52
+   ],
+   "bearing": 270,
+   "end": [
+    5,
+    -71.08
+   ],
+   "y": -3.02,
+   "support": -3.02,
+   "min_y": -3.02,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 19.08,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    5,
+    -52
+   ],
+   "bearing": 0,
+   "end": [
+    28.68,
+    -52
+   ],
+   "y": -2.484,
+   "support": -2.484,
+   "min_y": -3.02,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 23.68,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    20,
+    -60
+   ],
+   "bearing": 315,
+   "end": [
+    25.739,
+    -66.715
+   ],
+   "y": -2.423,
+   "support": -2.423,
+   "min_y": -3.02,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 8.834,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    40,
+    116
+   ],
+   "bearing": 80,
+   "end": [
+    40,
+    116
+   ],
+   "y": 21.09,
+   "support": 21.09,
+   "min_y": 21.09,
+   "on_island": true,
+   "walkable_cell": false,
+   "distance_travelled": 0,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    -36,
+    112
+   ],
+   "bearing": 120,
+   "end": [
+    -42.742,
+    120.689
+   ],
+   "y": 7.685,
+   "support": 7.685,
+   "min_y": 7.685,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 10.998,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    80,
+    54
+   ],
+   "bearing": 0,
+   "end": [
+    93.713,
+    54
+   ],
+   "y": -7.9,
+   "support": -7.9,
+   "min_y": -8.51,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 13.713,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    111,
+    45
+   ],
+   "bearing": 0,
+   "end": [
+    120.726,
+    45
+   ],
+   "y": -4.552,
+   "support": -4.552,
+   "min_y": -5,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 9.726,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    5,
+    100
+   ],
+   "bearing": 90,
+   "end": [
+    5,
+    103.21
+   ],
+   "y": 2.694,
+   "support": 2.694,
+   "min_y": 2,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 3.21,
+   "recoveries": 0
+  },
+  {
+   "start": [
+    -60,
+    60
+   ],
+   "bearing": 180,
+   "end": [
+    -61.449,
+    60
+   ],
+   "y": 0.07,
+   "support": 0.07,
+   "min_y": 0.07,
+   "on_island": true,
+   "walkable_cell": true,
+   "distance_travelled": 1.449,
+   "recoveries": 0
+  }
+ ],
+ "steep_walks": [
+  {
+   "label": "tea riser, outward",
+   "start": [
+    54,
+    46
+   ],
+   "target": [
+    62,
+    46
+   ],
+   "end": [
+    61.52,
+    46,
+    -4.249
+   ],
+   "stuck": 0,
+   "max_step_up_m": 0.001,
+   "min_y": -4.223,
+   "max_y": -1.68
+  },
+  {
+   "label": "crag face, northward",
+   "start": [
+    30,
+    98
+   ],
+   "target": [
+    30,
+    118
+   ],
+   "end": [
+    30,
+    100.725,
+    4.811
+   ],
+   "stuck": 1,
+   "max_step_up_m": 0.027,
+   "min_y": 4.393,
+   "max_y": 4.811
+  },
+  {
+   "label": "quay retaining wall, southward from the court",
+   "start": [
+    -14,
+    -22
+   ],
+   "target": [
+    -14,
+    -40
+   ],
+   "end": [
+    -14,
+    -26.72,
+    -0.365
+   ],
+   "stuck": 1,
+   "max_step_up_m": 0.001,
+   "min_y": -0.365,
+   "max_y": -0.013
+  },
+  {
+   "label": "hall shelf bank, northward (west of the terrace)",
+   "start": [
+    -30,
+    70
+   ],
+   "target": [
+    -30,
+    82
+   ],
+   "end": [
+    -30,
+    81.51,
+    2
+   ],
+   "stuck": 0,
+   "max_step_up_m": 0.033,
+   "min_y": -0.02,
+   "max_y": 2
+  }
+ ],
+ "fall_recovery": [
+  {
+   "label": "void south of the quay",
+   "from": [
+    5,
+    -110
+   ],
+   "steps_to_recover": 1,
+   "end": [
+    5,
+    -52,
+    -3
+   ],
+   "expected_near": [
+    5,
+    -52
+   ],
+   "back_on_support": true,
+   "grounded": true
+  },
+  {
+   "label": "void east of the stack",
+   "from": [
+    150,
+    45
+   ],
+   "steps_to_recover": 1,
+   "end": [
+    5,
+    -52,
+    -3
+   ],
+   "expected_near": [
+    5,
+    -52
+   ],
+   "back_on_support": true,
+   "grounded": true
+  },
+  {
+   "label": "void under the crag",
+   "from": [
+    40,
+    150
+   ],
+   "steps_to_recover": 1,
+   "end": [
+    5,
+    -52,
+    -3
+   ],
+   "expected_near": [
+    5,
+    -52
+   ],
+   "back_on_support": true,
+   "grounded": true
+  },
+  {
+   "label": "inside the rim lip (blocked cell)",
+   "from": [
+    -81,
+    18
+   ],
+   "steps_to_recover": 1,
+   "end": [
+    5,
+    -52,
+    -3
+   ],
+   "expected_near": [
+    5,
+    -52
+   ],
+   "back_on_support": true,
+   "grounded": true
+  }
+ ],
+ "rim_margin": null,
+ "jump_at_prow": {
+  "left_island": false,
+  "end": [
+   5,
+   -71.049,
+   -2.069
+  ]
+ }
+}

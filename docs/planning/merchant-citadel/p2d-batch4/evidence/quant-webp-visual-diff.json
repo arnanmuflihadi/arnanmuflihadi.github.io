@@ -1,0 +1,186 @@
+{
+ "qdq": {
+  "p3-bazaar-aerial": {
+   "psnr_db": 50.73,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.077
+  },
+  "p4-lane-north": {
+   "psnr_db": 49.68,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.136
+  },
+  "p4-town-aerial": {
+   "psnr_db": 52.06,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.033
+  },
+  "p5-bazaar-ne": {
+   "psnr_db": 52.12,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.091
+  },
+  "p5-counting-front": {
+   "psnr_db": 50.64,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.135
+  },
+  "p5-counting-loggia": {
+   "psnr_db": 48.27,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.219
+  },
+  "p5-court-from-east": {
+   "psnr_db": 48.04,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.208
+  },
+  "p5-court-from-lane": {
+   "psnr_db": 51.52,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.108
+  },
+  "p5-east-aerial": {
+   "psnr_db": 52.62,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.05
+  },
+  "p5-lane-east": {
+   "psnr_db": 50.51,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.123
+  },
+  "p5-loading-bay": {
+   "psnr_db": 52.13,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.096
+  },
+  "p5-quarter-gameplay": {
+   "psnr_db": 50.76,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.127
+  },
+  "p5-quarter-sw": {
+   "psnr_db": 52.23,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.053
+  },
+  "p5-route-aerial": {
+   "psnr_db": 51.77,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.059
+  },
+  "p5-tea-back": {
+   "psnr_db": 49.82,
+   "share_px_over_24": 0.0005,
+   "mean_abs": 0.098
+  },
+  "p5-tea-entrance": {
+   "psnr_db": 48.76,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.126
+  },
+  "p5-tea-lane-east": {
+   "psnr_db": 48.0,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.223
+  },
+  "p5-warehouse-gable": {
+   "psnr_db": 49.14,
+   "share_px_over_24": 0.0003,
+   "mean_abs": 0.131
+  }
+ },
+ "qwdq": {
+  "p3-bazaar-aerial": {
+   "psnr_db": 47.95,
+   "share_px_over_24": 0.0003,
+   "mean_abs": 0.434
+  },
+  "p4-lane-north": {
+   "psnr_db": 46.42,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.627
+  },
+  "p4-town-aerial": {
+   "psnr_db": 51.62,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.073
+  },
+  "p5-bazaar-ne": {
+   "psnr_db": 47.32,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.543
+  },
+  "p5-counting-front": {
+   "psnr_db": 46.8,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.567
+  },
+  "p5-counting-loggia": {
+   "psnr_db": 45.15,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.721
+  },
+  "p5-court-from-east": {
+   "psnr_db": 45.45,
+   "share_px_over_24": 0.0004,
+   "mean_abs": 0.67
+  },
+  "p5-court-from-lane": {
+   "psnr_db": 47.59,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.531
+  },
+  "p5-east-aerial": {
+   "psnr_db": 50.53,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.233
+  },
+  "p5-lane-east": {
+   "psnr_db": 46.87,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.603
+  },
+  "p5-loading-bay": {
+   "psnr_db": 48.03,
+   "share_px_over_24": 0.0001,
+   "mean_abs": 0.463
+  },
+  "p5-quarter-gameplay": {
+   "psnr_db": 45.44,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.8
+  },
+  "p5-quarter-sw": {
+   "psnr_db": 49.78,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.272
+  },
+  "p5-route-aerial": {
+   "psnr_db": 49.68,
+   "share_px_over_24": 0.0002,
+   "mean_abs": 0.276
+  },
+  "p5-tea-back": {
+   "psnr_db": 46.23,
+   "share_px_over_24": 0.0005,
+   "mean_abs": 0.578
+  },
+  "p5-tea-entrance": {
+   "psnr_db": 45.91,
+   "share_px_over_24": 0.0007,
+   "mean_abs": 0.469
+  },
+  "p5-tea-lane-east": {
+   "psnr_db": 44.4,
+   "share_px_over_24": 0.0008,
+   "mean_abs": 0.634
+  },
+  "p5-warehouse-gable": {
+   "psnr_db": 46.58,
+   "share_px_over_24": 0.0003,
+   "mean_abs": 0.498
+  }
+ }
+}

@@ -1,0 +1,678 @@
+{
+ "B": {
+  "title": "P1.3 selected (B)",
+  "buildings": 22,
+  "new_buildings": 0,
+  "re_typed": 0,
+  "turned_or_moved": 0,
+  "archetypes": {
+   "A01": 1,
+   "A02": 2,
+   "A03": 2,
+   "A03b": 2,
+   "A03c": 1,
+   "A04": 2,
+   "A04b": 4,
+   "A05": 4,
+   "A06": 2,
+   "A07": 1,
+   "A08": 1
+  },
+  "free_stalls": 12,
+  "awning_rows": 0,
+  "envelope": [
+   -28.5,
+   42,
+   -8,
+   90.0
+  ],
+  "envelope_size": [
+   70.5,
+   98.0
+  ],
+  "coverage_pct": 21.5,
+  "nodes": 37,
+  "edges": 47,
+  "loops": 11,
+  "network_m": 452.7,
+  "primary_route_m": 76.8,
+  "enclosure_lines": {
+   "Merchant street, west side": [
+    26.0,
+    75,
+    75
+   ],
+   "Merchant street, east side": [
+    26.0,
+    67,
+    67
+   ],
+   "Artisan lane, outer side": [
+    30.0,
+    60,
+    60
+   ],
+   "Artisan lane, inner side": [
+    30.0,
+    65,
+    0
+   ],
+   "Warehouse lane, outer side": [
+    30.0,
+    53,
+    53
+   ],
+   "Warehouse lane, inner side": [
+    30.0,
+    38,
+    0
+   ],
+   "Bazaar, west edge": [
+    26.0,
+    31,
+    31
+   ],
+   "Bazaar, east edge": [
+    26.0,
+    31,
+    15
+   ],
+   "Bazaar, south edge": [
+    44.0,
+    48,
+    0
+   ],
+   "Bazaar, north edge": [
+    44.0,
+    36,
+    36
+   ],
+   "Arrival court, west edge": [
+    16.0,
+    38,
+    38
+   ],
+   "Arrival court, east edge": [
+    16.0,
+    50,
+    50
+   ],
+   "Civic court, west edge": [
+    12.0,
+    83,
+    67
+   ],
+   "Civic court, east edge": [
+    12.0,
+    83,
+    67
+   ]
+  },
+  "enclosure_groups": {
+   "Merchant street": [
+    71,
+    71
+   ],
+   "Artisan lane": [
+    62,
+    30
+   ],
+   "Warehouse lane": [
+    46,
+    26
+   ],
+   "Bazaar": [
+    38,
+    20
+   ],
+   "Arrival court": [
+    44,
+    44
+   ],
+   "Civic": [
+    83,
+    67
+   ]
+  },
+  "overall_wall_pct": 51,
+  "overall_active_pct": 35,
+  "building_triangles": 592897,
+  "camera_directions": 92,
+  "camera_fully_clear": 52,
+  "camera_secondary_mean_clear_pct": 69,
+  "camera_primary_northbound": [
+   {
+    "travel": "N01->N02",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N02->N03",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N03->N04",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N04->N05",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N05->N29",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N29->N27",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N27->N06",
+    "type": "primary",
+    "clear_pct": 70
+   },
+   {
+    "travel": "N06->N07",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N07->N08",
+    "type": "primary",
+    "clear_pct": 100
+   }
+  ],
+  "tower_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N27",
+   "N06",
+   "N10"
+  ],
+  "porch_visible_from": [
+   "N01",
+   "N02",
+   "N27",
+   "N06",
+   "N07"
+  ],
+  "points_tested": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N27",
+   "N06",
+   "N07",
+   "N10",
+   "N13",
+   "N11",
+   "N14",
+   "N23",
+   "N24",
+   "N16"
+  ]
+ },
+ "D": {
+  "title": "D - Terraced Citadel",
+  "buildings": 24,
+  "new_buildings": 2,
+  "re_typed": 4,
+  "turned_or_moved": 7,
+  "archetypes": {
+   "A01": 1,
+   "A02": 2,
+   "A03": 2,
+   "A03b": 1,
+   "A03c": 1,
+   "A04": 3,
+   "A04b": 5,
+   "A05": 1,
+   "A06": 2,
+   "A07": 1,
+   "A08": 1,
+   "A09": 1,
+   "A11": 2,
+   "A11m": 1
+  },
+  "free_stalls": 4,
+  "awning_rows": 4,
+  "envelope": [
+   -30.5,
+   42,
+   -8,
+   90.0
+  ],
+  "envelope_size": [
+   72.5,
+   98.0
+  ],
+  "coverage_pct": 22.0,
+  "nodes": 35,
+  "edges": 43,
+  "loops": 9,
+  "network_m": 434.6,
+  "primary_route_m": 76.8,
+  "enclosure_lines": {
+   "Merchant street, west side": [
+    26.0,
+    75,
+    75
+   ],
+   "Merchant street, east side": [
+    26.0,
+    67,
+    67
+   ],
+   "Artisan lane, outer side": [
+    30.0,
+    63,
+    63
+   ],
+   "Artisan lane, inner side": [
+    30.0,
+    65,
+    0
+   ],
+   "Warehouse lane, outer side": [
+    30.0,
+    53,
+    53
+   ],
+   "Warehouse lane, inner side": [
+    30.0,
+    38,
+    0
+   ],
+   "Bazaar, west edge": [
+    26.0,
+    63,
+    63
+   ],
+   "Bazaar, east edge": [
+    26.0,
+    48,
+    33
+   ],
+   "Bazaar, south edge": [
+    44.0,
+    45,
+    0
+   ],
+   "Bazaar, north edge": [
+    44.0,
+    36,
+    36
+   ],
+   "Arrival court, west edge": [
+    16.0,
+    44,
+    44
+   ],
+   "Arrival court, east edge": [
+    16.0,
+    50,
+    50
+   ],
+   "Civic terrace, west edge": [
+    12.0,
+    83,
+    0
+   ],
+   "Civic terrace, east edge": [
+    12.0,
+    83,
+    0
+   ]
+  },
+  "enclosure_groups": {
+   "Merchant street": [
+    71,
+    71
+   ],
+   "Artisan lane": [
+    64,
+    32
+   ],
+   "Warehouse lane": [
+    46,
+    26
+   ],
+   "Bazaar": [
+    46,
+    29
+   ],
+   "Arrival court": [
+    47,
+    47
+   ],
+   "Civic": [
+    83,
+    0
+   ]
+  },
+  "overall_wall_pct": 55,
+  "overall_active_pct": 35,
+  "building_triangles": 718612,
+  "camera_directions": 84,
+  "camera_fully_clear": 40,
+  "camera_secondary_mean_clear_pct": 68,
+  "camera_primary_northbound": [
+   {
+    "travel": "N01->N02",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N02->N03",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N03->N04",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N04->N05",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N05->N29",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N29->N27",
+    "type": "primary",
+    "clear_pct": 80
+   },
+   {
+    "travel": "N27->N06",
+    "type": "primary",
+    "clear_pct": 57
+   },
+   {
+    "travel": "N06->N07",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N07->N08",
+    "type": "primary",
+    "clear_pct": 100
+   }
+  ],
+  "tower_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N27",
+   "N06",
+   "N07",
+   "N10"
+  ],
+  "porch_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N27",
+   "N06",
+   "N07"
+  ],
+  "points_tested": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N27",
+   "N06",
+   "N07",
+   "N10",
+   "N13",
+   "N11",
+   "N14",
+   "N23",
+   "N24",
+   "N16"
+  ]
+ },
+ "E": {
+  "title": "E - Crooked Spine",
+  "buildings": 23,
+  "new_buildings": 2,
+  "re_typed": 4,
+  "turned_or_moved": 10,
+  "archetypes": {
+   "A01": 1,
+   "A02": 2,
+   "A03": 2,
+   "A03b": 1,
+   "A03c": 1,
+   "A04": 3,
+   "A04b": 5,
+   "A05": 1,
+   "A06": 1,
+   "A07": 1,
+   "A08": 1,
+   "A09": 1,
+   "A11": 2,
+   "A11m": 1
+  },
+  "free_stalls": 4,
+  "awning_rows": 4,
+  "envelope": [
+   -30.5,
+   42,
+   -8.7,
+   90.0
+  ],
+  "envelope_size": [
+   72.5,
+   98.7
+  ],
+  "coverage_pct": 21.4,
+  "nodes": 35,
+  "edges": 43,
+  "loops": 9,
+  "network_m": 434.5,
+  "primary_route_m": 76.8,
+  "enclosure_lines": {
+   "Merchant street, west side": [
+    26.0,
+    75,
+    75
+   ],
+   "Merchant street, east side": [
+    26.0,
+    63,
+    63
+   ],
+   "Artisan lane, outer side": [
+    30.0,
+    42,
+    42
+   ],
+   "Artisan lane, inner side": [
+    30.0,
+    67,
+    0
+   ],
+   "Warehouse lane, outer side": [
+    30.0,
+    45,
+    45
+   ],
+   "Warehouse lane, inner side": [
+    30.0,
+    40,
+    0
+   ],
+   "Bazaar, west edge": [
+    26.0,
+    63,
+    63
+   ],
+   "Bazaar, east edge": [
+    26.0,
+    48,
+    33
+   ],
+   "Bazaar, south edge": [
+    44.0,
+    45,
+    0
+   ],
+   "Bazaar, north edge": [
+    44.0,
+    36,
+    36
+   ],
+   "Arrival court, west edge": [
+    16.0,
+    44,
+    44
+   ],
+   "Arrival court, east edge": [
+    16.0,
+    50,
+    50
+   ],
+   "Civic terrace, west edge": [
+    12.0,
+    83,
+    0
+   ],
+   "Civic terrace, east edge": [
+    12.0,
+    83,
+    0
+   ]
+  },
+  "enclosure_groups": {
+   "Merchant street": [
+    69,
+    69
+   ],
+   "Artisan lane": [
+    54,
+    21
+   ],
+   "Warehouse lane": [
+    42,
+    22
+   ],
+   "Bazaar": [
+    46,
+    29
+   ],
+   "Arrival court": [
+    47,
+    47
+   ],
+   "Civic": [
+    83,
+    0
+   ]
+  },
+  "overall_wall_pct": 53,
+  "overall_active_pct": 32,
+  "building_triangles": 687920,
+  "camera_directions": 84,
+  "camera_fully_clear": 37,
+  "camera_secondary_mean_clear_pct": 65,
+  "camera_primary_northbound": [
+   {
+    "travel": "N01->N02",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N02->N03",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N03->N04",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N04->N05",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N05->N29",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N29->N27",
+    "type": "primary",
+    "clear_pct": 80
+   },
+   {
+    "travel": "N27->N06",
+    "type": "primary",
+    "clear_pct": 57
+   },
+   {
+    "travel": "N06->N07",
+    "type": "primary",
+    "clear_pct": 100
+   },
+   {
+    "travel": "N07->N08",
+    "type": "primary",
+    "clear_pct": 100
+   }
+  ],
+  "tower_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N27",
+   "N06",
+   "N07",
+   "N10"
+  ],
+  "porch_visible_from": [
+   "N01",
+   "N02",
+   "N03",
+   "N27",
+   "N06",
+   "N07"
+  ],
+  "points_tested": [
+   "N01",
+   "N02",
+   "N03",
+   "N04",
+   "N05",
+   "N27",
+   "N06",
+   "N07",
+   "N10",
+   "N13",
+   "N11",
+   "N14",
+   "N23",
+   "N24",
+   "N16"
+  ]
+ }
+}
