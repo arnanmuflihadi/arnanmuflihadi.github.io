@@ -1,0 +1,24 @@
+{
+  "home": {
+    "architectureInstances": 0,
+    "mode": "adventure",
+    "project": "mbr",
+    "ready": "true",
+    "rendererCount": "1",
+    "revision": "R0A3.73",
+    "study": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+    "terrainOnly": true
+  },
+  "work": {
+    "mode": "editorial",
+    "project": "mbr",
+    "studyLinks": [
+      "project-transit.html",
+      "project-pangan.html",
+      "project-alphaearth-food.html",
+      "project-mbr.html",
+      "project-cbd.html",
+      "project-bandung-cafe.html"
+    ]
+  }
+}

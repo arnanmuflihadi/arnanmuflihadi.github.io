@@ -1,0 +1,46 @@
+{
+  "phase": "R0-C2A",
+  "approval": "human visual approval pending",
+  "productionChanged": false,
+  "gameExported": false,
+  "newGuildTraversalTested": false,
+  "evaluatedTriangles": 12253,
+  "materialIdentities": 17,
+  "sourceFilesPreserved": 1087,
+  "scopedRegressions": {
+    "pass": 6,
+    "fail": 0
+  },
+  "artifacts": [
+    {
+      "file": "atlas-guild-design.blend",
+      "bytes": 5892078,
+      "sha256": "d7947259e5b2904b64470e96e6982623ca519a7a19b487d7c518f2b15ca8ae8b"
+    },
+    {
+      "file": "01-guild-from-square.png",
+      "bytes": 2124805,
+      "sha256": "459a181c48d1832064b9a018d4330296b5fe0b8b703de7bfc43112272859bd54"
+    },
+    {
+      "file": "02-entrance.png",
+      "bytes": 1670370,
+      "sha256": "7c725e7745692a4ea769296877d3ed84cb11d4d5dea0094781b4e357142664ac"
+    },
+    {
+      "file": "03-town-context.png",
+      "bytes": 2267429,
+      "sha256": "0d329d59b921ea2beac7d605dd8a168941f9de8531aa90d19a0371018c10ed5c"
+    },
+    {
+      "file": "04-measured-plan.png",
+      "bytes": 2261123,
+      "sha256": "2b10298b645a0b58e4170349dfdf3f241bab4fb0310920a564ca1af460945389"
+    },
+    {
+      "file": "site-plan.json",
+      "bytes": 16861,
+      "sha256": "66ebb683808ae1b71e33729813d9b8262aaa5a613c5f44a489d9f7496c07d746"
+    }
+  ]
+}

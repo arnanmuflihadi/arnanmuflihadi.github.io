@@ -1,0 +1,151 @@
+prune: Removed types... Accessor (16)
+{
+  "models": [
+    {
+      "id": "tableRound",
+      "dimensions": [
+        0.7621023302957068,
+        0.7599999999999999,
+        0.8799999999999999
+      ],
+      "triangles": 80
+    },
+    {
+      "id": "chair",
+      "dimensions": [
+        0.46,
+        0.86,
+        0.46
+      ],
+      "triangles": 170
+    },
+    {
+      "id": "bench",
+      "dimensions": [
+        1.8,
+        0.84,
+        0.9
+      ],
+      "triangles": 170
+    },
+    {
+      "id": "pottedPlant",
+      "dimensions": [
+        0.3826047679583428,
+        1.18,
+        0.43565410055816606
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "books",
+      "dimensions": [
+        0.31855390743625644,
+        0.22,
+        0.20009189327759264
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "cardboardBoxOpen",
+      "dimensions": [
+        0.5955293531676105,
+        0.45,
+        0.34030249093335907
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "kitchenBar",
+      "dimensions": [
+        1.65,
+        1.02,
+        0.8058139149258761
+      ],
+      "triangles": 76
+    },
+    {
+      "id": "plantSmall2",
+      "dimensions": [
+        0.18932145755940422,
+        0.28,
+        0.18932146105650333
+      ],
+      "triangles": 158
+    },
+    {
+      "id": "stoolBar",
+      "dimensions": [
+        0.43934894189424106,
+        0.72,
+        0.3804873659392205
+      ],
+      "triangles": 176
+    },
+    {
+      "id": "cup-coffee",
+      "dimensions": [
+        0.18539129757288825,
+        0.12,
+        0.2456995408632945
+      ],
+      "triangles": 108
+    },
+    {
+      "id": "cup-saucer",
+      "dimensions": [
+        0.23467737563485566,
+        0.024999999999999998,
+        0.23467737563485566
+      ],
+      "triangles": 116
+    },
+    {
+      "id": "plate",
+      "dimensions": [
+        0.24771499375599929,
+        0.025,
+        0.24771499375599929
+      ],
+      "triangles": 140
+    },
+    {
+      "id": "croissant",
+      "dimensions": [
+        0.1608817876531534,
+        0.09,
+        0.2220412648304576
+      ],
+      "triangles": 162
+    },
+    {
+      "id": "banana",
+      "dimensions": [
+        0.09838590307324037,
+        0.14,
+        0.4503666880721392
+      ],
+      "triangles": 104
+    },
+    {
+      "id": "bread",
+      "dimensions": [
+        0.28,
+        0.06,
+        0.23162637566545932
+      ],
+      "triangles": 116
+    },
+    {
+      "id": "coconut-half",
+      "dimensions": [
+        0.23999997120548766,
+        0.12,
+        0.23999997120548766
+      ],
+      "triangles": 92
+    }
+  ],
+  "bytes": 117052,
+  "materials": 8
+}

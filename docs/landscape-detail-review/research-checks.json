@@ -1,0 +1,81 @@
+{
+  "mbr": {
+    "dialog": "Close study\n\nURBAN MORPHOLOGY / JAKARTA\n\nA Satellite Proxy for Low-Income Communities in DKI Jakarta\n\nA morphology-based proxy, complementary to official measures; not a household income estimate.\n\nSatellite embeddings · XGBoost · Temporal harmonization\n\nResearch finding\n\nThe study models visible urban morphology as a proxy, complementary to official measures.\n\nThis is not a household income estimate. The fictional landscape does not identify low-income residents or depict measured deprivation.\n\nRead complete case study →\nThis realm is not constructed yet. The complete research remains available.",
+    "links": [
+      {
+        "href": "project-mbr.html",
+        "text": "Read complete case study →"
+      }
+    ],
+    "selected": "mbr"
+  },
+  "work": {
+    "heading": "A portfolio of systems, not just maps.",
+    "links": [
+      {
+        "href": "project-transit.html",
+        "text": "01"
+      },
+      {
+        "href": "project-pangan.html",
+        "text": "02"
+      },
+      {
+        "href": "project-alphaearth-food.html",
+        "text": "03"
+      },
+      {
+        "href": "project-mbr.html",
+        "text": "04"
+      },
+      {
+        "href": "project-cbd.html",
+        "text": "05"
+      },
+      {
+        "href": "project-transit.html",
+        "text": "01Transit access"
+      },
+      {
+        "href": "project-pangan.html",
+        "text": "02Food networks"
+      },
+      {
+        "href": "project-alphaearth-food.html",
+        "text": "03Earth observation"
+      },
+      {
+        "href": "project-mbr.html",
+        "text": "04Urban morphology"
+      },
+      {
+        "href": "project-cbd.html",
+        "text": "05Business centres"
+      },
+      {
+        "href": "project-transit.html",
+        "text": "01NETWORK ACCESSTransit accessibility in DKI JakartaWho can actually reach the city?"
+      },
+      {
+        "href": "project-pangan.html",
+        "text": "02FOOD SYSTEMSCritical roads for rice in West JavaWhich roads keep West Java’s rice moving?"
+      },
+      {
+        "href": "project-alphaearth-food.html",
+        "text": "03EARTH OBSERVATIONHistorical paddy screening in West JavaWhere does the historical signal justify closer inspection?"
+      },
+      {
+        "href": "project-mbr.html",
+        "text": "04URBAN MORPHOLOGYSatellite proxy for low-income communitiesWhat can satellite morphology reveal—and what can’t it replace?"
+      },
+      {
+        "href": "project-cbd.html",
+        "text": "05SPATIAL CLUSTERINGMapping Indonesia’s business centersWhere do commercial centers emerge from 91,940 POIs?"
+      },
+      {
+        "href": "project-bandung-cafe.html",
+        "text": "06SITE SCREENINGChoosing where to visit for a café in BandungWhich neighbourhoods deserve a site visit, and what can the data not say?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+✔ all foundation delivery files match provenance and embed real geometry and textures (8.612667ms)
+✔ real building and shop preserve proportions, share mesh buffers, and align their collision bounds after rotation (147.633ms)
+✔ the real showcase has ten model types, aligned supports and passable paving beside solid imported buildings (143.440167ms)
+✔ concurrent requests share a promise; failed loads can retry without caching a broken asset (0.641541ms)
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (3.862917ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (33.49575ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (27.923166ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (16.681917ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (17.158333ms)
+✔ the authored island has an irregular closed rock volume and physics matches its rendered top (805.913667ms)
+✔ the actual imported island uses only three scenery files and disposes its generated scene (421.442417ms)
+✔ every authored route can be walked with the actual character physics and final imported collisions (972.228083ms)
+✔ jumping on elevated terrain and falling from an unguarded edge recover to real safe ground (0.987834ms)
+✔ the follow camera clears rising terrain and imported building proxies (270.939458ms)
+✔ world loading deduplicates requests, rejects unbuilt realms and disposes cancelled generations (0.567083ms)
+✔ waterfall is a closed volume joined to the stream, with depth and a lower cloud termination (4.615875ms)
+✔ fall stays visible outside the cliff, trail accents clear paths, and new water motion is reducible (351.638375ms)
+✔ three alternatives remain recorded; the repaired hub has ten smaller commercial envelopes on two frontages (7.030875ms)
+✔ temporary town restores terrain, vegetation, quality resources and collision after repeated toggles and disposal (498.616083ms)
+✔ all building thresholds are supported; solid wings block walking while the Guild porch remains open (395.583541ms)
+✔ actual capsule reaches all five required journeys plus the meadow loop without a support teleport (508.760166ms)
+✔ approved production and source assets are unchanged; the blockout is isolated from production (3.295125ms)
+✔ grass stays masked after the landscape switches distance detail, then restores original index buffers (357.749416ms)
+✔ the dominant arrival remains continuous, unobstructed and substantially wider than the optional loop (875.681709ms)
+✔ all plots meet the actual terrain and every entrance has a clear supported public approach (918.153583ms)
+✔ the square retains a level usable centre and at least eighty percent clear public floor (842.125708ms)
+✔ the real follow camera stays outside the Guild canopy during an approach and return (574.861875ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5189.628083

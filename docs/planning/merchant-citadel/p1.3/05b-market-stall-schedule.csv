@@ -1,0 +1,13 @@
+stall_id,kit_id,base_asset,district,position_x,position_y,position_z,rotation_y,footprint_width,footprint_depth,customer_side,change_since_p1_2
+S01,S01b,FP-Stall_Empty@blue,D3 Pasar Awan,-5.0,0.0,-40.5,90,1.9,1.0,east (+x),kept
+S02,S03,AV-mdvl_village_stall_01,D3 Pasar Awan,-5.0,0.0,-44.5,90,2.3,1.2,east (+x),kept
+S03,S04,SY-counter_L,D3 Pasar Awan,-5.0,0.0,-53.5,90,3.2,1.0,east (+x),kept
+S04,S01c,FP-Stall_Empty@cream,D3 Pasar Awan,-5.0,0.0,-57.5,90,1.9,1.0,east (+x),kept
+S05,S01g,FP-Stall_Empty@burgundy,D3 Pasar Awan,5.0,0.0,-40.5,-90,1.9,1.0,west (-x),kept
+S06,S02c,FP-Stall_Cart_Empty@cream,D3 Pasar Awan,5.0,0.0,-44.5,-90,3.1,1.2,west (-x),kept
+S07,S05,SY-table03,D3 Pasar Awan,5.0,0.0,-53.5,-90,2.4,1.2,west (-x),kept
+S08,S01g,FP-Stall_Empty@burgundy,D3 Pasar Awan,5.0,0.0,-57.5,-90,1.9,1.0,west (-x),kept
+S09,S03,AV-mdvl_village_stall_01,D3 Pasar Awan,-10.0,0.0,-40.6,0,2.3,1.2,south (+z),moved 2.1 m along z to clear a walking edge
+S10,S05,SY-table03,D3 Pasar Awan,10.0,0.0,-40.6,0,2.4,1.2,south (+z),moved 2.1 m along z to clear a walking edge
+S11,S01b,FP-Stall_Empty@blue,D3 Pasar Awan,-12.0,0.0,-58.6,0,1.9,1.0,south (+z),moved 0.7 m along z to clear a walking edge
+S12,S02g,FP-Stall_Cart_Empty@burgundy,D3 Pasar Awan,12.0,0.0,-58.6,0,3.1,1.2,south (+z),moved 0.7 m along z to clear a walking edge

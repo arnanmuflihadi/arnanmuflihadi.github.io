@@ -1,0 +1,64 @@
+{
+  "assets": {
+    "files": {
+      "cachedFiles": 2,
+      "loadedFiles": 2,
+      "requests": 2
+    },
+    "geometry": {
+      "geometries": 28,
+      "materials": 33,
+      "meshes": 234,
+      "missingTextures": [],
+      "textures": 5,
+      "triangles": 348728
+    },
+    "imported": {
+      "fern": 76,
+      "hangingFern": 14,
+      "tree": 32
+    },
+    "settlement": null,
+    "sourceFiles": [
+      "canopy-tree.glb",
+      "fern.glb"
+    ],
+    "surfaceTriangles": 13572,
+    "terrain": {
+      "depth": 142.64583333333334,
+      "surfaceMax": 28,
+      "surfaceMin": 7.416465881731774,
+      "undersideMin": -57,
+      "width": 131
+    },
+    "terrainOnly": true,
+    "world": "Transit Kingdom"
+  },
+  "camera": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 60,
+      "position": [
+        17,
+        17,
+        44
+      ],
+      "quaternion": [
+        -0.1246888484861594,
+        0.1289012990599458,
+        0.01633968482056118,
+        0.9836514427701606
+      ]
+    },
+    "player": [
+      15,
+      10.521021947534772,
+      36
+    ],
+    "sceneId": "a18285cf-2d65-4501-839d-c8e042ea6a4e",
+    "view": "Third-person exploration",
+    "worldId": "transit-kingdom-r0"
+  },
+  "humanApproval": false,
+  "terrainOnly": true
+}

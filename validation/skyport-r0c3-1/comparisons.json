@@ -1,0 +1,185 @@
+[
+  {
+    "view": "01-aerial",
+    "camera": {
+      "position": [
+        8.180623088591787,
+        28,
+        84.51954370331835
+      ],
+      "quaternion": [
+        -0.2730544526830383,
+        -0.12048209377785121,
+        -0.03449166511653683,
+        0.9538006374428359
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "drawCallDelta": 6,
+    "triangleDelta": 1452,
+    "newRuntimeMaterials": 0
+  },
+  {
+    "view": "02-spawn",
+    "camera": {
+      "position": [
+        15.0601402178293,
+        16.689897932043287,
+        69.93625724009176
+      ],
+      "quaternion": [
+        0.048188581973641356,
+        0.3003217045943351,
+        -0.015193801534084745,
+        0.9524987573282526
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "drawCallDelta": 5,
+    "triangleDelta": 1344,
+    "newRuntimeMaterials": 0
+  },
+  {
+    "view": "03-town-return",
+    "camera": {
+      "position": [
+        8.177222981616742,
+        16.924999640101486,
+        60.10643270862386
+      ],
+      "quaternion": [
+        -0.012911231164788638,
+        0.9528374392746929,
+        -0.040949193654353594,
+        -0.30042849060186255
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6500000000000004
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "drawCallDelta": 6,
+    "triangleDelta": 1452,
+    "newRuntimeMaterials": 0
+  },
+  {
+    "view": "04-island",
+    "camera": {
+      "position": [
+        143,
+        121,
+        194
+      ],
+      "quaternion": [
+        -0.19827553929456282,
+        0.327381355607055,
+        0.07046707494521927,
+        0.9211637475861728
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "drawCallDelta": 6,
+    "triangleDelta": 1452,
+    "newRuntimeMaterials": 0
+  },
+  {
+    "view": "05-dock",
+    "camera": {
+      "position": [
+        12.536403897884695,
+        16.773000006037588,
+        66.3319882452202
+      ],
+      "quaternion": [
+        0.0018922604558776512,
+        0.953698067703388,
+        0.006001483426578987,
+        -0.30069984570310576
+      ],
+      "fov": 60,
+      "eyeAboveSupport": 1.6499999999999986
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        656
+      ],
+      "buffer": [
+        1280,
+        656
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "drawCallDelta": 5,
+    "triangleDelta": 1344,
+    "newRuntimeMaterials": 0
+  }
+]

@@ -1,0 +1,292 @@
+{
+  "alternatives": [
+    {
+      "coreArea": 1739.5,
+      "coreBounds": [
+        14.5,
+        -8,
+        50,
+        41
+      ],
+      "footprintSamples": 954,
+      "id": "A",
+      "name": "Central Plaza Hub",
+      "routes": [
+        {
+          "ascent": 4.074853355703366,
+          "descent": 0.3033687893996486,
+          "elevation": [
+            15.999527175574778,
+            20.010560945566368
+          ],
+          "id": "arrival",
+          "length": 37.91369005181235,
+          "maxGrade": 0.2802678859153142,
+          "runSeconds": 8.242106533002685,
+          "samples": 99,
+          "unsafeSamples": 0,
+          "walkSeconds": 18.054138119910643,
+          "width": 0
+        },
+        {
+          "ascent": 2.434851523453883,
+          "descent": 0.5186630525342615,
+          "elevation": [
+            19.43027306109074,
+            21.852322865894344
+          ],
+          "id": "market",
+          "length": 15.903786168828711,
+          "maxGrade": 0.4903074697648836,
+          "runSeconds": 3.4573448193105896,
+          "samples": 42,
+          "unsafeSamples": 0,
+          "walkSeconds": 7.573231508966052,
+          "width": 0
+        },
+        {
+          "ascent": 0,
+          "descent": 2.721497049843048,
+          "elevation": [
+            18.96570316295507,
+            21.68720021279812
+          ],
+          "id": "guild",
+          "length": 16.131586826575322,
+          "maxGrade": 0.4201374809078114,
+          "runSeconds": 3.506866701429418,
+          "samples": 42,
+          "unsafeSamples": 0,
+          "walkSeconds": 7.681708012654915,
+          "width": 0
+        },
+        {
+          "ascent": 2.8226220471094052,
+          "descent": 0.7895242607169699,
+          "elevation": [
+            19.771011741878496,
+            21.80410952827093
+          ],
+          "id": "east-frontage",
+          "length": 17.440384798937508,
+          "maxGrade": 0.6027739299539572,
+          "runSeconds": 3.791387999769024,
+          "samples": 44,
+          "unsafeSamples": 0,
+          "walkSeconds": 8.304945142351194,
+          "width": 0
+        },
+        {
+          "ascent": 4.121935899764377,
+          "descent": 0.2514138948398106,
+          "elevation": [
+            16.80663552880705,
+            20.928571428571427
+          ],
+          "id": "garden-loop",
+          "length": 59.9765985952534,
+          "maxGrade": 0.5896516731327404,
+          "runSeconds": 13.038390998968133,
+          "samples": 155,
+          "unsafeSamples": 0,
+          "walkSeconds": 28.56028504535876,
+          "width": 0
+        },
+        {
+          "ascent": 0,
+          "descent": 1.7208931421617848,
+          "elevation": [
+            16.155852995285635,
+            17.87674613744742
+          ],
+          "id": "west-frontage",
+          "length": 11.163319066943387,
+          "maxGrade": 0.30535795666954185,
+          "runSeconds": 2.4268084928137803,
+          "samples": 30,
+          "unsafeSamples": 0,
+          "walkSeconds": 5.3158662223539945,
+          "width": 0
+        }
+      ],
+      "slopeThreshold": 0.35,
+      "steepFootprintPercent": 52.20125786163522,
+      "terrainRange": [
+        14.223439739497602,
+        23.86606221491448
+      ]
+    },
+    {
+      "coreArea": 1596,
+      "coreBounds": [
+        12,
+        -36.5,
+        50,
+        5.5
+      ],
+      "footprintSamples": 1028,
+      "id": "B",
+      "name": "Terraced Hillside Town",
+      "routes": [
+        {
+          "ascent": 9.68605091192335,
+          "descent": 1.4501163959703265,
+          "elevation": [
+            15.999527175574778,
+            24.235461691527803
+          ],
+          "id": "arrival",
+          "length": 73.15568472023726,
+          "maxGrade": 0.5466149477629548,
+          "runSeconds": 15.90340972179071,
+          "samples": 183,
+          "unsafeSamples": 0,
+          "walkSeconds": 34.83604034297012,
+          "width": 0
+        },
+        {
+          "ascent": 7.852738943061539,
+          "descent": 0.031110578497255403,
+          "elevation": [
+            24.235461691527803,
+            32.08820063458934
+          ],
+          "id": "guild",
+          "length": 25.000244465397117,
+          "maxGrade": 0.504559473772319,
+          "runSeconds": 5.434835753347199,
+          "samples": 60,
+          "unsafeSamples": 0,
+          "walkSeconds": 11.90487831685577,
+          "width": 0
+        },
+        {
+          "ascent": 6.711267693019531,
+          "descent": 11.946721476321974,
+          "elevation": [
+            15.009334468368086,
+            24.235461691527803
+          ],
+          "id": "loop",
+          "length": 79.88993902067695,
+          "maxGrade": 0.9249413237178536,
+          "runSeconds": 17.36737804797325,
+          "samples": 194,
+          "unsafeSamples": 0,
+          "walkSeconds": 38.04282810508426,
+          "width": 0
+        }
+      ],
+      "slopeThreshold": 0.35,
+      "steepFootprintPercent": 73.83268482490273,
+      "terrainRange": [
+        15.838842895599203,
+        32.11788477803907
+      ]
+    },
+    {
+      "coreArea": 3125,
+      "coreBounds": [
+        2.5,
+        -24.5,
+        52.5,
+        38
+      ],
+      "footprintSamples": 1002,
+      "id": "C",
+      "name": "Curved Market Loop",
+      "routes": [
+        {
+          "ascent": 6.481698808671686,
+          "descent": 0.7749118336003029,
+          "elevation": [
+            15.999527175574778,
+            21.70631415064616
+          ],
+          "id": "arrival",
+          "length": 53.90296449096742,
+          "maxGrade": 0.8421794599525589,
+          "runSeconds": 11.718035758905962,
+          "samples": 135,
+          "unsafeSamples": 0,
+          "walkSeconds": 25.668078329032102,
+          "width": 0
+        },
+        {
+          "ascent": 9.469159006899767,
+          "descent": 1.3869248804442833,
+          "elevation": [
+            20.613075119555717,
+            29.788548277101647
+          ],
+          "id": "guild",
+          "length": 37.79510428198,
+          "maxGrade": 0.576217135380714,
+          "runSeconds": 8.21632701782174,
+          "samples": 90,
+          "unsafeSamples": 0,
+          "walkSeconds": 17.99766870570476,
+          "width": 0
+        },
+        {
+          "ascent": 7.573976976226604,
+          "descent": 7.573976976226604,
+          "elevation": [
+            16.690092573308636,
+            21.797394668095883
+          ],
+          "id": "loop",
+          "length": 98.53757100876656,
+          "maxGrade": 0.8898290681079032,
+          "runSeconds": 21.421211088862297,
+          "samples": 245,
+          "unsafeSamples": 0,
+          "walkSeconds": 46.92265286131741,
+          "width": 0
+        }
+      ],
+      "slopeThreshold": 0.35,
+      "steepFootprintPercent": 52.49500998003992,
+      "terrainRange": [
+        12.644580913313504,
+        31.700763612963495
+      ]
+    }
+  ],
+  "architectureGLBsLoaded": 0,
+  "character": {
+    "height": 1.9,
+    "meshes": 15,
+    "triangles": 10202
+  },
+  "envelopes": 6,
+  "files": {
+    "cachedFiles": 2,
+    "loadedFiles": 2,
+    "requests": 2
+  },
+  "landscape": {
+    "geometries": 108,
+    "materials": 67,
+    "meshes": 129,
+    "missingTextures": [],
+    "textures": 4,
+    "triangles": 1273068
+  },
+  "landscapeAssets": {
+    "fern": 678,
+    "hangingFern": 24,
+    "tree": 134
+  },
+  "planning": {
+    "geometries": 20,
+    "materials": 17,
+    "meshes": 32,
+    "missingTextures": [],
+    "textures": 0,
+    "triangles": 13877
+  },
+  "productionModified": false,
+  "revision": "R0-B1.5-final-validation.4",
+  "temporary": true
+}

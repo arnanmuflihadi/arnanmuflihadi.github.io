@@ -1,0 +1,30 @@
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (22.227ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (582.287292ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (181.031208ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (101.464375ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (86.913791ms)
+✔ Guild is opt-in on local populated-town development only (7.8625ms)
+✔ Guild delivery has real indexed geometry, visible walkable surfaces, and no transmission pass (12.202167ms)
+✔ editorial, adventure and study routes roundtrip under a Pages project path (51.239541ms)
+✔ stored positions cannot replace route context or introduce an invalid player transform (0.4045ms)
+✔ all research has a finite cinematic composition and only constructed landmarks permit walking (0.236291ms)
+✔ camera interpolation clamps endpoints and keeps independent source compositions intact (0.2545ms)
+✔ three shared landmark spawns are reachable, interactable and protected by actual district collision (839.74175ms)
+✔ imported scenery matches provenance and contains real self-contained glTF meshes and textures (21.246542ms)
+✔ Home and Work preserve semantic research and use one living scene host with a static fallback (1.335833ms)
+✔ prop population requires all three local development opt-ins (7.602ms)
+✔ curated props preserve the civic axis and the four door desire lines (8.317625ms)
+✔ town requires exact local development flag and is off on every public/default route (15.032458ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (567.315ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (4528.169792ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (3850.265083ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (2440.124666ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (2716.137959ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10328.913916

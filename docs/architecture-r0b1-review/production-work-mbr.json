@@ -1,0 +1,30 @@
+{
+  "architectureInstances": 0,
+  "mode": "editorial",
+  "projects": [
+    "atlas-transit",
+    "atlas-pangan",
+    "atlas-alphaearth-food",
+    "atlas-mbr",
+    "atlas-cbd",
+    "atlas-bandung-cafe"
+  ],
+  "rendererCount": "1",
+  "sceneId": "0200a6dd-10fd-4dff-8445-bb2081172698",
+  "selectedProject": "mbr",
+  "transferEvidence": [
+    {
+      "durationMs": 1.2999999970197678,
+      "encodedBytes": 719224,
+      "file": "canopy-tree.glb",
+      "transferBytes": 0
+    },
+    {
+      "durationMs": 1,
+      "encodedBytes": 104876,
+      "file": "fern.glb",
+      "transferBytes": 0
+    }
+  ],
+  "url": "http://127.0.0.1:4173/portfolio.html?project=mbr"
+}

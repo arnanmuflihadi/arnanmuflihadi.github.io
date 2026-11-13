@@ -1,0 +1,271 @@
+object,component,original_triangles,optimized_editable_triangles,changes
+S2A / foundation,Building shell,108,108,[]
+S2A / ground floor,Building shell,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper floor,Building shell,108,108,[]
+S2A / roof ceiling,Building shell,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / shop facade,Building shell,712,376,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / terrace facade,Building shell,596,324,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear ground wall,Building shell,792,432,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear upper wall,Building shell,484,244,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east shop wall,Building shell,540,284,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east upper wall,Building shell,484,244,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west shop wall,Building shell,540,284,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west upper wall,Building shell,484,244,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west display glass,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west display jamb,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west display jamb.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west display rail,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west display rail.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west display mullion,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / west display mullion.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance glass,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance jamb,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance jamb.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance rail,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance rail.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance mullion,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east display glass,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east display jamb,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east display jamb.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east display rail,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east display rail.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / east display mullion,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / door pull,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / door pull.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing glass,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing jamb,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing jamb.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing rail,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing rail.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing mullion,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing mullion.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony sliding glazing mullion.002,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper east glazing glass,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper east glazing jamb,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper east glazing jamb.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper east glazing rail,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper east glazing rail.001,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper east glazing mullion,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda post,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / column stone shoe,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / front knee brace,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda post.001,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / column stone shoe.001,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / front knee brace.001,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony fascia,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.001,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.002,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.003,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.004,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.005,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.006,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.007,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.008,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.009,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.010,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.011,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda soffit slat.012,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper roof post,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper cantilever brace,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper roof post.001,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper cantilever brace.001,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / front roof header,Timber structures,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / screen edge,Sun screens,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / screen edge.001,Sun screens,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / screen top bottom,Sun screens,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / screen top bottom.001,Sun screens,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / angled sun screen blade,Sun screens,1404,572,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / Kenney window east rear,Windows,34,34,[]
+S2A / Kenney window east rear.001,Windows,34,34,[]
+S2A / Kenney window east rear.002,Windows,34,34,[]
+S2A / Kenney window east rear.003,Windows,34,34,[]
+S2A / Kenney window east rear.004,Windows,34,34,[]
+S2A / Kenney window east rear.005,Windows,34,34,[]
+S2A / side shop glass,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.001,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.002,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom.001,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop glass.001,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.003,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.004,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.005,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom.002,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom.003,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop glass.002,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.006,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.007,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.008,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom.004,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom.005,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop glass.003,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.009,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.010,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop mullion.011,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom.006,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side shop transom.007,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear service door,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear lower glazing,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear lower glazing.001,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / sign backing,Decorative props,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / shop sign,Decorative props,832,832,[]
+S2A / lamp bracket,Decorative props,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda light,Decorative props,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / lamp glass,Decorative props,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / lamp bracket.001,Decorative props,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / veranda light.001,Decorative props,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / lamp glass.001,Decorative props,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side window stone sill,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side window stone sill.001,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side window stone sill.002,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / side window stone sill.003,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear window stone sill,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear window stone sill.001,Windows,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / door stone threshold,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance head transom,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / entrance threshold brass inlay,Shopfront and doors,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper side glazed insert,Windows,12,12,[]
+S2A / upper side glazed insert.001,Windows,12,12,[]
+S2A / upper side glazed insert.002,Windows,12,12,[]
+S2A / upper side glazed insert.003,Windows,12,12,[]
+S2A / upper rear glazed insert,Windows,12,12,[]
+S2A / upper rear glazed insert.001,Windows,12,12,[]
+S2A / hip roof structural surface 0,Roof A,880,880,[]
+S2A / hip roof structural surface 1,Roof A,880,880,[]
+S2A / hip roof structural surface 2,Roof A,880,880,[]
+S2A / hip roof structural surface 3,Roof A,880,880,[]
+S2A / laid terracotta tile courses,Roof A,4816,4816,[]
+S2A / ridge ventilation louver,Roof A,108,108,[]
+S2A / ridge ventilation louver.001,Roof A,108,108,[]
+S2A / ridge ventilation louver.002,Roof A,108,108,[]
+S2A / ridge ventilation louver.003,Roof A,108,108,[]
+S2A / ridge ventilation louver.004,Roof A,108,108,[]
+S2A / ridge ventilation louver.005,Roof A,108,108,[]
+S2A / raised ridge rain cap,Roof A,164,164,[]
+S2A / subtle brass ridge crest,Roof A,108,108,[]
+S2A / continuous curved eave fascia 0,Roof A,660,660,[]
+S2A / continuous curved eave fascia 1,Roof A,660,660,[]
+S2A / continuous curved eave fascia 2,Roof A,660,660,[]
+S2A / continuous curved eave fascia 3,Roof A,660,660,[]
+S2A / fitted hip cap,Roof A,108,108,[]
+S2A / fitted hip cap.001,Roof A,108,108,[]
+S2A / fitted hip cap.002,Roof A,108,108,[]
+S2A / fitted hip cap.003,Roof A,108,108,[]
+S2A / fitted hip cap.004,Roof A,108,108,[]
+S2A / fitted hip cap.005,Roof A,108,108,[]
+S2A / fitted hip cap.006,Roof A,108,108,[]
+S2A / fitted hip cap.007,Roof A,108,108,[]
+S2A / fitted hip cap.008,Roof A,108,108,[]
+S2A / fitted hip cap.009,Roof A,108,108,[]
+S2A / fitted hip cap.010,Roof A,108,108,[]
+S2A / fitted hip cap.011,Roof A,108,108,[]
+S2A / fitted hip cap.012,Roof A,108,108,[]
+S2A / fitted hip cap.013,Roof A,108,108,[]
+S2A / fitted hip cap.014,Roof A,108,108,[]
+S2A / fitted hip cap.015,Roof A,108,108,[]
+S2A / fitted hip cap.016,Roof A,108,108,[]
+S2A / fitted hip cap.017,Roof A,108,108,[]
+S2A / fitted hip cap.018,Roof A,108,108,[]
+S2A / fitted hip cap.019,Roof A,108,108,[]
+S2A / fitted hip cap.020,Roof A,108,108,[]
+S2A / fitted hip cap.021,Roof A,108,108,[]
+S2A / fitted hip cap.022,Roof A,108,108,[]
+S2A / fitted hip cap.023,Roof A,108,108,[]
+S2A / fitted hip cap.024,Roof A,108,108,[]
+S2A / fitted hip cap.025,Roof A,108,108,[]
+S2A / fitted hip cap.026,Roof A,108,108,[]
+S2A / fitted hip cap.027,Roof A,108,108,[]
+S2A / fitted hip cap.028,Roof A,108,108,[]
+S2A / fitted hip cap.029,Roof A,108,108,[]
+S2A / fitted hip cap.030,Roof A,108,108,[]
+S2A / fitted hip cap.031,Roof A,108,108,[]
+S2A / fitted hip cap.032,Roof A,108,108,[]
+S2A / fitted hip cap.033,Roof A,108,108,[]
+S2A / fitted hip cap.034,Roof A,108,108,[]
+S2A / fitted hip cap.035,Roof A,108,108,[]
+S2A / fitted hip cap.036,Roof A,108,108,[]
+S2A / fitted hip cap.037,Roof A,108,108,[]
+S2A / fitted hip cap.038,Roof A,108,108,[]
+S2A / fitted hip cap.039,Roof A,108,108,[]
+S2A / fitted hip cap.040,Roof A,108,108,[]
+S2A / fitted hip cap.041,Roof A,108,108,[]
+S2A / fitted hip cap.042,Roof A,108,108,[]
+S2A / fitted hip cap.043,Roof A,108,108,[]
+S2A / fitted hip cap.044,Roof A,108,108,[]
+S2A / fitted hip cap.045,Roof A,108,108,[]
+S2A / fitted hip cap.046,Roof A,108,108,[]
+S2A / fitted hip cap.047,Roof A,108,108,[]
+S2A / ridge vent support,Roof A,12,12,[]
+S2A / ridge vent support.001,Roof A,12,12,[]
+S2A / ridge vent support.002,Roof A,12,12,[]
+S2A / ridge vent support.003,Roof A,12,12,[]
+S2A / balcony deck edge,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony deck edge.001,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony decking board,Balcony,3348,1364,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony rail upright,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony rail upright.001,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony rail upright.002,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony rail upright.003,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony timber handrail,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony thin rail,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony thin rail.001,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / balcony thin rail.002,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return handrail,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return rail,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return rail.001,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return rail.002,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return handrail.001,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return rail.003,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return rail.004,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / return rail.005,Balcony,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper interior floor,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear interior sage wall,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / cafe counter,Interior,108,108,[]
+S2A / counter stone top,Interior,108,108,[]
+S2A / rear display shelf,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear display shelf.001,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / rear display shelf.002,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.001,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.002,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.003,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.004,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.005,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.006,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.007,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / coffee jar.008,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / cafe table foot,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / cafe table top,Interior,380,252,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / cafe table foot.001,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / cafe table top.001,Interior,380,252,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / interior stool,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / interior stool.001,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / interior stool.002,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / interior stool.003,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper room sage back wall,Interior,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper timber table leg,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper timber table top,Interior,284,188,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper timber table leg.001,Interior,188,124,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / upper timber table top.001,Interior,284,188,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough,Planters,220,92,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough soil,Planters,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough.001,Planters,220,92,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough soil.001,Planters,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough.002,Planters,220,92,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough soil.002,Planters,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough.003,Planters,220,92,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+S2A / integrated stone trough soil.003,Planters,108,44,"[{""modifier"": ""Craft edge bevel"", ""segments_before"": 2, ""segments_after"": 1}]"
+Fern_1.001,Planters,288,288,[]
+Fern_1.002,Planters,288,288,[]
+Fern_1.003,Planters,288,288,[]
+Fern_1.004,Planters,288,288,[]
+Fern_1.005,Planters,288,288,[]
+Fern_1.006,Planters,288,288,[]
+Fern_1.007,Planters,288,288,[]
+Fern_1.008,Planters,288,288,[]
+Fern_1.009,Planters,288,288,[]
+Fern_1.010,Planters,288,288,[]
+Fern_1.011,Planters,288,288,[]
+Fern_1.012,Planters,288,288,[]

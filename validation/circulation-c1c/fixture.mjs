@@ -1,0 +1,5 @@
+import{fixture as baseline}from'../town-s2g/fixture.mjs';
+import{integrateTown}from'../../assets/js/floating-atlas/town-integration.js';
+import{circulationCatalog}from'../../assets/js/floating-atlas/town-circulation.js';import{squareAsset}from'../../assets/js/floating-atlas/town-square.js';
+import{readFileSync}from'node:fs';import * as T from'../../assets/js/vendor/three-atlas.module.js?v=16';
+export async function fixture(){const f=await baseline();f.town.dispose();const originals=new Map(),get=f.world.library.get;for(const[id,asset]of Object.entries({...circulationCatalog,square:squareAsset})){const b=readFileSync(new URL(asset.url));originals.set(id,await new T.GLTFLoader().parseAsync(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength),''));}f.world.library.get=id=>originals.has(id)?Promise.resolve(originals.get(id)):get(id);const town=await integrateTown(f.world,{terrainStudy:true,squareStudy:true,circulationStudy:true});return{...f,town,dispose(){town.dispose();f.world.dispose();}};}

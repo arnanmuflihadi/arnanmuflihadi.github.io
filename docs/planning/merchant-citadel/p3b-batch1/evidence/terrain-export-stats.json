@@ -1,0 +1,20 @@
+{
+ "cells_supported": 104858,
+ "cells_walkable": 95425,
+ "cells_comfortable": 88251,
+ "area_supported_m2": 26214.5,
+ "area_walkable_m2": 23856.25,
+ "area_comfortable_m2": 22062.75,
+ "mesh_vs_physics": {
+  "samples": 30662,
+  "mean_m": 0.0031872524592958537,
+  "p50_m": 0.0007239244000614153,
+  "p95_m": 0.01389156253387099,
+  "p99_m": 0.03159620415827884,
+  "max_m": 0.8482959606438127,
+  "share_over_5cm": 0.0029352292740199596,
+  "share_over_10cm": 0.0010110234166068749,
+  "share_over_20cm": 0.0004892048790033266,
+  "note": "visible top mesh (constrained Delaunay, adaptive 2/1/0.5 m) against the bilinear 0.5 m physical surface, random walkable points"
+ }
+}

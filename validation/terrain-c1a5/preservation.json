@@ -1,0 +1,16 @@
+{
+  "checked_existing_files": 3289,
+  "expected_source_changes": [
+    "assets/js/floating-atlas/collision.js",
+    "assets/js/floating-atlas/entry.js",
+    "assets/js/floating-atlas/terrain.js",
+    "assets/js/floating-atlas/town-integration.js",
+    "assets/js/floating-atlas/town-review.js"
+  ],
+  "unexpected_changes": [],
+  "protected_assets_and_licenses_checked": 233,
+  "approved_asset_changes": [],
+  "unchanged_existing_files": 3284,
+  "new_runtime_module": "assets/js/floating-atlas/town-terrain.js",
+  "rollback": "Remove terrain-study=c1a5, use Terrain before, or disable dev-town; backups of the five changed source files are in pre-change. No deploy."
+}

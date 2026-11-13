@@ -1,0 +1,9 @@
+id,type,kit,position_x,position_y,position_z,rotation_y_deg,footprint_width,footprint_depth,note
+S01,free stall,S03,-10.0,0.0,-40.6,0,2.3,1.2,kit as in P1.2
+S02,free stall,S05,10.0,0.0,-40.6,0,2.4,1.2,kit as in P1.2
+S03,free stall,S01b,-13.0,0.0,-57.4,0,1.9,1.0,kit as in P1.2
+S04,free stall,S02g,13.0,0.0,-57.4,0,3.1,1.2,kit as in P1.2
+R01,awning row (4 bays),provisions,-5.8,0.0,-43.6,90,8.2,1.9,A10p
+R02,awning row (4 bays),provisions,-5.8,0.0,-54.4,90,8.2,1.9,A10p
+R03,awning row (4 bays),crafts,5.8,0.0,-43.6,-90,8.2,1.9,A10c
+R04,awning row (4 bays),crafts,5.8,0.0,-54.4,-90,8.2,1.9,A10c

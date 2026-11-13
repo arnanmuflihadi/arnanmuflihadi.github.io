@@ -1,0 +1,71 @@
+{
+  "checkpoint": "5e71477a39220d12808e24e38851e9d3cfabc04e",
+  "changedFiles": [
+    "assets/js/floating-atlas/reconstruction-review.js",
+    "assets/js/floating-atlas/entry.js",
+    "ASSET_MANIFEST.md"
+  ],
+  "unchangedHashFiles": 53,
+  "protected": [
+    {
+      "file": "assets/game/atlas-guild/atlas-guild.glb",
+      "blob": "783d6377c098b484061caa77d7af4777c4f41494",
+      "unchanged": true
+    },
+    {
+      "file": "assets/game/town-population/props.glb",
+      "blob": "679d48153f1f86311351e0b10b3022adfb5f8ad0",
+      "unchanged": true
+    },
+    {
+      "file": "validation/market-street-s2d/market-street-optimized.glb",
+      "blob": "05b09ef3a044dea74f81af00ce3fe76e577dc051",
+      "unchanged": true
+    },
+    {
+      "file": "validation/reset-final/fountain.glb",
+      "blob": "a035fb5d6fe3c93225a30b88f5e08f34db511eac",
+      "unchanged": true
+    },
+    {
+      "file": "validation/reset-final/pavilion.glb",
+      "blob": "e764ef1572f67216dbdc0dcf0146c1fbd028ae3b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/guild-integration.js",
+      "blob": "6d3d212a798a47de85a1b26803ecfa93c4f0e843",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/reconstruction-plan.js",
+      "blob": "551e5d1539415c21aec987328d7c1510cc997601",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/floating-atlas/reconstruction-terrain.js",
+      "blob": "a439686ffb9dc81223c40c89d7732f103918804e",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/urban-atlas/player-controller.js",
+      "blob": "23998eb8cef15183a161d5515d4c9f4889bb6a57",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/urban-atlas/camera.js",
+      "blob": "d47c08e80ff65d40d96fbe73a4759b3138db831f",
+      "unchanged": true
+    },
+    {
+      "file": "assets/js/project-registry.js",
+      "blob": "f1bb833503634a1a4f84b9ee5eb0ed6d7d70312c",
+      "unchanged": true
+    }
+  ],
+  "newTerrainFootprintM2": 0,
+  "terrainElevationChangeM": 0,
+  "movedOrRemovedTrees": 0,
+  "approvedCC0Types": 17,
+  "approvedPlacements": 42
+}

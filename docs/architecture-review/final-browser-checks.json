@@ -1,0 +1,134 @@
+{
+  "controls": [
+    "office-before",
+    "office-after",
+    "shop-before",
+    "shop-after",
+    "variants",
+    "detail",
+    "street-level",
+    "neighborhood",
+    "office-entrance",
+    "commercial-arcade",
+    "neighborhood-frontage",
+    "sidewalk-interface",
+    "pedestrian-composition"
+  ],
+  "gallery": [
+    "office-before",
+    "office-after",
+    "shop-before",
+    "shop-after",
+    "variants",
+    "detail",
+    "street-level",
+    "neighborhood",
+    "office-entrance",
+    "commercial-arcade",
+    "neighborhood-frontage",
+    "sidewalk-interface",
+    "pedestrian-composition"
+  ],
+  "collisionOn": "true",
+  "collisionOff": "false",
+  "keyboardGalleryView": "office-entrance",
+  "keyboardFocus": {
+    "outline": "solid",
+    "tag": "A",
+    "width": "3px"
+  },
+  "phone390": {
+    "clientWidth": 375,
+    "scrollWidth": 375,
+    "smallestButtonHeight": 44
+  },
+  "phone320": {
+    "clientWidth": 305,
+    "scrollWidth": 305,
+    "smallestButtonHeight": 44
+  },
+  "consoleWarningsAndErrors": [],
+  "galleryImages": [
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/final-office-entrance.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/final-commercial-arcade.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/final-neighborhood-frontage.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/final-sidewalk-interface.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/final-pedestrian-composition.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/office-before.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/office-after.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/shop-before.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/shop-after.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/variants.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/detail.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/street-level.jpg",
+      "width": 1280
+    },
+    {
+      "complete": true,
+      "height": 720,
+      "path": "assets/img/architecture-review/neighborhood.jpg",
+      "width": 1280
+    }
+  ],
+  "viewportOverrideReset": true,
+  "humanVisualApproval": false,
+  "build": 35
+}

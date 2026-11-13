@@ -1,0 +1,26 @@
+{
+  "bytes": 6363084,
+  "clips": [
+    {
+      "name": "Wing flaps",
+      "duration": 1.0416666269302368,
+      "samples": 21,
+      "bones": 99
+    },
+    {
+      "name": "head turn",
+      "duration": 3.7083332538604736,
+      "samples": 21,
+      "bones": 99
+    },
+    {
+      "name": "head turn/wing flaps",
+      "duration": 3.7083332538604736,
+      "samples": 21,
+      "bones": 99
+    }
+  ],
+  "maxBonePosition": 0,
+  "maxBoneAngle": 6.664001874625056e-8,
+  "maxVertex": 0
+}

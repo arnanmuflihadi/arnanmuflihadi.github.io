@@ -1,0 +1,41 @@
+{
+  "storyOff": {
+    "comparison": "whole town",
+    "cpuMedianMs": 1.7000000476837158,
+    "cpuP95Ms": 3.100000023841858,
+    "drawCalls": [
+      338,
+      417
+    ],
+    "glass": "B",
+    "medianMs": 16.700000001117587,
+    "method": "Identical 12-second arrival-to-fountain camera rail; 2-second warmup; standard settings; all-pass counters; rAF intervals, not GPU time",
+    "on": true,
+    "p95Ms": 27.799999998882413,
+    "samples": 651,
+    "triangles": [
+      2545684,
+      2624244
+    ]
+  },
+  "storyOn": {
+    "comparison": "whole town",
+    "cpuMedianMs": 1,
+    "cpuP95Ms": 1.1999999284744265,
+    "drawCalls": [
+      338,
+      417
+    ],
+    "glass": "B",
+    "medianMs": 16.700000000000728,
+    "method": "Identical 12-second arrival-to-fountain camera rail; 2-second warmup; standard settings; all-pass counters; rAF intervals, not GPU time",
+    "on": true,
+    "p95Ms": 22.299999999999272,
+    "samples": 723,
+    "triangles": [
+      2545684,
+      2624244
+    ]
+  },
+  "note": "Separate sequential runs; rAF and CPU submission, not GPU timing. System load may vary."
+}

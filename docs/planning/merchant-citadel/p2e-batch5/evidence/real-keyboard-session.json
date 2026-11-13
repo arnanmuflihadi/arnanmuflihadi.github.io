@@ -1,0 +1,9 @@
+{
+  "what": "Scripted real-keyboard session (Playwright key events W/Q/R into the real controller and camera, 1280x720, fade on, all batch-5 rules active; a closed loop reads position and yaw to pick keys). NOT a human playtest.",
+  "waypoints_reached": "17 of 17 within 0.8 m, none stuck, none timed out",
+  "route": "spawn -> street junction -> bazaar south entrance -> round the market cross (west passage) -> foot of the terrace stairs -> terrace centre (y 1.01) -> hall forecourt rail (y 2.01) -> back to the terrace -> west benches -> stairs foot -> west plaza -> assay office door (B15) -> plaza corner -> stairs foot -> east plaza -> chart maker door (B16)",
+  "min_camera_m_per_leg": {"all legs but three": ">= 6.65 m (12.8-13.1 m on 11 legs)", "terrace centre again (turning round at the rail, descending)": 2.96, "back to the plaza corner (turning round in front of B15)": 2.94, "stairs foot (walking to the stairs with B15 behind)": 2.95},
+  "min_opacity": 0.81,
+  "end_heights": {"terrace": 1.01, "forecourt rail": 2.01, "ground": 0.01},
+  "screenshots": "visuals/camera/shot-real-keys-b5-*.jpg"
+}

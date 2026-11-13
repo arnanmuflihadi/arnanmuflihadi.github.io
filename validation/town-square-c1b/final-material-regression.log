@@ -1,0 +1,13 @@
+✔ C1B retains approved sources and exports real normalized optimized geometry (1500.081791ms)
+✔ square OFF restores accepted C1A5 terrain and instances; town OFF restores original island (1077.508875ms)
+✔ real stair and deck tops match mesh rays and exact accepted ground sampler (5854.454875ms)
+✔ unchanged controller crosses the constructed stairs and courtyard in both directions (0.93275ms)
+✔ fountain and guards block movement; explorer jumps and lands on the court (1456.271916ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10194.986084

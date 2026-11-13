@@ -1,0 +1,17 @@
+{
+  "decision": "NO CHANGE",
+  "largestFill": {
+    "x": 3.0517578125,
+    "z": 25.32958984375,
+    "before": 12.812989234924316,
+    "after": 17.93941879272461,
+    "delta": 5.126429557800293
+  },
+  "existingCameras": [
+    "oblique",
+    "island",
+    "reverse"
+  ],
+  "observation": "No severe open seam, unsupported pavement or discontinuous cliff rim visible in the inspected presets. Smooth fill shoulder remains a natural hillside transition.",
+  "settlementFilesUnchanged": true
+}

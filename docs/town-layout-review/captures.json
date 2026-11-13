@@ -1,0 +1,454 @@
+[
+  {
+    "file": "06-guild.jpg",
+    "view": "guild",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#guild",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        33,
+        23.949999237060545,
+        20
+      ],
+      "quaternion": [
+        0.08901281653526627,
+        0.4126327375179712,
+        -0.0405569533623002,
+        0.9056302092768616
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "02-plan.jpg",
+    "view": "plan",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#plan",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        25,
+        136,
+        28
+      ],
+      "quaternion": [
+        -0.7070763017891947,
+        0,
+        0,
+        0.7071372592701616
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "01-island.jpg",
+    "view": "aerial",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#aerial",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        125,
+        115,
+        155
+      ],
+      "quaternion": [
+        -0.23159692545805735,
+        0.331366479550536,
+        0.08426437365451625,
+        0.9107461971818884
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "03-arrival.jpg",
+    "view": "arrival",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#arrival",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        27,
+        18.799999618530272,
+        60
+      ],
+      "quaternion": [
+        0.09089629882679906,
+        -0.054078418268728314,
+        0.004943316048475933,
+        0.9943786759396978
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "04-market.jpg",
+    "view": "market",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#market",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        38,
+        22.625000381469725,
+        30
+      ],
+      "quaternion": [
+        0.05484596567287372,
+        0.2190410407481976,
+        -0.012333005358673555,
+        0.9740948821835476
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "05-square.jpg",
+    "view": "square",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#square",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        32,
+        23.949999237060545,
+        20
+      ],
+      "quaternion": [
+        0.12196656553041352,
+        0.2647871989399506,
+        -0.033782782911756876,
+        0.9559658046964794
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "07-lookout.jpg",
+    "view": "lookout",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#lookout",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": 1.65,
+      "fov": 60,
+      "position": [
+        -45,
+        50.37679762243528,
+        -49
+      ],
+      "quaternion": [
+        0.05053455847614731,
+        0.9133280331401274,
+        0.11957832454261566,
+        -0.385978220343568
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "09-side.jpg",
+    "view": "side",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#side",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 53,
+      "position": [
+        -145,
+        5,
+        155
+      ],
+      "quaternion": [
+        -0.04435940320584239,
+        -0.3603381248366482,
+        -0.01715783526871181,
+        0.9316084412591598
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "after-context.jpg",
+    "view": "context",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#context",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        80,
+        69,
+        85
+      ],
+      "quaternion": [
+        -0.2205204539368413,
+        0.3210350841185705,
+        0.077135302987833,
+        0.9178002773988724
+      ]
+    },
+    "preview": true,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "before-context.jpg",
+    "view": "context",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#context",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 48,
+      "position": [
+        80,
+        69,
+        85
+      ],
+      "quaternion": [
+        -0.2205204539368413,
+        0.3210350841185705,
+        0.077135302987833,
+        0.9178002773988724
+      ]
+    },
+    "preview": false,
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  },
+  {
+    "file": "08-town-traversal.jpg",
+    "view": "walk",
+    "url": "http://127.0.0.1:4173/town-layout-r0b15.html?build=R0-B1.5.complete#walk",
+    "camera": {
+      "aspect": 1.945288753799392,
+      "eyeHeight": null,
+      "fov": 60,
+      "position": [
+        37.62828902197436,
+        29.30997448511566,
+        14.733845428682198
+      ],
+      "quaternion": [
+        -0.2073049062939468,
+        0.5996004875912494,
+        0.16457925796855902,
+        0.7552599545542663
+      ]
+    },
+    "preview": true,
+    "nativeInput": "W walk, then unassisted Q and D",
+    "settings": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "canvas": [
+        1280,
+        658
+      ],
+      "drawingBuffer": [
+        1280,
+        658
+      ],
+      "effectiveDPR": 1,
+      "quality": "standard",
+      "exposure": 0.96,
+      "lighting": "Unchanged R0-A3",
+      "counterEvidence": "walking-performance.json; capture counters omitted because the once-per-second diagnostic can lag a rapid camera change"
+    }
+  }
+]

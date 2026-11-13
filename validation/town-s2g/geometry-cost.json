@@ -1,0 +1,10 @@
+{
+  "removedNearTriangles": 728,
+  "removedFarTriangles": 104,
+  "filteredGrassGeometries": 8,
+  "incrementalGrassCpuArrayBytes": 277632,
+  "incrementalHybridCpuArrayBytes": 3336,
+  "newImageTextures": 0,
+  "unchangedTownGlbBodyBytes": 11084692,
+  "metric": "Measured incremental retained typed-array bytes; approved attribute buffers shared, independent subset indices owned; not GPU/process memory"
+}

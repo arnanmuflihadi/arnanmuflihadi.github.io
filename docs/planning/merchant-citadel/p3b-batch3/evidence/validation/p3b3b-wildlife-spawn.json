@@ -1,0 +1,844 @@
+{
+ "ground": [
+  {
+   "sp": "Chick",
+   "hid": "A_settlement",
+   "at": [
+    -26.097,
+    16.923
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 1.447,
+   "nearest": "P3B:gap-closure",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Chick",
+   "hid": "A_settlement",
+   "at": [
+    -30.16,
+    14.546
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 5.369,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Chick",
+   "hid": "A_settlement",
+   "at": [
+    -28.168,
+    12.008
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 3.371,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Chick",
+   "hid": "A_settlement",
+   "at": [
+    -30.926,
+    14.446
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 6.131,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Cat",
+   "hid": "A_settlement",
+   "at": [
+    -29.538,
+    11.943
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 4.741,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Cat",
+   "hid": "A_settlement",
+   "at": [
+    -32.129,
+    18.944
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 7.629,
+   "nearest": "B11",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Pug",
+   "hid": "A_settlement",
+   "at": [
+    -29.223,
+    12.651
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 4.426,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Pig",
+   "hid": "A_settlement",
+   "at": [
+    -30.273,
+    13.62
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 5.476,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Pig",
+   "hid": "A_settlement",
+   "at": [
+    -28.778,
+    14.001
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 3.981,
+   "nearest": "B10",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -46.021,
+    5.496
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 8.22,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -32.935,
+    15.884
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 8.285,
+   "nearest": "P3B:gap-closure",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -34.783,
+    30.412
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 4.425,
+   "nearest": "P3B:wagon",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -66.028,
+    15.654
+   ],
+   "walkable": true,
+   "slope": 0.051,
+   "solid_m": 3.335,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Sheep",
+   "hid": "B_caravan_green",
+   "at": [
+    -39.219,
+    5.052
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 12.606,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Lamb",
+   "hid": "B_caravan_green",
+   "at": [
+    -46.355,
+    3.33
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 6.183,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Lamb",
+   "hid": "B_caravan_green",
+   "at": [
+    -46.941,
+    5.925
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 8.241,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Llama",
+   "hid": "B_caravan_green",
+   "at": [
+    -62.081,
+    26.131
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 1.281,
+   "nearest": "P3B:wagon",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Llama",
+   "hid": "B_caravan_green",
+   "at": [
+    -64.553,
+    33.847
+   ],
+   "walkable": true,
+   "slope": 0.035,
+   "solid_m": 1.559,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Horse",
+   "hid": "B_caravan_green",
+   "at": [
+    -49.822,
+    30.865
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 6.418,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Horse",
+   "hid": "B_caravan_green",
+   "at": [
+    -63.56,
+    14.72
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 5.581,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Cow",
+   "hid": "B_caravan_green",
+   "at": [
+    -35.871,
+    20.8
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 5.156,
+   "nearest": "P3B:wagon",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Cow",
+   "hid": "B_caravan_green",
+   "at": [
+    -38.738,
+    24.649
+   ],
+   "walkable": true,
+   "slope": 0,
+   "solid_m": 0.751,
+   "nearest": "P3B:wagon",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "RedFox",
+   "hid": "C_counting_crag",
+   "at": [
+    39.379,
+    92.003
+   ],
+   "walkable": true,
+   "slope": 0.024,
+   "solid_m": 2.523,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "RedFox",
+   "hid": "C_counting_crag",
+   "at": [
+    36.775,
+    87.339
+   ],
+   "walkable": true,
+   "slope": 0.033,
+   "solid_m": 7.416,
+   "nearest": "P3B2:rock",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Llama",
+   "hid": "D_tea_terraces",
+   "at": [
+    77.26,
+    62.739
+   ],
+   "walkable": true,
+   "slope": 0.028,
+   "solid_m": 1.226,
+   "nearest": "P3B2:trunk",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Llama",
+   "hid": "D_tea_terraces",
+   "at": [
+    86.352,
+    37.193
+   ],
+   "walkable": true,
+   "slope": 0.013,
+   "solid_m": 9.883,
+   "nearest": "P3B:bridge-rail",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  },
+  {
+   "sp": "Dog",
+   "hid": "G_sky_quay",
+   "at": [
+    18.283,
+    -43.598
+   ],
+   "walkable": true,
+   "slope": 0.001,
+   "solid_m": 4.606,
+   "nearest": "P3B:crate_stack",
+   "keepout": false,
+   "on_ground_err_m": 0,
+   "blocked": false
+  }
+ ],
+ "summary": {
+  "ground_agents": 27,
+  "not_walkable": 0,
+  "blocked": 0,
+  "in_keepout": 0,
+  "max_slope": 0.051,
+  "min_solid_clearance_m": 0.751,
+  "max_ground_error_m": 0,
+  "by_habitat": {
+   "A_settlement": 9,
+   "B_caravan_green": 13,
+   "C_counting_crag": 2,
+   "D_tea_terraces": 2,
+   "G_sky_quay": 1
+  },
+  "birds": 20,
+  "birds_in_keepout": 0,
+  "butterflies": 18
+ },
+ "birds": [
+  {
+   "sp": "Bird",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    0.085,
+    83.974,
+    26.8,
+    "B01"
+   ],
+   "keepout": false,
+   "y": 26.8
+  },
+  {
+   "sp": "Bird",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    25.862,
+    40.007,
+    6.73,
+    "B14"
+   ],
+   "keepout": false,
+   "y": 6.733
+  },
+  {
+   "sp": "Bird",
+   "hid": "A_settlement",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    -14.93,
+    64.152,
+    15.8,
+    "B15"
+   ],
+   "keepout": false,
+   "y": 15.819
+  },
+  {
+   "sp": "Bird",
+   "hid": "A_settlement",
+   "state": "FLY",
+   "perch": [
+    "roof",
+    -19.994,
+    29.081,
+    7.89,
+    "B12"
+   ],
+   "keepout": false,
+   "y": 20.017
+  },
+  {
+   "sp": "Bird",
+   "hid": "A_settlement",
+   "state": "FLY",
+   "perch": [
+    "roof",
+    23.975,
+    11.683,
+    12,
+    "B13"
+   ],
+   "keepout": false,
+   "y": 31.639
+  },
+  {
+   "sp": "Bird",
+   "hid": "A_settlement",
+   "state": "FLY",
+   "perch": [
+    "roof",
+    -19.994,
+    29.081,
+    7.89,
+    "B12"
+   ],
+   "keepout": false,
+   "y": 11.517
+  },
+  {
+   "sp": "Bird",
+   "hid": "B_caravan_green",
+   "state": "PERCHED",
+   "perch": [
+    "tree",
+    -76.69,
+    24.24,
+    5.25,
+    null
+   ],
+   "keepout": false,
+   "y": 5.305
+  },
+  {
+   "sp": "Bird",
+   "hid": "B_caravan_green",
+   "state": "PERCHED",
+   "perch": [
+    "tree",
+    -44.73,
+    -11.25,
+    5.39,
+    null
+   ],
+   "keepout": false,
+   "y": 5.39
+  },
+  {
+   "sp": "Eagle",
+   "hid": "C_counting_crag",
+   "state": "CIRCLE",
+   "perch": null,
+   "keepout": false,
+   "y": 39.688
+  },
+  {
+   "sp": "Eagle",
+   "hid": "C_counting_crag",
+   "state": "CIRCLE",
+   "perch": null,
+   "keepout": false,
+   "y": 36.958
+  },
+  {
+   "sp": "Bird",
+   "hid": "C_counting_crag",
+   "state": "LAND",
+   "perch": [
+    "rock",
+    49.79,
+    113.07,
+    21.24,
+    null
+   ],
+   "keepout": false,
+   "y": 8.272
+  },
+  {
+   "sp": "Bird",
+   "hid": "C_counting_crag",
+   "state": "FLY",
+   "perch": [
+    "rock",
+    77.39,
+    95.92,
+    3.42,
+    null
+   ],
+   "keepout": false,
+   "y": 18.738
+  },
+  {
+   "sp": "Bird",
+   "hid": "D_tea_terraces",
+   "state": "FLY",
+   "perch": [
+    "roof",
+    36.063,
+    68.574,
+    10.89,
+    "B17"
+   ],
+   "keepout": false,
+   "y": 10.059
+  },
+  {
+   "sp": "Bird",
+   "hid": "D_tea_terraces",
+   "state": "FLY",
+   "perch": [
+    "tree",
+    76,
+    61.5,
+    -3.82,
+    null
+   ],
+   "keepout": false,
+   "y": 11.489
+  },
+  {
+   "sp": "Bird",
+   "hid": "D_tea_terraces",
+   "state": "PERCHED",
+   "perch": [
+    "roof",
+    27.445,
+    46.921,
+    6.73,
+    "E06"
+   ],
+   "keepout": false,
+   "y": 6.745
+  },
+  {
+   "sp": "Bird",
+   "hid": "E_cloudfall",
+   "state": "LAND",
+   "perch": [
+    "rock",
+    66.49,
+    97.65,
+    4.95,
+    null
+   ],
+   "keepout": false,
+   "y": 2.774
+  },
+  {
+   "sp": "Bird",
+   "hid": "E_cloudfall",
+   "state": "LAND",
+   "perch": [
+    "rock",
+    60.43,
+    93.73,
+    1.71,
+    null
+   ],
+   "keepout": false,
+   "y": 2.072
+  },
+  {
+   "sp": "Bird",
+   "hid": "F_tea_lookout_stack",
+   "state": "PERCHED",
+   "perch": [
+    "prop",
+    111,
+    45,
+    -0.02,
+    "pavilion roof"
+   ],
+   "keepout": false,
+   "y": -0.011
+  },
+  {
+   "sp": "Bird",
+   "hid": "G_sky_quay",
+   "state": "FLY",
+   "perch": [
+    "prop",
+    -9.2,
+    -39.5,
+    0.95,
+    "lamp w2"
+   ],
+   "keepout": false,
+   "y": 11.166
+  },
+  {
+   "sp": "Bird",
+   "hid": "G_sky_quay",
+   "state": "FLY",
+   "perch": [
+    "prop",
+    9.2,
+    -39.5,
+    0.95,
+    "lamp e2"
+   ],
+   "keepout": false,
+   "y": 4.673
+  }
+ ],
+ "butterflies": [
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -50.891,
+    21.589
+   ],
+   "above_ground_m": 0.43
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -51.441,
+    12.264
+   ],
+   "above_ground_m": 0.515
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -62.874,
+    24.866
+   ],
+   "above_ground_m": 0.264
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -52.481,
+    26.651
+   ],
+   "above_ground_m": 0.703
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -55.138,
+    27.733
+   ],
+   "above_ground_m": 0.624
+  },
+  {
+   "hid": "B_caravan_green",
+   "at": [
+    -50.107,
+    21.005
+   ],
+   "above_ground_m": 0.62
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    91.435,
+    46.796
+   ],
+   "above_ground_m": 0.433
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    77.203,
+    43.28
+   ],
+   "above_ground_m": 0.496
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    75.729,
+    31.821
+   ],
+   "above_ground_m": 0.752
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    63.932,
+    37.1
+   ],
+   "above_ground_m": 0.338
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    70.957,
+    42.852
+   ],
+   "above_ground_m": -0.672
+  },
+  {
+   "hid": "D_tea_terraces",
+   "at": [
+    67.525,
+    39.764
+   ],
+   "above_ground_m": 0.688
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    73.061,
+    64.636
+   ],
+   "above_ground_m": 3.961
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    80.275,
+    63.289
+   ],
+   "above_ground_m": 0.661
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    80.507,
+    69.197
+   ],
+   "above_ground_m": 0.288
+  },
+  {
+   "hid": "E_cloudfall",
+   "at": [
+    77.911,
+    57.811
+   ],
+   "above_ground_m": 0.275
+  },
+  {
+   "hid": "F_tea_lookout_stack",
+   "at": [
+    39.609,
+    23.257
+   ],
+   "above_ground_m": 0.25
+  },
+  {
+   "hid": "F_tea_lookout_stack",
+   "at": [
+    -36.311,
+    77.384
+   ],
+   "above_ground_m": 0.25
+  }
+ ]
+}

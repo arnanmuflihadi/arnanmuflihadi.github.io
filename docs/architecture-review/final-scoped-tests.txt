@@ -1,0 +1,26 @@
+Command: node --test tests/architecture-design-system.test.mjs tests/asset-foundation.test.mjs tests/atlas-character.test.mjs
+
+✔ three enhanced variants retain genuine imported meshes without changing cached source buffers or baseline materials (225.224833ms)
+✔ office glass is physically recessed while the uniform source scale and source footprint remain unchanged (113.039584ms)
+✔ all three frontages support character clearance and exported collision remains valid after translation and rotation (151.348875ms)
+✔ instanced architectural geometry is counted per visible instance (0.165125ms)
+✔ enhancement prototypes are cached while instances retain independent transforms and collision data (97.96875ms)
+✔ the enhancement record binds the unchanged source GLB and current generator to their verified digests (2.382125ms)
+✔ captured original and enhanced pairs use identical camera tuples and retain all requested views without a fabricated human score (0.495625ms)
+✔ all foundation delivery files match provenance and embed real geometry and textures (8.107208ms)
+✔ real building and shop preserve proportions, share mesh buffers, and align their collision bounds after rotation (115.283375ms)
+✔ the real showcase has ten model types, aligned supports and passable paving beside solid imported buildings (114.642375ms)
+✔ concurrent requests share a promise; failed loads can retry without caching a broken asset (0.511916ms)
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (2.562292ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (19.594541ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (19.887333ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (11.960292ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (11.81875ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 691.822542

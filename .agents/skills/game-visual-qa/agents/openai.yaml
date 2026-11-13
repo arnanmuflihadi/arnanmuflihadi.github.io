@@ -1,0 +1,6 @@
+interface:
+  display_name: "Game Visual QA"
+  short_description: "Inspect browser game art with real evidence"
+  default_prompt: "Use $game-visual-qa to inspect the current browser scene with matched screenshots and measured checks."
+policy:
+  allow_implicit_invocation: true

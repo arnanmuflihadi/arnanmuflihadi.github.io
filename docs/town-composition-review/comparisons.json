@@ -1,0 +1,42 @@
+[
+  {
+    "view": "arrival",
+    "before": "before-arrival.jpg",
+    "after": "matched-arrival.jpg",
+    "positionMatched": true,
+    "rotationMatched": true,
+    "fovMatched": true,
+    "resolutionMatched": true,
+    "note": "Same absolute camera, FOV, daylight and exposure. New decisive pedestrian views are separately placed on the repaired route; their eye height is 1.65 m. Staged character and paused cloud phase can differ."
+  },
+  {
+    "view": "market",
+    "before": "before-market.jpg",
+    "after": "matched-market.jpg",
+    "positionMatched": true,
+    "rotationMatched": true,
+    "fovMatched": true,
+    "resolutionMatched": true,
+    "note": "Same absolute camera, FOV, daylight and exposure. New decisive pedestrian views are separately placed on the repaired route; their eye height is 1.65 m. Staged character and paused cloud phase can differ."
+  },
+  {
+    "view": "square",
+    "before": "before-square.jpg",
+    "after": "matched-square.jpg",
+    "positionMatched": true,
+    "rotationMatched": true,
+    "fovMatched": true,
+    "resolutionMatched": true,
+    "note": "Same absolute camera, FOV, daylight and exposure. New decisive pedestrian views are separately placed on the repaired route; their eye height is 1.65 m. Staged character and paused cloud phase can differ."
+  },
+  {
+    "view": "aerial",
+    "before": "before-aerial.jpg",
+    "after": "6-aerial.jpg",
+    "positionMatched": true,
+    "rotationMatched": true,
+    "fovMatched": true,
+    "resolutionMatched": true,
+    "note": "Same absolute camera, FOV, daylight and exposure. New decisive pedestrian views are separately placed on the repaired route; their eye height is 1.65 m. Staged character and paused cloud phase can differ."
+  }
+]

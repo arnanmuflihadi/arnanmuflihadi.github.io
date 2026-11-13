@@ -1,0 +1,378 @@
+{
+  "state": "loaded",
+  "phase": "S2-E isolated design; not production",
+  "option": "H",
+  "view": "skyport",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "buffer": [
+      1800,
+      1200
+    ],
+    "dpr": 1,
+    "antialias": true,
+    "shadows": "PCFSoft 2048",
+    "toneMapping": "ACES",
+    "exposure": 1,
+    "glass": "unchanged authored transmission",
+    "lighting": "same R0-A3 lights and S2-D gradient environment",
+    "near": 0.12,
+    "far": 1000
+  },
+  "camera": {
+    "position": [
+      27,
+      18.8,
+      60
+    ],
+    "quaternion": [
+      0.07001136347513451,
+      -0.14045546452785387,
+      0.00995736448327233,
+      0.9875583640277492
+    ],
+    "fov": 49.550281137663845,
+    "blenderLocal": {
+      "p": [
+        -9,
+        -16,
+        0.2
+      ],
+      "t": [
+        0,
+        15,
+        4.8
+      ],
+      "lens": 26
+    }
+  },
+  "assets": {
+    "common": {
+      "bytes": 539080,
+      "meshes": 6,
+      "triangles": 8672,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "collision": {
+      "bytes": 6164,
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "H": {
+      "bytes": 543452,
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "street": {
+      "bytes": 10007904,
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    }
+  },
+  "loaderCache": {
+    "requests": 4,
+    "cachedFiles": 4,
+    "loadedFiles": 4
+  },
+  "frameAllPasses": {
+    "calls": 500,
+    "triangles": 4073719,
+    "geometries": 188,
+    "textures": 15
+  },
+  "lastFixedPassSample": {
+    "option": "H",
+    "view": "skyport",
+    "characterVisible": false,
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "draws": 158
+      },
+      {
+        "target": "offscreen 1",
+        "viewport": [
+          0,
+          0,
+          192,
+          128
+        ],
+        "draws": 9
+      },
+      {
+        "target": "offscreen 2",
+        "viewport": [
+          0,
+          128,
+          96,
+          64
+        ],
+        "draws": 8
+      },
+      {
+        "target": "offscreen 3",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "draws": 166
+      },
+      {
+        "target": "canvas",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "draws": 176
+      }
+    ],
+    "calls": 517
+  },
+  "sceneInventory": {
+    "meshes": 202,
+    "triangles": 1451935,
+    "geometries": 193,
+    "materials": 112,
+    "textures": 10,
+    "missingTextures": []
+  },
+  "traversal": [],
+  "seamResults": {
+    "method": "existing production controller; fixed-step simulations, not performance timings",
+    "option": "H",
+    "tests": [
+      {
+        "route": "main",
+        "hz": 20,
+        "success": false,
+        "frames": 88,
+        "simulatedSeconds": 4.4,
+        "maxFootRise": 0.1671760082244873,
+        "maxFootDrop": 1.7763568394002505e-15,
+        "airborneFrames": 0,
+        "end": [
+          26.084238462161466,
+          16.481296157836915,
+          61.83152307567707
+        ]
+      },
+      {
+        "route": "return",
+        "hz": 20,
+        "success": false,
+        "frames": 49,
+        "simulatedSeconds": 2.45,
+        "maxFootRise": 0.004562268606775888,
+        "maxFootDrop": 0,
+        "airborneFrames": 0,
+        "end": [
+          36,
+          20.786452557958334,
+          0.7259463636938083
+        ]
+      },
+      {
+        "route": "ramp",
+        "hz": 20,
+        "success": false,
+        "frames": 304,
+        "simulatedSeconds": 15.2,
+        "maxFootRise": 3.552713678800501e-15,
+        "maxFootDrop": 0.10825957851892198,
+        "airborneFrames": 0,
+        "end": [
+          33.456784228406676,
+          21.163888633218885,
+          0.00036627589673776824
+        ]
+      },
+      {
+        "route": "ramp return",
+        "hz": 20,
+        "success": false,
+        "frames": 114,
+        "simulatedSeconds": 5.7,
+        "maxFootRise": 0.019657404166583348,
+        "maxFootDrop": 0,
+        "airborneFrames": 0,
+        "end": [
+          34.324756496548325,
+          21.106552487420146,
+          1.0721762609794268
+        ]
+      },
+      {
+        "route": "main",
+        "hz": 30,
+        "success": false,
+        "frames": 133,
+        "simulatedSeconds": 4.433333333333334,
+        "maxFootRise": 0.16717600822448908,
+        "maxFootDrop": 3.552713678800501e-15,
+        "airborneFrames": 0,
+        "end": [
+          26.093037186633644,
+          16.481296157836915,
+          61.8139256267327
+        ]
+      },
+      {
+        "route": "return",
+        "hz": 30,
+        "success": false,
+        "frames": 73,
+        "simulatedSeconds": 2.433333333333333,
+        "maxFootRise": 0.0030415124045219954,
+        "maxFootDrop": 0,
+        "airborneFrames": 0,
+        "end": [
+          36,
+          20.785828089718013,
+          0.7116535952642767
+        ]
+      },
+      {
+        "route": "ramp",
+        "hz": 30,
+        "success": false,
+        "frames": 443,
+        "simulatedSeconds": 14.766666666666667,
+        "maxFootRise": 3.552713678800501e-15,
+        "maxFootDrop": 0.10334747696590796,
+        "airborneFrames": 0,
+        "end": [
+          33.46456647844758,
+          21.162983019723427,
+          0.0005557402064357338
+        ]
+      },
+      {
+        "route": "ramp return",
+        "hz": 30,
+        "success": false,
+        "frames": 172,
+        "simulatedSeconds": 5.733333333333333,
+        "maxFootRise": 0.013105035622743344,
+        "maxFootDrop": 0,
+        "airborneFrames": 0,
+        "end": [
+          34.28768167231988,
+          21.113565129446066,
+          1.0782023870833193
+        ]
+      },
+      {
+        "route": "main",
+        "hz": 60,
+        "success": false,
+        "frames": 261,
+        "simulatedSeconds": 4.35,
+        "maxFootRise": 0.1671760082244873,
+        "maxFootDrop": 1.7763568394002505e-15,
+        "airborneFrames": 0,
+        "end": [
+          26.098392443242673,
+          16.481296157836915,
+          61.80321511351468
+        ]
+      },
+      {
+        "route": "return",
+        "hz": 60,
+        "success": false,
+        "frames": 146,
+        "simulatedSeconds": 2.433333333333333,
+        "maxFootRise": 0.0015223995271220758,
+        "maxFootDrop": 0,
+        "airborneFrames": 0,
+        "end": [
+          36,
+          20.78667216469264,
+          0.730972701298031
+        ]
+      },
+      {
+        "route": "ramp",
+        "hz": 60,
+        "success": false,
+        "frames": 840,
+        "simulatedSeconds": 14,
+        "maxFootRise": 3.552713678800501e-15,
+        "maxFootDrop": 0.10214226169199137,
+        "airborneFrames": 0,
+        "end": [
+          33.45069426290096,
+          21.164708160769234,
+          0.00114734154956902
+        ]
+      },
+      {
+        "route": "ramp return",
+        "hz": 60,
+        "success": false,
+        "frames": 343,
+        "simulatedSeconds": 5.716666666666667,
+        "maxFootRise": 0.006552517811371672,
+        "maxFootDrop": 0,
+        "airborneFrames": 0,
+        "end": [
+          34.302862018023895,
+          21.11072185943898,
+          1.0763773844578879
+        ]
+      }
+    ]
+  },
+  "performance": null,
+  "activeWalk": null,
+  "proposal": {
+    "naturalArrival": [
+      24,
+      66
+    ],
+    "provisionalLanding": [
+      27,
+      17.15,
+      60
+    ],
+    "squareGround": [
+      36,
+      20.754745326,
+      0
+    ],
+    "unbuilt": "full skyport, Town Square, Guild",
+    "contactCount": 146,
+    "arrivalRiser": 0.16717597374549256,
+    "squareRiser": 0.16902408114346593
+  },
+  "errors": []
+}

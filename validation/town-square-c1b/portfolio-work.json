@@ -1,0 +1,29 @@
+{
+  "url": "http://127.0.0.1:4173/portfolio.html?project=mbr",
+  "studies": [
+    {
+      "href": "project-transit.html",
+      "label": "01NETWORK ACCESSTransit accessibility in DKI JakartaWho can actually reach the city?"
+    },
+    {
+      "href": "project-pangan.html",
+      "label": "02FOOD SYSTEMSCritical roads for rice in West JavaWhich roads keep West Java’s rice moving?"
+    },
+    {
+      "href": "project-alphaearth-food.html",
+      "label": "03EARTH OBSERVATIONHistorical paddy screening in West JavaWhere does the historical signal justify closer inspection?"
+    },
+    {
+      "href": "project-mbr.html",
+      "label": "04URBAN MORPHOLOGYSatellite proxy for low-income communitiesWhat can satellite morphology reveal—and what can’t it replace?"
+    },
+    {
+      "href": "project-cbd.html",
+      "label": "05SPATIAL CLUSTERINGMapping Indonesia’s business centersWhere do commercial centers emerge from 91,940 POIs?"
+    },
+    {
+      "href": "project-bandung-cafe.html",
+      "label": "06SITE SCREENINGChoosing where to visit for a café in BandungWhich neighbourhoods deserve a site visit, and what can the data not say?"
+    }
+  ]
+}

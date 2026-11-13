@@ -1,0 +1,149 @@
+{
+ "simulated_seconds": 600,
+ "dt": 0.05,
+ "wall_ms": 5032.8,
+ "violations": {
+  "not_walkable": 0,
+  "blocked": 0,
+  "keepout": 0,
+  "step": 0,
+  "slope": 0,
+  "ground_err": 0,
+  "outside_habitat": 0
+ },
+ "max_height_step_between_samples_m": 0.088,
+ "distance_walked_m": {
+  "BrahmaChicken": 120.357,
+  "SebrightBantam": 129.088,
+  "Rooster": 79.268,
+  "Chick": 77.795,
+  "Corgi": 79.815,
+  "Sheep": 85.019,
+  "Lamb": 147.283,
+  "MerinoRam": 44.217,
+  "Doe": 133.616,
+  "Hare": 98.828,
+  "Quail": 125.982,
+  "Goat": 76.128,
+  "Marmot": 25.301,
+  "Fox": 157.177,
+  "Hedgehog": 46.802,
+  "Squirrel": 135.032,
+  "Duck": 47.283
+ },
+ "state_share": {
+  "BrahmaChicken": {
+   "WANDER": 0.365,
+   "IDLE": 0.349,
+   "LOOK_AROUND": 0.091,
+   "REST": 0.195
+  },
+  "SebrightBantam": {
+   "IDLE": 0.359,
+   "WANDER": 0.392,
+   "LOOK_AROUND": 0.109,
+   "REST": 0.14
+  },
+  "Rooster": {
+   "GRAZE": 0.323,
+   "LOOK_AROUND": 0.157,
+   "WANDER": 0.241,
+   "IDLE": 0.146,
+   "REST": 0.133
+  },
+  "Chick": {
+   "IDLE": 0.22,
+   "REST": 0.239,
+   "GRAZE": 0.231,
+   "WANDER": 0.261,
+   "LOOK_AROUND": 0.05
+  },
+  "Corgi": {
+   "IDLE": 0.096,
+   "WANDER": 0.133,
+   "LOOK_AROUND": 0.055,
+   "REST": 0.716
+  },
+  "Sheep": {
+   "WANDER": 0.203,
+   "LOOK_AROUND": 0.035,
+   "REST": 0.202,
+   "IDLE": 0.081,
+   "GRAZE": 0.48
+  },
+  "Lamb": {
+   "REST": 0.171,
+   "WANDER": 0.275,
+   "IDLE": 0.136,
+   "LOOK_AROUND": 0.099,
+   "GRAZE": 0.319
+  },
+  "MerinoRam": {
+   "REST": 0.541,
+   "LOOK_AROUND": 0.134,
+   "WANDER": 0.123,
+   "IDLE": 0.202
+  },
+  "Doe": {
+   "GRAZE": 0.266,
+   "LOOK_AROUND": 0.172,
+   "WANDER": 0.226,
+   "IDLE": 0.1,
+   "REST": 0.237
+  },
+  "Hare": {
+   "IDLE": 0.11,
+   "GRAZE": 0.317,
+   "WANDER": 0.276,
+   "REST": 0.199,
+   "LOOK_AROUND": 0.099
+  },
+  "Quail": {
+   "REST": 0.184,
+   "IDLE": 0.32,
+   "WANDER": 0.34,
+   "LOOK_AROUND": 0.157
+  },
+  "Goat": {
+   "WANDER": 0.244,
+   "REST": 0.355,
+   "IDLE": 0.079,
+   "GRAZE": 0.265,
+   "LOOK_AROUND": 0.056
+  },
+  "Marmot": {
+   "REST": 0.574,
+   "WANDER": 0.087,
+   "IDLE": 0.052,
+   "LOOK_AROUND": 0.118,
+   "GRAZE": 0.168
+  },
+  "Fox": {
+   "WANDER": 0.345,
+   "IDLE": 0.134,
+   "LOOK_AROUND": 0.131,
+   "REST": 0.39
+  },
+  "Hedgehog": {
+   "REST": 0.329,
+   "GRAZE": 0.285,
+   "WANDER": 0.241,
+   "IDLE": 0.098,
+   "LOOK_AROUND": 0.047
+  },
+  "Squirrel": {
+   "IDLE": 0.217,
+   "WANDER": 0.225,
+   "REST": 0.266,
+   "LOOK_AROUND": 0.123,
+   "GRAZE": 0.17
+  },
+  "Duck": {
+   "GRAZE": 0.215,
+   "REST": 0.387,
+   "LOOK_AROUND": 0.128,
+   "WANDER": 0.161,
+   "IDLE": 0.11
+  }
+ }
+}

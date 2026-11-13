@@ -1,0 +1,102 @@
+[
+  {
+    "image": "../../docs/urban-atlas/reset-b1/01-aerial.jpg",
+    "evidence": "01-aerial.json",
+    "camera": {
+      "aspect": 1.722488038277512,
+      "fov": 46,
+      "position": [
+        45,
+        88,
+        111
+      ],
+      "quaternion": [
+        -0.351463655217476,
+        0.2836323989537826,
+        0.112631819040424,
+        0.8850649889497034
+      ]
+    },
+    "view": "aerial"
+  },
+  {
+    "image": "../../docs/urban-atlas/reset-b1/02-arrival.jpg",
+    "evidence": "02-arrival.json",
+    "camera": {
+      "aspect": 1.722488038277512,
+      "fov": 60,
+      "position": [
+        27,
+        18.799999999999997,
+        60
+      ],
+      "quaternion": [
+        -0.03053553189564287,
+        0.5215832000288492,
+        0.01868360283658988,
+        0.8524491009582684
+      ]
+    },
+    "view": "arrival"
+  },
+  {
+    "image": "../../docs/urban-atlas/reset-b1/03-market.jpg",
+    "evidence": "03-market.json",
+    "camera": {
+      "aspect": 1.722488038277512,
+      "fov": 60,
+      "position": [
+        8.750799417967789,
+        15.61865844389921,
+        60.925584752912854
+      ],
+      "quaternion": [
+        0.007580108702601599,
+        0.30069630154000443,
+        -0.0023899990935013285,
+        0.9536868270541186
+      ]
+    },
+    "view": "market"
+  },
+  {
+    "image": "../../docs/urban-atlas/reset-b1/04-guild.jpg",
+    "evidence": "04-guild.json",
+    "camera": {
+      "aspect": 1.722488038277512,
+      "fov": 60,
+      "position": [
+        -4.645651610457893,
+        15.87865844389921,
+        46.500776267425344
+      ],
+      "quaternion": [
+        0.15959689856338893,
+        0.1864735107180442,
+        -0.030715107363178624,
+        0.9689236512486952
+      ]
+    },
+    "view": "guild"
+  },
+  {
+    "image": "../../docs/urban-atlas/reset-b1/05-oblique.jpg",
+    "evidence": "05-oblique.json",
+    "camera": {
+      "aspect": 1.722488038277512,
+      "fov": 50,
+      "position": [
+        58,
+        40,
+        88
+      ],
+      "quaternion": [
+        -0.14830613303695442,
+        0.4617771475222429,
+        0.07863023650225652,
+        0.8709675325966205
+      ]
+    },
+    "view": "oblique"
+  }
+]

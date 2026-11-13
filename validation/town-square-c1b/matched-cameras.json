@@ -1,0 +1,71 @@
+[
+  {
+    "file": "browser-match-arrival",
+    "camera": {
+      "position": [
+        32.3,
+        24.264,
+        7.9
+      ],
+      "quaternion": [
+        -0.01431537977959358,
+        0.7519466524225054,
+        0.01633777162162225,
+        0.6588659795670084
+      ],
+      "fov": 39.070153,
+      "aspect": 1.951219512195122
+    },
+    "calls": 308,
+    "triangles": 2639590,
+    "square": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "file": "browser-match-interior",
+    "camera": {
+      "position": [
+        27,
+        23.45,
+        13
+      ],
+      "quaternion": [
+        0.03710437166636058,
+        0.26673565472604605,
+        -0.010277315637473,
+        0.96300038052142
+      ],
+      "fov": 43.710155,
+      "aspect": 1.951219512195122
+    },
+    "calls": 280,
+    "triangles": 2623044,
+    "square": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "file": "browser-match-elevated",
+    "camera": {
+      "position": [
+        3,
+        44,
+        -13
+      ],
+      "quaternion": [
+        0.10207308929145816,
+        0.8882981056290483,
+        0.23975148527802612,
+        -0.37818882226385625
+      ],
+      "fov": 24.775798,
+      "aspect": 1.951219512195122
+    },
+    "calls": 373,
+    "triangles": 2718814,
+    "square": true,
+    "errors": [],
+    "warnings": []
+  }
+]

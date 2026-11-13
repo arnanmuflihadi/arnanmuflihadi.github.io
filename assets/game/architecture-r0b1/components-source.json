@@ -1,0 +1,583 @@
+{
+  "phase": "R0-B1",
+  "date": "2026-11-02",
+  "packs": [
+    {
+      "id": "modular-buildings",
+      "version": "2.1",
+      "author": "Kenney",
+      "page": "https://kenney-assets.itch.io/modular-buildings",
+      "archive": "source-assets/r0b1/kenney_modular-buildings.zip",
+      "archiveBytes": 1825490,
+      "archiveSha256": "47e1614686b4c0fe55190e88b22ff2b8b10935edf61f37f478a9b6a99477edc6",
+      "license": "CC0-1.0",
+      "licenseFile": "source-assets/r0b1/modular-buildings/License.txt",
+      "licenseSha256": "84002607f647b608c2861d8413bd9136a36d4063d74bf1af79347e3a012abeb5",
+      "attribution": "Not required; credited in manifest",
+      "glbFiles": 108
+    },
+    {
+      "id": "building-kit",
+      "version": "1.0",
+      "author": "Kenney",
+      "page": "https://kenney-assets.itch.io/building-kit",
+      "archive": "source-assets/r0b1/kenney_building-kit.zip",
+      "archiveBytes": 1611408,
+      "archiveSha256": "b46e4fc873d02dad2ab2153846ede6cc242208e751b778d37f4e75bce23cb2be",
+      "license": "CC0-1.0",
+      "licenseFile": "source-assets/r0b1/building-kit/License.txt",
+      "licenseSha256": "294dadf6bd9704c27fed6af9494fedb6655cf82e5d068db958725b10bba19fbb",
+      "attribution": "Not required; credited in manifest",
+      "glbFiles": 79
+    }
+  ],
+  "models": [
+    {
+      "id": "A-window",
+      "pack": "modular-buildings",
+      "file": "source-assets/r0b1/modular-buildings/Models/GLB format/window-white-detailed.glb",
+      "sourceSha256": "0669529ff365456d090dbb524947486c7c85f1a152134d4ff2f5e0eae849eac5",
+      "sourceBytes": 4324,
+      "sourceBounds": {
+        "min": [
+          -0.9375,
+          0,
+          0
+        ],
+        "max": [
+          0.9375,
+          2.2799999713897705,
+          0.30000000447034836
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.9375,
+          0,
+          -0.15000000223517418
+        ],
+        "max": [
+          0.9375,
+          2.2799999713897705,
+          0.15000000223517418
+        ]
+      },
+      "uniformScale": 6,
+      "rotation": 0,
+      "triangles": 34,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 7529,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "A-window-tall",
+      "pack": "modular-buildings",
+      "file": "source-assets/r0b1/modular-buildings/Models/GLB format/window-white-tall.glb",
+      "sourceSha256": "63acf228cfd610f7bdfaac82a0499467ec2492ac6dfcde4ad8d069fe703c7fdc",
+      "sourceBytes": 4504,
+      "sourceBounds": {
+        "min": [
+          -0.9375,
+          0,
+          0
+        ],
+        "max": [
+          0.9375,
+          3,
+          0.30000000447034836
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.9375,
+          0,
+          -0.15000000223517418
+        ],
+        "max": [
+          0.9375,
+          3,
+          0.15000000223517418
+        ]
+      },
+      "uniformScale": 6,
+      "rotation": 0,
+      "triangles": 40,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 7529,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "A-door",
+      "pack": "modular-buildings",
+      "file": "source-assets/r0b1/modular-buildings/Models/GLB format/door-white-glass.glb",
+      "sourceSha256": "e7f21a2a54519714f7149b0616fbc1534d09e5bb24bc740b4f5f3cdff6d36e2b",
+      "sourceBytes": 4092,
+      "sourceBounds": {
+        "min": [
+          -0.6,
+          0,
+          -0.12000000178813934
+        ],
+        "max": [
+          0.6,
+          2.4,
+          0.12000000178813934
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.6,
+          0,
+          -0.12000000178813934
+        ],
+        "max": [
+          0.6,
+          2.4,
+          0.12000000178813934
+        ]
+      },
+      "uniformScale": 4.8,
+      "rotation": 0,
+      "triangles": 28,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 7529,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-window-wall",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/wall-window-wide-square-detailed.glb",
+      "sourceSha256": "5890f4c4989a066117c062664fc6e41a5a9c455ccf8d63f50c4e7660bbf38b38",
+      "sourceBytes": 13820,
+      "sourceBounds": {
+        "min": [
+          -2,
+          0,
+          -0.10000000149011647
+        ],
+        "max": [
+          2,
+          2.4000000953674316,
+          0.10000000149011647
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -2,
+          0,
+          -0.10000000149011647
+        ],
+        "max": [
+          2,
+          2.4000000953674316,
+          0.10000000149011647
+        ]
+      },
+      "uniformScale": 1,
+      "rotation": -1.5707963267948966,
+      "triangles": 154,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "glass",
+          "alphaMode": "BLEND",
+          "roughness": 0.5,
+          "color": [
+            0.7524076,
+            0.852530241,
+            1,
+            0.5019608
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-portal",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/wall-doorway-wide-square.glb",
+      "sourceSha256": "4d95dbe33a03b4e5624c6040f4e87610a3b6b6e2f5ad1c798867eca655534996",
+      "sourceBytes": 6324,
+      "sourceBounds": {
+        "min": [
+          -2.000000238418579,
+          -6.858158535023211e-15,
+          -0.10000020265579189
+        ],
+        "max": [
+          2.000000238418579,
+          2.4000000953674316,
+          0.10000020265579189
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -2.000000238418579,
+          0,
+          -0.10000020265579189
+        ],
+        "max": [
+          2.000000238418579,
+          2.4000000953674383,
+          0.10000020265579189
+        ]
+      },
+      "uniformScale": 1,
+      "rotation": -1.5707963267948966,
+      "triangles": 64,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-door",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/door-rotate-square-a.glb",
+      "sourceSha256": "12675fba53441fb556772f8dadbfcb88bb2deb8c6d0e3d47f0c86bc364721918",
+      "sourceBytes": 25616,
+      "sourceBounds": {
+        "min": [
+          -0.8999999761581421,
+          -6.203926062552632e-17,
+          -0.12499999999999986
+        ],
+        "max": [
+          0.02499995380640031,
+          2.0999999046325684,
+          0.12500000000000017
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.4624999649822712,
+          0,
+          -0.125
+        ],
+        "max": [
+          0.4624999649822712,
+          2.0999999046325684,
+          0.125
+        ]
+      },
+      "uniformScale": 1,
+      "rotation": -1.5707963267948966,
+      "triangles": 188,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-column",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/column-thin.glb",
+      "sourceSha256": "cb523dbd7a2d91d36cace24789097add444840b848c10479f72a7f70e710dd62",
+      "sourceBytes": 4552,
+      "sourceBounds": {
+        "min": [
+          -0.26666667064030963,
+          0,
+          -0.26666667064030963
+        ],
+        "max": [
+          0.26666667064030963,
+          3.2000001271565752,
+          0.26666667064030963
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.26666667064030963,
+          0,
+          -0.26666667064030963
+        ],
+        "max": [
+          0.26666667064030963,
+          3.2000001271565752,
+          0.26666667064030963
+        ]
+      },
+      "uniformScale": 1.3333333333333333,
+      "rotation": 0,
+      "triangles": 44,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-stair",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/stairs-open-short.glb",
+      "sourceSha256": "1f44e89733a58321c28261bf7f1f78aa36f54e366b2d071a597de0b0d2a947a9",
+      "sourceBytes": 9660,
+      "sourceBounds": {
+        "min": [
+          -1.4432898790731443e-16,
+          0,
+          -0.6499999761581425
+        ],
+        "max": [
+          2,
+          1.3000000715255737,
+          0.6499999761581421
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -1,
+          0,
+          -0.6499999761581423
+        ],
+        "max": [
+          1,
+          1.3000000715255737,
+          0.6499999761581423
+        ]
+      },
+      "uniformScale": 1,
+      "rotation": -1.5707963267948966,
+      "triangles": 84,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-parapet",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/border-high-corner-round.glb",
+      "sourceSha256": "031e7b42baab4442a2c18b145ec38bf74bbf9a6ce3458735d9f5a149f30f72f4",
+      "sourceBytes": 15184,
+      "sourceBounds": {
+        "min": [
+          -1,
+          -1.5367735972660057e-9,
+          -1
+        ],
+        "max": [
+          1.2000000476837158,
+          0.5,
+          1.2000000476837158
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -1.100000023841858,
+          0,
+          -1.100000023841858
+        ],
+        "max": [
+          1.100000023841858,
+          0.5000000015367736,
+          1.100000023841858
+        ]
+      },
+      "uniformScale": 1,
+      "rotation": 0,
+      "triangles": 168,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    }
+  ],
+  "output": "assets/game/architecture-r0b1/components.glb",
+  "bytes": 76360,
+  "sha256": "c9fe1f45c522816f32cbe793b9d80beacca06720ca8c5539965ee8823f1953ca",
+  "changes": [
+    "Select individual square modern components only; exclude sample buildings",
+    "Preserve source geometry, UVs, textures and material identities",
+    "Uniform metric normalization, ground-centered origins, front +Z orientation",
+    "Embed dependencies and deduplicate identical resources"
+  ],
+  "tooling": {
+    "core": "4.2.1",
+    "functions": "4.2.1",
+    "extensions": "4.5.1"
+  }
+}

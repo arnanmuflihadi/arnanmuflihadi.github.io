@@ -1,0 +1,209 @@
+{
+  "scene": "S1 Asset Comparison",
+  "mesh_objects": 37,
+  "triangles": 46184,
+  "materials": 23,
+  "images": [
+    {
+      "name": "Bark_NormalTree",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "Leaves",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "ATLAS / INFORMASI",
+      "size": [
+        1024,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "T_MetalConcrete_BaseColor",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "T_MetalConcrete_Normal",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "Bark_NormalTree_Normal.001",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "Leaves_NormalTree_C",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "T_Dirt_ORM",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "MASUK",
+      "size": [
+        1024,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "ATLAS / PUSAT RISET",
+      "size": [
+        1024,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "Leaves_NormalTree_C.001",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "Bark_NormalTree_Normal",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "T_MetalConcrete_ORM",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "Bark_NormalTree.001",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "T_Dirt_BaseColor",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "T_Dirt_Normal",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true
+    },
+    {
+      "name": "Texture_Light.png",
+      "size": [
+        32,
+        32
+      ],
+      "packed": true,
+      "has_data": true
+    }
+  ],
+  "cameras": [
+    {
+      "name": "S1 Aerial",
+      "location": [
+        45,
+        -72,
+        52
+      ],
+      "rotation_euler": [
+        1.0268884897232056,
+        8.885216118414974e-9,
+        0.4194774925708771
+      ],
+      "lens_mm": 46,
+      "fov_radians": 0.7459754347801208
+    },
+    {
+      "name": "S1 Pedestrian",
+      "location": [
+        0,
+        -27,
+        1.649999976158142
+      ],
+      "rotation_euler": [
+        1.6207547187805176,
+        0,
+        0
+      ],
+      "lens_mm": 23,
+      "fov_radians": 1.328092336654663
+    },
+    {
+      "name": "S1 Detail",
+      "location": [
+        -9,
+        -14,
+        8
+      ],
+      "rotation_euler": [
+        1.3459547758102417,
+        8.000753837222874e-9,
+        0.34302401542663574
+      ],
+      "lens_mm": 43,
+      "fov_radians": 0.7928825616836548
+    }
+  ],
+  "cycles_samples": 24
+}

@@ -1,0 +1,23 @@
+export const views=Object.freeze({
+ ensemble:{label:'All four / island architecture',position:[94,83,102],target:[15,25,17],fov:48,description:'Four proposed sites on the unchanged R0-A3 island. Isolated review layer.'},
+ commercial:{label:'Ruang Niaga / full perspective',position:[55,36,30],target:[31,27.1,4],fov:48},
+ 'commercial-eye':{label:'Ruang Niaga / pedestrian entrance',position:[34.7,23.95,9],target:[29.9,23.95,6.45],fov:55,eye:1.65},
+ research:{label:'Atlas / full perspective',position:[63,52,-4],target:[38,41,-30],fov:48},
+ 'research-detail':{label:'Atlas / facade materials',position:[45.8,39,-14],target:[38,39,-25.2],fov:48},
+ 'research-eye':{label:'Atlas / public entrance',position:[38,34.15,-22.7],target:[38,34.15,-25.6],fov:55,eye:1.65},
+ station:{label:'Antara / full exterior',position:[23,40,36],target:[-5,27.8,6],fov:48},
+ 'station-eye':{label:'Antara / pedestrian stair approach',position:[-13.7,23.3,16.1],target:[-13.7,23.3,11.5],fov:55,eye:1.65},
+ 'station-platform':{label:'Antara / platform approach',position:[-13.7,29.05,9.5],target:[-3,29.05,8.1],fov:55,eye:1.65},
+ skyport:{label:'Awan / full perspective',position:[63,37,103],target:[29,20.8,67],fov:48},
+ 'skyport-eye':{label:'Awan / boarding and landing approach',position:[31.4,18.33,68],target:[28.5,18.33,63],fov:55,eye:1.65},
+ 'skyport-entry':{label:'Awan / northern terminal entrance',position:[27.7,18.33,56.2],target:[27.7,18.33,59],fov:55,eye:1.65},
+ materials:{label:'Facade / materials and recesses',position:[35.5,27.2,12.2],target:[31,27,7.72],fov:48},
+ scale:{label:'Character / arcade scale',position:[40,25.3,15],target:[35.1,23.2,8.4],fov:48},
+ island:{label:'Placement / full-island aerial',position:[145,125,175],target:[0,-8,0],fov:43},
+ 'commercial-rear':{label:'Ruang Niaga / rear and west',position:[9,33,-20],target:[31,27,4],fov:48},
+ 'research-rear':{label:'Atlas / rear and east',position:[59,48,-56],target:[38,40.8,-30],fov:48},
+ 'station-rear':{label:'Antara / rear and structure',position:[-25,42,-5],target:[-5,27,5],fov:48},
+ 'skyport-rear':{label:'Awan / terminal rear and wing',position:[5,32,40],target:[29,20.5,62],fov:48},
+ sources:{label:'Sources / actual new licensed components',position:[106,38,29],target:[87,24,0],fov:48,description:'Nine inspected source parts. Six types are used in the four prototypes; source archives remain untouched.'},
+ walk:{label:'Walk / isolated island preview',position:[26,26,55],target:[26,19,46],fov:60,description:'WASD or arrows to walk, Shift to run, Space to jump. Drag or Q/R to turn. Review-only collision and support.'}
+});

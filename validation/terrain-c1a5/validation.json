@@ -1,0 +1,114 @@
+{
+  "phase": "R0-C1A.5",
+  "owner_approval": "PENDING before R0-C1B",
+  "production_deployed": false,
+  "town_square_constructed": false,
+  "matched_browser_pairs": 4,
+  "live_routes_passed": 6,
+  "scoped_tests": {
+    "pass": 11,
+    "fail": 0
+  },
+  "mesh_ray_samples": 522,
+  "max_mesh_sampler_error_m": 1.7763568394002505e-14,
+  "changed_source_files": [
+    "assets/js/floating-atlas/collision.js",
+    "assets/js/floating-atlas/entry.js",
+    "assets/js/floating-atlas/terrain.js",
+    "assets/js/floating-atlas/town-integration.js",
+    "assets/js/floating-atlas/town-review.js"
+  ],
+  "protected_unchanged_files": 3284,
+  "protected_assets_unchanged": 233,
+  "terrain_footprint_m2": 825.0876596495509,
+  "new_terrain_triangles": 0,
+  "performance_runs": [
+    {
+      "enabled": true,
+      "terrainAdjusted": false,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 2075,
+      "medianMs": 5.599999999976717,
+      "p95Ms": 6.700000000069849,
+      "renderCpuMedianMs": 0.7999999821186066,
+      "renderCpuP95Ms": 1,
+      "drawCallRange": [
+        285,
+        392
+      ],
+      "triangleRange": [
+        2596608,
+        2731002
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": true,
+      "terrainAdjusted": true,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 1810,
+      "medianMs": 5.599999999976717,
+      "p95Ms": 11.199999999953434,
+      "renderCpuMedianMs": 0.7999999821186066,
+      "renderCpuP95Ms": 0.9000000059604645,
+      "drawCallRange": [
+        285,
+        392
+      ],
+      "triangleRange": [
+        2596608,
+        2731002
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": true,
+      "terrainAdjusted": true,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 1807,
+      "medianMs": 5.599999999976717,
+      "p95Ms": 11.199999999953434,
+      "renderCpuMedianMs": 0.800000011920929,
+      "renderCpuP95Ms": 1,
+      "drawCallRange": [
+        285,
+        392
+      ],
+      "triangleRange": [
+        2596608,
+        2731002
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": true,
+      "terrainAdjusted": false,
+      "glassVariant": "B",
+      "polished": true,
+      "frames": 1811,
+      "medianMs": 5.599999999976717,
+      "p95Ms": 11.199999999953434,
+      "renderCpuMedianMs": 0.7999999821186066,
+      "renderCpuP95Ms": 1,
+      "drawCallRange": [
+        285,
+        392
+      ],
+      "triangleRange": [
+        2596608,
+        2731002
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    }
+  ],
+  "artistic_approval": "not self-awarded",
+  "route_scope": "existing market and natural ground to unbuilt square reservation; no C1A paving traversal claim",
+  "default_without_dev_flag_verified": true,
+  "final_scene_renderer_count": 1,
+  "final_errors": [],
+  "final_warnings": [],
+  "final_feature_state": "local opt-in terrain study enabled, Glass B, square unbuilt"
+}

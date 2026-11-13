@@ -1,0 +1,26 @@
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (2.909625ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (22.852083ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (22.885417ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (12.365292ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (13.01925ms)
+✔ Guild is opt-in on local populated-town development only (0.994541ms)
+✔ Guild delivery has real indexed geometry, visible walkable surfaces, and no transmission pass (2.066209ms)
+✔ editorial, adventure and study routes roundtrip under a Pages project path (2.146583ms)
+✔ stored positions cannot replace route context or introduce an invalid player transform (0.144125ms)
+✔ all research has a finite cinematic composition and only constructed landmarks permit walking (0.103084ms)
+✔ camera interpolation clamps endpoints and keeps independent source compositions intact (0.111041ms)
+✔ three shared landmark spawns are reachable, interactable and protected by actual district collision (57.108041ms)
+✔ imported scenery matches provenance and contains real self-contained glTF meshes and textures (29.07125ms)
+✔ Home and Work preserve semantic research and use one living scene host with a static fallback (0.918916ms)
+✔ Skyport polish requires explicit local C3 and C3.1 flags (1.21125ms)
+✔ Detail GLB stays small, indexed, opaque and texture-free (0.6165ms)
+✔ Skyport requires explicit local accepted-town and Guild flags (1.124375ms)
+✔ Skyport GLB contains indexed real geometry without textures or transmission (0.887667ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 218.69675

@@ -1,0 +1,61 @@
+{
+  "phase": "R0-RESET-B1",
+  "requiredScreenshots": 5,
+  "screenshotDimensions": [
+    [
+      1440,
+      900
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "allOneRenderer": true,
+  "sameSceneAllViews": true,
+  "terrainAgreementSamples": 90,
+  "terrainMaxError": 0,
+  "zeroDetailedBuildingGLBLoads": true,
+  "allOriginalTrunksRetained": true,
+  "newCollisions": 0,
+  "newRuntimeErrors": 0,
+  "naturalWalkJumpLanding": true,
+  "newRouteTraversal": "NOT TESTED; no new support or collision geometry permitted",
+  "defaultOff": true,
+  "mbrAccessible": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+  "editorialModeSameScene": true,
+  "preservation": true,
+  "renderComparisonSameCamera": true,
+  "renderComparisonSameScene": true,
+  "overlayDrawCallDelta": 110,
+  "overlaySubmittedTriangleDelta": 6008,
+  "quality": {
+    "captureViewport": [
+      1440,
+      900
+    ],
+    "canvas": [
+      1440,
+      836
+    ],
+    "dpr": 1,
+    "shadows": true,
+    "toneMapping": "ACES .96",
+    "frameMetric": "static diagnostic counters including shadow passes, not production/walking performance"
+  },
+  "syntaxChecks": "entry.js and preview.js: PASS",
+  "fullRegressionSuite": "NOT RUN, as scoped",
+  "decision": "NO-GO recommendation; owner approval pending"
+}

@@ -1,0 +1,790 @@
+{
+  "instances": 98,
+  "batches": 5,
+  "ledger": [
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": -14.74,
+      "z": 23.68,
+      "y": 15.85,
+      "height": 1
+    },
+    {
+      "zone": "forest",
+      "kind": "flower",
+      "x": -13.04,
+      "z": 24.25,
+      "y": 15.3,
+      "height": 0.41
+    },
+    {
+      "zone": "forest",
+      "kind": "rock",
+      "x": -14.56,
+      "z": 25.08,
+      "y": 15.42,
+      "height": 0.84
+    },
+    {
+      "zone": "forest",
+      "kind": "bloom",
+      "x": -11.68,
+      "z": 23.85,
+      "y": 15.09,
+      "height": 1.36
+    },
+    {
+      "zone": "forest",
+      "kind": "flower",
+      "x": -16.42,
+      "z": 24,
+      "y": 15.96,
+      "height": 0.47
+    },
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": -13.14,
+      "z": 25.75,
+      "y": 15.31,
+      "height": 1.27
+    },
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": -10.95,
+      "z": 22.33,
+      "y": 14.99,
+      "height": 1.42
+    },
+    {
+      "zone": "forest",
+      "kind": "bloom",
+      "x": -11.36,
+      "z": 25.23,
+      "y": 15.15,
+      "height": 1.04
+    },
+    {
+      "zone": "forest",
+      "kind": "rock",
+      "x": -29.77,
+      "z": 23.23,
+      "y": 20.69,
+      "height": 0.59
+    },
+    {
+      "zone": "forest",
+      "kind": "bloom",
+      "x": -27.42,
+      "z": 25.4,
+      "y": 21.99,
+      "height": 1.31
+    },
+    {
+      "zone": "forest",
+      "kind": "flower",
+      "x": -25.35,
+      "z": 24.92,
+      "y": 22.41,
+      "height": 0.31
+    },
+    {
+      "zone": "forest",
+      "kind": "rock",
+      "x": -37.96,
+      "z": 9.18,
+      "y": 19.96,
+      "height": 0.81
+    },
+    {
+      "zone": "forest",
+      "kind": "bloom",
+      "x": -36.5,
+      "z": 9.07,
+      "y": 19.37,
+      "height": 1.4
+    },
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": -61.99,
+      "z": 6.24,
+      "y": 30.82,
+      "height": 1.18
+    },
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": 14.55,
+      "z": 26.31,
+      "y": 18.08,
+      "height": 1.13
+    },
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": 16.12,
+      "z": 23.84,
+      "y": 16.97,
+      "height": 1.11
+    },
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": 18.53,
+      "z": 26.83,
+      "y": 15.39,
+      "height": 1.07
+    },
+    {
+      "zone": "forest",
+      "kind": "rock",
+      "x": 4.8,
+      "z": 19.65,
+      "y": 17.96,
+      "height": 0.77
+    },
+    {
+      "zone": "forest",
+      "kind": "bloom",
+      "x": 5.44,
+      "z": 21.27,
+      "y": 18.44,
+      "height": 1.12
+    },
+    {
+      "zone": "forest",
+      "kind": "flower",
+      "x": 6.54,
+      "z": 21.21,
+      "y": 18.55,
+      "height": 0.43
+    },
+    {
+      "zone": "forest",
+      "kind": "rock",
+      "x": 4.97,
+      "z": 22.25,
+      "y": 18.48,
+      "height": 0.7
+    },
+    {
+      "zone": "forest",
+      "kind": "bush",
+      "x": 6.4,
+      "z": 22.27,
+      "y": 18.67,
+      "height": 1.25
+    },
+    {
+      "zone": "forest",
+      "kind": "bloom",
+      "x": 3.97,
+      "z": 22.7,
+      "y": 18.34,
+      "height": 1.41
+    },
+    {
+      "zone": "valley",
+      "kind": "flower",
+      "x": -7.47,
+      "z": 1.56,
+      "y": 21.11,
+      "height": 0.31
+    },
+    {
+      "zone": "valley",
+      "kind": "bush",
+      "x": -5.75,
+      "z": 1.32,
+      "y": 20.96,
+      "height": 1.19
+    },
+    {
+      "zone": "valley",
+      "kind": "bush",
+      "x": -8.52,
+      "z": 2.52,
+      "y": 21.4,
+      "height": 1.35
+    },
+    {
+      "zone": "valley",
+      "kind": "rock",
+      "x": -10.05,
+      "z": -4.03,
+      "y": 15.76,
+      "height": 0.81
+    },
+    {
+      "zone": "valley",
+      "kind": "bush",
+      "x": -17.53,
+      "z": 11.59,
+      "y": 20.28,
+      "height": 1.12
+    },
+    {
+      "zone": "valley",
+      "kind": "bloom",
+      "x": -20.84,
+      "z": 12.45,
+      "y": 19.8,
+      "height": 1.44
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 17.49,
+      "z": -0.88,
+      "y": 19.66,
+      "height": 1.11
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 15.7,
+      "z": -0.88,
+      "y": 19.46,
+      "height": 0.42
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 18.77,
+      "z": -0.27,
+      "y": 19.59,
+      "height": 1.13
+    },
+    {
+      "zone": "meadow",
+      "kind": "rock",
+      "x": 16.87,
+      "z": -2.15,
+      "y": 20.06,
+      "height": 0.73
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 18.67,
+      "z": 1.61,
+      "y": 18.97,
+      "height": 1.01
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 14.53,
+      "z": -0.06,
+      "y": 19.03,
+      "height": 0.98
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 18.97,
+      "z": -1.72,
+      "y": 20.13,
+      "height": 0.42
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 15.31,
+      "z": -2.33,
+      "y": 19.92,
+      "height": 0.96
+    },
+    {
+      "zone": "meadow",
+      "kind": "rock",
+      "x": 19.94,
+      "z": 0.6,
+      "y": 19.45,
+      "height": 0.84
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 17.92,
+      "z": -3.1,
+      "y": 20.55,
+      "height": 1.06
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 18.46,
+      "z": 3.01,
+      "y": 18.53,
+      "height": 0.32
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 13.79,
+      "z": -1.27,
+      "y": 19.33,
+      "height": 1.24
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 20.32,
+      "z": -1.27,
+      "y": 20.13,
+      "height": 1.05
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 15.97,
+      "z": -3.61,
+      "y": 20.48,
+      "height": 1.45
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 20.28,
+      "z": 2.02,
+      "y": 19.07,
+      "height": 0.96
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 13.13,
+      "z": 0.75,
+      "y": 18.58,
+      "height": 0.45
+    },
+    {
+      "zone": "meadow",
+      "kind": "rock",
+      "x": 23.5,
+      "z": 7.8,
+      "y": 20.78,
+      "height": 0.73
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 24.94,
+      "z": 7.64,
+      "y": 21.07,
+      "height": 1.39
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 23.41,
+      "z": 9.18,
+      "y": 21,
+      "height": 1.36
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 23.57,
+      "z": 6.49,
+      "y": 20.47,
+      "height": 0.37
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 25.52,
+      "z": 8.94,
+      "y": 21.29,
+      "height": 1.09
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 22.05,
+      "z": 8.38,
+      "y": 20.59,
+      "height": 1.41
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 22.15,
+      "z": 6.36,
+      "y": 19.98,
+      "height": 1.01
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 26.61,
+      "z": 7.96,
+      "y": 21.41,
+      "height": 0.34
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 20.92,
+      "z": 7.5,
+      "y": 20.03,
+      "height": 1.06
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 26.7,
+      "z": 6.22,
+      "y": 21.18,
+      "height": 1.21
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 27.36,
+      "z": 9.17,
+      "y": 21.53,
+      "height": 1.01
+    },
+    {
+      "zone": "meadow",
+      "kind": "rock",
+      "x": 34.74,
+      "z": 4.53,
+      "y": 20.89,
+      "height": 0.75
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 35.95,
+      "z": 5.33,
+      "y": 20.86,
+      "height": 1.23
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 33.79,
+      "z": 5.52,
+      "y": 21.41,
+      "height": 1.26
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 35.64,
+      "z": 3.56,
+      "y": 20.48,
+      "height": 0.36
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 33.27,
+      "z": 4.03,
+      "y": 21,
+      "height": 1.17
+    },
+    {
+      "zone": "meadow",
+      "kind": "rock",
+      "x": 37.1,
+      "z": 4.5,
+      "y": 20.2,
+      "height": 0.79
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 33.7,
+      "z": 6.92,
+      "y": 21.82,
+      "height": 1.24
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 34.64,
+      "z": 2.55,
+      "y": 20.59,
+      "height": 1.17
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 32.25,
+      "z": 5.16,
+      "y": 21.42,
+      "height": 1.19
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 37.01,
+      "z": 2.94,
+      "y": 20.02,
+      "height": 1.41
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 32.96,
+      "z": 2.64,
+      "y": 20.82,
+      "height": 0.98
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 32.28,
+      "z": 6.96,
+      "y": 21.87,
+      "height": 0.41
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 35.7,
+      "z": 1.62,
+      "y": 20.41,
+      "height": 0.96
+    },
+    {
+      "zone": "meadow",
+      "kind": "rock",
+      "x": 31.5,
+      "z": 3.94,
+      "y": 21.09,
+      "height": 0.71
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 38.38,
+      "z": 3.37,
+      "y": 19.51,
+      "height": 1.29
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 33.61,
+      "z": 1.31,
+      "y": 20.81,
+      "height": 0.45
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 44.87,
+      "z": 14.72,
+      "y": 16.33,
+      "height": 1.34
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 38.66,
+      "z": 14.75,
+      "y": 21.24,
+      "height": 0.31
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 45.64,
+      "z": 15.93,
+      "y": 15.88,
+      "height": 1.32
+    },
+    {
+      "zone": "meadow",
+      "kind": "bloom",
+      "x": 38.6,
+      "z": 16.81,
+      "y": 21.14,
+      "height": 1.01
+    },
+    {
+      "zone": "meadow",
+      "kind": "rock",
+      "x": 30.85,
+      "z": 24.98,
+      "y": 15.36,
+      "height": 0.76
+    },
+    {
+      "zone": "meadow",
+      "kind": "flower",
+      "x": 28.72,
+      "z": 25.28,
+      "y": 14.9,
+      "height": 0.35
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 30.17,
+      "z": 26.23,
+      "y": 14.77,
+      "height": 1.2
+    },
+    {
+      "zone": "meadow",
+      "kind": "bush",
+      "x": 27.3,
+      "z": 25.31,
+      "y": 14.72,
+      "height": 1.04
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "bush",
+      "x": -73.13,
+      "z": 6.29,
+      "y": 31.29,
+      "height": 1.17
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "bush",
+      "x": -76.76,
+      "z": -1.99,
+      "y": 31.81,
+      "height": 1.44
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "bush",
+      "x": -75.56,
+      "z": -3.68,
+      "y": 31.61,
+      "height": 1.41
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "flower",
+      "x": -74.57,
+      "z": -4.06,
+      "y": 32.04,
+      "height": 0.31
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "rock",
+      "x": -68.94,
+      "z": 4.4,
+      "y": 32.28,
+      "height": 0.62
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "bloom",
+      "x": -68.95,
+      "z": 2.66,
+      "y": 33.12,
+      "height": 1.44
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "bush",
+      "x": -68.19,
+      "z": 6.2,
+      "y": 31.35,
+      "height": 0.96
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "bloom",
+      "x": -70.38,
+      "z": 6.19,
+      "y": 31.33,
+      "height": 1.04
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "bush",
+      "x": -69.47,
+      "z": 1.37,
+      "y": 32.93,
+      "height": 1.13
+    },
+    {
+      "zone": "cloudbreak",
+      "kind": "flower",
+      "x": -68.99,
+      "z": 6.96,
+      "y": 31.11,
+      "height": 0.3
+    },
+    {
+      "zone": "ridge",
+      "kind": "flower",
+      "x": -41.77,
+      "z": -40.88,
+      "y": 47.1,
+      "height": 0.43
+    },
+    {
+      "zone": "ridge",
+      "kind": "bloom",
+      "x": -51.54,
+      "z": -45.07,
+      "y": 47.26,
+      "height": 0.54
+    },
+    {
+      "zone": "ridge",
+      "kind": "bush",
+      "x": -51.03,
+      "z": -46.47,
+      "y": 47.26,
+      "height": 0.56
+    },
+    {
+      "zone": "ridge",
+      "kind": "bloom",
+      "x": -51.99,
+      "z": -45.83,
+      "y": 47.09,
+      "height": 0.56
+    },
+    {
+      "zone": "ridge",
+      "kind": "bush",
+      "x": -50.61,
+      "z": -47.27,
+      "y": 47.67,
+      "height": 0.48
+    },
+    {
+      "zone": "ridge",
+      "kind": "flower",
+      "x": -33.04,
+      "z": -36,
+      "y": 42.36,
+      "height": 0.3
+    },
+    {
+      "zone": "ridge",
+      "kind": "bush",
+      "x": -32.49,
+      "z": -35.08,
+      "y": 41.75,
+      "height": 0.65
+    },
+    {
+      "zone": "ridge",
+      "kind": "bush",
+      "x": -51.47,
+      "z": -35.52,
+      "y": 45.24,
+      "height": 0.58
+    }
+  ]
+}

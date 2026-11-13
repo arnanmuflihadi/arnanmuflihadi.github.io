@@ -1,0 +1,6 @@
+interface:
+  display_name: "Fantasy Level Design"
+  short_description: "Plan connected tropical-fantasy RPG hubs"
+  default_prompt: "Use $fantasy-level-design to review the current island and propose a connected RPG hub blockout."
+policy:
+  allow_implicit_invocation: true

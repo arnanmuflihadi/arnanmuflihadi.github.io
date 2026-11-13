@@ -1,0 +1,7133 @@
+{
+ "materials": [
+  {
+   "name": "bricks102.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "bricks102_001_base.jpg",
+     "role": "base",
+     "source": "Bricks102.jpg",
+     "source_px": [
+      256,
+      128
+     ],
+     "px": [
+      256,
+      128
+     ],
+     "bytes": 9714,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "bricks102_001_normal.jpg",
+     "role": "normal",
+     "source": "Bricks102_n.jpg",
+     "source_px": [
+      256,
+      128
+     ],
+     "px": [
+      256,
+      128
+     ],
+     "bytes": 19224,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.5
+   }
+  },
+  {
+   "name": "brushed_iron_03.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "brushed_iron_03_001_base.jpg",
+     "role": "base",
+     "source": "BrushedIron03.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 7826,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "brushed_iron_03_001_normal.jpg",
+     "role": "normal",
+     "source": "BrushedIron01_Normal.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 14321,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.5,
+    "roughness": 0.6
+   }
+  },
+  {
+   "name": "clay004-2.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "clay004-2_001_base.jpg",
+     "role": "base",
+     "source": "Clay004-2.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8678,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "clay004-2_001_normal.jpg",
+     "role": "normal",
+     "source": "Clay004_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 17111,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.5
+   }
+  },
+  {
+   "name": "CUS_cloth_blue",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "CUS_cloth_burgundy",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "CUS_cloth_cream",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "CUS_cloth_gold",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "CUS_cloth_tea",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "CUS_guild_blue",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.7
+   }
+  },
+  {
+   "name": "CUS_guild_burgundy",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.75
+   }
+  },
+  {
+   "name": "CUS_guild_gold",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.45,
+    "roughness": 0.42
+   }
+  },
+  {
+   "name": "CUS_parchment",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "CUS_pave_burgundy",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "CUS_pave_gold",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.85
+   }
+  },
+  {
+   "name": "CUS_rope",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.95
+   }
+  },
+  {
+   "name": "CUS_sign_field_wood",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.75
+   }
+  },
+  {
+   "name": "CUS_sign_iron",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.5,
+    "roughness": 0.5
+   }
+  },
+  {
+   "name": "CUS_sign_paint",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.6
+   }
+  },
+  {
+   "name": "CUS_sign_timber",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.8
+   }
+  },
+  {
+   "name": "fabric026.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "fabric026_001_base.jpg",
+     "role": "base",
+     "source": "Fabric026.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 10618,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "fabric026_001_normal.jpg",
+     "role": "normal",
+     "source": "Fabric026_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 15470,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.5
+   }
+  },
+  {
+   "name": "foods.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "foods_001_base.jpg",
+     "role": "base",
+     "source": "foods.jpg",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 81020,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "foods_001_normal.jpg",
+     "role": "normal",
+     "source": "foods_n.jpg",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 26423,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.53
+   }
+  },
+  {
+   "name": "GlazedTerracotta001.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "GlazedTerracotta001_001_base.jpg",
+     "role": "base",
+     "source": "GlazedTerracotta001.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 3794,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "GlazedTerracotta001_001_normal.jpg",
+     "role": "normal",
+     "source": "GlazedTerracotta001_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 6187,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "mul"
+   ],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.33
+   }
+  },
+  {
+   "name": "mdvl_palette",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_001_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.001",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.002",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_002_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.002",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.003",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_003_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.003",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.004",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_004_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.004",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.005",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_005_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.005",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.006",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_006_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.006",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.007",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_007_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.007",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.008",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_008_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.008",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.009",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_009_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.009",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.010",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_010_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.010",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.011",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_011_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.011",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.012",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_012_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.012",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2156,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.013",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_013_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.013",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.014",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_014_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.014",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.015",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_015_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.015",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.016",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_016_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.016",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.017",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_017_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.017",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.018",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_018_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.018",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.019",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_019_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.019",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.020",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_020_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.020",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.021",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_021_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.021",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2156,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.022",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_022_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.022",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.023",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_023_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.023",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2156,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.024",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_024_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.024",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.025",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_025_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.025",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2156,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.026",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_026_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.026",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.027",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_027_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.027",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2156,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.028",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_028_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.028",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.029",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_029_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.029",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.030",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_030_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.030",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.031",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_031_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.031",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.032",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_032_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.032",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "mdvl_palette.033",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "mdvl_palette_033_base.jpg",
+     "role": "base",
+     "source": "mdvl_palette.033",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 2159,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.78
+   }
+  },
+  {
+   "name": "menus.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "menus_001_base.png",
+     "role": "base",
+     "source": "menus.png",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 347005,
+     "format": "PNG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 1.0
+   }
+  },
+  {
+   "name": "Metal013-2.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "Metal013-2_001_base.jpg",
+     "role": "base",
+     "source": "Metal013-2.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 14679,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "Metal013-2_001_normal.jpg",
+     "role": "normal",
+     "source": "Metal013_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8872,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.5,
+    "roughness": 0.6
+   }
+  },
+  {
+   "name": "Metal013.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "Metal013_001_base.jpg",
+     "role": "base",
+     "source": "Metal013.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 13757,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "Metal013-2_001_normal.jpg",
+     "role": "normal",
+     "source": "Metal013_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8872,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.35,
+    "roughness": 0.6
+   }
+  },
+  {
+   "name": "Metal042B.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "Metal042B_001_base.jpg",
+     "role": "base",
+     "source": "Metal042B.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 21194,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "Metal042B_001_normal.jpg",
+     "role": "normal",
+     "source": "Metal042B_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 12550,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.5,
+    "roughness": 0.5
+   }
+  },
+  {
+   "name": "MI_Banner",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Banner_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Cloth_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 40059,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Cloth_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 4146,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Cloth_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8368,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Banner@blue",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Banner_blue_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Cloth_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 32577,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Cloth_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 4146,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Cloth_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8368,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "mul"
+   ]
+  },
+  {
+   "name": "MI_Banner@burgundy",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Banner_burgundy_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Cloth_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 28933,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Cloth_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 4146,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Cloth_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8368,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "mul"
+   ]
+  },
+  {
+   "name": "MI_Banner@cream",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Banner_cream_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Cloth_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 42908,
+     "format": "JPEG",
+     "clamped_share": 0.1624
+    },
+    {
+     "name": "MI_Banner_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Cloth_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 4146,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Cloth_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8368,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "mul"
+   ]
+  },
+  {
+   "name": "MI_Banner@gold",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Banner_gold_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Cloth_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 40469,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Cloth_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 4146,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Cloth_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8368,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "mul"
+   ]
+  },
+  {
+   "name": "MI_Brick",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_Brick_base.jpg",
+     "role": "base",
+     "source": "T_Brick_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 103361,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Brick_orm.jpg",
+     "role": "orm",
+     "source": "T_Brick_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 13240,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Brick_normal.jpg",
+     "role": "normal",
+     "source": "T_Brick_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 198137,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv",
+    "mul"
+   ]
+  },
+  {
+   "name": "MI_MetalOrnaments",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_MetalOrnaments_base.jpg",
+     "role": "base",
+     "source": "T_MetalOrnaments_BaseColor.png",
+     "source_px": [
+      1024,
+      1024
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 55138,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_MetalOrnaments_orm.jpg",
+     "role": "orm",
+     "source": "T_MetalOrnaments_Roughness.png",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 6834,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Page_Empty",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Page_Empty_base.jpg",
+     "role": "base",
+     "source": "T_Page_Noise.png",
+     "source_px": [
+      4096,
+      4096
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 26773,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Plaster",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_Plaster_base.jpg",
+     "role": "base",
+     "source": "T_Plaster_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 81380,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Plaster_orm.jpg",
+     "role": "orm",
+     "source": "T_Plaster_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 24852,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Plaster_normal.jpg",
+     "role": "normal",
+     "source": "T_Plaster_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 26208,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_RedBrick",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_RedBrick_base.jpg",
+     "role": "base",
+     "source": "T_RedBrick_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 116668,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Brick_orm.jpg",
+     "role": "orm",
+     "source": "T_Brick_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 13240,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Brick_normal.jpg",
+     "role": "normal",
+     "source": "T_Brick_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 198137,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_RockTrim",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_RockTrim_base.jpg",
+     "role": "base",
+     "source": "T_RockTrim_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 95071,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RockTrim_orm.jpg",
+     "role": "orm",
+     "source": "T_RockTrim_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 20848,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RockTrim_normal.jpg",
+     "role": "normal",
+     "source": "T_RockTrim_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 53444,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_RoundTiles",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_RoundTiles_base.jpg",
+     "role": "base",
+     "source": "T_RoundTiles_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 85413,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_orm.jpg",
+     "role": "orm",
+     "source": "T_RoundTiles_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 18869,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_normal.jpg",
+     "role": "normal",
+     "source": "T_RoundTiles_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 42177,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_RoundTiles.001",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_RoundTiles_base.jpg",
+     "role": "base",
+     "source": "T_RoundTiles_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 85413,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_orm.jpg",
+     "role": "orm",
+     "source": "T_RoundTiles_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 18869,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_normal.jpg",
+     "role": "normal",
+     "source": "T_RoundTiles_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 42177,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_RoundTiles@dark",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_RoundTiles_dark_base.jpg",
+     "role": "base",
+     "source": "T_RoundTiles_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 27067,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_dark_orm.jpg",
+     "role": "orm",
+     "source": "T_RoundTiles_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 6835,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_dark_normal.jpg",
+     "role": "normal",
+     "source": "T_RoundTiles_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 16077,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv",
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_RoundTiles@dark.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_RoundTiles_dark_base.jpg",
+     "role": "base",
+     "source": "T_RoundTiles_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 27067,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_dark_orm.jpg",
+     "role": "orm",
+     "source": "T_RoundTiles_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 6835,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_dark_normal.jpg",
+     "role": "normal",
+     "source": "T_RoundTiles_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 16077,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv",
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_RoundTiles@weathered",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_RoundTiles_weathered_base.jpg",
+     "role": "base",
+     "source": "T_RoundTiles_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 28671,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_dark_orm.jpg",
+     "role": "orm",
+     "source": "T_RoundTiles_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 6835,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_RoundTiles_dark_normal.jpg",
+     "role": "normal",
+     "source": "T_RoundTiles_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 16077,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv",
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_Trim_Cloth",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Banner_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Cloth_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 40059,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Cloth_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 4146,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Cloth_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8368,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Trim_Cloth.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Banner_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Cloth_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 40059,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Cloth_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 4146,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Banner_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Cloth_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8368,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Trim_Furniture",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Trim_Furniture_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Furniture_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 43894,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Furniture_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Furniture_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 15527,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Furniture_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Furniture_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 18066,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_Trim_Furniture.004",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Trim_Furniture_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Furniture_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 43894,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Furniture_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Furniture_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 15527,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Furniture_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Furniture_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 18066,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_Trim_Metal",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Trim_Metal_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Metal_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 36734,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Metal_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Metal_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 10333,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Metal_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Metal_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 18448,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Trim_Metal.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Trim_Metal_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Metal_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 36734,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Metal_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Metal_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 10333,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Metal_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Metal_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 18448,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Trim_Metal_Vertex",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Trim_Metal_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Metal_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 36734,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Metal_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Metal_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 10333,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Metal_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Metal_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 18448,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Trim_Props",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Trim_Props_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Props_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 55354,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Props_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Props_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 16602,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Props_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Props_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 18052,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_Trim_Props_Vertex",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Trim_Props_base.jpg",
+     "role": "base",
+     "source": "T_Trim_Props_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 55354,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Props_orm.jpg",
+     "role": "orm",
+     "source": "T_Trim_Props_ORM.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 16602,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_Trim_Props_normal.jpg",
+     "role": "normal",
+     "source": "T_Trim_Props_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 18052,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": []
+  },
+  {
+   "name": "MI_UnevenBrick",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_UnevenBrick_base.jpg",
+     "role": "base",
+     "source": "T_UnevenBrick_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 103319,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_UnevenBrick_orm.jpg",
+     "role": "orm",
+     "source": "T_UnevenBrick_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 34949,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_UnevenBrick_normal.jpg",
+     "role": "normal",
+     "source": "T_UnevenBrick_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 154746,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv",
+    "mul"
+   ]
+  },
+  {
+   "name": "MI_Vine",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "MI_Vine_base.png",
+     "role": "base",
+     "source": "T_VineLeaf_png.png",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 37934,
+     "format": "PNG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "mul"
+   ]
+  },
+  {
+   "name": "MI_WindowGlass",
+   "tier": "tier2",
+   "textures": []
+  },
+  {
+   "name": "MI_WoodTrim",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_WoodTrim_base.jpg",
+     "role": "base",
+     "source": "T_WoodTrim_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 122960,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_WoodTrim_orm.jpg",
+     "role": "orm",
+     "source": "T_WoodTrim_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 43080,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_WoodTrim_normal.jpg",
+     "role": "normal",
+     "source": "T_WoodTrim_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 68752,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_WoodTrim.009",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_WoodTrim_base.jpg",
+     "role": "base",
+     "source": "T_WoodTrim_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 122960,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_WoodTrim_orm.jpg",
+     "role": "orm",
+     "source": "T_WoodTrim_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 43080,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_WoodTrim_normal.jpg",
+     "role": "normal",
+     "source": "T_WoodTrim_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 68752,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "MI_WoodTrim_Wear",
+   "tier": "tier1",
+   "textures": [
+    {
+     "name": "MI_WoodTrim_base.jpg",
+     "role": "base",
+     "source": "T_WoodTrim_BaseColor.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      1024,
+      1024
+     ],
+     "bytes": 122960,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_WoodTrim_orm.jpg",
+     "role": "orm",
+     "source": "T_WoodTrim_Roughness.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 43080,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "MI_WoodTrim_normal.jpg",
+     "role": "normal",
+     "source": "T_WoodTrim_Normal.png",
+     "source_px": [
+      2048,
+      2048
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 68752,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [
+    "hsv"
+   ]
+  },
+  {
+   "name": "PaintedPlaster012.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "PaintedPlaster012_001_base.jpg",
+     "role": "base",
+     "source": "PaintedPlaster012.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 8463,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "PaintedPlaster012_001_normal.jpg",
+     "role": "normal",
+     "source": "PaintedPlaster012_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 12273,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.5
+   }
+  },
+  {
+   "name": "table-cloth01.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "table-cloth01_001_base.jpg",
+     "role": "base",
+     "source": "table-cloth01.jpg",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 55272,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "table-cloth01_001_normal.jpg",
+     "role": "normal",
+     "source": "table-cloth01_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 19009,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.85
+   }
+  },
+  {
+   "name": "table-cloth02.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "table-cloth02_001_base.jpg",
+     "role": "base",
+     "source": "table-cloth02.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 12573,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "table-cloth02_001_normal.jpg",
+     "role": "normal",
+     "source": "table-cloth02_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 13789,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.84
+   }
+  },
+  {
+   "name": "TMP_interior_core",
+   "tier": "tier2",
+   "textures": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.9
+   }
+  },
+  {
+   "name": "vegetables.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "vegetables_001_base.png",
+     "role": "base",
+     "source": "vegetables.png",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      512,
+      512
+     ],
+     "bytes": 266844,
+     "format": "PNG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "vegetables_001_normal.jpg",
+     "role": "normal",
+     "source": "vegetables_n.jpg",
+     "source_px": [
+      512,
+      512
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 14107,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.66
+   }
+  },
+  {
+   "name": "Wicker010B.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "Wicker010B_001_base.jpg",
+     "role": "base",
+     "source": "Wicker010B.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 17607,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "Wicker010B_001_normal.jpg",
+     "role": "normal",
+     "source": "Wicker010B_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 26851,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.72
+   }
+  },
+  {
+   "name": "wood003.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "wood003_001_base.jpg",
+     "role": "base",
+     "source": "Wood003.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 10105,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "wood003_001_normal.jpg",
+     "role": "normal",
+     "source": "Wood003_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 11254,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.72
+   }
+  },
+  {
+   "name": "Wood006.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "Wood006_001_base.jpg",
+     "role": "base",
+     "source": "Wood006.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 7926,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "Wood006_001_normal.jpg",
+     "role": "normal",
+     "source": "Wood006_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 9691,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.66
+   }
+  },
+  {
+   "name": "wood032.001",
+   "tier": "tier2",
+   "textures": [
+    {
+     "name": "wood032_001_base.jpg",
+     "role": "base",
+     "source": "Wood032.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 10075,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    },
+    {
+     "name": "wood032_001_normal.jpg",
+     "role": "normal",
+     "source": "Wood032_n.jpg",
+     "source_px": [
+      256,
+      256
+     ],
+     "px": [
+      256,
+      256
+     ],
+     "bytes": 6210,
+     "format": "JPEG",
+     "clamped_share": 0.0
+    }
+   ],
+   "baked_ops": [],
+   "sanitised": {
+    "metallic": 0.0,
+    "roughness": 0.71
+   }
+  }
+ ],
+ "textures": [
+  {
+   "name": "bricks102_001_base.jpg",
+   "role": "base",
+   "source": "Bricks102.jpg",
+   "source_px": [
+    256,
+    128
+   ],
+   "px": [
+    256,
+    128
+   ],
+   "bytes": 9714,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "bricks102_001_normal.jpg",
+   "role": "normal",
+   "source": "Bricks102_n.jpg",
+   "source_px": [
+    256,
+    128
+   ],
+   "px": [
+    256,
+    128
+   ],
+   "bytes": 19224,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "brushed_iron_03_001_base.jpg",
+   "role": "base",
+   "source": "BrushedIron03.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 7826,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "brushed_iron_03_001_normal.jpg",
+   "role": "normal",
+   "source": "BrushedIron01_Normal.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 14321,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "clay004-2_001_base.jpg",
+   "role": "base",
+   "source": "Clay004-2.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 8678,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "clay004-2_001_normal.jpg",
+   "role": "normal",
+   "source": "Clay004_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 17111,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "fabric026_001_base.jpg",
+   "role": "base",
+   "source": "Fabric026.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 10618,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "fabric026_001_normal.jpg",
+   "role": "normal",
+   "source": "Fabric026_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 15470,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "foods_001_base.jpg",
+   "role": "base",
+   "source": "foods.jpg",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 81020,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "foods_001_normal.jpg",
+   "role": "normal",
+   "source": "foods_n.jpg",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 26423,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "GlazedTerracotta001_001_base.jpg",
+   "role": "base",
+   "source": "GlazedTerracotta001.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 3794,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "GlazedTerracotta001_001_normal.jpg",
+   "role": "normal",
+   "source": "GlazedTerracotta001_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 6187,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_001_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.001",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_002_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.002",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_003_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.003",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_004_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.004",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_005_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.005",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_006_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.006",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_007_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.007",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_008_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.008",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_009_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.009",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_010_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.010",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_011_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.011",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_012_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.012",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2156,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_013_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.013",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_014_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.014",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_015_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.015",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_016_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.016",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_017_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.017",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_018_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.018",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_019_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.019",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_020_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.020",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_021_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.021",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2156,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_022_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.022",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_023_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.023",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2156,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_024_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.024",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_025_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.025",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2156,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_026_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.026",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_027_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.027",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2156,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_028_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.028",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_029_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.029",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_030_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.030",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_031_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.031",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_032_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.032",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "mdvl_palette_033_base.jpg",
+   "role": "base",
+   "source": "mdvl_palette.033",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 2159,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "menus_001_base.png",
+   "role": "base",
+   "source": "menus.png",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 347005,
+   "format": "PNG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Metal013-2_001_base.jpg",
+   "role": "base",
+   "source": "Metal013-2.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 14679,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Metal013-2_001_normal.jpg",
+   "role": "normal",
+   "source": "Metal013_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 8872,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Metal013_001_base.jpg",
+   "role": "base",
+   "source": "Metal013.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 13757,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Metal042B_001_base.jpg",
+   "role": "base",
+   "source": "Metal042B.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 21194,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Metal042B_001_normal.jpg",
+   "role": "normal",
+   "source": "Metal042B_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 12550,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Banner_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Cloth_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 40059,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Banner_orm.jpg",
+   "role": "orm",
+   "source": "T_Trim_Cloth_ORM.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 4146,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Banner_normal.jpg",
+   "role": "normal",
+   "source": "T_Trim_Cloth_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 8368,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Banner_blue_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Cloth_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 32577,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Banner_burgundy_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Cloth_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 28933,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Banner_cream_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Cloth_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 42908,
+   "format": "JPEG",
+   "clamped_share": 0.1624
+  },
+  {
+   "name": "MI_Banner_gold_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Cloth_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 40469,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Brick_base.jpg",
+   "role": "base",
+   "source": "T_Brick_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 103361,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Brick_orm.jpg",
+   "role": "orm",
+   "source": "T_Brick_Roughness.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 13240,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Brick_normal.jpg",
+   "role": "normal",
+   "source": "T_Brick_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 198137,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_MetalOrnaments_base.jpg",
+   "role": "base",
+   "source": "T_MetalOrnaments_BaseColor.png",
+   "source_px": [
+    1024,
+    1024
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 55138,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_MetalOrnaments_orm.jpg",
+   "role": "orm",
+   "source": "T_MetalOrnaments_Roughness.png",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 6834,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Page_Empty_base.jpg",
+   "role": "base",
+   "source": "T_Page_Noise.png",
+   "source_px": [
+    4096,
+    4096
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 26773,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Plaster_base.jpg",
+   "role": "base",
+   "source": "T_Plaster_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 81380,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Plaster_orm.jpg",
+   "role": "orm",
+   "source": "T_Plaster_ORM.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 24852,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Plaster_normal.jpg",
+   "role": "normal",
+   "source": "T_Plaster_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 26208,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RedBrick_base.jpg",
+   "role": "base",
+   "source": "T_RedBrick_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 116668,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RockTrim_base.jpg",
+   "role": "base",
+   "source": "T_RockTrim_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 95071,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RockTrim_orm.jpg",
+   "role": "orm",
+   "source": "T_RockTrim_ORM.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 20848,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RockTrim_normal.jpg",
+   "role": "normal",
+   "source": "T_RockTrim_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 53444,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RoundTiles_base.jpg",
+   "role": "base",
+   "source": "T_RoundTiles_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 85413,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RoundTiles_orm.jpg",
+   "role": "orm",
+   "source": "T_RoundTiles_Roughness.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 18869,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RoundTiles_normal.jpg",
+   "role": "normal",
+   "source": "T_RoundTiles_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 42177,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RoundTiles_dark_base.jpg",
+   "role": "base",
+   "source": "T_RoundTiles_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 27067,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RoundTiles_dark_orm.jpg",
+   "role": "orm",
+   "source": "T_RoundTiles_Roughness.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 6835,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RoundTiles_dark_normal.jpg",
+   "role": "normal",
+   "source": "T_RoundTiles_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 16077,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_RoundTiles_weathered_base.jpg",
+   "role": "base",
+   "source": "T_RoundTiles_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 28671,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Furniture_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Furniture_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 43894,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Furniture_orm.jpg",
+   "role": "orm",
+   "source": "T_Trim_Furniture_ORM.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 15527,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Furniture_normal.jpg",
+   "role": "normal",
+   "source": "T_Trim_Furniture_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 18066,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Metal_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Metal_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 36734,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Metal_orm.jpg",
+   "role": "orm",
+   "source": "T_Trim_Metal_ORM.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 10333,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Metal_normal.jpg",
+   "role": "normal",
+   "source": "T_Trim_Metal_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 18448,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Props_base.jpg",
+   "role": "base",
+   "source": "T_Trim_Props_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 55354,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Props_orm.jpg",
+   "role": "orm",
+   "source": "T_Trim_Props_ORM.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 16602,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Trim_Props_normal.jpg",
+   "role": "normal",
+   "source": "T_Trim_Props_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 18052,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_UnevenBrick_base.jpg",
+   "role": "base",
+   "source": "T_UnevenBrick_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 103319,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_UnevenBrick_orm.jpg",
+   "role": "orm",
+   "source": "T_UnevenBrick_Roughness.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 34949,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_UnevenBrick_normal.jpg",
+   "role": "normal",
+   "source": "T_UnevenBrick_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 154746,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_Vine_base.png",
+   "role": "base",
+   "source": "T_VineLeaf_png.png",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 37934,
+   "format": "PNG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_WoodTrim_base.jpg",
+   "role": "base",
+   "source": "T_WoodTrim_BaseColor.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    1024,
+    1024
+   ],
+   "bytes": 122960,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_WoodTrim_orm.jpg",
+   "role": "orm",
+   "source": "T_WoodTrim_Roughness.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 43080,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "MI_WoodTrim_normal.jpg",
+   "role": "normal",
+   "source": "T_WoodTrim_Normal.png",
+   "source_px": [
+    2048,
+    2048
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 68752,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "PaintedPlaster012_001_base.jpg",
+   "role": "base",
+   "source": "PaintedPlaster012.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 8463,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "PaintedPlaster012_001_normal.jpg",
+   "role": "normal",
+   "source": "PaintedPlaster012_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 12273,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "table-cloth01_001_base.jpg",
+   "role": "base",
+   "source": "table-cloth01.jpg",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 55272,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "table-cloth01_001_normal.jpg",
+   "role": "normal",
+   "source": "table-cloth01_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 19009,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "table-cloth02_001_base.jpg",
+   "role": "base",
+   "source": "table-cloth02.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 12573,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "table-cloth02_001_normal.jpg",
+   "role": "normal",
+   "source": "table-cloth02_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 13789,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "vegetables_001_base.png",
+   "role": "base",
+   "source": "vegetables.png",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    512,
+    512
+   ],
+   "bytes": 266844,
+   "format": "PNG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "vegetables_001_normal.jpg",
+   "role": "normal",
+   "source": "vegetables_n.jpg",
+   "source_px": [
+    512,
+    512
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 14107,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Wicker010B_001_base.jpg",
+   "role": "base",
+   "source": "Wicker010B.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 17607,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Wicker010B_001_normal.jpg",
+   "role": "normal",
+   "source": "Wicker010B_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 26851,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "wood003_001_base.jpg",
+   "role": "base",
+   "source": "Wood003.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 10105,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "wood003_001_normal.jpg",
+   "role": "normal",
+   "source": "Wood003_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 11254,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Wood006_001_base.jpg",
+   "role": "base",
+   "source": "Wood006.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 7926,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "Wood006_001_normal.jpg",
+   "role": "normal",
+   "source": "Wood006_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 9691,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "wood032_001_base.jpg",
+   "role": "base",
+   "source": "Wood032.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 10075,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  },
+  {
+   "name": "wood032_001_normal.jpg",
+   "role": "normal",
+   "source": "Wood032_n.jpg",
+   "source_px": [
+    256,
+    256
+   ],
+   "px": [
+    256,
+    256
+   ],
+   "bytes": 6210,
+   "format": "JPEG",
+   "clamped_share": 0.0
+  }
+ ],
+ "texture_dedupe": {
+  "images_reused": 75
+ },
+ "usage": {
+  "AV-mdvl_dungeon_chest_01": 1,
+  "AV-mdvl_farm_fruit_basket_01": 2,
+  "AV-mdvl_farm_hay_bale_01": 5,
+  "AV-mdvl_food_cabbage_01": 3,
+  "AV-mdvl_food_cheese_wheel_01": 2,
+  "AV-mdvl_food_coin_stack_01": 1,
+  "AV-mdvl_food_fish_01": 3,
+  "AV-mdvl_food_grain_sack_01": 5,
+  "AV-mdvl_food_ham_01": 1,
+  "AV-mdvl_food_loaf_01": 3,
+  "AV-mdvl_food_scales_01": 6,
+  "AV-mdvl_interiors_anvil_01": 1,
+  "AV-mdvl_interiors_chest_01": 2,
+  "AV-mdvl_interiors_pot_01": 1,
+  "AV-mdvl_interiors_pottedplant_01": 2,
+  "AV-mdvl_interiors_rug_01": 2,
+  "AV-mdvl_interiors_woodpile_01": 3,
+  "AV-mdvl_interiors_workbench_01": 1,
+  "AV-mdvl_nature_stump_01": 1,
+  "AV-mdvl_props_axe_01": 1,
+  "AV-mdvl_props_barrel_01": 3,
+  "AV-mdvl_props_basket_01": 2,
+  "AV-mdvl_props_cart_wheel_01": 1,
+  "AV-mdvl_props_hammer_01": 2,
+  "AV-mdvl_props_pot_01": 1,
+  "AV-mdvl_props_rope_coil_01": 1,
+  "AV-mdvl_props_sack_01": 13,
+  "AV-mdvl_props_signpost_01": 1,
+  "AV-mdvl_props_water_trough_01": 2,
+  "AV-mdvl_props_wheelbarrow_01": 2,
+  "AV-mdvl_village_ladder_01": 3,
+  "AV-mdvl_village_sign_inn_01": 2,
+  "AV-mdvl_village_well_01": 1,
+  "AV-mdvl_village_window_box_01": 16,
+  "CUS-AssayBalance": 1,
+  "CUS-Awning_blue": 9,
+  "CUS-Awning_burgundy": 11,
+  "CUS-Awning_gold": 3,
+  "CUS-Awning_tea": 2,
+  "CUS-Bunting_10": 1,
+  "CUS-Bunting_18": 2,
+  "CUS-Hoist": 1,
+  "CUS-MapBoard": 1,
+  "CUS-PavingSeal": 2,
+  "CUS-Seal_NiagaAwan": 15,
+  "CUS-Sign_Coin_burgundy": 2,
+  "CUS-Sign_Coin_wood": 1,
+  "CUS-Sign_Compass_wood": 1,
+  "CUS-Sign_Crate_burgundy": 1,
+  "CUS-Sign_Crate_wood": 2,
+  "CUS-Sign_Cup_wood": 1,
+  "CUS-Sign_Hammer_wood": 1,
+  "CUS-Sign_Jar_wood": 1,
+  "CUS-Sign_Leaf_wood": 1,
+  "CUS-Sign_Loaf_wood": 2,
+  "CUS-Sign_Scroll_burgundy": 2,
+  "CUS-Sign_Scroll_wood": 1,
+  "FP-Anvil_Log": 1,
+  "FP-Bag": 7,
+  "FP-Banner_1@blue": 1,
+  "FP-Banner_1@burgundy": 1,
+  "FP-Banner_1@cream": 1,
+  "FP-Banner_2@burgundy": 3,
+  "FP-Banner_2_Cloth@blue": 1,
+  "FP-Banner_2_Cloth@burgundy": 10,
+  "FP-Banner_2_Cloth@cream": 1,
+  "FP-Banner_2_Cloth@gold": 1,
+  "FP-Barrel": 15,
+  "FP-Barrel_Apples": 1,
+  "FP-Bench": 12,
+  "FP-BookGroup_Medium_1": 2,
+  "FP-BookStand": 2,
+  "FP-Book_Stack_1": 3,
+  "FP-Bottle_1": 1,
+  "FP-Bucket_Wooden_1": 1,
+  "FP-CandleStick": 1,
+  "FP-Chalice": 1,
+  "FP-Coin_Pile": 2,
+  "FP-Crate_Metal": 1,
+  "FP-Crate_Wooden": 4,
+  "FP-Dummy": 1,
+  "FP-FarmCrate_Apple": 2,
+  "FP-FarmCrate_Carrot": 1,
+  "FP-Lantern_Wall": 55,
+  "FP-Peg_Rack": 2,
+  "FP-Pickaxe_Bronze": 1,
+  "FP-Pot_1": 3,
+  "FP-Pot_1_Lid": 1,
+  "FP-Potion_1": 2,
+  "FP-Potion_2": 1,
+  "FP-Rope_1": 1,
+  "FP-Scroll_1": 2,
+  "FP-Scroll_2": 2,
+  "FP-SmallBottles_1": 2,
+  "FP-Table_Large": 8,
+  "FP-Vase_2": 5,
+  "FP-Vase_4": 4,
+  "FP-WeaponStand": 1,
+  "FP-Whetstone": 1,
+  "FP-Workbench": 2,
+  "MV-Balcony_Cross_Straight": 17,
+  "MV-Balcony_Simple_Straight": 19,
+  "MV-Corner_ExteriorWide_Wood": 132,
+  "MV-Corner_Exterior_Brick": 51,
+  "MV-Corner_Exterior_Wood": 59,
+  "MV-Door_1_Flat": 14,
+  "MV-Door_8_Round": 18,
+  "MV-Floor_Brick": 113,
+  "MV-Floor_RedBrick": 1,
+  "MV-Floor_UnevenBrick": 2,
+  "MV-Floor_WoodDark": 11,
+  "MV-Overhang_Plaster_Short": 3,
+  "MV-Overhang_Side_Plaster_Short_L": 1,
+  "MV-Overhang_Side_Plaster_Short_R": 1,
+  "MV-Prop_Chimney": 5,
+  "MV-Prop_Chimney2": 10,
+  "MV-Prop_Crate": 13,
+  "MV-Prop_Vine1": 7,
+  "MV-Prop_Vine5": 2,
+  "MV-Prop_Wagon": 4,
+  "MV-Prop_WoodenFence_Single": 44,
+  "MV-Roof_Dormer_RoundTile": 13,
+  "MV-Roof_Front_Brick4": 14,
+  "MV-Roof_Front_Brick6": 13,
+  "MV-Roof_Front_Brick8": 18,
+  "MV-Roof_RoundTiles_4x6": 3,
+  "MV-Roof_RoundTiles_4x6@dark": 1,
+  "MV-Roof_RoundTiles_4x6@weathered": 1,
+  "MV-Roof_RoundTiles_4x8": 1,
+  "MV-Roof_RoundTiles_4x8@weathered": 1,
+  "MV-Roof_RoundTiles_6x10": 1,
+  "MV-Roof_RoundTiles_6x6": 1,
+  "MV-Roof_RoundTiles_6x6@dark": 4,
+  "MV-Roof_RoundTiles_6x6@weathered": 1,
+  "MV-Roof_RoundTiles_6x8": 1,
+  "MV-Roof_RoundTiles_8x10": 1,
+  "MV-Roof_RoundTiles_8x12@dark": 2,
+  "MV-Roof_RoundTiles_8x14@dark": 2,
+  "MV-Roof_RoundTiles_8x8": 2,
+  "MV-Roof_RoundTiles_8x8@dark": 2,
+  "MV-Roof_Tower_RoundTiles": 2,
+  "MV-Roof_Tower_RoundTiles@dark": 2,
+  "MV-Roof_Wooden_2x1_Center": 9,
+  "MV-Roof_Wooden_2x1_L": 6,
+  "MV-Roof_Wooden_2x1_R": 6,
+  "MV-Stairs_Exterior_Platform": 1,
+  "MV-Stairs_Exterior_SingleSide": 94,
+  "MV-Stairs_Exterior_Straight_Center": 7,
+  "MV-Stairs_Exterior_Straight_L": 2,
+  "MV-Stairs_Exterior_Straight_R": 2,
+  "MV-Wall_Arch": 34,
+  "MV-Wall_Plaster_Door_Flat": 14,
+  "MV-Wall_Plaster_Door_Round": 3,
+  "MV-Wall_Plaster_Door_RoundInset": 1,
+  "MV-Wall_Plaster_Straight": 179,
+  "MV-Wall_Plaster_Window_Thin_Round": 25,
+  "MV-Wall_Plaster_Window_Wide_Flat": 31,
+  "MV-Wall_Plaster_Window_Wide_Round": 93,
+  "MV-Wall_Plaster_WoodGrid": 28,
+  "MV-Wall_UnevenBrick_Door_Round": 14,
+  "MV-Wall_UnevenBrick_Straight": 99,
+  "MV-Wall_UnevenBrick_Window_Wide_Flat": 57,
+  "MV-Wall_UnevenBrick_Window_Wide_Round": 19,
+  "MV-WindowShutters_Wide_Flat_Open": 19,
+  "MV-Window_Thin_Round1": 25,
+  "MV-Window_Wide_Flat1": 88,
+  "MV-Window_Wide_Round1": 114,
+  "SY-balance-scale": 1,
+  "SY-basket-of-jars": 2,
+  "SY-basket-of-pastries": 2,
+  "SY-chair01": 2,
+  "SY-counter_L": 1,
+  "SY-counter_M": 5,
+  "SY-crate02": 1,
+  "SY-food-display": 1,
+  "SY-food-sausage": 1,
+  "SY-herb-drying-hanger": 6,
+  "SY-keg01": 3,
+  "SY-keg02": 2,
+  "SY-menu-stand01": 1,
+  "SY-mug01": 2,
+  "SY-mug02": 1,
+  "SY-mug03": 1,
+  "SY-pitcher": 2,
+  "SY-platter-of-pie": 1,
+  "SY-shelf01": 3,
+  "SY-stool": 5,
+  "SY-table-cloth01": 2,
+  "SY-table-cloth02": 1,
+  "SY-table-cloth03": 1,
+  "SY-table01": 2,
+  "SY-table02": 1,
+  "SY-table03": 1
+ },
+ "lod": {
+  "MV-Corner_Exterior_Brick": {
+   "before": 3102,
+   "after": 400
+  },
+  "FP-Lantern_Wall": {
+   "before": 2822,
+   "after": 700
+  },
+  "AV-mdvl_props_wheelbarrow_01": {
+   "before": 1736,
+   "after": 899
+  },
+  "AV-mdvl_farm_fruit_basket_01": {
+   "before": 3646,
+   "after": 1300
+  },
+  "AV-mdvl_props_sack_01": {
+   "before": 1529,
+   "after": 600
+  },
+  "AV-mdvl_village_window_box_01": {
+   "before": 1330,
+   "after": 700
+  },
+  "AV-mdvl_props_basket_01": {
+   "before": 2200,
+   "after": 800
+  },
+  "AV-mdvl_interiors_chest_01": {
+   "before": 816,
+   "after": 500
+  },
+  "FP-Rope_1": {
+   "before": 1748,
+   "after": 700
+  },
+  "AV-mdvl_props_barrel_01": {
+   "before": 2348,
+   "after": 800
+  },
+  "AV-mdvl_props_rope_coil_01": {
+   "before": 1388,
+   "after": 600
+  },
+  "AV-mdvl_interiors_woodpile_01": {
+   "before": 804,
+   "after": 800
+  },
+  "FP-Anvil_Log": {
+   "before": 3808,
+   "after": 1400
+  }
+ },
+ "ao": {
+  "samples": 40,
+  "distance_m": 2.6,
+  "strength": 0.4,
+  "nodes": {
+   "A01_main": [
+    0.6089246869087219,
+    0.3600127398967743
+   ],
+   "A01_porch": [
+    0.7004759311676025,
+    0.36000001430511475
+   ],
+   "A01_tower": [
+    0.5686246752738953,
+    0.3600398004055023
+   ],
+   "A01_wing_e": [
+    0.5939216017723083,
+    0.3600711524486542
+   ],
+   "A01_wing_w": [
+    0.5969610810279846,
+    0.36004307866096497
+   ],
+   "A02c": [
+    0.593693733215332,
+    0.36000001430511475
+   ],
+   "A02p": [
+    0.6331247091293335,
+    0.36000001430511475
+   ],
+   "A03": [
+    0.6088571548461914,
+    0.36000001430511475
+   ],
+   "A03b": [
+    0.5792339444160461,
+    0.36000001430511475
+   ],
+   "A03cC": [
+    0.5920059084892273,
+    0.36000001430511475
+   ],
+   "A03cT": [
+    0.630107045173645,
+    0.36000001430511475
+   ],
+   "A04": [
+    0.5972563028335571,
+    0.36011114716529846
+   ],
+   "A04b": [
+    0.5856379270553589,
+    0.36008962988853455
+   ],
+   "A04bO": [
+    0.6042702794075012,
+    0.36000001430511475
+   ],
+   "A04bP": [
+    0.6212533116340637,
+    0.36000001430511475
+   ],
+   "A05c": [
+    0.5850067138671875,
+    0.36000001430511475
+   ],
+   "A06j": [
+    0.6064985990524292,
+    0.36000075936317444
+   ],
+   "A06s": [
+    0.593745768070221,
+    0.36000001430511475
+   ],
+   "A07w": [
+    0.5916985869407654,
+    0.3600114583969116
+   ],
+   "A08": [
+    0.6351919770240784,
+    0.36000001430511475
+   ],
+   "A09": [
+    0.617181658744812,
+    0.36000001430511475
+   ],
+   "A10c": [
+    0.6737135052680969,
+    0.3600039482116699
+   ],
+   "A10p": [
+    0.6323229670524597,
+    0.36000126600265503
+   ],
+   "A11": [
+    0.5684412717819214,
+    0.36000001430511475
+   ],
+   "A11a": [
+    0.5690644383430481,
+    0.36000001430511475
+   ],
+   "A11c": [
+    0.56867516040802,
+    0.36000001430511475
+   ],
+   "CROSS": [
+    0.7066497802734375,
+    0.36011815071105957
+   ],
+   "SIGN_CUS-Sign_Coin_burgundy_x1p4": [
+    0.618323028087616,
+    0.3646670877933502
+   ],
+   "SIGN_CUS-Sign_Coin_wood_x1p4": [
+    0.618323028087616,
+    0.3646670877933502
+   ],
+   "SIGN_CUS-Sign_Compass_wood_x1p4": [
+    0.6248785257339478,
+    0.36301082372665405
+   ],
+   "SIGN_CUS-Sign_Crate_burgundy_x1p4": [
+    0.6417372226715088,
+    0.36580607295036316
+   ],
+   "SIGN_CUS-Sign_Crate_wood_x1p4": [
+    0.6417372226715088,
+    0.36580607295036316
+   ],
+   "SIGN_CUS-Sign_Cup_wood_x1p4": [
+    0.6315385699272156,
+    0.36399081349372864
+   ],
+   "SIGN_CUS-Sign_Hammer_wood_x1p4": [
+    0.6020530462265015,
+    0.3628007769584656
+   ],
+   "SIGN_CUS-Sign_Jar_wood_x1p4": [
+    0.6012590527534485,
+    0.3636908531188965
+   ],
+   "SIGN_CUS-Sign_Leaf_wood_x1p4": [
+    0.6019564867019653,
+    0.3619158864021301
+   ],
+   "SIGN_CUS-Sign_Loaf_wood_x1p4": [
+    0.6317282915115356,
+    0.36580607295036316
+   ],
+   "SIGN_CUS-Sign_Scroll_burgundy_x1p4": [
+    0.6343744993209839,
+    0.36580607295036316
+   ],
+   "SIGN_CUS-Sign_Scroll_wood_x1p4": [
+    0.6343744993209839,
+    0.36580607295036316
+   ],
+   "SIGN_FP-Banner_1_at_blue": [
+    0.8605018854141235,
+    0.36096063256263733
+   ],
+   "SIGN_FP-Banner_1_at_burgundy": [
+    0.8605018854141235,
+    0.36096063256263733
+   ],
+   "TERRACE": [
+    0.6880459785461426,
+    0.3607942759990692
+   ],
+   "PODIUM": [
+    0.7306122779846191,
+    0.36000001430511475
+   ],
+   "ARCH": [
+    0.978108823299408,
+    0.6768401861190796
+   ],
+   "DRESSING_D2": [
+    0.6778277158737183,
+    0.36011776328086853
+   ],
+   "DRESSING_D3": [
+    0.7324594259262085,
+    0.36011403799057007
+   ],
+   "DRESSING_D1": [
+    0.6609359979629517,
+    0.3602762520313263
+   ],
+   "DRESSING_D7": [
+    0.6964031457901001,
+    0.3601181209087372
+   ],
+   "DRESSING_D8": [
+    0.714199423789978,
+    0.36011803150177
+   ],
+   "DRESSING_D6": [
+    0.703464150428772,
+    0.3609602749347687
+   ],
+   "DRESSING_D5": [
+    0.7272267937660217,
+    0.3607628345489502
+   ]
+  }
+ },
+ "nodes": {
+  "A01_main": {
+   "bbox_gltf": [
+    -7.8771,
+    0.9886,
+    -4.976,
+    7.8288,
+    13.0014,
+    5.3513
+   ],
+   "triangles": 22450,
+   "vertices": 30292,
+   "primitives": 15,
+   "materials": [
+    "MI_Banner@burgundy",
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_RoundTiles@dark",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim.009",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core"
+   ]
+  },
+  "A01_porch": {
+   "bbox_gltf": [
+    -4.1249,
+    0.9886,
+    -0.3382,
+    4.1249,
+    8.89,
+    7.694
+   ],
+   "triangles": 5792,
+   "vertices": 6888,
+   "primitives": 7,
+   "materials": [
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@dark.001",
+    "MI_WoodTrim"
+   ]
+  },
+  "A01_tower": {
+   "bbox_gltf": [
+    -2.8253,
+    9.9979,
+    -2.7135,
+    2.8253,
+    25.7888,
+    2.7136
+   ],
+   "triangles": 13420,
+   "vertices": 15939,
+   "primitives": 12,
+   "materials": [
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@dark.001",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core"
+   ]
+  },
+  "A01_wing_e": {
+   "bbox_gltf": [
+    6.0618,
+    0.9886,
+    -4.1249,
+    14.094,
+    11.89,
+    4.1249
+   ],
+   "triangles": 8654,
+   "vertices": 11587,
+   "primitives": 9,
+   "materials": [
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@dark.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core"
+   ]
+  },
+  "A01_wing_w": {
+   "bbox_gltf": [
+    -13.9382,
+    0.9886,
+    -4.1249,
+    -5.906,
+    11.89,
+    4.1249
+   ],
+   "triangles": 8654,
+   "vertices": 11587,
+   "primitives": 9,
+   "materials": [
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@dark.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core"
+   ]
+  },
+  "A02c": {
+   "bbox_gltf": [
+    -4.976,
+    -0.0524,
+    -7.1171,
+    4.976,
+    9.0014,
+    7.53
+   ],
+   "triangles": 42264,
+   "vertices": 49545,
+   "primitives": 37,
+   "materials": [
+    "CUS_cloth_burgundy",
+    "CUS_cloth_cream",
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber",
+    "MI_Banner@blue",
+    "MI_Banner@burgundy",
+    "MI_Banner@cream",
+    "MI_Banner@gold",
+    "MI_Brick",
+    "MI_Page_Empty",
+    "MI_Plaster",
+    "MI_RoundTiles@dark.001",
+    "MI_Trim_Cloth",
+    "MI_Trim_Cloth.001",
+    "MI_Trim_Furniture",
+    "MI_Trim_Furniture.004",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Metal_Vertex",
+    "MI_Trim_Props_Vertex",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "Metal013-2.001",
+    "Metal013.001",
+    "Metal042B.001",
+    "Wood006.001",
+    "fabric026.001",
+    "foods.001",
+    "mdvl_palette",
+    "mdvl_palette.001",
+    "table-cloth01.001",
+    "wood003.001"
+   ]
+  },
+  "A02p": {
+   "bbox_gltf": [
+    -4.976,
+    -0.0073,
+    -7.1171,
+    4.976,
+    9.0014,
+    7.53
+   ],
+   "triangles": 51485,
+   "vertices": 77069,
+   "primitives": 33,
+   "materials": [
+    "CUS_cloth_blue",
+    "CUS_cloth_cream",
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber",
+    "MI_Plaster",
+    "MI_RoundTiles@dark.001",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Props_Vertex",
+    "MI_WoodTrim",
+    "Metal013.001",
+    "Wicker010B.001",
+    "Wood006.001",
+    "foods.001",
+    "mdvl_palette.002",
+    "mdvl_palette.003",
+    "mdvl_palette.004",
+    "mdvl_palette.005",
+    "mdvl_palette.006",
+    "mdvl_palette.007",
+    "mdvl_palette.008",
+    "mdvl_palette.009",
+    "mdvl_palette.010",
+    "mdvl_palette.011",
+    "mdvl_palette.012",
+    "vegetables.001",
+    "wood003.001"
+   ]
+  },
+  "A03": {
+   "bbox_gltf": [
+    -4.1249,
+    -0.0021,
+    -4.8976,
+    4.1249,
+    11.0284,
+    6.9546
+   ],
+   "triangles": 15752,
+   "vertices": 25824,
+   "primitives": 11,
+   "materials": [
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Metal.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.013"
+   ]
+  },
+  "A03b": {
+   "bbox_gltf": [
+    -4.8288,
+    -0.0021,
+    -4.1249,
+    4.854,
+    11.3033,
+    4.5191
+   ],
+   "triangles": 15968,
+   "vertices": 26842,
+   "primitives": 11,
+   "materials": [
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Metal.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.013"
+   ]
+  },
+  "A03cC": {
+   "bbox_gltf": [
+    -4.8288,
+    -0.0283,
+    -2.7565,
+    4.854,
+    11.2468,
+    5.5198
+   ],
+   "triangles": 14602,
+   "vertices": 28151,
+   "primitives": 13,
+   "materials": [
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@weathered",
+    "MI_Trim_Metal.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.011",
+    "mdvl_palette.012",
+    "mdvl_palette.013"
+   ]
+  },
+  "A03cT": {
+   "bbox_gltf": [
+    -5.0146,
+    -0.0021,
+    -2.7565,
+    5.53,
+    11.2468,
+    4.1443
+   ],
+   "triangles": 24606,
+   "vertices": 43072,
+   "primitives": 31,
+   "materials": [
+    "CUS_cloth_cream",
+    "CUS_cloth_tea",
+    "CUS_sign_timber",
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Metal.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "Metal013-2.001",
+    "PaintedPlaster012.001",
+    "TMP_interior_core",
+    "Wicker010B.001",
+    "Wood006.001",
+    "bricks102.001",
+    "brushed_iron_03.001",
+    "clay004-2.001",
+    "foods.001",
+    "mdvl_palette.012",
+    "mdvl_palette.014",
+    "mdvl_palette.015",
+    "mdvl_palette.016",
+    "mdvl_palette.017",
+    "menus.001",
+    "table-cloth01.001",
+    "vegetables.001",
+    "wood003.001",
+    "wood032.001"
+   ]
+  },
+  "A04": {
+   "bbox_gltf": [
+    -2.7565,
+    -0.0021,
+    -3.7941,
+    2.7565,
+    6.7179,
+    4.53
+   ],
+   "triangles": 5778,
+   "vertices": 8341,
+   "primitives": 12,
+   "materials": [
+    "CUS_cloth_burgundy",
+    "CUS_cloth_cream",
+    "CUS_sign_timber",
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Metal.001",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core"
+   ]
+  },
+  "A04b": {
+   "bbox_gltf": [
+    -3.7941,
+    -0.0021,
+    -2.7565,
+    3.7941,
+    6.7179,
+    3.53
+   ],
+   "triangles": 6028,
+   "vertices": 8816,
+   "primitives": 13,
+   "materials": [
+    "CUS_cloth_blue",
+    "CUS_cloth_cream",
+    "CUS_sign_timber",
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Metal.001",
+    "MI_Vine",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core"
+   ]
+  },
+  "A04bO": {
+   "bbox_gltf": [
+    -4.8364,
+    -0.0021,
+    -2.7565,
+    3.7941,
+    6.7179,
+    4.4479
+   ],
+   "triangles": 12090,
+   "vertices": 24510,
+   "primitives": 21,
+   "materials": [
+    "CUS_cloth_burgundy",
+    "CUS_cloth_cream",
+    "CUS_sign_timber",
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Cloth",
+    "MI_Trim_Furniture",
+    "MI_Trim_Furniture.004",
+    "MI_Trim_Metal.001",
+    "MI_Vine",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.012",
+    "mdvl_palette.015",
+    "mdvl_palette.018",
+    "mdvl_palette.019",
+    "mdvl_palette.020"
+   ]
+  },
+  "A04bP": {
+   "bbox_gltf": [
+    -3.7941,
+    -0.0021,
+    -4.0924,
+    4.472,
+    6.7179,
+    3.53
+   ],
+   "triangles": 12435,
+   "vertices": 17794,
+   "primitives": 24,
+   "materials": [
+    "CUS_cloth_cream",
+    "CUS_cloth_gold",
+    "CUS_sign_timber",
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@weathered",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Props_Vertex",
+    "MI_UnevenBrick",
+    "MI_Vine",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "PaintedPlaster012.001",
+    "TMP_interior_core",
+    "Wicker010B.001",
+    "Wood006.001",
+    "clay004-2.001",
+    "foods.001",
+    "mdvl_palette.021",
+    "mdvl_palette.022",
+    "mdvl_palette.023",
+    "wood032.001"
+   ]
+  },
+  "A05c": {
+   "bbox_gltf": [
+    -5.3513,
+    -0.0114,
+    -8.7565,
+    5.5551,
+    12.0014,
+    5.3513
+   ],
+   "triangles": 32565,
+   "vertices": 55415,
+   "primitives": 23,
+   "materials": [
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "MI_Banner@burgundy",
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_RoundTiles@dark.001",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Props_Vertex",
+    "MI_UnevenBrick",
+    "MI_Vine",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.006",
+    "mdvl_palette.012",
+    "mdvl_palette.013"
+   ]
+  },
+  "A06j": {
+   "bbox_gltf": [
+    -4.1249,
+    -0.0225,
+    -3.9382,
+    4.5551,
+    8.3437,
+    4.9307
+   ],
+   "triangles": 16062,
+   "vertices": 26091,
+   "primitives": 17,
+   "materials": [
+    "MI_Brick",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@weathered",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.009",
+    "mdvl_palette.017",
+    "mdvl_palette.024",
+    "mdvl_palette.025",
+    "mdvl_palette.026",
+    "mdvl_palette.027"
+   ]
+  },
+  "A06s": {
+   "bbox_gltf": [
+    -4.5551,
+    -0.0114,
+    -3.9382,
+    4.3884,
+    8.3437,
+    4.8094
+   ],
+   "triangles": 21688,
+   "vertices": 34689,
+   "primitives": 21,
+   "materials": [
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles@dark.001",
+    "MI_Trim_Furniture",
+    "MI_Trim_Furniture.004",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Props",
+    "MI_Trim_Props_Vertex",
+    "MI_UnevenBrick",
+    "MI_Vine",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.012",
+    "mdvl_palette.022",
+    "mdvl_palette.028",
+    "mdvl_palette.029"
+   ]
+  },
+  "A07w": {
+   "bbox_gltf": [
+    -6.4114,
+    -0.0524,
+    -7.8771,
+    7.3736,
+    12.0014,
+    8.3513
+   ],
+   "triangles": 40101,
+   "vertices": 64375,
+   "primitives": 27,
+   "materials": [
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "CUS_rope",
+    "CUS_sign_iron",
+    "CUS_sign_timber",
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_RoundTiles@dark",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Props_Vertex",
+    "MI_UnevenBrick",
+    "MI_Vine",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim.009",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.006",
+    "mdvl_palette.012",
+    "mdvl_palette.017",
+    "mdvl_palette.018"
+   ]
+  },
+  "A08": {
+   "bbox_gltf": [
+    -4.1249,
+    -0.0073,
+    -3.9382,
+    4.1249,
+    11.1658,
+    5.1043
+   ],
+   "triangles": 19612,
+   "vertices": 32046,
+   "primitives": 15,
+   "materials": [
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_UnevenBrick",
+    "MI_Vine",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.013",
+    "mdvl_palette.030"
+   ]
+  },
+  "A09": {
+   "bbox_gltf": [
+    -5.852,
+    -0.0114,
+    -4.976,
+    6.0074,
+    13.0203,
+    6.1043
+   ],
+   "triangles": 30019,
+   "vertices": 46236,
+   "primitives": 18,
+   "materials": [
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "Metal013.001",
+    "TMP_interior_core",
+    "Wood006.001",
+    "mdvl_palette.013",
+    "mdvl_palette.030",
+    "wood003.001"
+   ]
+  },
+  "A10c": {
+   "bbox_gltf": [
+    -4.1051,
+    -0.0524,
+    -1.4412,
+    4.1051,
+    3.23,
+    0.8698
+   ],
+   "triangles": 7992,
+   "vertices": 7922,
+   "primitives": 11,
+   "materials": [
+    "CUS_cloth_burgundy",
+    "CUS_cloth_cream",
+    "CUS_sign_timber",
+    "MI_Page_Empty",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Metal_Vertex",
+    "MI_Trim_Props_Vertex",
+    "MI_WoodTrim",
+    "Wood006.001"
+   ]
+  },
+  "A10p": {
+   "bbox_gltf": [
+    -4.1051,
+    -0.0,
+    -1.3,
+    4.1051,
+    3.23,
+    0.8698
+   ],
+   "triangles": 11592,
+   "vertices": 15063,
+   "primitives": 18,
+   "materials": [
+    "CUS_cloth_blue",
+    "CUS_cloth_cream",
+    "CUS_sign_timber",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Props_Vertex",
+    "MI_WoodTrim",
+    "Metal013.001",
+    "Wicker010B.001",
+    "Wood006.001",
+    "foods.001",
+    "mdvl_palette.002",
+    "mdvl_palette.003",
+    "mdvl_palette.005",
+    "mdvl_palette.006",
+    "mdvl_palette.007",
+    "mdvl_palette.008",
+    "wood003.001"
+   ]
+  },
+  "A11": {
+   "bbox_gltf": [
+    -4.976,
+    -0.0114,
+    -5.0847,
+    5.8253,
+    15.7888,
+    5.7135
+   ],
+   "triangles": 27564,
+   "vertices": 39198,
+   "primitives": 12,
+   "materials": [
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Metal.001",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.013"
+   ]
+  },
+  "A11a": {
+   "bbox_gltf": [
+    -5.3308,
+    -0.0114,
+    -5.0847,
+    5.8253,
+    15.7888,
+    5.7135
+   ],
+   "triangles": 31804,
+   "vertices": 46847,
+   "primitives": 23,
+   "materials": [
+    "CUS_guild_gold",
+    "CUS_sign_iron",
+    "MI_Banner@burgundy",
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_RoundTiles@dark.001",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Props_Vertex",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.006",
+    "mdvl_palette.013",
+    "mdvl_palette.014",
+    "mdvl_palette.016",
+    "mdvl_palette.031",
+    "mdvl_palette.032"
+   ]
+  },
+  "A11c": {
+   "bbox_gltf": [
+    -6.0,
+    -0.0114,
+    -4.976,
+    5.2474,
+    15.7888,
+    5.7135
+   ],
+   "triangles": 34578,
+   "vertices": 51383,
+   "primitives": 20,
+   "materials": [
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "CUS_parchment",
+    "CUS_sign_timber",
+    "MI_Brick",
+    "MI_MetalOrnaments",
+    "MI_Page_Empty",
+    "MI_Plaster",
+    "MI_RockTrim",
+    "MI_RoundTiles.001",
+    "MI_Trim_Furniture.004",
+    "MI_Trim_Metal.001",
+    "MI_Trim_Props_Vertex",
+    "MI_UnevenBrick",
+    "MI_WindowGlass",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear",
+    "TMP_interior_core",
+    "mdvl_palette.013"
+   ]
+  },
+  "CROSS": {
+   "bbox_gltf": [
+    -1.4013,
+    -0.0,
+    -2.2136,
+    1.4013,
+    4.0,
+    1.699
+   ],
+   "triangles": 4260,
+   "vertices": 5589,
+   "primitives": 10,
+   "materials": [
+    "CUS_guild_blue",
+    "CUS_guild_burgundy",
+    "CUS_guild_gold",
+    "MI_Brick",
+    "MI_RockTrim",
+    "MI_Trim_Cloth",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_WoodTrim"
+   ]
+  },
+  "SIGN_CUS-Sign_Coin_burgundy_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 164,
+   "vertices": 112,
+   "primitives": 4,
+   "materials": [
+    "CUS_guild_burgundy",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Coin_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 164,
+   "vertices": 112,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Compass_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 116,
+   "vertices": 80,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Crate_burgundy_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 92,
+   "vertices": 64,
+   "primitives": 4,
+   "materials": [
+    "CUS_guild_burgundy",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Crate_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 92,
+   "vertices": 64,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Cup_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 116,
+   "vertices": 80,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Hammer_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 116,
+   "vertices": 80,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Jar_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 140,
+   "vertices": 96,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Leaf_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 146,
+   "vertices": 100,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Loaf_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 116,
+   "vertices": 80,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Scroll_burgundy_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 104,
+   "vertices": 72,
+   "primitives": 4,
+   "materials": [
+    "CUS_guild_burgundy",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_CUS-Sign_Scroll_wood_x1p4": {
+   "bbox_gltf": [
+    -0.0644,
+    -0.784,
+    -0.0,
+    0.0644,
+    0.0,
+    1.33
+   ],
+   "triangles": 104,
+   "vertices": 72,
+   "primitives": 4,
+   "materials": [
+    "CUS_sign_field_wood",
+    "CUS_sign_iron",
+    "CUS_sign_paint",
+    "CUS_sign_timber"
+   ]
+  },
+  "SIGN_FP-Banner_1_at_blue": {
+   "bbox_gltf": [
+    -0.0008,
+    -1.5487,
+    -0.093,
+    1.6123,
+    0.8435,
+    0.0976
+   ],
+   "triangles": 448,
+   "vertices": 381,
+   "primitives": 3,
+   "materials": [
+    "MI_Banner@blue",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal"
+   ]
+  },
+  "SIGN_FP-Banner_1_at_burgundy": {
+   "bbox_gltf": [
+    -0.0008,
+    -1.5487,
+    -0.093,
+    1.6123,
+    0.8435,
+    0.0976
+   ],
+   "triangles": 448,
+   "vertices": 381,
+   "primitives": 3,
+   "materials": [
+    "MI_Banner@burgundy",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal"
+   ]
+  },
+  "TERRACE": {
+   "bbox_gltf": [
+    -14.0,
+    -0.2037,
+    -6.0,
+    14.0,
+    2.1248,
+    8.0007
+   ],
+   "triangles": 1608,
+   "vertices": 3064,
+   "primitives": 3,
+   "materials": [
+    "MI_Brick",
+    "MI_RockTrim",
+    "MI_WoodTrim"
+   ]
+  },
+  "PODIUM": {
+   "bbox_gltf": [
+    -14.0,
+    -1.0,
+    -6.0,
+    14.0,
+    1.01,
+    12.0007
+   ],
+   "triangles": 1598,
+   "vertices": 3150,
+   "primitives": 2,
+   "materials": [
+    "MI_Brick",
+    "MI_RockTrim"
+   ]
+  },
+  "ARCH": {
+   "bbox_gltf": [
+    -1.0,
+    -0.0,
+    -0.0,
+    1.0,
+    3.0,
+    0.064
+   ],
+   "triangles": 196,
+   "vertices": 260,
+   "primitives": 1,
+   "materials": [
+    "MI_WoodTrim"
+   ]
+  },
+  "TILE_cobble": {
+   "bbox_gltf": [
+    -1.0,
+    -0.01,
+    -1.0,
+    1.0,
+    0.01,
+    1.0
+   ],
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1,
+   "materials": [
+    "MI_UnevenBrick"
+   ]
+  },
+  "TILE_brick": {
+   "bbox_gltf": [
+    -1.0,
+    -0.01,
+    -1.0,
+    1.0,
+    0.01,
+    1.0
+   ],
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1,
+   "materials": [
+    "MI_Brick"
+   ]
+  },
+  "TILE_red": {
+   "bbox_gltf": [
+    -1.0,
+    -0.01,
+    -1.0,
+    1.0,
+    0.01,
+    1.0
+   ],
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1,
+   "materials": [
+    "MI_RedBrick"
+   ]
+  },
+  "DRESSING_D2": {
+   "bbox_gltf": [
+    -14.8513,
+    -0.0283,
+    -34.0326,
+    14.8513,
+    3.9,
+    -10.851
+   ],
+   "triangles": 14110,
+   "vertices": 23126,
+   "primitives": 14,
+   "materials": [
+    "CUS_cloth_blue",
+    "CUS_cloth_burgundy",
+    "CUS_cloth_cream",
+    "CUS_cloth_gold",
+    "CUS_pave_burgundy",
+    "CUS_pave_gold",
+    "CUS_sign_iron",
+    "MI_Trim_Furniture",
+    "MI_Trim_Furniture.004",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_Vine",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear"
+   ]
+  },
+  "DRESSING_D3": {
+   "bbox_gltf": [
+    -21.4051,
+    -0.0283,
+    -55.75,
+    35.6513,
+    6.6,
+    -34.5995
+   ],
+   "triangles": 6542,
+   "vertices": 13785,
+   "primitives": 11,
+   "materials": [
+    "CUS_cloth_blue",
+    "CUS_cloth_burgundy",
+    "CUS_cloth_cream",
+    "CUS_cloth_gold",
+    "CUS_sign_iron",
+    "MI_Trim_Cloth",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_WoodTrim",
+    "mdvl_palette.012"
+   ]
+  },
+  "DRESSING_D1": {
+   "bbox_gltf": [
+    -9.5787,
+    -0.0524,
+    4.2061,
+    9.5787,
+    3.9,
+    7.5198
+   ],
+   "triangles": 6758,
+   "vertices": 8765,
+   "primitives": 6,
+   "materials": [
+    "MI_Trim_Cloth",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear"
+   ]
+  },
+  "DRESSING_D7": {
+   "bbox_gltf": [
+    18.0901,
+    -0.0283,
+    -36.2099,
+    35.6513,
+    4.8,
+    -5.0877
+   ],
+   "triangles": 5773,
+   "vertices": 7575,
+   "primitives": 7,
+   "materials": [
+    "MI_Banner@burgundy",
+    "MI_Trim_Cloth",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_WoodTrim",
+    "MI_WoodTrim_Wear"
+   ]
+  },
+  "DRESSING_D8": {
+   "bbox_gltf": [
+    21.9685,
+    -0.0283,
+    -62.0327,
+    42.0599,
+    3.9,
+    -47.8408
+   ],
+   "triangles": 5254,
+   "vertices": 8601,
+   "primitives": 16,
+   "materials": [
+    "GlazedTerracotta001.001",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_WoodTrim",
+    "Metal013-2.001",
+    "Metal013.001",
+    "Metal042B.001",
+    "Wood006.001",
+    "brushed_iron_03.001",
+    "fabric026.001",
+    "foods.001",
+    "mdvl_palette.012",
+    "table-cloth01.001",
+    "table-cloth02.001",
+    "wood003.001"
+   ]
+  },
+  "DRESSING_D6": {
+   "bbox_gltf": [
+    -23.375,
+    -0.0,
+    -35.4184,
+    -18.1949,
+    4.8,
+    -6.5802
+   ],
+   "triangles": 1464,
+   "vertices": 2457,
+   "primitives": 5,
+   "materials": [
+    "MI_Banner@cream",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_WoodTrim",
+    "mdvl_palette.033"
+   ]
+  },
+  "DRESSING_D5": {
+   "bbox_gltf": [
+    -12.7787,
+    0.9927,
+    -80.2,
+    12.7787,
+    5.8,
+    -60.9877
+   ],
+   "triangles": 4568,
+   "vertices": 7046,
+   "primitives": 7,
+   "materials": [
+    "CUS_pave_burgundy",
+    "CUS_pave_gold",
+    "MI_Banner@burgundy",
+    "MI_Trim_Furniture",
+    "MI_Trim_Metal",
+    "MI_Trim_Metal.001",
+    "MI_WoodTrim"
+   ]
+  }
+ },
+ "glb_bytes": 46517600,
+ "policy": {
+  "tier1": {
+   "base": 1024,
+   "orm": 512,
+   "normal": 512
+  },
+  "tier2": {
+   "base": 512,
+   "orm": 256,
+   "normal": 256
+  }
+ },
+ "material_count": {
+  "before_signature_merge": 268,
+  "after": 100
+ },
+ "texture_totals": {
+  "textures": 111,
+  "bytes": 3257156,
+  "gpu_bytes_mip": 113945258,
+  "gpu_bytes_source_res": 999991978
+ }
+}

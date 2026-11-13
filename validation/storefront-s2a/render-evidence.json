@@ -1,0 +1,32 @@
+{
+  "renderer": "Actual live Blender MCP / Cycles",
+  "images": [
+    {
+      "path": "validation/storefront-s2a/01-street-level.png",
+      "resolution": [
+        1500,
+        1200
+      ],
+      "bytes": 1999976,
+      "sha256": "bf03e598f289013bdb26b3995bbf1462a82396b75dd39021c1c9c6be44b7ca43"
+    },
+    {
+      "path": "validation/storefront-s2a/02-elevated.png",
+      "resolution": [
+        1500,
+        1500
+      ],
+      "bytes": 2658967,
+      "sha256": "23bf0966221b23ead7edfe250b2bf8d8533d7b40a20c7744f3da4674b7d93ff9"
+    },
+    {
+      "path": "validation/storefront-s2a/03-facade-roof-detail.png",
+      "resolution": [
+        1500,
+        1200
+      ],
+      "bytes": 2279581,
+      "sha256": "41b87726111ed58e460ecff3da1e9e8d4cf711ffacacab4d6e9d896f9c907552"
+    }
+  ]
+}

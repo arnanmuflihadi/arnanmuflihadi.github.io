@@ -1,0 +1,107 @@
+{
+  "height": 844,
+  "overflow": false,
+  "start": [
+    "12.000",
+    "36.473"
+  ],
+  "targets": [
+    {
+      "height": 44,
+      "name": "Open menu",
+      "width": 44
+    },
+    {
+      "height": 44,
+      "name": "EFind a guide or landmark",
+      "width": 362
+    },
+    {
+      "height": 44,
+      "name": "SpaceJump",
+      "width": 177.5
+    },
+    {
+      "height": 44,
+      "name": "Controls / pause",
+      "width": 177.5
+    },
+    {
+      "height": 44,
+      "name": "StandardEco",
+      "width": 72
+    },
+    {
+      "height": 44,
+      "name": "Walk forward",
+      "width": 44
+    },
+    {
+      "height": 44,
+      "name": "Walk left",
+      "width": 44
+    },
+    {
+      "height": 44,
+      "name": "Walk backward",
+      "width": 44
+    },
+    {
+      "height": 44,
+      "name": "Walk right",
+      "width": 44
+    }
+  ],
+  "width": 390,
+  "afterHeldRight": [
+    "14.105",
+    "36.473"
+  ],
+  "motion": {
+    "paused": "true",
+    "reduced": "true"
+  },
+  "menu": {
+    "open": "true",
+    "paused": "true"
+  },
+  "narrow": {
+    "height": 720,
+    "overflow": false,
+    "targets": [
+      {
+        "height": 44,
+        "width": 292
+      },
+      {
+        "height": 44,
+        "width": 142.5
+      },
+      {
+        "height": 44,
+        "width": 142.5
+      },
+      {
+        "height": 44,
+        "width": 72
+      },
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ],
+    "width": 320
+  }
+}

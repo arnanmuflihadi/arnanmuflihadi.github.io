@@ -1,0 +1,12 @@
+✔ local terrain geometry, exact sampler, normals and floor caps agree (2172.867916ms)
+✔ terrain flag restores exact surface, vegetation, obstacles and sampler; cached geometry survives LOD (1010.473125ms)
+✔ actual unchanged controller traverses implemented approaches, reservation ground and highland in both directions (970.987833ms)
+✔ jump lands on the modified surface without changing movement physics (651.971ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4975.4445

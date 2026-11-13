@@ -1,0 +1,111 @@
+{
+ "totals": {
+  "instances": 1651,
+  "trees": 83,
+  "ledge_rocks": 121,
+  "habitats": {
+   "A_settlement": {
+    "BrahmaChicken": 6,
+    "SebrightBantam": 6,
+    "Rooster": 3,
+    "Chick": 6,
+    "Corgi": 3
+   },
+   "B_caravan_green": {
+    "Sheep": 12,
+    "Lamb": 6,
+    "MerinoRam": 3,
+    "Doe": 6,
+    "Hare": 12,
+    "Quail": 9
+   },
+   "C_counting_crag": {
+    "Goat": 7,
+    "Marmot": 8,
+    "Fox": 3
+   },
+   "D_tea_terraces": {
+    "Hedgehog": 9,
+    "Hare": 6,
+    "Squirrel": 6
+   },
+   "E_cloudfall": {
+    "Duck": 6
+   },
+   "F_tea_lookout_stack": {
+    "Goldenpheasant": 0
+   },
+   "G_sky_quay": {}
+  }
+ },
+ "counts": {
+  "CommonTree_4": 14,
+  "CommonTree_3": 14,
+  "CommonTree_1": 20,
+  "Pine_5": 15,
+  "Pine_1": 8,
+  "TwistedTree_2": 6,
+  "DeadTree_3": 6,
+  "Bush_Common_Flowers": 39,
+  "Bush_Common": 253,
+  "Plant_7_Big": 67,
+  "Plant_1_Big": 48,
+  "Fern_1": 43,
+  "Mushroom_Common": 53,
+  "Flower_4_Single": 72,
+  "Flower_3_Single": 78,
+  "Flower_3_Group": 30,
+  "Flower_4_Group": 30,
+  "Clover_1": 189,
+  "Grass_Wispy_Tall": 133,
+  "Grass_Common_Tall": 152,
+  "Grass_Common_Short": 160,
+  "Rock_Medium_1": 61,
+  "Rock_Medium_2": 58,
+  "Rock_Medium_3": 54,
+  "Pebble_Square_1": 11,
+  "Pebble_Square_3": 11,
+  "Pebble_Round_1": 8,
+  "Pebble_Round_3": 13,
+  "RockPath_Round_Small_1": 2,
+  "RockPath_Square_Small_1": 2,
+  "RockPath_Round_Small_2": 1
+ },
+ "placement_checks": {
+  "A_settlement": {
+   "n": 24,
+   "max_slope": 3.469446951953614e-18,
+   "min_edge": 32.19164657671719,
+   "min_solid": 1.5,
+   "min_route": 10.0
+  },
+  "B_caravan_green": {
+   "n": 48,
+   "max_slope": 0.0695323285809076,
+   "min_edge": 8.865268018655712,
+   "min_solid": 10.547511554864494,
+   "min_route": 18.607794065928395
+  },
+  "C_counting_crag": {
+   "n": 18,
+   "max_slope": 0.3691440474247741,
+   "min_edge": 32.112776630104165,
+   "min_solid": 16.32482771731451,
+   "min_route": 26.832815729997478
+  },
+  "D_tea_terraces": {
+   "n": 21,
+   "max_slope": 0.28368195401649565,
+   "min_edge": 12.043290245419485,
+   "min_solid": 10.0,
+   "min_route": 16.5
+  },
+  "E_cloudfall": {
+   "n": 6,
+   "max_slope": 0.38875509086162036,
+   "min_edge": 17.246690108496708,
+   "min_solid": 19.60229578391266,
+   "min_route": 26.119915773217954
+  }
+ }
+}

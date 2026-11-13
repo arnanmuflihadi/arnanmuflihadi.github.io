@@ -1,0 +1,252 @@
+{
+  "meshCounts": [
+    {
+      "id": 23,
+      "name": "Living landscape / canopy",
+      "material": "Bark_NormalTree",
+      "count": 33,
+      "near": 8,
+      "vertices": 5618
+    },
+    {
+      "id": 24,
+      "name": "Living landscape / canopy",
+      "material": "Leaves_NormalTree",
+      "count": 33,
+      "near": 9,
+      "vertices": 3840
+    },
+    {
+      "id": 25,
+      "name": "Living landscape / fern",
+      "material": "Leaves",
+      "count": 268,
+      "near": 38,
+      "vertices": 243
+    },
+    {
+      "id": 26,
+      "name": "Living landscape / fern",
+      "material": "Leaves",
+      "count": 272,
+      "near": 46,
+      "vertices": 243
+    },
+    {
+      "id": 27,
+      "name": "Living landscape / fern",
+      "material": "Leaves",
+      "count": 138,
+      "near": 21,
+      "vertices": 243
+    },
+    {
+      "id": 28,
+      "name": "Living landscape / canopy",
+      "material": "Bark_NormalTree",
+      "count": 22,
+      "near": 1,
+      "vertices": 5618
+    },
+    {
+      "id": 29,
+      "name": "Living landscape / canopy",
+      "material": "Leaves_NormalTree",
+      "count": 22,
+      "near": 1,
+      "vertices": 3840
+    },
+    {
+      "id": 30,
+      "name": "Living landscape / canopy",
+      "material": "Bark_NormalTree",
+      "count": 24,
+      "near": 3,
+      "vertices": 5618
+    },
+    {
+      "id": 31,
+      "name": "Living landscape / canopy",
+      "material": "Leaves_NormalTree",
+      "count": 24,
+      "near": 3,
+      "vertices": 3840
+    },
+    {
+      "id": 32,
+      "name": "Living landscape / canopy",
+      "material": "Bark_NormalTree",
+      "count": 22,
+      "near": 1,
+      "vertices": 5618
+    },
+    {
+      "id": 33,
+      "name": "Living landscape / canopy",
+      "material": "Leaves_NormalTree",
+      "count": 22,
+      "near": 3,
+      "vertices": 3840
+    },
+    {
+      "id": 34,
+      "name": "Living landscape / canopy",
+      "material": "Bark_NormalTree",
+      "count": 33,
+      "near": 7,
+      "vertices": 5618
+    },
+    {
+      "id": 35,
+      "name": "Living landscape / canopy",
+      "material": "Leaves_NormalTree",
+      "count": 33,
+      "near": 9,
+      "vertices": 3840
+    },
+    {
+      "id": 36,
+      "name": "Living landscape / cliff fern",
+      "material": "Leaves",
+      "count": 8,
+      "near": 1,
+      "vertices": 243
+    },
+    {
+      "id": 37,
+      "name": "Living landscape / cliff fern",
+      "material": "Leaves",
+      "count": 8,
+      "near": 1,
+      "vertices": 243
+    },
+    {
+      "id": 38,
+      "name": "Living landscape / cliff fern",
+      "material": "Leaves",
+      "count": 8,
+      "near": 2,
+      "vertices": 243
+    },
+    {
+      "id": 70,
+      "name": "",
+      "material": "",
+      "count": 12,
+      "near": 2,
+      "vertices": 26
+    },
+    {
+      "id": 71,
+      "name": "",
+      "material": "",
+      "count": 11,
+      "near": 2,
+      "vertices": 26
+    },
+    {
+      "id": 72,
+      "name": "",
+      "material": "",
+      "count": 11,
+      "near": 3,
+      "vertices": 26
+    },
+    {
+      "id": 76,
+      "name": "",
+      "material": "",
+      "count": 37,
+      "near": 4,
+      "vertices": 46
+    },
+    {
+      "id": 77,
+      "name": "",
+      "material": "",
+      "count": 39,
+      "near": 1,
+      "vertices": 46
+    },
+    {
+      "id": 78,
+      "name": "",
+      "material": "",
+      "count": 100,
+      "near": 30,
+      "vertices": 26
+    },
+    {
+      "id": 79,
+      "name": "",
+      "material": "",
+      "count": 131,
+      "near": 21,
+      "vertices": 130
+    },
+    {
+      "id": 80,
+      "name": "",
+      "material": "",
+      "count": 18,
+      "near": 4,
+      "vertices": 112
+    },
+    {
+      "id": 81,
+      "name": "",
+      "material": "",
+      "count": 18,
+      "near": 4,
+      "vertices": 204
+    }
+  ],
+  "glazing": [
+    {
+      "mesh": "Cube273_4",
+      "material": "S2A / soft blue green glass",
+      "transmission": 0.9599999785423279,
+      "roughness": 0.10000000149011612,
+      "color": [
+        0.6399999856948853,
+        0.8199999928474426,
+        0.7799999713897705
+      ],
+      "bounds": [
+        [
+          21.97999858856201,
+          19.80285713672638,
+          29.630000114440918
+        ],
+        [
+          32.96003341674805,
+          28.61486396789551,
+          38.3700008392334
+        ]
+      ]
+    },
+    {
+      "mesh": "S2G glass C selected cafe frontage",
+      "material": "S2A / soft blue green glass",
+      "transmission": 0.9599999785423279,
+      "roughness": 0.10000000149011612,
+      "color": [
+        0.6399999856948853,
+        0.8199999928474426,
+        0.7799999713897705
+      ],
+      "bounds": [
+        [
+          21.97999858856201,
+          19.80285713672638,
+          29.630000114440918
+        ],
+        [
+          32.96003341674805,
+          28.61486396789551,
+          38.3700008392334
+        ]
+      ]
+    }
+  ]
+}

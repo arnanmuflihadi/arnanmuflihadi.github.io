@@ -1,0 +1,261 @@
+{
+ "file": "merchant-citadel-p2a/models/merchant-citadel-p2a-kit.glb",
+ "bytes": 27032396,
+ "checks": {
+  "header": {
+   "magic": "glTF",
+   "version": 2,
+   "declared_length": 27032396,
+   "actual_length": 27032396,
+   "json_chunk": "JSON",
+   "bin_chunk": "BIN\u0000",
+   "ok": true
+  },
+  "extensions_used": [
+   "KHR_materials_specular",
+   "KHR_materials_ior"
+  ],
+  "extensions_required": [],
+  "counts": {
+   "scenes": 1,
+   "nodes": 36,
+   "meshes": 36,
+   "materials": 87,
+   "textures": 115,
+   "images": 69,
+   "samplers": 2,
+   "accessors": 1803,
+   "bufferViews": 1872,
+   "buffers": 1
+  },
+  "unique_node_names": true,
+  "nodes_with_transforms": [],
+  "geometry": {
+   "nodes_with_mesh": 36,
+   "primitives": 341,
+   "triangles": 336528,
+   "vertices": 498828,
+   "primitives_with_AO": 338,
+   "primitives_with_COLOR_0": 208
+  },
+  "problems": {
+   "missing_attributes": [],
+   "index_out_of_range": [],
+   "non_finite_positions": [],
+   "accessor_bbox_mismatch": []
+  },
+  "materials": {
+   "count": 87,
+   "distinct_names": 70,
+   "double_sided": 71,
+   "with_base_texture": 72,
+   "alpha_mask": 2,
+   "alpha_blend": 3
+  },
+  "texture_references_valid": true,
+  "images": {
+   "count": 69,
+   "embedded_bytes": 2833450,
+   "mime": [
+    "image/jpeg",
+    "image/png"
+   ]
+  },
+  "kit_bounds_m_gltf_axes": {
+   "min": [
+    -23.375,
+    -1.549,
+    -73.32
+   ],
+   "max": [
+    42.06,
+    25.789,
+    12.001
+   ]
+  },
+  "ok": true
+ },
+ "issues": [],
+ "nodes": {
+  "DRESSING_D2": {
+   "triangles": 14110,
+   "vertices": 23619,
+   "primitives": 14
+  },
+  "DRESSING_D3": {
+   "triangles": 4348,
+   "vertices": 7567,
+   "primitives": 10
+  },
+  "DRESSING_D5": {
+   "triangles": 3380,
+   "vertices": 4884,
+   "primitives": 7
+  },
+  "DRESSING_D8": {
+   "triangles": 5166,
+   "vertices": 7877,
+   "primitives": 15
+  },
+  "SIGN_CUS-Sign_Coin_wood_x1p4": {
+   "triangles": 164,
+   "vertices": 304,
+   "primitives": 4
+  },
+  "SIGN_CUS-Sign_Crate_wood_x1p4": {
+   "triangles": 92,
+   "vertices": 184,
+   "primitives": 4
+  },
+  "SIGN_CUS-Sign_Cup_wood_x1p4": {
+   "triangles": 116,
+   "vertices": 224,
+   "primitives": 4
+  },
+  "SIGN_CUS-Sign_Jar_wood_x1p4": {
+   "triangles": 140,
+   "vertices": 288,
+   "primitives": 4
+  },
+  "SIGN_CUS-Sign_Loaf_wood_x1p4": {
+   "triangles": 116,
+   "vertices": 224,
+   "primitives": 4
+  },
+  "SIGN_CUS-Sign_Scroll_burgundy_x1p4": {
+   "triangles": 104,
+   "vertices": 204,
+   "primitives": 4
+  },
+  "SIGN_CUS-Sign_Scroll_wood_x1p4": {
+   "triangles": 104,
+   "vertices": 204,
+   "primitives": 4
+  },
+  "SIGN_FP-Banner_1_at_blue": {
+   "triangles": 448,
+   "vertices": 381,
+   "primitives": 3
+  },
+  "SIGN_FP-Banner_1_at_burgundy": {
+   "triangles": 448,
+   "vertices": 381,
+   "primitives": 3
+  },
+  "TILE_brick": {
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1
+  },
+  "TILE_cobble": {
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1
+  },
+  "TILE_red": {
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1
+  },
+  "A01_main": {
+   "triangles": 22450,
+   "vertices": 30545,
+   "primitives": 15
+  },
+  "A01_porch": {
+   "triangles": 5792,
+   "vertices": 7479,
+   "primitives": 7
+  },
+  "A01_tower": {
+   "triangles": 13420,
+   "vertices": 18589,
+   "primitives": 12
+  },
+  "A01_wing_e": {
+   "triangles": 8654,
+   "vertices": 11702,
+   "primitives": 9
+  },
+  "A01_wing_w": {
+   "triangles": 8654,
+   "vertices": 11739,
+   "primitives": 9
+  },
+  "A02c": {
+   "triangles": 42264,
+   "vertices": 53051,
+   "primitives": 37
+  },
+  "A02p": {
+   "triangles": 52909,
+   "vertices": 83675,
+   "primitives": 32
+  },
+  "A03": {
+   "triangles": 17012,
+   "vertices": 27336,
+   "primitives": 11
+  },
+  "A03b": {
+   "triangles": 17228,
+   "vertices": 28323,
+   "primitives": 11
+  },
+  "A04": {
+   "triangles": 5778,
+   "vertices": 8359,
+   "primitives": 12
+  },
+  "A04b": {
+   "triangles": 6028,
+   "vertices": 8855,
+   "primitives": 13
+  },
+  "A08": {
+   "triangles": 20872,
+   "vertices": 34800,
+   "primitives": 15
+  },
+  "A09": {
+   "triangles": 31279,
+   "vertices": 49897,
+   "primitives": 18
+  },
+  "A10c": {
+   "triangles": 7992,
+   "vertices": 8511,
+   "primitives": 11
+  },
+  "A10p": {
+   "triangles": 11592,
+   "vertices": 16081,
+   "primitives": 18
+  },
+  "A11": {
+   "triangles": 28194,
+   "vertices": 40631,
+   "primitives": 12
+  },
+  "ARCH": {
+   "triangles": 196,
+   "vertices": 260,
+   "primitives": 1
+  },
+  "CROSS": {
+   "triangles": 4260,
+   "vertices": 6416,
+   "primitives": 10
+  },
+  "PODIUM": {
+   "triangles": 1598,
+   "vertices": 3150,
+   "primitives": 2
+  },
+  "TERRACE": {
+   "triangles": 1608,
+   "vertices": 3064,
+   "primitives": 3
+  }
+ }
+}

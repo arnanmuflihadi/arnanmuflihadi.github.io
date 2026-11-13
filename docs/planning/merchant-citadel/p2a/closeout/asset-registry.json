@@ -1,0 +1,678 @@
+{
+ "revision": "P2-A closeout / P2-B batch 1 proposal",
+ "glb_bytes": 17419024,
+ "texture_totals": {
+  "textures": 72,
+  "bytes": 2344038,
+  "gpu_bytes_mip": 94371840,
+  "gpu_bytes_source_res": 895483904
+ },
+ "ao": {
+  "samples": 40,
+  "distance_m": 2.6,
+  "strength": 0.9,
+  "nodes": {
+   "A01_main": [
+    0.3900872468948364,
+    0.20000000298023224
+   ],
+   "A01_porch": [
+    0.5287906527519226,
+    0.20000000298023224
+   ],
+   "A01_tower": [
+    0.3811478316783905,
+    0.20000000298023224
+   ],
+   "A01_wing_e": [
+    0.39714619517326355,
+    0.20000000298023224
+   ],
+   "A01_wing_w": [
+    0.39798930287361145,
+    0.20000000298023224
+   ],
+   "A03": [
+    0.387264609336853,
+    0.20000000298023224
+   ],
+   "A03b": [
+    0.34986573457717896,
+    0.20000000298023224
+   ],
+   "A04": [
+    0.375732421875,
+    0.20000000298023224
+   ],
+   "A04b": [
+    0.36675170063972473,
+    0.20000000298023224
+   ],
+   "A08": [
+    0.4010597765445709,
+    0.20000000298023224
+   ],
+   "A09": [
+    0.3860939145088196,
+    0.20000000298023224
+   ],
+   "A10c": [
+    0.43001145124435425,
+    0.20000000298023224
+   ],
+   "A10p": [
+    0.40144452452659607,
+    0.20000000298023224
+   ],
+   "A11": [
+    0.3538925051689148,
+    0.20000000298023224
+   ],
+   "CROSS": [
+    0.516196072101593,
+    0.20000000298023224
+   ],
+   "TERRACE": [
+    0.531741201877594,
+    0.20000000298023224
+   ],
+   "PODIUM": [
+    0.6016336679458618,
+    0.20000000298023224
+   ],
+   "ARCH": [
+    0.9507447481155396,
+    0.2728903889656067
+   ],
+   "DRESSING": [
+    0.5174218416213989,
+    0.20000000298023224
+   ]
+  }
+ },
+ "nodes": [
+  {
+   "node": "A01_main",
+   "archetype": "A01",
+   "purpose": "Exchange Hall: taller tower with the seal on four faces, dormers, porch; stands on the terrace",
+   "status": "P2-B batch 1",
+   "instances_in_slice": "B01_main",
+   "triangles": 22450,
+   "vertices": 30292,
+   "primitives": 15,
+   "material_names": 15,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -7.8771,
+    0.9886,
+    -4.976,
+    7.8288,
+    13.0014,
+    5.3513
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "READY",
+   "collision_groups": {
+    "wall": 4,
+    "roof": 15,
+    "post": 4
+   }
+  },
+  {
+   "node": "A01_porch",
+   "archetype": "A01",
+   "purpose": "Exchange Hall: taller tower with the seal on four faces, dormers, porch; stands on the terrace",
+   "status": "P2-B batch 1",
+   "instances_in_slice": "B01_porch",
+   "triangles": 5792,
+   "vertices": 6888,
+   "primitives": 7,
+   "material_names": 7,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -4.1249,
+    0.9886,
+    -0.3382,
+    4.1249,
+    8.89,
+    7.694
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "READY",
+   "collision_groups": {}
+  },
+  {
+   "node": "A01_tower",
+   "archetype": "A01",
+   "purpose": "Exchange Hall: taller tower with the seal on four faces, dormers, porch; stands on the terrace",
+   "status": "P2-B batch 1",
+   "instances_in_slice": "B01_tower",
+   "triangles": 13420,
+   "vertices": 15939,
+   "primitives": 12,
+   "material_names": 12,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -2.8253,
+    9.9979,
+    -2.7135,
+    2.8253,
+    25.7888,
+    2.7136
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "READY",
+   "collision_groups": {}
+  },
+  {
+   "node": "A01_wing_e",
+   "archetype": "A01",
+   "purpose": "Exchange Hall: taller tower with the seal on four faces, dormers, porch; stands on the terrace",
+   "status": "P2-B batch 1",
+   "instances_in_slice": "B01_wing_e",
+   "triangles": 8654,
+   "vertices": 11587,
+   "primitives": 9,
+   "material_names": 9,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    6.0618,
+    0.9886,
+    -4.1249,
+    14.094,
+    11.89,
+    4.1249
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "READY",
+   "collision_groups": {}
+  },
+  {
+   "node": "A01_wing_w",
+   "archetype": "A01",
+   "purpose": "Exchange Hall: taller tower with the seal on four faces, dormers, porch; stands on the terrace",
+   "status": "P2-B batch 1",
+   "instances_in_slice": "B01_wing_w",
+   "triangles": 8654,
+   "vertices": 11587,
+   "primitives": 9,
+   "material_names": 9,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -13.9382,
+    0.9886,
+    -4.1249,
+    -5.906,
+    11.89,
+    4.1249
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "READY",
+   "collision_groups": {}
+  },
+  {
+   "node": "A03",
+   "archetype": "A03",
+   "purpose": "Jettied two-storey shophouse",
+   "status": "P2-A",
+   "instances_in_slice": "B07;B09",
+   "triangles": 17128,
+   "vertices": 27164,
+   "primitives": 15,
+   "material_names": 15,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -4.1249,
+    -0.0021,
+    -4.8976,
+    4.1249,
+    11.0284,
+    6.9546
+   ],
+   "sources": "Avramania; custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "CC0 (Avramania Food & Market / Village Builder); ReadMe checked, AI-built packs rejected | authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "CONDITIONAL (windows mounted on the jetty face)",
+   "collision_groups": {
+    "wall": 2,
+    "overhang": 2,
+    "roof": 6,
+    "sign": 2
+   }
+  },
+  {
+   "node": "A03b",
+   "archetype": "A03b",
+   "purpose": "Two-storey shophouse, eaves to street",
+   "status": "P2-A",
+   "instances_in_slice": "B05",
+   "triangles": 17344,
+   "vertices": 28182,
+   "primitives": 15,
+   "material_names": 15,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -4.8288,
+    -0.0021,
+    -4.1249,
+    4.854,
+    11.3033,
+    4.5191
+   ],
+   "sources": "Avramania; custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "CC0 (Avramania Food & Market / Village Builder); ReadMe checked, AI-built packs rejected | authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "READY",
+   "collision_groups": {
+    "wall": 1,
+    "roof": 3,
+    "sign": 1
+   }
+  },
+  {
+   "node": "A04",
+   "archetype": "A04",
+   "purpose": "Single-storey shop with a cloth awning",
+   "status": "P2-A",
+   "instances_in_slice": "B06",
+   "triangles": 5870,
+   "vertices": 8405,
+   "primitives": 15,
+   "material_names": 15,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -2.7565,
+    -0.0021,
+    -3.7941,
+    2.7565,
+    6.7179,
+    4.53
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "CONDITIONAL (custom cloth awning to author)",
+   "collision_groups": {
+    "wall": 1,
+    "roof": 3,
+    "cloth": 2,
+    "sign": 1
+   }
+  },
+  {
+   "node": "A04b",
+   "archetype": "A04b",
+   "purpose": "Single-storey shop, eaves to street, cloth awning",
+   "status": "P2-A",
+   "instances_in_slice": "B08",
+   "triangles": 6168,
+   "vertices": 8912,
+   "primitives": 16,
+   "material_names": 16,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -3.7941,
+    -0.0021,
+    -2.7565,
+    3.7941,
+    6.7179,
+    3.53
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "CONDITIONAL (custom cloth awning to author)",
+   "collision_groups": {
+    "wall": 1,
+    "roof": 3,
+    "cloth": 3,
+    "sign": 1
+   }
+  },
+  {
+   "node": "A08",
+   "archetype": "A08",
+   "purpose": "Tea house with veranda",
+   "status": "P2-A",
+   "instances_in_slice": "B17",
+   "triangles": 20988,
+   "vertices": 33386,
+   "primitives": 19,
+   "material_names": 19,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -4.1249,
+    -0.0073,
+    -3.9382,
+    4.38,
+    11.1658,
+    5.1043
+   ],
+   "sources": "Avramania; custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "CC0 (Avramania Food & Market / Village Builder); ReadMe checked, AI-built packs rejected | authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "CONDITIONAL (Avramania sign and flower boxes)",
+   "collision_groups": {
+    "wall": 1,
+    "roof": 3,
+    "balcony": 8,
+    "post": 4,
+    "sign": 1
+   }
+  },
+  {
+   "node": "A09",
+   "archetype": "A09",
+   "purpose": "New. Merchants' inn: 10 x 8 m, stone ground floor, balcony on posts, two dormers, two chimneys",
+   "status": "P2-A",
+   "instances_in_slice": "E03",
+   "triangles": 31395,
+   "vertices": 47576,
+   "primitives": 22,
+   "material_names": 22,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -5.852,
+    -0.0114,
+    -4.976,
+    6.0074,
+    13.0203,
+    6.1043
+   ],
+   "sources": "Avramania; custom; Q. Fantasy Props; Q. Medieval Village; SoP Medieval Cafe",
+   "licence_notes": "CC0 (Avramania Food & Market / Village Builder); ReadMe checked, AI-built packs rejected | authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register | CC0 stated on the page only (Syntaxes of Play); FBX materials re-linked",
+   "p1_4_readiness": "CONDITIONAL (Avramania inn sign and flower boxes)",
+   "collision_groups": {
+    "wall": 1,
+    "roof": 3,
+    "balcony": 8,
+    "post": 4,
+    "sign": 1,
+    "prop": 1
+   }
+  },
+  {
+   "node": "A10c",
+   "archetype": "A10c",
+   "purpose": "New. Market awning row, crafts (burgundy)",
+   "status": "P2-A",
+   "instances_in_slice": "R03;R04",
+   "triangles": 7992,
+   "vertices": 7922,
+   "primitives": 11,
+   "material_names": 11,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -4.1051,
+    -0.0524,
+    -1.4412,
+    4.1051,
+    3.23,
+    0.8698
+   ],
+   "sources": "custom; Q. Fantasy Props; Q. Medieval Village; SoP Medieval Cafe",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register | CC0 stated on the page only (Syntaxes of Play); FBX materials re-linked",
+   "p1_4_readiness": "CONDITIONAL (custom cloth awning; cafe counters; stretched posts)",
+   "collision_groups": {
+    "post": 12,
+    "cloth": 8,
+    "counter": 6,
+    "prop": 2
+   }
+  },
+  {
+   "node": "A10p",
+   "archetype": "A10p",
+   "purpose": "New. Market awning row, provisions (blue)",
+   "status": "P2-A",
+   "instances_in_slice": "R01;R02",
+   "triangles": 11592,
+   "vertices": 15063,
+   "primitives": 18,
+   "material_names": 18,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -4.1051,
+    -0.0,
+    -1.3,
+    4.1051,
+    3.23,
+    0.8698
+   ],
+   "sources": "Avramania; custom; Q. Fantasy Props; Q. Medieval Village; SoP Medieval Cafe",
+   "licence_notes": "CC0 (Avramania Food & Market / Village Builder); ReadMe checked, AI-built packs rejected | authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register | CC0 stated on the page only (Syntaxes of Play); FBX materials re-linked",
+   "p1_4_readiness": "CONDITIONAL (custom cloth awning; cafe counters; stretched posts)",
+   "collision_groups": {
+    "post": 12,
+    "cloth": 8,
+    "counter": 6,
+    "prop": 2
+   }
+  },
+  {
+   "node": "A11",
+   "archetype": "A11",
+   "purpose": "New. Corner tower house: A05 body with a three-storey corner turret standing 1 m proud of both fronts",
+   "status": "P2-A",
+   "instances_in_slice": "B04",
+   "triangles": 28358,
+   "vertices": 39940,
+   "primitives": 16,
+   "material_names": 16,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -4.976,
+    -0.0114,
+    -5.0847,
+    5.8253,
+    15.7888,
+    5.7135
+   ],
+   "sources": "Avramania; custom; Q. Fantasy Props; Q. Medieval Village",
+   "licence_notes": "CC0 (Avramania Food & Market / Village Builder); ReadMe checked, AI-built packs rejected | authored for this project (no third-party licence) | CC0 (Quaternius Fantasy Props MegaKit), P1.2 register | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "READY",
+   "collision_groups": {
+    "wall": 2,
+    "roof": 6,
+    "sign": 1
+   }
+  },
+  {
+   "node": "CROSS",
+   "archetype": "CROSS",
+   "purpose": "Market cross, guild emblem on a stone base",
+   "status": "P2-A",
+   "instances_in_slice": "M01",
+   "triangles": 4260,
+   "vertices": 5589,
+   "primitives": 10,
+   "material_names": 10,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -1.4013,
+    -0.0,
+    -2.2136,
+    1.4013,
+    4.0,
+    1.699
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {
+    "wall": 1,
+    "post": 1
+   }
+  },
+  {
+   "node": "TERRACE",
+   "archetype": "TERRACE",
+   "purpose": "Civic terrace steps, skirt, balustrade",
+   "status": "P2-A",
+   "instances_in_slice": "TERRACE",
+   "triangles": 1608,
+   "vertices": 3064,
+   "primitives": 3,
+   "material_names": 3,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -14.0,
+    -0.2037,
+    -6.0,
+    14.0,
+    2.1248,
+    8.0007
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {
+    "balustrade": 8
+   }
+  },
+  {
+   "node": "PODIUM",
+   "archetype": "PODIUM",
+   "purpose": "Hall podium deck and steps",
+   "status": "P2-A",
+   "instances_in_slice": "PODIUM",
+   "triangles": 1598,
+   "vertices": 3150,
+   "primitives": 2,
+   "material_names": 2,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -14.0,
+    -1.0,
+    -6.0,
+    14.0,
+    1.01,
+    12.0007
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {}
+  },
+  {
+   "node": "ARCH",
+   "archetype": "ARCH",
+   "purpose": "Gate arch closing a street gap",
+   "status": "P2-A",
+   "instances_in_slice": "ARCH1;ARCH2",
+   "triangles": 196,
+   "vertices": 260,
+   "primitives": 1,
+   "material_names": 1,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -1.0,
+    -0.0,
+    -0.0,
+    1.0,
+    3.0,
+    0.064
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {}
+  },
+  {
+   "node": "TILE_cobble",
+   "archetype": "TILE_cobble",
+   "purpose": "paving tile",
+   "status": "P2-A",
+   "instances_in_slice": "",
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1,
+   "material_names": 1,
+   "baked_vertex_ao": false,
+   "bbox_gltf_m": [
+    -1.0,
+    -0.01,
+    -1.0,
+    1.0,
+    0.01,
+    1.0
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {}
+  },
+  {
+   "node": "TILE_brick",
+   "archetype": "TILE_brick",
+   "purpose": "paving tile",
+   "status": "P2-A",
+   "instances_in_slice": "",
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1,
+   "material_names": 1,
+   "baked_vertex_ao": false,
+   "bbox_gltf_m": [
+    -1.0,
+    -0.01,
+    -1.0,
+    1.0,
+    0.01,
+    1.0
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {}
+  },
+  {
+   "node": "TILE_red",
+   "archetype": "TILE_red",
+   "purpose": "paving tile",
+   "status": "P2-A",
+   "instances_in_slice": "",
+   "triangles": 4,
+   "vertices": 8,
+   "primitives": 1,
+   "material_names": 1,
+   "baked_vertex_ao": false,
+   "bbox_gltf_m": [
+    -1.0,
+    -0.01,
+    -1.0,
+    1.0,
+    0.01,
+    1.0
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {}
+  },
+  {
+   "node": "DRESSING",
+   "archetype": "DRESSING",
+   "purpose": "Static props merged by material (benches, barrels, lamps, bunting)",
+   "status": "P2-A",
+   "instances_in_slice": "",
+   "triangles": 26092,
+   "vertices": 39499,
+   "primitives": 28,
+   "material_names": 28,
+   "baked_vertex_ao": true,
+   "bbox_gltf_m": [
+    -23.375,
+    -0.0283,
+    -73.3198,
+    42.0599,
+    6.6,
+    -10.851
+   ],
+   "sources": "custom; Q. Medieval Village",
+   "licence_notes": "authored for this project (no third-party licence) | CC0 (Quaternius Medieval Village MegaKit), P1.2 register",
+   "p1_4_readiness": "",
+   "collision_groups": {}
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+  "phase": "R0-C1C",
+  "ownerApproval": "pending",
+  "publicDeployment": false,
+  "protectedAssetChanges": 0,
+  "scopedTests": {
+    "pass": 22,
+    "fail": 0
+  },
+  "liveChecks": {
+    "pass": 10,
+    "total": 10
+  },
+  "fixedStepRoutes": {
+    "pass": 18,
+    "total": 18
+  },
+  "matchedScreenshotPairs": 6,
+  "allCamerasAndSettingsMatch": true,
+  "rendering": {
+    "glass": "B",
+    "warmFrameMedianMs": 5.600000000034925,
+    "warmFrameP95Ms": 11.200000000011642,
+    "drawCallsBefore": [
+      322,
+      410
+    ],
+    "drawCallsAfter": [
+      335,
+      431
+    ]
+  },
+  "errors": [],
+  "warnings": [],
+  "rollback": "C1B before; remove circulation=c1c and reload. Town off/remove dev-town=s2f restores original public island.",
+  "stop": "Owner approval before R0-C2"
+}

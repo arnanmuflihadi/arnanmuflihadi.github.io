@@ -1,0 +1,36 @@
+{
+  "buffer": [
+    1280,
+    658
+  ],
+  "canvas": [
+    1280,
+    658
+  ],
+  "drawCalls": 100,
+  "fps": 180.001800018,
+  "lighting": "Unchanged R0-A3 sunlight / exposure .96",
+  "meanFrameMs": 5.555500000000005,
+  "meanRenderSubmissionMs": 0.5489999995132288,
+  "memory": {
+    "geometries": 110,
+    "programs": 25,
+    "textures": 6
+  },
+  "metric": "Actual rAF, 60 warmup, up to 600 samples. CPU submission is not GPU time.",
+  "p95FrameMs": 6.299999999999272,
+  "preview": true,
+  "quality": "standard",
+  "samples": 600,
+  "triangles": 1176972,
+  "viewport": [
+    1280,
+    720
+  ],
+  "walking": {
+    "fps": 180.001800018,
+    "meanFrameMs": 5.555500000000005,
+    "p95FrameMs": 6.299999999999272,
+    "samples": 600
+  }
+}

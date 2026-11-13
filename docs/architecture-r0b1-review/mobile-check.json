@@ -1,0 +1,84 @@
+{
+  "method": "Actual 390x844 iframe viewport in desktop browser; not a mobile GPU benchmark",
+  "before": [
+    26,
+    17.055400259747742,
+    46
+  ],
+  "after": {
+    "controls": [
+      {
+        "label": "Pause motion",
+        "rect": {
+          "height": 44,
+          "width": 118.78125,
+          "x": 151.71875,
+          "y": 788
+        }
+      },
+      {
+        "label": "StandardEco",
+        "rect": {
+          "height": 33,
+          "width": 79.5,
+          "x": 289.5,
+          "y": 794
+        }
+      },
+      {
+        "label": "Move forward",
+        "rect": {
+          "height": 44,
+          "width": 44,
+          "x": 12,
+          "y": 718
+        }
+      },
+      {
+        "label": "Move left",
+        "rect": {
+          "height": 44,
+          "width": 44,
+          "x": 61,
+          "y": 718
+        }
+      },
+      {
+        "label": "Move backward",
+        "rect": {
+          "height": 44,
+          "width": 44,
+          "x": 110,
+          "y": 718
+        }
+      },
+      {
+        "label": "Move right",
+        "rect": {
+          "height": 44,
+          "width": 44,
+          "x": 159,
+          "y": 718
+        }
+      },
+      {
+        "label": "Jump",
+        "rect": {
+          "height": 44,
+          "width": 64.09375,
+          "x": 208,
+          "y": 718
+        }
+      }
+    ],
+    "height": 844,
+    "player": [
+      26,
+      17.14113594018598,
+      44.33478312207023
+    ],
+    "ready": "true",
+    "scrollWidth": 390,
+    "width": 390
+  }
+}

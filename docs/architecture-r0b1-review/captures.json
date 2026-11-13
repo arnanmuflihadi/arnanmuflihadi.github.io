@@ -1,0 +1,515 @@
+[
+  {
+    "view": "ensemble",
+    "file": "final-ensemble.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#ensemble",
+    "camera": {
+      "position": [
+        94,
+        83,
+        102
+      ],
+      "quaternion": [
+        -0.21376878808730765,
+        0.35595035905559946,
+        0.0840005682447467,
+        0.9058400254252587
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "commercial",
+    "file": "final-commercial.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#commercial",
+    "camera": {
+      "position": [
+        55,
+        36,
+        30
+      ],
+      "quaternion": [
+        -0.1144594380199249,
+        0.3613800699837688,
+        0.044751789961769546,
+        0.9242839170741354
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "commercial-eye",
+    "file": "final-commercial-eye.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#commercial-eye",
+    "camera": {
+      "position": [
+        34.7,
+        23.95,
+        9
+      ],
+      "quaternion": [
+        0,
+        0.5151916022404921,
+        0,
+        0.8570750334602418
+      ],
+      "fov": 55,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "research",
+    "file": "final-research.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research",
+    "camera": {
+      "position": [
+        63,
+        52,
+        -4
+      ],
+      "quaternion": [
+        -0.13678591783329683,
+        0.36952418442237245,
+        0.05509396224680608,
+        0.9174454453172844
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "research-detail",
+    "file": "final-research-detail.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research-detail",
+    "camera": {
+      "position": [
+        45.8,
+        39,
+        -14
+      ],
+      "quaternion": [
+        0,
+        0.2994942272776054,
+        0,
+        0.9540981122648708
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "research-eye",
+    "file": "final-research-eye.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research-eye",
+    "camera": {
+      "position": [
+        38,
+        34.15,
+        -22.7
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "fov": 55,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "station",
+    "file": "final-station.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station",
+    "camera": {
+      "position": [
+        23,
+        40,
+        36
+      ],
+      "quaternion": [
+        -0.1339544553091653,
+        0.36288363829601733,
+        0.05279991416291078,
+        0.920643165414407
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "station-eye",
+    "file": "final-station-eye.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station-eye",
+    "camera": {
+      "position": [
+        -13.7,
+        23.3,
+        16.1
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "fov": 55,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "station-platform",
+    "file": "final-station-platform.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station-platform",
+    "camera": {
+      "position": [
+        -13.7,
+        29.05,
+        9.5
+      ],
+      "quaternion": [
+        0,
+        -0.659645609975326,
+        0,
+        0.7515767886518849
+      ],
+      "fov": 55,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "skyport",
+    "file": "final-skyport.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport",
+    "camera": {
+      "position": [
+        63,
+        37,
+        103
+      ],
+      "quaternion": [
+        -0.14629434556449306,
+        0.3648430213917449,
+        0.05816350631481915,
+        0.9176625418588064
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "skyport-eye",
+    "file": "final-skyport-eye.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport-eye",
+    "camera": {
+      "position": [
+        31.4,
+        18.33,
+        68
+      ],
+      "quaternion": [
+        0,
+        0.25977760752054485,
+        0,
+        0.9656684703514463
+      ],
+      "fov": 55,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "skyport-entry",
+    "file": "final-skyport-entry.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport-entry",
+    "camera": {
+      "position": [
+        27.7,
+        18.33,
+        56.2
+      ],
+      "quaternion": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "fov": 55,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "materials",
+    "file": "final-materials.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#materials",
+    "camera": {
+      "position": [
+        35.5,
+        27.2,
+        12.2
+      ],
+      "quaternion": [
+        -0.014537535831956827,
+        0.38366446181821573,
+        0.006040619584433931,
+        0.9233383733522124
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "scale",
+    "file": "final-scale.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#scale",
+    "camera": {
+      "position": [
+        40,
+        25.3,
+        15
+      ],
+      "quaternion": [
+        -0.11842967695536602,
+        0.3114669414344871,
+        0.039156653592262045,
+        0.9420347724416275
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "island",
+    "file": "final-island.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#island",
+    "camera": {
+      "position": [
+        145,
+        125,
+        175
+      ],
+      "quaternion": [
+        -0.24615432340364285,
+        0.32728660710289925,
+        0.08872821624653192,
+        0.9079751260483273
+      ],
+      "fov": 43,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "commercial-rear",
+    "file": "final-commercial-rear.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#commercial-rear",
+    "camera": {
+      "position": [
+        9,
+        33,
+        -20
+      ],
+      "quaternion": [
+        0.03298808212542659,
+        0.9281083139568314,
+        0.0848058232940311,
+        -0.36101899719726027
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "research-rear",
+    "file": "final-research-rear.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research-rear",
+    "camera": {
+      "position": [
+        59,
+        48,
+        -56
+      ],
+      "quaternion": [
+        -0.03528521396619775,
+        0.9375510513973742,
+        0.09984295731567241,
+        0.331337235416575
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "station-rear",
+    "file": "final-station-rear.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station-rear",
+    "camera": {
+      "position": [
+        -25,
+        42,
+        -5
+      ],
+      "quaternion": [
+        -0.15307047585732045,
+        -0.8137965148597439,
+        -0.2476732326112647,
+        0.5029539061095306
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  },
+  {
+    "view": "skyport-rear",
+    "file": "final-skyport-rear.jpg",
+    "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport-rear",
+    "camera": {
+      "position": [
+        5,
+        32,
+        40
+      ],
+      "quaternion": [
+        0.06803228480444001,
+        0.9021888095448589,
+        0.1546533743269233,
+        -0.39687440578300637
+      ],
+      "fov": 48,
+      "aspect": 1.9452887537993921
+    },
+    "resolution": [
+      1280,
+      720
+    ],
+    "quality": "Standard",
+    "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+    "motion": "paused"
+  }
+]

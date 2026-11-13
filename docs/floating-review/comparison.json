@@ -1,0 +1,52 @@
+{
+  "resolution": [
+    1280,
+    720
+  ],
+  "old": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 50,
+      "position": [
+        62,
+        64,
+        78
+      ],
+      "quaternion": [
+        -0.25867933667255694,
+        0.308674424044495,
+        0.08763764638095688,
+        0.911111817317859
+      ]
+    },
+    "conceptualBounds": 88
+  },
+  "new": {
+    "camera": {
+      "aspect": 1.951219512195122,
+      "fov": 43,
+      "position": [
+        110,
+        82,
+        135
+      ],
+      "quaternion": [
+        -0.2120744149535645,
+        0.3266314256820759,
+        0.07546137421389727,
+        0.917955301352276
+      ]
+    },
+    "islandDimensions": {
+      "width": 131,
+      "depth": 142.64583333333334,
+      "surfaceMin": 7.416465881731774,
+      "surfaceMax": 28,
+      "undersideMin": -57
+    }
+  },
+  "comparison": "Documented full-area aerial framing, not identical world coordinates: different terrain dimensions and elevation require a wider/higher camera. Both use actual 1280x720 browser images. No retouching.",
+  "sameFinalSceneIds": [
+    "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52"
+  ]
+}

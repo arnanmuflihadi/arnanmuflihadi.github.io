@@ -1,0 +1,385 @@
+{
+  "matched_pairs": 4,
+  "screenshot_size": [
+    1280,
+    720
+  ],
+  "captures": [
+    {
+      "view": "island",
+      "camera": {
+        "position": [
+          146,
+          138.6,
+          199
+        ],
+        "quaternion": [
+          -0.21364684306111617,
+          0.2906026675481791,
+          0.06673824834375851,
+          0.9302962551101173
+        ],
+        "fov": 48,
+        "aspect": 1.951219512195122
+      },
+      "settings": {
+        "viewport": [
+          1280,
+          656
+        ],
+        "drawingBuffer": [
+          1280,
+          656
+        ],
+        "dpr": 1,
+        "exposure": 0.96,
+        "shadows": true,
+        "shadowType": 2,
+        "antialias": true,
+        "near": 0.12,
+        "far": 1600,
+        "glass": "B (A authored, B alpha, C hybrid)"
+      },
+      "sameScene": true,
+      "before": {
+        "frame": 11170,
+        "calls": 369,
+        "triangles": 2621988,
+        "points": 0,
+        "lines": 0
+      },
+      "after": {
+        "frame": 11443,
+        "calls": 369,
+        "triangles": 2621988,
+        "points": 0,
+        "lines": 0
+      },
+      "resourcesBefore": {
+        "geometries": 242,
+        "textures": 22,
+        "programs": 43,
+        "heap": 102744652
+      },
+      "resourcesAfter": {
+        "geometries": 246,
+        "textures": 22,
+        "programs": 43,
+        "heap": 93112429
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+          "transferBytes": 527472,
+          "encodedBytes": 527172,
+          "decodedBytes": 527172,
+          "durationMs": 3
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+          "transferBytes": 10008204,
+          "encodedBytes": 10007904,
+          "decodedBytes": 10007904,
+          "durationMs": 9.599999994039536
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+          "transferBytes": 6464,
+          "encodedBytes": 6164,
+          "decodedBytes": 6164,
+          "durationMs": 2.600000023841858
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+          "transferBytes": 543752,
+          "encodedBytes": 543452,
+          "decodedBytes": 543452,
+          "durationMs": 3
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "view": "foundations",
+      "camera": {
+        "position": [
+          15,
+          24,
+          32
+        ],
+        "quaternion": [
+          -0.1784942941876181,
+          -0.5417861321592401,
+          -0.11899619612507874,
+          0.8126791982388599
+        ],
+        "fov": 58,
+        "aspect": 1.951219512195122
+      },
+      "settings": {
+        "viewport": [
+          1280,
+          656
+        ],
+        "drawingBuffer": [
+          1280,
+          656
+        ],
+        "dpr": 1,
+        "exposure": 0.96,
+        "shadows": true,
+        "shadowType": 2,
+        "antialias": true,
+        "near": 0.12,
+        "far": 1600,
+        "glass": "B (A authored, B alpha, C hybrid)"
+      },
+      "sameScene": true,
+      "before": {
+        "frame": 11742,
+        "calls": 349,
+        "triangles": 2689006,
+        "points": 0,
+        "lines": 0
+      },
+      "after": {
+        "frame": 12077,
+        "calls": 349,
+        "triangles": 2689006,
+        "points": 0,
+        "lines": 0
+      },
+      "resourcesBefore": {
+        "geometries": 247,
+        "textures": 22,
+        "programs": 43,
+        "heap": 81634076
+      },
+      "resourcesAfter": {
+        "geometries": 247,
+        "textures": 22,
+        "programs": 43,
+        "heap": 78110294
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+          "transferBytes": 527472,
+          "encodedBytes": 527172,
+          "decodedBytes": 527172,
+          "durationMs": 3
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+          "transferBytes": 10008204,
+          "encodedBytes": 10007904,
+          "decodedBytes": 10007904,
+          "durationMs": 9.599999994039536
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+          "transferBytes": 6464,
+          "encodedBytes": 6164,
+          "decodedBytes": 6164,
+          "durationMs": 2.600000023841858
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+          "transferBytes": 543752,
+          "encodedBytes": 543452,
+          "decodedBytes": 543452,
+          "durationMs": 3
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "view": "civic",
+      "camera": {
+        "position": [
+          34,
+          24.264,
+          9
+        ],
+        "quaternion": [
+          -0.10388399980736256,
+          0.6317072783023954,
+          0.0859642983731185,
+          0.7633899190643151
+        ],
+        "fov": 58,
+        "aspect": 1.951219512195122
+      },
+      "settings": {
+        "viewport": [
+          1280,
+          656
+        ],
+        "drawingBuffer": [
+          1280,
+          656
+        ],
+        "dpr": 1,
+        "exposure": 0.96,
+        "shadows": true,
+        "shadowType": 2,
+        "antialias": true,
+        "near": 0.12,
+        "far": 1600,
+        "glass": "B (A authored, B alpha, C hybrid)"
+      },
+      "sameScene": true,
+      "before": {
+        "frame": 5020,
+        "calls": 295,
+        "triangles": 2624334,
+        "points": 0,
+        "lines": 0
+      },
+      "after": {
+        "frame": 5311,
+        "calls": 295,
+        "triangles": 2624334,
+        "points": 0,
+        "lines": 0
+      },
+      "resourcesBefore": {
+        "geometries": 235,
+        "textures": 22,
+        "programs": 43,
+        "heap": 179498970
+      },
+      "resourcesAfter": {
+        "geometries": 237,
+        "textures": 22,
+        "programs": 43,
+        "heap": 173803452
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+          "transferBytes": 527472,
+          "encodedBytes": 527172,
+          "decodedBytes": 527172,
+          "durationMs": 3
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+          "transferBytes": 10008204,
+          "encodedBytes": 10007904,
+          "decodedBytes": 10007904,
+          "durationMs": 9.599999994039536
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+          "transferBytes": 6464,
+          "encodedBytes": 6164,
+          "decodedBytes": 6164,
+          "durationMs": 2.600000023841858
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+          "transferBytes": 543752,
+          "encodedBytes": 543452,
+          "decodedBytes": 543452,
+          "durationMs": 3
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "view": "courtyard",
+      "camera": {
+        "position": [
+          11,
+          24,
+          19
+        ],
+        "quaternion": [
+          -0.07991191099801909,
+          -0.4440856433942387,
+          -0.039805632455581524,
+          0.8915254003316905
+        ],
+        "fov": 58,
+        "aspect": 1.951219512195122
+      },
+      "settings": {
+        "viewport": [
+          1280,
+          656
+        ],
+        "drawingBuffer": [
+          1280,
+          656
+        ],
+        "dpr": 1,
+        "exposure": 0.96,
+        "shadows": true,
+        "shadowType": 2,
+        "antialias": true,
+        "near": 0.12,
+        "far": 1600,
+        "glass": "B (A authored, B alpha, C hybrid)"
+      },
+      "sameScene": true,
+      "before": {
+        "frame": 12349,
+        "calls": 310,
+        "triangles": 2635968,
+        "points": 0,
+        "lines": 0
+      },
+      "after": {
+        "frame": 12686,
+        "calls": 310,
+        "triangles": 2635968,
+        "points": 0,
+        "lines": 0
+      },
+      "resourcesBefore": {
+        "geometries": 247,
+        "textures": 22,
+        "programs": 43,
+        "heap": 99323404
+      },
+      "resourcesAfter": {
+        "geometries": 247,
+        "textures": 22,
+        "programs": 43,
+        "heap": 88299193
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+          "transferBytes": 527472,
+          "encodedBytes": 527172,
+          "decodedBytes": 527172,
+          "durationMs": 3
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+          "transferBytes": 10008204,
+          "encodedBytes": 10007904,
+          "decodedBytes": 10007904,
+          "durationMs": 9.599999994039536
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+          "transferBytes": 6464,
+          "encodedBytes": 6164,
+          "decodedBytes": 6164,
+          "durationMs": 2.600000023841858
+        },
+        {
+          "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+          "transferBytes": 543752,
+          "encodedBytes": 543452,
+          "decodedBytes": 543452,
+          "durationMs": 3
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "before": {
+    "samples": 600,
+    "meanFrameMs": 8.33299999999998,
+    "p95FrameMs": 9.199999999982538,
+    "measuredFps": 120.00480019200796,
+    "walking": {
+      "samples": 600,
+      "meanFrameMs": 8.334166666666667,
+      "p95FrameMs": 9.199999999982538,
+      "measuredFps": 119.98800119988002
+    },
+    "meanRenderSubmissionMs": 0.6681666666145126,
+    "drawCalls": 86,
+    "triangles": 1229590,
+    "memory": {
+      "geometries": 106,
+      "textures": 16,
+      "programs": 20
+    },
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "pixelRatio": 1,
+    "shadows": true,
+    "detail": {
+      "grassChunks": 31,
+      "activeGrassChunks": 31,
+      "nearGrassChunks": 15,
+      "farGrassChunks": 16,
+      "eco": false
+    },
+    "mode": "adventure",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "metric": "Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only"
+  },
+  "after": {
+    "samples": 600,
+    "meanFrameMs": 8.333833333333326,
+    "p95FrameMs": 9.299999999995634,
+    "measuredFps": 119.99280043197419,
+    "walking": {
+      "samples": 600,
+      "meanFrameMs": 8.334833333333336,
+      "p95FrameMs": 9.299999999995634,
+      "measuredFps": 119.97840388730025
+    },
+    "meanRenderSubmissionMs": 0.6441666667163372,
+    "drawCalls": 92,
+    "triangles": 1255902,
+    "memory": {
+      "geometries": 118,
+      "textures": 16,
+      "programs": 24
+    },
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "pixelRatio": 1,
+    "shadows": true,
+    "detail": {
+      "grassChunks": 31,
+      "activeGrassChunks": 31,
+      "nearGrassChunks": 15,
+      "farGrassChunks": 16,
+      "eco": false
+    },
+    "mode": "adventure",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "metric": "Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only"
+  },
+  "protocol": "Native W 5 seconds, S 5 seconds, starting from matched arrival spawn; local Mac, Chromium 156; cache warm. Frame timing is rAF, submission CPU only; no physical-phone or cold-network claim."
+}

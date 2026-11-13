@@ -1,0 +1,818 @@
+[
+  {
+    "stem": "01-network",
+    "view": "network",
+    "variant": "before",
+    "camera": {
+      "position": [
+        20,
+        180,
+        27
+      ],
+      "quaternion": [
+        -0.7070714249637373,
+        0,
+        0,
+        0.7071421356415908
+      ],
+      "fov": 30,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 389,
+    "triangles": 2659988,
+    "passSample": {
+      "view": "network",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 182
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 207
+        }
+      ]
+    }
+  },
+  {
+    "stem": "01-network",
+    "view": "network",
+    "variant": "after",
+    "camera": {
+      "position": [
+        20,
+        180,
+        27
+      ],
+      "quaternion": [
+        -0.7070714249637373,
+        0,
+        0,
+        0.7071421356415908
+      ],
+      "fov": 30,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 411,
+    "triangles": 2652960,
+    "passSample": {
+      "view": "network",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 193
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 218
+        }
+      ]
+    }
+  },
+  {
+    "stem": "02-trail-arrival",
+    "view": "trailTown",
+    "variant": "before",
+    "camera": {
+      "position": [
+        26.2,
+        17.95,
+        55.8
+      ],
+      "quaternion": [
+        0.07448878696780034,
+        -0.17216675254455077,
+        0.013057428652332675,
+        0.9821606454604654
+      ],
+      "fov": 60,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 382,
+    "triangles": 2732422,
+    "passSample": {
+      "view": "trailTown",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 182
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 200
+        }
+      ]
+    }
+  },
+  {
+    "stem": "02-trail-arrival",
+    "view": "trailTown",
+    "variant": "after",
+    "camera": {
+      "position": [
+        26.2,
+        17.95,
+        55.8
+      ],
+      "quaternion": [
+        0.07448878696780034,
+        -0.17216675254455077,
+        0.013057428652332675,
+        0.9821606454604654
+      ],
+      "fov": 60,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 404,
+    "triangles": 2725490,
+    "passSample": {
+      "view": "trailTown",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 193
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 211
+        }
+      ]
+    }
+  },
+  {
+    "stem": "03-market-square",
+    "view": "marketTown",
+    "variant": "before",
+    "camera": {
+      "position": [
+        36,
+        23.61,
+        17
+      ],
+      "quaternion": [
+        -0.003890698434826855,
+        0.48663949217148394,
+        0.002167337290907269,
+        0.8735915348570158
+      ],
+      "fov": 58,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 315,
+    "triangles": 2664310,
+    "passSample": {
+      "view": "marketTown",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 182
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 133
+        }
+      ]
+    }
+  },
+  {
+    "stem": "03-market-square",
+    "view": "marketTown",
+    "variant": "after",
+    "camera": {
+      "position": [
+        36,
+        23.61,
+        17
+      ],
+      "quaternion": [
+        -0.003890698434826855,
+        0.48663949217148394,
+        0.002167337290907269,
+        0.8735915348570158
+      ],
+      "fov": 58,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 328,
+    "triangles": 2656768,
+    "passSample": {
+      "view": "marketTown",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 193
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 135
+        }
+      ]
+    }
+  },
+  {
+    "stem": "04-direct-entrance",
+    "view": "directGate",
+    "variant": "before",
+    "camera": {
+      "position": [
+        30.4,
+        24.264,
+        12.6
+      ],
+      "quaternion": [
+        -0.1057125639189784,
+        0.6991601060055386,
+        0.1057125639189784,
+        0.6991601060055386
+      ],
+      "fov": 64,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 318,
+    "triangles": 2663382,
+    "passSample": {
+      "view": "directGate",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 182
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 136
+        }
+      ]
+    }
+  },
+  {
+    "stem": "04-direct-entrance",
+    "view": "directGate",
+    "variant": "after",
+    "camera": {
+      "position": [
+        30.4,
+        24.264,
+        12.6
+      ],
+      "quaternion": [
+        -0.1057125639189784,
+        0.6991601060055386,
+        0.1057125639189784,
+        0.6991601060055386
+      ],
+      "fov": 64,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 330,
+    "triangles": 2655040,
+    "passSample": {
+      "view": "directGate",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 193
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 137
+        }
+      ]
+    }
+  },
+  {
+    "stem": "05-square-return",
+    "view": "courtBack",
+    "variant": "before",
+    "camera": {
+      "position": [
+        25.8,
+        23.45,
+        13.4
+      ],
+      "quaternion": [
+        0.03841741751927908,
+        -0.6660344531148815,
+        0.034385232681157854,
+        0.7441369934820957
+      ],
+      "fov": 64,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 344,
+    "triangles": 2652436,
+    "passSample": {
+      "view": "courtBack",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 182
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 162
+        }
+      ]
+    }
+  },
+  {
+    "stem": "05-square-return",
+    "view": "courtBack",
+    "variant": "after",
+    "camera": {
+      "position": [
+        25.8,
+        23.45,
+        13.4
+      ],
+      "quaternion": [
+        0.03841741751927908,
+        -0.6660344531148815,
+        0.034385232681157854,
+        0.7441369934820957
+      ],
+      "fov": 64,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 364,
+    "triangles": 2645384,
+    "passSample": {
+      "view": "courtBack",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 193
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 171
+        }
+      ]
+    }
+  },
+  {
+    "stem": "06-circulation-oblique",
+    "view": "circulationOblique",
+    "variant": "before",
+    "camera": {
+      "position": [
+        4,
+        55,
+        78
+      ],
+      "quaternion": [
+        -0.24594994272423681,
+        -0.21193464349691526,
+        -0.05520483342229764,
+        0.9442164788471954
+      ],
+      "fov": 48,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 387,
+    "triangles": 2724974,
+    "passSample": {
+      "view": "circulationOblique",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 182
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 205
+        }
+      ]
+    }
+  },
+  {
+    "stem": "06-circulation-oblique",
+    "view": "circulationOblique",
+    "variant": "after",
+    "camera": {
+      "position": [
+        4,
+        55,
+        78
+      ],
+      "quaternion": [
+        -0.24594994272423681,
+        -0.21193464349691526,
+        -0.05520483342229764,
+        0.9442164788471954
+      ],
+      "fov": 48,
+      "aspect": 1.5311004784688995
+    },
+    "settings": {
+      "viewport": [
+        1280,
+        836
+      ],
+      "drawingBuffer": [
+        1280,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "near": 0.12,
+      "far": 1600,
+      "glass": "B (A authored, B alpha, C hybrid)"
+    },
+    "errors": [],
+    "warnings": [],
+    "calls": 409,
+    "triangles": 2718130,
+    "passSample": {
+      "view": "circulationOblique",
+      "enabled": true,
+      "targets": [
+        {
+          "target": "offscreen 0",
+          "viewport": [
+            0,
+            0,
+            2048,
+            2048
+          ],
+          "draws": 193
+        },
+        {
+          "target": "canvas",
+          "viewport": [
+            0,
+            0,
+            1280,
+            836
+          ],
+          "draws": 216
+        }
+      ]
+    }
+  }
+]

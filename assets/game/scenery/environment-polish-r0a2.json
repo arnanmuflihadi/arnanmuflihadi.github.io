@@ -1,0 +1,256 @@
+{
+  "phase": "R0-A2",
+  "status": "human visual review pending",
+  "world": "transit-landscape-r0a",
+  "revision": "R0A2.67",
+  "integrationRevision": 67,
+  "previousRecord": "landscape-r0a.json",
+  "preservedSource": "assets/js/floating-atlas-legacy-r0a/",
+  "activeAssets": [
+    {
+      "file": "assets/game/scenery/canopy-tree.glb",
+      "bytes": 719224,
+      "sha256": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "sha256Now": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/scenery/source.json",
+      "licenseFile": "assets/game/scenery/stylized-nature-megakit-LICENSE.txt"
+    },
+    {
+      "file": "assets/game/scenery/fern.glb",
+      "bytes": 104876,
+      "sha256": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "sha256Now": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/scenery/source.json",
+      "licenseFile": "assets/game/scenery/stylized-nature-megakit-LICENSE.txt"
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/urban-explorer.glb",
+      "bytes": 1581480,
+      "sha256": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+      "sha256Now": "563d822b0caa9dff85742273e4f5db4bda79d6fff5067e57a27536d5019cdac1",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/characters/urban-explorer/source.json",
+      "licenseFile": "assets/game/characters/urban-explorer/CC0-Quaternius.txt"
+    },
+    {
+      "file": "assets/game/characters/urban-explorer/jump-animations.glb",
+      "bytes": 267260,
+      "sha256": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5",
+      "sha256Now": "78214f4fb3632957415b7579dbe9e842689e3b95f4d89b3dd83833dab420acc5",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/characters/urban-explorer/jump-source.json",
+      "licenseFile": "assets/game/characters/urban-explorer/jump-LICENSE.txt"
+    },
+    {
+      "file": "assets/game/phase3/city-resident.glb",
+      "bytes": 1186388,
+      "sha256": "8a53aaf80ca07e16e215f96a999d0d9909d307b5c1805b2f863e967f06245e05",
+      "sha256Now": "8a53aaf80ca07e16e215f96a999d0d9909d307b5c1805b2f863e967f06245e05",
+      "active": true,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/phase3/source.json",
+      "licenseFile": "assets/game/phase3/CC0-Characters.txt"
+    }
+  ],
+  "retiredAssets": [
+    {
+      "file": "assets/game/scenery/architecture-library.glb",
+      "bytes": 5380248,
+      "sha256": "776f529b5b779085bce3bb4c22e9ab150f35a422f433a509747419dd524c87e2",
+      "sha256Now": "776f529b5b779085bce3bb4c22e9ab150f35a422f433a509747419dd524c87e2",
+      "active": false,
+      "license": "CC0-1.0",
+      "provenance": "assets/game/scenery/architecture-source.json",
+      "licenseFile": "assets/game/scenery/downtown-city-megakit-LICENSE.txt"
+    }
+  ],
+  "reservations": {
+    "skyport": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 9,
+      "constructed": false,
+      "actualSupportY": 16.030228493031395
+    },
+    "station": {
+      "x": -5,
+      "z": 5,
+      "y": 21,
+      "radius": 8,
+      "constructed": false,
+      "actualSupportY": 21.011082915457717
+    },
+    "settlement": {
+      "x": 32,
+      "z": 12,
+      "y": 22,
+      "radius": 11,
+      "constructed": false,
+      "actualSupportY": 21.977113841199532
+    },
+    "overlook": {
+      "x": -80,
+      "z": 5,
+      "y": 32,
+      "radius": 5,
+      "constructed": false,
+      "natural": true,
+      "actualSupportY": 32.00989313338486
+    },
+    "dragon": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 6.5,
+      "constructed": false,
+      "actualSupportY": 16.030228493031395
+    }
+  },
+  "sourceAssetBuffers": "Unchanged; all prior GLB SHA-256 hashes match. No new external downloads or dependencies.",
+  "authoredChanges": {
+    "atmosphere": "Project-authored blue sky, 34 instanced clouds, four distant uninhabited island silhouettes",
+    "geology": "Project-authored closed underside; exact upper terrain and support topology unchanged",
+    "treeDerivatives": {
+      "source": "assets/game/scenery/canopy-tree.glb",
+      "license": "CC0-1.0",
+      "sourceBuffers": "Preserved",
+      "geometries": 6,
+      "forms": {
+        "spreading": 60,
+        "emergent": 36,
+        "windswept": 38
+      }
+    },
+    "groundcover": "Project-authored shrubs and curved grass; near/far indices share vertex attributes"
+  },
+  "counts": {
+    "world": "Transit Kingdom / Landscape",
+    "revision": "R0A2.67",
+    "terrainOnly": true,
+    "architectureInstances": 0,
+    "reservations": {
+      "skyport": {
+        "x": 27,
+        "z": 57,
+        "y": 16,
+        "radius": 9,
+        "constructed": false
+      },
+      "station": {
+        "x": -5,
+        "z": 5,
+        "y": 21,
+        "radius": 8,
+        "constructed": false
+      },
+      "settlement": {
+        "x": 32,
+        "z": 12,
+        "y": 22,
+        "radius": 11,
+        "constructed": false
+      },
+      "overlook": {
+        "x": -80,
+        "z": 5,
+        "y": 32,
+        "radius": 5,
+        "constructed": false,
+        "natural": true
+      },
+      "dragon": {
+        "x": 27,
+        "z": 57,
+        "y": 16,
+        "radius": 6.5,
+        "constructed": false
+      }
+    },
+    "imported": {
+      "tree": 134,
+      "fern": 660,
+      "hangingFern": 24
+    },
+    "terrain": {
+      "width": 177.6201171875,
+      "depth": 183,
+      "surfaceMin": 10.28,
+      "surfaceMax": 49,
+      "undersideMin": -85
+    },
+    "growthForms": {
+      "spreading": 60,
+      "emergent": 36,
+      "windswept": 38
+    },
+    "landscapeZones": {
+      "forest": 107,
+      "meadow": 24,
+      "ridge": 3
+    },
+    "vegetationBatches": 18,
+    "derivedTreeGeometries": 6,
+    "palms": 10,
+    "shrubs": 131,
+    "grassBlades": 28063,
+    "detail": {
+      "grassChunks": 31,
+      "activeGrassChunks": 31,
+      "nearGrassChunks": 31,
+      "farGrassChunks": 0,
+      "eco": false
+    },
+    "files": {
+      "requests": 2,
+      "cachedFiles": 2,
+      "loadedFiles": 2
+    },
+    "geometry": {
+      "meshes": 73,
+      "triangles": 1321126,
+      "geometries": 61,
+      "materials": 33,
+      "textures": 4,
+      "missingTextures": []
+    },
+    "surfaceTriangles": 26416,
+    "sourceFiles": [
+      "canopy-tree.glb",
+      "fern.glb"
+    ],
+    "cloudCount": 34,
+    "settlement": null,
+    "geometryNote": "Potential environment geometry before actors. Attached geometry count excludes inactive grass detail levels. Renderer counts include actors and uploaded near/far levels."
+  },
+  "poster": {
+    "file": "assets/img/floating-atlas/environment-polish-poster.webp",
+    "bytes": 60546,
+    "width": 1728,
+    "height": 874,
+    "source": "Actual WebGL canvas export; separate from native review screenshots"
+  },
+  "evidence": {
+    "gallery": "docs/environment-polish-review/index.html",
+    "inventory": "docs/environment-polish-review/inventory.json",
+    "tests": "docs/environment-polish-review/test-results.txt",
+    "performance": "docs/environment-polish-review/walking-performance.json",
+    "cameraMatching": "docs/environment-polish-review/camera-comparison.json"
+  },
+  "limits": [
+    "No new architecture",
+    "No full additional realms",
+    "No flight",
+    "No NPC expansion or new quests",
+    "Physical mobile and cold-network load not benchmarked",
+    "Original silhouette and major upper elevations preserved; intermediate underside ledges locally reshaped",
+    "No human visual score assigned",
+    "Stop before R0-B"
+  ]
+}

@@ -1,0 +1,298 @@
+[
+ {
+  "sp": "Sheep",
+  "start": [
+   -64.57,
+   15.14
+  ],
+  "alert_at": {
+   "t": 3.85,
+   "dist": 5.915
+  },
+  "flee_at": {
+   "t": 5.25,
+   "dist": 2.954
+  },
+  "min_dist": 2.935749919847913,
+  "max_speed": 2.8000000000001366,
+  "after_approach": {
+   "state": "LOOK_AROUND",
+   "dist": 5.998,
+   "displaced_m": 5.123
+  },
+  "after_retreat": {
+   "state": "REST",
+   "dist_from_home": 5.814,
+   "radius": 8,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Lamb",
+  "start": [
+   -64.57,
+   15.14
+  ],
+  "alert_at": {
+   "t": 3.85,
+   "dist": 5.915
+  },
+  "flee_at": {
+   "t": 5.45,
+   "dist": 2.528
+  },
+  "min_dist": 2.5200160336995587,
+  "max_speed": 3.2000000000001347,
+  "after_approach": {
+   "state": "FLEE",
+   "dist": 5.92,
+   "displaced_m": 5.192
+  },
+  "after_retreat": {
+   "state": "GRAZE",
+   "dist_from_home": 7.571,
+   "radius": 7,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Cow",
+  "start": [
+   -42.02,
+   3.43
+  ],
+  "alert_at": {
+   "t": 3.85,
+   "dist": 5.915
+  },
+  "flee_at": {
+   "t": 5.25,
+   "dist": 2.955
+  },
+  "min_dist": 2.9304105841089,
+  "max_speed": 2.6000000000000667,
+  "after_approach": {
+   "state": "GRAZE",
+   "dist": 5.979,
+   "displaced_m": 5.104
+  },
+  "after_retreat": {
+   "state": "GRAZE",
+   "dist_from_home": 5.104,
+   "radius": 8,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Horse",
+  "start": [
+   -62.02,
+   10.67
+  ],
+  "alert_at": {
+   "t": 1.95,
+   "dist": 9.905
+  },
+  "flee_at": {
+   "t": 4.3,
+   "dist": 4.889
+  },
+  "min_dist": 4.881243742163998,
+  "max_speed": 5.00000000000013,
+  "after_approach": {
+   "state": "GRAZE",
+   "dist": 12.444,
+   "displaced_m": 11.646
+  },
+  "after_retreat": {
+   "state": "GRAZE",
+   "dist_from_home": 7.702,
+   "radius": 10,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Llama",
+  "start": [
+   -60.19,
+   29.11
+  ],
+  "alert_at": {
+   "t": 2.4,
+   "dist": 8.96
+  },
+  "flee_at": {
+   "t": 4.55,
+   "dist": 4.481
+  },
+  "min_dist": 4.481082283759783,
+  "max_speed": 4.000000000000132,
+  "after_approach": {
+   "state": "WANDER",
+   "dist": 5.478,
+   "displaced_m": 4.61
+  },
+  "after_retreat": {
+   "state": "REST",
+   "dist_from_home": 2.971,
+   "radius": 9,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Pig",
+  "start": [
+   -28.7,
+   14.55
+  ],
+  "alert_at": {
+   "t": 4.3,
+   "dist": 4.97
+  },
+  "flee_at": {
+   "t": 5.55,
+   "dist": 2.322
+  },
+  "min_dist": 2.318918488707392,
+  "max_speed": 3.2000000000000695,
+  "after_approach": {
+   "state": "REST",
+   "dist": 4.998,
+   "displaced_m": 4.124
+  },
+  "after_retreat": {
+   "state": "GRAZE",
+   "dist_from_home": 2.617,
+   "radius": 5,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Cat",
+  "start": [
+   -29.12,
+   15.85
+  ],
+  "alert_at": {
+   "t": 3.35,
+   "dist": 6.965
+  },
+  "flee_at": {
+   "t": 5,
+   "dist": 3.471
+  },
+  "min_dist": 3.4708027948931615,
+  "max_speed": 4.200000000000069,
+  "after_approach": {
+   "state": "LOOK_AROUND",
+   "dist": 6.998,
+   "displaced_m": 6.123
+  },
+  "after_retreat": {
+   "state": "REST",
+   "dist_from_home": 1.308,
+   "radius": 5,
+   "legal": true
+  }
+ },
+ {
+  "sp": "RedFox",
+  "start": [
+   47.12,
+   87.59
+  ],
+  "alert_at": {
+   "t": 0.05,
+   "dist": 13.895
+  },
+  "flee_at": {
+   "t": 1.95,
+   "dist": 9.857
+  },
+  "min_dist": 9.85719484146302,
+  "max_speed": 5.500000000000063,
+  "after_approach": {
+   "state": "ALERT",
+   "dist": 12.491,
+   "displaced_m": 11.619
+  },
+  "after_retreat": {
+   "state": "WANDER",
+   "dist_from_home": 0.834,
+   "radius": 9,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Chick",
+  "start": [
+   -28.67,
+   11.7
+  ],
+  "alert_at": {
+   "t": 5.3,
+   "dist": 2.933
+  },
+  "flee_at": {
+   "t": 5.85,
+   "dist": 1.769
+  },
+  "min_dist": 1.6966348472515609,
+  "max_speed": 2.0000000000000315,
+  "after_approach": {
+   "state": "WANDER",
+   "dist": 2.591,
+   "displaced_m": 1.733
+  },
+  "after_retreat": {
+   "state": "WANDER",
+   "dist_from_home": 0.481,
+   "radius": 3,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Pug",
+  "start": [
+   -27.88,
+   15.23
+  ],
+  "alert_at": null,
+  "flee_at": null,
+  "min_dist": 0.8749999999999467,
+  "max_speed": 0,
+  "after_approach": {
+   "state": "REST",
+   "dist": 0.875,
+   "displaced_m": 0
+  },
+  "after_retreat": {
+   "state": "WANDER",
+   "dist_from_home": 2.081,
+   "radius": 6,
+   "legal": true
+  }
+ },
+ {
+  "sp": "Dog",
+  "start": [
+   23.03,
+   -40.1
+  ],
+  "alert_at": null,
+  "flee_at": null,
+  "min_dist": 0.8750000000003908,
+  "max_speed": 0,
+  "after_approach": {
+   "state": "REST",
+   "dist": 0.875,
+   "displaced_m": 0
+  },
+  "after_retreat": {
+   "state": "REST",
+   "dist_from_home": 2.92,
+   "radius": 7,
+   "legal": true
+  }
+ }
+]

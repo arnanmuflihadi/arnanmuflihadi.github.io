@@ -1,0 +1,873 @@
+{
+ "source": "p3a_island_shape.py + p2e-batch5/terrain-interface.json",
+ "landing_zone_concept_criteria": "disc of the stated radius with a height range <= 0.6 m, >= 8 m from the disc to the rim and >= 8 m to the nearest building envelope; trees are excluded from the discs by the massing generator. These are CONCEPT criteria: the game's dynamic landing system has its own rules, not evaluated here.",
+ "concepts": {
+  "A": {
+   "name": "Merchant Plateau",
+   "extent_x_m": [
+    -56.2,
+    68.9
+   ],
+   "extent_n_m": [
+    -37.0,
+    104.6
+   ],
+   "size_m": [
+    125.0,
+    141.6
+   ],
+   "top_area_m2_incl_satellites": 13747,
+   "rim_perimeter_m": 431,
+   "town_footprint_share_of_top": 0.519,
+   "walkable_near_level_area_m2": 11595,
+   "top_height_range_m": [
+    -0.3,
+    4.2
+   ],
+   "rim_height_range_m": [
+    0.5,
+    3.1
+   ],
+   "underside_depth_below_rim_m": [
+    46,
+    58
+   ],
+   "cliff_band_m": 20.0,
+   "min_building_to_rim_m": {
+    "distance": 13.6,
+    "building": "E01",
+    "corner": [
+     -15.7,
+     -6.66
+    ]
+   },
+   "N20_to_rim_m": 14.1,
+   "satellites": [],
+   "landing_zones": [
+    {
+     "name": "North-east lawn",
+     "centre": [
+      24,
+      89
+     ],
+     "radius_m": 8,
+     "level_m": 1.83,
+     "height_range_m": 0.23,
+     "clear_to_rim_m": 8.2,
+     "clear_to_nearest_building_m": 8.2,
+     "on": "Merchant Plateau",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "East common",
+     "centre": [
+      50,
+      26
+     ],
+     "radius_m": 7.5,
+     "level_m": -0.02,
+     "height_range_m": 0.2,
+     "clear_to_rim_m": 8.9,
+     "clear_to_nearest_building_m": 10.8,
+     "on": "Merchant Plateau",
+     "meets_concept_criteria": true
+    }
+   ],
+   "largest_possible_landing_discs_main_landmass": [
+    {
+     "centre": [
+      23.829293785541253,
+      89.006841459834
+     ],
+     "radius_m": 8.0
+    },
+    {
+     "centre": [
+      49.82929378554125,
+      25.006841459834007
+     ],
+     "radius_m": 7.8
+    },
+    {
+     "centre": [
+      49.82929378554125,
+      45.00684145983401
+     ],
+     "radius_m": 7.8
+    },
+    {
+     "centre": [
+      -24.170706214458747,
+      87.006841459834
+     ],
+     "radius_m": 5.0
+    }
+   ],
+   "viewpoints": [
+    {
+     "name": "Tea lookout",
+     "at": [
+      36,
+      57
+     ]
+    },
+    {
+     "name": "Hall headland",
+     "at": [
+      0,
+      100
+     ]
+    }
+   ],
+   "trails": [
+    {
+     "from": [
+      0,
+      -8
+     ],
+     "to": [
+      0,
+      -30
+     ],
+     "length_m": 22.0,
+     "walk_s": 10,
+     "run_s": 5
+    },
+    {
+     "from": [
+      42,
+      57
+     ],
+     "to": [
+      62,
+      52
+     ],
+     "length_m": 24.3,
+     "walk_s": 12,
+     "run_s": 5
+    },
+    {
+     "from": [
+      -24,
+      20
+     ],
+     "to": [
+      -48,
+      30
+     ],
+     "length_m": 27.4,
+     "walk_s": 13,
+     "run_s": 6
+    }
+   ],
+   "streams_m": []
+  },
+  "B": {
+   "name": "Fractured Trading Isle",
+   "extent_x_m": [
+    -68.3,
+    67.7
+   ],
+   "extent_n_m": [
+    -25.7,
+    118.0
+   ],
+   "size_m": [
+    136.0,
+    143.8
+   ],
+   "top_area_m2_incl_satellites": 19093,
+   "rim_perimeter_m": 526,
+   "town_footprint_share_of_top": 0.373,
+   "walkable_near_level_area_m2": 12489,
+   "top_height_range_m": [
+    -3.5,
+    7.3
+   ],
+   "rim_height_range_m": [
+    -2.6,
+    7.3
+   ],
+   "underside_depth_below_rim_m": [
+    22,
+    82
+   ],
+   "cliff_band_m": 16.0,
+   "min_building_to_rim_m": {
+    "distance": 11.5,
+    "building": "E01",
+    "corner": [
+     -15.7,
+     -6.66
+    ]
+   },
+   "N20_to_rim_m": 9.1,
+   "satellites": [
+    {
+     "name": "arrival shard",
+     "centre": [
+      0.0,
+      -62.0
+     ],
+     "top_m": -2.0
+    },
+    {
+     "name": "lookout stack",
+     "centre": [
+      84.0,
+      58.0
+     ],
+     "top_m": 2.5
+    },
+    {
+     "name": "broken north-west slab",
+     "centre": [
+      -84.0,
+      104.0
+     ],
+     "top_m": -9.0
+    }
+   ],
+   "landing_zones": [
+    {
+     "name": "Arrival shard",
+     "centre": [
+      0,
+      -62
+     ],
+     "radius_m": 12,
+     "level_m": -1.99,
+     "height_range_m": 0.41,
+     "clear_to_rim_m": 12.7,
+     "clear_to_nearest_building_m": 43.5,
+     "on": "arrival shard",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "North-west lawn",
+     "centre": [
+      -30,
+      94
+     ],
+     "radius_m": 11,
+     "level_m": 2.03,
+     "height_range_m": 0.54,
+     "clear_to_rim_m": 13.2,
+     "clear_to_nearest_building_m": 11.7,
+     "on": "Fractured Trading Isle",
+     "meets_concept_criteria": true
+    }
+   ],
+   "largest_possible_landing_discs_main_landmass": [
+    {
+     "centre": [
+      -30.346217950655188,
+      94.2551592071396
+     ],
+     "radius_m": 11.1
+    },
+    {
+     "centre": [
+      27.653782049344812,
+      92.2551592071396
+     ],
+     "radius_m": 4.1
+    },
+    {
+     "centre": [
+      51.65378204934481,
+      88.2551592071396
+     ],
+     "radius_m": 4.7
+    },
+    {
+     "centre": [
+      -42.34621795065519,
+      18.2551592071396
+     ],
+     "radius_m": 4.6
+    }
+   ],
+   "viewpoints": [
+    {
+     "name": "Tea lookout",
+     "at": [
+      36,
+      57
+     ]
+    },
+    {
+     "name": "Lookout stack",
+     "at": [
+      84,
+      58
+     ]
+    },
+    {
+     "name": "Chasm bridge",
+     "at": [
+      0,
+      -35
+     ]
+    }
+   ],
+   "trails": [
+    {
+     "from": [
+      0,
+      -8
+     ],
+     "to": [
+      0,
+      -60
+     ],
+     "length_m": 52.0,
+     "walk_s": 25,
+     "run_s": 11
+    },
+    {
+     "from": [
+      42,
+      57
+     ],
+     "to": [
+      84,
+      58
+     ],
+     "length_m": 42.0,
+     "walk_s": 20,
+     "run_s": 9
+    },
+    {
+     "from": [
+      -24,
+      20
+     ],
+     "to": [
+      -58,
+      26
+     ],
+     "length_m": 34.7,
+     "walk_s": 17,
+     "run_s": 8
+    },
+    {
+     "from": [
+      -20,
+      92
+     ],
+     "to": [
+      -62,
+      100
+     ],
+     "length_m": 43.5,
+     "walk_s": 21,
+     "run_s": 9
+    }
+   ],
+   "streams_m": []
+  },
+  "C": {
+   "name": "Terraced Merchant Highlands",
+   "extent_x_m": [
+    -81.2,
+    96.9
+   ],
+   "extent_n_m": [
+    -80.3,
+    135.8
+   ],
+   "size_m": [
+    178.0,
+    216.1
+   ],
+   "top_area_m2_incl_satellites": 25832,
+   "rim_perimeter_m": 678,
+   "town_footprint_share_of_top": 0.276,
+   "walkable_near_level_area_m2": 18575,
+   "top_height_range_m": [
+    -8.7,
+    23.7
+   ],
+   "rim_height_range_m": [
+    -8.1,
+    10.0
+   ],
+   "underside_depth_below_rim_m": [
+    48,
+    94
+   ],
+   "cliff_band_m": 23.0,
+   "min_building_to_rim_m": {
+    "distance": 18.5,
+    "building": "E01",
+    "corner": [
+     -15.7,
+     -6.66
+    ]
+   },
+   "N20_to_rim_m": 61.6,
+   "satellites": [],
+   "landing_zones": [
+    {
+     "name": "Caravan Green",
+     "centre": [
+      -50,
+      18
+     ],
+     "radius_m": 14,
+     "level_m": -0.07,
+     "height_range_m": 0.36,
+     "clear_to_rim_m": 11.9,
+     "clear_to_nearest_building_m": 10.2,
+     "on": "Terraced Merchant Highlands",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "Sky Quay",
+     "centre": [
+      5,
+      -52
+     ],
+     "radius_m": 11,
+     "level_m": -3.02,
+     "height_range_m": 0.0,
+     "clear_to_rim_m": 17.2,
+     "clear_to_nearest_building_m": 34.2,
+     "on": "Terraced Merchant Highlands",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "Shoulder Table",
+     "centre": [
+      -36,
+      112
+     ],
+     "radius_m": 6,
+     "level_m": 9.07,
+     "height_range_m": 0.19,
+     "clear_to_rim_m": 12.0,
+     "clear_to_nearest_building_m": 30.3,
+     "on": "Terraced Merchant Highlands",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "Hall lawn (west)",
+     "centre": [
+      -32.5,
+      85
+     ],
+     "radius_m": 7.5,
+     "level_m": 1.93,
+     "height_range_m": 0.2,
+     "clear_to_rim_m": 34.3,
+     "clear_to_nearest_building_m": 8.3,
+     "on": "Terraced Merchant Highlands",
+     "meets_concept_criteria": true
+    }
+   ],
+   "largest_possible_landing_discs_main_landmass": [
+    {
+     "centre": [
+      -1.1512783431902704,
+      -42.251672512354375
+     ],
+     "radius_m": 12.0
+    },
+    {
+     "centre": [
+      -51.15127834319027,
+      77.74832748764562
+     ],
+     "radius_m": 4.3
+    },
+    {
+     "centre": [
+      -53.15127834319027,
+      23.748327487645625
+     ],
+     "radius_m": 13.4
+    },
+    {
+     "centre": [
+      -27.15127834319027,
+      107.74832748764562
+     ],
+     "radius_m": 5.3
+    }
+   ],
+   "viewpoints": [
+    {
+     "name": "Tea lookout",
+     "at": [
+      36,
+      57
+     ]
+    },
+    {
+     "name": "Cloudfall overlook",
+     "at": [
+      80,
+      54
+     ]
+    },
+    {
+     "name": "Counting Stone",
+     "at": [
+      40,
+      116
+     ]
+    },
+    {
+     "name": "Sky Quay prow",
+     "at": [
+      0,
+      -70
+     ]
+    }
+   ],
+   "trails": [
+    {
+     "from": [
+      0,
+      -8
+     ],
+     "to": [
+      0,
+      -58
+     ],
+     "length_m": 50.0,
+     "walk_s": 24,
+     "run_s": 11
+    },
+    {
+     "from": [
+      42,
+      57
+     ],
+     "to": [
+      80,
+      54
+     ],
+     "length_m": 38.8,
+     "walk_s": 18,
+     "run_s": 8
+    },
+    {
+     "from": [
+      -24,
+      20
+     ],
+     "to": [
+      -36,
+      22
+     ],
+     "length_m": 12.3,
+     "walk_s": 6,
+     "run_s": 3
+    },
+    {
+     "from": [
+      18,
+      92
+     ],
+     "to": [
+      40,
+      114
+     ],
+     "length_m": 38.7,
+     "walk_s": 18,
+     "run_s": 8
+    },
+    {
+     "from": [
+      -16,
+      92
+     ],
+     "to": [
+      -30,
+      106
+     ],
+     "length_m": 19.8,
+     "walk_s": 9,
+     "run_s": 4
+    },
+    {
+     "from": [
+      33,
+      20
+     ],
+     "to": [
+      60,
+      54
+     ],
+     "length_m": 52.8,
+     "walk_s": 25,
+     "run_s": 11
+    }
+   ],
+   "streams_m": [
+    68.5
+   ]
+  },
+  "S": {
+   "name": "Terraced Merchant Highlands with the Tea Stack (selected)",
+   "extent_x_m": [
+    -81.2,
+    96.9
+   ],
+   "extent_n_m": [
+    -80.3,
+    135.8
+   ],
+   "size_m": [
+    178.0,
+    216.1
+   ],
+   "top_area_m2_incl_satellites": 26203,
+   "rim_perimeter_m": 678,
+   "town_footprint_share_of_top": 0.272,
+   "walkable_near_level_area_m2": 18575,
+   "top_height_range_m": [
+    -8.7,
+    23.7
+   ],
+   "rim_height_range_m": [
+    -8.1,
+    10.0
+   ],
+   "underside_depth_below_rim_m": [
+    48,
+    94
+   ],
+   "cliff_band_m": 23.0,
+   "min_building_to_rim_m": {
+    "distance": 18.5,
+    "building": "E01",
+    "corner": [
+     -15.7,
+     -6.66
+    ]
+   },
+   "N20_to_rim_m": 61.6,
+   "satellites": [
+    {
+     "name": "Tea Stack",
+     "centre": [
+      111.0,
+      45.0
+     ],
+     "top_m": -5.0
+    }
+   ],
+   "landing_zones": [
+    {
+     "name": "Caravan Green",
+     "centre": [
+      -50,
+      18
+     ],
+     "radius_m": 14,
+     "level_m": -0.07,
+     "height_range_m": 0.36,
+     "clear_to_rim_m": 11.9,
+     "clear_to_nearest_building_m": 10.2,
+     "on": "Terraced Merchant Highlands with the Tea Stack (selected)",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "Sky Quay",
+     "centre": [
+      5,
+      -52
+     ],
+     "radius_m": 11,
+     "level_m": -3.02,
+     "height_range_m": 0.0,
+     "clear_to_rim_m": 17.2,
+     "clear_to_nearest_building_m": 34.2,
+     "on": "Terraced Merchant Highlands with the Tea Stack (selected)",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "Shoulder Table",
+     "centre": [
+      -36,
+      112
+     ],
+     "radius_m": 6,
+     "level_m": 9.07,
+     "height_range_m": 0.19,
+     "clear_to_rim_m": 12.0,
+     "clear_to_nearest_building_m": 30.3,
+     "on": "Terraced Merchant Highlands with the Tea Stack (selected)",
+     "meets_concept_criteria": true
+    },
+    {
+     "name": "Hall lawn (west)",
+     "centre": [
+      -32.5,
+      85
+     ],
+     "radius_m": 7.5,
+     "level_m": 1.93,
+     "height_range_m": 0.2,
+     "clear_to_rim_m": 34.3,
+     "clear_to_nearest_building_m": 8.3,
+     "on": "Terraced Merchant Highlands with the Tea Stack (selected)",
+     "meets_concept_criteria": true
+    }
+   ],
+   "largest_possible_landing_discs_main_landmass": [
+    {
+     "centre": [
+      -1.1512783431902704,
+      -42.251672512354375
+     ],
+     "radius_m": 12.0
+    },
+    {
+     "centre": [
+      -51.15127834319027,
+      77.74832748764562
+     ],
+     "radius_m": 4.3
+    },
+    {
+     "centre": [
+      -53.15127834319027,
+      23.748327487645625
+     ],
+     "radius_m": 13.4
+    },
+    {
+     "centre": [
+      -27.15127834319027,
+      107.74832748764562
+     ],
+     "radius_m": 5.3
+    }
+   ],
+   "viewpoints": [
+    {
+     "name": "Tea lookout",
+     "at": [
+      36,
+      57
+     ]
+    },
+    {
+     "name": "Cloudfall overlook",
+     "at": [
+      80,
+      54
+     ]
+    },
+    {
+     "name": "Counting Stone",
+     "at": [
+      40,
+      116
+     ]
+    },
+    {
+     "name": "Sky Quay prow",
+     "at": [
+      0,
+      -70
+     ]
+    },
+    {
+     "name": "Tea Stack",
+     "at": [
+      111,
+      45
+     ]
+    }
+   ],
+   "trails": [
+    {
+     "from": [
+      0,
+      -8
+     ],
+     "to": [
+      0,
+      -58
+     ],
+     "length_m": 50.0,
+     "walk_s": 24,
+     "run_s": 11
+    },
+    {
+     "from": [
+      42,
+      57
+     ],
+     "to": [
+      80,
+      54
+     ],
+     "length_m": 38.8,
+     "walk_s": 18,
+     "run_s": 8
+    },
+    {
+     "from": [
+      -24,
+      20
+     ],
+     "to": [
+      -36,
+      22
+     ],
+     "length_m": 12.3,
+     "walk_s": 6,
+     "run_s": 3
+    },
+    {
+     "from": [
+      18,
+      92
+     ],
+     "to": [
+      40,
+      114
+     ],
+     "length_m": 38.7,
+     "walk_s": 18,
+     "run_s": 8
+    },
+    {
+     "from": [
+      -16,
+      92
+     ],
+     "to": [
+      -30,
+      106
+     ],
+     "length_m": 19.8,
+     "walk_s": 9,
+     "run_s": 4
+    },
+    {
+     "from": [
+      33,
+      20
+     ],
+     "to": [
+      60,
+      54
+     ],
+     "length_m": 52.8,
+     "walk_s": 25,
+     "run_s": 11
+    }
+   ],
+   "streams_m": [
+    68.5
+   ]
+  }
+ }
+}

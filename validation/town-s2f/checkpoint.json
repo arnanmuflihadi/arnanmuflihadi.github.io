@@ -1,0 +1,9 @@
+{
+  "ref": "refs/heads/codex/checkpoint-s2e-before-s2f",
+  "commit": "3f9e479fb0e656ee563fd9ec66ed2bfbac73c1aa",
+  "parent": "dffaf125c1999615852772093f04255f5ebb48e4",
+  "current_branch_unchanged": "codex/floating-atlas-r0",
+  "original_index_unchanged": true,
+  "protected_files": 3102,
+  "scope": "Full non-ignored working tree checkpoint; no checkout, reset, stash or deployment."
+}

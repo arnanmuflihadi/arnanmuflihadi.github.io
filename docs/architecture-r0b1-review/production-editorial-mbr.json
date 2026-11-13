@@ -1,0 +1,276 @@
+{
+  "assets": {
+    "architectureInstances": 0,
+    "cloudCount": 34,
+    "derivedTreeGeometries": 10,
+    "detail": {
+      "activeGrassChunks": 31,
+      "eco": false,
+      "farGrassChunks": 0,
+      "grassChunks": 31,
+      "nearGrassChunks": 31
+    },
+    "files": {
+      "cachedFiles": 2,
+      "loadedFiles": 2,
+      "requests": 2
+    },
+    "geology": {
+      "clusters": 7,
+      "rockPieces": 28,
+      "sharedRockGeometries": 3
+    },
+    "geometry": {
+      "geometries": 73,
+      "materials": 40,
+      "meshes": 82,
+      "missingTextures": [],
+      "textures": 4,
+      "triangles": 1335218
+    },
+    "grassBlades": 28063,
+    "growthForms": {
+      "emergent": 22,
+      "spreading": 33,
+      "tiered": 22,
+      "umbrella": 33,
+      "windswept": 24
+    },
+    "imported": {
+      "fern": 678,
+      "hangingFern": 24,
+      "tree": 134
+    },
+    "landscapeZones": {
+      "forest": 107,
+      "meadow": 24,
+      "ridge": 3
+    },
+    "palms": 10,
+    "reservations": {
+      "dragon": {
+        "constructed": false,
+        "radius": 6.5,
+        "x": 27,
+        "y": 16,
+        "z": 57
+      },
+      "overlook": {
+        "constructed": false,
+        "natural": true,
+        "radius": 5,
+        "x": -80,
+        "y": 32,
+        "z": 5
+      },
+      "settlement": {
+        "constructed": false,
+        "radius": 11,
+        "x": 32,
+        "y": 22,
+        "z": 12
+      },
+      "skyport": {
+        "constructed": false,
+        "radius": 9,
+        "x": 27,
+        "y": 16,
+        "z": 57
+      },
+      "station": {
+        "constructed": false,
+        "radius": 8,
+        "x": -5,
+        "y": 21,
+        "z": 5
+      }
+    },
+    "revision": "R0A3.73",
+    "settlement": null,
+    "shrubs": 131,
+    "sourceFiles": [
+      "canopy-tree.glb",
+      "fern.glb"
+    ],
+    "surfaceTriangles": 26416,
+    "terrain": {
+      "depth": 183,
+      "surfaceMax": 49,
+      "surfaceMin": 10.28,
+      "undersideMin": -85,
+      "width": 177.6201171875
+    },
+    "terrainOnly": true,
+    "trailDetails": {
+      "broadleafPlants": 18,
+      "clusters": 18,
+      "floweringPlants": 18,
+      "points": [
+        {
+          "pathClearance": 1.7733760383387576,
+          "route": "arrival",
+          "x": 26.88549845398838,
+          "z": 43.85114374057807
+        },
+        {
+          "pathClearance": 2.2604386817052715,
+          "route": "arrival",
+          "x": 16.305612968870673,
+          "z": 41.69438703112933
+        },
+        {
+          "pathClearance": 1.9363706626347283,
+          "route": "arrival",
+          "x": 17.02701741873651,
+          "z": 30.770275760721994
+        },
+        {
+          "pathClearance": 2.2104710754007098,
+          "route": "arrival",
+          "x": 7.777323562979605,
+          "z": 26.03181091957434
+        },
+        {
+          "pathClearance": 2.2461823115969315,
+          "route": "arrival",
+          "x": 11.589080609749375,
+          "z": 16.293513850179014
+        },
+        {
+          "pathClearance": 1.5861549558409025,
+          "route": "arrival",
+          "x": -1.6096061165508817,
+          "z": 12.32056672820597
+        },
+        {
+          "pathClearance": 1.919282673229463,
+          "route": "ridge",
+          "x": -38.215984809526965,
+          "z": -6.771646030301023
+        },
+        {
+          "pathClearance": 1.6436544109426885,
+          "route": "ridge",
+          "x": -33.911535656420924,
+          "z": -25.31192504050535
+        },
+        {
+          "pathClearance": 1.7067511216504514,
+          "route": "ridge",
+          "x": -43.762810820937894,
+          "z": -43.02004053167934
+        },
+        {
+          "pathClearance": 1.9187022160185745,
+          "route": "overlook",
+          "x": -46.525659273098086,
+          "z": -42.020527418478466
+        },
+        {
+          "pathClearance": 1.9603762592189,
+          "route": "overlook",
+          "x": -56.89802228907635,
+          "z": -21.672805943753698
+        },
+        {
+          "pathClearance": 2.069367949879959,
+          "route": "overlook",
+          "x": -69.51553352434686,
+          "z": 0.9689329513062832
+        },
+        {
+          "pathClearance": 1.747441918792901,
+          "route": "return",
+          "x": -73.75411335003807,
+          "z": 5.381170025057099
+        },
+        {
+          "pathClearance": 1.919282673229461,
+          "route": "return",
+          "x": -49.71795848108171,
+          "z": 8.699649041699825
+        },
+        {
+          "pathClearance": 1.8231660558580192,
+          "route": "clearing",
+          "x": 1.1883201604947544,
+          "z": 5.99906267372028
+        },
+        {
+          "pathClearance": 1.5538493401527376,
+          "route": "clearing",
+          "x": 25,
+          "z": 8.946150659847262
+        },
+        {
+          "pathClearance": 2.2922977161564635,
+          "route": "meadow",
+          "x": 38.98897237207715,
+          "z": 16.00735175194857
+        },
+        {
+          "pathClearance": 2.0168315739603706,
+          "route": "meadow",
+          "x": 37.99617014283051,
+          "z": 42.18414887497669
+        }
+      ],
+      "smallStones": 18
+    },
+    "vegetationBatches": 16,
+    "waterfall": {
+      "bankRocks": 11,
+      "fallHeight": 78,
+      "mistCards": 9,
+      "source": [
+        -72,
+        10.4,
+        38
+      ],
+      "termination": [
+        -81.6,
+        -67.6,
+        45.2
+      ],
+      "volumeTriangles": 1032,
+      "widthAtLip": 3.6
+    },
+    "world": "Transit Kingdom / Landscape"
+  },
+  "mode": "editorial",
+  "rendererCount": "1",
+  "sceneId": "7fcbf9ba-6f2d-423e-a59c-434335edf9cc",
+  "selectedProject": "mbr",
+  "transfers": [
+    {
+      "durationMs": 1.100000001490116,
+      "encodedBytes": 104876,
+      "file": "fern.glb",
+      "transferBytes": 0
+    },
+    {
+      "durationMs": 1.5,
+      "encodedBytes": 719224,
+      "file": "canopy-tree.glb",
+      "transferBytes": 0
+    },
+    {
+      "durationMs": 1.7000000029802322,
+      "encodedBytes": 1581480,
+      "file": "urban-explorer.glb",
+      "transferBytes": 0
+    },
+    {
+      "durationMs": 3.100000001490116,
+      "encodedBytes": 1186388,
+      "file": "city-resident.glb",
+      "transferBytes": 0
+    },
+    {
+      "durationMs": 0.8999999985098839,
+      "encodedBytes": 267260,
+      "file": "jump-animations.glb",
+      "transferBytes": 0
+    }
+  ]
+}

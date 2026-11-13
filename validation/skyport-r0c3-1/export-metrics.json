@@ -1,0 +1,16 @@
+{
+  "input": "validation/skyport-r0c3-1/skyport-details-raw.glb",
+  "output": "validation/skyport-r0c3-1/skyport-details.glb",
+  "rawBytes": 44400,
+  "bytes": 41120,
+  "sha256": "0e85f9598ba4b3a1b04cbaf541810710549801a0a928b254f165870c1693a316",
+  "triangles": 726,
+  "materials": 3,
+  "textures": 0,
+  "changes": [
+    "Index identical vertices with all normals and other attributes preserved",
+    "Deduplicate identical resources; no decimation or silhouette changes",
+    "Retain actual walkable extras and material identities"
+  ],
+  "gzip9Bytes": 10571
+}

@@ -1,0 +1,47 @@
+{
+ "concept": "S",
+ "name": "Terraced Merchant Highlands with the Tea Stack (selected)",
+ "triangles": {
+  "P3A_landmass_main": 114816,
+  "P3A_landmass_S-stack": 112552,
+  "P3A_hanging_rock": 361,
+  "P3A_trees": 2842,
+  "P3A_path_0": 100,
+  "P3A_path_1": 76,
+  "P3A_path_2": 24,
+  "P3A_path_3": 72,
+  "P3A_path_4": 38,
+  "P3A_path_5": 104,
+  "P3A_stream_0": 134,
+  "P3A_cloudfall_0": 24,
+  "P3A_fall_lip_0": 12,
+  "P3A_tea_rows": 2862,
+  "P3A_bollard": 60,
+  "P3A_quay_stair": 120,
+  "P3A_quay_stair_cheek": 24,
+  "P3A_quay_beacon": 12,
+  "P3A_counting_stone": 12,
+  "P3A_bridge": 12,
+  "P3A_tarn": 12,
+  "P3A_pavilion_post": 48,
+  "P3A_pavilion_roof": 4,
+  "P3A_clouds": 14720
+ },
+ "hanging_rocks": 50,
+ "trees": 78,
+ "tea_row_segments": 477,
+ "total_triangles": 249041,
+ "extent_x": [
+  -81.15041532757311,
+  96.88662851499849
+ ],
+ "extent_n": [
+  -80.24443552605777,
+  135.7969206060894
+ ],
+ "top_area_m2": 25832.09836255994,
+ "depth_m": [
+  48.00012315576098,
+  93.99987684423903
+ ]
+}

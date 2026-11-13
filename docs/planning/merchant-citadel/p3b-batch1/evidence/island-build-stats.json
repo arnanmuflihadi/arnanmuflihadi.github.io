@@ -1,0 +1,116 @@
+{
+ "ISL_TOP": {
+  "tris": 59682,
+  "verts": 30187,
+  "s": 0.7
+ },
+ "ISL_CLIFF": {
+  "tris": 30360,
+  "verts": 15870,
+  "rings": 23,
+  "rim_points": 690,
+  "s": 0.1
+ },
+ "STACK_TOP": {
+  "tris": 846
+ },
+ "STACK_CLIFF": {
+  "tris": 2624,
+  "rings": 17
+ },
+ "ISL_ROOTS": {
+  "tris": 833,
+  "roots": 7
+ },
+ "ISL_DEBRIS": {
+  "tris": 3840,
+  "rocks": 12
+ },
+ "WATER_STREAM": {
+  "tris": 180
+ },
+ "WATER_FALL": {
+  "tris": 18,
+  "lip_z": -7.787435458162331,
+  "bottom_z": -32.184545345653625,
+  "height_m": 24.397109887491293
+ },
+ "BRIDGE": {
+  "tris": 348
+ },
+ "PROTO_pavilion": {
+  "tris": 124
+ },
+ "PROTO_counting_stone": {
+  "tris": 72
+ },
+ "PROTO_wagon": {
+  "tris": 252
+ },
+ "PROTO_campfire": {
+  "tris": 164
+ },
+ "PROTO_cloud": {
+  "tris": 80
+ },
+ "PROTO_tree_round": {
+  "tris": 258
+ },
+ "PROTO_tree_tall": {
+  "tris": 146
+ },
+ "PROTO_palm": {
+  "tris": 192
+ },
+ "PROTO_shrub": {
+  "tris": 80
+ },
+ "PROTO_tea": {
+  "tris": 80
+ },
+ "PROTO_rock_a": {
+  "tris": 80
+ },
+ "PROTO_rock_b": {
+  "tris": 80
+ },
+ "PROTO_rock_c": {
+  "tris": 80
+ },
+ "PROTO_crate": {
+  "tris": 60
+ },
+ "PROTO_barrel": {
+  "tris": 88
+ },
+ "PROTO_sack": {
+  "tris": 80
+ },
+ "PROTO_bollard": {
+  "tris": 72
+ },
+ "PROTO_lamp": {
+  "tris": 54
+ },
+ "PROTO_crate_stack": {
+  "tris": 540
+ },
+ "PROTO_crane": {
+  "tris": 156
+ },
+ "PROTO_beacon": {
+  "tris": 236
+ },
+ "instances": {
+  "tree_round": 87,
+  "tree_tall": 36,
+  "palm": 77,
+  "shrub": 185,
+  "rock": 48,
+  "tea": 151
+ },
+ "quay_props": 40,
+ "glb_bytes": 3232932,
+ "seconds": 119.6,
+ "island_tris_static": 98731
+}

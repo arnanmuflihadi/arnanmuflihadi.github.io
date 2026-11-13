@@ -1,0 +1,10 @@
+{
+  "compared": 3166,
+  "changed": [
+    "assets/js/floating-atlas/town-integration.js",
+    "assets/js/floating-atlas/town-review.js",
+    "tests/town-s2f.test.mjs"
+  ],
+  "source_assets_changed": [],
+  "missing": []
+}

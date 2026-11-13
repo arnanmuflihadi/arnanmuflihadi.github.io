@@ -1,0 +1,137 @@
+{
+  "rows": [
+    {
+      "name": "arrival to Guild",
+      "hz": 20,
+      "success": true,
+      "distance": 42.15168039528616,
+      "minCamera": 3.2248853232220784,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.759665952253978,
+        16.049999992847443,
+        37.34230502912786
+      ]
+    },
+    {
+      "name": "reverse",
+      "hz": 20,
+      "success": true,
+      "distance": 42.152356000079585,
+      "minCamera": 2.51089151324985,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        15.013339715009895,
+        15.040976432078214,
+        69.86941919578776
+      ]
+    },
+    {
+      "name": "arrival to Guild",
+      "hz": 60,
+      "success": true,
+      "distance": 42.133196666474255,
+      "minCamera": 3.1407393811307807,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.764412580420388,
+        16.049999992847447,
+        37.337332221120846
+      ]
+    },
+    {
+      "name": "reverse",
+      "hz": 60,
+      "success": true,
+      "distance": 42.133281881186385,
+      "minCamera": 2.51089151324985,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        14.9975307167862,
+        15.041340745545785,
+        69.84684159753614
+      ]
+    },
+    {
+      "name": "beacon circuit",
+      "hz": 60,
+      "success": true,
+      "distance": 6.216533325226298,
+      "minCamera": 1.6255868282000605,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        10.573401356904503,
+        15.098986994705674,
+        70.14657245698218
+      ]
+    },
+    {
+      "name": "mooring pylon",
+      "hz": 60,
+      "success": true,
+      "distance": 1.0104436341207979,
+      "minCamera": 5.294127466096669,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        12.100783039409823,
+        15.237426656923429,
+        71.89909330894895
+      ]
+    },
+    {
+      "name": "guard",
+      "hz": 60,
+      "success": true,
+      "distance": 2.935330088661462,
+      "minCamera": 1.5843752731039922,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        16.743776389597713,
+        14.829776342986946,
+        72.34073888288181
+      ]
+    },
+    {
+      "name": "jump",
+      "hz": 60,
+      "success": true,
+      "distance": 2.9001425352315646,
+      "minCamera": 2.0376384165303416,
+      "jumps": 1,
+      "landings": 1,
+      "end": [
+        10.528804615805855,
+        15.193002702376589,
+        63.46483933218241
+      ]
+    }
+  ],
+  "metrics": {
+    "enabled": true,
+    "assets": {
+      "meshes": 3,
+      "triangles": 726,
+      "geometries": 3,
+      "materials": 3,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "sharedExistingMaterialSlots": 3,
+    "newMaterialDefinitions": 0,
+    "textures": 0,
+    "colliders": 3,
+    "terrainChanges": 0,
+    "guardChanges": 0,
+    "travel": "Inactive docking identity only"
+  },
+  "newRuntimeMaterials": 0,
+  "terrainAndAllOriginalInstancesUnchanged": true,
+  "rollbackExact": true
+}

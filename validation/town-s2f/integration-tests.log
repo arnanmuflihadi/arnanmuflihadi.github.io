@@ -1,0 +1,11 @@
+✔ town requires exact local development flag and is off on every public/default route (0.920792ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (53.075125ms)
+✔ actual town integration preserves terrain and vegetation; off restores exact obstacle identity and cached instances (614.217333ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 808.943917

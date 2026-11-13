@@ -1,0 +1,97 @@
+[
+ {
+  "sp": "Seagull",
+  "sequence": [
+   "PERCHED",
+   "TAKEOFF",
+   "FLY",
+   "LAND",
+   "PERCHED"
+  ],
+  "seconds": 9.3,
+  "start": [
+   34.5,
+   2.4,
+   47
+  ],
+  "end": [
+   5,
+   7.9,
+   73.6
+  ],
+  "destination": [
+   5,
+   7.9,
+   73.6
+  ],
+  "landed_on_destination_m": 0,
+  "max_height_m": 12.515,
+  "flight_keepout_perch": false
+ },
+ {
+  "sp": "Hoopoe",
+  "sequence": [
+   "PERCHED",
+   "TAKEOFF",
+   "FLY",
+   "LAND",
+   "PERCHED"
+  ],
+  "seconds": 5.85,
+  "start": [
+   65.01,
+   4.48,
+   -93.95
+  ],
+  "end": [
+   81.99,
+   4.38,
+   -93.01
+  ],
+  "destination": [
+   81.99,
+   4.38,
+   -93.01
+  ],
+  "landed_on_destination_m": 0,
+  "max_height_m": 7.491,
+  "flight_keepout_perch": false
+ },
+ {
+  "perch_only_species_never_fly": true
+ },
+ {
+  "sp": "Eagle",
+  "orbit": [
+   46,
+   110,
+   21.601
+  ],
+  "altitude_m": [
+   35.5,
+   40.5
+  ],
+  "radius_m": [
+   21.601,
+   21.601
+  ],
+  "above_terrain_min_m": 27.552
+ },
+ {
+  "sp": "Hummingbird",
+  "orbit": [
+   76,
+   62,
+   3.312
+  ],
+  "altitude_m": [
+   3,
+   4
+  ],
+  "radius_m": [
+   0.123,
+   4.239
+  ],
+  "above_terrain_min_m": 11.015
+ }
+]

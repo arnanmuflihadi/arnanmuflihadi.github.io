@@ -1,0 +1,70 @@
+{
+  "phase": "R0-C1A.5",
+  "flag": "dev-town=s2f&terrain-study=c1a5 (localhost only)",
+  "terrain": {
+    "vertices": 539,
+    "deltaMin": 0.0000209808349609375,
+    "deltaMax": 1.3882379531860352,
+    "deltaMedian": 0.23928070068359375,
+    "addedTriangles": 0,
+    "mode": "bounded positive earth adjustment; no terrain removal",
+    "vegetation": 10,
+    "enabled": true,
+    "grassCopies": 5,
+    "groundedProps": 10
+  },
+  "affectedTriangleFootprintM2": 825.0876596495509,
+  "affectedTriangles": 1230,
+  "approxFillM3": 312.9038856775614,
+  "deltaBounds": [
+    15.03125,
+    33.84989929199219,
+    -2.8824462890625,
+    45.770965576171875
+  ],
+  "court": {
+    "before": {
+      "min": 0.18091700580155745,
+      "max": 2.9892947601152358,
+      "median": 0.8087737393963721
+    },
+    "after": {
+      "min": 0.18091653352318815,
+      "max": 1.9839197523486796,
+      "median": 0.4773264616899162
+    },
+    "samples": 1302
+  },
+  "RupaRimba": {
+    "before": {
+      "min": 0.4914240336366653,
+      "max": 7.45150108789459,
+      "median": 5.102268672950263
+    },
+    "after": {
+      "min": 0.48637678770679926,
+      "max": 6.686263649249652,
+      "median": 4.121821499865099
+    },
+    "samples": 1089
+  },
+  "KopiAwan": {
+    "before": {
+      "min": 2.898464048313084,
+      "max": 5.929704363102763,
+      "median": 4.9670401277880085
+    },
+    "after": {
+      "min": 2.5670719389692245,
+      "max": 4.694708814370719,
+      "median": 3.966798997720069
+    },
+    "samples": 957
+  },
+  "highland": {
+    "maxBefore": 0.38349186695151544,
+    "maxAfter": 0.38349083274430673
+  },
+  "originalSurfaceTriangles": 26416,
+  "sceneId": "99419deb-bc3d-4ad8-b695-a1c853a509ba"
+}

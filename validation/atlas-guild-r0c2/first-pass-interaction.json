@@ -1,0 +1,22 @@
+{
+  "before": {
+    "mode": "adventure",
+    "paused": "true",
+    "player": [
+      "-7.837",
+      "16.050",
+      "37.237"
+    ],
+    "title": "Transit accessibility in DKI Jakarta",
+    "url": "http://127.0.0.1:4175/index.html?dev-town=s2f&town-layout=reset-final&town-props=cc0&town-guild=r0c2&town-review=1&build=guild-c2-1&experience=adventure&project=transit&panel=study"
+  },
+  "after": {
+    "mode": "adventure",
+    "paused": "false",
+    "player": [
+      "-7.837",
+      "16.050",
+      "37.237"
+    ]
+  }
+}

@@ -1,0 +1,4441 @@
+{
+  "phase": "S2-F actual game, local opt-in, owner review pending",
+  "ready": true,
+  "townEnabled": true,
+  "sceneId": "eca959f0-c605-4e56-ad09-80740e927c3b",
+  "rendererCount": "1",
+  "view": "market",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "viewport": [
+      1354,
+      1130
+    ],
+    "drawingBuffer": [
+      1354,
+      1130
+    ],
+    "dpr": 1,
+    "exposure": 0.96,
+    "shadows": true,
+    "shadowType": 2,
+    "antialias": true,
+    "near": 0.12,
+    "far": 1600,
+    "glass": "unchanged authored transmission"
+  },
+  "camera": {
+    "position": [
+      36,
+      21.602857142857,
+      35
+    ],
+    "quaternion": [
+      0.05735259041615522,
+      0,
+      0,
+      0.9983539855044186
+    ],
+    "fov": 60,
+    "aspect": 1.1982300884955752
+  },
+  "player": [
+    36,
+    20.056857085227968,
+    35
+  ],
+  "activeWalk": null,
+  "benchmark": null,
+  "assets": {
+    "market": {
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    },
+    "interfaces": {
+      "meshes": 6,
+      "triangles": 8404,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "foundations": {
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "support": {
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    }
+  },
+  "cache": {
+    "requests": 6,
+    "cachedFiles": 6,
+    "loadedFiles": 6
+  },
+  "network": [
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+      "transferBytes": 527472,
+      "encodedBytes": 527172,
+      "decodedBytes": 527172,
+      "durationMs": 2
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+      "transferBytes": 6464,
+      "encodedBytes": 6164,
+      "decodedBytes": 6164,
+      "durationMs": 1.5
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+      "transferBytes": 543752,
+      "encodedBytes": 543452,
+      "decodedBytes": 543452,
+      "durationMs": 2.0999999940395355
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+      "transferBytes": 10008204,
+      "encodedBytes": 10007904,
+      "decodedBytes": 10007904,
+      "durationMs": 10.199999988079071
+    }
+  ],
+  "frameAllPasses": {
+    "frame": 71680,
+    "calls": 141,
+    "triangles": 2350830,
+    "points": 0,
+    "lines": 0
+  },
+  "resources": {
+    "geometries": 238,
+    "textures": 23,
+    "programs": 62,
+    "heap": 77147635
+  },
+  "inventory": {
+    "meshes": 227,
+    "triangles": 1489477,
+    "geometries": 218,
+    "materials": 131,
+    "textures": 10,
+    "missingTextures": []
+  },
+  "traversal": [
+    {
+      "name": "main",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 5033,
+      "seconds": 33.12230000000045,
+      "distanceMetres": 69.49457977012239,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        36.00000000000056,
+        20.760121574194187,
+        0.12328536484810014
+      ],
+      "maxFootRise": 0.174285888671875,
+      "maxFootDrop": 0.16902422904968262,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5693144170668791,
+      "trace": [
+        {
+          "position": [
+            24.21982181895368,
+            15.036791887078374,
+            65.69224945346485
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.49547132679031,
+            15.311064338684083,
+            65.30634014249353
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.704765274026432,
+            15.47824034690857,
+            65.01332861636294
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.908954487507796,
+            15.478240346908573,
+            64.72746371748906
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.112304528913107,
+            15.645416355133058,
+            64.44277365952159
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.315778359424744,
+            15.812592124938966,
+            64.15791029680523
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.518275908119318,
+            15.979768133163454,
+            63.87441372863283
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.722604379769642,
+            16.146944141387937,
+            63.58835386832239
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.925346073784407,
+            16.314120149612428,
+            63.30451549670172
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.12882012822081,
+            16.481296157836915,
+            63.01965182049077
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.33290448279501,
+            16.648472046852113,
+            62.73393372408691
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.53637853726976,
+            16.648472046852113,
+            62.44907004782229
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.73850993151747,
+            16.8156480550766,
+            62.1660860958755
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.942340095570295,
+            16.982824063301088,
+            61.88006952980293
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.019401551295868,
+            17.14999995231629,
+            61.55324141436063
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.02292244957582,
+            17.149999952316286,
+            61.113066409719906
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.012058209411414,
+            17.149999952316286,
+            60.55330395890743
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.014226750531876,
+            17.15030026381909,
+            59.99578772573033
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.14795382889775,
+            17.16524774400618,
+            59.56545754420014
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.26988618198973,
+            17.17687438519628,
+            59.23761459076974
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.39325345336328,
+            17.18850985915279,
+            58.910038209480774
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.516643989560013,
+            17.200132385008548,
+            58.58288803380565
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.64027742008729,
+            17.211775968698966,
+            58.255152550467145
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.763542712271235,
+            17.223384662885874,
+            57.928400005317776
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.88740128082312,
+            17.23504920320028,
+            57.60007565493038
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.010889273256122,
+            17.246678840817484,
+            57.27273373145221
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.134377270035642,
+            17.25830847845486,
+            56.945391808993755
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.257568777554773,
+            17.269910193795297,
+            56.618835821651395
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.381501509612583,
+            17.281581714884144,
+            56.290314996856395
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.50506362944135,
+            17.29321833309895,
+            55.9627765907979
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.628551626823697,
+            17.304847970337562,
+            55.63543466848656
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.752261991548398,
+            17.316498548676478,
+            55.30750329493462
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.875675866483473,
+            17.32812120471859,
+            54.980357856370226
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.999163863865952,
+            17.339750841334904,
+            54.65301593405896
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.12272598369584,
+            17.351387458525423,
+            54.325477528000796
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.246288103525746,
+            17.36302407571594,
+            53.997939121942586
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.369924345803046,
+            17.37466767348066,
+            53.670204232137564
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.493264098290716,
+            17.386283348948574,
+            53.34325527732003
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.61690034056802,
+            17.39792694671329,
+            53.01552038751496
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.740388337950463,
+            17.409556583329604,
+            52.68817846520369
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.863950457780316,
+            17.42119320052012,
+            52.36064005914553
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.99244552945243,
+            17.432797486561224,
+            52.03603853925384
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.181949734082895,
+            17.450298621013737,
+            51.74467585800988
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.389710573692966,
+            17.492453870914005,
+            51.46364064845031
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.599772222484784,
+            17.53445198206196,
+            51.18365341880835
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.810092042634327,
+            17.576428178579697,
+            50.903812210165164
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.0203163120522,
+            17.618376545051817,
+            50.62415638923427
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.230796597541637,
+            17.660374953201305,
+            50.34416695706791
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.44089875485401,
+            17.702297786583628,
+            50.0646813567627
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.70740678367449,
+            17.7554755728766,
+            49.710162725127034
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.9808551328475,
+            17.810038215024957,
+            49.346411841715565
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.19120972391204,
+            17.852011434293733,
+            49.06659055782928
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.40143812748631,
+            17.89395944926518,
+            48.78693713315801
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.611792718580965,
+            17.935932635173877,
+            48.50711584929031
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.8216425596074,
+            17.97780510557946,
+            48.22796600221676
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.03237571325396,
+            18.01985382811543,
+            47.947641140753866
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.32639262822192,
+            18.078520608659616,
+            47.55652920829369
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.55819909723313,
+            18.124774218459308,
+            47.24817186068451
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.76842750081108,
+            18.1667222402844,
+            46.96851843601551
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.97890827942332,
+            18.208720605068827,
+            46.688529292949575
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.18913668300125,
+            18.25066861753313,
+            46.40887586828063
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.399365086579216,
+            18.29261664123467,
+            46.12922244361164
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.63811186903387,
+            18.340255081893837,
+            45.811632840086055
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.932254971518994,
+            18.398947043687457,
+            45.42035304842743
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.14235718757976,
+            18.440869880173892,
+            45.140867482956956
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.35283796619203,
+            18.482868251229576,
+            44.86087833989102
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.56193068211559,
+            18.52458965252518,
+            44.5827356480084
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.77354714838225,
+            18.614000000432135,
+            44.30123577215612
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.97153415106284,
+            18.614000000432135,
+            44.01745407066782
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.021260502555506,
+            18.645359104925102,
+            43.68640895828293
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.02629486221256,
+            18.680404400826898,
+            43.33595600285521
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.025883798192055,
+            18.71536852332829,
+            42.9863147814232
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.02479454423531,
+            18.751548825240175,
+            42.62451176601088
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.023672867255655,
+            18.78632437746177,
+            42.27675624735748
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.022527628450575,
+            18.821562160581404,
+            41.924378419771124
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.02135128141681,
+            18.857723966086795,
+            41.56276036842184
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.01960706115759,
+            18.911336682507883,
+            41.026633209703306
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.01762984963556,
+            18.972110361483722,
+            40.418896426170924
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.01565810313985,
+            19.014000004529954,
+            39.812839633607986
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.013647413608496,
+            19.361619031429292,
+            39.19481290439028
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.01167293425177,
+            19.53542855978012,
+            38.587916116269525
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00969913810587,
+            19.883047676086427,
+            37.981229327037425
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.007687082152366,
+            20.056857085227964,
+            37.36278260004243
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.005675709409694,
+            20.056857085227968,
+            36.74454587193605
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00366365345618,
+            20.056857085227968,
+            36.12609914494102
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00165501355693,
+            20.056857085227968,
+            35.508702412389134
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99997980502812,
+            20.056857085227968,
+            34.90117513405066
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999847736389896,
+            20.056857085227968,
+            34.271175358535416
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99985819009929,
+            20.056857085227968,
+            33.63193536322913
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999871599894306,
+            20.056857085227968,
+            33.00193536346036
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999885381688884,
+            20.05685708522797,
+            32.35765536360958
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99989885499208,
+            20.056857085227968,
+            31.727865363753725
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99991208123307,
+            20.056857085227968,
+            31.10962536389522
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.9999255096422,
+            20.056857085227968,
+            30.481935364038847
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99993904587401,
+            20.056857085227968,
+            29.849205364183668
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99995251471666,
+            20.231142854690553,
+            29.219625364327737
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.9999657544362,
+            20.579714274406438,
+            28.600755364469368
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99997873358439,
+            20.75400004386902,
+            27.99406536460819
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999991703747384,
+            21.10257134437561,
+            27.387795364746943
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000068162481,
+            21.451142883300783,
+            26.79244536484285
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000001114985594,
+            21.799714183807374,
+            26.197725364848
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000105409643,
+            21.974000072479253,
+            25.59145536484814
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000097856146,
+            21.97400007247925,
+            24.97321536484813
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000090552669,
+            21.97400007247925,
+            24.37807536484814
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000831066565,
+            21.97400007247925,
+            23.77138536484812
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000075663198,
+            21.97400007247925,
+            23.164905364848153
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000068214582,
+            21.97400007247925,
+            22.558005364848153
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000060938652,
+            21.97400007247925,
+            21.965175364848154
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000053752929,
+            21.97400007247925,
+            21.37969536484815
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000046595558,
+            21.97400007247925,
+            20.79652536484817
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000395773654,
+            21.974000072479246,
+            20.224695364848163
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000032845262,
+            21.97400007247925,
+            19.67617536484817
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000285539315,
+            21.974000072479246,
+            19.32652536484817
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000024115691,
+            21.97400007247925,
+            18.964905364848182
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000019816628,
+            21.97400007247925,
+            18.614625364848163
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000015530457,
+            21.97400007247925,
+            18.26539536484815
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000011079334,
+            21.974000072479246,
+            17.902725364848152
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000006788007,
+            21.97400007247925,
+            17.55307536484815
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000024941045,
+            21.97400007247925,
+            17.203215364848138
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999814056,
+            21.97400007247925,
+            16.853145364848146
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999475272,
+            21.97400007247925,
+            16.503495364848145
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999994580705,
+            21.97400007247925,
+            16.153215364848133
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999479595,
+            21.97400007247925,
+            15.803145364848142
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999505773,
+            22.13399991989136,
+            15.453075364848146
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.9999999953251,
+            22.13399991989136,
+            15.10300536484815
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999559302,
+            22.294000005722047,
+            14.753145364848136
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999995861,
+            22.454000091552736,
+            14.403285364848122
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999996138165,
+            22.599999999999998,
+            14.041455364848145
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999640616,
+            22.613999938964845,
+            13.691595364848133
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999996673836,
+            22.613999938964845,
+            13.34215536484814
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999996941995,
+            22.613999938964845,
+            12.992085364848112
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.9999999972108,
+            22.613999938964845,
+            12.641175364848127
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999997478646,
+            22.613999938964845,
+            12.291525364848129
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999774681,
+            22.613999938964845,
+            11.941455364848133
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999801498,
+            22.613999938964845,
+            11.591385364848106
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999828298,
+            22.613999938964845,
+            11.241525364848126
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999855116,
+            22.613999938964845,
+            10.89145536484813
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999881931,
+            22.613999938964845,
+            10.541385364848098
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999999087294,
+            22.613999938964845,
+            10.191525364848117
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999935545,
+            22.613999938964845,
+            9.841455364848118
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99999999962361,
+            22.613999938964845,
+            9.491385364848092
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.999999999891116,
+            22.613999938964845,
+            9.142155364848117
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000002114,
+            22.613999938964845,
+            8.79208536484809
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.0000000000355,
+            22.613999938964845,
+            8.44138536484809
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000000035826,
+            22.613999938964845,
+            8.091525364848108
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000000034504,
+            22.613999938964845,
+            7.741455364848113
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000003299,
+            22.613999938964845,
+            7.391175364848108
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000003147,
+            22.44497594833374,
+            7.04152536484811
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000002994,
+            22.275951719284055,
+            6.691455364848117
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000002842,
+            22.106927728652956,
+            6.341175364848112
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000002689,
+            21.937903738021852,
+            5.991525364848114
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000002539,
+            21.937903738021852,
+            5.642085364848097
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000002385,
+            21.76887950897217,
+            5.29159536484811
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000000022325,
+            21.599855518341066,
+            4.9415253648481166
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000000020805,
+            21.430831527709962,
+            4.591665364848107
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000001924,
+            21.430831527709962,
+            4.241385364848102
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000001766,
+            21.26180729866028,
+            3.891735364848101
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000000016044,
+            21.092783308029173,
+            3.541455364848124
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000001447,
+            20.923759078979494,
+            3.191595364848111
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000001288,
+            20.75473508834839,
+            2.841525364848115
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000001129,
+            20.75473508834839,
+            2.49145536484812
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000000009706,
+            20.75473508834839,
+            2.141385364848095
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000000813,
+            20.75473508834839,
+            1.7917353648480956
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000000653,
+            20.75473508834839,
+            1.4414553648481216
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000000496,
+            20.802428202525725,
+            1.091595364848111
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.00000000000337,
+            20.787142398405074,
+            0.7417353648480995
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.000000000001776,
+            20.771847419131888,
+            0.3916653648481061
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "frameTiming": {
+        "medianMs": 5.599999999998545,
+        "p95Ms": 11.19999999999709
+      },
+      "allPassDraws": [
+        249,
+        589
+      ],
+      "allPassTriangles": [
+        2501946,
+        4152177
+      ]
+    },
+    {
+      "name": "ramp",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 1459,
+      "seconds": 8.105399999999896,
+      "distanceMetres": 16.816659871359178,
+      "start": [
+        36,
+        22.613999938964845,
+        10
+      ],
+      "end": [
+        35.87776999286249,
+        20.778216064135492,
+        0.028138236810480496
+      ],
+      "maxFootRise": 7.105427357601002e-15,
+      "maxFootDrop": 0.09943811898003219,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5703779276631735,
+      "trace": [
+        {
+          "position": [
+            35.79892142191118,
+            22.61399993896485,
+            9.932973807303725
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.48201402560631,
+            22.613999938964845,
+            9.827338008535433
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.151429749836154,
+            22.613999938964845,
+            9.717143249945376
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.81972010357008,
+            22.613999938964845,
+            9.60657336785669
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.4876370975576,
+            22.613999938964845,
+            9.495879032519195
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.155733341235354,
+            22.613999938964845,
+            9.38524444707845
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.82362807520777,
+            22.613999938964845,
+            9.27454269173592
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.49152254697149,
+            22.613999938964845,
+            9.163840848990493
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.15941698870593,
+            22.613999938964845,
+            9.053138996235313
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.89146709560116,
+            22.613999938964845,
+            8.8590053870322
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.698091272166465,
+            22.613999938964845,
+            8.573226977894574
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.5183249553053,
+            22.613999938964845,
+            8.273587302651219
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.34112336738923,
+            22.613999938964845,
+            7.972042699905221
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.14340872984772,
+            22.613999938964845,
+            7.686565406515391
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.93311914501229,
+            22.514561819984813,
+            7.404179513012353
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.723659024392088,
+            22.458372151248458,
+            7.125537484574131
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.512385578162135,
+            22.4017418259756,
+            6.844832171452306
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.30184625413814,
+            22.345314546394132,
+            6.565150022803235
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.09130360256734,
+            22.276532851703884,
+            6.285470230823168
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.880886748827002,
+            22.195920559681156,
+            6.005958574475562
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.670343508755384,
+            22.115259892489263,
+            5.7262792065929204
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.51075524965836,
+            22.044357638729366,
+            5.432509449650436
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.51771448823488,
+            22.01545642723932,
+            5.096152146766396
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.55682620599196,
+            21.986047627651978,
+            4.747672624000747
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.59970800015132,
+            21.95680715222881,
+            4.400412715786687
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.643116172522983,
+            21.927549600158077,
+            4.052852731410885
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.686509926842525,
+            21.8983449004063,
+            3.7059081796804696
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.729911904441426,
+            21.869140252869236,
+            3.3589626376336095
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.773393170433074,
+            21.83988299422654,
+            3.011391872179409
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.81684851510577,
+            21.810643277645834,
+            2.664029474200146
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.86030388019811,
+            21.766606958955933,
+            2.316667075729798
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.90373318028182,
+            21.714811475474065,
+            1.9695130530497442
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.947188548854555,
+            21.662984902205036,
+            1.6221506546261526
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.993759441048656,
+            21.61147588473321,
+            1.280298434442389
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.240373507390444,
+            21.560745219878044,
+            1.111256734079425
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.570193016590032,
+            21.510725718777476,
+            1.0217058288115568
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.9100366534512,
+            21.460658703241453,
+            0.9417806999788477
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.248779839515,
+            21.410929690826613,
+            0.8635889871616083
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.59175042482882,
+            21.360602292936477,
+            0.7846077274933029
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.93310000763699,
+            21.310515554633,
+            0.7060231885173368
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.271995712898104,
+            21.260789226221682,
+            0.6280064982411073
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.61314276279369,
+            21.21073260214542,
+            0.5494719081913748
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.95654096061543,
+            21.147293457245738,
+            0.47041913731094587
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.29727874663933,
+            21.081836079828456,
+            0.39197881921937877
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.63863047502872,
+            21.016260761150974,
+            0.31339716801743406
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.97957290883181,
+            20.95076406994942,
+            0.23490973953271255
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.31846886944972,
+            20.885660516149528,
+            0.15689342408123072
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.661867071091294,
+            20.81969206006481,
+            0.07784065999746631
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "frameTiming": {
+        "medianMs": 5.5,
+        "p95Ms": 6.5
+      },
+      "allPassDraws": [
+        257,
+        341
+      ],
+      "allPassTriangles": [
+        2491797,
+        2673806
+      ]
+    },
+    {
+      "name": "return",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 4232,
+      "seconds": 33.122800000000254,
+      "distanceMetres": 69.50388895546504,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        24.072752273030353,
+        14.982902166149877,
+        65.89939051874228
+      ],
+      "maxFootRise": 0.16902422904968262,
+      "maxFootDrop": 0.17428588867187855,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.575488565874154,
+      "trace": [
+        {
+          "position": [
+            36,
+            20.771763115993366,
+            0.3897358427947471
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.797075950570143,
+            0.9690935419357442
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.754735088348387,
+            1.5521218195125839
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.75473508834839,
+            2.135497980803945
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.75473508834839,
+            2.70753787722956
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.923759078979494,
+            3.2904978742258786
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.26180729866028,
+            3.873877874144612
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.430831527709966,
+            4.48035787414239
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.599855518341066,
+            5.087047874142327
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.937903738021852,
+            5.705287874142371
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.106927728652956,
+            6.300427874142357
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.27595171928406,
+            6.883597874142317
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            7.478737874142364
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            8.07366787414234
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            8.692117874142347
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            9.322117874142348
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            9.952117874142353
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.61399993896485,
+            10.570567874142359
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            11.177257874142352
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            11.783737874142394
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            12.401977874142384
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.613999938964845,
+            12.996907874142364
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.61399993896484,
+            13.603807874142365
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.563023122777533,
+            14.186977874142396
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.294000005722047,
+            14.770357874142377
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            22.13399991989136,
+            15.353737874142421
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            15.92535787414239
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            16.497187874142433
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            17.080357874142408
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            17.663527874142442
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            18.259297874142415
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.974000072479253,
+            18.888667874142435
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            19.51866787414243
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            20.137117874142422
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            20.75535787414242
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            21.350077874142453
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            21.945217874142447
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            22.540777874142474
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            23.147047874142448
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            23.75121787414248
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            24.360427874142506
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            24.954517874142503
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            25.55028787414254
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.799714183807374,
+            26.145217874142517
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.451142883300783,
+            26.775217874142523
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.10257134437561,
+            27.41697787414254
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.75400004386902,
+            28.12866787414254
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.40542862415314,
+            28.922467874142566
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            29.680357874142558
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            30.42690787414256
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            31.11528787414261
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            31.780147874142568
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            32.421907874142555
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227964,
+            33.04014787414252
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            33.656077874142554
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            34.25331787414252
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            34.82577787414251
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            35.39697787414249
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            35.95683787414249
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            36.54000787414242
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227964,
+            37.100287874142424
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            19.883047676086427,
+            37.6954278741424
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            19.709238147735597,
+            38.28804787414234
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            19.361619031429292,
+            38.88507787414236
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            19.187809503078462,
+            39.492397874142306
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            19.002033216993127,
+            40.11966787414231
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            18.935316216309644,
+            40.78683787414229
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            18.869985215640366,
+            41.44014787414222
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            18.802302214946984,
+            42.116977874142236
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            18.733485214241995,
+            42.80514787414215
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            18.669330213584754,
+            43.44669787414211
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.99679146951082,
+            18.62042218965338,
+            43.93577810844552
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.65508449611248,
+            18.538214973752353,
+            44.50990739811876
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.26941817328532,
+            18.46124448483334,
+            45.022433584529885
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.910777795039564,
+            18.38982883748939,
+            45.49736634432451
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.59438625830257,
+            18.32682920761018,
+            45.916318882181436
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.292674764208854,
+            18.26675273841709,
+            46.315831807886156
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.0250070389224,
+            18.213455029848333,
+            46.670265456259855
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.814036778998215,
+            18.171446859525254,
+            46.9496228515724
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.603193075855216,
+            18.129463890222414,
+            47.228812665934626
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.39222281585998,
+            18.08745572150464,
+            47.50817006121415
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.18125255586378,
+            18.045447552786836,
+            47.787527456493265
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.97053540955677,
+            18.003489783223433,
+            48.06654968993036
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.75994482009435,
+            17.9615572112901,
+            48.34540434244647
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.54859488956415,
+            17.919473440179125,
+            48.62526448048848
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.33762462956782,
+            17.877465268656962,
+            48.90462187576756
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.126527812726906,
+            17.83543189799597,
+            49.184146851967576
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.915684109575206,
+            17.793448927541466,
+            49.46333666632565
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.704840406423504,
+            17.751465957086964,
+            49.742526480683736
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.494123260116446,
+            17.70950818698976,
+            50.021548714120826
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.283153000120144,
+            17.66750002501932,
+            50.300906109399854
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.072182740123814,
+            17.62549186304887,
+            50.58026350467893
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.86108592328287,
+            17.583458501221216,
+            50.85978848087897
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.650115663286538,
+            17.54145033925077,
+            51.13914587615805
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.439271960134832,
+            17.499467377137535,
+            51.41833569051613
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.228301700138537,
+            17.457459215167095,
+            51.69769308579516
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.022277085802862,
+            17.43489883200691,
+            51.97977977298329
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.87837629455091,
+            17.423376905632985,
+            52.295809101448924
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.753398058634037,
+            17.411752895666478,
+            52.62239722846793
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.630700429448822,
+            17.400118005821653,
+            52.950212059534
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.508643567380712,
+            17.38851677669843,
+            53.27718828064899
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.385958821042372,
+            17.37685258279008,
+            53.605952420181346
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.263571743530125,
+            17.36521629412472,
+            53.93393162722854
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.141258563729785,
+            17.353586983995015,
+            54.26171432989215
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            29.018798607684193,
+            17.341943712898725,
+            54.58989055836667
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.89633865873365,
+            17.33030044177849,
+            54.918066790338244
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.774319214057957,
+            17.318699052925766,
+            55.24506253268487
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.651785848842906,
+            17.307048801424138,
+            55.573435513467565
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.52939931811094,
+            17.295412510259744,
+            55.901414997574875
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.407306456320573,
+            17.283804140017416,
+            56.22860748831971
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.28484650835542,
+            17.272160867880192,
+            56.556783720768664
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.16245997762533,
+            17.260524576121952,
+            56.8847632048768
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            28.04058736754017,
+            17.24893714701657,
+            57.211365450599374
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.917613498930137,
+            17.237245012226488,
+            57.54091892143392
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.795153550965033,
+            17.225601740089267,
+            57.86909515388294
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.67291385470488,
+            17.213979409088978,
+            58.19668114130951
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.551041244619686,
+            17.20239197998359,
+            58.52328338703209
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.428140793244626,
+            17.190706825572498,
+            58.852640109525794
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.3058276797495,
+            17.179077514193235,
+            59.18042284529318
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.18366140072435,
+            17.167462163571926,
+            59.50781208437896
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            27.061348287229197,
+            17.155832852192663,
+            59.83559482014633
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.99370301691686,
+            17.149999952316286,
+            60.17433544619058
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.98696149789282,
+            17.149999952316286,
+            60.52275491486079
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.98936691779972,
+            17.149999952316286,
+            60.87096341636913
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.99322147226453,
+            17.149999952316286,
+            61.2228818429474
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.997301066602684,
+            17.149999952316282,
+            61.572505716715256
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.9341280310533,
+            16.982824063301088,
+            61.90185207669029
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.74972874826537,
+            16.8156480550766,
+            62.19236550500415
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.547974902120863,
+            16.648472046852113,
+            62.475762229922445
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.342419204332316,
+            16.648472046852113,
+            62.760578215616
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            26.137328260084065,
+            16.481296157836915,
+            63.04426813209866
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.932942166934755,
+            16.314120149612428,
+            63.32692335058946
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.727198335312078,
+            16.14694414138794,
+            63.611448640729485
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.52194618619496,
+            15.979768133163454,
+            63.895293005721186
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.316693970125616,
+            15.812592124938966,
+            64.17913733812622
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            25.11193395696004,
+            15.645416355133058,
+            64.46230098423243
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.90680478396836,
+            15.47824034690857,
+            64.7459751410965
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.702167822392493,
+            15.47824034690857,
+            65.02896861603051
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.49666949054078,
+            15.311064338684083,
+            65.31315328417068
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.29227863472548,
+            15.143888330459596,
+            65.59580641816896
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            24.08641114418965,
+            14.987819040173083,
+            65.88050159768642
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "frameTiming": {
+        "medianMs": 5.7000000000116415,
+        "p95Ms": 11.39999999999418
+      },
+      "allPassDraws": [
+        247,
+        563
+      ],
+      "allPassTriangles": [
+        2458091,
+        4124449
+      ]
+    },
+    {
+      "name": "ramp return",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 1255,
+      "seconds": 8.10539999999993,
+      "distanceMetres": 16.82984271815697,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        35.88358190946102,
+        22.613999938964845,
+        9.962905704598912
+      ],
+      "maxFootRise": 0.10061892406924144,
+      "maxFootDrop": 7.105427357601002e-15,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.5699207290224595,
+      "trace": [
+        {
+          "position": [
+            35.79314815036059,
+            20.79456083232204,
+            0.049644443913455426
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.4686496221155,
+            20.85703740832676,
+            0.12752409069227405
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.13020865322596,
+            20.922198359996685,
+            0.20874992322576275
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.79000667557756,
+            20.987698363427995,
+            0.29039839786138055
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.44983034095257,
+            21.053193429738908,
+            0.3720407181713815
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.10922516398247,
+            21.118771062222045,
+            0.4537859606442002
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.768821843907176,
+            21.18430983065332,
+            0.5354827574622751
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.429030859758335,
+            21.240750304200542,
+            0.6170325936579931
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.07719196630156,
+            21.292786688555395,
+            0.7014739280876148
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.736379941254874,
+            21.34319221750032,
+            0.7832688140988191
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.39699732516608,
+            21.39338633924918,
+            0.8647206419601313
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.055981098367106,
+            21.443822069292008,
+            0.9465645363918888
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.715577475563403,
+            21.494167196227707,
+            1.0282614058647797
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.375378054092558,
+            21.54448212212754,
+            1.109909267017783
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.05196371705625,
+            21.594552326723534,
+            1.2062904609283662
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.93841893433227,
+            21.646806728159422,
+            1.491383396670844
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.880218502541183,
+            21.71342043809573,
+            1.9355086931986545
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.821473641294936,
+            21.79345009274672,
+            2.4802575549910353
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.760939399071372,
+            21.84288876903685,
+            3.0486495682990067
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.697921273608618,
+            21.89290645182658,
+            3.640654523864411
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.633726096897895,
+            21.943859271174166,
+            4.2437274528237525
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.56704139497168,
+            21.996788102007155,
+            4.87018826583428
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.517485375585572,
+            22.047669498236047,
+            5.4695928654047155
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.668039542761928,
+            22.12523880814987,
+            5.766380664490698
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.873003430843404,
+            22.205542323062005,
+            6.045723333468629
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.086111032339005,
+            22.286007858196516,
+            6.324129719219534
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.299493647657105,
+            22.34984240528142,
+            6.60134010314806
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.512869457700027,
+            22.406182206053497,
+            6.878329456761325
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.72677480828135,
+            22.46265781836076,
+            7.155975671257291
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.93888836021561,
+            22.613999938964845,
+            7.4312915032730205
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.15395014318901,
+            22.613999938964845,
+            7.710433204955204
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.36001806925681,
+            22.613999938964845,
+            7.992827656636065
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.66253377855987,
+            22.613999938964845,
+            8.46399298257368
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.984593287345135,
+            22.613999938964845,
+            8.961101950669637
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.36436401271964,
+            22.613999938964845,
+            9.15419161434631
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.727763765948716,
+            22.613999938964845,
+            9.275334845604423
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.10522852224039,
+            22.613999938964845,
+            9.396197438855669
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.46095669299426,
+            22.613999938964845,
+            9.509605282178239
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.83892038246922,
+            22.613999938964845,
+            9.630043960981345
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.216887138105385,
+            22.613999938964845,
+            9.75047654662797
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.582848924171614,
+            22.613999938964845,
+            9.867083118627496
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "frameTiming": {
+        "medianMs": 5.600000000005821,
+        "p95Ms": 11.10000000000582
+      },
+      "allPassDraws": [
+        264,
+        559
+      ],
+      "allPassTriangles": [
+        2537960,
+        4112593
+      ]
+    },
+    {
+      "name": "jump",
+      "success": true,
+      "reason": "route endpoint reached",
+      "frames": 786,
+      "seconds": 8.588599999999929,
+      "distanceMetres": 17.88524460933997,
+      "start": [
+        36,
+        19.883047676086427,
+        38
+      ],
+      "end": [
+        36,
+        21.974000072479246,
+        20.11475539066003
+      ],
+      "maxFootRise": 0.17428588867187145,
+      "maxFootDrop": 0.07248022749978134,
+      "maxAirHeight": 1.1648482800000046,
+      "supportEvents": [],
+      "jumps": 1,
+      "landings": 1,
+      "minCameraDistance": 11.272359662939033,
+      "trace": [
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            37.50623749754569
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            36.7973267784457
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.988975155227937,
+            36.087983414653074
+          ],
+          "grounded": false,
+          "phase": "airborne"
+        },
+        {
+          "position": [
+            36,
+            20.992330522727976,
+            35.38511526367408
+          ],
+          "grounded": false,
+          "phase": "airborne"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            34.69736538723637
+          ],
+          "grounded": true,
+          "phase": "landing"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            33.9972253906154
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            33.29708539065964
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.05685708522797,
+            32.59736539066019
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            31.89680539066024
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            31.19750539066023
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            30.49736539066016
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.056857085227968,
+            29.797435390660176
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.231142854690553,
+            29.109055390660192
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.579714274406435,
+            28.433695390660095
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            20.928285694122312,
+            27.743845390660088
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.276857233047487,
+            27.056095390660072
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.62542853355408,
+            26.37905539066014
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            25.69151539066009
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            25.026025390660145
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            24.31412539066013
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            23.62574539066002
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            22.949125390660097
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            22.284055390660065
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            21.619615390660005
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.97400007247925,
+            20.918635390660008
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36,
+            21.974000072479246,
+            20.24306539065998
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "frameTiming": {
+        "medianMs": 11.099999999976717,
+        "p95Ms": 12.200000000011642
+      },
+      "allPassDraws": [
+        565,
+        571
+      ],
+      "allPassTriangles": [
+        4105009,
+        4143153
+      ]
+    },
+    {
+      "name": "edge",
+      "success": true,
+      "reason": "guard stopped lateral walk",
+      "frames": 476,
+      "seconds": 4.283299999999998,
+      "distanceMetres": 4.643306430550993,
+      "start": [
+        36,
+        19.361619031429292,
+        39
+      ],
+      "end": [
+        40.64330643055099,
+        19.3596190571785,
+        39
+      ],
+      "maxFootRise": 0.012000024318695068,
+      "maxFootDrop": 0.012000024318695068,
+      "maxAirHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 11.497917098754526,
+      "trace": [
+        {
+          "position": [
+            36.41112761357198,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            36.99237423221415,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            37.5401407295997,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            38.088446575075274,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            38.63696643539413,
+            19.361619031429292,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            39.173306430726,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            39.710066430557376,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.23527643055125,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64330643055099,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64330643055099,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64330643055099,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64330643055099,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64330643055099,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64330643055099,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            40.64330643055099,
+            19.3596190571785,
+            39
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "frameTiming": {
+        "medianMs": 11,
+        "p95Ms": 11.299999999988358
+      },
+      "allPassDraws": [
+        511,
+        515
+      ],
+      "allPassTriangles": [
+        3981513,
+        3992217
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "enabled": true,
+      "frames": 1144,
+      "medianMs": 11.099999999976717,
+      "p95Ms": 16.70000000001164,
+      "renderCpuMedianMs": 3.5,
+      "renderCpuP95Ms": 4.799999982118607,
+      "drawCallRange": [
+        280,
+        575
+      ],
+      "triangleRange": [
+        2587052,
+        4142913
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    },
+    {
+      "enabled": false,
+      "frames": 2138,
+      "medianMs": 5.5,
+      "p95Ms": 6.599999999976717,
+      "renderCpuMedianMs": 0.5999999940395355,
+      "renderCpuP95Ms": 0.7000000178813934,
+      "drawCallRange": [
+        135,
+        144
+      ],
+      "triangleRange": [
+        2332150,
+        2359134
+      ],
+      "method": "same 12-second arrival-to-square camera rail, 2-second warmup, same existing scene, settings and explorer; rAF is frame timing, CPU submission is not GPU timing"
+    }
+  ],
+  "switches": [
+    {
+      "enabled": true,
+      "sceneId": "eca959f0-c605-4e56-ad09-80740e927c3b",
+      "sameScene": true,
+      "rendererCount": "1",
+      "cache": {
+        "requests": 6,
+        "cachedFiles": 6,
+        "loadedFiles": 6
+      }
+    },
+    {
+      "enabled": false,
+      "sceneId": "eca959f0-c605-4e56-ad09-80740e927c3b",
+      "sameScene": true,
+      "rendererCount": "1",
+      "cache": {
+        "requests": 6,
+        "cachedFiles": 6,
+        "loadedFiles": 6
+      }
+    },
+    {
+      "enabled": true,
+      "sceneId": "eca959f0-c605-4e56-ad09-80740e927c3b",
+      "sameScene": true,
+      "rendererCount": "1",
+      "cache": {
+        "requests": 6,
+        "cachedFiles": 6,
+        "loadedFiles": 6
+      }
+    },
+    {
+      "enabled": false,
+      "sceneId": "eca959f0-c605-4e56-ad09-80740e927c3b",
+      "sameScene": true,
+      "rendererCount": "1",
+      "cache": {
+        "requests": 6,
+        "cachedFiles": 6,
+        "loadedFiles": 6
+      }
+    },
+    {
+      "enabled": true,
+      "sceneId": "eca959f0-c605-4e56-ad09-80740e927c3b",
+      "sameScene": true,
+      "rendererCount": "1",
+      "cache": {
+        "requests": 6,
+        "cachedFiles": 6,
+        "loadedFiles": 6
+      }
+    }
+  ],
+  "passSample": {
+    "view": "market",
+    "enabled": false,
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "draws": 65
+      },
+      {
+        "target": "canvas",
+        "viewport": [
+          0,
+          0,
+          1354,
+          1130
+        ],
+        "draws": 76
+      }
+    ]
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,38 @@
+{
+  "editorial": {
+    "mode": "editorial",
+    "renderer": "1",
+    "scene": "9876cc3f-9866-4759-80fe-6799e0ccaac3"
+  },
+  "work": [
+    {
+      "href": "project-transit.html",
+      "text": "01NETWORK ACCESSTransit accessibility in DKI JakartaWho can actually reach the city?"
+    },
+    {
+      "href": "project-pangan.html",
+      "text": "02FOOD SYSTEMSCritical roads for rice in West JavaWhich roads keep West Java’s rice moving?"
+    },
+    {
+      "href": "project-alphaearth-food.html",
+      "text": "03EARTH OBSERVATIONHistorical paddy screening in West JavaWhere does the historical signal justify closer inspection?"
+    },
+    {
+      "href": "project-mbr.html",
+      "text": "04URBAN MORPHOLOGYSatellite proxy for low-income communitiesWhat can satellite morphology reveal—and what can’t it replace?"
+    },
+    {
+      "href": "project-cbd.html",
+      "text": "05SPATIAL CLUSTERINGMapping Indonesia’s business centersWhere do commercial centers emerge from 91,940 POIs?"
+    },
+    {
+      "href": "project-bandung-cafe.html",
+      "text": "06SITE SCREENINGChoosing where to visit for a café in BandungWhich neighbourhoods deserve a site visit, and what can the data not say?"
+    }
+  ],
+  "mbr": {
+    "caseStudy": "project-mbr.html",
+    "title": "A Satellite Proxy for Low-Income Communities in DKI Jakarta",
+    "url": "http://127.0.0.1:4175/portfolio.html?project=mbr&panel=study"
+  }
+}

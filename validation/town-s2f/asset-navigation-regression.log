@@ -1,0 +1,36 @@
+✔ three enhanced variants retain genuine imported meshes without changing cached source buffers or baseline materials (260.052209ms)
+✔ office glass is physically recessed while the uniform source scale and source footprint remain unchanged (118.17175ms)
+✔ all three frontages support character clearance and exported collision remains valid after translation and rotation (165.724333ms)
+✔ instanced architectural geometry is counted per visible instance (0.152375ms)
+✔ enhancement prototypes are cached while instances retain independent transforms and collision data (108.955583ms)
+✔ the enhancement record binds the unchanged source GLB and current generator to their verified digests (2.548125ms)
+✔ captured original and enhanced pairs use identical camera tuples and retain all requested views without a fabricated human score (0.881167ms)
+✔ all foundation delivery files match provenance and embed real geometry and textures (5.959416ms)
+✔ real building and shop preserve proportions, share mesh buffers, and align their collision bounds after rotation (132.572166ms)
+✔ the real showcase has ten model types, aligned supports and passable paving beside solid imported buildings (124.0495ms)
+✔ concurrent requests share a promise; failed loads can retry without caching a broken asset (0.709208ms)
+✔ jump follows gravity, has a consistent apex across frame rates, and lands once (3.916791ms)
+✔ walk/run jumps retain directional movement; airborne jump requests cannot add launches (0.6365ms)
+✔ steps and the real station ramp support jumping, while walls and low ceilings remain solid (1.122666ms)
+✔ support drops cause a fall; unsafe positions recover and mode handoff settles vertical state (0.439083ms)
+✔ retargeted authored jump clips animate the original rig without stretching bones or moving physics (166.902916ms)
+✔ every fictional guide has a verified project, distinct identity, behavior, and research choices (0.4925ms)
+✔ selected imported architecture is self-contained, quantized, hash verified and within budget (5.558708ms)
+✔ an approaching resident cannot trap a player inside its collision footprint (0.400125ms)
+✔ the pavilion floor and approach ramp support walking and a full jump (0.852834ms)
+✔ keyboard controls isolate dialogue, reject repeated jumps, and operate focused walking buttons (0.762584ms)
+✔ registry contains six unique, existing research routes (1.279167ms)
+✔ URL roundtrip preserves hosting path, hash, unrelated parameters and project context (1.368083ms)
+✔ invalid deep links and saved mission values are sanitized (0.19175ms)
+✔ collision prevents tunnelling, permits wall sliding and bounds the district (1.149667ms)
+✔ both landmark focus positions are safe and reachable from the spawn (11.510959ms)
+✔ player controls move, sprint, turn, animate and stop against real collision data (1.5985ms)
+✔ camera pulls ahead of a building behind the player (1.653208ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 776.329666

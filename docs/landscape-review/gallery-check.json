@@ -1,0 +1,92 @@
+{
+  "desktop": {
+    "dimensions": [
+      1280,
+      720
+    ],
+    "images": [
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "01-aerial.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "02-profile.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "03-cliff.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "04-spawn.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "05-trail.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "06-overlook.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "07-jump.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "08-landing.jpg",
+        "width": 1280
+      },
+      {
+        "height": 712,
+        "loaded": true,
+        "src": "09-editorial.jpg",
+        "width": 1265
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "10-resumed.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "before-aerial.jpg",
+        "width": 1280
+      },
+      {
+        "height": 720,
+        "loaded": true,
+        "src": "comparison-aerial.jpg",
+        "width": 1280
+      }
+    ],
+    "overflow": false,
+    "title": "Transit Kingdom: R0-A landscape review"
+  },
+  "phone": {
+    "dimensions": [
+      390,
+      844
+    ],
+    "overflow": false
+  },
+  "logs": []
+}

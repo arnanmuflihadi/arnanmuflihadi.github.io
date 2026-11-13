@@ -1,0 +1,38 @@
+{
+  "common-interface.glb": {
+    "bytes": 527172,
+    "triangles": 8404,
+    "primitives": 6,
+    "materials": 6
+  },
+  "support-reference.glb": {
+    "bytes": 6164,
+    "triangles": 100,
+    "primitives": 1,
+    "materials": 0
+  },
+  "foundation-hybrid.glb": {
+    "bytes": 543452,
+    "triangles": 7248,
+    "primitives": 7,
+    "materials": 7
+  },
+  "foundation-b.glb": {
+    "bytes": 107748,
+    "triangles": 1956,
+    "primitives": 3,
+    "materials": 3
+  },
+  "foundation-a.glb": {
+    "bytes": 134276,
+    "triangles": 2448,
+    "primitives": 3,
+    "materials": 3
+  },
+  "exact-terrain-reference.glb": {
+    "bytes": 479004,
+    "triangles": 26416,
+    "primitives": 1,
+    "materials": 1
+  }
+}

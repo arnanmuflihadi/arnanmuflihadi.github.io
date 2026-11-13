@@ -1,0 +1,122 @@
+[
+  {
+    "ascent": 34.993916830454154,
+    "blockedSeconds": 0,
+    "complete": true,
+    "descent": 3.5187697787564396,
+    "distance": 215.00403654919936,
+    "elapsed": 129.52219999997124,
+    "end": [
+      -44.655620139446114,
+      48.64253522772798,
+      -48.60107110471142
+    ],
+    "guided": true,
+    "id": "skyport-lookout",
+    "jumps": 1,
+    "jumpsStart": 0,
+    "landings": 1,
+    "landingsStart": 0,
+    "maxCrossTrack": 0.5363323427145656,
+    "maxSupportError": 0,
+    "minCameraDistance": 3.096784571094444,
+    "movingSeconds": 60.35060000000223,
+    "run": 1,
+    "start": [
+      27,
+      17.149999618530273,
+      60
+    ],
+    "waypoint": 31
+  },
+  {
+    "ascent": 1.8314149425436028,
+    "blockedSeconds": 0,
+    "complete": true,
+    "descent": 28.25821332791834,
+    "distance": 190.28622996337168,
+    "elapsed": 119.26509999997732,
+    "end": [
+      28.472015003125225,
+      22.299999237060547,
+      13.85268946294099
+    ],
+    "guided": true,
+    "id": "return-loop",
+    "jumps": 0,
+    "jumpsStart": 1,
+    "landings": 0,
+    "landingsStart": 1,
+    "maxCrossTrack": 0.5396074600718361,
+    "maxSupportError": 0,
+    "minCameraDistance": 4.570682502233674,
+    "movingSeconds": 41.01080000000087,
+    "run": 2,
+    "start": [
+      -45,
+      48.726797622435285,
+      -49
+    ],
+    "waypoint": 18
+  },
+  {
+    "ascent": 0.010950754870627575,
+    "blockedSeconds": 0,
+    "complete": true,
+    "descent": 5.160950373400901,
+    "distance": 70.24606442326693,
+    "elapsed": 87.46059999999338,
+    "end": [
+      27.009617345945976,
+      17.149999618530273,
+      59.45278973903373
+    ],
+    "guided": true,
+    "id": "garden-loop",
+    "jumps": 0,
+    "jumpsStart": 1,
+    "landings": 0,
+    "landingsStart": 1,
+    "maxCrossTrack": 0.5323465559120794,
+    "maxSupportError": 0,
+    "minCameraDistance": 7.512736243529693,
+    "movingSeconds": 33.6627000000015,
+    "run": 3,
+    "start": [
+      22,
+      22.299999237060547,
+      12
+    ],
+    "waypoint": 12
+  },
+  {
+    "ascent": 1.6478126574472114,
+    "blockedSeconds": 0,
+    "complete": true,
+    "descent": 4.156675004196586e-13,
+    "distance": 15.140037266085823,
+    "elapsed": 8.104799999999816,
+    "end": [
+      21.00516247912916,
+      23.947811894507343,
+      4.341111351182678
+    ],
+    "guided": true,
+    "id": "square-guild",
+    "jumps": 0,
+    "jumpsStart": 1,
+    "landings": 0,
+    "landingsStart": 1,
+    "maxCrossTrack": 0.5378797057618488,
+    "maxSupportError": 0,
+    "minCameraDistance": 9.901424136702506,
+    "movingSeconds": 7.38409999999989,
+    "run": 4,
+    "start": [
+      29,
+      22.299999237060547,
+      14
+    ],
+    "waypoint": 5
+  }
+]

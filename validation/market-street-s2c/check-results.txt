@@ -1,0 +1,18 @@
+{
+  "protected_files_checked": 1310,
+  "changed": [],
+  "approved_assets_unchanged": true,
+  "main_scene": "S2C Market Street",
+  "building_count": 4,
+  "total_evaluated_triangles": 170709,
+  "material_count": 38,
+  "packed_images": 5,
+  "new_glb_exports": 0,
+  "production_game_tests": "not run; isolated Blender art phase",
+  "browser_rendering": "not tested; S2-C export/integration explicitly prohibited",
+  "native": {
+    "file": "validation/market-street-s2c/market-street.blend",
+    "bytes": 3969662,
+    "sha256": "c01b3291868e79e1abfba7b2cc4ada9c83f299d004bb333d56842ab6a5efadef"
+  }
+}

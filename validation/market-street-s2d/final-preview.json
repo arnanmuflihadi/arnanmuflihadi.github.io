@@ -1,0 +1,359 @@
+{
+  "state": "loaded",
+  "mode": "studio",
+  "view": "arrival",
+  "glassMode": "authored transmission",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "quality": {
+    "buffer": [
+      1800,
+      1200
+    ],
+    "dpr": 1,
+    "antialias": true,
+    "shadows": "PCFSoft 2048",
+    "toneMapping": "ACES",
+    "exposure": 1,
+    "transmission": "preserved; one Kopi Awan material",
+    "islandLighting": "unchanged R0-A3 lights; additional small gradient environment for imported PBR reflections",
+    "studioLighting": "hemisphere 1.5; sun 2.3; fill .6; gradient environment 256x128"
+  },
+  "camera": {
+    "position": [
+      0,
+      3.092857142857,
+      -6.65
+    ],
+    "quaternion": [
+      0.07847998694507716,
+      0,
+      0,
+      0.9969156893384218
+    ],
+    "near": 0.12,
+    "far": 1000,
+    "fov": 53.13010235415598,
+    "sourceBlender": {
+      "p": [
+        0,
+        6.65,
+        3.092857142857
+      ],
+      "t": [
+        0,
+        25,
+        6
+      ],
+      "lens": 24
+    },
+    "eyeHeight": 1.65
+  },
+  "asset": {
+    "meshes": 107,
+    "triangles": 170709,
+    "geometries": 107,
+    "materials": 59,
+    "textures": [
+      {
+        "name": "colormap",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "Leaves",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Bark_NormalTree",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Bark_NormalTree_Normal",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "Leaves_NormalTree_C",
+        "width": 256,
+        "height": 256
+      }
+    ],
+    "missingTextures": [],
+    "cacheReused": true,
+    "bytes": 10007904,
+    "bounds": {
+      "min": [
+        -18,
+        -3.8631129264831543,
+        -40
+      ],
+      "max": [
+        18,
+        11.9320068359375,
+        10
+      ]
+    },
+    "instancedMeshes": [
+      {
+        "name": "tree002",
+        "count": 7
+      },
+      {
+        "name": "tree002_1",
+        "count": 7
+      },
+      {
+        "name": "MarketStreet36m1",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m2",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m3",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m4",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m5",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m6",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m7",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m8",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m9",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m10",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m11",
+        "count": 3
+      },
+      {
+        "name": "MarketStreet36m12",
+        "count": 20
+      }
+    ],
+    "glass": [
+      {
+        "name": "S2A / soft blue green glass",
+        "alpha": 1,
+        "transparent": false,
+        "transmission": 0.9599999785423279
+      },
+      {
+        "name": "S2C / shared low-cost teal glazing",
+        "alpha": 0.6200000047683716,
+        "transparent": true,
+        "transmission": 0
+      },
+      {
+        "name": "S2C / shared low-cost teal glazing",
+        "alpha": 0.6200000047683716,
+        "transparent": true,
+        "transmission": 0
+      }
+    ],
+    "geometryArrayBufferBytes": 9637842,
+    "buildings": [
+      {
+        "id": "B1 Kopi Awan",
+        "meshes": 18,
+        "triangles": 35876,
+        "geometries": 18,
+        "materials": 18,
+        "textures": 2,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            -14.020001411437988,
+            1.2028571367263794,
+            -14.369999885559082
+          ],
+          "max": [
+            -3.039966583251953,
+            10.014863967895508,
+            -5.629999160766602
+          ]
+        }
+      },
+      {
+        "id": "B2 Lembaran Shophouse",
+        "meshes": 21,
+        "triangles": 19710,
+        "geometries": 21,
+        "materials": 21,
+        "textures": 2,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            3.408168077468872,
+            1.3942856788635254,
+            -14.930998802185059
+          ],
+          "max": [
+            13.83349895477295,
+            10.50428581237793,
+            -7.468998908996582
+          ]
+        }
+      },
+      {
+        "id": "B3 Rupa Rimba Atelier",
+        "meshes": 16,
+        "triangles": 12012,
+        "geometries": 16,
+        "materials": 16,
+        "textures": 0,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            -13.833500862121582,
+            3.119999647140503,
+            -26.85049819946289
+          ],
+          "max": [
+            -3.696500539779663,
+            9.130000114440918,
+            -16.74949836730957
+          ]
+        }
+      },
+      {
+        "id": "B4 Serambi Corner Shop",
+        "meshes": 18,
+        "triangles": 33926,
+        "geometries": 18,
+        "materials": 18,
+        "textures": 2,
+        "missingTextures": [],
+        "localYupBounds": {
+          "min": [
+            3.2503671646118164,
+            3.119999885559082,
+            -27.733749389648438
+          ],
+          "max": [
+            13.791200637817383,
+            11.9320068359375,
+            -17.749300003051758
+          ]
+        }
+      }
+    ]
+  },
+  "loaderCache": {
+    "requests": 1,
+    "cachedFiles": 1,
+    "loadedFiles": 1
+  },
+  "frameAllPasses": {
+    "calls": 321,
+    "triangles": 512127,
+    "geometries": 116,
+    "textures": 10
+  },
+  "measuredDrawPasses": {
+    "method": "observed WebGL draw functions grouped by actual bound framebuffer; no quality changes",
+    "mode": "studio",
+    "view": "arrival",
+    "glassMode": "authored transmission",
+    "characterVisible": false,
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "calls": 107,
+        "instancedCalls": 14
+      },
+      {
+        "target": "offscreen 1",
+        "viewport": [
+          0,
+          0,
+          192,
+          128
+        ],
+        "calls": 9,
+        "instancedCalls": 0
+      },
+      {
+        "target": "offscreen 2",
+        "viewport": [
+          0,
+          128,
+          96,
+          64
+        ],
+        "calls": 8,
+        "instancedCalls": 0
+      },
+      {
+        "target": "offscreen 3",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "calls": 104,
+        "instancedCalls": 14
+      },
+      {
+        "target": "main canvas",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "calls": 110,
+        "instancedCalls": 14
+      }
+    ],
+    "totalCalls": 338
+  },
+  "sceneGeometry": {
+    "meshes": 107,
+    "triangles": 170709,
+    "geometries": 107,
+    "materials": 59,
+    "textures": 5,
+    "missingTextures": []
+  },
+  "supportScan": null,
+  "traversal": [],
+  "performance": null,
+  "activeWalk": null,
+  "elevationReferences": false,
+  "connectorPreviewVisible": false,
+  "errors": []
+}

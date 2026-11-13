@@ -1,0 +1,10 @@
+{
+ "version": "p3b-batch3",
+ "cell": 0.3,
+ "x0": -90.0,
+ "n0": -89.0,
+ "nx": 738,
+ "nn": 781,
+ "channels": "RG uint8; R=(clamp(path_edge_distance_m,-1,2)+1)/3, G=tea soil row weight",
+ "bytes": 1152756
+}

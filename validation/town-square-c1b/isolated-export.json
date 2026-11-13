@@ -1,0 +1,30 @@
+{
+  "loaded": true,
+  "metrics": {
+    "meshes": 14,
+    "triangles": 19082,
+    "geometries": 14,
+    "materials": 12,
+    "textures": 0,
+    "missingTextures": []
+  },
+  "bounds": {
+    "min": [
+      -5.332038879394531,
+      18.885366207361223,
+      -3.2678794860839844
+    ],
+    "max": [
+      37.16535186767578,
+      25.665577983856203,
+      14.608259201049805
+    ]
+  },
+  "renderer": {
+    "frame": 1,
+    "calls": 14,
+    "triangles": 19082,
+    "points": 0,
+    "lines": 0
+  }
+}

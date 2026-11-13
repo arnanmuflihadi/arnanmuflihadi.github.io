@@ -1,0 +1,14 @@
+{
+  "checkpointedFiles": 1165,
+  "unchanged": 1164,
+  "changed": [
+    "assets/js/floating-atlas/entry.js"
+  ],
+  "missing": [],
+  "onlyExpectedHookChanged": true,
+  "approvedAssetsAndPriorEvidenceUnchanged": true,
+  "newOutputs": [
+    "validation/reset-b1",
+    "docs/urban-atlas/reset-b1"
+  ]
+}

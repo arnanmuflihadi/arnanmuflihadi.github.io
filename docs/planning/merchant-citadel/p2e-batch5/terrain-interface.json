@@ -1,0 +1,1157 @@
+{
+ "revision": "P2-B batch 5",
+ "source": "scene.json instances, kit-report bounding boxes, collision proxies, heightfield",
+ "buildings": [
+  {
+   "id": "B04",
+   "node": "A11",
+   "label": "Junction Tower House (money changer)",
+   "plan_x": -9.0,
+   "plan_n": 12.8,
+   "rotation_deg": 90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -13.0,
+    -4.0,
+    8.8,
+    17.8
+   ],
+   "envelope_x": [
+    -14.08,
+    -3.29
+   ],
+   "envelope_n": [
+    7.82,
+    18.63
+   ],
+   "top_y_above_ground_m": 15.79,
+   "district": "D2"
+  },
+  {
+   "id": "B05",
+   "node": "A03b",
+   "label": "Shophouse W1, eaves to street (baker)",
+   "plan_x": -8.0,
+   "plan_n": 26.0,
+   "rotation_deg": 90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -11.0,
+    -5.0,
+    22.0,
+    30.0
+   ],
+   "envelope_x": [
+    -12.12,
+    -3.48
+   ],
+   "envelope_n": [
+    21.17,
+    30.85
+   ],
+   "top_y_above_ground_m": 11.3,
+   "district": "D2"
+  },
+  {
+   "id": "B06",
+   "node": "A04",
+   "label": "Compact Shop W2 (dry goods)",
+   "plan_x": -8.0,
+   "plan_n": 34.4,
+   "rotation_deg": 90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -11.0,
+    -5.0,
+    32.4,
+    36.4
+   ],
+   "envelope_x": [
+    -11.79,
+    -3.47
+   ],
+   "envelope_n": [
+    31.64,
+    37.16
+   ],
+   "top_y_above_ground_m": 6.72,
+   "district": "D3"
+  },
+  {
+   "id": "B07",
+   "node": "A03",
+   "label": "Jettied Shophouse E1 (map and book seller)",
+   "plan_x": 9.0,
+   "plan_n": 13.0,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    5.0,
+    13.0,
+    10.0,
+    16.0
+   ],
+   "envelope_x": [
+    2.05,
+    13.9
+   ],
+   "envelope_n": [
+    8.88,
+    17.12
+   ],
+   "top_y_above_ground_m": 11.03,
+   "district": "D2"
+  },
+  {
+   "id": "B08",
+   "node": "A04b",
+   "label": "Compact Shop E2, eaves to street (potter)",
+   "plan_x": 7.0,
+   "plan_n": 25.0,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    5.0,
+    9.0,
+    22.0,
+    28.0
+   ],
+   "envelope_x": [
+    3.47,
+    9.76
+   ],
+   "envelope_n": [
+    21.21,
+    28.79
+   ],
+   "top_y_above_ground_m": 6.72,
+   "district": "D2"
+  },
+  {
+   "id": "B09",
+   "node": "A03",
+   "label": "Jettied Shophouse E3 (provisioner)",
+   "plan_x": 9.0,
+   "plan_n": 33.6,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    5.0,
+    13.0,
+    30.6,
+    36.6
+   ],
+   "envelope_x": [
+    2.05,
+    13.9
+   ],
+   "envelope_n": [
+    29.48,
+    37.72
+   ],
+   "top_y_above_ground_m": 11.03,
+   "district": "D2"
+  },
+  {
+   "id": "E03",
+   "node": "A09",
+   "label": "Merchants' Inn (Penginapan Saudagar)",
+   "plan_x": -26.5,
+   "plan_n": 45.0,
+   "rotation_deg": 90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -30.5,
+    -22.5,
+    40.0,
+    50.0
+   ],
+   "envelope_x": [
+    -31.48,
+    -20.4
+   ],
+   "envelope_n": [
+    39.15,
+    51.01
+   ],
+   "top_y_above_ground_m": 13.02,
+   "district": "D3"
+  },
+  {
+   "id": "B17",
+   "node": "A08",
+   "label": "Tea House, turned to the view",
+   "plan_x": 36.5,
+   "plan_n": 67.5,
+   "rotation_deg": 18,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    32.72,
+    40.28,
+    63.72,
+    71.28
+   ],
+   "envelope_x": [
+    31.36,
+    42.0
+   ],
+   "envelope_n": [
+    61.37,
+    72.52
+   ],
+   "top_y_above_ground_m": 11.17,
+   "district": "D8"
+  },
+  {
+   "id": "B01_main",
+   "node": "A01_main",
+   "label": "Exchange Hall on the civic terrace (main)",
+   "plan_x": 0.0,
+   "plan_n": 84.0,
+   "rotation_deg": 0,
+   "ground_elevation_m": 1.0,
+   "footprint_walls_x_n": [
+    -13.0,
+    13.0,
+    80.0,
+    88.0
+   ],
+   "envelope_x": [
+    -7.88,
+    7.83
+   ],
+   "envelope_n": [
+    78.65,
+    88.98
+   ],
+   "top_y_above_ground_m": 13.0,
+   "district": "D5"
+  },
+  {
+   "id": "B02",
+   "node": "A02p",
+   "label": "Market Hall West (provisions)",
+   "plan_x": -13.0,
+   "plan_n": 50.0,
+   "rotation_deg": 0,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": null,
+   "envelope_x": [
+    -17.98,
+    -8.02
+   ],
+   "envelope_n": [
+    42.47,
+    57.12
+   ],
+   "top_y_above_ground_m": 9.0,
+   "district": "D3"
+  },
+  {
+   "id": "B03",
+   "node": "A02c",
+   "label": "Market Hall East (crafts and general trade)",
+   "plan_x": 13.0,
+   "plan_n": 50.0,
+   "rotation_deg": 0,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    9.0,
+    17.15,
+    43.85,
+    56.15
+   ],
+   "envelope_x": [
+    8.02,
+    17.98
+   ],
+   "envelope_n": [
+    42.47,
+    57.12
+   ],
+   "top_y_above_ground_m": 9.0,
+   "district": "D3"
+  },
+  {
+   "id": "B14",
+   "node": "A04",
+   "label": "Registry Office (guild), on the bazaar edge",
+   "plan_x": 25.5,
+   "plan_n": 40.2,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    22.5,
+    28.5,
+    38.2,
+    42.2
+   ],
+   "envelope_x": [
+    20.97,
+    29.29
+   ],
+   "envelope_n": [
+    37.44,
+    42.96
+   ],
+   "top_y_above_ground_m": 6.72,
+   "district": "D3"
+  },
+  {
+   "id": "E06",
+   "node": "A04",
+   "label": "Bazaar Perimeter Shop East (cloth seller)",
+   "plan_x": 25.8,
+   "plan_n": 46.9,
+   "rotation_deg": -82,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    22.55,
+    29.05,
+    44.5,
+    49.3
+   ],
+   "envelope_x": [
+    20.93,
+    29.94
+   ],
+   "envelope_n": [
+    43.54,
+    50.16
+   ],
+   "top_y_above_ground_m": 6.72,
+   "district": "D3"
+  },
+  {
+   "id": "E07",
+   "node": "A04b",
+   "label": "Bazaar Perimeter Shop North-West (potter's outlet)",
+   "plan_x": -24.8,
+   "plan_n": 55.6,
+   "rotation_deg": 98,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -27.2,
+    -22.4,
+    52.35,
+    58.85
+   ],
+   "envelope_x": [
+    -28.06,
+    -20.78
+   ],
+   "envelope_n": [
+    51.46,
+    59.85
+   ],
+   "top_y_above_ground_m": 6.72,
+   "district": "D3"
+  },
+  {
+   "id": "B10",
+   "node": "A06s",
+   "label": "Workshop South (smith)",
+   "plan_x": -21.5,
+   "plan_n": 11.0,
+   "rotation_deg": 84,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -24.8,
+    -18.2,
+    7.7,
+    14.3
+   ],
+   "envelope_x": [
+    -25.89,
+    -16.26
+   ],
+   "envelope_n": [
+    5.97,
+    15.78
+   ],
+   "top_y_above_ground_m": 8.34,
+   "district": "D6"
+  },
+  {
+   "id": "B11",
+   "node": "A04bP",
+   "label": "Lane Shop closing the cross street (potter's yard)",
+   "plan_x": -20.5,
+   "plan_n": 20.0,
+   "rotation_deg": 90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -24.5,
+    -18.5,
+    17.0,
+    23.0
+   ],
+   "envelope_x": [
+    -24.59,
+    -16.97
+   ],
+   "envelope_n": [
+    16.21,
+    24.47
+   ],
+   "top_y_above_ground_m": 6.72,
+   "district": "D6"
+  },
+  {
+   "id": "B12",
+   "node": "A06j",
+   "label": "Workshop North (joiner)",
+   "plan_x": -21.5,
+   "plan_n": 29.0,
+   "rotation_deg": 96,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -24.8,
+    -18.2,
+    25.7,
+    32.3
+   ],
+   "envelope_x": [
+    -25.89,
+    -16.17
+   ],
+   "envelope_n": [
+    24.49,
+    34.05
+   ],
+   "top_y_above_ground_m": 8.34,
+   "district": "D6"
+  },
+  {
+   "id": "E01",
+   "node": "A04bO",
+   "label": "South Gateway Shop (traveller's outfitter)",
+   "plan_x": -12.0,
+   "plan_n": -1.0,
+   "rotation_deg": 78,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -14.58,
+    -9.42,
+    -4.35,
+    2.35
+   ],
+   "envelope_x": [
+    -15.7,
+    -6.86
+   ],
+   "envelope_n": [
+    -6.66,
+    3.28
+   ],
+   "top_y_above_ground_m": 6.72,
+   "district": "D1"
+  },
+  {
+   "id": "E02",
+   "node": "A03cC",
+   "label": "Arrival Corner Merchant House (carrier's office)",
+   "plan_x": 12.0,
+   "plan_n": -2.0,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    10.0,
+    14.0,
+    -6.0,
+    2.0
+   ],
+   "envelope_x": [
+    6.48,
+    14.76
+   ],
+   "envelope_n": [
+    -6.85,
+    2.83
+   ],
+   "top_y_above_ground_m": 11.25,
+   "district": "D1"
+  },
+  {
+   "id": "B13",
+   "node": "A07w",
+   "label": "Guild Warehouse",
+   "plan_x": 25.5,
+   "plan_n": 12.0,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    18.5,
+    32.5,
+    8.0,
+    16.0
+   ],
+   "envelope_x": [
+    17.15,
+    33.38
+   ],
+   "envelope_n": [
+    4.63,
+    18.41
+   ],
+   "top_y_above_ground_m": 12.0,
+   "district": "D7"
+  },
+  {
+   "id": "E04",
+   "node": "A05c",
+   "label": "Merchant Counting House (guild)",
+   "plan_x": 22.5,
+   "plan_n": 28.0,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    18.5,
+    30.5,
+    24.0,
+    32.0
+   ],
+   "envelope_x": [
+    17.15,
+    31.26
+   ],
+   "envelope_n": [
+    22.44,
+    33.35
+   ],
+   "top_y_above_ground_m": 12.0,
+   "district": "D7"
+  },
+  {
+   "id": "E05",
+   "node": "A03cT",
+   "label": "Tea Route Merchant House (tea and spice seller)",
+   "plan_x": 25.5,
+   "plan_n": 53.5,
+   "rotation_deg": 180,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    21.5,
+    29.5,
+    51.5,
+    55.5
+   ],
+   "envelope_x": [
+    19.97,
+    30.51
+   ],
+   "envelope_n": [
+    50.74,
+    57.64
+   ],
+   "top_y_above_ground_m": 11.25,
+   "district": "D8"
+  },
+  {
+   "id": "B15",
+   "node": "A11a",
+   "label": "Terrace Tower House West (assay office, guild)",
+   "plan_x": -18.0,
+   "plan_n": 67.0,
+   "rotation_deg": 0,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    -22.0,
+    -13.0,
+    62.0,
+    71.0
+   ],
+   "envelope_x": [
+    -23.33,
+    -12.17
+   ],
+   "envelope_n": [
+    61.29,
+    72.08
+   ],
+   "top_y_above_ground_m": 15.79,
+   "district": "D5"
+  },
+  {
+   "id": "B16",
+   "node": "A11c",
+   "label": "Terrace Tower House East (chart maker)",
+   "plan_x": 18.0,
+   "plan_n": 67.0,
+   "rotation_deg": 0,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": [
+    13.0,
+    22.0,
+    62.0,
+    71.0
+   ],
+   "envelope_x": [
+    12.0,
+    23.25
+   ],
+   "envelope_n": [
+    61.29,
+    71.98
+   ],
+   "top_y_above_ground_m": 15.79,
+   "district": "D5"
+  },
+  {
+   "id": "R01",
+   "node": "A10p",
+   "label": "Market awning row (provisions)",
+   "plan_x": -5.8,
+   "plan_n": 43.6,
+   "rotation_deg": 90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": null,
+   "envelope_x": [
+    -7.1,
+    -4.93
+   ],
+   "envelope_n": [
+    39.49,
+    47.71
+   ],
+   "top_y_above_ground_m": 3.23,
+   "district": "D3"
+  },
+  {
+   "id": "R02",
+   "node": "A10p",
+   "label": "Market awning row (provisions)",
+   "plan_x": -5.8,
+   "plan_n": 54.4,
+   "rotation_deg": 90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": null,
+   "envelope_x": [
+    -7.1,
+    -4.93
+   ],
+   "envelope_n": [
+    50.29,
+    58.51
+   ],
+   "top_y_above_ground_m": 3.23,
+   "district": "D3"
+  },
+  {
+   "id": "R03",
+   "node": "A10c",
+   "label": "Market awning row (crafts)",
+   "plan_x": 5.8,
+   "plan_n": 43.6,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": null,
+   "envelope_x": [
+    4.93,
+    7.24
+   ],
+   "envelope_n": [
+    39.49,
+    47.71
+   ],
+   "top_y_above_ground_m": 3.23,
+   "district": "D3"
+  },
+  {
+   "id": "R04",
+   "node": "A10c",
+   "label": "Market awning row (crafts)",
+   "plan_x": 5.8,
+   "plan_n": 54.4,
+   "rotation_deg": -90,
+   "ground_elevation_m": 0.0,
+   "footprint_walls_x_n": null,
+   "envelope_x": [
+    4.93,
+    7.24
+   ],
+   "envelope_n": [
+    50.29,
+    58.51
+   ],
+   "top_y_above_ground_m": 3.23,
+   "district": "D3"
+  }
+ ],
+ "heightfield_meta": {
+  "x0": -36.0,
+  "n0": -12.0,
+  "cell": 0.2,
+  "nx": 430,
+  "nn": 560,
+  "unit_m": 0.01,
+  "max_m": 2.009999990463257,
+  "tiles": 805,
+  "stair_modules": 11
+ },
+ "ground_levels_cm": {
+  "0": {
+   "cells": 160300,
+   "area_m2": 6412.0,
+   "x": [
+    -36.0,
+    50.0
+   ],
+   "n": [
+    -12.0,
+    100.0
+   ]
+  },
+  "1": {
+   "cells": 60416,
+   "area_m2": 2416.6,
+   "x": [
+    -24.0,
+    42.0
+   ],
+   "n": [
+    -8.0,
+    66.0
+   ]
+  },
+  "5": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    60.0,
+    60.2
+   ]
+  },
+  "15": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    60.2,
+    60.4
+   ]
+  },
+  "23": {
+   "cells": 116,
+   "area_m2": 4.6,
+   "x": [
+    -5.8,
+    5.8
+   ],
+   "n": [
+    60.4,
+    60.8
+   ]
+  },
+  "25": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    60.4,
+    60.6
+   ]
+  },
+  "35": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    60.6,
+    60.8
+   ]
+  },
+  "43": {
+   "cells": 116,
+   "area_m2": 4.6,
+   "x": [
+    -5.8,
+    5.8
+   ],
+   "n": [
+    60.8,
+    61.2
+   ]
+  },
+  "45": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    60.8,
+    61.0
+   ]
+  },
+  "55": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    61.0,
+    61.2
+   ]
+  },
+  "61": {
+   "cells": 58,
+   "area_m2": 2.3,
+   "x": [
+    -5.8,
+    5.8
+   ],
+   "n": [
+    61.2,
+    61.4
+   ]
+  },
+  "62": {
+   "cells": 58,
+   "area_m2": 2.3,
+   "x": [
+    -5.8,
+    5.8
+   ],
+   "n": [
+    61.4,
+    61.6
+   ]
+  },
+  "65": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    61.2,
+    61.4
+   ]
+  },
+  "75": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    61.4,
+    61.6
+   ]
+  },
+  "82": {
+   "cells": 116,
+   "area_m2": 4.6,
+   "x": [
+    -5.8,
+    5.8
+   ],
+   "n": [
+    61.6,
+    62.0
+   ]
+  },
+  "85": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    61.6,
+    61.8
+   ]
+  },
+  "95": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -6.0,
+    6.0
+   ],
+   "n": [
+    61.8,
+    62.0
+   ]
+  },
+  "101": {
+   "cells": 7996,
+   "area_m2": 319.8,
+   "x": [
+    -14.0,
+    14.0
+   ],
+   "n": [
+    62.0,
+    74.0
+   ]
+  },
+  "105": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    72.0,
+    72.2
+   ]
+  },
+  "115": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    72.2,
+    72.4
+   ]
+  },
+  "123": {
+   "cells": 96,
+   "area_m2": 3.8,
+   "x": [
+    -4.8,
+    4.8
+   ],
+   "n": [
+    72.4,
+    72.8
+   ]
+  },
+  "125": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    72.4,
+    72.6
+   ]
+  },
+  "135": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    72.6,
+    72.8
+   ]
+  },
+  "143": {
+   "cells": 96,
+   "area_m2": 3.8,
+   "x": [
+    -4.8,
+    4.8
+   ],
+   "n": [
+    72.8,
+    73.2
+   ]
+  },
+  "145": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    72.8,
+    73.0
+   ]
+  },
+  "155": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    73.0,
+    73.2
+   ]
+  },
+  "161": {
+   "cells": 48,
+   "area_m2": 1.9,
+   "x": [
+    -4.8,
+    4.8
+   ],
+   "n": [
+    73.2,
+    73.4
+   ]
+  },
+  "162": {
+   "cells": 48,
+   "area_m2": 1.9,
+   "x": [
+    -4.8,
+    4.8
+   ],
+   "n": [
+    73.4,
+    73.6
+   ]
+  },
+  "165": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    73.2,
+    73.4
+   ]
+  },
+  "175": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    73.4,
+    73.6
+   ]
+  },
+  "182": {
+   "cells": 96,
+   "area_m2": 3.8,
+   "x": [
+    -4.8,
+    4.8
+   ],
+   "n": [
+    73.6,
+    74.0
+   ]
+  },
+  "185": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    73.6,
+    73.8
+   ]
+  },
+  "195": {
+   "cells": 2,
+   "area_m2": 0.1,
+   "x": [
+    -5.0,
+    5.0
+   ],
+   "n": [
+    73.8,
+    74.0
+   ]
+  },
+  "201": {
+   "cells": 11200,
+   "area_m2": 448.0,
+   "x": [
+    -14.0,
+    14.0
+   ],
+   "n": [
+    74.0,
+    90.0
+   ]
+  }
+ },
+ "paved_tiles": {
+  "cobble": 438,
+  "brick": 212,
+  "red": 108
+ },
+ "paved_extent_x": [
+  -24,
+  42
+ ],
+ "paved_extent_n": [
+  -8,
+  74
+ ],
+ "town_extent": {
+  "x": [
+   -31.5,
+   42.0
+  ],
+  "n": [
+   -8,
+   89.0
+  ]
+ },
+ "nodes_outside_buildings": {
+  "N16": [
+   36,
+   57,
+   "Lookout terrace"
+  ],
+  "N17": [
+   36.16,
+   62.24,
+   "Tea house veranda (centre of the gap between the first two porch posts)"
+  ],
+  "N20": [
+   0,
+   -16,
+   "Future transport reservation"
+  ],
+  "N33": [
+   25,
+   20,
+   "Service court (Pelataran Gudang)"
+  ],
+  "N51": [
+   33.0,
+   20.0,
+   "Tea porters' path, south end at the court's east opening"
+  ],
+  "N54": [
+   31.0,
+   50.0,
+   "Tea porters' path, bend before the gate into the lookout terrace"
+  ]
+ }
+}

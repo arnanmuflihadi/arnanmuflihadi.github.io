@@ -1,0 +1,19 @@
+{
+  "matched_before_after_cameras": [
+    "market",
+    "return",
+    "foundations",
+    "arrival",
+    "island"
+  ],
+  "matched_glass_cameras": [
+    "A",
+    "B",
+    "C"
+  ],
+  "screen": [
+    1280,
+    720
+  ],
+  "active_traversal_capture": "walking-C.png"
+}

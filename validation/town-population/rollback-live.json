@@ -1,0 +1,17 @@
+{
+  "townOff": {
+    "scene": "79e204f6-7cce-4cde-a704-23a654a2c104",
+    "renderer": "1",
+    "town": false,
+    "props": false,
+    "height": 13.267598851846776
+  },
+  "restored": {
+    "scene": "79e204f6-7cce-4cde-a704-23a654a2c104",
+    "renderer": "1",
+    "town": true,
+    "props": true,
+    "height": 15.479999542236328
+  },
+  "sameScene": true
+}

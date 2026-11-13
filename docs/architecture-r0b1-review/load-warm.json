@@ -1,0 +1,41 @@
+{
+  "loadedMs": 441.4,
+  "transfers": [
+    {
+      "bytes": 719224,
+      "durationMs": 3.5,
+      "file": "canopy-tree.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 104876,
+      "durationMs": 2.3999999910593033,
+      "file": "fern.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 6045540,
+      "durationMs": 87.6000000089407,
+      "file": "transit-kingdom.glb?v=b1-final",
+      "transfer": 300
+    },
+    {
+      "bytes": 1581480,
+      "durationMs": 3.299999997019768,
+      "file": "urban-explorer.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 267260,
+      "durationMs": 2.0999999940395355,
+      "file": "jump-animations.glb",
+      "transfer": 0
+    },
+    {
+      "bytes": 76360,
+      "durationMs": 1.0999999940395355,
+      "file": "components.glb",
+      "transfer": 0
+    }
+  ]
+}

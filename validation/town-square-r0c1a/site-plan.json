@@ -1,0 +1,650 @@
+{
+  "phase": "R0-C1A DESIGN ONLY",
+  "fountain_east_clearance_m": 1.6799999999999997,
+  "mapping": "native (u,v,h)=(game x-36,44-game z,game y-18.6)",
+  "court": {
+    "x": [
+      20.5,
+      28
+    ],
+    "z": [
+      4,
+      14.4
+    ],
+    "dimensions_m": [
+      7.5,
+      10.4
+    ],
+    "area_m2": 78,
+    "finished_floor_y": 21.8,
+    "terrain_sample_count": 1271,
+    "terrain_min_y": 18.810693359375,
+    "terrain_max_y": 21.6198974609375,
+    "floor_to_ground_min_m": 0.1801025390624993,
+    "floor_to_ground_max_m": 2.9893066406249993
+  },
+  "existing_forecourt": {
+    "x": [
+      28,
+      44
+    ],
+    "z": [
+      8,
+      14.2
+    ],
+    "finished_floor_y": 22.614,
+    "area_m2": 99.2,
+    "modified": false
+  },
+  "north_gate": {
+    "start": [
+      26.6,
+      4,
+      21.8
+    ],
+    "end": [
+      34.5,
+      -1.8,
+      22.53
+    ],
+    "risers": 0,
+    "width": 2.6,
+    "max_designed_grade": 0.10164659979556645,
+    "tested": false
+  },
+  "landing_stair": {
+    "start": [
+      36.16666793823242,
+      0.19999998807907104,
+      20.754735
+    ],
+    "end": [
+      34.5,
+      -1.8,
+      22.53
+    ],
+    "risers": 10,
+    "risers_m": [
+      0.13418138888888884,
+      0.13418138888888884,
+      0.18836277777777768,
+      0.18836277777777768,
+      0.18836277777777768,
+      0.18836277777777768,
+      0.18836277777777768,
+      0.18836277777777768,
+      0.18836277777777768,
+      0.18836277777777768
+    ],
+    "max_riser_m": 0.18836277777777768,
+    "min_riser_m": 0.13418138888888884,
+    "tread_m": 0.2603416504366447,
+    "width": 2.6,
+    "tested": false
+  },
+  "approach_ground_contacts": [
+    {
+      "x": 27.51923881554251,
+      "z": 4.919238815542513,
+      "ground_y": 21.017312622070314,
+      "deck_y": 21.8,
+      "exposure_m": 0.7826873779296868
+    },
+    {
+      "x": 25.68076118445749,
+      "z": 3.0807611844574874,
+      "ground_y": 20.320611572265626,
+      "deck_y": 21.8,
+      "exposure_m": 1.4793884277343743
+    },
+    {
+      "x": 28.479238815542512,
+      "z": 3.9592388155425096,
+      "ground_y": 20.93819580078125,
+      "deck_y": 21.938000000000002,
+      "exposure_m": 0.999804199218751
+    },
+    {
+      "x": 26.640761184457485,
+      "z": 2.1207611844574905,
+      "ground_y": 20.491372680664064,
+      "deck_y": 21.938000000000002,
+      "exposure_m": 1.4466273193359385
+    },
+    {
+      "x": 29.576112607785863,
+      "z": 2.701056603227883,
+      "ground_y": 20.86580810546875,
+      "deck_y": 22.076666666666668,
+      "exposure_m": 1.2108585611979166
+    },
+    {
+      "x": 27.446109614436356,
+      "z": 1.2100545078832277,
+      "ground_y": 20.6501708984375,
+      "deck_y": 22.076666666666668,
+      "exposure_m": 1.4264957682291666
+    },
+    {
+      "x": 30.509445941119196,
+      "z": 1.36772326989455,
+      "ground_y": 20.9062744140625,
+      "deck_y": 22.21666666666667,
+      "exposure_m": 1.3103922526041671
+    },
+    {
+      "x": 28.37944294776969,
+      "z": -0.1232788254501056,
+      "ground_y": 20.97225341796875,
+      "deck_y": 22.21666666666667,
+      "exposure_m": 1.2444132486979171
+    },
+    {
+      "x": 31.44277927445253,
+      "z": 0.03438993656121658,
+      "ground_y": 21.135186767578126,
+      "deck_y": 22.364626630691216,
+      "exposure_m": 1.2294398631130896
+    },
+    {
+      "x": 29.312776281103023,
+      "z": -1.456612158783439,
+      "ground_y": 21.436761474609376,
+      "deck_y": 22.356666666666666,
+      "exposure_m": 0.9199051920572892
+    },
+    {
+      "x": 31.574164727700065,
+      "z": -0.3306886938202589,
+      "ground_y": 21.225518798828126,
+      "deck_y": 22.46142857142857,
+      "exposure_m": 1.2359097726004435
+    },
+    {
+      "x": 31.425835272299935,
+      "z": -2.9264541633225982,
+      "ground_y": 22.188348388671876,
+      "deck_y": 22.46142857142857,
+      "exposure_m": 0.27308018275669355
+    },
+    {
+      "x": 33.074164727700065,
+      "z": -0.41640297953454475,
+      "ground_y": 21.218545532226564,
+      "deck_y": 22.495714285714286,
+      "exposure_m": 1.2771687534877216
+    },
+    {
+      "x": 32.925835272299935,
+      "z": -3.012168449036884,
+      "ground_y": 22.29873046875,
+      "deck_y": 22.495714285714286,
+      "exposure_m": 0.19698381696428413
+    },
+    {
+      "x": 34.574164727700065,
+      "z": -0.5021172652488304,
+      "ground_y": 21.122232055664064,
+      "deck_y": 22.529999999999998,
+      "exposure_m": 1.4077679443359337
+    },
+    {
+      "x": 34.425835272299935,
+      "z": -3.0978827347511695,
+      "ground_y": 22.3225341796875,
+      "deck_y": 22.529999999999998,
+      "exposure_m": 0.20746582031249616
+    }
+  ],
+  "highland_gate": {
+    "start": [
+      20.5,
+      12.6,
+      21.8
+    ],
+    "end": [
+      17.8,
+      12.6,
+      20.610160522460937
+    ],
+    "risers": 9,
+    "riser_m": 0.1322043863932293,
+    "tread_m": 0.3,
+    "nominal_width_m": 2.6,
+    "tested": false
+  },
+  "route_metrics": [
+    {
+      "name": "Graded square approach from existing north landing",
+      "horizontal_length_m": 10.651073574682053,
+      "surface_length_m": 10.6816763441968,
+      "start": [
+        26.6,
+        4,
+        21.8
+      ],
+      "end": [
+        34.5,
+        -1.8,
+        22.529999999999998
+      ],
+      "net_rise_m": 0.7299999999999969,
+      "max_abs_longitudinal_grade": 0.10164659979557322,
+      "width_m": 2.6,
+      "status": "NOT TESTED - isolated design"
+    },
+    {
+      "name": "Future Guild approach reservation",
+      "horizontal_length_m": 11.313708498984761,
+      "surface_length_m": 11.67114804132915,
+      "start": [
+        36,
+        0,
+        20.754735
+      ],
+      "end": [
+        44,
+        -8,
+        23.61463134765625
+      ],
+      "net_rise_m": 2.8598963476562496,
+      "max_abs_longitudinal_grade": 0.2702442439527002,
+      "width_m": 2.6,
+      "status": "UNBUILT - plan reservation only"
+    },
+    {
+      "name": "Proposed natural trail to existing ridge junction",
+      "horizontal_length_m": 24.0474803084192,
+      "surface_length_m": 24.30087851635466,
+      "start": [
+        17.8,
+        12.6,
+        20.56517578125
+      ],
+      "end": [
+        -5,
+        5,
+        21.046087036132814
+      ],
+      "net_rise_m": 0.4809112548828125,
+      "max_abs_longitudinal_grade": 0.3908647759769889,
+      "width_m": 2.1,
+      "status": "NOT TESTED - isolated design"
+    }
+  ],
+  "geometry": {
+    "collections": [
+      {
+        "collection": "Context - approved market",
+        "geometry_objects": 1816,
+        "evaluated_triangles": 182665
+      },
+      {
+        "collection": "Context - exact terrain",
+        "geometry_objects": 1,
+        "evaluated_triangles": 26416
+      },
+      {
+        "collection": "Context - existing island plants",
+        "geometry_objects": 396,
+        "evaluated_triangles": 346287
+      },
+      {
+        "collection": "Paving",
+        "geometry_objects": 301,
+        "evaluated_triangles": 32508
+      },
+      {
+        "collection": "Supports",
+        "geometry_objects": 46,
+        "evaluated_triangles": 552
+      },
+      {
+        "collection": "Fountain",
+        "geometry_objects": 7,
+        "evaluated_triangles": 2944
+      },
+      {
+        "collection": "Timber shade",
+        "geometry_objects": 45,
+        "evaluated_triangles": 932
+      },
+      {
+        "collection": "Planting",
+        "geometry_objects": 43,
+        "evaluated_triangles": 762
+      },
+      {
+        "collection": "Furniture",
+        "geometry_objects": 31,
+        "evaluated_triangles": 4400
+      },
+      {
+        "collection": "Proposed routes",
+        "geometry_objects": 267,
+        "evaluated_triangles": 4436
+      },
+      {
+        "collection": "Scale reference",
+        "geometry_objects": 6,
+        "evaluated_triangles": 216
+      },
+      {
+        "collection": "Cameras",
+        "geometry_objects": 0,
+        "evaluated_triangles": 0
+      },
+      {
+        "collection": "Plan annotations",
+        "geometry_objects": 31,
+        "evaluated_triangles": 30300
+      }
+    ],
+    "new_design_evaluated_triangles": 46534,
+    "new_design_materials": [
+      "C1 / compacted highland earth",
+      "C1 / deep green metal",
+      "C1 / jade water",
+      "C1 / oiled timber",
+      "C1 / planting soil",
+      "C1 / sign lettering",
+      "C1 / soft water highlights",
+      "C1 / terracotta",
+      "C1 / tropical leaf",
+      "C1 / warm limestone",
+      "C1 / warm volcanic stone",
+      "C1 / weathered bronze"
+    ],
+    "context_evaluated_triangles": 555368,
+    "browser_draw_calls": "NOT MEASURED: no runtime export or game integration",
+    "GLB_export_bytes": "NOT MEASURED: no new square GLB exported"
+  },
+  "context_preservation": {
+    "objects_compared": 1828,
+    "transform_differences": []
+  },
+  "replanting_proposal": [
+    {
+      "object": "C1 Island ref / fern / 25:267",
+      "original_native": [
+        -10.980173110961914,
+        35.78001022338867,
+        2.6433167457580566
+      ],
+      "proposed_native": [
+        -19,
+        39.20000076293945,
+        -0.48302122950553894
+      ],
+      "status": "isolated proposal: replant ground clump outside court, no scale change"
+    },
+    {
+      "object": "C1 Island ref / understory / 80:15",
+      "original_native": [
+        -11,
+        35.05384826660156,
+        2.5767292976379395
+      ],
+      "proposed_native": [
+        -19,
+        37,
+        0.28843262791633606
+      ],
+      "status": "isolated proposal: replant ground clump outside court, no scale change"
+    },
+    {
+      "object": "C1 Island ref / understory / 81:15",
+      "original_native": [
+        -10.549999237060547,
+        34.90385055541992,
+        2.6445260047912598
+      ],
+      "proposed_native": [
+        -19,
+        34.79999923706055,
+        1.5135455131530762
+      ],
+      "status": "isolated proposal: replant ground clump outside court, no scale change"
+    }
+  ],
+  "cameras": [
+    {
+      "name": "C1 Market-to-square eye 1.65m",
+      "native_position": [
+        -3.700000047683716,
+        36.099998474121094,
+        5.664000034332275
+      ],
+      "rotation_euler": [
+        1.527348518371582,
+        1.4629489442086197e-7,
+        1.7025585174560547
+      ],
+      "lens_mm": 26,
+      "horizontal_fov_deg": 69.39030966512573,
+      "eye_above_support_m": 1.65,
+      "support_height_game": 22.614,
+      "ortho_width_m": null,
+      "site_position_x_z_y": [
+        32.299999952316284,
+        7.900001525878906,
+        24.264000034332277
+      ],
+      "game_position_xyz": [
+        32.299999952316284,
+        24.264000034332277,
+        7.900001525878906
+      ]
+    },
+    {
+      "name": "C1 Square interior eye 1.65m",
+      "native_position": [
+        -9,
+        31,
+        4.849999904632568
+      ],
+      "rotation_euler": [
+        1.6478182077407837,
+        -4.7317513462985517e-8,
+        0.5404195189476013
+      ],
+      "lens_mm": 23,
+      "horizontal_fov_deg": 76.09408569397988,
+      "eye_above_support_m": 1.65,
+      "support_height_game": 21.8,
+      "ortho_width_m": null,
+      "site_position_x_z_y": [
+        27,
+        13,
+        23.44999990463257
+      ],
+      "game_position_xyz": [
+        27,
+        23.44999990463257,
+        13
+      ]
+    },
+    {
+      "name": "C1 Elevated composition",
+      "native_position": [
+        -33,
+        57,
+        25.399999618530273
+      ],
+      "rotation_euler": [
+        1.0435595512390137,
+        -2.794496367641841e-8,
+        -2.3365890979766846
+      ],
+      "lens_mm": 42,
+      "horizontal_fov_deg": 46.397181333762305,
+      "eye_above_support_m": null,
+      "support_height_game": null,
+      "ortho_width_m": null,
+      "site_position_x_z_y": [
+        3,
+        -13,
+        43.999999618530275
+      ],
+      "game_position_xyz": [
+        3,
+        43.999999618530275,
+        -13
+      ]
+    },
+    {
+      "name": "C1 Measured top-down",
+      "native_position": [
+        -13,
+        39,
+        81.4000015258789
+      ],
+      "rotation_euler": [
+        0,
+        0,
+        0
+      ],
+      "lens_mm": 40,
+      "horizontal_fov_deg": 48.455489575996914,
+      "eye_above_support_m": null,
+      "support_height_game": null,
+      "ortho_width_m": 65,
+      "site_position_x_z_y": [
+        23,
+        5,
+        100.0000015258789
+      ],
+      "game_position_xyz": [
+        23,
+        100.0000015258789,
+        5
+      ]
+    }
+  ],
+  "camera_support_verified_y": 22.613999938964845,
+  "render": {
+    "engine": "CYCLES",
+    "samples": 64,
+    "resolution": [
+      1800,
+      1200
+    ],
+    "view_transform": "AgX",
+    "world_strength": 0.08,
+    "sun_energy": 3,
+    "area_fill_watts": 950
+  },
+  "approval": "Human approval pending before R0-C1B",
+  "playability": "All new routes NOT PLAYTESTED",
+  "detailed_checks": {
+    "deck_edge_floor_to_ground_min_m": 0.19582390785217285,
+    "deck_edge_floor_to_ground_max_m": 1.4793884754180908,
+    "deck_edge_vertices_checked": 44,
+    "landing_stair_top_to_terrain_min_m": 0.026002883911132812,
+    "landing_stair_top_corners_checked": 40,
+    "guard_clear_width_sample_count": 20,
+    "minimum_guard_face_clear_width_m": 2.4128531395671247,
+    "shade_header_clearance_m": 2.5599997520446784,
+    "guild_planning_ray": {
+      "target_note": "hypothetical upper-level target 5 m above actual ground; Guild unbuilt",
+      "mesh_intersections": [],
+      "not_a_full_vista_or_gameplay_test": true,
+      "from_site_x_z_y": [
+        26.4,
+        6,
+        23.45
+      ],
+      "from_game_xyz": [
+        26.4,
+        23.45,
+        6
+      ],
+      "target_site_x_z_y": [
+        44,
+        -8,
+        28.53462371826172
+      ],
+      "target_game_xyz": [
+        44,
+        28.53462371826172,
+        -8
+      ]
+    },
+    "packed_source_images": [
+      {
+        "name": "Bark_NormalTree",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      },
+      {
+        "name": "Bark_NormalTree.002",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      },
+      {
+        "name": "Bark_NormalTree_Normal",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      },
+      {
+        "name": "Bark_NormalTree_Normal.002",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      },
+      {
+        "name": "colormap",
+        "size": [
+          512,
+          512
+        ],
+        "packed": true
+      },
+      {
+        "name": "Leaves",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      },
+      {
+        "name": "Leaves.001",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      },
+      {
+        "name": "Leaves_NormalTree_C",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      },
+      {
+        "name": "Leaves_NormalTree_C.002",
+        "size": [
+          256,
+          256
+        ],
+        "packed": true
+      }
+    ]
+  },
+  "site_point_order": "[game X, game Z, elevation/game Y] (survey notation)",
+  "native_file": "/Users/arnanmuflihadi/Documents/ChatGPT/Gaming portofolio/validation/town-square-r0c1a/town-square-design.blend"
+}

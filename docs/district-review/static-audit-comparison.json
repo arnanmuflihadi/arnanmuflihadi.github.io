@@ -1,0 +1,357 @@
+{
+  "baselineCount": 58,
+  "currentCount": 58,
+  "unchanged": true,
+  "newFindings": [],
+  "resolvedFindings": [],
+  "findings": [
+    {
+      "id": 1,
+      "finding": "- index.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 2,
+      "finding": "- index.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 3,
+      "finding": "- index.html: is missing canonical footer destination: assets/cv.pdf",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 4,
+      "finding": "- portfolio.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 5,
+      "finding": "- portfolio.html: is missing canonical footer destination: assets/cv.pdf",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 6,
+      "finding": "- portfolio.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 7,
+      "finding": "- about.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 8,
+      "finding": "- about.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 9,
+      "finding": "- about.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 10,
+      "finding": "- contact.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 11,
+      "finding": "- 404.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 12,
+      "finding": "- 404.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 13,
+      "finding": "- 404.html: is missing canonical footer destination: assets/cv.pdf",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 14,
+      "finding": "- 404.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 15,
+      "finding": "- project-transit.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 16,
+      "finding": "- project-transit.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 17,
+      "finding": "- project-transit.html: is missing canonical footer destination: assets/cv.pdf",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 18,
+      "finding": "- project-transit.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 19,
+      "finding": "- project-transit.html: contains an eagerly loaded iframe; use data-src and the explicit loader",
+      "classification": "Inherited genuine embed-loading performance issue",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 20,
+      "finding": "- project-pangan.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 21,
+      "finding": "- project-pangan.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 22,
+      "finding": "- project-pangan.html: is missing canonical footer destination: assets/cv.pdf",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 23,
+      "finding": "- project-pangan.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 24,
+      "finding": "- project-pangan.html: contains an eagerly loaded iframe; use data-src and the explicit loader",
+      "classification": "Inherited genuine embed-loading performance issue",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 25,
+      "finding": "- project-alphaearth-food.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 26,
+      "finding": "- project-alphaearth-food.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 27,
+      "finding": "- project-alphaearth-food.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 28,
+      "finding": "- project-mbr.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 29,
+      "finding": "- project-mbr.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 30,
+      "finding": "- project-mbr.html: is missing canonical footer destination: assets/cv.pdf",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 31,
+      "finding": "- project-mbr.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 32,
+      "finding": "- project-cbd.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 33,
+      "finding": "- project-cbd.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 34,
+      "finding": "- project-cbd.html: is missing canonical footer destination: assets/cv.pdf",
+      "classification": "Inherited genuine navigation/content omission",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 35,
+      "finding": "- project-cbd.html: must load transition-init immediately before the shared header",
+      "classification": "Inherited transition markup contract; separate portfolio review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 36,
+      "finding": "- project-cbd.html: contains an eagerly loaded iframe; use data-src and the explicit loader",
+      "classification": "Inherited genuine embed-loading performance issue",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 37,
+      "finding": "- assets/img/redesign: is missing the approved hero environment master",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 38,
+      "finding": "- assets/img/redesign: is missing the 640px approved-environment delivery derivative",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 39,
+      "finding": "- assets/img/redesign: is missing the 828px approved-environment delivery derivative",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 40,
+      "finding": "- assets/img/redesign: is missing the 960px approved-environment delivery derivative",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 41,
+      "finding": "- index.html: is missing responsive approved-environment delivery sources",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 42,
+      "finding": "- index.html: is missing the optimized static analyst-frame delivery entry point",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 43,
+      "finding": "- assets/img/redesign: is missing the static analyst-frame delivery derivative",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 44,
+      "finding": "- assets/img/redesign: is missing approved analyst PNG master 01",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 45,
+      "finding": "- assets/img/redesign: is missing lossless analyst WebP delivery derivative 01",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 46,
+      "finding": "- assets/img/redesign: is missing approved analyst PNG master 02",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 47,
+      "finding": "- assets/img/redesign: is missing lossless analyst WebP delivery derivative 02",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 48,
+      "finding": "- assets/img/redesign: is missing approved analyst PNG master 03",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 49,
+      "finding": "- assets/img/redesign: is missing lossless analyst WebP delivery derivative 03",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 50,
+      "finding": "- assets/img/redesign: is missing approved analyst PNG master 04",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 51,
+      "finding": "- assets/img/redesign: is missing lossless analyst WebP delivery derivative 04",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 52,
+      "finding": "- assets/img/redesign: is missing approved analyst PNG master 05",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 53,
+      "finding": "- assets/img/redesign: is missing lossless analyst WebP delivery derivative 05",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 54,
+      "finding": "- assets/img/redesign: is missing approved analyst PNG master 06",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 55,
+      "finding": "- assets/img/redesign: is missing lossless analyst WebP delivery derivative 06",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 56,
+      "finding": "- index.html: is missing the live route overlay",
+      "classification": "Obsolete pre-living-atlas hero delivery contract",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 57,
+      "finding": "- project-transit.html: must retain the explicit static/manual transit fallback",
+      "classification": "Inherited manual-fallback contract; separate research review",
+      "status": "Documented; retained audit reports failure"
+    },
+    {
+      "id": 58,
+      "finding": "- project-pangan.html: must retain the explicit static/manual Pangan fallback",
+      "classification": "Inherited manual-fallback contract; separate research review",
+      "status": "Documented; retained audit reports failure"
+    }
+  ]
+}

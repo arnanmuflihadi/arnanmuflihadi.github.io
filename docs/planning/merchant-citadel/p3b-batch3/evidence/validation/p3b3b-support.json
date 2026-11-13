@@ -1,0 +1,169 @@
+{
+ "grid": {
+  "nx": 443,
+  "nn": 468,
+  "cell": 0.5,
+  "bytes_terrain": 414648,
+  "bytes_mask": 207324,
+  "range_m": [
+   -8.705315432117052,
+   23.580000000000002
+  ],
+  "precision_m": 0.01
+ },
+ "bounds": {
+  "controller": 147,
+  "extents": {
+   "main": {
+    "x": [
+     -81.61605864061893,
+     97.3319853284527
+    ],
+    "n": [
+     -80.613430458312,
+     136.2471204105276
+    ],
+    "rim_m": 690.0475705072682
+   },
+   "stack": {
+    "x": [
+     100.27281667054723,
+     122.57529995160534
+    ],
+    "n": [
+     32.785528706699864,
+     55.96950406458143
+    ],
+    "rim_m": 82.09899670731446
+   },
+   "all": {
+    "x": [
+     -81.61605864061893,
+     122.57529995160534
+    ],
+    "n": [
+     -80.613430458312,
+     136.2471204105276
+    ]
+   }
+  },
+  "derived": {
+   "max_abs_extent_m": 136.2471204105276,
+   "controller_bounds_m": 147,
+   "note": "the controller's bounds are symmetric about the origin: ceil(max |x|, |z| over all geometry) + 10 m"
+  }
+ },
+ "interpolation": [],
+ "lookup_cost": {
+  "heightAt_calls": 400000,
+  "ms": 8,
+  "per_call_us": 0.02,
+  "checksum": -4590625.106
+ },
+ "continuity": {
+  "samples": 20000,
+  "max_height_change_over_1cm_m": 0.047,
+  "note": "steepest riser is about 1.4 m per m, so 1.4 cm per cm is expected; a larger value would be a seam"
+ },
+ "town_layer": [
+  {
+   "at": [
+    0,
+    2
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 0.01,
+   "used": 0.01
+  },
+  {
+   "at": [
+    0,
+    40
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 0.01,
+   "used": 0.01
+  },
+  {
+   "at": [
+    0,
+    59
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 0.01,
+   "used": 0.01
+  },
+  {
+   "at": [
+    0,
+    67
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 1.01,
+   "used": 1.01
+  },
+  {
+   "at": [
+    0,
+    75
+   ],
+   "island_terrain": 1.88,
+   "town_grid": 2.01,
+   "used": 2.01
+  },
+  {
+   "at": [
+    0,
+    85
+   ],
+   "island_terrain": 1.92,
+   "town_grid": 2.01,
+   "used": 2.01
+  },
+  {
+   "at": [
+    -13,
+    49
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 0.01,
+   "used": 0.01
+  },
+  {
+   "at": [
+    13,
+    49
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 0.01,
+   "used": 0.01
+  },
+  {
+   "at": [
+    36,
+    57
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 0.01,
+   "used": 0.01
+  },
+  {
+   "at": [
+    36.16,
+    62.24
+   ],
+   "island_terrain": -0.02,
+   "town_grid": 0.01,
+   "used": 0.01
+  },
+  {
+   "at": [
+    0,
+    77.4
+   ],
+   "island_terrain": 1.88,
+   "town_grid": 2.01,
+   "used": 2.01
+  }
+ ]
+}

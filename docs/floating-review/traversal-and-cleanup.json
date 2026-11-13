@@ -1,0 +1,81 @@
+{
+  "method": "Actual preserved controller, 60 simulated steps/second, real imported fixture geometry and final collisions. Image decoding omitted in Node fixtures only; not a browser FPS benchmark.",
+  "routes": [
+    {
+      "route": "arrival",
+      "simulatedSeconds": 15.183333333333334,
+      "frames": 911,
+      "jumps": 0,
+      "grounded": true
+    },
+    {
+      "route": "city",
+      "simulatedSeconds": 24.266666666666666,
+      "frames": 1456,
+      "jumps": 0,
+      "grounded": true
+    },
+    {
+      "route": "highlands",
+      "simulatedSeconds": 25.283333333333335,
+      "frames": 1517,
+      "jumps": 0,
+      "grounded": true
+    },
+    {
+      "route": "overlook",
+      "simulatedSeconds": 21.4,
+      "frames": 1284,
+      "jumps": 0,
+      "grounded": true
+    },
+    {
+      "route": "return",
+      "simulatedSeconds": 14.7,
+      "frames": 882,
+      "jumps": 0,
+      "grounded": true
+    },
+    {
+      "route": "market-east",
+      "simulatedSeconds": 5.65,
+      "frames": 339,
+      "jumps": 0,
+      "grounded": true
+    },
+    {
+      "route": "market-north",
+      "simulatedSeconds": 5.366666666666666,
+      "frames": 322,
+      "jumps": 0,
+      "grounded": true
+    },
+    {
+      "route": "market-south",
+      "simulatedSeconds": 11.25,
+      "frames": 675,
+      "jumps": 0,
+      "grounded": true
+    }
+  ],
+  "cleanup": {
+    "geometry": {
+      "observed": 167,
+      "disposed": 167
+    },
+    "material": {
+      "observed": 98,
+      "disposed": 98
+    },
+    "texture": {
+      "observed": 20,
+      "disposed": 20
+    }
+  },
+  "remainingSceneChildren": 0,
+  "library": {
+    "requests": 3,
+    "cachedFiles": 0,
+    "loadedFiles": 0
+  }
+}

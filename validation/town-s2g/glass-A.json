@@ -1,0 +1,1615 @@
+{
+  "phase": "S2-G actual game, local opt-in, owner review pending",
+  "ready": true,
+  "townEnabled": true,
+  "sceneId": "b75a48cd-60f6-45f6-9a51-4fdd1418dc37",
+  "rendererCount": "1",
+  "view": "live",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "dpr": 1,
+    "exposure": 0.96,
+    "shadows": true,
+    "shadowType": 2,
+    "antialias": true,
+    "near": 0.12,
+    "far": 1600,
+    "glass": "A (A authored, B alpha, C hybrid)"
+  },
+  "stabilization": {
+    "enabled": true,
+    "polish": true,
+    "glass": "A",
+    "relocatedInstances": 25,
+    "palmTrunks": 1,
+    "grassBlades": 91,
+    "changedGrassChunks": 4,
+    "stoneShadowMeshes": 17,
+    "glassGeometry": [
+      {
+        "authored": 556,
+        "retainedTransmission": 132,
+        "alpha": 424
+      }
+    ],
+    "unresolved": []
+  },
+  "clearanceChanges": [
+    {
+      "kind": "palm trunk",
+      "mesh": 15,
+      "from": [
+        47.000000544956755,
+        16.174144456867733,
+        40
+      ],
+      "to": [
+        52.000000544956755,
+        16.49640553956336,
+        43
+      ],
+      "reason": "move with its ten fronds; retain original geometry"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 23,
+      "index": 22,
+      "from": [
+        48.890159606933594,
+        16.2924747467041,
+        37.690704345703125
+      ],
+      "to": [
+        52.490159606933595,
+        16.644659959621645,
+        41.290704345703126
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 24,
+      "index": 22,
+      "from": [
+        48.890159606933594,
+        16.2924747467041,
+        37.690704345703125
+      ],
+      "to": [
+        52.490159606933595,
+        16.644659959621645,
+        41.290704345703126
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "Living landscape / fern",
+      "mesh": 25,
+      "index": 116,
+      "from": [
+        21.874187469482422,
+        15.484009742736816,
+        63.72661209106445
+      ],
+      "to": [
+        19.674187469482423,
+        15.450238147577666,
+        63.72661209106445
+      ],
+      "reason": "individual understory intersects a walkable surface or building"
+    },
+    {
+      "kind": "Living landscape / fern",
+      "mesh": 25,
+      "index": 168,
+      "from": [
+        40.28261184692383,
+        20.783905029296875,
+        -1.9123636484146118
+      ],
+      "to": [
+        42.48261184692383,
+        20.109794419459018,
+        -1.9123636484146118
+      ],
+      "reason": "individual understory intersects a walkable surface or building"
+    },
+    {
+      "kind": "Living landscape / fern",
+      "mesh": 26,
+      "index": 271,
+      "from": [
+        39.4764289855957,
+        20.85195541381836,
+        15.58896255493164
+      ],
+      "to": [
+        41.676428985595706,
+        18.990458862598985,
+        15.58896255493164
+      ],
+      "reason": "individual understory intersects a walkable surface or building"
+    },
+    {
+      "kind": "Living landscape / fern",
+      "mesh": 27,
+      "index": 65,
+      "from": [
+        41.44363021850586,
+        18.635438919067383,
+        37.339351654052734
+      ],
+      "to": [
+        43.25936857130715,
+        17.533592089067994,
+        38.58156509552181
+      ],
+      "reason": "individual understory intersects a walkable surface or building"
+    },
+    {
+      "kind": "Living landscape / fern",
+      "mesh": 27,
+      "index": 137,
+      "from": [
+        38.407840728759766,
+        17.69313621520996,
+        42.6258430480957
+      ],
+      "to": [
+        40.60784072875977,
+        17.096334434590418,
+        42.6258430480957
+      ],
+      "reason": "individual understory intersects a walkable surface or building"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 34,
+      "index": 17,
+      "from": [
+        45.63743209838867,
+        16.74413299560547,
+        37.87869644165039
+      ],
+      "to": [
+        50.43743209838867,
+        16.578450123970345,
+        40.67869644165039
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 34,
+      "index": 19,
+      "from": [
+        49.811004638671875,
+        15.85970401763916,
+        27.542081832885742
+      ],
+      "to": [
+        53.811004638671875,
+        15.444234475504146,
+        27.542081832885742
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 34,
+      "index": 20,
+      "from": [
+        50.905067443847656,
+        15.765373229980469,
+        21.761146545410156
+      ],
+      "to": [
+        55.905067443847656,
+        15.146944542702096,
+        21.761146545410156
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 35,
+      "index": 17,
+      "from": [
+        45.63743209838867,
+        16.74413299560547,
+        37.87869644165039
+      ],
+      "to": [
+        50.43743209838867,
+        16.578450123970345,
+        40.67869644165039
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 35,
+      "index": 19,
+      "from": [
+        49.811004638671875,
+        15.85970401763916,
+        27.542081832885742
+      ],
+      "to": [
+        53.811004638671875,
+        15.444234475504146,
+        27.542081832885742
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "Living landscape / canopy",
+      "mesh": 35,
+      "index": 20,
+      "from": [
+        50.905067443847656,
+        15.765373229980469,
+        21.761146545410156
+      ],
+      "to": [
+        55.905067443847656,
+        15.146944542702096,
+        21.761146545410156
+      ],
+      "reason": "crown intersects a building or undercroft edge"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 57,
+      "index": 1089,
+      "origin": [
+        29.56722354888916,
+        21.66965675354004,
+        16.535564422607422
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 568,
+      "origin": [
+        24.834285736083984,
+        15.738283157348633,
+        62.93115997314453
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 569,
+      "origin": [
+        23.9969482421875,
+        15.664339065551758,
+        63.13833236694336
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 571,
+      "origin": [
+        24.344157218933105,
+        15.688996315002441,
+        63.08907508850098
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 573,
+      "origin": [
+        24.836918830871582,
+        15.407971382141113,
+        64.34969329833984
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 574,
+      "origin": [
+        23.99276351928711,
+        15.312295913696289,
+        64.56237411499023
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 575,
+      "origin": [
+        24.242911338806152,
+        15.439125061035156,
+        64.14512634277344
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 576,
+      "origin": [
+        24.436955451965332,
+        15.317378044128418,
+        64.62628936767578
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 577,
+      "origin": [
+        23.882930755615234,
+        15.371685981750488,
+        64.28914642333984
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 578,
+      "origin": [
+        24.77000331878662,
+        15.497821807861328,
+        64.00311088562012
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 579,
+      "origin": [
+        24.13161563873291,
+        15.287558555603027,
+        64.69656372070312
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 610,
+      "origin": [
+        25.039438247680664,
+        15.895020484924316,
+        61.91055870056152
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 612,
+      "origin": [
+        25.673805236816406,
+        15.893468856811523,
+        62.140275955200195
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 619,
+      "origin": [
+        26.504237174987793,
+        15.202973365783691,
+        65.22057723999023
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 620,
+      "origin": [
+        25.2958402633667,
+        15.040815353393555,
+        65.69208908081055
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 621,
+      "origin": [
+        25.83220672607422,
+        15.262738227844238,
+        64.97436141967773
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 622,
+      "origin": [
+        26.139097213745117,
+        15.063809394836426,
+        65.64916610717773
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 623,
+      "origin": [
+        25.286635398864746,
+        15.06084156036377,
+        65.6215591430664
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 624,
+      "origin": [
+        24.774418830871582,
+        14.997170448303223,
+        65.7961540222168
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 625,
+      "origin": [
+        24.979225158691406,
+        15.103103637695312,
+        65.45988464355469
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 626,
+      "origin": [
+        25.17164707183838,
+        14.98238754272461,
+        65.89112091064453
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 627,
+      "origin": [
+        24.42062759399414,
+        15.063200950622559,
+        65.52517700195312
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 628,
+      "origin": [
+        25.31743335723877,
+        15.12523365020752,
+        65.3974723815918
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 629,
+      "origin": [
+        24.85468292236328,
+        14.93317985534668,
+        66.03165817260742
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 659,
+      "origin": [
+        26.35065746307373,
+        15.721202850341797,
+        63.28930473327637
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 664,
+      "origin": [
+        26.48912239074707,
+        15.6795654296875,
+        63.513845443725586
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 670,
+      "origin": [
+        26.09623622894287,
+        15.165282249450684,
+        65.31340408325195
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 59,
+      "index": 675,
+      "origin": [
+        26.22457790374756,
+        15.08305549621582,
+        65.59236907958984
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 2,
+      "origin": [
+        30.037253379821777,
+        16.807029724121094,
+        49.60170555114746
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 300,
+      "origin": [
+        37.61211395263672,
+        19.73452377319336,
+        30.086761474609375
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 302,
+      "origin": [
+        36.9691047668457,
+        19.539081573486328,
+        29.830636978149414
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 305,
+      "origin": [
+        37.29300880432129,
+        19.68636703491211,
+        29.86649799346924
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 306,
+      "origin": [
+        36.764827728271484,
+        19.324405670166016,
+        30.76237392425537
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 308,
+      "origin": [
+        37.265419006347656,
+        19.602519989013672,
+        30.20329761505127
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 310,
+      "origin": [
+        37.0300178527832,
+        19.582984924316406,
+        29.9086856842041
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 311,
+      "origin": [
+        37.38555335998535,
+        19.475351333618164,
+        31.924139976501465
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 314,
+      "origin": [
+        37.08626937866211,
+        19.35664939880371,
+        32.31160545349121
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 316,
+      "origin": [
+        37.306640625,
+        19.47612762451172,
+        31.59516716003418
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 319,
+      "origin": [
+        37.42275047302246,
+        19.444412231445312,
+        32.155696868896484
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 377,
+      "origin": [
+        36.91147804260254,
+        18.160940170288086,
+        41.20363998413086
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 378,
+      "origin": [
+        37.91462707519531,
+        18.1467342376709,
+        41.064361572265625
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 60,
+      "index": 380,
+      "origin": [
+        37.34337615966797,
+        18.204486846923828,
+        40.96264457702637
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 2,
+      "origin": [
+        30.36566162109375,
+        21.4449462890625,
+        5.450122833251953
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 3,
+      "origin": [
+        30.526742935180664,
+        21.57696533203125,
+        5.927919387817383
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 4,
+      "origin": [
+        30.11062526702881,
+        21.485065460205078,
+        5.648834943771362
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 38,
+      "origin": [
+        32.747459411621094,
+        21.975000381469727,
+        9.100695133209229
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 39,
+      "origin": [
+        31.80919647216797,
+        21.95615577697754,
+        9.53657579421997
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 41,
+      "origin": [
+        32.6967716217041,
+        21.975000381469727,
+        9.6378493309021
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 42,
+      "origin": [
+        31.933213233947754,
+        21.960065841674805,
+        9.038408756256104
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 43,
+      "origin": [
+        32.513370513916016,
+        21.975000381469727,
+        8.955509662628174
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 45,
+      "origin": [
+        31.6595401763916,
+        21.94062614440918,
+        10.036405086517334
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 46,
+      "origin": [
+        31.931161880493164,
+        21.967748641967773,
+        9.568531036376953
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 52,
+      "origin": [
+        32.437374114990234,
+        21.975000381469727,
+        9.999448776245117
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 53,
+      "origin": [
+        32.439706802368164,
+        21.68696403503418,
+        16.707749366760254
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 54,
+      "origin": [
+        31.85275173187256,
+        21.692827224731445,
+        16.907962799072266
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 55,
+      "origin": [
+        32.08585548400879,
+        21.714262008666992,
+        16.542296409606934
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 56,
+      "origin": [
+        32.30458450317383,
+        21.669946670532227,
+        17.01206684112549
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 57,
+      "origin": [
+        31.7034912109375,
+        21.720413208007812,
+        16.64262866973877
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 58,
+      "origin": [
+        32.52469062805176,
+        21.707473754882812,
+        16.419471740722656
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 59,
+      "origin": [
+        31.96897792816162,
+        21.673385620117188,
+        17.088133811950684
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 100,
+      "origin": [
+        34.04262924194336,
+        21.94646453857422,
+        10.873430728912354
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 101,
+      "origin": [
+        33.46969795227051,
+        21.959495544433594,
+        11.004004001617432
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 104,
+      "origin": [
+        34.39388084411621,
+        21.512828826904297,
+        18.1399564743042
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 105,
+      "origin": [
+        33.627145767211914,
+        21.481300354003906,
+        18.349743843078613
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 106,
+      "origin": [
+        33.88644599914551,
+        21.55103874206543,
+        17.795235633850098
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 107,
+      "origin": [
+        34.220815658569336,
+        21.46053695678711,
+        18.615687370300293
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 108,
+      "origin": [
+        33.421234130859375,
+        21.53289222717285,
+        18.062957763671875
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 113,
+      "origin": [
+        33.9974365234375,
+        21.54500961303711,
+        17.838359832763672
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 146,
+      "origin": [
+        36.09796142578125,
+        20.458587646484375,
+        0.7177747786045074
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 147,
+      "origin": [
+        34.98594856262207,
+        20.611860275268555,
+        1.1587312817573547
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 148,
+      "origin": [
+        35.48563766479492,
+        20.633228302001953,
+        0.509397566318512
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 149,
+      "origin": [
+        35.586368560791016,
+        20.53867530822754,
+        0.8730694949626923
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 150,
+      "origin": [
+        34.93522834777832,
+        20.699859619140625,
+        0.6235719919204712
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 151,
+      "origin": [
+        35.67997741699219,
+        20.575942993164062,
+        0.5825628340244293
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 152,
+      "origin": [
+        35.32570457458496,
+        20.521638870239258,
+        1.2441651225090027
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 153,
+      "origin": [
+        35.34666061401367,
+        20.66510009765625,
+        0.4852764904499054
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 154,
+      "origin": [
+        36.09596824645996,
+        20.416166305541992,
+        0.947560578584671
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 155,
+      "origin": [
+        34.68291091918945,
+        20.677330017089844,
+        3.504396438598633
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 156,
+      "origin": [
+        34.00761413574219,
+        20.860595703125,
+        3.941376805305481
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 157,
+      "origin": [
+        34.507720947265625,
+        20.647197723388672,
+        3.241834044456482
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 159,
+      "origin": [
+        34.07660484313965,
+        20.74837875366211,
+        3.4321553707122803
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 160,
+      "origin": [
+        34.840206146240234,
+        20.60564613342285,
+        3.2783186435699463
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 162,
+      "origin": [
+        34.14334678649902,
+        21.30940055847168,
+        5.477329254150391
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 164,
+      "origin": [
+        34.9119987487793,
+        21.12648582458496,
+        5.345274448394775
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 165,
+      "origin": [
+        34.344289779663086,
+        21.086484909057617,
+        4.954300165176392
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 167,
+      "origin": [
+        34.50136947631836,
+        21.2858943939209,
+        5.577949285507202
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 168,
+      "origin": [
+        34.51353645324707,
+        20.982162475585938,
+        4.737812757492065
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 170,
+      "origin": [
+        34.48134994506836,
+        21.10009002685547,
+        5.080564498901367
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 253,
+      "origin": [
+        37.71983528137207,
+        19.93091583251953,
+        28.685348510742188
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 258,
+      "origin": [
+        37.954593658447266,
+        20.02680015563965,
+        28.39119815826416
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "grass blade",
+      "mesh": 63,
+      "index": 308,
+      "origin": [
+        38.43191909790039,
+        21.211685180664062,
+        19.10901927947998
+      ],
+      "reason": "blade crosses paving or enclosed building volume"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 20,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 21,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 22,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 23,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 24,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 25,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 26,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 27,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 28,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 78,
+      "index": 29,
+      "from": [
+        47.400001525878906,
+        27.174144744873047,
+        40.400001525878906
+      ],
+      "to": [
+        52.400001525878906,
+        27.496405823941117,
+        43.400001525878906
+      ],
+      "reason": "palm fronds intersect the shophouse roof edge"
+    },
+    {
+      "kind": "understory",
+      "mesh": 80,
+      "index": 17,
+      "from": [
+        37.99617004394531,
+        17.81902313232422,
+        42.18415069580078
+      ],
+      "to": [
+        40.196170043945315,
+        17.261168497850658,
+        42.18415069580078
+      ],
+      "reason": "individual understory intersects a walkable surface or building"
+    },
+    {
+      "kind": "understory",
+      "mesh": 81,
+      "index": 17,
+      "from": [
+        38.446170806884766,
+        17.675519943237305,
+        42.33414840698242
+      ],
+      "to": [
+        40.64617080688477,
+        17.075735242609202,
+        42.33414840698242
+      ],
+      "reason": "individual understory intersects a walkable surface or building"
+    }
+  ],
+  "camera": {
+    "position": [
+      27,
+      23.965755450639598,
+      69.26001350148935
+    ],
+    "quaternion": [
+      -0.23334293573562226,
+      0,
+      0,
+      0.9723945055080685
+    ],
+    "fov": 60,
+    "aspect": 1.951219512195122
+  },
+  "player": [
+    27,
+    17.14999996711284,
+    60
+  ],
+  "actorVisible": true,
+  "activeWalk": null,
+  "benchmark": null,
+  "assets": {
+    "market": {
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    },
+    "interfaces": {
+      "meshes": 6,
+      "triangles": 8404,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "foundations": {
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "support": {
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    }
+  },
+  "cache": {
+    "requests": 6,
+    "cachedFiles": 6,
+    "loadedFiles": 6
+  },
+  "network": [
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+      "transferBytes": 10008204,
+      "encodedBytes": 10007904,
+      "decodedBytes": 10007904,
+      "durationMs": 25.099999994039536
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+      "transferBytes": 527472,
+      "encodedBytes": 527172,
+      "decodedBytes": 527172,
+      "durationMs": 11
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+      "transferBytes": 543752,
+      "encodedBytes": 543452,
+      "decodedBytes": 543452,
+      "durationMs": 11.199999988079071
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+      "transferBytes": 6464,
+      "encodedBytes": 6164,
+      "decodedBytes": 6164,
+      "durationMs": 9.799999982118607
+    }
+  ],
+  "frameAllPasses": {
+    "frame": 1746,
+    "calls": 602,
+    "triangles": 4164471,
+    "points": 0,
+    "lines": 0
+  },
+  "resources": {
+    "geometries": 226,
+    "textures": 23,
+    "programs": 62,
+    "heap": 72624321
+  },
+  "inventory": {
+    "meshes": 230,
+    "triangles": 1452117,
+    "geometries": 220,
+    "materials": 138,
+    "textures": 10,
+    "missingTextures": []
+  },
+  "traversal": [],
+  "benchmarks": [],
+  "switches": [],
+  "passSample": null,
+  "errors": [],
+  "warnings": [],
+  "capture": {
+    "rendererCount": "1",
+    "review": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 60,
+        "position": [
+          35,
+          21.602857142857,
+          35
+        ],
+        "quaternion": [
+          0.11436268409727442,
+          0.6189659272314,
+          -0.09173849801062386,
+          0.7716128597913561
+        ]
+      },
+      "player": [
+        35,
+        20.056857085227968,
+        35
+      ],
+      "sceneId": "b75a48cd-60f6-45f6-9a51-4fdd1418dc37",
+      "view": "S2-F glazing",
+      "worldId": "transit-landscape-r0a"
+    },
+    "sceneId": "b75a48cd-60f6-45f6-9a51-4fdd1418dc37",
+    "url": "http://127.0.0.1:4173/index.html?experience=adventure&dev-town=s2f&town-review=1"
+  }
+}

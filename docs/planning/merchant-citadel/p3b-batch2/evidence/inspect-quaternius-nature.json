@@ -1,0 +1,1702 @@
+[
+ {
+  "file": "Bush_Common.gltf",
+  "bytes": 2101,
+  "triangles": 900,
+  "bounds_min": [
+   -0.923,
+   -0.235,
+   -0.974
+  ],
+  "bounds_size": [
+   1.915,
+   1.582,
+   1.965
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Bush_Common_Flowers.gltf",
+  "bytes": 3654,
+  "triangles": 1368,
+  "bounds_min": [
+   -0.923,
+   -0.235,
+   -0.974
+  ],
+  "bounds_size": [
+   1.915,
+   1.582,
+   1.965
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Clover_1.gltf",
+  "bytes": 2074,
+  "triangles": 379,
+  "bounds_min": [
+   -0.502,
+   -0.013,
+   -0.4
+  ],
+  "bounds_size": [
+   0.796,
+   1.145,
+   0.764
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Clover_2.gltf",
+  "bytes": 2077,
+  "triangles": 615,
+  "bounds_min": [
+   -0.502,
+   -0.002,
+   -0.472
+  ],
+  "bounds_size": [
+   0.851,
+   1.264,
+   0.837
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "CommonTree_1.gltf",
+  "bytes": 3869,
+  "triangles": 6265,
+  "bounds_min": [
+   -2.194,
+   -0.243,
+   -2.225
+  ],
+  "bounds_size": [
+   4.311,
+   7.265,
+   4.578
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "CommonTree_2.gltf",
+  "bytes": 3866,
+  "triangles": 5648,
+  "bounds_min": [
+   -2.223,
+   -0.243,
+   -1.851
+  ],
+  "bounds_size": [
+   4.464,
+   7.643,
+   4.276
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "CommonTree_3.gltf",
+  "bytes": 3864,
+  "triangles": 3505,
+  "bounds_min": [
+   -1.986,
+   -0.243,
+   -2.061
+  ],
+  "bounds_size": [
+   4.063,
+   9.425,
+   4.241
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "CommonTree_4.gltf",
+  "bytes": 3865,
+  "triangles": 4066,
+  "bounds_min": [
+   -1.797,
+   -0.243,
+   -2.08
+  ],
+  "bounds_size": [
+   3.826,
+   9.438,
+   3.755
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "CommonTree_5.gltf",
+  "bytes": 3860,
+  "triangles": 3182,
+  "bounds_min": [
+   -1.912,
+   -0.243,
+   -2.162
+  ],
+  "bounds_size": [
+   3.671,
+   7.006,
+   4.22
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "DeadTree_1.gltf",
+  "bytes": 2206,
+  "triangles": 6169,
+  "bounds_min": [
+   -2.592,
+   -0.336,
+   -2.903
+  ],
+  "bounds_size": [
+   6.149,
+   9.495,
+   5.749
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "DeadTree_2.gltf",
+  "bytes": 2213,
+  "triangles": 6557,
+  "bounds_min": [
+   -2.332,
+   -0.336,
+   -2.523
+  ],
+  "bounds_size": [
+   6.73,
+   11.488,
+   6.379
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "DeadTree_3.gltf",
+  "bytes": 2211,
+  "triangles": 5802,
+  "bounds_min": [
+   -3.848,
+   -0.336,
+   -3.387
+  ],
+  "bounds_size": [
+   6.388,
+   13.28,
+   6.43
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "DeadTree_4.gltf",
+  "bytes": 2211,
+  "triangles": 5702,
+  "bounds_min": [
+   -3.363,
+   -0.336,
+   -3.599
+  ],
+  "bounds_size": [
+   7.961,
+   12.771,
+   7.732
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "DeadTree_5.gltf",
+  "bytes": 2211,
+  "triangles": 5648,
+  "bounds_min": [
+   -3.971,
+   -0.336,
+   -4.797
+  ],
+  "bounds_size": [
+   8.356,
+   16.437,
+   8.413
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Fern_1.gltf",
+  "bytes": 2058,
+  "triangles": 288,
+  "bounds_min": [
+   -4.42,
+   -0.247,
+   -4.091
+  ],
+  "bounds_size": [
+   9.046,
+   2.689,
+   8.487
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Flower_3_Group.gltf",
+  "bytes": 3629,
+  "triangles": 755,
+  "bounds_min": [
+   -0.614,
+   -0.035,
+   -0.802
+  ],
+  "bounds_size": [
+   1.488,
+   2.055,
+   1.591
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Flower_3_Single.gltf",
+  "bytes": 3632,
+  "triangles": 285,
+  "bounds_min": [
+   -0.481,
+   -0.018,
+   -0.521
+  ],
+  "bounds_size": [
+   0.907,
+   2.068,
+   0.878
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Flower_4_Group.gltf",
+  "bytes": 3645,
+  "triangles": 1690,
+  "bounds_min": [
+   -0.931,
+   -0.057,
+   -0.636
+  ],
+  "bounds_size": [
+   1.781,
+   2.487,
+   1.368
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Flower_4_Single.gltf",
+  "bytes": 3631,
+  "triangles": 642,
+  "bounds_min": [
+   -0.505,
+   -0.03,
+   -0.402
+  ],
+  "bounds_size": [
+   1.072,
+   2.419,
+   0.773
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 2,
+  "images": 2,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Grass_Common_Short.gltf",
+  "bytes": 2023,
+  "triangles": 155,
+  "bounds_min": [
+   -0.356,
+   -0.022,
+   -0.479
+  ],
+  "bounds_size": [
+   0.639,
+   1.334,
+   0.737
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Grass_Common_Tall.gltf",
+  "bytes": 2025,
+  "triangles": 326,
+  "bounds_min": [
+   -0.404,
+   -0.031,
+   -0.479
+  ],
+  "bounds_size": [
+   0.895,
+   1.873,
+   0.993
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Grass_Wispy_Short.gltf",
+  "bytes": 2025,
+  "triangles": 494,
+  "bounds_min": [
+   -0.728,
+   -0.086,
+   -0.583
+  ],
+  "bounds_size": [
+   1.322,
+   1.072,
+   1.21
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Grass_Wispy_Tall.gltf",
+  "bytes": 2023,
+  "triangles": 622,
+  "bounds_min": [
+   -0.739,
+   -0.036,
+   -0.819
+  ],
+  "bounds_size": [
+   1.54,
+   1.672,
+   1.594
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Mushroom_Common.gltf",
+  "bytes": 1822,
+  "triangles": 880,
+  "bounds_min": [
+   -0.333,
+   -0.017,
+   -0.445
+  ],
+  "bounds_size": [
+   0.564,
+   0.463,
+   0.779
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Mushroom_Laetiporus.gltf",
+  "bytes": 1833,
+  "triangles": 3216,
+  "bounds_min": [
+   -0.65,
+   -0.16,
+   -0.328
+  ],
+  "bounds_size": [
+   1.366,
+   0.767,
+   1.103
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Round_1.gltf",
+  "bytes": 1850,
+  "triangles": 136,
+  "bounds_min": [
+   -0.22,
+   -0.008,
+   -0.16
+  ],
+  "bounds_size": [
+   0.5,
+   0.095,
+   0.367
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Round_2.gltf",
+  "bytes": 1848,
+  "triangles": 114,
+  "bounds_min": [
+   -0.215,
+   -0.003,
+   -0.222
+  ],
+  "bounds_size": [
+   0.449,
+   0.094,
+   0.411
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Round_3.gltf",
+  "bytes": 1848,
+  "triangles": 128,
+  "bounds_min": [
+   -0.227,
+   -0.002,
+   -0.221
+  ],
+  "bounds_size": [
+   0.45,
+   0.099,
+   0.485
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Round_4.gltf",
+  "bytes": 1841,
+  "triangles": 126,
+  "bounds_min": [
+   -0.211,
+   -0.006,
+   -0.231
+  ],
+  "bounds_size": [
+   0.406,
+   0.099,
+   0.452
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Round_5.gltf",
+  "bytes": 1846,
+  "triangles": 124,
+  "bounds_min": [
+   -0.217,
+   -0.004,
+   -0.201
+  ],
+  "bounds_size": [
+   0.419,
+   0.101,
+   0.346
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Square_1.gltf",
+  "bytes": 1850,
+  "triangles": 104,
+  "bounds_min": [
+   -0.233,
+   -0.002,
+   -0.202
+  ],
+  "bounds_size": [
+   0.435,
+   0.13,
+   0.44
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Square_2.gltf",
+  "bytes": 1847,
+  "triangles": 78,
+  "bounds_min": [
+   -0.201,
+   -0.005,
+   -0.119
+  ],
+  "bounds_size": [
+   0.391,
+   0.14,
+   0.28
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Square_3.gltf",
+  "bytes": 1847,
+  "triangles": 52,
+  "bounds_min": [
+   -0.187,
+   -0.008,
+   -0.166
+  ],
+  "bounds_size": [
+   0.373,
+   0.159,
+   0.319
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Square_4.gltf",
+  "bytes": 1846,
+  "triangles": 48,
+  "bounds_min": [
+   -0.171,
+   -0.003,
+   -0.158
+  ],
+  "bounds_size": [
+   0.34,
+   0.168,
+   0.291
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Square_5.gltf",
+  "bytes": 1849,
+  "triangles": 72,
+  "bounds_min": [
+   -0.169,
+   -0.008,
+   -0.228
+  ],
+  "bounds_size": [
+   0.352,
+   0.152,
+   0.45
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pebble_Square_6.gltf",
+  "bytes": 1850,
+  "triangles": 65,
+  "bounds_min": [
+   -0.215,
+   -0.01,
+   -0.121
+  ],
+  "bounds_size": [
+   0.462,
+   0.138,
+   0.263
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Petal_1.gltf",
+  "bytes": 1845,
+  "triangles": 13,
+  "bounds_min": [
+   -0.257,
+   0.0,
+   -0.229
+  ],
+  "bounds_size": [
+   0.46,
+   0.244,
+   0.455
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Petal_2.gltf",
+  "bytes": 1825,
+  "triangles": 15,
+  "bounds_min": [
+   -0.321,
+   0.0,
+   -0.329
+  ],
+  "bounds_size": [
+   0.673,
+   0.236,
+   0.631
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Petal_3.gltf",
+  "bytes": 1849,
+  "triangles": 15,
+  "bounds_min": [
+   -0.315,
+   0.0,
+   -0.273
+  ],
+  "bounds_size": [
+   0.619,
+   0.189,
+   0.606
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Petal_4.gltf",
+  "bytes": 1848,
+  "triangles": 30,
+  "bounds_min": [
+   -0.143,
+   -0.0,
+   -0.122
+  ],
+  "bounds_size": [
+   0.329,
+   0.252,
+   0.244
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Petal_5.gltf",
+  "bytes": 1844,
+  "triangles": 15,
+  "bounds_min": [
+   -0.401,
+   0.001,
+   -0.42
+  ],
+  "bounds_size": [
+   0.834,
+   0.289,
+   0.795
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pine_1.gltf",
+  "bytes": 3832,
+  "triangles": 3947,
+  "bounds_min": [
+   -2.449,
+   -0.235,
+   -2.477
+  ],
+  "bounds_size": [
+   4.945,
+   7.317,
+   4.538
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pine_2.gltf",
+  "bytes": 3833,
+  "triangles": 3648,
+  "bounds_min": [
+   -2.892,
+   -0.235,
+   -2.694
+  ],
+  "bounds_size": [
+   5.728,
+   7.376,
+   5.221
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pine_3.gltf",
+  "bytes": 3827,
+  "triangles": 4964,
+  "bounds_min": [
+   -2.114,
+   -0.235,
+   -2.292
+  ],
+  "bounds_size": [
+   3.611,
+   7.392,
+   3.996
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pine_4.gltf",
+  "bytes": 3831,
+  "triangles": 3370,
+  "bounds_min": [
+   -2.872,
+   -0.235,
+   -2.946
+  ],
+  "bounds_size": [
+   5.802,
+   10.236,
+   5.371
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Pine_5.gltf",
+  "bytes": 3815,
+  "triangles": 1646,
+  "bounds_min": [
+   -2.988,
+   -0.235,
+   -3.778
+  ],
+  "bounds_size": [
+   6.42,
+   8.724,
+   6.222
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Plant_1.gltf",
+  "bytes": 2057,
+  "triangles": 120,
+  "bounds_min": [
+   -0.711,
+   -0.035,
+   -0.764
+  ],
+  "bounds_size": [
+   1.273,
+   1.014,
+   1.386
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Plant_1_Big.gltf",
+  "bytes": 2075,
+  "triangles": 360,
+  "bounds_min": [
+   -1.394,
+   -0.056,
+   -1.658
+  ],
+  "bounds_size": [
+   2.89,
+   3.756,
+   3.126
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Plant_7.gltf",
+  "bytes": 1844,
+  "triangles": 48,
+  "bounds_min": [
+   -0.448,
+   0.079,
+   -0.464
+  ],
+  "bounds_size": [
+   1.048,
+   0.25,
+   0.962
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Plant_7_Big.gltf",
+  "bytes": 1857,
+  "triangles": 112,
+  "bounds_min": [
+   -0.701,
+   0.05,
+   -0.851
+  ],
+  "bounds_size": [
+   1.311,
+   0.253,
+   1.362
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Round_Small_1.gltf",
+  "bytes": 1871,
+  "triangles": 998,
+  "bounds_min": [
+   -0.538,
+   -0.009,
+   -0.703
+  ],
+  "bounds_size": [
+   1.057,
+   0.113,
+   1.476
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Round_Small_2.gltf",
+  "bytes": 1873,
+  "triangles": 1126,
+  "bounds_min": [
+   -0.56,
+   -0.008,
+   -0.759
+  ],
+  "bounds_size": [
+   1.14,
+   0.105,
+   1.354
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Round_Small_3.gltf",
+  "bytes": 1872,
+  "triangles": 1002,
+  "bounds_min": [
+   -0.587,
+   -0.008,
+   -0.69
+  ],
+  "bounds_size": [
+   1.179,
+   0.109,
+   1.29
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Round_Thin.gltf",
+  "bytes": 1868,
+  "triangles": 2254,
+  "bounds_min": [
+   -0.697,
+   -0.009,
+   -1.086
+  ],
+  "bounds_size": [
+   1.457,
+   0.11,
+   2.089
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Round_Wide.gltf",
+  "bytes": 1868,
+  "triangles": 3500,
+  "bounds_min": [
+   -1.048,
+   -0.009,
+   -1.126
+  ],
+  "bounds_size": [
+   2.111,
+   0.113,
+   2.129
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Square_Small_1.gltf",
+  "bytes": 1874,
+  "triangles": 783,
+  "bounds_min": [
+   -0.519,
+   -0.009,
+   -0.474
+  ],
+  "bounds_size": [
+   1.019,
+   0.15,
+   0.974
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Square_Small_2.gltf",
+  "bytes": 1873,
+  "triangles": 559,
+  "bounds_min": [
+   -0.498,
+   -0.013,
+   -0.494
+  ],
+  "bounds_size": [
+   0.993,
+   0.149,
+   0.966
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Square_Small_3.gltf",
+  "bytes": 1873,
+  "triangles": 568,
+  "bounds_min": [
+   -0.396,
+   -0.008,
+   -0.549
+  ],
+  "bounds_size": [
+   0.836,
+   0.174,
+   1.076
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Square_Thin.gltf",
+  "bytes": 1871,
+  "triangles": 1793,
+  "bounds_min": [
+   -0.768,
+   -0.01,
+   -1.002
+  ],
+  "bounds_size": [
+   1.56,
+   0.176,
+   1.987
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "RockPath_Square_Wide.gltf",
+  "bytes": 1872,
+  "triangles": 2256,
+  "bounds_min": [
+   -1.024,
+   -0.01,
+   -1.0
+  ],
+  "bounds_size": [
+   2.052,
+   0.176,
+   1.987
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Rock_Medium_1.gltf",
+  "bytes": 1831,
+  "triangles": 342,
+  "bounds_min": [
+   -1.727,
+   -0.271,
+   -1.15
+  ],
+  "bounds_size": [
+   3.225,
+   2.26,
+   2.989
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Rock_Medium_2.gltf",
+  "bytes": 1825,
+  "triangles": 244,
+  "bounds_min": [
+   -1.714,
+   -0.051,
+   -1.159
+  ],
+  "bounds_size": [
+   3.049,
+   1.899,
+   2.479
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "Rock_Medium_3.gltf",
+  "bytes": 1832,
+  "triangles": 522,
+  "bounds_min": [
+   -1.824,
+   -0.316,
+   -0.89
+  ],
+  "bounds_size": [
+   3.42,
+   2.316,
+   3.476
+  ],
+  "meshes": 1,
+  "materials": 1,
+  "textures": 1,
+  "images": 1,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "TwistedTree_1.gltf",
+  "bytes": 3819,
+  "triangles": 9564,
+  "bounds_min": [
+   -2.174,
+   -0.201,
+   -6.727
+  ],
+  "bounds_size": [
+   13.516,
+   16.725,
+   11.549
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "TwistedTree_2.gltf",
+  "bytes": 3815,
+  "triangles": 9134,
+  "bounds_min": [
+   -6.62,
+   -0.201,
+   -5.541
+  ],
+  "bounds_size": [
+   10.563,
+   18.949,
+   9.203
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "TwistedTree_3.gltf",
+  "bytes": 3817,
+  "triangles": 10089,
+  "bounds_min": [
+   -4.49,
+   -0.201,
+   -6.52
+  ],
+  "bounds_size": [
+   11.357,
+   16.073,
+   11.506
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "TwistedTree_4.gltf",
+  "bytes": 3817,
+  "triangles": 9600,
+  "bounds_min": [
+   -4.327,
+   -0.201,
+   -7.143
+  ],
+  "bounds_size": [
+   10.381,
+   18.738,
+   11.293
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ },
+ {
+  "file": "TwistedTree_5.gltf",
+  "bytes": 3822,
+  "triangles": 10104,
+  "bounds_min": [
+   -3.746,
+   -0.201,
+   -6.339
+  ],
+  "bounds_size": [
+   9.495,
+   15.662,
+   9.387
+  ],
+  "meshes": 1,
+  "materials": 2,
+  "textures": 3,
+  "images": 3,
+  "skins": [],
+  "bones": 0,
+  "animations": [],
+  "bone_names": [],
+  "generator": "Khronos glTF Blender I/O v4.0.44",
+  "extensions": []
+ }
+]

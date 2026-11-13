@@ -1,0 +1,221 @@
+{
+  "resolution": [
+    1280,
+    720
+  ],
+  "tolerance": 1e-12,
+  "comparisons": [
+    {
+      "before": "before-01-aerial.jpg",
+      "after": "after-01-aerial.jpg",
+      "camera": {
+        "position": [
+          135,
+          105,
+          175
+        ],
+        "quaternion": [
+          -0.2202942828905621,
+          0.3170536165695787,
+          0.07597356414999419,
+          0.9193342431870088
+        ],
+        "fov": 43,
+        "aspect": 1.951219512195122
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "matched": true,
+      "maxCameraDelta": 0
+    },
+    {
+      "before": "before-02-profile.jpg",
+      "after": "after-02-profile.jpg",
+      "camera": {
+        "position": [
+          -145,
+          5,
+          155
+        ],
+        "quaternion": [
+          -0.04435940320584239,
+          -0.3603381248366482,
+          -0.01715783526871181,
+          0.9316084412591598
+        ],
+        "fov": 53,
+        "aspect": 1.951219512195122
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "matched": true,
+      "maxCameraDelta": 0
+    },
+    {
+      "before": "before-03-cliff.jpg",
+      "after": "after-03-cliff.jpg",
+      "camera": {
+        "position": [
+          -104,
+          -15,
+          57
+        ],
+        "quaternion": [
+          0.18708627796918223,
+          -0.40035208648566845,
+          0.08386265241064024,
+          0.8931315619621008
+        ],
+        "fov": 57,
+        "aspect": 1.951219512195122
+      },
+      "player": [
+        -80,
+        32.00989313338486,
+        5
+      ],
+      "matched": true,
+      "maxCameraDelta": 5.551115123125783e-17
+    },
+    {
+      "before": "before-04-forest.jpg",
+      "after": "after-04-forest.jpg",
+      "camera": {
+        "position": [
+          24,
+          22,
+          45
+        ],
+        "quaternion": [
+          0.029755453280916538,
+          0.2074954272032332,
+          -0.006314537165871375,
+          0.9777629504691696
+        ],
+        "fov": 60,
+        "aspect": 1.951219512195122
+      },
+      "player": [
+        21,
+        17.7,
+        40
+      ],
+      "matched": true,
+      "maxCameraDelta": 0
+    },
+    {
+      "before": "before-05-ridge.jpg",
+      "after": "after-05-ridge.jpg",
+      "camera": {
+        "position": [
+          -51,
+          53,
+          -30
+        ],
+        "quaternion": [
+          -0.1476888929187892,
+          -0.29563843278713975,
+          -0.04631755786330159,
+          0.9426773529692787
+        ],
+        "fov": 55,
+        "aspect": 1.951219512195122
+      },
+      "player": [
+        -38,
+        46.05995949804675,
+        -41
+      ],
+      "matched": true,
+      "maxCameraDelta": 1.1102230246251565e-16
+    },
+    {
+      "before": "before-06-overlook.jpg",
+      "after": "after-06-overlook.jpg",
+      "camera": {
+        "position": [
+          -96,
+          48,
+          23
+        ],
+        "quaternion": [
+          -0.1526149884425127,
+          -0.6904409209358116,
+          -0.15261498844251267,
+          0.6904409209358117
+        ],
+        "fov": 60,
+        "aspect": 1.951219512195122
+      },
+      "player": [
+        -80,
+        32.00989313338486,
+        5
+      ],
+      "matched": true,
+      "maxCameraDelta": 0
+    },
+    {
+      "before": "before-07-player.jpg",
+      "after": "after-07-player.jpg",
+      "camera": {
+        "position": [
+          29,
+          19.2,
+          65
+        ],
+        "quaternion": [
+          0.04426730583945253,
+          0.16361863201934598,
+          -0.007349504889471804,
+          0.9855025792293564
+        ],
+        "fov": 60,
+        "aspect": 1.951219512195122
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "matched": true,
+      "maxCameraDelta": 0
+    },
+    {
+      "before": "before-08-editorial.jpg",
+      "after": "after-08-editorial.jpg",
+      "camera": {
+        "position": [
+          108,
+          76,
+          136
+        ],
+        "quaternion": [
+          -0.16361323879533804,
+          0.33197122599632245,
+          0.05858308499798823,
+          0.9271428343861137
+        ],
+        "fov": 48,
+        "aspect": 1.9753086419753085
+      },
+      "player": [
+        27,
+        16.030228493031395,
+        57
+      ],
+      "matched": true,
+      "maxCameraDelta": 0
+    }
+  ],
+  "lighting": "Before R0A.63 daylight; after R0A2.67 daylight. Lighting changes are intentionally part of the polish. Time-varying cloud drift is not synchronized.",
+  "afterSceneIds": [
+    "00eceba7-ef80-4f6c-84a9-3bc315e0e8de"
+  ]
+}

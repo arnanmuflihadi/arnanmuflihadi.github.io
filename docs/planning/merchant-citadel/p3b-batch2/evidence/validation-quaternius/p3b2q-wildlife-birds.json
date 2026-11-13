@@ -1,0 +1,139 @@
+[
+ {
+  "sp": "Bird",
+  "hid": "A_settlement",
+  "sequence": [
+   "PERCHED",
+   "TAKEOFF",
+   "FLY",
+   "LAND",
+   "PERCHED"
+  ],
+  "seconds": 16,
+  "start": [
+   -19.994,
+   7.89,
+   -29.081
+  ],
+  "end": [
+   0.085,
+   26.8,
+   -83.974
+  ],
+  "destination": [
+   0.085,
+   26.8,
+   -83.974
+  ],
+  "landed_on_destination_m": 0,
+  "max_height_m": 29.64,
+  "flight_keepout_perch": false
+ },
+ {
+  "sp": "Bird",
+  "hid": "B_caravan_green",
+  "sequence": [
+   "PERCHED",
+   "TAKEOFF",
+   "FLY",
+   "LAND",
+   "PERCHED"
+  ],
+  "seconds": 7.9,
+  "start": [
+   -72.8,
+   4.99,
+   -22.06
+  ],
+  "end": [
+   -53.31,
+   4.58,
+   -36.92
+  ],
+  "destination": [
+   -53.31,
+   4.58,
+   -36.92
+  ],
+  "landed_on_destination_m": 0,
+  "max_height_m": 9.198,
+  "flight_keepout_perch": false
+ },
+ {
+  "sp": "Bird",
+  "hid": "D_tea_terraces",
+  "sequence": [
+   "PERCHED",
+   "TAKEOFF",
+   "FLY",
+   "LAND",
+   "PERCHED"
+  ],
+  "seconds": 11.75,
+  "start": [
+   36.063,
+   10.89,
+   -68.574
+  ],
+  "end": [
+   76,
+   -3.82,
+   -61.5
+  ],
+  "destination": [
+   76,
+   -3.82,
+   -61.5
+  ],
+  "landed_on_destination_m": 0,
+  "max_height_m": 12.396,
+  "flight_keepout_perch": false
+ },
+ {
+  "sp": "Bird",
+  "hid": "G_sky_quay",
+  "sequence": [
+   "PERCHED",
+   "TAKEOFF",
+   "FLY",
+   "LAND",
+   "PERCHED"
+  ],
+  "seconds": 7.95,
+  "start": [
+   -9.2,
+   0.95,
+   56
+  ],
+  "end": [
+   9.2,
+   0.95,
+   39.5
+  ],
+  "destination": [
+   9.2,
+   0.95,
+   39.5
+  ],
+  "landed_on_destination_m": 0,
+  "max_height_m": 5.399,
+  "flight_keepout_perch": false
+ },
+ {
+  "sp": "Eagle",
+  "orbit": [
+   46,
+   110,
+   32.06
+  ],
+  "altitude_m": [
+   35.5,
+   40.5
+  ],
+  "radius_m": [
+   32.06,
+   32.06
+  ],
+  "above_terrain_min_m": 33.526
+ }
+]

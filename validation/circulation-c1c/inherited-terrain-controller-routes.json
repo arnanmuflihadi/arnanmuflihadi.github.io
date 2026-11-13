@@ -1,0 +1,373 @@
+{
+  "method": "unchanged production controller, real terrain triangles and town support/colliders; fixed timestep; new square paving unbuilt",
+  "routes": [
+    {
+      "name": "main",
+      "reverse": false,
+      "success": true,
+      "hz": 20,
+      "frames": 662,
+      "seconds": 33.1,
+      "distanceMetres": 69.35690706062924,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        35.999999999999986,
+        20.7604072468364,
+        0.12982381253302133
+      ],
+      "airFrames": 0,
+      "maxRise": 0.174285888671875,
+      "maxDrop": 0.16902422904968262,
+      "target": 10
+    },
+    {
+      "name": "main",
+      "reverse": true,
+      "success": true,
+      "hz": 20,
+      "frames": 662,
+      "seconds": 33.1,
+      "distanceMetres": 69.35813191474564,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        24.068600881074808,
+        14.981574875641483,
+        65.90446825500332
+      ],
+      "airFrames": 0,
+      "maxRise": 0.16902422904968262,
+      "maxDrop": 0.174285888671875,
+      "target": 10
+    },
+    {
+      "name": "ramp",
+      "reverse": false,
+      "success": true,
+      "hz": 20,
+      "frames": 162,
+      "seconds": 8.1,
+      "distanceMetres": 16.806365195302206,
+      "start": [
+        36,
+        22.613999938964845,
+        10
+      ],
+      "end": [
+        35.91557002446696,
+        20.770933538666675,
+        0.018956744214721835
+      ],
+      "airFrames": 0,
+      "maxRise": 3.552713678800501e-15,
+      "maxDrop": 0.10825957851892198,
+      "target": 6
+    },
+    {
+      "name": "ramp",
+      "reverse": true,
+      "success": true,
+      "hz": 20,
+      "frames": 162,
+      "seconds": 8.1,
+      "distanceMetres": 16.805187416806735,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        35.92318137043847,
+        22.613999938964845,
+        9.975592802656454
+      ],
+      "airFrames": 0,
+      "maxRise": 0.10319849806483816,
+      "maxDrop": 3.552713678800501e-15,
+      "target": 6
+    },
+    {
+      "name": "reservation",
+      "reverse": false,
+      "success": true,
+      "hz": 20,
+      "frames": 521,
+      "seconds": 26.05,
+      "distanceMetres": 54.49724961462026,
+      "start": [
+        36,
+        20.056857085227968,
+        35
+      ],
+      "end": [
+        26.006598375441758,
+        21.37888366862222,
+        7.955436912107784
+      ],
+      "airFrames": 0,
+      "maxRise": 0.17428588867187855,
+      "maxDrop": 0.16902422904968262,
+      "target": 9
+    },
+    {
+      "name": "reservation",
+      "reverse": true,
+      "success": true,
+      "hz": 20,
+      "frames": 520,
+      "seconds": 26,
+      "distanceMetres": 54.39327936377564,
+      "start": [
+        26,
+        21.38064443075706,
+        8
+      ],
+      "end": [
+        36.00000000268163,
+        20.056857085227968,
+        34.8774959845879
+      ],
+      "airFrames": 0,
+      "maxRise": 0.16902422904968262,
+      "maxDrop": 0.174285888671875,
+      "target": 9
+    },
+    {
+      "name": "highland",
+      "reverse": false,
+      "success": true,
+      "hz": 20,
+      "frames": 324,
+      "seconds": 16.2,
+      "distanceMetres": 33.88381680565789,
+      "start": [
+        26,
+        21.38064443075706,
+        8
+      ],
+      "end": [
+        -4.952088820997567,
+        21.009496012283435,
+        5.015970651311498
+      ],
+      "airFrames": 0,
+      "maxRise": 0.04254920472928703,
+      "maxDrop": 0.02674712737869811,
+      "target": 6
+    },
+    {
+      "name": "highland",
+      "reverse": true,
+      "success": true,
+      "hz": 20,
+      "frames": 324,
+      "seconds": 16.2,
+      "distanceMetres": 33.88361724142375,
+      "start": [
+        -5,
+        21.011083514955512,
+        5
+      ],
+      "end": [
+        25.962282386744832,
+        21.380305720007968,
+        8.038243728142989
+      ],
+      "airFrames": 0,
+      "maxRise": 0.02815338087528474,
+      "maxDrop": 0.04258967646292078,
+      "target": 6
+    },
+    {
+      "name": "main",
+      "reverse": false,
+      "success": true,
+      "hz": 60,
+      "frames": 1987,
+      "seconds": 33.11666666666667,
+      "distanceMetres": 69.36118529005257,
+      "start": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "end": [
+        36.000000000000036,
+        20.7599675680383,
+        0.1197604869086523
+      ],
+      "airFrames": 0,
+      "maxRise": 0.17428588867187855,
+      "maxDrop": 0.16902422904968262,
+      "target": 10
+    },
+    {
+      "name": "main",
+      "reverse": true,
+      "success": true,
+      "hz": 60,
+      "frames": 1987,
+      "seconds": 33.11666666666667,
+      "distanceMetres": 69.36061335860931,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        24.072329109859307,
+        14.982740163954123,
+        65.90001316035533
+      ],
+      "airFrames": 0,
+      "maxRise": 0.16902422904968262,
+      "maxDrop": 0.174285888671875,
+      "target": 10
+    },
+    {
+      "name": "ramp",
+      "reverse": false,
+      "success": true,
+      "hz": 60,
+      "frames": 486,
+      "seconds": 8.1,
+      "distanceMetres": 16.771017585807694,
+      "start": [
+        36,
+        22.613999938964845,
+        10
+      ],
+      "end": [
+        35.904261150069026,
+        20.773144005135805,
+        0.022429342768597003
+      ],
+      "airFrames": 0,
+      "maxRise": 3.552713678800501e-15,
+      "maxDrop": 0.10214226169199137,
+      "target": 6
+    },
+    {
+      "name": "ramp",
+      "reverse": true,
+      "success": true,
+      "hz": 60,
+      "frames": 486,
+      "seconds": 8.1,
+      "distanceMetres": 16.770733463313874,
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        35.89762725597229,
+        22.613999938964845,
+        9.966512834383913
+      ],
+      "airFrames": 0,
+      "maxRise": 0.10350911365720705,
+      "maxDrop": 7.105427357601002e-15,
+      "target": 6
+    },
+    {
+      "name": "reservation",
+      "reverse": false,
+      "success": true,
+      "hz": 60,
+      "frames": 1561,
+      "seconds": 26.016666666666666,
+      "distanceMetres": 54.392129046963966,
+      "start": [
+        36,
+        20.056857085227968,
+        35
+      ],
+      "end": [
+        26.01826814903754,
+        21.380056817102993,
+        7.875380685463657
+      ],
+      "airFrames": 0,
+      "maxRise": 0.174285888671875,
+      "maxDrop": 0.16902422904968262,
+      "target": 9
+    },
+    {
+      "name": "reservation",
+      "reverse": true,
+      "success": true,
+      "hz": 60,
+      "frames": 1562,
+      "seconds": 26.033333333333335,
+      "distanceMetres": 54.427493435067476,
+      "start": [
+        26,
+        21.38064443075706,
+        8
+      ],
+      "end": [
+        36.00000000060447,
+        20.056857085227964,
+        34.90459301244192
+      ],
+      "airFrames": 0,
+      "maxRise": 0.16902422904968262,
+      "maxDrop": 0.17428588867187855,
+      "target": 9
+    },
+    {
+      "name": "highland",
+      "reverse": false,
+      "success": true,
+      "hz": 60,
+      "frames": 971,
+      "seconds": 16.183333333333334,
+      "distanceMetres": 33.81750337399506,
+      "start": [
+        26,
+        21.38064443075706,
+        8
+      ],
+      "end": [
+        -4.887084300893161,
+        21.007288669533104,
+        5.03762351910369
+      ],
+      "airFrames": 0,
+      "maxRise": 0.014371512843570855,
+      "maxDrop": 0.009385412478962962,
+      "target": 6
+    },
+    {
+      "name": "highland",
+      "reverse": true,
+      "success": true,
+      "hz": 60,
+      "frames": 971,
+      "seconds": 16.183333333333334,
+      "distanceMetres": 33.81755839619843,
+      "start": [
+        -5,
+        21.011083514955512,
+        5
+      ],
+      "end": [
+        25.919699140808678,
+        21.37989122340305,
+        8.08076058337915
+      ],
+      "airFrames": 0,
+      "maxRise": 0.009381238250835366,
+      "maxDrop": 0.014442198075503399,
+      "target": 6
+    }
+  ]
+}

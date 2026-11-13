@@ -1,0 +1,179 @@
+{
+  "phase": "S2-F actual game, local opt-in, owner review pending",
+  "ready": true,
+  "townEnabled": true,
+  "sceneId": "c8ea10ea-7e8c-4339-9fa7-6ad8b741cade",
+  "rendererCount": "1",
+  "view": "foundations",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "viewport": [
+      1280,
+      656
+    ],
+    "drawingBuffer": [
+      1280,
+      656
+    ],
+    "dpr": 1,
+    "exposure": 0.96,
+    "shadows": true,
+    "shadowType": 2,
+    "antialias": true,
+    "near": 0.12,
+    "far": 1600,
+    "glass": "unchanged authored transmission"
+  },
+  "camera": {
+    "position": [
+      20.5,
+      16.2455346757,
+      28
+    ],
+    "quaternion": [
+      0.1890574137336996,
+      -0.42207805905760387,
+      0.09047288613636431,
+      0.8819989020677106
+    ],
+    "fov": 60,
+    "aspect": 1.951219512195122
+  },
+  "player": [
+    20.5,
+    14.595534675706862,
+    28
+  ],
+  "actorVisible": false,
+  "activeWalk": null,
+  "benchmark": null,
+  "assets": {
+    "market": {
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    },
+    "interfaces": {
+      "meshes": 6,
+      "triangles": 8404,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "foundations": {
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "support": {
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    }
+  },
+  "cache": {
+    "requests": 6,
+    "cachedFiles": 6,
+    "loadedFiles": 6
+  },
+  "network": [
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2d/market-street-optimized.glb",
+      "transferBytes": 10008204,
+      "encodedBytes": 10007904,
+      "decodedBytes": 10007904,
+      "durationMs": 33.5
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/common-interface.glb",
+      "transferBytes": 527472,
+      "encodedBytes": 527172,
+      "decodedBytes": 527172,
+      "durationMs": 6.699999988079071
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/foundation-hybrid.glb",
+      "transferBytes": 543752,
+      "encodedBytes": 543452,
+      "decodedBytes": 543452,
+      "durationMs": 9.099999994039536
+    },
+    {
+      "url": "http://127.0.0.1:4173/validation/market-street-s2e/support-reference.glb",
+      "transferBytes": 6464,
+      "encodedBytes": 6164,
+      "decodedBytes": 6164,
+      "durationMs": 8.699999988079071
+    }
+  ],
+  "frameAllPasses": {
+    "frame": 12658,
+    "calls": 520,
+    "triangles": 4095059,
+    "points": 0,
+    "lines": 0
+  },
+  "resources": {
+    "geometries": 231,
+    "textures": 23,
+    "programs": 62,
+    "heap": 67449921
+  },
+  "inventory": {
+    "meshes": 227,
+    "triangles": 1506013,
+    "geometries": 218,
+    "materials": 131,
+    "textures": 10,
+    "missingTextures": []
+  },
+  "traversal": [],
+  "benchmarks": [],
+  "switches": [],
+  "passSample": null,
+  "errors": [],
+  "warnings": [],
+  "capture": {
+    "rendererCount": "1",
+    "review": {
+      "camera": {
+        "aspect": 1.951219512195122,
+        "fov": 48,
+        "position": [
+          146,
+          138.6,
+          199
+        ],
+        "quaternion": [
+          -0.21364684306111617,
+          0.2906026675481791,
+          0.06673824834375851,
+          0.9302962551101172
+        ]
+      },
+      "player": [
+        24,
+        14.976712322235109,
+        66
+      ],
+      "sceneId": "c8ea10ea-7e8c-4339-9fa7-6ad8b741cade",
+      "view": "S2-F island",
+      "worldId": "transit-landscape-r0a"
+    },
+    "sceneId": "c8ea10ea-7e8c-4339-9fa7-6ad8b741cade",
+    "url": "http://127.0.0.1:4173/index.html?experience=adventure&dev-town=s2f&town-review=1"
+  }
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "file": "01-island.png",
+    "title": "Whole island",
+    "camera": {
+      "position": [
+        143,
+        121,
+        194
+      ],
+      "quaternion": [
+        -0.19827553929456282,
+        0.327381355607055,
+        0.07046707494521927,
+        0.9211637475861728
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1440,
+        836
+      ],
+      "buffer": [
+        1440,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+    "annotated": false
+  },
+  {
+    "file": "02-arrival.png",
+    "title": "Arrival into Market Street",
+    "camera": {
+      "position": [
+        12.765834472425112,
+        16.76499983472295,
+        66.6596490629358
+      ],
+      "quaternion": [
+        0.01121268241233305,
+        0.30068501657037927,
+        -0.003535345184693292,
+        0.9536510357031107
+      ],
+      "fov": 60
+    },
+    "settings": {
+      "viewport": [
+        1440,
+        836
+      ],
+      "buffer": [
+        1440,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+    "annotated": false
+  },
+  {
+    "file": "03-market.png",
+    "title": "Market Street toward Telaga Awan",
+    "camera": {
+      "position": [
+        7.603646545265695,
+        16.945000084797798,
+        59.28728066433487
+      ],
+      "quaternion": [
+        0.0038900620369105667,
+        0.30070329807823504,
+        -0.0012265318489020143,
+        0.9537090172384053
+      ],
+      "fov": 60
+    },
+    "settings": {
+      "viewport": [
+        1440,
+        836
+      ],
+      "buffer": [
+        1440,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+    "annotated": false
+  },
+  {
+    "file": "04-fountain-guild.png",
+    "title": "Fountain toward the Guild reservation",
+    "camera": {
+      "position": [
+        -2.7200492876581297,
+        17.164999389648436,
+        49.425166066071924
+      ],
+      "quaternion": [
+        -0.004957750514312196,
+        0.21706514223217158,
+        0.0011024550904897247,
+        0.976143908104916
+      ],
+      "fov": 60
+    },
+    "settings": {
+      "viewport": [
+        1440,
+        836
+      ],
+      "buffer": [
+        1440,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+    "annotated": false
+  },
+  {
+    "file": "05-oblique.png",
+    "title": "Town, terrain and forest",
+    "camera": {
+      "position": [
+        -14.755634151499976,
+        65,
+        100.57968392114765
+      ],
+      "quaternion": [
+        -0.3587906430433427,
+        -0.13647967532907593,
+        -0.05311844573255164,
+        0.9218573660873858
+      ],
+      "fov": 48
+    },
+    "settings": {
+      "viewport": [
+        1440,
+        836
+      ],
+      "buffer": [
+        1440,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+    "annotated": false
+  },
+  {
+    "file": "06-plan.png",
+    "title": "Measured circulation plan",
+    "camera": {
+      "position": [
+        1.867882181755232,
+        150,
+        51.095760221444955
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "fov": 30
+    },
+    "settings": {
+      "viewport": [
+        1440,
+        836
+      ],
+      "buffer": [
+        1440,
+        836
+      ],
+      "dpr": 1,
+      "exposure": 0.96,
+      "shadows": true,
+      "shadowType": 2,
+      "antialias": true,
+      "glass": "B"
+    },
+    "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+    "annotated": true
+  }
+]

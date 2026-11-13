@@ -1,0 +1,29 @@
+{
+  "review": {
+    "camera": {
+      "aspect": 1.1982300884955752,
+      "fov": 60,
+      "position": [
+        36,
+        21.602857142857,
+        35
+      ],
+      "quaternion": [
+        0.05735259041615522,
+        0,
+        0,
+        0.9983539855044186
+      ]
+    },
+    "player": [
+      36,
+      18.71191503376859,
+      35
+    ],
+    "sceneId": "cd791adb-44b2-412b-8b55-8b4781c36e76",
+    "view": "S2-F market",
+    "worldId": "transit-landscape-r0a"
+  },
+  "townEnabled": "false",
+  "url": "http://127.0.0.1:4173/index.html?dev-town=s2f&town-review=1&experience=adventure&project=mbr"
+}

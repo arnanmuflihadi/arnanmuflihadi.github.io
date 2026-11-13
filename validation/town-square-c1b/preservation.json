@@ -1,0 +1,12 @@
+{
+  "checkpoint_files": 3350,
+  "unchanged": 3347,
+  "changed": [
+    "assets/js/floating-atlas/town-integration.js",
+    "assets/js/floating-atlas/town-review.js",
+    "assets/js/floating-atlas/entry.js"
+  ],
+  "missing": [],
+  "asset_license_files_unchanged": 233,
+  "only_expected_changes": true
+}

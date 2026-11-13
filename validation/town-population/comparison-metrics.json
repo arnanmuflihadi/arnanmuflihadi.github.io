@@ -1,0 +1,167 @@
+[
+  {
+    "view": "01-market",
+    "camera": {
+      "position": [
+        7.603646545265695,
+        16.945000084797798,
+        59.28728066433487
+      ],
+      "quaternion": [
+        0.0038900620369105667,
+        0.30070329807823504,
+        -0.0012265318489020143,
+        0.9537090172384053
+      ],
+      "fov": 60
+    },
+    "before": {
+      "frame": 26062,
+      "calls": 308,
+      "triangles": 2551732,
+      "points": 0,
+      "lines": 0
+    },
+    "after": {
+      "frame": 26282,
+      "calls": 351,
+      "triangles": 2561510,
+      "points": 0,
+      "lines": 0
+    },
+    "drawCallDelta": 43,
+    "submittedTriangleDelta": 9778
+  },
+  {
+    "view": "02-kopi",
+    "camera": {
+      "position": [
+        8.750799417967789,
+        16.905000081109826,
+        60.925584752912854
+      ],
+      "quaternion": [
+        -0.005851328100970862,
+        0.6349203835325735,
+        0.004808974722720053,
+        0.772540447029423
+      ],
+      "fov": 60
+    },
+    "before": {
+      "frame": 26547,
+      "calls": 255,
+      "triangles": 2456618,
+      "points": 0,
+      "lines": 0
+    },
+    "after": {
+      "frame": 26790,
+      "calls": 292,
+      "triangles": 2465100,
+      "points": 0,
+      "lines": 0
+    },
+    "drawCallDelta": 37,
+    "submittedTriangleDelta": 8482
+  },
+  {
+    "view": "03-square",
+    "camera": {
+      "position": [
+        -8.168855427644317,
+        17.164999389648436,
+        42.86387719506123
+      ],
+      "quaternion": [
+        -0.01966606206846137,
+        -0.6998872286950116,
+        -0.019284853397836234,
+        0.7137220800435977
+      ],
+      "fov": 60
+    },
+    "before": {
+      "frame": 27023,
+      "calls": 274,
+      "triangles": 2522992,
+      "points": 0,
+      "lines": 0
+    },
+    "after": {
+      "frame": 27251,
+      "calls": 326,
+      "triangles": 2532270,
+      "points": 0,
+      "lines": 0
+    },
+    "drawCallDelta": 52,
+    "submittedTriangleDelta": 9278
+  },
+  {
+    "view": "04-guild",
+    "camera": {
+      "position": [
+        -3.867882181755232,
+        17.16499938964844,
+        42.904239778555045
+      ],
+      "quaternion": [
+        -0.0034438781779886234,
+        0.30070383899102177,
+        0.001085850618566574,
+        0.9537107327945886
+      ],
+      "fov": 60
+    },
+    "before": {
+      "frame": 27574,
+      "calls": 214,
+      "triangles": 2429762,
+      "points": 0,
+      "lines": 0
+    },
+    "after": {
+      "frame": 27795,
+      "calls": 250,
+      "triangles": 2438614,
+      "points": 0,
+      "lines": 0
+    },
+    "drawCallDelta": 36,
+    "submittedTriangleDelta": 8852
+  },
+  {
+    "view": "05-aerial",
+    "camera": {
+      "position": [
+        -14.755634151499976,
+        65,
+        100.57968392114765
+      ],
+      "quaternion": [
+        -0.3587906430433427,
+        -0.13647967532907593,
+        -0.05311844573255164,
+        0.9218573660873858
+      ],
+      "fov": 48
+    },
+    "before": {
+      "frame": 28109,
+      "calls": 316,
+      "triangles": 2512324,
+      "points": 0,
+      "lines": 0
+    },
+    "after": {
+      "frame": 28360,
+      "calls": 370,
+      "triangles": 2522636,
+      "points": 0,
+      "lines": 0
+    },
+    "drawCallDelta": 54,
+    "submittedTriangleDelta": 10312
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "paused": "true",
+  "reduced": "true",
+  "escapeOpensGuide": true,
+  "restored": {
+    "paused": "false",
+    "reduced": "false"
+  }
+}

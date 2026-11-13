@@ -1,0 +1,98 @@
+{
+  "world": "Transit Kingdom / Landscape",
+  "revision": "R0A2.67",
+  "terrainOnly": true,
+  "architectureInstances": 0,
+  "reservations": {
+    "skyport": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 9,
+      "constructed": false
+    },
+    "station": {
+      "x": -5,
+      "z": 5,
+      "y": 21,
+      "radius": 8,
+      "constructed": false
+    },
+    "settlement": {
+      "x": 32,
+      "z": 12,
+      "y": 22,
+      "radius": 11,
+      "constructed": false
+    },
+    "overlook": {
+      "x": -80,
+      "z": 5,
+      "y": 32,
+      "radius": 5,
+      "constructed": false,
+      "natural": true
+    },
+    "dragon": {
+      "x": 27,
+      "z": 57,
+      "y": 16,
+      "radius": 6.5,
+      "constructed": false
+    }
+  },
+  "imported": {
+    "tree": 134,
+    "fern": 660,
+    "hangingFern": 24
+  },
+  "terrain": {
+    "width": 177.6201171875,
+    "depth": 183,
+    "surfaceMin": 10.28,
+    "surfaceMax": 49,
+    "undersideMin": -85
+  },
+  "growthForms": {
+    "spreading": 60,
+    "emergent": 36,
+    "windswept": 38
+  },
+  "landscapeZones": {
+    "forest": 107,
+    "meadow": 24,
+    "ridge": 3
+  },
+  "vegetationBatches": 18,
+  "derivedTreeGeometries": 6,
+  "palms": 10,
+  "shrubs": 131,
+  "grassBlades": 28063,
+  "detail": {
+    "grassChunks": 31,
+    "activeGrassChunks": 31,
+    "nearGrassChunks": 31,
+    "farGrassChunks": 0,
+    "eco": false
+  },
+  "files": {
+    "requests": 2,
+    "cachedFiles": 2,
+    "loadedFiles": 2
+  },
+  "geometry": {
+    "meshes": 73,
+    "triangles": 1321126,
+    "geometries": 61,
+    "materials": 33,
+    "textures": 4,
+    "missingTextures": []
+  },
+  "surfaceTriangles": 26416,
+  "sourceFiles": [
+    "canopy-tree.glb",
+    "fern.glb"
+  ],
+  "cloudCount": 34,
+  "settlement": null
+}

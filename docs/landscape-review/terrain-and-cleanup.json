@@ -1,0 +1,112 @@
+{
+  "dimensions": {
+    "width": 177.6201171875,
+    "depth": 183,
+    "surfaceMin": 10.28,
+    "surfaceMax": 49,
+    "undersideMin": -85
+  },
+  "measuredCliffBounds": {
+    "min": [
+      -92.36383819580078,
+      -86.1143798828125,
+      -100.98809814453125
+    ],
+    "max": [
+      93.82455444335938,
+      45.90224838256836,
+      90.23400115966797
+    ]
+  },
+  "traversals": [
+    {
+      "id": "arrival",
+      "lengthM": 63.21151644536083,
+      "controllerSeconds": 30.083333333333332,
+      "grounded": true,
+      "jumps": 0
+    },
+    {
+      "id": "ridge",
+      "lengthM": 90.5392888649923,
+      "controllerSeconds": 43.083333333333336,
+      "grounded": true,
+      "jumps": 0
+    },
+    {
+      "id": "overlook",
+      "lengthM": 66.72443900757193,
+      "controllerSeconds": 31.766666666666666,
+      "grounded": true,
+      "jumps": 0
+    },
+    {
+      "id": "return",
+      "lengthM": 84.80975276854173,
+      "controllerSeconds": 40.38333333333333,
+      "grounded": true,
+      "jumps": 0
+    },
+    {
+      "id": "clearing",
+      "lengthM": 39.63014581273465,
+      "controllerSeconds": 18.866666666666667,
+      "grounded": true,
+      "jumps": 0
+    },
+    {
+      "id": "meadow",
+      "lengthM": 44.90419516928956,
+      "controllerSeconds": 21.366666666666667,
+      "grounded": true,
+      "jumps": 0
+    }
+  ],
+  "geometryAlignment": "New active tests raycast more than 1800 points, error below 0.00002 m; closed top/underside seam",
+  "actualSceneNames": [
+    "Authored landscape / exact support triangles",
+    "Chiseled geological strata / closed underside",
+    "Daylight sky / altitude gradient",
+    "Layered cloud banks",
+    "Distant uninhabited silhouette",
+    "Distant uninhabited silhouette",
+    "Distant uninhabited silhouette",
+    "Distant uninhabited silhouette",
+    "Valley stream",
+    "Cloudbreak waterfall",
+    "Living landscape / canopy",
+    "Living landscape / canopy",
+    "Living landscape / fern",
+    "Living landscape / fern",
+    "Living landscape / fern",
+    "Living landscape / canopy",
+    "Living landscape / canopy",
+    "Living landscape / canopy",
+    "Living landscape / canopy",
+    "Living landscape / cliff fern",
+    "Living landscape / cliff fern",
+    "Living landscape / cliff fern",
+    "Wind meadow / authored blade geometry"
+  ],
+  "cleanup": {
+    "geometries": {
+      "observed": 23,
+      "disposed": 23
+    },
+    "materials": {
+      "observed": 36,
+      "disposed": 36
+    },
+    "textures": {
+      "observed": 0,
+      "disposed": 0
+    }
+  },
+  "remainingChildren": 0,
+  "cache": {
+    "requests": 2,
+    "cachedFiles": 0,
+    "loadedFiles": 0
+  },
+  "limitations": "Node fixture reads real GLB geometry but omits image decoding. Browser texture counts are separate. Disposal is not a GPU-driver memory benchmark. Traversal times are controller simulations."
+}

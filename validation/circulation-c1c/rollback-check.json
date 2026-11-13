@@ -1,0 +1,55 @@
+[
+  {
+    "on": true,
+    "sameScene": true,
+    "treeMoves": {
+      "meshes": 11,
+      "removedTriangles": 1390,
+      "relocatedTreeComponents": 2,
+      "scope": "Selected furniture and planter-bed triangles plus one town planter tree; original building meshes unchanged"
+    },
+    "obstacles": 433,
+    "square": true
+  },
+  {
+    "on": false,
+    "sameScene": true,
+    "treeMoves": {
+      "meshes": 11,
+      "removedTriangles": 1390,
+      "relocatedTreeComponents": 2,
+      "scope": "Selected furniture and planter-bed triangles plus one town planter tree; original building meshes unchanged"
+    },
+    "obstacles": 495,
+    "square": true
+  },
+  {
+    "on": true,
+    "sameScene": true,
+    "treeMoves": {
+      "meshes": 11,
+      "removedTriangles": 1390,
+      "relocatedTreeComponents": 2,
+      "scope": "Selected furniture and planter-bed triangles plus one town planter tree; original building meshes unchanged"
+    },
+    "obstacles": 433,
+    "square": true
+  },
+  {
+    "on": false,
+    "sameScene": true,
+    "treeMoves": {
+      "meshes": 11,
+      "removedTriangles": 1390,
+      "relocatedTreeComponents": 2,
+      "scope": "Selected furniture and planter-bed triangles plus one town planter tree; original building meshes unchanged"
+    },
+    "obstacles": 495,
+    "square": true
+  },
+  {
+    "townOff": true,
+    "sceneId": "c6674fe7-a2fc-4bfd-8158-c67bdaee96eb",
+    "townParent": null
+  }
+]

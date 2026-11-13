@@ -1,0 +1,58 @@
+{
+  "phase": "R0-C1A DESIGN ONLY",
+  "protected_files_checked": 3255,
+  "protected_files_changed": [],
+  "copied_context_transforms_checked": 1828,
+  "transform_differences": [],
+  "native_file": "validation/town-square-r0c1a/town-square-design.blend",
+  "native_bytes": 4861949,
+  "native_sha256": "c5d59c5f1d732b9ff4a9214e1cb8a7b53713e281c170b57a0f4a9616f62566f7",
+  "native_header_valid": true,
+  "native_reopen_test": "NOT RUN",
+  "captures": [
+    {
+      "file": "01-market-arrival.png",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "bytes": 2750830,
+      "sha256": "b41273298029022112342b9cb4327c6dbab044a1cb8c4374c7bde944a05d349a"
+    },
+    {
+      "file": "02-square-interior.png",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "bytes": 2940732,
+      "sha256": "7ad41b5439848a45e3438f0434b0852eee9ef6c3fb5ae447a1bb08861a424f2b"
+    },
+    {
+      "file": "03-elevated.png",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "bytes": 3387948,
+      "sha256": "7a074c7708d1d4043ad38a1cc8ace0c832fdf15c8ba3d2a2b57d6c620b9a076a"
+    },
+    {
+      "file": "04-measured-plan.png",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "bytes": 3167614,
+      "sha256": "5f49af4aca9ad5ca64e9cdf19f47dc5353655eb89fa4c1337e4eea0b71b9950d"
+    }
+  ],
+  "terrain_and_width_checks": "PASS: native geometry samples; not gameplay",
+  "packed_source_images": 9,
+  "new_routes_controller_test": "NOT TESTED",
+  "whole_game_regressions": "NOT RUN: isolated design phase",
+  "browser_export_and_performance": "NOT TESTED: no square GLB exported or integrated",
+  "human_visual_approval": "PENDING before R0-C1B",
+  "production_integration": false,
+  "public_deployment": false
+}

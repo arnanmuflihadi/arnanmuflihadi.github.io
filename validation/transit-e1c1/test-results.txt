@@ -1,0 +1,25 @@
+✔ real self-contained GLB matches documented Quaternius asset and CC0 provenance (5.491792ms)
+✔ imported skinned geometry has normalized weights, valid bind poses and human scale (32.881083ms)
+✔ idle, walk and run crossfade continuously and use displacement-based playback speed (32.856209ms)
+✔ stationary feet stay planted and animation never moves the physics/camera root (19.829916ms)
+✔ holding movement against a wall resolves to idle instead of sliding a walk pose (19.864042ms)
+✔ Guild is opt-in on local populated-town development only (2.29025ms)
+✔ Guild delivery has real indexed geometry, visible walkable surfaces, and no transmission pass (3.013542ms)
+✔ registry contains six unique, existing research routes (4.794708ms)
+✔ URL roundtrip preserves hosting path, hash, unrelated parameters and project context (2.3185ms)
+✔ invalid deep links and saved mission values are sanitized (0.26725ms)
+✔ collision prevents tunnelling, permits wall sliding and bounds the district (2.418208ms)
+✔ both landmark focus positions are safe and reachable from the spawn (15.803625ms)
+✔ player controls move, sprint, turn, animate and stop against real collision data (2.173458ms)
+✔ camera pulls ahead of a building behind the player (2.434833ms)
+✔ local gate requires every accepted flag and rejects public origins (1.376041ms)
+✔ comparison requires acceptance and both scenarios; invalid saves and duplicates cannot complete the quest (1.899291ms)
+✔ field note preserves valid progress and enforces objective order (0.322542ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 300.684459

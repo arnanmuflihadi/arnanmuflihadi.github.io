@@ -1,0 +1,24 @@
+{
+  "openedAuthenticTransitStudy": true,
+  "input": "Existing E Explore Transit Research button",
+  "before": {
+    "mode": "adventure",
+    "player": [
+      -7.833984867586805,
+      16.049999992847443,
+      37.24026860029358
+    ],
+    "scene": "795929aa-87f8-43de-866f-3beff597bdac"
+  },
+  "after": {
+    "mode": "adventure",
+    "paused": "false",
+    "player": [
+      -7.833984867586805,
+      16.049999992847443,
+      37.24026860029358
+    ],
+    "scene": "795929aa-87f8-43de-866f-3beff597bdac"
+  },
+  "caseStudy": "project-transit.html"
+}

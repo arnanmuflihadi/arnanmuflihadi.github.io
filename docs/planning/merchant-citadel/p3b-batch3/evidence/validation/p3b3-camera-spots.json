@@ -1,0 +1,266 @@
+[
+ {
+  "label": "quay centre",
+  "at": [
+   5,
+   -52
+  ],
+  "support": -3,
+  "min_camera_m": 5.7,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "ramp head",
+  "at": [
+   0,
+   -26
+  ],
+  "support": -0.52,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "ramp middle",
+  "at": [
+   0,
+   -31
+  ],
+  "support": -1.76,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "ramp foot",
+  "at": [
+   0,
+   -36
+  ],
+  "support": -3,
+  "min_camera_m": 12.888,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "crag stair foot",
+  "at": [
+   18,
+   84
+  ],
+  "support": 1.99,
+  "min_camera_m": 5.001,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "crag stair, first switchback",
+  "at": [
+   34,
+   88
+  ],
+  "support": 1.95,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "crag mid",
+  "at": [
+   20,
+   95
+  ],
+  "support": 2.29,
+  "min_camera_m": 6.694,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "crag upper",
+  "at": [
+   36,
+   101
+  ],
+  "support": 6.13,
+  "min_camera_m": 2.789,
+  "share_below_3m": 0.167,
+  "min_alpha": 0.75
+ },
+ {
+  "label": "crag summit stone",
+  "at": [
+   40,
+   116
+  ],
+  "support": 21.09,
+  "min_camera_m": 2.92,
+  "share_below_3m": 0.042,
+  "min_alpha": 0.823
+ },
+ {
+  "label": "shoulder table",
+  "at": [
+   -36,
+   112
+  ],
+  "support": 8.32,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "hall lawn west",
+  "at": [
+   -32.5,
+   85
+  ],
+  "support": 2,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "east of hall (shelf)",
+  "at": [
+   20,
+   82
+  ],
+  "support": 1.99,
+  "min_camera_m": 7.239,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "behind hall (shelf)",
+  "at": [
+   0,
+   93
+  ],
+  "support": 1.99,
+  "min_camera_m": 5.001,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "tea promenade start",
+  "at": [
+   42,
+   57
+  ],
+  "support": -0.1,
+  "min_camera_m": 3.967,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "tea promenade middle",
+  "at": [
+   60,
+   55.5
+  ],
+  "support": -3.67,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "cloudfall overlook",
+  "at": [
+   80,
+   54
+  ],
+  "support": -8.12,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "porters loop bend",
+  "at": [
+   52,
+   24
+  ],
+  "support": -2.05,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "lower benches",
+  "at": [
+   60,
+   48
+  ],
+  "support": -4.05,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "caravan green",
+  "at": [
+   -50,
+   18
+  ],
+  "support": -0.02,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "artisan gate path",
+  "at": [
+   -36,
+   20
+  ],
+  "support": -0.02,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "bridge middle",
+  "at": [
+   98,
+   45.9
+  ],
+  "support": -6.588,
+  "min_camera_m": 11.85,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "tea stack top",
+  "at": [
+   111,
+   45
+  ],
+  "support": -4.92,
+  "min_camera_m": 12.92,
+  "share_below_3m": 0,
+  "min_alpha": 1
+ },
+ {
+  "label": "east of the hall podium edge",
+  "at": [
+   15.5,
+   82
+  ],
+  "support": 2.01,
+  "min_camera_m": 2.793,
+  "share_below_3m": 0.167,
+  "min_alpha": 0.752
+ },
+ {
+  "label": "bank behind tea house",
+  "at": [
+   36,
+   74.5
+  ],
+  "support": 0.87,
+  "min_camera_m": 3.009,
+  "share_below_3m": 0,
+  "min_alpha": 0.84
+ }
+]

@@ -1,0 +1,43 @@
+{
+ "network": {
+  "seconds": 8,
+  "summary": {
+   "nodes_in_slice": 49,
+   "not_standable": [],
+   "edges_tested": 63,
+   "edges_failed": [],
+   "min_node_clearance_m": 0.409
+  }
+ },
+ "district": {
+  "seconds": 15,
+  "summary": {
+   "n": 35,
+   "pass": 35
+  }
+ },
+ "merch": {
+  "seconds": 46,
+  "summary": "saved"
+ },
+ "hallcam": {
+  "seconds": 7,
+  "summary": "saved"
+ },
+ "compress": {
+  "seconds": 31,
+  "summary": "saved"
+ },
+ "fademotion": {
+  "seconds": 17,
+  "summary": "saved"
+ },
+ "platform": {
+  "seconds": 1,
+  "summary": {
+   "n": 7,
+   "pass": 0
+  }
+ },
+ "total_seconds": 124
+}

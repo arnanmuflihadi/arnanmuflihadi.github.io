@@ -1,0 +1,577 @@
+{
+  "state": "loaded",
+  "phase": "S2-E isolated design; not production",
+  "option": "H",
+  "view": "skyport",
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "settings": {
+    "buffer": [
+      1800,
+      1200
+    ],
+    "dpr": 1,
+    "antialias": true,
+    "shadows": "PCFSoft 2048",
+    "toneMapping": "ACES",
+    "exposure": 1,
+    "glass": "unchanged authored transmission",
+    "lighting": "same R0-A3 lights and S2-D gradient environment",
+    "near": 0.12,
+    "far": 1000
+  },
+  "camera": {
+    "position": [
+      24.726182475303464,
+      29.096591038604465,
+      6.337373989131713
+    ],
+    "quaternion": [
+      -0.10457288027591988,
+      -0.7961005546596328,
+      -0.14392664451995552,
+      0.5784233229898752
+    ],
+    "fov": 60,
+    "blenderLocal": {
+      "p": [
+        -9,
+        -16,
+        0.2
+      ],
+      "t": [
+        0,
+        15,
+        4.8
+      ],
+      "lens": 26
+    }
+  },
+  "assets": {
+    "collision": {
+      "bytes": 6164,
+      "meshes": 1,
+      "triangles": 100,
+      "geometries": 1,
+      "materials": 1,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "common": {
+      "bytes": 535432,
+      "meshes": 6,
+      "triangles": 8588,
+      "geometries": 6,
+      "materials": 6,
+      "textures": 0,
+      "missingTextures": []
+    },
+    "H": {
+      "bytes": 543452,
+      "meshes": 7,
+      "triangles": 7248,
+      "geometries": 7,
+      "materials": 7,
+      "textures": 1,
+      "missingTextures": []
+    },
+    "street": {
+      "bytes": 10007904,
+      "meshes": 107,
+      "triangles": 170709,
+      "geometries": 107,
+      "materials": 59,
+      "textures": 5,
+      "missingTextures": []
+    }
+  },
+  "loaderCache": {
+    "requests": 4,
+    "cachedFiles": 4,
+    "loadedFiles": 4
+  },
+  "frameAllPasses": {
+    "calls": 335,
+    "triangles": 2646922,
+    "geometries": 223,
+    "textures": 16
+  },
+  "lastFixedPassSample": {
+    "option": "H",
+    "view": "skyport",
+    "characterVisible": false,
+    "targets": [
+      {
+        "target": "offscreen 0",
+        "viewport": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "draws": 158
+      },
+      {
+        "target": "offscreen 1",
+        "viewport": [
+          0,
+          0,
+          192,
+          128
+        ],
+        "draws": 9
+      },
+      {
+        "target": "offscreen 2",
+        "viewport": [
+          0,
+          128,
+          96,
+          64
+        ],
+        "draws": 8
+      },
+      {
+        "target": "offscreen 3",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "draws": 166
+      },
+      {
+        "target": "canvas",
+        "viewport": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "draws": 176
+      }
+    ],
+    "calls": 517
+  },
+  "sceneInventory": {
+    "meshes": 217,
+    "triangles": 1508109,
+    "geometries": 208,
+    "materials": 122,
+    "textures": 10,
+    "missingTextures": []
+  },
+  "traversal": [
+    {
+      "name": "ramp return",
+      "option": "H",
+      "success": true,
+      "reason": "route endpoint reached",
+      "start": [
+        36,
+        20.75473508834839,
+        0
+      ],
+      "end": [
+        35.87701254055159,
+        22.61399993896485,
+        9.960043978351813
+      ],
+      "seconds": 8.087999999999932,
+      "frames": 1197,
+      "walkedMetres": 16.75201320640682,
+      "maxFootRise": 0.10104894103107398,
+      "maxFootDrop": 7.105427357601002e-15,
+      "maxAirborneHeight": 0,
+      "supportEvents": [],
+      "jumps": 0,
+      "landings": 0,
+      "minCameraDistance": 1.528853728022403,
+      "trace": [
+        {
+          "position": [
+            35.682009104437654,
+            20.81595873229788,
+            0.07631781493495879
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.32911716595895,
+            20.883901968080963,
+            0.16101188016984674
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.97564117540535,
+            20.951957652983754,
+            0.24584611790270994
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.61326929051391,
+            21.021726088393407,
+            0.33281537027665753
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.24979942745976,
+            21.091705920497226,
+            0.42004813740965696
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.87815384662827,
+            21.163259845574206,
+            0.5092430768092158
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.5128377402967,
+            21.228355406625607,
+            0.5969189423287905
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.14976777718227,
+            21.282052847413652,
+            0.684055733476259
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.78690200846618,
+            21.335720088191422,
+            0.771143517968124
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.43506311106617,
+            21.387756473129475,
+            0.8555848533441258
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.09486368960326,
+            21.438071399028132,
+            0.9372327144952274
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.754255865466394,
+            21.488446726999747,
+            1.0189785922880703
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.414056443995637,
+            21.538761652899566,
+            1.1006264534410486
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.08016137426554,
+            21.589007801762165,
+            1.1880020400072164
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.94930877336993,
+            21.640773734488786,
+            1.4567791878400127
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.88689516304013,
+            21.709316694891243,
+            1.9112395401579083
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.823717856626637,
+            21.794511806669902,
+            2.490508028740779
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.757554335665617,
+            21.847727644795633,
+            3.1053959669901063
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.688946835993345,
+            21.901608628128876,
+            3.7432666898646314
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.621709984060537,
+            21.95441379787318,
+            4.368401224826669
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.549195713151096,
+            22.011363663036057,
+            5.042602773675859
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.548568860698648,
+            22.067197829219896,
+            5.558917094551412
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.727987079417165,
+            22.14853917908532,
+            5.847340552708769
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            30.936899159489762,
+            22.228936378346944,
+            6.12628943985308
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.14831978709893,
+            22.30869242038372,
+            6.4022037504482485
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.363050227970092,
+            22.366326384659267,
+            6.681577199091416
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.576312448799513,
+            22.422702094509066,
+            6.958921373514629
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            31.789712120864777,
+            22.479111880211093,
+            7.236427081728951
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.00311323727776,
+            22.61399993896484,
+            7.513931945305369
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.21651461564923,
+            22.613999938964845,
+            7.791436637916803
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.41564379210623,
+            22.613999938964845,
+            8.07871652762879
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            32.73420693317536,
+            22.613999938964845,
+            8.57859366800649
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.127411267836166,
+            22.613999938964845,
+            9.042440133322382
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.54716798514879,
+            22.613999938964845,
+            9.201348097410177
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            33.93238309311595,
+            22.613999938964845,
+            9.328097764430131
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.33175350258326,
+            22.613999938964845,
+            9.458004624865419
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            34.72240734362377,
+            22.613999938964845,
+            9.584935169441069
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.131042495546765,
+            22.613999938964845,
+            9.717693835134636
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        },
+        {
+          "position": [
+            35.52130363457091,
+            22.613999938964845,
+            9.844481642195525
+          ],
+          "grounded": true,
+          "phase": "grounded"
+        }
+      ],
+      "support": "actual source triangles plus exact exported support references and visible interface meshes",
+      "collision": "existing controller with terrain, building proxies, height-filtered original obstacles and geometry-matched guard proxies"
+    }
+  ],
+  "seamResults": null,
+  "performance": null,
+  "activeWalk": null,
+  "proposal": {
+    "naturalArrival": [
+      24,
+      66
+    ],
+    "provisionalLanding": [
+      27,
+      17.15,
+      60
+    ],
+    "squareGround": [
+      36,
+      20.754745326,
+      0
+    ],
+    "unbuilt": "full skyport, Town Square, Guild",
+    "contactCount": 148,
+    "arrivalRiser": 0.16717597374549256,
+    "squareRiser": 0.16902408114346593
+  },
+  "errors": [
+    "TypeError: rawSupport is not a function"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "syntax": [
+    {
+      "file": "assets/js/urban-atlas/adventure.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/animation-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/architectural-prefabs.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/architecture-design-system.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/architecture-showcase.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/architecture.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/asset-showcase.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/camera.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/character.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/city-life.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/collision.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/combat-simulation.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/district-artwork.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/district-assets.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/district-ground.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/district-plan.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/district-review.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/entry.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/environment.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/geometry.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/input.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/layout.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/licensed-scenery.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/materials.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/minimap.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/model-library.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/npc-nameplates.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/npc-registry.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/player-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/presentation.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/preview.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/quest-state.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/rigged-actor.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/scene.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/service-yard.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/showcase-daylight.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/showcase-plan.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/living-atlas-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/experience-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/adventure-ui.js",
+      "status": 0
+    }
+  ],
+  "approvedGeneratorMatches": true,
+  "gitDiffCheck": "Unavailable: system git invokes unaccepted Xcode license. No license accepted or Git operation performed.",
+  "whitespace": {
+    "files": 23,
+    "findings": []
+  }
+}

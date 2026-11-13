@@ -1,0 +1,171 @@
+{
+  "sightlines": [
+    {
+      "name": "Market to observation lantern",
+      "clear": true,
+      "firstHit": "Guild_delivery_4__C1__oiled_timber",
+      "origin": [
+        7.603646545265695,
+        16.945000084797798,
+        59.28728066433487
+      ],
+      "target": [
+        -8.089574758647686,
+        26.3,
+        35.65462518285334
+      ]
+    },
+    {
+      "name": "Telaga Awan to entrance",
+      "clear": true,
+      "firstHit": "Guild_delivery_4__C1__oiled_timber",
+      "origin": [
+        -2.7200492876581297,
+        17.164999389648436,
+        49.425166066071924
+      ],
+      "target": [
+        -8.06072593148138,
+        17.4,
+        36.916238334802514
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "name": "approach",
+      "hz": 20,
+      "success": true,
+      "seconds": 20.45,
+      "distance": 42.15168039528616,
+      "maxRise": 0.17833394885063392,
+      "maxDrop": 3.552713678800501e-15,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.759665952253978,
+        16.049999992847443,
+        37.34230502912786
+      ],
+      "grounded": true
+    },
+    {
+      "name": "return",
+      "hz": 20,
+      "success": true,
+      "seconds": 20.45,
+      "distance": 42.152356000079585,
+      "maxRise": 3.552713678800501e-15,
+      "maxDrop": 0.17833394885063214,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        15.013339715009895,
+        15.040976432078214,
+        69.86941919578776
+      ],
+      "grounded": true
+    },
+    {
+      "name": "approach",
+      "hz": 60,
+      "success": true,
+      "seconds": 20.266666666666666,
+      "distance": 42.133196666474255,
+      "maxRise": 0.17833394885063214,
+      "maxDrop": 5.329070518200751e-15,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        -7.764412580420388,
+        16.049999992847447,
+        37.337332221120846
+      ],
+      "grounded": true
+    },
+    {
+      "name": "return",
+      "hz": 60,
+      "success": true,
+      "seconds": 20.266666666666666,
+      "distance": 42.133281881186385,
+      "maxRise": 3.552713678800501e-15,
+      "maxDrop": 0.17833394885063214,
+      "peak": 0,
+      "jumps": 0,
+      "landings": 0,
+      "end": [
+        14.9975307167862,
+        15.041340745545785,
+        69.84684159753614
+      ],
+      "grounded": true
+    },
+    {
+      "name": "entrance jump",
+      "hz": 60,
+      "success": true,
+      "seconds": 1.55,
+      "distance": 2.1760641356764,
+      "maxRise": 0.17833394885063214,
+      "maxDrop": 0.09695833333333326,
+      "peak": 1.1645749999999673,
+      "jumps": 1,
+      "landings": 1,
+      "end": [
+        -7.87526797361065,
+        16.049999992847443,
+        37.20146173934857
+      ],
+      "grounded": true
+    }
+  ],
+  "stairs": [
+    {
+      "v": 28.2,
+      "height": 15.514999389648438
+    },
+    {
+      "v": 28.45,
+      "height": 15.69333333849907
+    },
+    {
+      "v": 28.75,
+      "height": 15.871666680574418
+    },
+    {
+      "v": 29.05,
+      "height": 16.049999992847447
+    },
+    {
+      "v": 29.5,
+      "height": 16.049999992847443
+    },
+    {
+      "v": 29.9,
+      "height": 16.049999992847443
+    }
+  ],
+  "localBounds": {
+    "min": [
+      -4.5709381103515625,
+      -0.07999999821186066,
+      -3.632939577102661
+    ],
+    "max": [
+      4.9237494468688965,
+      13.295000076293945,
+      3.700000047683716
+    ]
+  },
+  "roofWidth": 9.494687557220459,
+  "fullDepth": 7.332939624786377,
+  "heightAboveDatum": 13.295000076293945,
+  "glbBytes": 1390828,
+  "sourcePrototypeUnchanged": true,
+  "frozenSettlementFilesVerified": 66,
+  "checkpoint": "ebdd7964aa1e981c4642b52307c18927e9b1c503"
+}

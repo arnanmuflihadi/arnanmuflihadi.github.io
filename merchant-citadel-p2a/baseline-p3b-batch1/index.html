@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merchant Citadel P2-B Central Bazaar</title>
+<style>
+  :root { color-scheme: dark; --bg: #14201c; --fg: #f3ead8; --dim: #b9c4bd; --accent: #c8a15a; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, -apple-system, sans-serif; overflow: hidden; }
+  #stage { position: fixed; inset: 0; }
+  canvas { width: 100%; height: 100%; display: block; outline: none; }
+  #hud { position: fixed; left: 12px; top: 12px; max-width: 420px; background: rgba(20, 32, 28, .82); border: 1px solid rgba(200, 161, 90, .45); border-radius: 8px; padding: 10px 12px; backdrop-filter: blur(4px); }
+  #hud h1 { font-size: 13px; margin: 0 0 4px; color: var(--accent); letter-spacing: .02em; }
+  #hud p { margin: 2px 0; color: var(--dim); }
+  #hud .row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  button { background: #22372f; color: var(--fg); border: 1px solid rgba(200, 161, 90, .5); border-radius: 6px; padding: 4px 8px; font: inherit; cursor: pointer; }
+  button:hover, button[aria-pressed="true"] { background: var(--accent); color: #14201c; }
+  #stats { position: fixed; right: 12px; top: 12px; text-align: right; background: rgba(20, 32, 28, .82); border: 1px solid rgba(200, 161, 90, .45); border-radius: 8px; padding: 8px 10px; font-variant-numeric: tabular-nums; white-space: pre; }
+  #banner { position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%); background: rgba(20, 32, 28, .82); padding: 6px 12px; border-radius: 8px; color: var(--dim); }
+  #status { position: fixed; left: 12px; bottom: 14px; color: var(--dim); }
+</style>
+</head>
+<body>
+<div id="stage"><canvas tabindex="0" aria-label="Merchant Citadel vertical slice"></canvas></div>
+<div id="hud">
+  <h1>Merchant Citadel P2-B &mdash; Central Bazaar</h1>
+  <p>WASD move, Shift run, Space jump, Q/R turn camera, drag to look. This is an isolated preview of the P1.4 design with the game's real character controller and follow camera.</p>
+  <div class="row" data-move-host>
+    <button data-tp="spawn">Arrival</button><button data-tp="junction">Junction corner</button><button data-tp="market">Awning rows</button>
+    <button data-tp="steps">Terrace steps</button><button data-tp="inn">Inn balcony</button><button data-tp="tea">Tea house</button>
+    <button data-tp="westhall">Western Hall</button><button data-tp="easthall">Eastern Hall</button><button data-tp="shops">East shops</button><button data-tp="potter">Potter</button>
+  </div>
+  <div class="row">
+    <button id="t-shadows" aria-pressed="true">Shadows</button><button id="t-cloth" aria-pressed="false">Cloth blocks camera</button>
+    <button id="t-sign" aria-pressed="false">Signs + pennants block camera</button><button id="t-debug" aria-pressed="false">Collision proxies</button>
+  </div>
+</div>
+<div id="stats">loading&hellip;</div>
+<div id="status"></div>
+<div id="banner">Not production: concept slice, not deployed. No gameplay beyond walking, running and jumping.</div>
+<script type="module" src="./p2a.js"></script>
+</body>
+</html>

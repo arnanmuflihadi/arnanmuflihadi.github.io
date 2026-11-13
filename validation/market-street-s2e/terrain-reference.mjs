@@ -1,0 +1,12 @@
+import{writeFileSync}from'node:fs';
+import{createTerrainGeometry,terrainInfo,groundHeight}from'../../assets/js/floating-atlas/terrain.js';
+const g=createTerrainGeometry(),p=g.attributes.position,c=g.attributes.color,idx=g.index,positions=new Float32Array(p.array.length);
+for(let i=0;i<p.count;i++){positions[i*3]=p.getX(i)-36;positions[i*3+1]=p.getY(i)-18.6;positions[i*3+2]=p.getZ(i)-44;}
+const pieces=[],views=[];let offset=0;
+function view(a,target){const b=Buffer.from(a.buffer,a.byteOffset,a.byteLength),pad=Buffer.alloc((4-b.length%4)%4);views.push({buffer:0,byteOffset:offset,byteLength:b.length,target});pieces.push(b,pad);offset+=b.length+pad.length;return views.length-1;}
+const pv=view(positions,34962),cv=view(c.array,34962),iv=view(idx.array,34963);const min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];for(let i=0;i<positions.length;i++) {min[i%3]=Math.min(min[i%3],positions[i]);max[i%3]=Math.max(max[i%3],positions[i]);}
+const json={asset:{version:'2.0',generator:'Read-only exact R0-A3 terrain reference; no resculpting'},scene:0,scenes:[{nodes:[0]}],nodes:[{name:'Exact R0A3 Terrain',mesh:0}],meshes:[{primitives:[{attributes:{POSITION:0,COLOR_0:1},indices:2,material:0}]}],materials:[{name:'Exact terrain vertex palette',pbrMetallicRoughness:{baseColorFactor:[1,1,1,1],metallicFactor:0,roughnessFactor:1}}],buffers:[{byteLength:offset}],bufferViews:views,accessors:[{bufferView:pv,componentType:5126,count:p.count,type:'VEC3',min,max},{bufferView:cv,componentType:5126,count:c.count,type:'VEC3'},{bufferView:iv,componentType:idx.array instanceof Uint32Array?5125:5123,count:idx.count,type:'SCALAR'}]};
+let j=Buffer.from(JSON.stringify(json));j=Buffer.concat([j,Buffer.alloc((4-j.length%4)%4,32)]);const bin=Buffer.concat(pieces),head=Buffer.alloc(12),jh=Buffer.alloc(8),bh=Buffer.alloc(8);head.writeUInt32LE(0x46546c67);head.writeUInt32LE(2,4);head.writeUInt32LE(28+j.length+bin.length,8);jh.writeUInt32LE(j.length);jh.writeUInt32LE(0x4e4f534a,4);bh.writeUInt32LE(bin.length);bh.writeUInt32LE(0x004e4942,4);
+writeFileSync(new URL('exact-terrain-reference.glb',import.meta.url),Buffer.concat([head,jh,j,bh,bin]));
+const sample=[];for(let x=24;x<=44;x+=2)for(let z=-4;z<=12;z+=2)sample.push({x,z,y:groundHeight(x,z)});
+writeFileSync(new URL('terrain-samples.json',import.meta.url),JSON.stringify({source:terrainInfo,groundSamples:sample},null,2));console.log({vertices:p.count,triangles:idx.count/3,bytes:28+j.length+bin.length});

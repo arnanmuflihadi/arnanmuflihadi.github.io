@@ -1,0 +1,11 @@
+{
+  "creator": "Quaternius",
+  "pack": "Ultimate Stylized Nature Pack",
+  "source": "https://quaternius.com/packs/ultimatestylizednature.html",
+  "creator_download": "https://drive.google.com/drive/folders/1IV3bXHzkNvuNWFHPi4KPx-G4ghuxIuT-",
+  "license": "CC0-1.0",
+  "license_file": "LICENSE.txt",
+  "license_note": "The creator-hosted pack license file has an unrelated Ultimate Platformer Pack heading but states CC0; the creator's Ultimate Stylized Nature page also identifies CC0.",
+  "models": ["Bush_Small.gltf", "Bush_Small_Flowers.gltf", "Flower_3_Clump.gltf"],
+  "files": ["Bush_Small.bin", "Bush_Small_Flowers.bin", "Flower_3_Clump.bin", "Bush_Leaves.png", "Flowers.png"]
+}

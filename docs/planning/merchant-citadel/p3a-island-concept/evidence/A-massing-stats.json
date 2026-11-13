@@ -1,0 +1,29 @@
+{
+ "concept": "A",
+ "name": "Merchant Plateau",
+ "triangles": {
+  "P3A_landmass_main": 112896,
+  "P3A_hanging_rock": 204,
+  "P3A_trees": 1805,
+  "P3A_path_0": 44,
+  "P3A_path_1": 48,
+  "P3A_path_2": 54,
+  "P3A_clouds": 14720
+ },
+ "hanging_rocks": 34,
+ "trees": 50,
+ "total_triangles": 129771,
+ "extent_x": [
+  -56.17063369818021,
+  68.86305290455383
+ ],
+ "extent_n": [
+  -36.99315854016599,
+  104.58005121683495
+ ],
+ "top_area_m2": 13746.663682503318,
+ "depth_m": [
+  46.00001071441463,
+  57.99998928558537
+ ]
+}

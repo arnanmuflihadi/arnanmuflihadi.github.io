@@ -1,0 +1,16 @@
+{
+  "bytes": 392804,
+  "triangles": 10442,
+  "skins": 1,
+  "joints": 18,
+  "primitives": 7,
+  "materials": 7,
+  "clips": [
+    "Idle_Hover",
+    "Takeoff_Preparation",
+    "Wing_Powered_Flight",
+    "Gentle_Bank",
+    "Approach_Landing"
+  ],
+  "wingRotationSampleRange": 1.4336766600608826
+}

@@ -1,0 +1,30 @@
+✔ approved masters, GLBs, controller and terrain files remain byte-identical (170.48575ms)
+✔ direct stair and continuous journey/guild routes use the unchanged real controller (0.495958ms)
+✔ before/after restores original furniture geometry, terrain, instances and collision boundaries (724.505875ms)
+✔ visible imported stair tops and exact terrain agree with support samplers (782.951416ms)
+✔ jump and landing work on the repaired civic portal without changing movement physics (473.5675ms)
+✔ arrival guard, market edge and fountain stop the original controller on visible support (482.597084ms)
+✔ town requires exact local development flag and is off on every public/default route (3.966833ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (145.345542ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (678.279084ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (416.747041ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (386.95225ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (457.277042ms)
+✔ C1B retains approved sources and exports real normalized optimized geometry (542.505833ms)
+✔ square OFF restores accepted C1A5 terrain and instances; town OFF restores original island (490.635833ms)
+✔ real stair and deck tops match mesh rays and exact accepted ground sampler (2045.529875ms)
+✔ unchanged controller crosses the constructed stairs and courtyard in both directions (0.504958ms)
+✔ fountain and guards block movement; explorer jumps and lands on the court (468.43775ms)
+✔ local terrain geometry, exact sampler, normals and floor caps agree (1308.060875ms)
+✔ terrain flag restores exact surface, vegetation, obstacles and sampler; cached geometry survives LOD (553.417792ms)
+✔ actual unchanged controller traverses implemented approaches, reservation ground and highland in both directions (778.333584ms)
+✔ jump lands on the modified surface without changing movement physics (474.873542ms)
+✔ existing camera clearance samples the same adjusted ground and restores the original (442.216584ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9378.132125

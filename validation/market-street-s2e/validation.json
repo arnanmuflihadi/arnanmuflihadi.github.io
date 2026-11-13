@@ -1,0 +1,223 @@
+{
+  "protected_files": 1430,
+  "changed": [],
+  "original_glb_bytes": 10007904,
+  "exports": {
+    "common-interface.glb": {
+      "bytes": 527172,
+      "triangles": 8404,
+      "primitives": 6,
+      "materials": 6
+    },
+    "support-reference.glb": {
+      "bytes": 6164,
+      "triangles": 100,
+      "primitives": 1,
+      "materials": 0
+    },
+    "foundation-hybrid.glb": {
+      "bytes": 543452,
+      "triangles": 7248,
+      "primitives": 7,
+      "materials": 7
+    },
+    "foundation-b.glb": {
+      "bytes": 107748,
+      "triangles": 1956,
+      "primitives": 3,
+      "materials": 3
+    },
+    "foundation-a.glb": {
+      "bytes": 134276,
+      "triangles": 2448,
+      "primitives": 3,
+      "materials": 3
+    },
+    "exact-terrain-reference.glb": {
+      "bytes": 479004,
+      "triangles": 26416,
+      "primitives": 1,
+      "materials": 1
+    }
+  },
+  "selected_visible_triangles": 15652,
+  "selected_visible_payload_bytes": 1070624,
+  "separate_collision_triangles": 100,
+  "selected_footings_checked": 113,
+  "all_footing_corners_embedded": true,
+  "four_standalone_canopies_aligned": [
+    {
+      "u": -14.199999809265137,
+      "v": 10.199999809265137,
+      "before_h": -0.02817666344344616,
+      "after_h": -3.323211669921875,
+      "delta_h": -3.295035006478429,
+      "source": "standalone showcase canopy; original GLB unchanged"
+    },
+    {
+      "u": 14.399999618530273,
+      "v": 16.200000762939453,
+      "before_h": -0.1416047066450119,
+      "after_h": -3.0278167724609375,
+      "delta_h": -2.8862120658159256,
+      "source": "standalone showcase canopy; original GLB unchanged"
+    },
+    {
+      "u": -14.600000381469727,
+      "v": 25.399999618530273,
+      "before_h": 1.2928659915924072,
+      "after_h": -0.7455978393554688,
+      "delta_h": -2.038463830947876,
+      "source": "standalone showcase canopy; original GLB unchanged"
+    },
+    {
+      "u": 13.5,
+      "v": 28.0,
+      "before_h": 2.1928634643554688,
+      "after_h": -3.0584564208984375,
+      "delta_h": -5.251319885253906,
+      "source": "standalone showcase canopy; original GLB unchanged"
+    }
+  ],
+  "fixed_controller_tests": 12,
+  "renders": [
+    {
+      "file": "after-aerial.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 183849
+    },
+    {
+      "file": "after-arrival.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 150697
+    },
+    {
+      "file": "after-foundations.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 94792
+    },
+    {
+      "file": "after-market.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 144510
+    },
+    {
+      "file": "after-square.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 89593
+    },
+    {
+      "file": "alternative-A.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 33364
+    },
+    {
+      "file": "alternative-B.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 97438
+    },
+    {
+      "file": "before-aerial.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 172326
+    },
+    {
+      "file": "before-arrival.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 129458
+    },
+    {
+      "file": "before-foundations.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 56889
+    },
+    {
+      "file": "before-market.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 137321
+    },
+    {
+      "file": "before-square.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 64978
+    },
+    {
+      "file": "blender-a-side.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2319567
+    },
+    {
+      "file": "blender-b-side.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2661292
+    },
+    {
+      "file": "blender-hybrid-site.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2686414
+    },
+    {
+      "file": "third-person-final.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 151759
+    },
+    {
+      "file": "third-person-route.png",
+      "size": [
+        1339,
+        893
+      ],
+      "bytes": 152042
+    }
+  ],
+  "human_design_approval": "pending",
+  "production_deployment": false
+}

@@ -1,0 +1,74 @@
+{
+  "phase": "R0-RESET-FINAL",
+  "reuseOnly": true,
+  "runtimeOmissions": [
+    "Detached C1 fountain caption only; approved sculpture and basin geometry retained; source GLB unchanged"
+  ],
+  "downloadedAssets": 0,
+  "approvedBuildingGLB": {
+    "path": "validation/market-street-s2d/market-street-optimized.glb",
+    "bytes": 10007904,
+    "sha256": "62b08b8db80f51089751c9cb25f6929b4d2a6c09517e4245b5a6e9cf8632b3f7"
+  },
+  "buildingGroups": [
+    "B1_Kopi_Awan001",
+    "B2_Lembaran_Shophouse001",
+    "B3_Rupa_Rimba_Atelier001",
+    "B4_Serambi_Corner_Shop001"
+  ],
+  "approvedCivicSource": {
+    "path": "validation/town-square-r0c1a/town-square-design.blend",
+    "bytes": 4861949,
+    "sha256": "c5d59c5f1d732b9ff4a9214e1cb8a7b53713e281c170b57a0f4a9616f62566f7"
+  },
+  "independentNativeDerivative": {
+    "path": "validation/reset-final/civic-reuse.blend",
+    "bytes": 4907261,
+    "sha256": "59bf1da04fbac84de5e3c6e9da8024a64d803435fc06c7cbfc01db64789fd241"
+  },
+  "exports": [
+    {
+      "path": "validation/reset-final/fountain.glb",
+      "bytes": 507708,
+      "sha256": "26dd3fad5a022f2bc9abbccd395666ae0974469a1181bf53789b4a067f4a888c"
+    },
+    {
+      "path": "validation/reset-final/pavilion.glb",
+      "bytes": 437072,
+      "sha256": "61d333e37e14af77e52990789b38c6eaeda417ad610cdfe0e335f317d6766af2"
+    },
+    {
+      "path": "validation/reset-final/bench.glb",
+      "bytes": 330100,
+      "sha256": "8a42173ca872079a282205a7729c109d760faf5e017178557d70c8351465e231"
+    },
+    {
+      "path": "validation/reset-final/cafe-set.glb",
+      "bytes": 359544,
+      "sha256": "3d52757a74d32344fc4cf94022a371bef958538a7d0000dea2a3515d3c3dd495"
+    }
+  ],
+  "process": "Actual Blender MCP: independent native copy, selected existing civic components, origin normalization, mesh conversion and join by component, glTF export. No original master was saved or overwritten. Runtime batches only compatible static material groups.",
+  "rights": [
+    {
+      "component": "Four storefronts",
+      "terms": "Original AR(N)AN work plus existing CC0-1.0 Kenney detailed window and Quaternius fern components. No new license inferred.",
+      "record": "docs/urban-atlas/market-street-s2c/ASSET-RECORD.md"
+    },
+    {
+      "component": "Fountain, pavilion, bench, cafe set",
+      "terms": "Original project geometry authored in C1A; inherited source rights retained.",
+      "record": "docs/urban-atlas/town-square-r0c1a/ASSET-RECORD.md"
+    },
+    {
+      "component": "Existing landscape",
+      "terms": "Preserved project geometry and previously verified Quaternius CC0 sources. Instance positions are a reversible scene derivative only.",
+      "record": "ASSET_MANIFEST.md"
+    },
+    {
+      "component": "Civic paving, arrival guard, physical reservation noticeboard",
+      "terms": "Small original project interface details. No third-party images, fonts, models or assets downloaded. Browser/system text is used on the physical sign."
+    }
+  ],
+  "reference": "Original concept boards already available in validation/asset-selection-s1/references/; used for composition, not as screenshot evidence."
+}

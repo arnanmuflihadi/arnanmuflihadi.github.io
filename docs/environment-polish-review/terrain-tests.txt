@@ -1,0 +1,14 @@
+✔ environmental polish preserves every ground vertex, triangle, support sample, route and reservation (38.727875ms)
+✔ derived tree growth preserves source buffers and detail/animation changes reuse existing geometry (248.59675ms)
+✔ R0-A rendered terrain support is exact and the chiseled underside is watertight (1615.633875ms)
+✔ R0-A active graph has no rejected architecture, uses two scenery GLBs, and disposes every observed resource (235.79275ms)
+✔ R0-A every ridge and valley route is reachable using unchanged locomotion with final nature colliders (217.900958ms)
+✔ R0-A character jumps, lands, falls and recovers; camera clears natural elevation at all areas (254.798875ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2456.2485

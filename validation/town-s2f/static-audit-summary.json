@@ -1,0 +1,7 @@
+{
+  "status": "inherited failure",
+  "findings": 58,
+  "audit_and_all_source_pages_unchanged_from_checkpoint": true,
+  "changed_audit_inputs": [],
+  "scope": "old editorial footer/hero/manual-fallback expectations; no S2-F input paths are audited"
+}

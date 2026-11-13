@@ -1,0 +1,59 @@
+{
+  "revision": "R0-B1.5-final-validation.4",
+  "tests": {
+    "passed": 106,
+    "failed": 0,
+    "skipped": 0
+  },
+  "continuousJourney": {
+    "ascent": 34.993916830454154,
+    "blockedSeconds": 0,
+    "complete": true,
+    "descent": 3.5187697787564396,
+    "distance": 215.00403654919936,
+    "elapsed": 129.52219999997124,
+    "end": [
+      -44.655620139446114,
+      48.64253522772798,
+      -48.60107110471142
+    ],
+    "guided": true,
+    "id": "skyport-lookout",
+    "jumps": 1,
+    "jumpsStart": 0,
+    "landings": 1,
+    "landingsStart": 0,
+    "maxCrossTrack": 0.5363323427145656,
+    "maxSupportError": 0,
+    "minCameraDistance": 3.096784571094444,
+    "movingSeconds": 60.35060000000223,
+    "run": 1,
+    "start": [
+      27,
+      17.149999618530273,
+      60
+    ],
+    "waypoint": 31
+  },
+  "staticAudit": {
+    "findings": 58,
+    "identicalToApprovedBaseline": true
+  },
+  "plaza": {
+    "grossPavedArea": 352,
+    "sampledGrossArea": 353,
+    "levelCapsuleClearArea": 299.0625,
+    "centralClearRectangle": [
+      24,
+      12,
+      34,
+      19
+    ],
+    "centralClearArea": 70,
+    "coreClear": true
+  },
+  "allPlotsSupported": true,
+  "allEntrancesReachable": true,
+  "humanApproval": "pending",
+  "phaseBoundary": "STOP before R0-B2"
+}

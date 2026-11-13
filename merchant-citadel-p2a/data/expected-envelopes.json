@@ -1,0 +1,303 @@
+{
+"B04": {
+"full_x": [
+-14.08,
+-3.29
+],
+"full_n": [
+7.82,
+18.63
+],
+"note": "P2-A closeout: moved 1.2 m south from the P1.4 position (P1.4 envelope n 9.02-19.83)"
+},
+"B05": {
+"full_x": [
+-12.12,
+-3.48
+],
+"full_n": [
+21.17,
+30.85
+]
+},
+"B06": {
+"full_x": [
+-11.79,
+-3.47
+],
+"full_n": [
+31.64,
+37.16
+]
+},
+"B07": {
+"full_x": [
+2.05,
+13.9
+],
+"full_n": [
+8.88,
+17.12
+]
+},
+"B08": {
+"full_x": [
+3.47,
+9.76
+],
+"full_n": [
+21.21,
+28.79
+]
+},
+"B09": {
+"full_x": [
+2.05,
+13.9
+],
+"full_n": [
+29.48,
+37.72
+]
+},
+"E03": {
+"full_x": [
+-31.48,
+-20.4
+],
+"full_n": [
+39.15,
+51.01
+]
+},
+"B17": {
+"full_x": [
+31.53,
+41.49
+],
+"full_n": [
+61.72,
+72.33
+]
+},
+"B01": {
+"full_x": [
+-14.0,
+14.09
+],
+"full_n": [
+72.0,
+90.0
+],
+"union_with": "PODIUM",
+"note": "P1.4 schedule envelope of the whole hall incl. steps (measured z -90.0 to -72.0)"
+},
+"B02": {
+"full_x": [
+-17.98,
+-8.02
+],
+"full_n": [
+42.29,
+57.71
+],
+"note": "P1.4 schedule envelope"
+},
+"B03": {
+"full_x": [
+8.02,
+17.98
+],
+"full_n": [
+42.29,
+57.71
+],
+"note": "P1.4 schedule envelope"
+},
+"B14": {
+"full_x": [
+20.97,
+29.29
+],
+"full_n": [
+37.44,
+42.96
+],
+"note": "P1.4 schedule envelope"
+},
+"E06": {
+"full_x": [
+21.04,
+29.91
+],
+"full_n": [
+43.69,
+50.1
+],
+"note": "P1.4 schedule envelope"
+},
+"E07": {
+"full_x": [
+-28.01,
+-20.89
+],
+"full_n": [
+51.49,
+59.71
+],
+"note": "P1.4 schedule envelope"
+},
+"B10": {
+"full_x": [
+-25.893,
+-16.258
+],
+"full_n": [
+5.967,
+15.776
+],
+"p14_full_x": [
+-25.68,
+-16.61
+],
+"p14_full_n": [
+6.54,
+15.46
+],
+"note": "batch 3 variant: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance; the P1.4 schedule envelope is kept as p14_*; rotation is not a multiple of 90 degrees, so the expected box is the AABB of the rotated local bounding box (an upper bound); the node's own bounding box is verified separately (nodes test, <0.01 cm)",
+"aabb_bound": true
+},
+"B11": {
+"full_x": [
+-24.592,
+-16.97
+],
+"full_n": [
+16.206,
+24.472
+],
+"p14_full_x": [
+-23.26,
+-16.97
+],
+"p14_full_n": [
+16.21,
+23.79
+],
+"note": "batch 3 variant: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance; the P1.4 schedule envelope is kept as p14_*"
+},
+"B12": {
+"full_x": [
+-25.893,
+-16.165
+],
+"full_n": [
+24.486,
+34.046
+],
+"p14_full_x": [
+-25.68,
+-16.4
+],
+"p14_full_n": [
+24.54,
+33.67
+],
+"note": "batch 3 variant: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance; the P1.4 schedule envelope is kept as p14_*; rotation is not a multiple of 90 degrees, so the expected box is the AABB of the rotated local bounding box (an upper bound); the node's own bounding box is verified separately (nodes test, <0.01 cm)",
+"aabb_bound": true
+},
+"E01": {
+"full_x": [
+-15.702,
+-6.86
+],
+"full_n": [
+-6.655,
+3.284
+],
+"p14_full_x": [
+-15.4,
+-7.92
+],
+"p14_full_n": [
+-5.24,
+3.24
+],
+"note": "batch 3 variant: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance; the P1.4 schedule envelope is kept as p14_*; rotation is not a multiple of 90 degrees, so the expected box is the AABB of the rotated local bounding box (an upper bound); the node's own bounding box is verified separately (nodes test, <0.01 cm)",
+"aabb_bound": true
+},
+"E02": {
+"full_x": [
+6.48,
+14.756
+],
+"full_n": [
+-6.854,
+2.829
+],
+"p14_full_x": [
+8.48,
+14.76
+],
+"p14_full_n": [
+-6.85,
+2.83
+],
+"note": "batch 3 variant: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance; the P1.4 schedule envelope is kept as p14_*"
+},
+"B13": {
+"full_x": [
+17.149,
+33.377
+],
+"full_n": [
+4.626,
+18.411
+],
+"note": "batch 4: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance (exact, rotation is a multiple of 90 degrees); the P1.4 envelope of this building was not recomputed (placement may differ by the documented adjustments in 01)"
+},
+"E04": {
+"full_x": [
+17.149,
+31.257
+],
+"full_n": [
+22.445,
+33.351
+],
+"note": "batch 4: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance (exact, rotation is a multiple of 90 degrees); the P1.4 envelope of this building was not recomputed (placement may differ by the documented adjustments in 01)"
+},
+"E05": {
+"full_x": [
+19.97,
+30.515
+],
+"full_n": [
+50.743,
+57.644
+],
+"note": "batch 4: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance (exact, rotation is a multiple of 90 degrees); the P1.4 envelope of this building was not recomputed (placement may differ by the documented adjustments in 01)"
+},
+"B15": {
+"full_x": [
+-23.331,
+-12.175
+],
+"full_n": [
+61.287,
+72.085
+],
+"note": "batch 4: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance (exact, rotation is a multiple of 90 degrees); the P1.4 envelope of this building was not recomputed (placement may differ by the documented adjustments in 01)"
+},
+"B16": {
+"full_x": [
+12.0,
+23.247
+],
+"full_n": [
+61.287,
+71.976
+],
+"note": "batch 4: expected = the Blender-built kit node's bounding box (kit-report) transformed by the instance (exact, rotation is a multiple of 90 degrees); the P1.4 envelope of this building was not recomputed (placement may differ by the documented adjustments in 01)"
+}
+}

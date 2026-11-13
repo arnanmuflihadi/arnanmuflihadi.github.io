@@ -1,0 +1,110 @@
+{
+  "phase": "2",
+  "date": "2026-11-01",
+  "status": "Integrated district implemented; human visual review pending",
+  "componentIntegrationApproval": {
+    "approved": true,
+    "source": "User Phase 2 brief"
+  },
+  "humanVisualReview": {
+    "approved": false,
+    "score": null,
+    "targetAverage": 4,
+    "minimumCriterion": 3,
+    "maximum": 5
+  },
+  "sourceManifests": [
+    "assets/game/scenery/architecture-source.json",
+    "assets/game/scenery/source.json",
+    "assets/game/scenery/verification.json",
+    "assets/game/scenery/architecture-enhancements.json"
+  ],
+  "licenseFiles": [
+    "assets/game/scenery/downtown-city-megakit-LICENSE.txt",
+    "assets/game/scenery/stylized-nature-megakit-LICENSE.txt"
+  ],
+  "sources": [
+    "https://quaternius.com/packs/downtowncitymegakit.html",
+    "https://quaternius.com/packs/stylizednaturemegakit.html"
+  ],
+  "additionalThirdPartyDownloads": [],
+  "approvedGenerator": {
+    "file": "assets/js/urban-atlas/architecture-design-system.js",
+    "sha256": "17d18deb5e304380493ba962bbf80e61e0ae2bc5073ec2223161ceb285ef7b72"
+  },
+  "preservedLoader": {
+    "file": "assets/js/urban-atlas/model-library.js",
+    "sha256": "5754ee9eabffa84aaf482d2cb99f4d91982149a8e291d5084eae258a1ee14071"
+  },
+  "files": [
+    {
+      "file": "assets/game/scenery/architecture-library.glb",
+      "bytes": 5380248,
+      "sha256": "776f529b5b779085bce3bb4c22e9ab150f35a422f433a509747419dd524c87e2",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "assets/game/scenery/canopy-tree.glb",
+      "bytes": 719224,
+      "sha256": "694b6242bae554c9354d591a72ea176cb3eb397ea247aa31314085e31098f51b",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "assets/game/scenery/fern.glb",
+      "bytes": 104876,
+      "sha256": "f123c238941552fbf8a3e6ce8f220cdc2c1f66b371ae778f7d35d140ad829a88",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "assets/game/scenery/city-planter.glb",
+      "bytes": 454776,
+      "sha256": "d89dea7493f75d54be8eaf0c7e8b8706fc18cc8c9aa61976b0327056919ea66b",
+      "license": "CC0-1.0"
+    }
+  ],
+  "totalGlbBytes": 6659124,
+  "scene": "assets/js/urban-atlas/scene.js",
+  "placement": "assets/js/urban-atlas/district-plan.js",
+  "assembly": "assets/js/urban-atlas/district-assets.js",
+  "entryPoints": [
+    "index.html?experience=adventure",
+    "portfolio.html?experience=adventure"
+  ],
+  "buildingCount": 21,
+  "mainBuildings": 8,
+  "backgroundBuildings": 13,
+  "loadedFiles": 4,
+  "requests": 4,
+  "cachedPrototypes": 3,
+  "batches": 125,
+  "assetTriangles": 684861,
+  "authoredAssetTriangles": 74758,
+  "sourceDerivedAssetTriangles": 610103,
+  "referencedTextures": 49,
+  "missingTextures": [],
+  "importedInstances": {
+    "aircon": 12,
+    "bollard": 2,
+    "civic": 6,
+    "drain": 8,
+    "entrance": 10,
+    "fern": 187,
+    "glazing": 12,
+    "manhole": 5,
+    "office": 4,
+    "planter": 4,
+    "shop": 17,
+    "tree": 19
+  },
+  "projectAuthored": [
+    "District placement, shared polygon paving and matched ramps",
+    "Station vaulted roof and civic pavilion integration",
+    "2048px physical signs and three 768x512 painted room textures",
+    "Shallow shelves, books, cups, pots, café furniture, benches, lamps, bins, cycle racks and bicycle",
+    "Sky gradient, restrained cloud forms, landscaping and palms"
+  ],
+  "collision": "Actual approved factory exports checked against transformed planned proxies; actual GLB bounds for planters/bollards and lower trunk bounds for trees. Public routes and every main shop door tested with final imported collisions.",
+  "performance": "docs/district-review/performance.json",
+  "evidence": "docs/PHASE-2-DISTRICT.md",
+  "scope": "One integrated Jakarta-inspired district; existing optional encounter disabled in this runtime. No added region, monster, quest or equipment shop. Stop for human visual review."
+}

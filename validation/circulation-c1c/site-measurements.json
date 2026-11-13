@@ -1,0 +1,126 @@
+{
+  "coordinates": "Game X Y Z metres; Blender u=X-36, v=44-Z, h=Y-18.6",
+  "controller": {
+    "radius": 0.34,
+    "height": 1.9,
+    "maxStep": 0.42
+  },
+  "stairs": {
+    "arrival": {
+      "start": [
+        26,
+        52,
+        16.5291748046875
+      ],
+      "end": [
+        28.75,
+        51.867469787597656,
+        17.444
+      ],
+      "risers": 6,
+      "riser": 0.1524708658854165,
+      "run": 2.7531916492694193,
+      "width": 3
+    },
+    "directCourt": {
+      "start": [
+        28.02,
+        12.6,
+        22.614
+      ],
+      "end": [
+        26.4,
+        12.6,
+        21.8
+      ],
+      "risers": 5,
+      "riser": 0.1628,
+      "run": 1.620000000000001,
+      "width": 2.8
+    },
+    "guild": {
+      "start": [
+        26.6,
+        4,
+        21.8
+      ],
+      "end": [
+        28.3,
+        3.8,
+        21.206807861328127
+      ],
+      "risers": 4,
+      "riser": 0.14829803466796854,
+      "run": 1.7117242768623684,
+      "width": 2.4
+    }
+  },
+  "routes": {
+    "journey": {
+      "length": 94.55230813586016,
+      "rise": 7.529668722375373,
+      "fall": 2.5488136270412127,
+      "minY": 16.030228419621352,
+      "maxY": 22.61399993896485,
+      "underlyingTerrainMaxGrade": 0.8317890393627465,
+      "gradeAt": [
+        36,
+        24.75
+      ]
+    },
+    "portal": {
+      "length": 8.8,
+      "rise": 0.04399967193604937,
+      "fall": 0.8579995632171773,
+      "minY": 21.800000047683717,
+      "maxY": 22.61399993896485,
+      "underlyingTerrainMaxGrade": 0.10714476075024493,
+      "gradeAt": [
+        31,
+        12.6
+      ]
+    },
+    "guild": {
+      "length": 31.145773735455172,
+      "rise": 2.959223899071109,
+      "fall": 1.199592503731143,
+      "minY": 20.75975046157837,
+      "maxY": 23.559631443023683,
+      "underlyingTerrainMaxGrade": 0.3198259526790663,
+      "gradeAt": [
+        42.608695652173914,
+        -6.608695652173913
+      ]
+    }
+  },
+  "clearances": [
+    {
+      "name": "arrival",
+      "nominalWidth": 3,
+      "minPlayerCentreBand": 1.6349999999999998,
+      "estimatedBodyClearWidth": 2.315,
+      "method": "5 transverse scans, 5 mm spacing; original radius .34 m and height-filtered real guard colliders"
+    },
+    {
+      "name": "directCourt",
+      "nominalWidth": 2.8,
+      "minPlayerCentreBand": 1.9100000000000015,
+      "estimatedBodyClearWidth": 2.5900000000000016,
+      "method": "5 transverse scans, 5 mm spacing; original radius .34 m and height-filtered real guard colliders"
+    },
+    {
+      "name": "guild",
+      "nominalWidth": 2.4,
+      "minPlayerCentreBand": 1.395000000000001,
+      "estimatedBodyClearWidth": 2.075000000000001,
+      "method": "5 transverse scans, 5 mm spacing; original radius .34 m and height-filtered real guard colliders"
+    }
+  ],
+  "publicHardware": {
+    "before": 587,
+    "after": 293,
+    "railMembersBefore": 410,
+    "railMembersAfter": 172
+  },
+  "unchangedTerrain": true
+}

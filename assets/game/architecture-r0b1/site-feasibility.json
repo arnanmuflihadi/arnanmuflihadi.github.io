@@ -1,0 +1,222 @@
+{
+  "phase": "R0-B1",
+  "terrain": "unchanged R0-A3 build 73",
+  "sampling": "0.5 m grid over conservative final envelope",
+  "units": "metres",
+  "humanApproval": "pending",
+  "sites": [
+    {
+      "id": "commercial",
+      "model": "RuangNiaga",
+      "x": 31,
+      "y": 22.05,
+      "z": 4,
+      "w": 14.9,
+      "d": 10.8,
+      "entry": [
+        4.13,
+        0.25,
+        5.6
+      ],
+      "groundRange": [
+        19.64443592971286,
+        22
+      ],
+      "voids": 0,
+      "entranceWorld": [
+        35.13,
+        22.3,
+        9.6
+      ],
+      "entryGround": 21.984167736253664,
+      "dimensions": {
+        "width": 14.850000381469727,
+        "depth": 10.749999713897704,
+        "height": 10.87401338852942
+      },
+      "localVisualBounds": {
+        "min": [
+          -7.425000190734863,
+          -0.02500000037252903,
+          -5.124999904632569
+        ],
+        "max": [
+          7.425000190734863,
+          10.84901338815689,
+          5.6249998092651365
+        ]
+      },
+      "groundDatum": 22.05,
+      "floorDatum": 22.3,
+      "entranceDirection": "south",
+      "minimumPublicDoorClearWidth": 1,
+      "minimumPrimaryApproachWidth": 2.4,
+      "canopyClearance": 2.93,
+      "approximateFootprintM2": 159.63749985218035,
+      "collisionProxyCount": 708,
+      "collisionMethod": "Cross-sections of actual walls/columns/barriers, height-aware overhead slabs, exact upward-facing render triangles for walking support.",
+      "adaptation": "Terrain-adaptive piers and local frontage steps. Final accessible route and adjoining public-space design remain R0-B2 work.",
+      "status": "Architectural reservation only; production placement and final circulation are not approved"
+    },
+    {
+      "id": "research",
+      "model": "AtlasResearchCentre",
+      "x": 38,
+      "y": 32.2,
+      "z": -30,
+      "w": 13.5,
+      "d": 12.5,
+      "entry": [
+        0,
+        0.3,
+        6.5
+      ],
+      "groundRange": [
+        29.741002066899345,
+        32.13044742303887
+      ],
+      "voids": 0,
+      "entranceWorld": [
+        38,
+        32.5,
+        -23.5
+      ],
+      "entryGround": 31.49052104541143,
+      "dimensions": {
+        "width": 13.449999809265137,
+        "depth": 12.474999856948852,
+        "height": 18.20000002421439
+      },
+      "localVisualBounds": {
+        "min": [
+          -6.724999904632568,
+          -3.7252903539730653e-10,
+          -5.724999904632568
+        ],
+        "max": [
+          6.724999904632568,
+          18.20000002384186,
+          6.749999952316284
+        ]
+      },
+      "groundDatum": 32.2,
+      "floorDatum": 32.5,
+      "entranceDirection": "south",
+      "minimumPublicDoorClearWidth": 1.3,
+      "minimumPrimaryApproachWidth": 2.4,
+      "canopyClearance": 2.98,
+      "approximateFootprintM2": 167.78874569654465,
+      "collisionProxyCount": 454,
+      "collisionMethod": "Cross-sections of actual walls/columns/barriers, height-aware overhead slabs, exact upward-facing render triangles for walking support.",
+      "adaptation": "Terrain-adaptive piers and entrance stair. A continuous uphill approach from the existing trail is conditional future work, not represented as completed.",
+      "status": "Architectural reservation only; production placement and final circulation are not approved"
+    },
+    {
+      "id": "station",
+      "model": "StasiunAntara",
+      "x": -5,
+      "y": 21.65,
+      "z": 5,
+      "w": 25,
+      "d": 16.6,
+      "entry": [
+        -8.7,
+        0,
+        10.5
+      ],
+      "groundRange": [
+        15.907234942534933,
+        23.526923076923076
+      ],
+      "voids": 0,
+      "entranceWorld": [
+        -13.7,
+        21.65,
+        15.5
+      ],
+      "entryGround": 21.78294842778689,
+      "dimensions": {
+        "width": 24.974999713897706,
+        "depth": 16.525000047683715,
+        "height": 10.4049999717623
+      },
+      "localVisualBounds": {
+        "min": [
+          -12.774999904632569,
+          -0.02500000037252903,
+          -5.05
+        ],
+        "max": [
+          12.199999809265137,
+          10.37999997138977,
+          11.475000047683716
+        ]
+      },
+      "groundDatum": 21.65,
+      "floorDatum": 21.65,
+      "entranceDirection": "south",
+      "minimumPublicDoorClearWidth": null,
+      "minimumPrimaryApproachWidth": 2.4,
+      "canopyClearance": 2.9,
+      "platformDatum": 27.4,
+      "approximateFootprintM2": 412.71187146306033,
+      "collisionProxyCount": 199,
+      "collisionMethod": "Cross-sections of actual walls/columns/barriers, height-aware overhead slabs, exact upward-facing render triangles for walking support.",
+      "adaptation": "Elevated viaduct leaves the junction open below. Three-flight stair, architectural lift core and guarded lift landing; no operating lift or railway.",
+      "status": "Architectural reservation only; production placement and final circulation are not approved"
+    },
+    {
+      "id": "skyport",
+      "model": "PelabuhanAwan",
+      "x": 30,
+      "y": 16.4,
+      "z": 65,
+      "w": 22.5,
+      "d": 22,
+      "entry": [
+        -2.3,
+        0.28,
+        -8.2
+      ],
+      "groundRange": [
+        13.756885700740787,
+        16.313280473332554
+      ],
+      "voids": 0,
+      "entranceWorld": [
+        27.7,
+        16.68,
+        56.8
+      ],
+      "entryGround": 16.026115729247604,
+      "dimensions": {
+        "width": 22.5,
+        "depth": 21.93568572998047,
+        "height": 8.85837926901877
+      },
+      "localVisualBounds": {
+        "min": [
+          -12.25,
+          -3.7252903539730653e-10,
+          -9.5
+        ],
+        "max": [
+          10.25,
+          8.85837926864624,
+          12.435685729980468
+        ]
+      },
+      "groundDatum": 16.4,
+      "floorDatum": 16.68,
+      "entranceDirection": "north",
+      "minimumPublicDoorClearWidth": 1.3,
+      "minimumPrimaryApproachWidth": 2.4,
+      "canopyClearance": 3,
+      "approximateFootprintM2": 493.5529289245606,
+      "collisionProxyCount": 122,
+      "collisionMethod": "Cross-sections of actual walls/columns/barriers, height-aware overhead slabs, exact upward-facing render triangles for walking support.",
+      "adaptation": "Variable piers, north-entry steps and a two-flight observation stair. Accessible arrival ramp and final flight-corridor coordination are conditional future work.",
+      "status": "Architectural reservation only; production placement and final circulation are not approved"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+Static audit failed:
+- index.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- index.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- index.html: is missing canonical footer destination: assets/cv.pdf
+- portfolio.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- portfolio.html: is missing canonical footer destination: assets/cv.pdf
+- portfolio.html: must load transition-init immediately before the shared header
+- about.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- about.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- about.html: must load transition-init immediately before the shared header
+- contact.html: must load transition-init immediately before the shared header
+- 404.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- 404.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- 404.html: is missing canonical footer destination: assets/cv.pdf
+- 404.html: must load transition-init immediately before the shared header
+- project-transit.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- project-transit.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- project-transit.html: is missing canonical footer destination: assets/cv.pdf
+- project-transit.html: must load transition-init immediately before the shared header
+- project-transit.html: contains an eagerly loaded iframe; use data-src and the explicit loader
+- project-pangan.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- project-pangan.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- project-pangan.html: is missing canonical footer destination: assets/cv.pdf
+- project-pangan.html: must load transition-init immediately before the shared header
+- project-pangan.html: contains an eagerly loaded iframe; use data-src and the explicit loader
+- project-alphaearth-food.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- project-alphaearth-food.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- project-alphaearth-food.html: must load transition-init immediately before the shared header
+- project-mbr.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- project-mbr.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- project-mbr.html: is missing canonical footer destination: assets/cv.pdf
+- project-mbr.html: must load transition-init immediately before the shared header
+- project-cbd.html: is missing canonical footer destination: https://linkedin.com/in/arnan-m-999ab5165
+- project-cbd.html: is missing canonical footer destination: https://public.tableau.com/app/profile/arnan.muflihadi
+- project-cbd.html: is missing canonical footer destination: assets/cv.pdf
+- project-cbd.html: must load transition-init immediately before the shared header
+- project-cbd.html: contains an eagerly loaded iframe; use data-src and the explicit loader
+- assets/img/redesign: is missing the approved hero environment master
+- assets/img/redesign: is missing the 640px approved-environment delivery derivative
+- assets/img/redesign: is missing the 828px approved-environment delivery derivative
+- assets/img/redesign: is missing the 960px approved-environment delivery derivative
+- index.html: is missing responsive approved-environment delivery sources
+- index.html: is missing the optimized static analyst-frame delivery entry point
+- assets/img/redesign: is missing the static analyst-frame delivery derivative
+- assets/img/redesign: is missing approved analyst PNG master 01
+- assets/img/redesign: is missing lossless analyst WebP delivery derivative 01
+- assets/img/redesign: is missing approved analyst PNG master 02
+- assets/img/redesign: is missing lossless analyst WebP delivery derivative 02
+- assets/img/redesign: is missing approved analyst PNG master 03
+- assets/img/redesign: is missing lossless analyst WebP delivery derivative 03
+- assets/img/redesign: is missing approved analyst PNG master 04
+- assets/img/redesign: is missing lossless analyst WebP delivery derivative 04
+- assets/img/redesign: is missing approved analyst PNG master 05
+- assets/img/redesign: is missing lossless analyst WebP delivery derivative 05
+- assets/img/redesign: is missing approved analyst PNG master 06
+- assets/img/redesign: is missing lossless analyst WebP delivery derivative 06
+- index.html: is missing the live route overlay
+- project-transit.html: must retain the explicit static/manual transit fallback
+- project-pangan.html: must retain the explicit static/manual Pangan fallback

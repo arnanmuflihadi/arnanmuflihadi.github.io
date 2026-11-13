@@ -1,0 +1,13 @@
+stall_id,kit_id,base_asset,canopy,district,position_x,position_y,position_z,rotation_y,footprint_width,footprint_depth,height,customer_side,status
+S01,S01b,FP-Stall_Empty,blue cloth (material variant),D3 Pasar Awan,-5.0,0.0,-40.5,90,1.9,1.0,2.63,east (+x),PLANNED - asset-backed blockout rendered in P1.2
+S02,S03,AV-mdvl_village_stall_01,striped canopy as shipped (Avramania),D3 Pasar Awan,-5.0,0.0,-44.5,90,2.3,1.2,2.26,east (+x),PLANNED - asset-backed blockout rendered in P1.2
+S03,S04,SY-counter_L,"open counter, no canopy (Syntaxes of Play)",D3 Pasar Awan,-5.0,0.0,-53.5,90,3.2,1.0,1.15,east (+x),PLANNED - asset-backed blockout rendered in P1.2
+S04,S01c,FP-Stall_Empty,cream cloth (material variant),D3 Pasar Awan,-5.0,0.0,-57.5,90,1.9,1.0,2.63,east (+x),PLANNED - asset-backed blockout rendered in P1.2
+S05,S01g,FP-Stall_Empty,burgundy cloth (material variant),D3 Pasar Awan,5.0,0.0,-40.5,-90,1.9,1.0,2.63,west (-x),PLANNED - asset-backed blockout rendered in P1.2
+S06,S02c,FP-Stall_Cart_Empty,cream cloth (material variant),D3 Pasar Awan,5.0,0.0,-44.5,-90,3.1,1.2,2.63,west (-x),PLANNED - asset-backed blockout rendered in P1.2
+S07,S05,SY-table03,open table with cloth runner (Syntaxes of Play),D3 Pasar Awan,5.0,0.0,-53.5,-90,2.4,1.2,0.81,west (-x),PLANNED - asset-backed blockout rendered in P1.2
+S08,S01g,FP-Stall_Empty,burgundy cloth (material variant),D3 Pasar Awan,5.0,0.0,-57.5,-90,1.9,1.0,2.63,west (-x),PLANNED - asset-backed blockout rendered in P1.2
+S09,S03,AV-mdvl_village_stall_01,striped canopy as shipped (Avramania),D3 Pasar Awan,-10.0,0.0,-38.5,0,2.3,1.2,2.26,south (+z),PLANNED - asset-backed blockout rendered in P1.2
+S10,S05,SY-table03,open table with cloth runner (Syntaxes of Play),D3 Pasar Awan,10.0,0.0,-38.5,0,2.4,1.2,0.81,south (+z),PLANNED - asset-backed blockout rendered in P1.2
+S11,S01b,FP-Stall_Empty,blue cloth (material variant),D3 Pasar Awan,-12.0,0.0,-59.3,0,1.9,1.0,2.63,south (+z),PLANNED - asset-backed blockout rendered in P1.2
+S12,S02g,FP-Stall_Cart_Empty,burgundy cloth (material variant),D3 Pasar Awan,12.0,0.0,-59.3,0,3.1,1.2,2.63,south (+z),PLANNED - asset-backed blockout rendered in P1.2

@@ -1,0 +1,14 @@
+✔ town requires exact local development flag and is off on every public/default route (1.403542ms)
+✔ approved assets are byte-identical to pre-integration checkpoint (136.608625ms)
+✔ approved S2-F baseline with S2-G polish disabled preserves terrain and vegetation; off restores cached instances (1879.865791ms)
+✔ stabilization is individual, reversible, LOD-safe, and leaves source terrain and buffers intact (1390.186291ms)
+✔ glass A remains exact by default; B has zero transmission; C retains only the selected cafe-front subset (1652.939708ms)
+✔ real production controller retains both directions, garden alternative, and guarded edge with clearance enabled (1446.207ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4786.51625

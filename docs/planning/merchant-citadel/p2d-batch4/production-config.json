@@ -1,0 +1,121 @@
+{
+ "revision": "P2-B batch 4",
+ "date": "2026-11-12",
+ "glb": {
+  "file": "merchant-citadel-p2a/models/merchant-citadel-p2a-kit.glb",
+  "bytes": 40849756,
+  "gzip_bytes": 13166929,
+  "nodes": 51,
+  "triangles_unique": 516528,
+  "textures_in_browser": 78,
+  "textures_gpu_estimate_mb_with_mips": 96.6,
+  "variants_not_default": {
+   "quant": {
+    "bytes": 26374688,
+    "gzip": 10817894
+   },
+   "webp": {
+    "bytes": 39181032,
+    "gzip": 11553631
+   },
+   "quant_webp": {
+    "bytes": 24705972,
+    "gzip": 9208205
+   }
+  },
+  "sha256_prefix": "2837f8cb2ee9"
+ },
+ "merge": {
+  "default": "cell30",
+  "reason": "measured in 04: equal to district merging within the run-to-run spread on this GPU, constant cell size as the town grows; scene-wide is fastest here but draws every triangle in every view; 20 m cells cost 351 calls",
+  "switches": "?merge=none|district|cell20|cell30|cell45|cell60|scene ?town24=1 (adds the two terrace tower-house surrogates B15, B16) ?qmerge=1 (re-quantise merged geometry) ?glb= ?dequant=1 (decode-at-load) ?lowprops=<m> ?scenefile= ?shot= ?names=",
+  "integrity": "all merged meshes use 32-bit indices; no index beyond the vertex count, no NaN, every vertex inside its bounding sphere and box in all six modes; triangle counts equal; rendered difference to unmerged 0.01 (mean abs, 0-255)"
+ },
+ "camera_proxies": {
+  "roof_bands": 6,
+  "roof_bands_previous": 3,
+  "low_prop_camera_rule_m": 1.25,
+  "posts_in_camera_list": 0,
+  "cloth_pennant_sign": "excluded from camera (batch 2 rule kept)",
+  "hoist": "no proxy (thin, 5 m above ground)",
+  "lean_to_roofs": "no camera proxy (batch 3 rule kept)",
+  "closed_slot_fences": [
+   "(23.3, 50.3)",
+   "(29.3, 50.4)"
+  ],
+  "pocket_fence": "(19.4, 37.3)"
+ },
+ "network": {
+  "nodes_in_slice": 49,
+  "edges_tested": 63,
+  "edges_failed": 0,
+  "min_node_clearance_m": 0.409,
+  "min_node_clearance_note": "N17 (tea house veranda, P2-A): 0.41 m between two porch posts, unchanged",
+  "nodes_added_batch4": [
+   "N47",
+   "N48",
+   "N49",
+   "N50",
+   "N51",
+   "N52",
+   "N53",
+   "N54",
+   "N58",
+   "N59"
+  ],
+  "node_moved": {
+   "N41": [
+    26.0,
+    59.0
+   ]
+  },
+  "edges_added": [
+   "N12-N47",
+   "N47-N13",
+   "N13-N50",
+   "N50-N14",
+   "N33-N48",
+   "N33-N49",
+   "N33-N51",
+   "N51-N52",
+   "N52-N53",
+   "N53-N54",
+   "N54-N59",
+   "N39-N58",
+   "N58-N24",
+   "N16-N59"
+  ]
+ },
+ "district_rule": {
+  "D7": "x >= 14 and n < 37 (warehouse lane, service court, counting house)",
+  "D8_extended": "x >= 22 and n >= 52 (E05)",
+  "D1_narrowed": "n < 8 and x < 14"
+ },
+ "paving_rows_added": [
+  "D7 tea porters' path 32-34 x 18-48",
+  "path bend 30-32 x 48-52",
+  "loading apron 24-32 x 16-18 red brick",
+  "tally loggia floor 18-26 x 22-24 red brick",
+  "E05 gallery strip 22-30 x 54-58 red brick"
+ ],
+ "palette_extension": {
+  "tea_green": "#6F7F55 (CUS-Awning_tea): accent of the tea route; the P1.2 palette had burgundy, blue, gold, cream"
+ },
+ "custom_geometry_added": [
+  "CUS-Hoist",
+  "CUS-Sign_Leaf_wood (tea sprig pictogram)",
+  "CUS-Awning_tea",
+  "CUS-Sign_Crate_burgundy (B13 lane sign, existing glyph, new field)"
+ ],
+ "lod_targets_added": {
+  "AV-mdvl_village_window_box_01": 700,
+  "AV-mdvl_interiors_chest_01": 500
+ },
+ "performance_reference": "Apple M4 Pro, 1280x720, Claude desktop in-app Chromium 156, one machine, shared load (average 5-9); see 04",
+ "not_measured": [
+  "any GPU other than the M4 Pro",
+  "phones, integrated GPUs, older laptops",
+  "battery and thermal state",
+  "KTX2, Meshopt, Draco (no decoders in the vendored three build)"
+ ]
+}

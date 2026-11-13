@@ -1,0 +1,64 @@
+{
+  "selected": true,
+  "strategy": "Retain provisional skyport threshold; two direct stair flights in an unbuilt section",
+  "line": [
+    [
+      27.0,
+      60.0
+    ],
+    [
+      20.0,
+      58.8
+    ],
+    [
+      9.324375854318834,
+      61.74473679720185
+    ]
+  ],
+  "start": [
+    27,
+    17.15,
+    60
+  ],
+  "end": [
+    9.324375854318834,
+    13.94865844389921,
+    61.74473679720185
+  ],
+  "horizontalLength": 18.176426142130527,
+  "lengthAlongStairPolyline": 21.377767698231317,
+  "levelChange": -3.201341556100788,
+  "risers": 18,
+  "riserHeight": 0.17785230867226598,
+  "treadDepth": 0.32,
+  "flightRisers": [
+    9,
+    9
+  ],
+  "flightStarts": [
+    3.7,
+    12
+  ],
+  "minimumLandingRun": 3.296426142130528,
+  "clearWidth": 3,
+  "centrelineCutMax": 1.0798752457425103,
+  "centrelineSupportMax": 1.1644318811754175,
+  "approachTreeConflictIds": [
+    58
+  ],
+  "totalTrunkConflicts": [
+    3,
+    8,
+    11,
+    13,
+    16,
+    48,
+    53,
+    54,
+    55,
+    57,
+    58,
+    60
+  ],
+  "controllerStatus": "NOT TESTED; section arithmetic only; no stairs or support colliders built"
+}

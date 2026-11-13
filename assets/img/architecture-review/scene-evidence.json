@@ -1,0 +1,1385 @@
+{
+  "office-before": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 0,
+    "authoredTriangles": 0,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": null,
+      "fov": 40,
+      "position": [
+        23.08932699161375,
+        27.245818684064393,
+        39.150616679372206
+      ],
+      "quaternion": [
+        -0.14333760033974707,
+        0.23439734803179377,
+        0.03496583066472956,
+        0.9608796002884183
+      ]
+    },
+    "collisionBodies": 1,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "office": 1
+    },
+    "groundAlignment": {
+      "foundationInstances": 1,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 45122,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 25,
+    "renderedArchitectureRoots": 1,
+    "renderedMeshes": 12,
+    "renderer": {
+      "drawCalls": 57,
+      "triangles": 59920
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [],
+    "view": "office-before"
+  },
+  "office-after": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 147,
+    "authoredTriangles": 1734,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": null,
+      "fov": 40,
+      "position": [
+        23.08932699161375,
+        27.245818684064393,
+        39.150616679372206
+      ],
+      "quaternion": [
+        -0.14333760033974707,
+        0.23439734803179377,
+        0.03496583066472956,
+        0.9608796002884183
+      ]
+    },
+    "collisionBodies": 5,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "aircon": 3,
+      "fern": 16,
+      "office": 1
+    },
+    "groundAlignment": {
+      "foundationInstances": 1,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 49696,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 30,
+    "renderedArchitectureRoots": 1,
+    "renderedMeshes": 45,
+    "renderer": {
+      "drawCalls": 90,
+      "triangles": 66228
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [
+      {
+        "batches": 8,
+        "bounds": {
+          "max": [
+            8.72999981045723,
+            23.949999313652516,
+            2.976000000000001
+          ],
+          "min": [
+            -8.399999618530273,
+            0.16,
+            -13.0577137088229
+          ]
+        },
+        "colliders": [
+          {
+            "d": 13.3154454176458,
+            "h": 22.56,
+            "minY": 0.16,
+            "w": 16.51476180303354,
+            "x": 0,
+            "z": -6.399991
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.1999999999999993,
+            "h": 3.5900000000000003,
+            "minY": 3.24,
+            "w": 7.4,
+            "x": 0,
+            "z": 1.2300000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 12.71,
+            "minY": 12.11,
+            "w": 16.6,
+            "x": 0,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 22.360000000000003,
+            "minY": 21.76,
+            "w": 16.6,
+            "x": 0,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 16.0337137088229,
+            "h": 23.949999313652516,
+            "minY": 4.5600000000000005,
+            "w": 17.129999428987503,
+            "x": 0.1650000959634781,
+            "z": -5.04085685441145
+          }
+        ],
+        "details": 144,
+        "entrance": {
+          "clearanceAbovePorch": 3.06,
+          "glazedLeafHeight": 2.4,
+          "glazedLeafWidth": 0.91,
+          "nominalLeafWidth": 0.95,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 6.399991,
+        "groundClearance": 3.08,
+        "id": "office",
+        "insetDepth": 0.22,
+        "name": "Contemporary Tropical Office",
+        "source": "office",
+        "sourceHeight": 22.4
+      }
+    ],
+    "view": "office-after"
+  },
+  "shop-before": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 0,
+    "authoredTriangles": 0,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": null,
+      "fov": 40,
+      "position": [
+        16.272391766044347,
+        19.04790990138816,
+        28.16212291995445
+      ],
+      "quaternion": [
+        -0.14333760033974707,
+        0.23439734803179377,
+        0.03496583066472955,
+        0.9608796002884183
+      ]
+    },
+    "collisionBodies": 1,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "shop": 1
+    },
+    "groundAlignment": {
+      "foundationInstances": 1,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 18344,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 26,
+    "renderedArchitectureRoots": 1,
+    "renderedMeshes": 13,
+    "renderer": {
+      "drawCalls": 55,
+      "triangles": 32770
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [],
+    "view": "shop-before"
+  },
+  "shop-after": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 126,
+    "authoredTriangles": 4350,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": null,
+      "fov": 40,
+      "position": [
+        16.272391766044347,
+        19.04790990138816,
+        28.16212291995445
+      ],
+      "quaternion": [
+        -0.14333760033974707,
+        0.23439734803179377,
+        0.03496583066472955,
+        0.9608796002884183
+      ]
+    },
+    "collisionBodies": 6,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "fern": 8,
+      "shop": 1
+    },
+    "groundAlignment": {
+      "foundationInstances": 1,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 19789,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 25,
+    "renderedArchitectureRoots": 1,
+    "renderedMeshes": 39,
+    "renderer": {
+      "drawCalls": 81,
+      "triangles": 38565
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [
+      {
+        "batches": 10,
+        "bounds": {
+          "max": [
+            5.449999809265137,
+            16.36999938994646,
+            3.355999999999999
+          ],
+          "min": [
+            -5.449999809265137,
+            0.16,
+            -9.768686270141602
+          ]
+        },
+        "colliders": [
+          {
+            "d": 10.118686,
+            "h": 13.76,
+            "minY": 0.16,
+            "w": 9.95212,
+            "x": 0,
+            "z": -4.7093430000000005
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.22000000000000064,
+            "x": -4.8,
+            "z": 2.7999999999999994
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.22,
+            "x": 0,
+            "z": 2.7999999999999994
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.22000000000000064,
+            "x": 4.8,
+            "z": 2.7999999999999994
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.5,
+            "h": 3.3600000000000003,
+            "minY": 3.04,
+            "w": 10.9,
+            "x": 0,
+            "z": 1.4499999999999995
+          },
+          {
+            "cameraOnly": true,
+            "d": 13.124686270141602,
+            "h": 16.36999938994646,
+            "minY": 4.41,
+            "w": 10.899999618530272,
+            "x": 0,
+            "z": -3.206343135070801
+          }
+        ],
+        "details": 123,
+        "entrance": {
+          "clearanceAbovePorch": 2.86,
+          "glazedLeafHeight": 2.2,
+          "glazedLeafWidth": 0.98,
+          "nominalLeafWidth": 1,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 3.96315,
+        "groundClearance": 2.88,
+        "id": "commercial",
+        "insetDepth": 0.16,
+        "name": "Urban Mixed-Use Commercial Building",
+        "source": "shop",
+        "sourceHeight": 13.6
+      }
+    ],
+    "view": "shop-after"
+  },
+  "variants": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 359,
+    "authoredTriangles": 7128,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": null,
+      "fov": 40,
+      "position": [
+        24.742381009236706,
+        30.05659650490376,
+        47.51742488545037
+      ],
+      "quaternion": [
+        -0.14333760033974707,
+        0.23439734803179377,
+        0.03496583066472956,
+        0.9608796002884183
+      ]
+    },
+    "collisionBodies": 16,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "aircon": 3,
+      "fern": 24,
+      "office": 1,
+      "shop": 2
+    },
+    "groundAlignment": {
+      "foundationInstances": 3,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 71321,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 32,
+    "renderedArchitectureRoots": 3,
+    "renderedMeshes": 108,
+    "renderer": {
+      "drawCalls": 159,
+      "triangles": 93557
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [
+      {
+        "batches": 8,
+        "bounds": {
+          "max": [
+            -4.77000018954277,
+            23.949999313652516,
+            2.976000000000001
+          ],
+          "min": [
+            -21.899999618530273,
+            0.16,
+            -13.0577137088229
+          ]
+        },
+        "colliders": [
+          {
+            "d": 13.3154454176458,
+            "h": 22.56,
+            "minY": 0.16,
+            "w": 16.514761803033537,
+            "x": -13.5,
+            "z": -6.399991
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.1999999999999993,
+            "h": 3.5900000000000003,
+            "minY": 3.24,
+            "w": 7.399999999999999,
+            "x": -13.5,
+            "z": 1.2300000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 12.71,
+            "minY": 12.11,
+            "w": 16.6,
+            "x": -13.5,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 22.360000000000003,
+            "minY": 21.76,
+            "w": 16.6,
+            "x": -13.5,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 16.0337137088229,
+            "h": 23.949999313652516,
+            "minY": 4.5600000000000005,
+            "w": 17.129999428987503,
+            "x": -13.334999904036522,
+            "z": -5.04085685441145
+          }
+        ],
+        "details": 144,
+        "entrance": {
+          "clearanceAbovePorch": 3.06,
+          "glazedLeafHeight": 2.4,
+          "glazedLeafWidth": 0.91,
+          "nominalLeafWidth": 0.95,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 6.399991,
+        "groundClearance": 3.08,
+        "id": "office",
+        "insetDepth": 0.22,
+        "name": "Contemporary Tropical Office",
+        "source": "office",
+        "sourceHeight": 22.4
+      },
+      {
+        "batches": 10,
+        "bounds": {
+          "max": [
+            9.449999809265137,
+            16.36999938994646,
+            3.355999999999999
+          ],
+          "min": [
+            -1.4499998092651367,
+            0.16,
+            -9.768686270141602
+          ]
+        },
+        "colliders": [
+          {
+            "d": 10.118686,
+            "h": 13.76,
+            "minY": 0.16,
+            "w": 9.95212,
+            "x": 4,
+            "z": -4.7093430000000005
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.22000000000000064,
+            "x": -0.7999999999999998,
+            "z": 2.7999999999999994
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.2200000000000002,
+            "x": 4,
+            "z": 2.7999999999999994
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.22000000000000064,
+            "x": 8.8,
+            "z": 2.7999999999999994
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.5,
+            "h": 3.3600000000000003,
+            "minY": 3.04,
+            "w": 10.9,
+            "x": 4,
+            "z": 1.4499999999999995
+          },
+          {
+            "cameraOnly": true,
+            "d": 13.124686270141602,
+            "h": 16.36999938994646,
+            "minY": 4.41,
+            "w": 10.899999618530272,
+            "x": 4,
+            "z": -3.206343135070801
+          }
+        ],
+        "details": 123,
+        "entrance": {
+          "clearanceAbovePorch": 2.86,
+          "glazedLeafHeight": 2.2,
+          "glazedLeafWidth": 0.98,
+          "nominalLeafWidth": 1,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 3.96315,
+        "groundClearance": 2.88,
+        "id": "commercial",
+        "insetDepth": 0.16,
+        "name": "Urban Mixed-Use Commercial Building",
+        "source": "shop",
+        "sourceHeight": 13.6
+      },
+      {
+        "batches": 8,
+        "bounds": {
+          "max": [
+            17.05266933189705,
+            8.340000379681587,
+            3.296
+          ],
+          "min": [
+            10.94733066810295,
+            0.16,
+            -8.470000004196168
+          ]
+        },
+        "colliders": [
+          {
+            "d": 8.15,
+            "h": 6.51,
+            "minY": 0.16,
+            "w": 4.299999999999999,
+            "x": 14,
+            "z": -3.725000000000001
+          },
+          {
+            "d": 0.1899999999999995,
+            "h": 3.01,
+            "minY": 0.16,
+            "w": 0.1899999999999995,
+            "x": 11.55,
+            "z": 2.9
+          },
+          {
+            "d": 0.1899999999999995,
+            "h": 3.01,
+            "minY": 0.16,
+            "w": 0.19000000000000128,
+            "x": 16.450000000000003,
+            "z": 2.9
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.3499999999999996,
+            "h": 3.48,
+            "minY": 2.98,
+            "w": 5.600000000000001,
+            "x": 14,
+            "z": 1.5000000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 11.766000004196169,
+            "h": 8.340000379681587,
+            "minY": 6.36,
+            "w": 6.1053386637941,
+            "x": 14,
+            "z": -2.587000002098084
+          }
+        ],
+        "details": 83,
+        "entrance": {
+          "clearanceAbovePorch": 2.8,
+          "glazedLeafHeight": 2.15,
+          "glazedLeafWidth": 0.98,
+          "nominalLeafWidth": 1,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 3.96315,
+        "groundClearance": 2.82,
+        "id": "neighborhood",
+        "insetDepth": 0.16,
+        "name": "Human-Scale Neighborhood Shopfront",
+        "source": "shop",
+        "sourceHeight": 13.6
+      }
+    ],
+    "view": "variants"
+  },
+  "detail": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 147,
+    "authoredTriangles": 1734,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": null,
+      "fov": 40,
+      "position": [
+        10.6,
+        10.8,
+        10.5
+      ],
+      "quaternion": [
+        -0.011003227503159603,
+        0.3184082685755666,
+        0.0036961524368468264,
+        0.9478826097911004
+      ]
+    },
+    "collisionBodies": 5,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "aircon": 3,
+      "fern": 16,
+      "office": 1
+    },
+    "groundAlignment": {
+      "foundationInstances": 1,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 49696,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 30,
+    "renderedArchitectureRoots": 1,
+    "renderedMeshes": 45,
+    "renderer": {
+      "drawCalls": 42,
+      "triangles": 55365
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [
+      {
+        "batches": 8,
+        "bounds": {
+          "max": [
+            8.72999981045723,
+            23.949999313652516,
+            2.976000000000001
+          ],
+          "min": [
+            -8.399999618530273,
+            0.16,
+            -13.0577137088229
+          ]
+        },
+        "colliders": [
+          {
+            "d": 13.3154454176458,
+            "h": 22.56,
+            "minY": 0.16,
+            "w": 16.51476180303354,
+            "x": 0,
+            "z": -6.399991
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.1999999999999993,
+            "h": 3.5900000000000003,
+            "minY": 3.24,
+            "w": 7.4,
+            "x": 0,
+            "z": 1.2300000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 12.71,
+            "minY": 12.11,
+            "w": 16.6,
+            "x": 0,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 22.360000000000003,
+            "minY": 21.76,
+            "w": 16.6,
+            "x": 0,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 16.0337137088229,
+            "h": 23.949999313652516,
+            "minY": 4.5600000000000005,
+            "w": 17.129999428987503,
+            "x": 0.1650000959634781,
+            "z": -5.04085685441145
+          }
+        ],
+        "details": 144,
+        "entrance": {
+          "clearanceAbovePorch": 3.06,
+          "glazedLeafHeight": 2.4,
+          "glazedLeafWidth": 0.91,
+          "nominalLeafWidth": 0.95,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 6.399991,
+        "groundClearance": 3.08,
+        "id": "office",
+        "insetDepth": 0.22,
+        "name": "Contemporary Tropical Office",
+        "source": "office",
+        "sourceHeight": 22.4
+      }
+    ],
+    "view": "detail"
+  },
+  "street-level": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 359,
+    "authoredTriangles": 7128,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": 1.65,
+      "fov": 40,
+      "position": [
+        14,
+        1.81,
+        12
+      ],
+      "quaternion": [
+        0.01754564246132468,
+        0.279815691029051,
+        -0.0051147510699724305,
+        0.959879767890774
+      ]
+    },
+    "collisionBodies": 16,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "aircon": 3,
+      "fern": 24,
+      "office": 1,
+      "shop": 2
+    },
+    "groundAlignment": {
+      "foundationInstances": 3,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 71321,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 32,
+    "renderedArchitectureRoots": 3,
+    "renderedMeshes": 108,
+    "renderer": {
+      "drawCalls": 107,
+      "triangles": 79782
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [
+      {
+        "batches": 8,
+        "bounds": {
+          "max": [
+            -4.77000018954277,
+            23.949999313652516,
+            2.976000000000001
+          ],
+          "min": [
+            -21.899999618530273,
+            0.16,
+            -13.0577137088229
+          ]
+        },
+        "colliders": [
+          {
+            "d": 13.3154454176458,
+            "h": 22.56,
+            "minY": 0.16,
+            "w": 16.514761803033537,
+            "x": -13.5,
+            "z": -6.399991
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.1999999999999993,
+            "h": 3.5900000000000003,
+            "minY": 3.24,
+            "w": 7.399999999999999,
+            "x": -13.5,
+            "z": 1.2300000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 12.71,
+            "minY": 12.11,
+            "w": 16.6,
+            "x": -13.5,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 1.8000000000000007,
+            "h": 22.360000000000003,
+            "minY": 21.76,
+            "w": 16.6,
+            "x": -13.5,
+            "z": 0.6500000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 16.0337137088229,
+            "h": 23.949999313652516,
+            "minY": 4.5600000000000005,
+            "w": 17.129999428987503,
+            "x": -13.334999904036522,
+            "z": -5.04085685441145
+          }
+        ],
+        "details": 144,
+        "entrance": {
+          "clearanceAbovePorch": 3.06,
+          "glazedLeafHeight": 2.4,
+          "glazedLeafWidth": 0.91,
+          "nominalLeafWidth": 0.95,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 6.399991,
+        "groundClearance": 3.08,
+        "id": "office",
+        "insetDepth": 0.22,
+        "name": "Contemporary Tropical Office",
+        "source": "office",
+        "sourceHeight": 22.4
+      },
+      {
+        "batches": 10,
+        "bounds": {
+          "max": [
+            9.449999809265137,
+            16.36999938994646,
+            3.355999999999999
+          ],
+          "min": [
+            -1.4499998092651367,
+            0.16,
+            -9.768686270141602
+          ]
+        },
+        "colliders": [
+          {
+            "d": 10.118686,
+            "h": 13.76,
+            "minY": 0.16,
+            "w": 9.95212,
+            "x": 4,
+            "z": -4.7093430000000005
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.22000000000000064,
+            "x": -0.7999999999999998,
+            "z": 2.7999999999999994
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.2200000000000002,
+            "x": 4,
+            "z": 2.7999999999999994
+          },
+          {
+            "d": 0.22000000000000064,
+            "h": 3.1100000000000003,
+            "minY": 0.16,
+            "w": 0.22000000000000064,
+            "x": 8.8,
+            "z": 2.7999999999999994
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.5,
+            "h": 3.3600000000000003,
+            "minY": 3.04,
+            "w": 10.9,
+            "x": 4,
+            "z": 1.4499999999999995
+          },
+          {
+            "cameraOnly": true,
+            "d": 13.124686270141602,
+            "h": 16.36999938994646,
+            "minY": 4.41,
+            "w": 10.899999618530272,
+            "x": 4,
+            "z": -3.206343135070801
+          }
+        ],
+        "details": 123,
+        "entrance": {
+          "clearanceAbovePorch": 2.86,
+          "glazedLeafHeight": 2.2,
+          "glazedLeafWidth": 0.98,
+          "nominalLeafWidth": 1,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 3.96315,
+        "groundClearance": 2.88,
+        "id": "commercial",
+        "insetDepth": 0.16,
+        "name": "Urban Mixed-Use Commercial Building",
+        "source": "shop",
+        "sourceHeight": 13.6
+      },
+      {
+        "batches": 8,
+        "bounds": {
+          "max": [
+            17.05266933189705,
+            8.340000379681587,
+            3.296
+          ],
+          "min": [
+            10.94733066810295,
+            0.16,
+            -8.470000004196168
+          ]
+        },
+        "colliders": [
+          {
+            "d": 8.15,
+            "h": 6.51,
+            "minY": 0.16,
+            "w": 4.299999999999999,
+            "x": 14,
+            "z": -3.725000000000001
+          },
+          {
+            "d": 0.1899999999999995,
+            "h": 3.01,
+            "minY": 0.16,
+            "w": 0.1899999999999995,
+            "x": 11.55,
+            "z": 2.9
+          },
+          {
+            "d": 0.1899999999999995,
+            "h": 3.01,
+            "minY": 0.16,
+            "w": 0.19000000000000128,
+            "x": 16.450000000000003,
+            "z": 2.9
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.3499999999999996,
+            "h": 3.48,
+            "minY": 2.98,
+            "w": 5.600000000000001,
+            "x": 14,
+            "z": 1.5000000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 11.766000004196169,
+            "h": 8.340000379681587,
+            "minY": 6.36,
+            "w": 6.1053386637941,
+            "x": 14,
+            "z": -2.587000002098084
+          }
+        ],
+        "details": 83,
+        "entrance": {
+          "clearanceAbovePorch": 2.8,
+          "glazedLeafHeight": 2.15,
+          "glazedLeafWidth": 0.98,
+          "nominalLeafWidth": 1,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 3.96315,
+        "groundClearance": 2.82,
+        "id": "neighborhood",
+        "insetDepth": 0.16,
+        "name": "Human-Scale Neighborhood Shopfront",
+        "source": "shop",
+        "sourceHeight": 13.6
+      }
+    ],
+    "view": "street-level"
+  },
+  "neighborhood": {
+    "architectureCache": {
+      "templates": 3,
+      "variants": [
+        "office",
+        "commercial",
+        "neighborhood"
+      ]
+    },
+    "authoredInstances": 86,
+    "authoredTriangles": 1044,
+    "cachedFiles": 4,
+    "camera": {
+      "aspect": 1.7777777777777777,
+      "eyeHeight": null,
+      "fov": 40,
+      "position": [
+        24.189681310202708,
+        11.002198648408854,
+        17.05575915009991
+      ],
+      "quaternion": [
+        -0.14333760033974707,
+        0.23439734803179377,
+        0.03496583066472955,
+        0.9608796002884183
+      ]
+    },
+    "collisionBodies": 5,
+    "comparisonMethod": "Before/after pairs use the same precomputed union bounds, camera,scale and lighting",
+    "counts": {
+      "shop": 1
+    },
+    "groundAlignment": {
+      "foundationInstances": 1,
+      "foundationTop": 0.16,
+      "sidewalkTop": 0.16,
+      "terrainTop": 0
+    },
+    "humanReview": {
+      "maximum": 5,
+      "score": null,
+      "status": "Awaiting human review of visual correction",
+      "targetAverage": 4
+    },
+    "importedTriangles": 1836,
+    "iteration": "Focused final visual correction",
+    "lighting": {
+      "exposure": 1,
+      "fogFar": 200,
+      "fogNear": 90,
+      "hemisphere": 2.05,
+      "id": "neutral-stylized-daytime",
+      "normalBias": 0.012,
+      "postprocessing": false,
+      "shadowMap": 2048,
+      "sun": 2.15
+    },
+    "loadedFiles": 4,
+    "missingTextures": [],
+    "referencedTextures": 22,
+    "renderedArchitectureRoots": 1,
+    "renderedMeshes": 24,
+    "renderer": {
+      "drawCalls": 55,
+      "triangles": 10663
+    },
+    "requests": 4,
+    "scene": "AR(N)AN Phase 1.5 architectural study",
+    "state": "ready",
+    "variants": [
+      {
+        "batches": 8,
+        "bounds": {
+          "max": [
+            17.05266933189705,
+            8.340000379681587,
+            3.296
+          ],
+          "min": [
+            10.94733066810295,
+            0.16,
+            -8.470000004196168
+          ]
+        },
+        "colliders": [
+          {
+            "d": 8.15,
+            "h": 6.51,
+            "minY": 0.16,
+            "w": 4.299999999999999,
+            "x": 14,
+            "z": -3.725000000000001
+          },
+          {
+            "d": 0.1899999999999995,
+            "h": 3.01,
+            "minY": 0.16,
+            "w": 0.1899999999999995,
+            "x": 11.55,
+            "z": 2.9
+          },
+          {
+            "d": 0.1899999999999995,
+            "h": 3.01,
+            "minY": 0.16,
+            "w": 0.19000000000000128,
+            "x": 16.450000000000003,
+            "z": 2.9
+          },
+          {
+            "cameraOnly": true,
+            "d": 3.3499999999999996,
+            "h": 3.48,
+            "minY": 2.98,
+            "w": 5.600000000000001,
+            "x": 14,
+            "z": 1.5000000000000004
+          },
+          {
+            "cameraOnly": true,
+            "d": 11.766000004196169,
+            "h": 8.340000379681587,
+            "minY": 6.36,
+            "w": 6.1053386637941,
+            "x": 14,
+            "z": -2.587000002098084
+          }
+        ],
+        "details": 83,
+        "entrance": {
+          "clearanceAbovePorch": 2.8,
+          "glazedLeafHeight": 2.15,
+          "glazedLeafWidth": 0.98,
+          "nominalLeafWidth": 1,
+          "porchRise": 0.02
+        },
+        "fictionalSignage": true,
+        "front": 3.96315,
+        "groundClearance": 2.82,
+        "id": "neighborhood",
+        "insetDepth": 0.16,
+        "name": "Human-Scale Neighborhood Shopfront",
+        "source": "shop",
+        "sourceHeight": 13.6
+      }
+    ],
+    "view": "neighborhood"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "editorial": {
+    "camera": "transit",
+    "characterReady": "false",
+    "mode": "editorial",
+    "project": "transit",
+    "rendererCount": "1",
+    "sceneId": "5e9440fa-bedb-4ffe-b61d-1ad4ed649e35",
+    "sceneryReady": "true"
+  },
+  "adventure": {
+    "characterReady": "true",
+    "mode": "adventure",
+    "project": "transit",
+    "rendererCount": "1",
+    "sceneId": "5e9440fa-bedb-4ffe-b61d-1ad4ed649e35",
+    "x": "-23.000",
+    "z": "5.000"
+  },
+  "sameScene": true
+}

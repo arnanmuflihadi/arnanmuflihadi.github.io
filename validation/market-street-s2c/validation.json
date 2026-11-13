@@ -1,0 +1,81 @@
+{
+  "protected_files_checked": 1310,
+  "changed": [],
+  "approved_assets_unchanged": true,
+  "main_scene": "S2C Market Street",
+  "building_count": 4,
+  "total_evaluated_triangles": 170709,
+  "material_count": 38,
+  "packed_images": 5,
+  "central_corridor_AABB_check": {
+    "samples": 145,
+    "width": 6,
+    "headroom": 2.1,
+    "includes": "architecture, props, planter and plant bounds; excludes terrain/support",
+    "blockers": []
+  },
+  "new_glb_exports": 0,
+  "production_game_tests": "not run; isolated Blender art phase",
+  "browser_rendering": "not tested; S2-C export/integration explicitly prohibited",
+  "native": {
+    "file": "validation/market-street-s2c/market-street.blend",
+    "bytes": 3969662,
+    "sha256": "c01b3291868e79e1abfba7b2cc4ada9c83f299d004bb333d56842ab6a5efadef"
+  },
+  "renders": [
+    {
+      "file": "01-arrival.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2829223,
+      "sha256": "0a74953426acbbd6cc2532f72b89e42fe996ec2e873e9156708fb46f42d0f346"
+    },
+    {
+      "file": "02-opposite.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2721304,
+      "sha256": "136376df7270be0ecaed2cdc29f7c04960ba08f3d81f909d2407f027ecc925a5"
+    },
+    {
+      "file": "03-elevated.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2656837,
+      "sha256": "9144e2799f15e8835e949e338f8fa6c846abb4decec462e2f9f02a93dd137a31"
+    },
+    {
+      "file": "04-detail.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2721273,
+      "sha256": "7087da9370dc24ceb0a3ee36c0e925786b38967a0f87d28794ad19ddac9f27ed"
+    },
+    {
+      "file": "05-plan.png",
+      "size": [
+        1500,
+        1600
+      ],
+      "bytes": 2722912,
+      "sha256": "a790feef6537a5273b3573a93c02a7532313a4d0792afffecbf900a6497da787"
+    },
+    {
+      "file": "06-distance-check.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "bytes": 2723267,
+      "sha256": "04ab2a013dc6de8fa63a22537dacf8e91ea46f394aab85f9af51eeba06aaf358"
+    }
+  ]
+}

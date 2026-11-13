@@ -1,0 +1,122 @@
+{
+  "scale": 3,
+  "scalesTested": [
+    3
+  ],
+  "bounds": {
+    "min": [
+      -2.245042085647583,
+      -13.742183685302734,
+      -0.40455541014671326
+    ],
+    "max": [
+      2.2447545528411865,
+      -7.187516689300537,
+      4.066986083984375
+    ]
+  },
+  "feet": {
+    "hand.L": {
+      "lowest": [
+        0.5624454617500305,
+        -12.149925231933594,
+        0.021410509943962097
+      ],
+      "support": [
+        0.5624454617500305,
+        -12.149925231933594,
+        -0.1585075855255127
+      ],
+      "gap": 0.1799180954694748
+    },
+    "hand.R": {
+      "lowest": [
+        -0.5624454021453857,
+        -12.149925231933594,
+        0.021411104127764702
+      ],
+      "support": [
+        -0.5624454021453857,
+        -12.149925231933594,
+        -0.16079306602478027
+      ],
+      "gap": 0.18220417015254498
+    },
+    "foot.L": {
+      "lowest": [
+        0.5094404816627502,
+        -10.81151008605957,
+        0.000002695247530937195
+      ],
+      "support": [
+        0.5094404816627502,
+        -10.81151008605957,
+        -0.0773470401763916
+      ],
+      "gap": 0.07734973542392254
+    },
+    "foot.R": {
+      "lowest": [
+        -0.5094407796859741,
+        -10.81151008605957,
+        0.000002989545464515686
+      ],
+      "support": [
+        -0.5094407796859741,
+        -10.81151008605957,
+        -0.0717463493347168
+      ],
+      "gap": 0.07174933888018131
+    }
+  },
+  "obstacleTrianglePairs": {
+    "Pelabuhan / C1 / weathered bronze": 148,
+    "Actual deck and guard triangles / datum 15.095": 222
+  },
+  "riderTrianglePairs": {
+    "Adventurer_Body": 0,
+    "Adventurer_Feet": 142,
+    "Adventurer_Head": 0,
+    "Adventurer_Legs": 182,
+    "Backpack": 0
+  },
+  "riderJoints": {
+    "Hips": [
+      0,
+      -10.899999618530273,
+      1.7000000476837158
+    ],
+    "LowerLeg.L": [
+      0.4643082320690155,
+      -11.144454002380371,
+      1.6581453084945679
+    ],
+    "LowerLeg.R": [
+      -0.46360477805137634,
+      -11.144454956054688,
+      1.6581451892852783
+    ],
+    "Foot.L": [
+      0.5254515409469604,
+      -11.124076843261719,
+      1.2198920249938965
+    ],
+    "Foot.R": [
+      -0.5247482061386108,
+      -11.124077796936035,
+      1.219891905784607
+    ]
+  },
+  "jointToSurfaceDistance": {
+    "Hips": 0.18745791912078857,
+    "LowerLeg.L": 0.08541542291641235,
+    "LowerLeg.R": 0.08584646880626678,
+    "Foot.L": 0.04739220812916756,
+    "Foot.R": 0.04782067611813545
+  },
+  "constraints": 0,
+  "foldTrial": "bilateral root/wrist plus one finger-fan closure; visually unacceptable membrane collapse; stop",
+  "method": "evaluated Blender mesh BVH triangle overlap; surface-pair counts not penetration depth; foot minimum weighted vertices raycast to exact game-derived deck mesh; town-local coordinates, skyport datum subtracted",
+  "belowSupportVertices": 636,
+  "maximumSampledSupportPenetration": 0.4002123773097992
+}

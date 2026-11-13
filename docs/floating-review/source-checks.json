@@ -1,0 +1,99 @@
+{
+  "syntax": [
+    {
+      "file": "assets/js/floating-atlas/collision.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/entry.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/guide.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/minimap.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/plan.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/presentation.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/scene.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/settlement.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/support.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/terrain.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/floating-atlas/world-manager.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/living-atlas-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/experience-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/project-panel.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/character.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/player-controller.js",
+      "status": 0
+    },
+    {
+      "file": "assets/js/urban-atlas/camera.js",
+      "status": 0
+    },
+    {
+      "file": "tests/floating-atlas.test.mjs",
+      "status": 0
+    },
+    {
+      "file": "tests/helpers/floating-fixture.mjs",
+      "status": 0
+    }
+  ],
+  "whitespaceFindings": [],
+  "galleryMissingLinks": [],
+  "gitDiffCheck": "pass",
+  "preservedLegacyModulesChangedSinceR0Audit": [
+    "assets/js/urban-atlas/character.js"
+  ],
+  "approvedGeneratorMatches": true,
+  "measuredCliffBounds": {
+    "min": [
+      -67.14167022705078,
+      -57.18193817138672,
+      -74.49189758300781
+    ],
+    "max": [
+      70.03624725341797,
+      22,
+      71.2842025756836
+    ]
+  }
+}

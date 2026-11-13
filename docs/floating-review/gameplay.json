@@ -1,0 +1,115 @@
+{
+  "start": {
+    "sceneId": "06bae407-ed5a-44ce-ae75-50cb61eafd73",
+    "x": "12.000",
+    "y": "10.015",
+    "z": "47.000"
+  },
+  "walkingFrame": {
+    "state": "Walk",
+    "x": "12.000",
+    "y": "10.063",
+    "z": "36.232"
+  },
+  "walkEnd": {
+    "performance": {
+      "drawCalls": 322,
+      "drawingBuffer": [
+        1280,
+        656
+      ],
+      "meanFrameMs": 5.68516666666667,
+      "meanRenderSubmissionMs": 1.2324999997889,
+      "measuredFps": 175.896338424555,
+      "memory": {
+        "geometries": 189,
+        "programs": 33,
+        "textures": 47
+      },
+      "metric": "Actual rAF intervals after 60 frame warmup; moving samples require real displacement; submission is CPU only",
+      "mode": "adventure",
+      "p95FrameMs": 6.5,
+      "pixelRatio": 1,
+      "samples": 600,
+      "shadows": true,
+      "triangles": 321019,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        656
+      ],
+      "walking": {
+        "meanFrameMs": 5.68516666666667,
+        "measuredFps": 175.896338424555,
+        "p95FrameMs": 6.5,
+        "samples": 600
+      }
+    },
+    "x": "12.000",
+    "y": "10.037",
+    "z": "36.482"
+  },
+  "runningFrame": {
+    "state": "Run",
+    "x": "11.810",
+    "y": "8.940",
+    "z": "32.266"
+  },
+  "jump": {
+    "count": "1",
+    "grounded": "false",
+    "phase": "airborne",
+    "x": "8.460",
+    "y": "8.960",
+    "z": "32.265"
+  },
+  "landed": {
+    "grounded": "true",
+    "jumps": "2",
+    "landings": "1",
+    "phase": "grounded",
+    "x": "-11.060",
+    "y": "16.235",
+    "z": "3.000"
+  },
+  "study": {
+    "mode": "adventure",
+    "paused": "true",
+    "project": "transit",
+    "title": "Transit accessibility in DKI Jakarta",
+    "url": "http://127.0.0.1:4173/index.html?island-review=arrival&build=54&experience=adventure&project=transit&panel=study#island-station"
+  },
+  "beforeEditorial": {
+    "project": "transit",
+    "rendererCount": "1",
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "x": "-10.316",
+    "z": "3.000"
+  },
+  "editorial": {
+    "mainInert": false,
+    "mode": "editorial",
+    "project": "transit",
+    "rendererCount": "1",
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52"
+  },
+  "resumed": {
+    "mode": "adventure",
+    "project": "transit",
+    "rendererCount": "1",
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52",
+    "x": "-10.317",
+    "z": "3.000"
+  },
+  "historyBack": {
+    "mode": "editorial",
+    "project": "transit",
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52"
+  },
+  "historyForward": {
+    "mode": "adventure",
+    "project": "transit",
+    "sceneId": "4e3570d2-fd72-4e58-b1bc-3c2ea3d46b52"
+  },
+  "evidenceNote": "Walking/running/jump/dialogue captures span intermediate native sessions. Final moving-frame benchmark is walking-performance.json at R0.56. Editorial/resume/history fields identify the shared final gallery scene."
+}

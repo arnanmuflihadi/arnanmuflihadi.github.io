@@ -1,0 +1,13 @@
+tree_id,world_x,world_z,height_m,original_plot_hits,public_hits,arrival,treatment,approved_change
+3,-15.40796874420089,49.36075642011588,12.400412706379866,B3,,False,Preserve in place; unresolved plot/vista conflict,False
+8,-11.34970956199962,47.33258934197364,13.36444170052208,B3,,False,Preserve in place; unresolved plot/vista conflict,False
+11,-14.927126084236367,54.00027669716769,13.822806718863742,B3,,False,Preserve in place; unresolved plot/vista conflict,False
+13,-9.626323800391404,42.28638248517149,13.932437428283036,guild,square;guildfore,False,Preserve in place; unresolved plot/vista conflict,False
+16,-9.603340441194785,51.53169475619046,11.186961376085213,B3,,False,Preserve in place; unresolved plot/vista conflict,False
+48,-11.761562344550967,34.65863331291047,8.06303453734867,guild,,False,Relocation candidate only if separately approved; retain in this proof,False
+53,-8.173656961255295,33.03392651150955,9.249192767406965,guild,,False,Relocation candidate only if separately approved; retain in this proof,False
+54,13.004795659821532,54.00843009607354,5.789388702745484,B2,,False,Relocation candidate only if separately approved; retain in this proof,False
+55,9.088814717426741,50.780326416319724,6.300333142710249,B2,,False,Relocation candidate only if separately approved; retain in this proof,False
+57,14.475993323585955,48.29867688333924,7.173531577084885,B2,,False,Relocation candidate only if separately approved; retain in this proof,False
+58,13.704446907526584,62.45840653216197,7.251867459063828,,,True,Relocation candidate only if separately approved; retain in this proof,False
+60,5.790274627954335,63.000263167051,6.91399314834085,,market,False,Relocation candidate only if separately approved; retain in this proof,False

@@ -1,0 +1,60 @@
+{
+  "cache": {
+    "cachedFiles": 7,
+    "loadedFiles": 7,
+    "requests": 7
+  },
+  "enabled": true,
+  "errors": [],
+  "glass": "B",
+  "renderer": "1",
+  "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+  "switches": [
+    {
+      "cache": {
+        "cachedFiles": 7,
+        "loadedFiles": 7,
+        "requests": 7
+      },
+      "on": false,
+      "rendererCount": "1",
+      "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+      "terrain": 13.267598851846776
+    },
+    {
+      "cache": {
+        "cachedFiles": 7,
+        "loadedFiles": 7,
+        "requests": 7
+      },
+      "on": true,
+      "rendererCount": "1",
+      "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+      "terrain": 15.479999542236328
+    },
+    {
+      "cache": {
+        "cachedFiles": 7,
+        "loadedFiles": 7,
+        "requests": 7
+      },
+      "on": false,
+      "rendererCount": "1",
+      "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+      "terrain": 13.267598851846776
+    },
+    {
+      "cache": {
+        "cachedFiles": 7,
+        "loadedFiles": 7,
+        "requests": 7
+      },
+      "on": true,
+      "rendererCount": "1",
+      "scene": "693c1b27-7d0f-4578-9af0-2a0c8d2707cd",
+      "terrain": 15.479999542236328
+    }
+  ],
+  "view": "reverse",
+  "warnings": []
+}

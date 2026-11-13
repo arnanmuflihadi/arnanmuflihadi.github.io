@@ -1,0 +1,54 @@
+[
+  {
+    "file": "assets/js/floating-atlas/atmosphere.js",
+    "kind": "implementation"
+  },
+  {
+    "file": "assets/js/floating-atlas/collision.js",
+    "kind": "cache-version only"
+  },
+  {
+    "file": "assets/js/floating-atlas/entry.js",
+    "kind": "implementation"
+  },
+  {
+    "file": "assets/js/floating-atlas/groundcover.js",
+    "kind": "implementation"
+  },
+  {
+    "file": "assets/js/floating-atlas/guide.js",
+    "kind": "cache-version only"
+  },
+  {
+    "file": "assets/js/floating-atlas/minimap.js",
+    "kind": "cache-version only"
+  },
+  {
+    "file": "assets/js/floating-atlas/nature.js",
+    "kind": "implementation"
+  },
+  {
+    "file": "assets/js/floating-atlas/plan.js",
+    "kind": "implementation"
+  },
+  {
+    "file": "assets/js/floating-atlas/presentation.js",
+    "kind": "cache-version only"
+  },
+  {
+    "file": "assets/js/floating-atlas/scene.js",
+    "kind": "implementation"
+  },
+  {
+    "file": "assets/js/floating-atlas/support.js",
+    "kind": "cache-version only"
+  },
+  {
+    "file": "assets/js/floating-atlas/terrain.js",
+    "kind": "implementation"
+  },
+  {
+    "file": "assets/js/floating-atlas/world-manager.js",
+    "kind": "cache-version only"
+  }
+]

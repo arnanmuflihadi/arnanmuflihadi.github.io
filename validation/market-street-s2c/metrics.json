@@ -1,0 +1,6213 @@
+{
+  "scene": "S2C Market Street",
+  "units": "metres; art-local Blender Z-up",
+  "game_origin": [
+    36,
+    18.6,
+    44
+  ],
+  "mapping": "game [36+u,18.6+h,44-v]",
+  "costs": {
+    "B1 Kopi Awan": {
+      "triangles": 35876,
+      "geometry_objects": 10,
+      "unbatched_material_slots": 46,
+      "materials": [
+        "Leaves.001",
+        "S2A / aged brass",
+        "S2A / cut timber edges",
+        "S2A / limestone paving",
+        "S2A / oiled tropical timber",
+        "S2A / patinated bronze frames",
+        "S2A / planter soil",
+        "S2A / recessed sage plaster",
+        "S2A / sandstone base",
+        "S2A / soft blue green glass",
+        "S2A / terracotta 0",
+        "S2A / terracotta 1",
+        "S2A / terracotta 2",
+        "S2A / terracotta 3",
+        "S2A / terracotta 4",
+        "S2A / warm lime plaster",
+        "S2A / warm sign lettering",
+        "colormap"
+      ],
+      "evaluated_vertices": 23326,
+      "potential_static_material_batches": 18
+    },
+    "B2 Lembaran Shophouse": {
+      "triangles": 19710,
+      "geometry_objects": 193,
+      "unbatched_material_slots": 198,
+      "materials": [
+        "Leaves.001",
+        "S2A / aged brass",
+        "S2A / cut timber edges",
+        "S2A / limestone paving",
+        "S2A / oiled tropical timber",
+        "S2A / patinated bronze frames",
+        "S2A / planter soil",
+        "S2A / recessed sage plaster",
+        "S2A / sandstone base",
+        "S2A / terracotta 0",
+        "S2A / terracotta 1",
+        "S2A / terracotta 2",
+        "S2A / terracotta 3",
+        "S2A / terracotta 4",
+        "S2A / warm lime plaster",
+        "S2A / warm sign lettering",
+        "S2C / dusty clay plaster",
+        "S2C / shared low-cost teal glazing",
+        "S2C / soft ochre plaster",
+        "S2C / upper blue green glazing",
+        "colormap"
+      ],
+      "evaluated_vertices": 14256,
+      "potential_static_material_batches": 21
+    },
+    "B3 Rupa Rimba Atelier": {
+      "triangles": 12012,
+      "geometry_objects": 117,
+      "unbatched_material_slots": 122,
+      "materials": [
+        "S2A / aged brass",
+        "S2A / cut timber edges",
+        "S2A / limestone paving",
+        "S2A / oiled tropical timber",
+        "S2A / patinated bronze frames",
+        "S2A / recessed sage plaster",
+        "S2A / sandstone base",
+        "S2A / terracotta 0",
+        "S2A / terracotta 1",
+        "S2A / terracotta 2",
+        "S2A / terracotta 3",
+        "S2A / terracotta 4",
+        "S2A / warm sign lettering",
+        "S2C / dusty clay plaster",
+        "S2C / shared low-cost teal glazing",
+        "S2C / soft ochre plaster"
+      ],
+      "evaluated_vertices": 8776,
+      "potential_static_material_batches": 16
+    },
+    "B4 Serambi Corner Shop": {
+      "triangles": 33926,
+      "geometry_objects": 247,
+      "unbatched_material_slots": 251,
+      "materials": [
+        "Leaves.001",
+        "S2A / aged brass",
+        "S2A / cut timber edges",
+        "S2A / limestone paving",
+        "S2A / oiled tropical timber",
+        "S2A / patinated bronze frames",
+        "S2A / planter soil",
+        "S2A / recessed sage plaster",
+        "S2A / sandstone base",
+        "S2A / terracotta 0",
+        "S2A / terracotta 1",
+        "S2A / terracotta 2",
+        "S2A / terracotta 3",
+        "S2A / terracotta 4",
+        "S2A / warm sign lettering",
+        "S2C / corner ivory plaster",
+        "S2C / shared low-cost teal glazing",
+        "colormap"
+      ],
+      "evaluated_vertices": 23342,
+      "potential_static_material_batches": 18
+    },
+    "Public realm": {
+      "triangles": 69185,
+      "geometry_objects": 361,
+      "unbatched_material_slots": 372,
+      "materials": [
+        "Bark_NormalTree.002",
+        "Leaves.001",
+        "Leaves_NormalTree.002",
+        "S2A / cut timber edges",
+        "S2A / oiled tropical timber",
+        "S2A / patinated bronze frames",
+        "S2A / planter soil",
+        "S2A / recessed sage plaster",
+        "S2A / sandstone base",
+        "S2A / warm sign lettering",
+        "S2C / arrival garden path",
+        "S2C / broad tropical leaf 0",
+        "S2C / broad tropical leaf 1",
+        "S2C / broad tropical leaf 2",
+        "S2C / coral ginger bloom",
+        "S2C / palm bark",
+        "S2C / tropical meadow 0",
+        "S2C / tropical meadow 1",
+        "S2C / warm pedestrian stone 0",
+        "S2C / warm pedestrian stone 1",
+        "S2C / warm pedestrian stone 2",
+        "S2C / warm pedestrian stone 3"
+      ],
+      "evaluated_vertices": 90232,
+      "potential_static_material_batches": 22
+    }
+  },
+  "total_triangles": 170709,
+  "unique_raw_geometry_datablocks": 690,
+  "material_count": 38,
+  "materials": [
+    {
+      "name": "S2A / sandstone base",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.699999988079071
+    },
+    {
+      "name": "S2A / limestone paving",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8799999952316284
+    },
+    {
+      "name": "S2A / oiled tropical timber",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.5299999713897705
+    },
+    {
+      "name": "S2A / warm lime plaster",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.699999988079071
+    },
+    {
+      "name": "S2A / soft blue green glass",
+      "transmission": 0.9599999785423279,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.10000000149011612
+    },
+    {
+      "name": "S2A / patinated bronze frames",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.4000000059604645
+    },
+    {
+      "name": "S2A / cut timber edges",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.5799999833106995
+    },
+    {
+      "name": "S2A / aged brass",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.3400000035762787
+    },
+    {
+      "name": "colormap",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 1
+    },
+    {
+      "name": "S2A / terracotta 0",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8299999833106995
+    },
+    {
+      "name": "S2A / terracotta 1",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8299999833106995
+    },
+    {
+      "name": "S2A / terracotta 2",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8299999833106995
+    },
+    {
+      "name": "S2A / terracotta 3",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8299999833106995
+    },
+    {
+      "name": "S2A / terracotta 4",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8299999833106995
+    },
+    {
+      "name": "S2A / planter soil",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.949999988079071
+    },
+    {
+      "name": "Leaves.001",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": true,
+      "roughness": 0.8500000238418579
+    },
+    {
+      "name": "S2A / recessed sage plaster",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.699999988079071
+    },
+    {
+      "name": "S2A / warm sign lettering",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.699999988079071
+    },
+    {
+      "name": "S2C / soft ochre plaster",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.75
+    },
+    {
+      "name": "S2C / shared low-cost teal glazing",
+      "transmission": 0,
+      "alpha": 0.6200000047683716,
+      "alpha_linked": false,
+      "roughness": 0.2199999988079071
+    },
+    {
+      "name": "S2C / upper blue green glazing",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.25999999046325684
+    },
+    {
+      "name": "S2C / dusty clay plaster",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.75
+    },
+    {
+      "name": "S2C / corner ivory plaster",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.75
+    },
+    {
+      "name": "S2C / warm pedestrian stone 0",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.9100000262260437
+    },
+    {
+      "name": "S2C / warm pedestrian stone 1",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.9100000262260437
+    },
+    {
+      "name": "S2C / warm pedestrian stone 2",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.9100000262260437
+    },
+    {
+      "name": "S2C / warm pedestrian stone 3",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.9100000262260437
+    },
+    {
+      "name": "S2C / arrival garden path",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.9399999976158142
+    },
+    {
+      "name": "S2C / tropical meadow 0",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.949999988079071
+    },
+    {
+      "name": "S2C / tropical meadow 1",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.949999988079071
+    },
+    {
+      "name": "S2C / tropical meadow 2",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.949999988079071
+    },
+    {
+      "name": "Bark_NormalTree.002",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": true,
+      "roughness": 0.949999988079071
+    },
+    {
+      "name": "Leaves_NormalTree.002",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": true,
+      "roughness": 0.8600000143051147
+    },
+    {
+      "name": "S2C / palm bark",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.9200000166893005
+    },
+    {
+      "name": "S2C / broad tropical leaf 0",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8199999928474426
+    },
+    {
+      "name": "S2C / broad tropical leaf 1",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8199999928474426
+    },
+    {
+      "name": "S2C / broad tropical leaf 2",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.8199999928474426
+    },
+    {
+      "name": "S2C / coral ginger bloom",
+      "transmission": 0,
+      "alpha": 1,
+      "alpha_linked": false,
+      "roughness": 0.800000011920929
+    }
+  ],
+  "textures": [
+    {
+      "name": "colormap",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "has_data": true,
+      "packed_bytes": 7529
+    },
+    {
+      "name": "Leaves.001",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true,
+      "packed_bytes": 91912
+    },
+    {
+      "name": "Bark_NormalTree.002",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true,
+      "packed_bytes": 98936
+    },
+    {
+      "name": "Bark_NormalTree_Normal.002",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true,
+      "packed_bytes": 106286
+    },
+    {
+      "name": "Leaves_NormalTree_C.002",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "has_data": true,
+      "packed_bytes": 19634
+    }
+  ],
+  "buildings": [
+    {
+      "id": "B1 Kopi Awan",
+      "position": [
+        -8.300000190734863,
+        10,
+        1.2028571367263794
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_z": 1.5707963705062866,
+      "design": "Approved cafe identity, roof A, 7.2m frontage; source unchanged"
+    },
+    {
+      "id": "B2 Lembaran Shophouse",
+      "position": [
+        8.300000190734863,
+        11.199999809265137,
+        1.3942856788635254
+      ],
+      "scale": [
+        0.8199999928474426,
+        0.9300000071525574,
+        1
+      ],
+      "rotation_z": -1.5707963705062866,
+      "design": "5.9m frontage; three timber windows, ochre plaster, narrow arcade, roof B"
+    },
+    {
+      "id": "B3 Rupa Rimba Atelier",
+      "position": [
+        -8.300000190734863,
+        21.799999237060547,
+        3.119999885559082
+      ],
+      "scale": [
+        1.1100000143051147,
+        0.9300000071525574,
+        1
+      ],
+      "rotation_z": 1.5707963705062866,
+      "design": "8m single-storey recessed open atelier; lower roof B; screened covered terrace"
+    },
+    {
+      "id": "B4 Serambi Corner Shop",
+      "position": [
+        8.300000190734863,
+        22.600000381469727,
+        3.119999885559082
+      ],
+      "scale": [
+        1.1100000143051147,
+        0.9599999785423279,
+        1
+      ],
+      "rotation_z": -1.5707963705062866,
+      "design": "8m corner shop; chamfered entrance; wraparound square-facing balcony; roof A"
+    }
+  ],
+  "cameras": [
+    {
+      "name": "S2C Arrival",
+      "position": [
+        0,
+        6.650000095367432,
+        3.0928571224212646
+      ],
+      "rotation_euler": [
+        1.7279179096221924,
+        0,
+        0
+      ],
+      "lens_mm": 24,
+      "type": "PERSP",
+      "ortho_scale": 6
+    },
+    {
+      "name": "S2C Opposite",
+      "position": [
+        -1.2999999523162842,
+        33.400001525878906,
+        5.650000095367432
+      ],
+      "rotation_euler": [
+        1.5048495531082153,
+        1.1764009144599186e-07,
+        -3.077953338623047
+      ],
+      "lens_mm": 27,
+      "type": "PERSP",
+      "ortho_scale": 6
+    },
+    {
+      "name": "S2C Elevated",
+      "position": [
+        33,
+        -25,
+        33
+      ],
+      "rotation_euler": [
+        1.0795249938964844,
+        3.4553508498902374e-08,
+        0.6545709371566772
+      ],
+      "lens_mm": 39,
+      "type": "PERSP",
+      "ortho_scale": 6
+    },
+    {
+      "name": "S2C Detail",
+      "position": [
+        1.5,
+        11.800000190734863,
+        3.0928571224212646
+      ],
+      "rotation_euler": [
+        1.63379967212677,
+        -5.826340299108779e-09,
+        1.7894654273986816
+      ],
+      "lens_mm": 26,
+      "type": "PERSP",
+      "ortho_scale": 6
+    },
+    {
+      "name": "S2C Plan",
+      "position": [
+        0,
+        18,
+        58
+      ],
+      "rotation_euler": [
+        0,
+        0,
+        0
+      ],
+      "lens_mm": 45,
+      "type": "ORTHO",
+      "ortho_scale": 48
+    }
+  ],
+  "route": {
+    "horizontal_length": 36,
+    "rise": 4,
+    "nominal_central_width": 6,
+    "stair_flights": [
+      {
+        "risers": 6,
+        "rise_each": 0.1738095238095,
+        "tread": 0.4
+      },
+      {
+        "risers": 11,
+        "rise_each": 0.17428571428572726,
+        "tread": 0.32727272727272727
+      },
+      {
+        "risers": 4,
+        "rise_each": 0.16,
+        "tread": 0.5
+      }
+    ],
+    "aabb_blockers_below_2_1m": [],
+    "check_method": "Conservative world AABB intersection of architecture and props at 0.25m stations; not a controller/collision test"
+  },
+  "object_costs": [
+    {
+      "name": "BuildingshellModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 2736,
+      "material_slots": 4
+    },
+    {
+      "name": "ShopfrontanddoorsModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 1716,
+      "material_slots": 6
+    },
+    {
+      "name": "WindowsModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 1684,
+      "material_slots": 4
+    },
+    {
+      "name": "BalconyModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 2200,
+      "material_slots": 3
+    },
+    {
+      "name": "RoofAModule.003",
+      "category": "B1 Kopi Awan",
+      "triangles": 17128,
+      "material_slots": 7
+    },
+    {
+      "name": "TimberstructuresModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 1056,
+      "material_slots": 3
+    },
+    {
+      "name": "SunscreensModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 748,
+      "material_slots": 2
+    },
+    {
+      "name": "PlantersModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 4000,
+      "material_slots": 3
+    },
+    {
+      "name": "DecorativepropsModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 1460,
+      "material_slots": 4
+    },
+    {
+      "name": "InteriorModule.002",
+      "category": "B1 Kopi Awan",
+      "triangles": 3148,
+      "material_slots": 10
+    },
+    {
+      "name": "S2A / foundation.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ground floor.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper floor.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / roof ceiling.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / shop facade.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 376,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear ground wall.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 432,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear upper wall.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 244,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east shop wall.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 284,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east upper wall.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 244,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west shop wall.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 284,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west upper wall.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 244,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display glass.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display jamb.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display jamb.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display rail.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display rail.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display mullion.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display mullion.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance glass.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance jamb.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance jamb.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance rail.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance rail.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance mullion.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display glass.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display jamb.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display jamb.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display rail.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display rail.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display mullion.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / door pull.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / door pull.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear service door.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / door stone threshold.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance head transom.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance threshold brass inlay.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.008",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.009",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.010",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.011",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.012",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.013",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.014",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.008",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.009",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.015",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.016",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.017",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.010",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.011",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.018",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.019",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.020",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.012",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.013",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.021",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.022",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.023",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.014",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.015",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear lower glazing.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear lower glazing.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear window stone sill.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear window stone sill.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper rear glazed insert.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper rear glazed insert.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony fascia.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony deck edge.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony deck edge.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony decking board.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 1364,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony timber handrail.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony thin rail.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony thin rail.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony thin rail.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return handrail.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.008",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return handrail.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.009",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.010",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.011",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda post.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / column stone shoe.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front knee brace.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda post.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / column stone shoe.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front knee brace.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.013",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.014",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.015",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.016",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.017",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.018",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.019",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.020",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.021",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.022",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.023",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.024",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.025",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper roof post.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper cantilever brace.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper roof post.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper cantilever brace.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front roof header.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.013",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.014",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.015",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.016",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.017",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.018",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.019",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.020",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.021",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.022",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.023",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.024",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Reused editable roof B assembly",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 3456,
+      "material_slots": 6
+    },
+    {
+      "name": "B2 three-bay upper facade",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 328,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window pane",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window jamb",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window jamb.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window sill/head",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window sill/head.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 sill shade",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window pane.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window jamb.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window jamb.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window sill/head.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window sill/head.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 sill shade.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window pane.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window jamb.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window jamb.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window sill/head.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 timber window sill/head.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 sill shade.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "B2 compact louver.008",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Lembaran shop sign",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Lembaran letters",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 1048,
+      "material_slots": 1
+    },
+    {
+      "name": "Bookshop display ledge",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bookshop display ledge.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bookshop display ledge.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.001",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.002",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.003",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.004",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.005",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.006",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.007",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.008",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.009",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.010",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Book display volume.011",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bookshop sign bracket",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bookshop hanging blade",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bookshop blade letters",
+      "category": "B2 Lembaran Shophouse",
+      "triangles": 1084,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / foundation.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ground floor.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / shop facade.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 376,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear ground wall.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 432,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east shop wall.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 284,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west shop wall.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 284,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display jamb.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display jamb.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display rail.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display rail.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display mullion.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west display mullion.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance jamb.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance jamb.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance rail.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance rail.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance mullion.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display jamb.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display jamb.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display rail.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display rail.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display mullion.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / door pull.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / door pull.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear service door.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / door stone threshold.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance head transom.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance threshold brass inlay.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.008",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.024",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.025",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.026",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.016",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.017",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.009",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.027",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.028",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.029",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.018",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.019",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.010",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.030",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.031",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.032",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.020",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.021",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.011",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.033",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.034",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.035",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.022",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.023",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear lower glazing.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear lower glazing.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda post.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / column stone shoe.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front knee brace.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda post.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / column stone shoe.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front knee brace.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.026",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.027",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.028",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.029",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.030",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.031",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.032",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.033",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.034",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.035",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.036",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.037",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.038",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier reused canopy slab",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "Reused editable roof B assembly.001",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 3456,
+      "material_slots": 6
+    },
+    {
+      "name": "Atelier canopy header",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier canopy header.001",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.001",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.003",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.006",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.007",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.008",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.009",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.010",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.011",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.012",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier ventilated attic blade.013",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.001",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.003",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.006",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.007",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.008",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.009",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.010",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.011",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.012",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.013",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.014",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier side terrace screen.015",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier shop sign",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Atelier lettering",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 1868,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan display counter",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan pottery",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 96,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan pottery.001",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 96,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan pottery.002",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 96,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan pottery.003",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 96,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan pottery.004",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 96,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan pottery.005",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 96,
+      "material_slots": 1
+    },
+    {
+      "name": "Artisan pottery.006",
+      "category": "B3 Rupa Rimba Atelier",
+      "triangles": 96,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / foundation.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ground floor.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper floor.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / roof ceiling.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / terrace facade.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 324,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear ground wall.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 432,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear upper wall.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 244,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east shop wall.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 284,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east upper wall.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 244,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / west upper wall.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 244,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance glass.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance jamb.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance jamb.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance rail.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance rail.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance mullion.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display glass.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display jamb.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display jamb.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display rail.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display rail.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / east display mullion.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing glass.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing jamb.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing jamb.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing rail.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing rail.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion.004",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony sliding glazing mullion.005",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper east glazing glass.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper east glazing jamb.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper east glazing jamb.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper east glazing rail.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper east glazing rail.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper east glazing mullion.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear service door.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / door stone threshold.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance head transom.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / entrance threshold brass inlay.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.012",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.013",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.014",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.015",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.016",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / Kenney window east rear.017",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 34,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.012",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.036",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.037",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.038",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.024",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.025",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.014",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.042",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.043",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.044",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.028",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.029",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop glass.015",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.045",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.046",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop mullion.047",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.030",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side shop transom.031",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear lower glazing.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear lower glazing.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.012",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.013",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.014",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / side window stone sill.015",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear window stone sill.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / rear window stone sill.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.008",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.009",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.010",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper side glazed insert.011",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper rear glazed insert.004",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper rear glazed insert.005",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony fascia.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony deck edge.004",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony deck edge.005",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony decking board.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 1364,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.008",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.009",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.010",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony rail upright.011",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony timber handrail.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony thin rail.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony thin rail.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / balcony thin rail.008",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return handrail.004",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.012",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.013",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.014",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return handrail.005",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.015",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.016",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / return rail.017",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / hip roof structural surface 0.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 880,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / hip roof structural surface 1.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 880,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / hip roof structural surface 2.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 880,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / hip roof structural surface 3.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 880,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / laid terracotta tile courses.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 4816,
+      "material_slots": 5
+    },
+    {
+      "name": "S2A / ridge ventilation louver.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge ventilation louver.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge ventilation louver.008",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge ventilation louver.009",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge ventilation louver.010",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge ventilation louver.011",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / raised ridge rain cap.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 164,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / subtle brass ridge crest.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 0.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 660,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 1.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 660,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 2.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 660,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / continuous curved eave fascia 3.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 660,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.048",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.049",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.050",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.051",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.052",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.053",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.054",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.055",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.056",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.057",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.058",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.059",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.060",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.061",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.062",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.063",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.064",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.065",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.066",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.067",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.068",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.069",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.070",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.071",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.072",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.073",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.074",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.075",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.076",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.077",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.078",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.079",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.080",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.081",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.082",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.083",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.084",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.085",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.086",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.087",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.088",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.089",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.090",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.091",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.092",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.093",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.094",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / fitted hip cap.095",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 108,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge vent support.004",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge vent support.005",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge vent support.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / ridge vent support.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda post.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / column stone shoe.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front knee brace.006",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda post.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / column stone shoe.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front knee brace.007",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.039",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.040",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.041",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.042",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.043",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.044",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.045",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.046",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.047",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.048",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.049",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.050",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / veranda soffit slat.051",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper roof post.004",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper cantilever brace.004",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper roof post.005",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / upper cantilever brace.005",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / front roof header.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / screen edge.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / screen edge.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / screen top bottom.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / screen top bottom.003",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / angled sun screen blade.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 572,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.008",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.008",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.009",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.009",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.010",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.010",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough.011",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "S2A / integrated stone trough soil.011",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.025",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.026",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.027",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.028",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.029",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.030",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.031",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.032",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.033",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.034",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.035",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Fern_1.036",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner front wall",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 376,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner square return wall",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 324,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner front display pane",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner front display jamb",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner front display jamb.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner front display sill/head",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner front display sill/head.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chamfered corner entrance pane",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Chamfered corner entrance jamb",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chamfered corner entrance jamb.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chamfered corner entrance sill/head",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chamfered corner entrance sill/head.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner entrance pull",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner lintel",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square-facing balcony deck",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner balcony upright",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner balcony upright.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner balcony upright.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner balcony return handrail",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner return rail",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner return rail.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner return rail.002",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner street sign",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner letters",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 1444,
+      "material_slots": 1
+    },
+    {
+      "name": "Corner return sign",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Square-facing letters",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 1444,
+      "material_slots": 1
+    },
+    {
+      "name": "Fitted square-facing corner window pane",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Fitted square-facing corner window jamb",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Fitted square-facing corner window jamb.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Fitted square-facing corner window sill/head",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Fitted square-facing corner window sill/head.001",
+      "category": "B4 Serambi Corner Shop",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous stepped market paving",
+      "category": "Public realm",
+      "triangles": 372,
+      "material_slots": 1
+    },
+    {
+      "name": "Laid pedestrian pavers",
+      "category": "Public realm",
+      "triangles": 1568,
+      "material_slots": 4
+    },
+    {
+      "name": "Square opening / gathering apron",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.004",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.005",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.006",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.007",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.008",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.009",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.010",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.011",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.012",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.013",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square paving joint.014",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square cross joint",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square cross joint.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square cross joint.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square cross joint.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square cross joint.004",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous frontage terrace",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous frontage terrace.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous frontage terrace.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous frontage terrace.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Lembaran threshold landing",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Arrival garden-path connection",
+      "category": "Public realm",
+      "triangles": 32,
+      "material_slots": 1
+    },
+    {
+      "name": "Measured terrain / local art grading proposal",
+      "category": "Public realm",
+      "triangles": 3024,
+      "material_slots": 2
+    },
+    {
+      "name": "Terrace stone return",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Terrace stone return.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Terrace stone return.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Terrace stone return.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Terrace stone return.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Terrace stone return.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Terrace stone return.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Terrace stone return.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Quaternius shared canopy tree",
+      "category": "Public realm",
+      "triangles": 6265,
+      "material_slots": 2
+    },
+    {
+      "name": "Quaternius shared canopy tree.001",
+      "category": "Public realm",
+      "triangles": 6265,
+      "material_slots": 2
+    },
+    {
+      "name": "Quaternius shared canopy tree.002",
+      "category": "Public realm",
+      "triangles": 6265,
+      "material_slots": 2
+    },
+    {
+      "name": "Quaternius shared canopy tree.003",
+      "category": "Public realm",
+      "triangles": 6265,
+      "material_slots": 2
+    },
+    {
+      "name": "Quaternius shared canopy tree.004",
+      "category": "Public realm",
+      "triangles": 6265,
+      "material_slots": 2
+    },
+    {
+      "name": "Square focal tree bed",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Square focal tree bed soil",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.001",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.002",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.003",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.004",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.005",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.006",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.007",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.008",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.009",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.010",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.011",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.012",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.013",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.014",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.015",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.008",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.008",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.016",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.017",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough.009",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Street fern trough soil.009",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.018",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Shared source fern / street planter.019",
+      "category": "Public realm",
+      "triangles": 288,
+      "material_slots": 1
+    },
+    {
+      "name": "Original stylized palm trunk",
+      "category": "Public realm",
+      "triangles": 112,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.008",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.009",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original stylized palm trunk.001",
+      "category": "Public realm",
+      "triangles": 112,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.010",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.011",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.012",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.013",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.014",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.015",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.016",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.017",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.018",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.019",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original stylized palm trunk.002",
+      "category": "Public realm",
+      "triangles": 112,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.020",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.021",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.022",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.023",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.024",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.025",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.026",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.027",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.028",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.029",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original stylized palm trunk.003",
+      "category": "Public realm",
+      "triangles": 112,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.030",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.031",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.032",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.033",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.034",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.035",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.036",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.037",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.038",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Original layered palm frond.039",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.001",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.002",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.003",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.004",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.005",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.006",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.007",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.008",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.009",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.010",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.011",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.012",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.013",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.014",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.015",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.016",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.017",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.018",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.019",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.020",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.004",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.005",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.021",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.022",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.023",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.024",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.025",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.026",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.027",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.006",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.007",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.028",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.029",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.030",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.031",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.032",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.033",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.034",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.008",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.008",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.009",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.009",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.035",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.036",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.037",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.038",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.039",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.040",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.041",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.010",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.010",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.011",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.011",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.042",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.043",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.044",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.045",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.046",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.047",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Broadleaf garden clump.048",
+      "category": "Public realm",
+      "triangles": 2,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.012",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.012",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower stem.013",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Ginger flower head.013",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous street retaining skirt",
+      "category": "Public realm",
+      "triangles": 144,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous street retaining skirt.001",
+      "category": "Public realm",
+      "triangles": 144,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm",
+      "category": "Public realm",
+      "triangles": 112,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.008",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.009",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.010",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.011",
+      "category": "Public realm",
+      "triangles": 112,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.012",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.013",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.014",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.015",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.016",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.017",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.018",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.019",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.020",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing shared palm.021",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing planted retaining pocket",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing palm soil",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing planted retaining pocket.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Middle landing palm soil.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Measured entrance landscape connection",
+      "category": "Public realm",
+      "triangles": 576,
+      "material_slots": 1
+    },
+    {
+      "name": "Entrance landscape shared canopy",
+      "category": "Public realm",
+      "triangles": 6265,
+      "material_slots": 2
+    },
+    {
+      "name": "Entrance landscape shared canopy.001",
+      "category": "Public realm",
+      "triangles": 6265,
+      "material_slots": 2
+    },
+    {
+      "name": "Outdoor cafe table top",
+      "category": "Public realm",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table stem",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Outdoor cafe table top.001",
+      "category": "Public realm",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table stem.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.004",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.005",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.006",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.007",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Outdoor cafe table top.002",
+      "category": "Public realm",
+      "triangles": 92,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table stem.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.008",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.009",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.010",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Cafe table foot.011",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Pedestrian lamp post",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp rain cap",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp diffuser",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Pedestrian lamp post.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp rain cap.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp diffuser.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Pedestrian lamp post.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp rain cap.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp diffuser.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Town square wayfinding",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Wayfinding square",
+      "category": "Public realm",
+      "triangles": 852,
+      "material_slots": 1
+    },
+    {
+      "name": "Atlas wayfinding",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Wayfinding guild",
+      "category": "Public realm",
+      "triangles": 1192,
+      "material_slots": 1
+    },
+    {
+      "name": "Pedestrian lamp post.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp rain cap.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Lamp diffuser.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Square direction marker post",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Square direction marker",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Square direction heading",
+      "category": "Public realm",
+      "triangles": 852,
+      "material_slots": 1
+    },
+    {
+      "name": "Guild direction marker",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Guild direction heading",
+      "category": "Public realm",
+      "triangles": 1192,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber seat",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber seat.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber seat.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber back",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber back.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench frame",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench back frame",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench frame.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench back frame.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber seat.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber seat.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber seat.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber back.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench timber back.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench frame.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench back frame.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench frame.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Bench back frame.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.001",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.001",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.004",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.005",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.006",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.007",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.002",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.003",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.002",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.003",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.008",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.009",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.010",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.011",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.008",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.004",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.005",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.004",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.005",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.012",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.013",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.014",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.015",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.009",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.010",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.011",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.006",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.007",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.006",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.007",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.016",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.017",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.018",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.019",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.012",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.013",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.014",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.008",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.009",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.008",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.009",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.020",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.021",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.022",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair leg.023",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.015",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.016",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair slat.017",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.010",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back upright.011",
+      "category": "Public realm",
+      "triangles": 12,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.010",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Chair back slat.011",
+      "category": "Public realm",
+      "triangles": 44,
+      "material_slots": 1
+    },
+    {
+      "name": "Continuous planted arrival embankment",
+      "category": "Public realm",
+      "triangles": 96,
+      "material_slots": 1
+    }
+  ]
+}

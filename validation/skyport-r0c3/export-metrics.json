@@ -1,0 +1,15 @@
+{
+  "input": "validation/skyport-r0c3/pelabuhan-awan.glb",
+  "output": "assets/game/skyport/pelabuhan-awan.glb",
+  "rawBytes": 876340,
+  "bytes": 731580,
+  "sha256": "21227d115a52d8f6f40b986a36213d9217ffa8f50ee29119dceffe95f97a7e1d",
+  "triangles": 14600,
+  "materials": 8,
+  "textures": 0,
+  "changes": [
+    "Index identical vertices with all normals and other attributes preserved",
+    "Deduplicate identical resources; no decimation or silhouette changes",
+    "Retain actual walkable extras and material identities"
+  ]
+}

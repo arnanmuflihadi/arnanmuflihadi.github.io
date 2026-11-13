@@ -1,0 +1,188 @@
+{
+ "modes": {
+  "district": {
+   "meshes": 274,
+   "max_vertices_in_one_mesh": 69927,
+   "uint16_index_meshes": 0,
+   "uint32_index_meshes": 274,
+   "uint16_meshes_with_more_than_65535_vertices": 0,
+   "meshes_with_index_beyond_vertex_count": 0,
+   "meshes_with_nan_positions": 0,
+   "meshes_with_vertices_outside_bounding_sphere": 0,
+   "worst_vertex_beyond_sphere_m": 0,
+   "meshes_with_vertices_outside_bounding_box": 0,
+   "degenerate_triangles": 0,
+   "triangles": 576398,
+   "triangles_unmerged": 576398,
+   "triangles_equal": true,
+   "render_vs_unmerged": {
+    "p5-east-aerial": {
+     "mean_abs_diff_0_255": 0.044,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-court-from-lane": {
+     "mean_abs_diff_0_255": 0.115,
+     "share_pixels_diff_over_24": 0
+    },
+    "p4-district-aerial": {
+     "mean_abs_diff_0_255": 0.05,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-bazaar-aerial": {
+     "mean_abs_diff_0_255": 0.07,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-aisle-eye": {
+     "mean_abs_diff_0_255": 0.1,
+     "share_pixels_diff_over_24": 0.001
+    },
+    "p5-lane-east": {
+     "mean_abs_diff_0_255": 0.062,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-quarter-gameplay": {
+     "mean_abs_diff_0_255": 0.092,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-west-interior": {
+     "mean_abs_diff_0_255": 0.171,
+     "share_pixels_diff_over_24": 0
+    },
+    "p4-town-aerial": {
+     "mean_abs_diff_0_255": 0.027,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-route-aerial": {
+     "mean_abs_diff_0_255": 0.044,
+     "share_pixels_diff_over_24": 0
+    }
+   },
+   "worst_view_share_over_24": {
+    "view": "p3-aisle-eye",
+    "share": 0.001
+   }
+  },
+  "cell30": {
+   "meshes": 341,
+   "max_vertices_in_one_mesh": 69952,
+   "uint16_index_meshes": 0,
+   "uint32_index_meshes": 341,
+   "uint16_meshes_with_more_than_65535_vertices": 0,
+   "meshes_with_index_beyond_vertex_count": 0,
+   "meshes_with_nan_positions": 0,
+   "meshes_with_vertices_outside_bounding_sphere": 0,
+   "worst_vertex_beyond_sphere_m": 0,
+   "meshes_with_vertices_outside_bounding_box": 0,
+   "degenerate_triangles": 0,
+   "triangles": 576398,
+   "triangles_unmerged": 576398,
+   "triangles_equal": true,
+   "render_vs_unmerged": {
+    "p5-east-aerial": {
+     "mean_abs_diff_0_255": 0.041,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-court-from-lane": {
+     "mean_abs_diff_0_255": 0.124,
+     "share_pixels_diff_over_24": 0
+    },
+    "p4-district-aerial": {
+     "mean_abs_diff_0_255": 0.047,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-bazaar-aerial": {
+     "mean_abs_diff_0_255": 0.054,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-aisle-eye": {
+     "mean_abs_diff_0_255": 0.053,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-lane-east": {
+     "mean_abs_diff_0_255": 0.091,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-quarter-gameplay": {
+     "mean_abs_diff_0_255": 0.104,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-west-interior": {
+     "mean_abs_diff_0_255": 0.051,
+     "share_pixels_diff_over_24": 0
+    },
+    "p4-town-aerial": {
+     "mean_abs_diff_0_255": 0.026,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-route-aerial": {
+     "mean_abs_diff_0_255": 0.037,
+     "share_pixels_diff_over_24": 0
+    }
+   },
+   "worst_view_share_over_24": null
+  },
+  "scene": {
+   "meshes": 96,
+   "max_vertices_in_one_mesh": 117608,
+   "uint16_index_meshes": 0,
+   "uint32_index_meshes": 96,
+   "uint16_meshes_with_more_than_65535_vertices": 0,
+   "meshes_with_index_beyond_vertex_count": 0,
+   "meshes_with_nan_positions": 0,
+   "meshes_with_vertices_outside_bounding_sphere": 0,
+   "worst_vertex_beyond_sphere_m": 0,
+   "meshes_with_vertices_outside_bounding_box": 0,
+   "degenerate_triangles": 0,
+   "triangles": 576398,
+   "triangles_unmerged": 576398,
+   "triangles_equal": true,
+   "render_vs_unmerged": {
+    "p5-east-aerial": {
+     "mean_abs_diff_0_255": 0.08,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-court-from-lane": {
+     "mean_abs_diff_0_255": 0.297,
+     "share_pixels_diff_over_24": 0
+    },
+    "p4-district-aerial": {
+     "mean_abs_diff_0_255": 0.098,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-bazaar-aerial": {
+     "mean_abs_diff_0_255": 0.132,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-aisle-eye": {
+     "mean_abs_diff_0_255": 0.157,
+     "share_pixels_diff_over_24": 0.001
+    },
+    "p5-lane-east": {
+     "mean_abs_diff_0_255": 0.237,
+     "share_pixels_diff_over_24": 0.001
+    },
+    "p5-quarter-gameplay": {
+     "mean_abs_diff_0_255": 0.245,
+     "share_pixels_diff_over_24": 0
+    },
+    "p3-west-interior": {
+     "mean_abs_diff_0_255": 0.204,
+     "share_pixels_diff_over_24": 0
+    },
+    "p4-town-aerial": {
+     "mean_abs_diff_0_255": 0.041,
+     "share_pixels_diff_over_24": 0
+    },
+    "p5-route-aerial": {
+     "mean_abs_diff_0_255": 0.083,
+     "share_pixels_diff_over_24": 0
+    }
+   },
+   "worst_view_share_over_24": {
+    "view": "p3-aisle-eye",
+    "share": 0.001
+   }
+  }
+ },
+ "views": {}
+}

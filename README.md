@@ -2,6 +2,12 @@
 
 This is a static multi-page portfolio (HTML, CSS, and JavaScript only). It has no build step, backend, or framework requirement, and is intended to remain compatible with GitHub Pages.
 
+Current world review: [R0-A3 landscape detail](docs/LANDSCAPE-DETAIL-R0A3.md), with
+[seven matched browser comparisons](docs/landscape-detail-review/index.html) and
+[asset provenance](ASSET_MANIFEST.md). Home and Work use the terrain-only floating
+island. Rejected city/settlement sources are isolated as documented legacy;
+no new architecture or flight is included. Human visual approval is pending.
+
 The shared visual system uses **Roboto Flex** and **Roboto Mono**, an editorial geospatial palette, and progressive enhancement for navigation and motion. All links and assets are relative so the site can be served from a repository root or a GitHub Pages project path.
 
 ## Routes
@@ -17,14 +23,27 @@ The shared visual system uses **Roboto Flex** and **Roboto Mono**, an editorial 
 | `project-alphaearth-food.html` | Historical paddy-screening case study. |
 | `project-mbr.html` | Satellite proxy for low-income communities case study. |
 | `project-cbd.html` | Indonesia business-center clustering case study. |
+| `project-bandung-cafe.html` | Bandung café site-screening case study. |
+| `news.html` | News and professional updates. |
 | `404.html` | Recovery page for unknown routes. |
+| `asset-showcase.html` | Architecture asset review: imported baselines, three enhanced variants, fixed-camera gallery and collision bounds. |
+
+The isolated [asset foundation](ASSET_MANIFEST.md) records the reviewed CC0 source files,
+archive verification, delivery budgets and loading API. This review is separate from
+the district and does not authorize a city rebuild.
+
+Phase 1.5 extends `asset-showcase.html` with three original Indonesian-inspired
+architectural variants and fixed-camera comparisons. The
+[architectural design record](docs/ARCHITECTURAL-ART-DIRECTION.md) documents their
+materials, geometry, prototype caching and collision exports. Human visual approval
+is pending; full-district expansion remains paused.
 
 ## Local preview
 
 Run a plain static server from this folder:
 
 ```bash
-cd "/Users/arnanmuflihadi/Documents/Portofolio GIS/website"
+cd "/Users/arnanmuflihadi/Documents/ChatGPT/Gaming portofolio"
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
@@ -48,14 +67,14 @@ The preview builds deterministic gzip level-9 copies of eligible text files into
 - `assets/css/motion.css` contains the shared motion presentation and reduced-motion fallbacks. Keep substantive content visible when `prefers-reduced-motion: reduce` is active.
 - Vendor files live in `assets/js/vendor/`: `gsap.min.js`, `ScrollTrigger.min.js`, and `lenis.min.js`. Keep their loading order before `motion.js` on pages that use the shared motion layer.
 
-All ten top-level routes use the canonical `site-header`, `page-curtain`, and `site-footer` markup. When editing a route, retain the `data-site-*`, `data-nav-*`, and `data-theme-toggle` hooks so the shared shell remains accessible.
+The public top-level routes use the shared `site-header`, `page-curtain`, and `site-footer` markup. When editing a route, retain the `data-site-*`, `data-nav-*`, and `data-theme-toggle` hooks so the shared shell remains accessible.
 
 The precise local-library versions, licences, sources, and checksums are recorded in [assets/js/vendor/THIRD_PARTY.md](assets/js/vendor/THIRD_PARTY.md). Do not replace or update a vendored file without updating that provenance record and re-running the static audit.
 
 ## Asset and cache discipline
 
-- The approved homepage environment master is `assets/img/redesign/hero-environment.png`; its WebP sibling is a delivery derivative, not a replacement for the master. Keep the PNG fallback in the `<picture>` element.
-- The analyst walk frames and live SVG route are separate, original assets. Do not substitute reference-site artwork or regenerate them during a CSS/JS-only pass.
+- Home and Work now use the shared living Jakarta scene and an existing static atlas poster. Older hero artwork checks belong to the inherited audit; do not fabricate missing asset masters to satisfy them.
+- Character and scenery GLBs have adjacent license notices and source/checksum manifests. Keep those records with the delivered assets.
 - Project listing images use committed responsive derivatives where available. Derivatives must preserve the source image's analytical meaning, dimensions/aspect intent, and alt/caption relationship; they are not a licence to alter data graphics.
 - When changing a shared CSS or JavaScript asset, bump its query version consistently in every top-level route. Then test a fresh local URL or a new local server origin so an old cached response cannot masquerade as current work.
 
@@ -112,3 +131,48 @@ website/
 Publish this directory as the repository root (or configure it as the Pages source). Because this is a static MPA, no dependency installation or build command is needed before publishing.
 
 When adding a route or changing shared assets, prefer relative URLs, preserve the `404.html` recovery page, and ensure the target path works through a local static server before publishing.
+
+## AR(N)AN: a living urban atlas
+
+The actual Jakarta scene appears on Home and Work during editorial browsing.
+Scroll through studies for authored camera compositions; **Take control** walks
+that same scene. **Read the atlas** returns to the selected study. One shared
+header, renderer, research registry and dialog serve both modes. The explorer GLB
+loads only on first control activation; ordinary HTML and case-study links are
+available immediately.
+
+WASD/arrows walk, Shift runs, Space jumps, drag or Q/R turns the camera, E talks
+or inspects, and Escape opens the pause guide. Touch direction/Jump buttons, Eco
+quality, reduced motion and an editorial background-pause action are available.
+Jakarta has three research landmarks. Damar, Nadia and Bima explain the actual
+studies and their limits; Sari retains the optional Lost Survey Signal story and
+its single mosskeeper encounter. Raka, Kirana and Sinta are registered for future
+regions. J chains punches, C dodges, and K guards; touch buttons mirror them.
+Research stays accessible before, during and after the story.
+
+Open `index.html?project=transit` for editorial context, or
+`index.html?experience=adventure&project=transit` for character control. Existing
+`experience=rpg` links continue to work. `urban-atlas.html` remains a noindex
+artist/developer review route, not the public experience entry.
+
+Current repair, asset provenance, browser evidence and limitations:
+[Repair report](docs/LIVING-ATLAS-REPAIR.md) and [Living atlas](docs/LIVING-ATLAS.md).
+Earlier milestones: [Phase 3](docs/LIVING-ATLAS-PHASE-3.md) and
+[Phase 1–2 QA](docs/LIVING-ATLAS-QA.md).
+
+```bash
+node --test tests/*.test.mjs
+node scripts/audit-static-site.mjs
+git diff --check
+```
+
+The street layout now shares one plan across road meshes, paving, support heights
+and the mini-map. Tree pits, planters, shop steps and building volumes leave the
+carriageways clear; curb ramps connect the main crossing. Imported drainage and
+manhole covers, roof eaves, balcony screens and café frontage add street detail.
+The adventure HUD uses an original forest, ivory and brass interface inspired by
+Breath of the Wild, with a circular map and a lower dialogue panel.
+
+The focused suite passes 49 tests. The unchanged original static audit still
+reports 58 inherited failures, reproduced with byte-identical output on the
+untouched source; it must not be reported as passing. No deployment is included.

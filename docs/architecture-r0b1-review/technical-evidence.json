@@ -1,0 +1,1792 @@
+{
+  "phase": "R0-B1",
+  "reviewBuild": "R0-B1.6",
+  "humanVisualApproval": "pending",
+  "production": "R0-A3 build 73 remains landscape-only",
+  "productionDigestsVerified": true,
+  "archives": [
+    {
+      "id": "modular-buildings",
+      "version": "2.1",
+      "author": "Kenney",
+      "page": "https://kenney-assets.itch.io/modular-buildings",
+      "archive": "source-assets/r0b1/kenney_modular-buildings.zip",
+      "archiveBytes": 1825490,
+      "archiveSha256": "47e1614686b4c0fe55190e88b22ff2b8b10935edf61f37f478a9b6a99477edc6",
+      "license": "CC0-1.0",
+      "licenseFile": "source-assets/r0b1/modular-buildings/License.txt",
+      "licenseSha256": "84002607f647b608c2861d8413bd9136a36d4063d74bf1af79347e3a012abeb5",
+      "attribution": "Not required; credited in manifest",
+      "glbFiles": 108
+    },
+    {
+      "id": "building-kit",
+      "version": "1.0",
+      "author": "Kenney",
+      "page": "https://kenney-assets.itch.io/building-kit",
+      "archive": "source-assets/r0b1/kenney_building-kit.zip",
+      "archiveBytes": 1611408,
+      "archiveSha256": "b46e4fc873d02dad2ab2153846ede6cc242208e751b778d37f4e75bce23cb2be",
+      "license": "CC0-1.0",
+      "licenseFile": "source-assets/r0b1/building-kit/License.txt",
+      "licenseSha256": "294dadf6bd9704c27fed6af9494fedb6655cf82e5d068db958725b10bba19fbb",
+      "attribution": "Not required; credited in manifest",
+      "glbFiles": 79
+    }
+  ],
+  "sourceModelsUsed": [
+    {
+      "id": "A-window",
+      "pack": "modular-buildings",
+      "file": "source-assets/r0b1/modular-buildings/Models/GLB format/window-white-detailed.glb",
+      "sourceSha256": "0669529ff365456d090dbb524947486c7c85f1a152134d4ff2f5e0eae849eac5",
+      "sourceBytes": 4324,
+      "sourceBounds": {
+        "min": [
+          -0.9375,
+          0,
+          0
+        ],
+        "max": [
+          0.9375,
+          2.2799999713897705,
+          0.30000000447034836
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.9375,
+          0,
+          -0.15000000223517418
+        ],
+        "max": [
+          0.9375,
+          2.2799999713897705,
+          0.15000000223517418
+        ]
+      },
+      "uniformScale": 6,
+      "rotation": 0,
+      "triangles": 34,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 7529,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "A-window-tall",
+      "pack": "modular-buildings",
+      "file": "source-assets/r0b1/modular-buildings/Models/GLB format/window-white-tall.glb",
+      "sourceSha256": "63acf228cfd610f7bdfaac82a0499467ec2492ac6dfcde4ad8d069fe703c7fdc",
+      "sourceBytes": 4504,
+      "sourceBounds": {
+        "min": [
+          -0.9375,
+          0,
+          0
+        ],
+        "max": [
+          0.9375,
+          3,
+          0.30000000447034836
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.9375,
+          0,
+          -0.15000000223517418
+        ],
+        "max": [
+          0.9375,
+          3,
+          0.15000000223517418
+        ]
+      },
+      "uniformScale": 6,
+      "rotation": 0,
+      "triangles": 40,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 7529,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "A-door",
+      "pack": "modular-buildings",
+      "file": "source-assets/r0b1/modular-buildings/Models/GLB format/door-white-glass.glb",
+      "sourceSha256": "e7f21a2a54519714f7149b0616fbc1534d09e5bb24bc740b4f5f3cdff6d36e2b",
+      "sourceBytes": 4092,
+      "sourceBounds": {
+        "min": [
+          -0.6,
+          0,
+          -0.12000000178813934
+        ],
+        "max": [
+          0.6,
+          2.4,
+          0.12000000178813934
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.6,
+          0,
+          -0.12000000178813934
+        ],
+        "max": [
+          0.6,
+          2.4,
+          0.12000000178813934
+        ]
+      },
+      "uniformScale": 4.8,
+      "rotation": 0,
+      "triangles": 28,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 7529,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-window-wall",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/wall-window-wide-square-detailed.glb",
+      "sourceSha256": "5890f4c4989a066117c062664fc6e41a5a9c455ccf8d63f50c4e7660bbf38b38",
+      "sourceBytes": 13820,
+      "sourceBounds": {
+        "min": [
+          -2,
+          0,
+          -0.10000000149011647
+        ],
+        "max": [
+          2,
+          2.4000000953674316,
+          0.10000000149011647
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -2,
+          0,
+          -0.10000000149011647
+        ],
+        "max": [
+          2,
+          2.4000000953674316,
+          0.10000000149011647
+        ]
+      },
+      "uniformScale": 1,
+      "rotation": -1.5707963267948966,
+      "triangles": 154,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "glass",
+          "alphaMode": "BLEND",
+          "roughness": 0.5,
+          "color": [
+            0.7524076,
+            0.852530241,
+            1,
+            0.5019608
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-portal",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/wall-doorway-wide-square.glb",
+      "sourceSha256": "4d95dbe33a03b4e5624c6040f4e87610a3b6b6e2f5ad1c798867eca655534996",
+      "sourceBytes": 6324,
+      "sourceBounds": {
+        "min": [
+          -2.000000238418579,
+          -6.858158535023211e-15,
+          -0.10000020265579189
+        ],
+        "max": [
+          2.000000238418579,
+          2.4000000953674316,
+          0.10000020265579189
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -2.000000238418579,
+          0,
+          -0.10000020265579189
+        ],
+        "max": [
+          2.000000238418579,
+          2.4000000953674383,
+          0.10000020265579189
+        ]
+      },
+      "uniformScale": 1,
+      "rotation": -1.5707963267948966,
+      "triangles": 64,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "B-column",
+      "pack": "building-kit",
+      "file": "source-assets/r0b1/building-kit/Models/GLB format/column-thin.glb",
+      "sourceSha256": "cb523dbd7a2d91d36cace24789097add444840b848c10479f72a7f70e710dd62",
+      "sourceBytes": 4552,
+      "sourceBounds": {
+        "min": [
+          -0.26666667064030963,
+          0,
+          -0.26666667064030963
+        ],
+        "max": [
+          0.26666667064030963,
+          3.2000001271565752,
+          0.26666667064030963
+        ]
+      },
+      "normalizedBounds": {
+        "min": [
+          -0.26666667064030963,
+          0,
+          -0.26666667064030963
+        ],
+        "max": [
+          0.26666667064030963,
+          3.2000001271565752,
+          0.26666667064030963
+        ]
+      },
+      "uniformScale": 1.3333333333333333,
+      "rotation": 0,
+      "triangles": 44,
+      "materials": [
+        {
+          "name": "colormap",
+          "alphaMode": "OPAQUE",
+          "roughness": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "textures": [
+        {
+          "name": "colormap",
+          "size": [
+            512,
+            512
+          ],
+          "bytes": 9700,
+          "mimeType": "image/png"
+        }
+      ]
+    }
+  ],
+  "sourceInstances": {
+    "B-column": 11,
+    "B-portal": 2,
+    "A-door": 11,
+    "B-window-wall": 12,
+    "A-window": 12,
+    "A-window-tall": 19
+  },
+  "prototypeCount": 4,
+  "usedComponentTypes": 6,
+  "inspectedComponentTypes": 9,
+  "prototypeGlb": {
+    "file": "assets/game/architecture-r0b1/transit-kingdom.glb",
+    "bytes": 6045540,
+    "sha256": "615e15f83b70f9503d2d5bf87a98d2d5117b72ddd14628c4a76f22ced3f85573",
+    "triangles": 77876,
+    "drawBatches": 64
+  },
+  "rawInspectionGlb": {
+    "file": "assets/game/architecture-r0b1/components.glb",
+    "bytes": 76360,
+    "sha256": "c9fe1f45c522816f32cbe793b9d80beacca06720ca8c5539965ee8823f1953ca"
+  },
+  "totalNewGlbBytes": 6121900,
+  "loadedBrowserInventory": {
+    "architecture": {
+      "geometries": 97,
+      "materials": 25,
+      "meshes": 97,
+      "missingTextures": [],
+      "textures": 13,
+      "triangles": 78632
+    },
+    "eyeHeight": 1.65,
+    "glassMaterials": 1,
+    "library": {
+      "cachedFiles": 2,
+      "loadedFiles": 2,
+      "requests": 2
+    },
+    "production": "Dedicated page; landscape-only production unchanged",
+    "prototypeCount": 4,
+    "rawSourceInspection": {
+      "geometries": 11,
+      "materials": 3,
+      "meshes": 11,
+      "missingTextures": [],
+      "textures": 2,
+      "triangles": 804
+    },
+    "referenceHeight": 1.9,
+    "sites": [
+      {
+        "d": 10.8,
+        "entranceWorld": [
+          35.13,
+          22.3,
+          9.6
+        ],
+        "entry": [
+          4.13,
+          0.25,
+          5.6
+        ],
+        "entryGround": 21.984167736253664,
+        "groundRange": [
+          19.64443592971286,
+          22
+        ],
+        "id": "commercial",
+        "model": "RuangNiaga",
+        "voids": 0,
+        "w": 14.9,
+        "x": 31,
+        "y": 22.05,
+        "z": 4
+      },
+      {
+        "d": 12.5,
+        "entranceWorld": [
+          38,
+          32.5,
+          -23.5
+        ],
+        "entry": [
+          0,
+          0.3,
+          6.5
+        ],
+        "entryGround": 31.49052104541143,
+        "groundRange": [
+          29.741002066899345,
+          32.13044742303887
+        ],
+        "id": "research",
+        "model": "AtlasResearchCentre",
+        "voids": 0,
+        "w": 13.5,
+        "x": 38,
+        "y": 32.2,
+        "z": -30
+      },
+      {
+        "d": 16.6,
+        "entranceWorld": [
+          -13.7,
+          21.65,
+          15.5
+        ],
+        "entry": [
+          -8.7,
+          0,
+          10.5
+        ],
+        "entryGround": 21.78294842778689,
+        "groundRange": [
+          15.907234942534933,
+          23.526923076923076
+        ],
+        "id": "station",
+        "model": "StasiunAntara",
+        "voids": 0,
+        "w": 25,
+        "x": -5,
+        "y": 21.65,
+        "z": 5
+      },
+      {
+        "d": 22,
+        "entranceWorld": [
+          27.7,
+          16.68,
+          56.8
+        ],
+        "entry": [
+          -2.3,
+          0.28,
+          -8.2
+        ],
+        "entryGround": 16.026115729247604,
+        "groundRange": [
+          13.756885700740783,
+          16.313280473332554
+        ],
+        "id": "skyport",
+        "model": "PelabuhanAwan",
+        "voids": 0,
+        "w": 22.5,
+        "x": 30,
+        "y": 16.4,
+        "z": 65
+      }
+    ],
+    "sourceInstances": 67,
+    "sourceTypesUsed": 6
+  },
+  "loading": {
+    "firstObserved": {
+      "inventory": {
+        "architecture": {
+          "geometries": 97,
+          "materials": 25,
+          "meshes": 97,
+          "missingTextures": [],
+          "textures": 13,
+          "triangles": 78632
+        },
+        "eyeHeight": 1.65,
+        "glassMaterials": 1,
+        "library": {
+          "cachedFiles": 2,
+          "loadedFiles": 2,
+          "requests": 2
+        },
+        "production": "Dedicated page; landscape-only production unchanged",
+        "prototypeCount": 4,
+        "rawSourceInspection": {
+          "geometries": 11,
+          "materials": 3,
+          "meshes": 11,
+          "missingTextures": [],
+          "textures": 2,
+          "triangles": 804
+        },
+        "referenceHeight": 1.9,
+        "sites": [
+          {
+            "d": 10.8,
+            "entranceWorld": [
+              35.13,
+              22.3,
+              9.6
+            ],
+            "entry": [
+              4.13,
+              0.25,
+              5.6
+            ],
+            "entryGround": 21.984167736253664,
+            "groundRange": [
+              19.64443592971286,
+              22
+            ],
+            "id": "commercial",
+            "model": "RuangNiaga",
+            "voids": 0,
+            "w": 14.9,
+            "x": 31,
+            "y": 22.05,
+            "z": 4
+          },
+          {
+            "d": 12.5,
+            "entranceWorld": [
+              38,
+              32.5,
+              -23.5
+            ],
+            "entry": [
+              0,
+              0.3,
+              6.5
+            ],
+            "entryGround": 31.49052104541143,
+            "groundRange": [
+              29.741002066899345,
+              32.13044742303887
+            ],
+            "id": "research",
+            "model": "AtlasResearchCentre",
+            "voids": 0,
+            "w": 13.5,
+            "x": 38,
+            "y": 32.2,
+            "z": -30
+          },
+          {
+            "d": 16.6,
+            "entranceWorld": [
+              -13.7,
+              21.65,
+              15.5
+            ],
+            "entry": [
+              -8.7,
+              0,
+              10.5
+            ],
+            "entryGround": 21.78294842778689,
+            "groundRange": [
+              15.907234942534933,
+              23.526923076923076
+            ],
+            "id": "station",
+            "model": "StasiunAntara",
+            "voids": 0,
+            "w": 25,
+            "x": -5,
+            "y": 21.65,
+            "z": 5
+          },
+          {
+            "d": 22,
+            "entranceWorld": [
+              27.7,
+              16.68,
+              56.8
+            ],
+            "entry": [
+              -2.3,
+              0.28,
+              -8.2
+            ],
+            "entryGround": 16.026115729247604,
+            "groundRange": [
+              13.756885700740783,
+              16.313280473332554
+            ],
+            "id": "skyport",
+            "model": "PelabuhanAwan",
+            "voids": 0,
+            "w": 22.5,
+            "x": 30,
+            "y": 16.4,
+            "z": 65
+          }
+        ],
+        "sourceInstances": 67,
+        "sourceTypesUsed": 6
+      },
+      "loadedMs": 503.3,
+      "ready": "true",
+      "transfers": [
+        {
+          "bytes": 719224,
+          "durationMs": 3.299999997019768,
+          "file": "canopy-tree.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 104876,
+          "durationMs": 2.5,
+          "file": "fern.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 6045540,
+          "durationMs": 97.70000000298025,
+          "file": "transit-kingdom.glb?v=b1-final",
+          "transfer": 6045840
+        },
+        {
+          "bytes": 1581480,
+          "durationMs": 4,
+          "file": "urban-explorer.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 267260,
+          "durationMs": 2,
+          "file": "jump-animations.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 76360,
+          "durationMs": 2.299999997019768,
+          "file": "components.glb",
+          "transfer": 300
+        }
+      ]
+    },
+    "warm": {
+      "loadedMs": 441.4,
+      "transfers": [
+        {
+          "bytes": 719224,
+          "durationMs": 3.5,
+          "file": "canopy-tree.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 104876,
+          "durationMs": 2.3999999910593033,
+          "file": "fern.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 6045540,
+          "durationMs": 87.6000000089407,
+          "file": "transit-kingdom.glb?v=b1-final",
+          "transfer": 300
+        },
+        {
+          "bytes": 1581480,
+          "durationMs": 3.299999997019768,
+          "file": "urban-explorer.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 267260,
+          "durationMs": 2.0999999940395355,
+          "file": "jump-animations.glb",
+          "transfer": 0
+        },
+        {
+          "bytes": 76360,
+          "durationMs": 1.0999999940395355,
+          "file": "components.glb",
+          "transfer": 0
+        }
+      ]
+    },
+    "interpretation": "Localhost observation. First prototype URL transferred its full payload; other dependencies were warm. Warm reload revalidated the prototype with 300 transfer bytes. Not a cold device or WAN benchmark."
+  },
+  "walking": {
+    "standardArchitecture": {
+      "performance": {
+        "buffer": [
+          1728,
+          888
+        ],
+        "drawCalls": 107,
+        "meanFrameMs": 33.33283333333333,
+        "meanRenderSubmissionMs": 1.3973333332190911,
+        "measuredFps": 30.0004500067501,
+        "memory": {
+          "geometries": 186,
+          "programs": 27,
+          "textures": 17
+        },
+        "metric": "Actual rAF after 60 frame warmup; walking requires real displacement; CPU submission only",
+        "p95FrameMs": 34.29999999999927,
+        "preview": true,
+        "quality": "standard",
+        "samples": 600,
+        "triangles": 1162688,
+        "viewport": [
+          1280,
+          658
+        ],
+        "walking": {
+          "meanFrameMs": 33.33416666666667,
+          "measuredFps": 29.999250018749528,
+          "p95FrameMs": 34.29999999999927,
+          "samples": 600
+        }
+      },
+      "player": [
+        26,
+        16.959244453271243,
+        41.79547107047761
+      ],
+      "protocol": "12 s forward, 10 s backward; original walk speed; yaw 0; same spawn"
+    },
+    "standardLandscape": {
+      "jumps": "1",
+      "landings": "1",
+      "performance": {
+        "buffer": [
+          1728,
+          888
+        ],
+        "drawCalls": 69,
+        "meanFrameMs": 33.333166666666656,
+        "meanRenderSubmissionMs": 1.1935000000149012,
+        "measuredFps": 30.00015000075001,
+        "memory": {
+          "geometries": 186,
+          "programs": 27,
+          "textures": 17
+        },
+        "metric": "Actual rAF after 60 frame warmup; walking requires real displacement; CPU submission only",
+        "p95FrameMs": 33.89999999999418,
+        "preview": false,
+        "quality": "standard",
+        "samples": 600,
+        "triangles": 1219310,
+        "viewport": [
+          1280,
+          658
+        ],
+        "walking": {
+          "meanFrameMs": 33.3355,
+          "measuredFps": 29.99805012674176,
+          "p95FrameMs": 33.89999999999418,
+          "samples": 600
+        }
+      },
+      "player": [
+        26,
+        16.968120460193106,
+        41.84840875920177
+      ],
+      "protocol": "12 s forward, 10 s backward; original walk speed; yaw 0; same spawn"
+    },
+    "ecoArchitecture": {
+      "performance": {
+        "buffer": [
+          1280,
+          658
+        ],
+        "drawCalls": 107,
+        "meanFrameMs": 33.33316666666667,
+        "meanRenderSubmissionMs": 1.421999999905626,
+        "measuredFps": 30.00015000075,
+        "memory": {
+          "geometries": 205,
+          "programs": 35,
+          "textures": 21
+        },
+        "metric": "Actual rAF after 60 frame warmup; walking requires real displacement; CPU submission only",
+        "p95FrameMs": 33.89999999999418,
+        "preview": true,
+        "quality": "eco",
+        "samples": 600,
+        "triangles": 1120576,
+        "viewport": [
+          1280,
+          658
+        ],
+        "walking": {
+          "meanFrameMs": 33.33366666666667,
+          "measuredFps": 29.999700002999965,
+          "p95FrameMs": 33.89999999999418,
+          "samples": 600
+        }
+      },
+      "player": [
+        26,
+        16.958950402370647,
+        41.793066919094706
+      ],
+      "protocol": "12 s forward, 10 s backward; original walk speed; yaw 0; same spawn"
+    },
+    "deltaAtSampledEndpoint": {
+      "drawCalls": 38,
+      "triangles": -56622,
+      "cpuSubmissionMs": 0.20383333320418995
+    },
+    "interpretation": "600 actual moving rAF samples per condition, same route and character. Architecture hides vegetation only inside review clearings; lower triangle totals do not represent geometry simplification of the production island. CPU submission is not GPU frame time. The older published 120fps R0-A3 run used a different buffer/session and is not directly comparable."
+  },
+  "retry": {
+    "ready": "true",
+    "errorCleared": true,
+    "rendererCount": "1",
+    "prototypes": 4,
+    "cache": {
+      "cachedFiles": 2,
+      "loadedFiles": 2,
+      "requests": 2
+    }
+  },
+  "portfolio": {
+    "projects": [
+      "atlas-transit",
+      "atlas-pangan",
+      "atlas-alphaearth-food",
+      "atlas-mbr",
+      "atlas-cbd",
+      "atlas-bandung-cafe"
+    ],
+    "selectedProject": "mbr",
+    "architectureInstances": 0,
+    "prototypeRequests": 0
+  },
+  "responsive": {
+    "method": "Actual 390x844 iframe viewport in desktop browser; not a mobile GPU benchmark",
+    "before": [
+      26,
+      17.055400259747742,
+      46
+    ],
+    "after": {
+      "controls": [
+        {
+          "label": "Pause motion",
+          "rect": {
+            "height": 44,
+            "width": 118.78125,
+            "x": 151.71875,
+            "y": 788
+          }
+        },
+        {
+          "label": "StandardEco",
+          "rect": {
+            "height": 33,
+            "width": 79.5,
+            "x": 289.5,
+            "y": 794
+          }
+        },
+        {
+          "label": "Move forward",
+          "rect": {
+            "height": 44,
+            "width": 44,
+            "x": 12,
+            "y": 718
+          }
+        },
+        {
+          "label": "Move left",
+          "rect": {
+            "height": 44,
+            "width": 44,
+            "x": 61,
+            "y": 718
+          }
+        },
+        {
+          "label": "Move backward",
+          "rect": {
+            "height": 44,
+            "width": 44,
+            "x": 110,
+            "y": 718
+          }
+        },
+        {
+          "label": "Move right",
+          "rect": {
+            "height": 44,
+            "width": 44,
+            "x": 159,
+            "y": 718
+          }
+        },
+        {
+          "label": "Jump",
+          "rect": {
+            "height": 44,
+            "width": 64.09375,
+            "x": 208,
+            "y": 718
+          }
+        }
+      ],
+      "height": 844,
+      "player": [
+        26,
+        17.14113594018598,
+        44.33478312207023
+      ],
+      "ready": "true",
+      "scrollWidth": 390,
+      "width": 390
+    }
+  },
+  "captures": [
+    {
+      "view": "ensemble",
+      "file": "final-ensemble.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#ensemble",
+      "camera": {
+        "position": [
+          94,
+          83,
+          102
+        ],
+        "quaternion": [
+          -0.21376878808730765,
+          0.35595035905559946,
+          0.0840005682447467,
+          0.9058400254252587
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "commercial",
+      "file": "final-commercial.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#commercial",
+      "camera": {
+        "position": [
+          55,
+          36,
+          30
+        ],
+        "quaternion": [
+          -0.1144594380199249,
+          0.3613800699837688,
+          0.044751789961769546,
+          0.9242839170741354
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "commercial-eye",
+      "file": "final-commercial-eye.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#commercial-eye",
+      "camera": {
+        "position": [
+          34.7,
+          23.95,
+          9
+        ],
+        "quaternion": [
+          0,
+          0.5151916022404921,
+          0,
+          0.8570750334602418
+        ],
+        "fov": 55,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "research",
+      "file": "final-research.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research",
+      "camera": {
+        "position": [
+          63,
+          52,
+          -4
+        ],
+        "quaternion": [
+          -0.13678591783329683,
+          0.36952418442237245,
+          0.05509396224680608,
+          0.9174454453172844
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "research-detail",
+      "file": "final-research-detail.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research-detail",
+      "camera": {
+        "position": [
+          45.8,
+          39,
+          -14
+        ],
+        "quaternion": [
+          0,
+          0.2994942272776054,
+          0,
+          0.9540981122648708
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "research-eye",
+      "file": "final-research-eye.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research-eye",
+      "camera": {
+        "position": [
+          38,
+          34.15,
+          -22.7
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 55,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "station",
+      "file": "final-station.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station",
+      "camera": {
+        "position": [
+          23,
+          40,
+          36
+        ],
+        "quaternion": [
+          -0.1339544553091653,
+          0.36288363829601733,
+          0.05279991416291078,
+          0.920643165414407
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "station-eye",
+      "file": "final-station-eye.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station-eye",
+      "camera": {
+        "position": [
+          -13.7,
+          23.3,
+          16.1
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 55,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "station-platform",
+      "file": "final-station-platform.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station-platform",
+      "camera": {
+        "position": [
+          -13.7,
+          29.05,
+          9.5
+        ],
+        "quaternion": [
+          0,
+          -0.659645609975326,
+          0,
+          0.7515767886518849
+        ],
+        "fov": 55,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "skyport",
+      "file": "final-skyport.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport",
+      "camera": {
+        "position": [
+          63,
+          37,
+          103
+        ],
+        "quaternion": [
+          -0.14629434556449306,
+          0.3648430213917449,
+          0.05816350631481915,
+          0.9176625418588064
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "skyport-eye",
+      "file": "final-skyport-eye.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport-eye",
+      "camera": {
+        "position": [
+          31.4,
+          18.33,
+          68
+        ],
+        "quaternion": [
+          0,
+          0.25977760752054485,
+          0,
+          0.9656684703514463
+        ],
+        "fov": 55,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "skyport-entry",
+      "file": "final-skyport-entry.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport-entry",
+      "camera": {
+        "position": [
+          27.7,
+          18.33,
+          56.2
+        ],
+        "quaternion": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "fov": 55,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "materials",
+      "file": "final-materials.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#materials",
+      "camera": {
+        "position": [
+          35.5,
+          27.2,
+          12.2
+        ],
+        "quaternion": [
+          -0.014537535831956827,
+          0.38366446181821573,
+          0.006040619584433931,
+          0.9233383733522124
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "scale",
+      "file": "final-scale.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#scale",
+      "camera": {
+        "position": [
+          40,
+          25.3,
+          15
+        ],
+        "quaternion": [
+          -0.11842967695536602,
+          0.3114669414344871,
+          0.039156653592262045,
+          0.9420347724416275
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "island",
+      "file": "final-island.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#island",
+      "camera": {
+        "position": [
+          145,
+          125,
+          175
+        ],
+        "quaternion": [
+          -0.24615432340364285,
+          0.32728660710289925,
+          0.08872821624653192,
+          0.9079751260483273
+        ],
+        "fov": 43,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "commercial-rear",
+      "file": "final-commercial-rear.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#commercial-rear",
+      "camera": {
+        "position": [
+          9,
+          33,
+          -20
+        ],
+        "quaternion": [
+          0.03298808212542659,
+          0.9281083139568314,
+          0.0848058232940311,
+          -0.36101899719726027
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "research-rear",
+      "file": "final-research-rear.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#research-rear",
+      "camera": {
+        "position": [
+          59,
+          48,
+          -56
+        ],
+        "quaternion": [
+          -0.03528521396619775,
+          0.9375510513973742,
+          0.09984295731567241,
+          0.331337235416575
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "station-rear",
+      "file": "final-station-rear.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#station-rear",
+      "camera": {
+        "position": [
+          -25,
+          42,
+          -5
+        ],
+        "quaternion": [
+          -0.15307047585732045,
+          -0.8137965148597439,
+          -0.2476732326112647,
+          0.5029539061095306
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "view": "skyport-rear",
+      "file": "final-skyport-rear.jpg",
+      "url": "http://127.0.0.1:4173/architecture-r0b1.html?build=R0-B1.6#skyport-rear",
+      "camera": {
+        "position": [
+          5,
+          32,
+          40
+        ],
+        "quaternion": [
+          0.06803228480444001,
+          0.9021888095448589,
+          0.1546533743269233,
+          -0.39687440578300637
+        ],
+        "fov": 48,
+        "aspect": 1.9452887537993921
+      },
+      "resolution": [
+        1280,
+        720
+      ],
+      "quality": "Standard",
+      "lighting": "Unchanged R0-A3 daylight; exposure 0.96",
+      "motion": "paused",
+      "actualResolution": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "view": "commercial",
+      "before": "pass-a-commercial-before.jpg",
+      "after": "final-commercial.jpg",
+      "camera": {
+        "label": "Ruang Niaga / full perspective",
+        "position": [
+          55,
+          36,
+          30
+        ],
+        "target": [
+          31,
+          27.1,
+          4
+        ],
+        "fov": 48
+      },
+      "note": "Silhouette and facade: side openings, terrace guard and coherent massing",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "research",
+      "before": "pass-a-research-before.jpg",
+      "after": "final-research.jpg",
+      "camera": {
+        "label": "Atlas / full perspective",
+        "position": [
+          63,
+          52,
+          -4
+        ],
+        "target": [
+          38,
+          41,
+          -30
+        ],
+        "fov": 48
+      },
+      "note": "Continuous recessed facade and purposeful shading",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "commercial-eye",
+      "before": "pass-a-commercial-eye-before.jpg",
+      "after": "final-commercial-eye.jpg",
+      "camera": {
+        "label": "Ruang Niaga / pedestrian entrance",
+        "position": [
+          34.7,
+          23.95,
+          9
+        ],
+        "target": [
+          29.9,
+          23.95,
+          6.45
+        ],
+        "fov": 55,
+        "eye": 1.65
+      },
+      "note": "Legible original wayfinding and real shopfront glazing",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "station",
+      "before": "pass-b-station-before.jpg",
+      "after": "final-station.jpg",
+      "camera": {
+        "label": "Antara / full exterior",
+        "position": [
+          23,
+          40,
+          36
+        ],
+        "target": [
+          -5,
+          27.8,
+          6
+        ],
+        "fov": 48
+      },
+      "note": "Connected switchback landings, support posts and guarded lift exit",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "skyport-eye",
+      "before": "pass-b-skyport-eye-before.jpg",
+      "after": "final-skyport-eye.jpg",
+      "camera": {
+        "label": "Awan / boarding and landing approach",
+        "position": [
+          31.4,
+          18.33,
+          68
+        ],
+        "target": [
+          28.5,
+          18.33,
+          63
+        ],
+        "fov": 55,
+        "eye": 1.65
+      },
+      "note": "Open boarding path, correct door glazing and perimeter opening",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "research-eye",
+      "before": "pass-b-research-eye-before.jpg",
+      "after": "final-research-eye.jpg",
+      "camera": {
+        "label": "Atlas / public entrance",
+        "position": [
+          38,
+          34.15,
+          -22.7
+        ],
+        "target": [
+          38,
+          34.15,
+          -25.6
+        ],
+        "fov": 55,
+        "eye": 1.65
+      },
+      "note": "Clear public entrance, opened door leaves and visitor lobby",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "commercial-rear",
+      "before": "pass-c-commercial-rear-before.jpg",
+      "after": "final-commercial-rear.jpg",
+      "camera": {
+        "label": "Ruang Niaga / rear and west",
+        "position": [
+          9,
+          33,
+          -20
+        ],
+        "target": [
+          31,
+          27,
+          4
+        ],
+        "fov": 48
+      },
+      "note": "Opaque mineral walls restored; transparent classification limited to real glass",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "skyport-rear",
+      "before": "pass-c-skyport-rear-before.jpg",
+      "after": "final-skyport-rear.jpg",
+      "camera": {
+        "label": "Awan / terminal rear and wing",
+        "position": [
+          5,
+          32,
+          40
+        ],
+        "target": [
+          29,
+          20.5,
+          62
+        ],
+        "fov": 48
+      },
+      "note": "Solid structural columns and observation stair",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    },
+    {
+      "view": "materials",
+      "before": "pass-c-materials-before.jpg",
+      "after": "final-materials.jpg",
+      "camera": {
+        "label": "Facade / materials and recesses",
+        "position": [
+          35.5,
+          27.2,
+          12.2
+        ],
+        "target": [
+          31,
+          27,
+          7.72
+        ],
+        "fov": 48
+      },
+      "note": "Continuous backing walls close the gaps between imported window modules",
+      "conditions": "Same fixed camera/FOV/resolution, R0-A3 daylight and exposure. Before images have live cloud/actor states; final images pause motion. No light changes or postprocessing used to conceal geometry."
+    }
+  ]
+}
